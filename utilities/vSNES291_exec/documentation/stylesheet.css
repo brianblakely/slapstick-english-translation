@@ -1,0 +1,12 @@
+
+ a:link		{color: #00FFFF; text-decoration: none;		}
+ a:visited	{color: #00FFFF; text-decoration: none;		}
+ a:hover	{color: #00FFFF; text-decoration: underline;	}
+ a:active	{color: #00FFFF; text-decoration: underrline;	}
+ a:focus	{color: #00FFFF; text-decoration: none;		}
+
+ body, table	{color: #FFFFFF; font: 10pt "Verdana";		}
+ ul, ol		{color: #FFFFFF; font: 10pt "Verdana";		}
+ pre		{color: #FFFFFF; font: 10pt "Fixedsys";		}
+
+ body, textarea	{scrollbar-track-color:#E0E0E0;			}
