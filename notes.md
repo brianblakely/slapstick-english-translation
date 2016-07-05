@@ -22,8 +22,8 @@ Halt effects with `C300`.
 `DC` - Speak very slowly
 `C93C` - Pause momentarily
 
-## Shift Key
-`D4` - "Shift key"
+## Alternate Symbols
+`D4` - Like a "shift key"
 
 Enable katakana and other symbols, ranging from 00 to 7F.
 This symbol range begins at ガ (ga) in the graphic font and goes on down.
