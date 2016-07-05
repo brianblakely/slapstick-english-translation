@@ -20,7 +20,7 @@ Halt effects with `C300`.
 ## Speed
 `D2` - Stop entirely until user presses a button
 `DC` - Speak very slowly
-`C93C` - Pause momentarily
+`C9XX` - Pause momentarily, where XX indicates length of pause.
 
 ## Alternate Symbols
 `D4` - Like a "shift key"
