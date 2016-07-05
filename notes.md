@@ -10,13 +10,13 @@
 * `0005A3ED` -- Akihabara laughing
 
 # Control codes
-Some control codes change the following text.
-
-Halt effects with `C300`.
+Some control codes change the text that follows it.
 
 ## Highlights
 * `C302` - Yellow highlight
 * `C303` - Pink highlight
+
+Halt highlight effects with `C300`.
 
 ## Speed
 * `D2` - Stop entirely until user presses a button
