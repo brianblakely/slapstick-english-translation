@@ -1,0 +1,7 @@
+This is the info for the last game you ran.
+
+File: Slap Stick (Japan).sfc Header: No
+SLAP STICK 1 JPN          TYPE:NORMAL   
+INTERLEAVED:No               CHKSUM:OK  
+VIDEO:NTSC    BANK:Hi     CRC32:53FB163B
+                                        
