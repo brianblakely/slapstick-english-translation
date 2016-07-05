@@ -2,7 +2,8 @@
 * Format: Uncompressed 2bpp planar (Game Boy)
 * 2 tiles wide
 * Kanji: `00050000`, `00060000`
-* Everything else: `00040000`
+* Hiragana/Default Symbols: `00040000`
+* Katakana/Alternate Symbols: `00042000`
 
 # Other important locations
 * `0001CA30` -- start of dialog?
