@@ -5,12 +5,6 @@
 * Hiragana/Default Symbols: `00040000`
 * Katakana/Alternate Symbols: `00042000`
 
-# Other locations
-* `0001CA30` -- start of dialog?
-* `000FDC00` -- end of dialog?
-* `0005A3ED` -- Akihabara laughing
-* `0005DE90` -- Mayor laughing
-
 # Control codes
 Some control codes change the text that follows it.
 
@@ -43,6 +37,12 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `CD` - Line break
 * `D0` - Wipe dialog
 * `D1` - Page break
+
+# Some locations
+* `0001CA30` -- start of dialog?
+* `000FDC00` -- end of dialog?
+* `0005A3ED` -- Akihabara laughing
+* `0005DE90` -- Mayor laughing
 
 # Test Strings
 町*さんは
