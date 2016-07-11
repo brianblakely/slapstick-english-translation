@@ -34,9 +34,9 @@ This symbol range begins at ガ (ga) in the graphic font and goes on down.
 Hiragana mode is re-enabled with `D5`.
 
 ## Name of Speaker
-`E0XX` - Where "XX" corresponds to the speaker's name.
+`E0XX` - Pointers, where "XX" corresponds to the speaker's name.
 
-Names stored somewhere around `0006F3C0`.
+Names themselves stored at `0006F350`. End byte is `CC`.
 
 ## Formatting
 * `C0` - Dialog end
@@ -50,3 +50,5 @@ Names stored somewhere around `0006F3C0`.
 の方の
 53810453
 あいさつが - 158774
+町長
+80998082
