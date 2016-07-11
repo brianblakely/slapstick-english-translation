@@ -45,7 +45,6 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `D7` or `D9` - Render at top of screen
 * `D8` - Render at bottom of screen
 
-
 # Some locations
 * `0001CA30` -- start of dialog?
 * `000FDC00` -- end of dialog?

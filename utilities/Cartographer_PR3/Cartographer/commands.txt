@@ -1,0 +1,10 @@
+#GAME NAME: Slapstick (SFC)
+
+#BLOCK NAME: All Text (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $1CA30
+#SCRIPT STOP: $FDC00
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
