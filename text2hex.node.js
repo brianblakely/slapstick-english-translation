@@ -22,12 +22,13 @@ fs.readFile(tbl, (err, data)=> {
 
   const entries = data.split(`\n`)
 
-  for(const entry of entries) {
-    const [hex, val] = entry.split(`=`);
+  for(const word of str.split(lim)) {
+    for(const entry of entries) {
+      const [hex, val] = entry.split(`=`);
 
-    for(const word of str.split(lim)) {
       if(val && (val.includes(word) || val === str)) {
         hexen.push(hex);
+        break;
       }
     }
   }
