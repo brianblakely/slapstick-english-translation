@@ -1,0 +1,112 @@
+//GAME NAME:		Slapstick (SFC)
+
+//BLOCK #003 NAME:		Names (RAW)
+//Block Range: $6F350 - $6F4A7
+
+//<highlight-yellow>Tetron</highlight>
+//<end-byte>
+//
+//<highlight-pink>Nagisa： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Akihabara： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Kotetsu： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-pink>Mint： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Dr. Pepper： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Kurogane： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Curl： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Combatant： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Mayor： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Blackmore： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-pink>Rose： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Napoleon： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Gateau： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-pink>Tiramisu： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Flavono： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-pink>Pollon： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Rusk： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-pink>Mirufi： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Igor： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>ぐCount Polinky： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Jiiya： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Dr. G： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Assistant A： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Ojisan： <line>
+//</highlight>
+//<end-byte>
+//
+//<highlight-yellow>Lab Chief： <line>
+//</highlight>
+//<end-byte>
+//
+//robot
+//<end-byte>
+//
+//

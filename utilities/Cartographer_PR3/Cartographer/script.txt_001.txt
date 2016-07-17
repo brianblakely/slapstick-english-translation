@@ -1,111 +1,48 @@
 //GAME NAME:		Slapstick (SFC)
 
-//BLOCK #001 NAME:		Names (RAW)
-//Block Range: $6F350 - $6F4A7
+//BLOCK #001 NAME:		Character Naming Menu (RAW)
+//Block Range: $1E719 - $1E99A
 
-//<highlight-yellow>Tetron</highlight>
-//<end-byte>
 //
-<highlight-pink>Nagisa： <line>
-//</highlight>
-//<end-byte>
 //
-<highlight-yellow>Akihabara： <line>
-//</highlight>
-//<end-byte>
+//<alphabet>
+//　あ　い　う　え　お　か　き　く　け　こ <line>
+//　さ　し　す　せ　そ　た　ち　つ　て　と <line>
+//　な　に　ぬ　ね　の　は　ひ　ふ　へ　ほ <line>
+//　ま　み　む　め　も　や　ゆ　よ <line>
+//　ら　り　る　れ　ろ　わ　を　ん <line>
+//　が　ぎ　ぐ　げ　ご　ざ　じ　ず　ぜ　ぞ <line>
+//　だ　ぢ　づ　で　ど　ば　び　ぶ　べ　ぼ <line>
+//　ぱ　ぴ　ぷ　ぺ　ぽ　ぁ　ぃ　ぅ　ぇ　ぉ <line>
+//　ー　＆　！　・　：　っ　ゃ　ゅ　ょ　　 <line>
 //
-<highlight-yellow>Kotetsu： <line>
-//</highlight>
-//<end-byte>
 //
-<highlight-pink>Mint： <line>
-//</highlight>
-//<end-byte>
+//<alphabet>
+//　ア　イ　ウ　エ　オ　カ　キ　ク　ケ　コ <line>
+//　サ　シ　ス　セ　ソ　タ　チ　ツ　テ　ト <line>
+//　ナ　ニ　ヌ　ネ　ノ　ハ　ヒ　フ　へ　ホ <line>
+//　マ　ミ　ム　メ　モ　ヤ　ユ　ヨ <line>
+//　ラ　リ　ル　レ　ロ　ワ　ヲ　ン <line>
+//　ガ　ギ　グ　ゲ　ゴ　ザ　ジ　ズ　ゼ　ゾ <line>
+//　ダ　ヂ　ヅ　デ　ド　バ　ビ　ブ　ベ　ボ <line>
+//　パ　ピ　プ　ペ　ポ　ァ　ィ　ゥ　ェ　ォ <line>
+//　ー　＆　！　・　：　ッ　ャ　ュ　ョ　　 <line>
 //
-<highlight-yellow>Dr. Pepper： <line>
-//</highlight>
-//<end-byte>
 //
-<highlight-yellow>Kurogane： <line>
-//</highlight>
-//<end-byte>
+//<alphabet>
+//　A　B　C　D　E　F　G　H　I　J <line>
+//　K　L　M　N　O　P　Q　R　S　T <line>
+//　U　V　W　X　Y　Z <line>
+//　a　b　c　d　e　f　g　h　i　j <line>
+//　k　l　m　n　o　p　q　r　s　t <line>
+//　u　v　w　x　y　z <line>
+// <line>
+//　0　1　2　3　4　5　6　7　8　9 <line>
+//　ー　＆　！　・　：　+　-　/　. <line>
 //
-<highlight-yellow>Curl： <line>
-//</highlight>
-//<end-byte>
 //
-<highlight-yellow>Combatant： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Mayor： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Blackmore： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-pink>Rose： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Napoleon： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Gateau： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-pink>Tiramisu： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Flavono： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-pink>Pollon： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Rusk： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-pink>Mirufi： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Igor： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>ぐCount Polinky： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Jiiya： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Dr. G： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Assistant A： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>Ojisan： <line>
-//</highlight>
-//<end-byte>
-//
-<highlight-yellow>laboratory： <line>
-//</highlight>
-//<end-byte>
-//
-robot
-//<end-byte>
-//
+//<side-menu>
+//　はじめ <line>
+//　ページ <line>
+//　もどる <line>
+//　おわり
