@@ -20,16 +20,25 @@ fs.readFile(tbl, (err, data)=> {
 
   const hexen = [];
 
-  const entries = data.split(`\n`)
+  const entries = data.split(`\n`);
 
   for(const word of str.split(lim)) {
+    let wordFound = false;
+
     for(const entry of entries) {
       const [hex, val] = entry.split(`=`);
 
-      if(val && (val.includes(word) || val === str)) {
+      if(val && val === word) {
+        wordFound = true;
+
         hexen.push(hex);
         break;
       }
+    }
+
+    if(!wordFound) {
+      console.log(`Entry not found: ${word}!`);
+      break;
     }
   }
 

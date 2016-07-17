@@ -142,7 +142,7 @@
 800D=Â‰
 800E=îı
 800F=ëI
-8010=ò“
+8010=óà
 8011=îÉ
 8012=îÑ
 8013=ê‡
@@ -798,8 +798,8 @@ C8=<glitch7>
 $C9=<pause=>,1
 CA=<null1>
 CB=<glitch8>
-CC=<end-byte>
-CD=<line>\r
+CC=\r<end-byte>\r\n
+CD= <line>\r
 $CE=<padding=>,1
 CF=<glitch10>
 D0=<wipe>
@@ -872,8 +872,8 @@ E018=\rOJISAN:
 3F064568=Ojisan
 E019=\rLABORATORY:
 8039803A803B8082=laboratory
-E01A=\rROBOT:
-D465186E4ED5=Robot
+E01A=Robot
+D465186E4ED5=robot
 E1=<glitch19>
 E2=<glitch20>
 E3=<glitch21>

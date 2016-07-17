@@ -45,7 +45,12 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `D7` or `D9` - Render at top of screen
 * `D8` - Render at bottom of screen
 
-# Some locations
+# Locations
+
+## Blocks
+
+* Names: `0006F350` - `0006F4A6`
+
 * `0001CA30` -- start of dialog?
 * `000FDC00` -- end of dialog?
 * `0005A3ED` -- Akihabara laughing
