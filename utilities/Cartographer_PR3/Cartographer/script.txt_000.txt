@@ -11,10 +11,10 @@
 //（じ、じJじVじ<$9A><glitch10>　　　　　
 //<end-byte>
 //
-//ががぎがぐがげが<null1><glitch1>ぐぺ<glitch6>どぎぐ<slowly>ぎ　　　　　名前をつけてください
+//ががぎがぐがげが<null1><glitch1>ぐぺ<glitch6>どぎぐ<text-speed=><$01>　　　　　名前をつけてください
 //<end-byte>
 //
-//<null1><glitch1>ぐぺ<glitch6>どぎぐ<slowly>ぎ　　　技の名前をつけてください
+//<null1><glitch1>ぐぺ<glitch6>どぎぐ<text-speed=><$01>　　　技の名前をつけてください
 //<end-byte>
 //
 //<glitch1>ぐ）<glitch6>どげが<name>たちは <line>
@@ -25,14 +25,17 @@
 //<end-byte>
 //
 //<glitch1>ぐ）<glitch6>どげが<name>たちは <line>
-//<warp=><$05><$D0><wipe><name>は　LV<glitch5>ぐ（ぢになった<pause=><$3C><borderless><glitch1>ぐぐ<glitch6>づぎぐ<wipe><slowly>ぎ<cutout-right><cutout-left>どのrobotに使いますか？
+//<warp=><$05><$D0><wipe><name>は　LV<glitch5>ぐ（ぢになった<pause=><$3C>
+//<dialog-end2>
+//
+//<glitch1>ぐぐ<glitch6>づぎぐ<wipe><text-speed=><$01><cutout-right><cutout-left>どのrobotに使いますか？
 //<end-byte>
 //
-//<wipe><slowly>ぎ使う必要がありません<wait>
+//<wipe><text-speed=><$01>使う必要がありません<wait>
 //<end-byte>
 //
-//<glitch1>ぐぐ<glitch6>づぎぐ<wipe><slowly>ぎ<glitch4>・<wipe>回
-//<dialog-end>
+//<glitch1>ぐぐ<glitch6>づぎぐ<wipe><text-speed=><$01><glitch4>・<wipe>回
+//<dialog-end1>
 //
 //<$8A><wipe><$98><wipe><$B0><wipe><glitch7><wipe>
 //<display-top1>
@@ -59,7 +62,7 @@
 //
 //<wipe>ほしいものがあったら <line>
 //いつでも　来なよ。
-//<dialog-end>
+//<dialog-end1>
 //
 //<wipe>これは <line>
 //<glitch4>。<glitch16>回だよ
@@ -78,7 +81,7 @@
 //<wait>
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<wipe><slowly>ぎrobotに使う<shift>あいてむ</shift>を <line>
+//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01>robotに使う<shift>あいてむ</shift>を <line>
 //選んでください <line>
 //<glitch20>がか<shift>ぼたん</shift>で<shift>あいてむ説明</shift>です
 //<end-byte>
@@ -99,7 +102,7 @@
 //おしてください。
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<wipe><slowly>ぎ<glitch3>ご<glitch20>名<shift>ぼたん</shift></highlight>：裝備（ならびかえ） <line>
+//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01><glitch3>ご<glitch20>名<shift>ぼたん</shift></highlight>：裝備（ならびかえ） <line>
 //<glitch3>ご<glitch20>かが<shift>ぼたん</shift></highlight>：ならびかえ <line>
 //<glitch3>ご<glitch20>がか<shift>ぼたん</shift></highlight>：<shift>あいてむ説明</shift>
 //<end-byte>
@@ -119,7 +122,7 @@
 //<display-top1>
 //<glitch4>い<glitch20>3じは <line>
 //ここでは使えません。
-//<dialog-end>
+//<dialog-end1>
 //
 //
 //<display-top1>
@@ -136,26 +139,35 @@
 //　やめておく
 //<end-byte>
 //
-//<glitch1>げぷ<glitch6>でぎが<slowly>ぎ技は戦闘中のRUNで実行します。
+//<glitch1>げぷ<glitch6>でぎが<text-speed=><$01>技は戦闘中のRUNで実行します。
 //<end-byte>
 //
 //
 //<display-top1>
 // <line>
 //　・・・背が　とどかない・・・
-//<dialog-end>
+//<dialog-end1>
 //
-//<glitch1>げ」<glitch6>でごが<slowly>ぎ<wipe>画面の上の　<shift>こまんど</shift>から <line>
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>画面の上の　<shift>こまんど</shift>から <line>
 //やりたい作業を　えらぶんじゃよ。
 //<end-byte>
 //
-//<glitch1>げ」<glitch6>でごが<slowly>ぎ<wipe>ほお　はじめてみる顏だのぉ <line>
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>ほお　はじめてみる顏だのぉ <line>
 //この　<shift>ましん</shift>を使うのは <line>
-//はじめてか？<borderless><glitch1>げ」<glitch6>でごが<slowly>ぎ<wipe>おめでとう！<shift>れべるあっぷ</shift>です！ <line>
+//はじめてか？
+//<dialog-end2>
+//
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>おめでとう！<shift>れべるあっぷ</shift>です！ <line>
 //今なら　もれなく <line>
-//<shift>ぽ0たぶるましん</shift>が　使えます。<borderless><glitch1>げ」<glitch6>でごが<slowly>ぎ<wipe><shift>ぽ0たぶるましん</shift>では <line>
+//<shift>ぽ0たぶるましん</shift>が　使えます。
+//<dialog-end2>
+//
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe><shift>ぽ0たぶるましん</shift>では <line>
 //robotは　作れません <line>
-//ごめんなさい！<borderless><glitch1>げ）<glitch6>でげが<wipe>作りたい<shift>あいてむ</shift>を選んでね。 <line>
+//ごめんなさい！
+//<dialog-end2>
+//
+//<glitch1>げ）<glitch6>でげが<wipe>作りたい<shift>あいてむ</shift>を選んでね。 <line>
 //<glitch4><glitch1><shift><$A0>ぢ
 //<end-byte>
 //
@@ -230,7 +242,7 @@
 //<glitch1>げ」<glitch6>でごがおまえさんは　もう3台も <line>
 //robotを　持っておるじゃろう <line>
 //それだけおれば　十分じゃ。
-//<dialog-end>
+//<dialog-end1>
 //
 //<wipe>ほい　きたっ！さっそく <line>
 //作業にとりかかるぞ！！
@@ -275,16 +287,16 @@
 //<wipe>　とうろく　　　　さくじょ
 //<end-byte>
 //
-//<quickly><glitch1>ぞづ<glitch6>ずげぐ　冒険をはじめる <line>
+//<text-hasten><glitch1>ぞづ<glitch6>ずげぐ　冒険をはじめる <line>
 //　きろくの<shift>こぴ0</shift> <line>
 //　きろくを消す
 //<end-byte>
 //
-//<quickly><glitch1>ぜげ<glitch6>だぢ<glitch47>　　冒険のきろく<glitch1>ぜびきろくを選んでください　 <line>
+//<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　冒険のきろく<glitch1>ぜびきろくを選んでください　 <line>
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<quickly><glitch1>ぜげ<glitch6>だぢ<glitch47>　　きろくの<shift>こぴ0</shift> <line>
+//<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　きろくの<shift>こぴ0</shift> <line>
 // <line>
 //　　　　　　　　　　　　 <line>
 //　　　　　　　　　　　　 <line>
@@ -297,27 +309,27 @@
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<quickly><glitch1>ぜびどこへ<shift>こぴ0</shift>しますか？　 <line>
+//<text-hasten><glitch1>ぜびどこへ<shift>こぴ0</shift>しますか？　 <line>
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<quickly><glitch1>ぜび　やめておく　　　　　　 <line>
+//<text-hasten><glitch1>ぜび　やめておく　　　　　　 <line>
 //　<shift>こぴ0</shift>する　　　　　　
 //<end-byte>
 //
-//<quickly><glitch1>ぜび<shift>で0た</shift>が　ありません <line>
+//<text-hasten><glitch1>ぜび<shift>で0た</shift>が　ありません <line>
 //<shift>こぴ0</shift>できません　　　　
-//<dialog-end>
+//<dialog-end1>
 //
-//<quickly><glitch1>ぜげ<glitch6>だぢ<glitch47>　　きろくを消す<glitch1>ぜびどれを消しますか？　　　 <line>
+//<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　きろくを消す<glitch1>ぜびどれを消しますか？　　　 <line>
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<quickly><glitch1>ぜび　やめておく　　　　　　 <line>
+//<text-hasten><glitch1>ぜび　やめておく　　　　　　 <line>
 //　消します　　　　　　　
 //<end-byte>
 //
-//<glitch7><glitch1>だぐ<glitch6>ずぎぐ<slowly>ぎ　<shift>びゅ0</shift>・<shift>も0ど</shift>　
+//<glitch7><glitch1>だぐ<glitch6>ずぎぐ<text-speed=><$01>　<shift>びゅ0</shift>・<shift>も0ど</shift>　
 //<end-byte>
 //
 //<glitch7>
@@ -339,7 +351,7 @@
 //<display-top1>
 // <line>
 //　中は　からっぽだった。
-//<dialog-end>
+//<dialog-end1>
 //
 //
 //<display-top1>
@@ -351,13 +363,13 @@
 //<display-top1>
 // <line>
 //　持ち物が　いっぱいだ。
-//<dialog-end>
+//<dialog-end1>
 //
 //
 //<display-top1>
 // <line>
-//<slowly>ず　・・・・・・・・<pause=><$1E><slowly>げ開かない？
-//<dialog-end>
+//<text-speed=><$07>　・・・・・・・・<pause=><$1E><text-speed=><$03>開かない？
+//<dialog-end1>
 //
 //<wait><glitch7>
 //<end-byte>
@@ -366,13 +378,13 @@
 //<display-top1>
 //　<name>は　<highlight-yellow><glitch4>い<glitch20><glitch30>ざ</highlight> <line>
 //　をひらめいた！
-//<dialog-end>
+//<dialog-end1>
 //
 //
 //<display-top1>
 //　<name>は　<highlight-yellow><glitch4>い<glitch20><glitch30>ざ</highlight> <line>
 //　を半分ひらめいた！
-//<dialog-end>
+//<dialog-end1>
 //
 //<highlight-yellow>　<glitch4>い<glitch20><glitch30>ざ</highlight>のことが <line>
 //　書いてある。
@@ -382,14 +394,32 @@
 //<display-top1>
 //　<name>は　<highlight-yellow><glitch17>ぎご<glitch27>ざ<shift>めが</shift> <line>
 //</highlight>　の<shift>で0た</shift>を集めた！
-//<dialog-end>
+//<dialog-end1>
 //
 //
 //<display-top1>
 //　・・・・・？？？
-//<dialog-end>
+//<dialog-end1>
 //
-//ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>も<slowly><$90><slowly><glitch2><slowly><glitch25><slowly>、<quickly>ま<quickly><$8B><quickly><$B0><quickly><glitch20><quickly><glitch39><quickly>ぶ<borderless>て<borderless>1<borderless><$A7><borderless><scroll><borderless><glitch35><borderless>ぼ<glitch17>う<glitch17>れ<glitch17>5<glitch17><$92><glitch17><$A8><glitch17><glitch10><glitch17><glitch26><glitch17>づ<glitch18>P<glitch18>は<glitch18>6<glitch18>：<glitch18><$9D><glitch18><$BA><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18>ち<slowly>ち<slowly><glitch40><glitch18>Q<glitch19>そ<glitch19>3<glitch19><$97><glitch19><$B5><glitch19>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly><glitch21><glitch19>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ぺ<glitch20>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>ち<slowly>おっと・・・ <line>
+//ち<text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B>ち<text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$5D><text-speed=><$90><text-speed=><$C2><text-speed=><$E7><text-speed=><$1E><text-hasten>ま<text-hasten><$8B><text-hasten><$B0><text-hasten><glitch20><text-hasten><glitch39><text-hasten>ぶ
+//<dialog-end2>
+//
+//て
+//<dialog-end2>
+//
+//1
+//<dialog-end2>
+//
+//<$A7>
+//<dialog-end2>
+//
+//<scroll>
+//<dialog-end2>
+//
+//<glitch35>
+//<dialog-end2>
+//
+//ぼ<glitch17>う<glitch17>れ<glitch17>5<glitch17><$92><glitch17><$A8><glitch17><glitch10><glitch17><glitch26><glitch17>づ<glitch18>P<glitch18>は<glitch18>6<glitch18>：<glitch18><$9D><glitch18><$BA><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18><glitch12><glitch18>ち<text-speed=><$4B><text-speed=><$F8><glitch18>Q<glitch19>そ<glitch19>3<glitch19><$97><glitch19><$B5><glitch19>ち<text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$E3><glitch19>ち<text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$1C><glitch20>ち<text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$4B><text-speed=><$3F>っと・・・ <line>
 //そこには　なにもない
 //<end-byte>
 //
@@ -565,9 +595,9 @@
 //設定します
 //<end-byte>
 //
-//そ<glitch21>な<glitch21>ほ<glitch21>ら<glitch21>ぇ<glitch21>3<glitch21>：<glitch21><$88><glitch21><$93><glitch21><$9E><glitch21><$A9><glitch21><$B4><glitch21><$BE><glitch21><pause=><$E3><shift><glitch21><glitch17><glitch21><null3><glitch21><glitch36><glitch21><glitch47><glitch21>ぞ<glitch22>）<glitch22>ぽ<glitch22>G<glitch22>R<glitch22>あ<glitch22>さ<glitch22>な<glitch22>ふ<glitch22>ら<glitch22>ぇ<glitch22>3<glitch22>倉<$89><glitch22><$91><glitch22><$9A><glitch22><$A4><glitch22><$AF><glitch22><$B9><glitch22><scroll><glitch22><glitch10><glitch22>
+//そ<glitch21>な<glitch21>ほ<glitch21>ら<glitch21>ぇ<glitch21>3<glitch21>：<glitch21><$88><glitch21><$93><glitch21><$9E><glitch21><$A9><glitch21><$B4><glitch21><$BE><glitch21><pause=><$E3><shift><glitch21><glitch17><glitch21><null3><glitch21><glitch36><glitch21><empty><glitch21>ぞ<glitch22>）<glitch22>ぽ<glitch22>G<glitch22>R<glitch22>あ<glitch22>さ<glitch22>な<glitch22>ふ<glitch22>ら<glitch22>ぇ<glitch22>3<glitch22>倉<$89><glitch22><$91><glitch22><$9A><glitch22><$A4><glitch22><$AF><glitch22><$B9><glitch22><scroll><glitch22><glitch10><glitch22>
 //<display-top2>
-//<glitch22><glitch20><glitch22><glitch28><glitch22><glitch37><glitch22><glitch47><glitch22>ぞ<glitch23>？<glitch23>ぼ<glitch23>B<glitch23>K<glitch23>T<glitch23>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>う<glitch23>す<glitch23>ぬ<glitch23>み<glitch23>ら<glitch23>ん<glitch23>0<glitch23>5<glitch23><$82><glitch23><$88><glitch23><$8E><glitch23><$94><glitch23><$9B><glitch23><$A5><glitch23><$AE><glitch23><$B9><glitch23><glitch1><glitch23><pause=><$E5>
+//<glitch22><glitch20><glitch22><glitch28><glitch22><glitch37><glitch22><empty><glitch22>ぞ<glitch23>？<glitch23>ぼ<glitch23>B<glitch23>K<glitch23>T<glitch23>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>う<glitch23>す<glitch23>ぬ<glitch23>み<glitch23>ら<glitch23>ん<glitch23>0<glitch23>5<glitch23><$82><glitch23><$88><glitch23><$8E><glitch23><$94><glitch23><$9B><glitch23><$A5><glitch23><$AE><glitch23><$B9><glitch23><glitch1><glitch23><pause=><$E5>
 //<page>
 //<glitch23><glitch12><glitch23><glitch15><glitch23><glitch17><glitch23><glitch26><glitch23><glitch34><glitch23><glitch38><glitch23><glitch42><glitch23><glitch46><glitch23>ご<glitch24>ず<glitch24>「<glitch24>ぱ<glitch24>B<glitch24>K<glitch24>T<glitch24>う<glitch24>し<glitch24>な<glitch24>ほ<glitch24>ら<glitch24>ぃ<glitch24>0<glitch24>か<glitch21>か<glitch21>！<glitch24><$83><glitch24><$8C><glitch24><$95><glitch24><$9F><glitch24><$A8><glitch24>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>か<glitch21>　　　　　　　　
 //<end-byte>
@@ -869,7 +899,7 @@
 //<glitch6><glitch24><glitch7><glitch24> <line>
 //<glitch24><wait><glitch24>
 //<display-top1>
-//<glitch24><slowly><glitch24><glitch19><glitch24><glitch24><glitch24><menu-name><glitch24><glitch32><glitch24>
+//<glitch24><text-speed=><$E6><glitch19><glitch24><glitch24><glitch24><menu-name><glitch24><glitch32><glitch24>
 //<end-byte>
 //
 //Lv1

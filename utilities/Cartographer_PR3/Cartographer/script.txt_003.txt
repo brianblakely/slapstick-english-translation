@@ -1,7 +1,7 @@
 //GAME NAME:		Slapstick (SFC)
 
 //BLOCK #003 NAME:		Names (RAW)
-//Block Range: $6F350 - $6F4A7
+//Block Range: $6F350 - $6F4BF
 
 //<highlight-yellow>Tetron</highlight>
 //<end-byte>
@@ -107,6 +107,9 @@
 //<end-byte>
 //
 //robot
+//<end-byte>
+//
+//ë∫ÇÃÇ¶Ç¢Ç‰Ç§Å@<highlight-yellow><shift>ÇŸÇÒÇ∂Ç·ÇÁÇ÷ÇÃ</shift>Ç÷</highlight>ÅI
 //<end-byte>
 //
 //
