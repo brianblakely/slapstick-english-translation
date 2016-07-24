@@ -1,5 +1,3 @@
-// TODO: Output TBL with SHIFT-JIS encoding.
-
 const fs = require(`fs`),
       jconv = require(`jconv`),
       Text2Hex = require(`./text2hex.node.js`),
@@ -43,8 +41,13 @@ const katacanyou = (file=`./roms/Slap Stick (Japan).sfc`)=> new Promise((resolve
 katacanyou()
   .then(result=>
     fs.writeFile(
-      `kata.tbl`,
-      Array.from(result).join(`\n`),
+      `dailog-kata-phrases.tbl`,
+
+      jconv.encode(
+        Array.from(result).join(`\n`),
+        `SJIS`
+      ),
+
       err=> {
         if(err) {
           console.log(err);
