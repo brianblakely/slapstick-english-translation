@@ -1,56 +1,96 @@
 const fs = require(`fs`),
       jconv = require(`jconv`);
 
-const text2hex = (tbl, str, lim=``, rev)=> new Promise((resolve, reject)=> {
-  fs.readFile(tbl, (err, data)=> {
-    if(err) {
-      reject(err);
-      return;
-    }
+class Text2Hex {
+  constructor(tbl) {
+    this.tbl = tbl;
 
-    data = jconv.convert(data, `SJIS`, `UTF8`).toString();
-
-    const result = [];
-
-    const entries = data.split(`\n`);
-
-    const words = !rev
-      && str.split(lim)
-      || str.match(/.{1,2}/g);
-
-    for(const word of words) {
-      let wordFound = false;
-
-      for(const entry of entries) {
-        const [hex, val] = entry.split(`=`);
-
-        if(!rev && val && val === word) {
-          wordFound = true;
-
-          result.push(hex);
-          break;
-        } else if(rev && hex && hex.toUpperCase() === word.toUpperCase()) {
-          wordFound = true;
-
-          result.push(val);
-          break;
+    this.loadedTable = new Promise((resolve, reject)=> {
+      fs.readFile(tbl, (err, data)=> {
+        if(err) {
+          reject(err);
+          return;
         }
-      }
 
-      if(!wordFound) {
-        resolve(`Entry not found: ${word}!`);
-        return false;
-      }
-    }
+        data = jconv.convert(data, `SJIS`, `UTF8`).toString();
 
-    resolve({
-      input: str,
-      output: result.join(``)
+        const entries = new Map(
+          data
+            .split(/\r\n|\n/)
+            .filter(entry=> !!entry.trim())
+            .map(entry=> {
+              const [key, val] = entry.split(`=`);
+
+              return [key, val];
+            })
+        );
+
+        resolve(entries);
+      });
     });
-  });
-});
+  }
 
-module.exports = text2hex;
+  getHex(str, lim=``) {
+    return new Promise((resolve, reject)=> {
+      this.loadedTable.then(entries=> {
+        const result = [];
+
+        const words = str.split(lim);
+
+        for(const word of words) {
+          let wordFound = false;
+
+          for(const [hex, text] of entries) {
+            if(text === word) {
+              wordFound = true;
+
+              result.push(hex);
+              break;
+            }
+          }
+
+          if(!wordFound) {
+            resolve(`Entry not found: ${word}!`);
+            return false;
+          }
+        }
+
+        resolve({
+          input: str,
+          output: result.join(``)
+        });
+      });
+    });
+  }
+
+  getText(str, lim=2) {
+    return new Promise((resolve, reject)=> {
+      this.loadedTable.then(entries=> {
+        const result = [];
+
+        const re = new RegExp(`.{1,${lim}}`, `g`);
+
+        const words = str.match(re).map(word=> word.toUpperCase());
+
+        for(const word of words) {
+          if(!entries.has(word)) {
+            resolve(`Entry not found: ${word}!`);
+            return false;
+          }
+
+          result.push(entries.get(word));
+        }
+
+        resolve({
+          input: str,
+          output: result.join(``)
+        });
+      });
+    });
+  }
+}
+
+module.exports = Text2Hex;
 
 // Command line usage.
 
@@ -59,13 +99,16 @@ if(require.main === module) {
   const tbl = process.argv[2],
         // arg 2: String to turn into hex.
         str = process.argv[3],
-        // arg 3: Search by character or word;
+        // flag: Search text by hex.
+        rev = process.argv.includes(`-r`),
+        // flag: Search by character or word;
         // default is character.
-        lim = (process.argv[4] || `-c`) === `-c`
-          ? ``
-          : ` `,
-        // arg 4: Search text by hex.
-        rev = process.argv.includes(`-r`);
+        lim =
+          !process.argv.includes(`-w`)
+            ? !rev
+              ? ``
+              : 2
+            : ` `;
 
   if(!tbl || !str) {
     console.log(`Usage: node text2hex.node.js <table> <string> [-cwr]`);
@@ -73,7 +116,13 @@ if(require.main === module) {
     return false;
   }
 
-  text2hex(tbl, str, lim, rev)
-    .then(result=>console.log(result))
+  const text2hex = new Text2Hex(tbl);
+
+  const method = !rev
+    ? text2hex.getHex(str, lim)
+    : text2hex.getText(str, lim);
+
+  method
+    .then(result=>console.log(result.output || result))
     .catch(err=>console.log(err));
 }

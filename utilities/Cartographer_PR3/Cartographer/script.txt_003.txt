@@ -3,113 +3,113 @@
 //BLOCK #003 NAME:		Names (RAW)
 //Block Range: $6F350 - $6F4BF
 
-//<highlight-yellow>Tetron</highlight>
+//<highlight-yellow>ティアトロン</highlight>
 //<end-byte>
 //
-//<highlight-pink>Nagisa： <line>
+//<highlight-pink>ナギサ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Akihabara： <line>
+//<highlight-yellow>アキハバラ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Kotetsu： <line>
+//<highlight-yellow>コテツ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-pink>Mint： <line>
+//<highlight-pink>ミント： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Dr. Pepper： <line>
+//<highlight-yellow>ペッパー： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Kurogane： <line>
+//<highlight-yellow>クロガネ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Curl： <line>
+//<highlight-yellow>カール： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Combatant： <line>
+//<highlight-yellow>戦闘員： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Mayor： <line>
+//<highlight-yellow>町長： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Blackmore： <line>
+//<highlight-yellow>ブラックモア： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-pink>Rose： <line>
+//<highlight-pink>ローズ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Napoleon： <line>
+//<highlight-yellow>ナポレオン： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Gateau： <line>
+//<highlight-yellow>ガトー： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-pink>Tiramisu： <line>
+//<highlight-pink>ティラミス： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Flavono： <line>
+//<highlight-yellow>フラボノ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-pink>Pollon： <line>
+//<highlight-pink>ポロン： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Rusk： <line>
+//<highlight-yellow>ラスク： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-pink>Mirufi： <line>
+//<highlight-pink>ミルフィ： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Igor： <line>
+//<highlight-yellow>イゴール： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>ぐCount Polinky： <line>
+//<highlight-yellow>ぐポリンキーはくしゃく： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Jiiya： <line>
+//<highlight-yellow>じいや： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Dr. G： <line>
+//<highlight-yellow>ドクターG： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Assistant A： <line>
+//<highlight-yellow>助手A： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Ojisan： <line>
+//<highlight-yellow>おじさん： <line>
 //</highlight>
 //<end-byte>
 //
-//<highlight-yellow>Lab Chief： <line>
+//<highlight-yellow>研究所長： <line>
 //</highlight>
 //<end-byte>
 //
-//robot
+//ロボット
 //<end-byte>
 //
-//村のえいゆう　<highlight-yellow><shift>ほんじゃらへの</shift>へ</highlight>！
+//村のえいゆう　<highlight-yellow>ホンジャラへノへ</highlight>！
 //<end-byte>
 //
 //

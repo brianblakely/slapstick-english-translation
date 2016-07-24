@@ -4,7 +4,7 @@
 //Block Range: $1CF69 - $1E719
 
 //<wipe>もうしわけございません <line>
-//<shift>とろん</shift>が　たりないので <line>
+//トロンが　たりないので <line>
 //またおこしください。<wait>
 //<end-byte>
 //
@@ -18,8 +18,8 @@
 //<end-byte>
 //
 //<glitch1>ぐ）<glitch6>どげが<name>たちは <line>
-//<shift>ぼ0なすで0た</shift><glitch17>ぎご<wait>ざ<shift>めが</shift> <line>
-//合計<glitch17>ぎご<wipe>ざ<shift>めが</shift>の<shift>で0た</shift>を集めた
+//ボーナスデータ<glitch17>ぎご<wait>ざメガ <line>
+//合計<glitch17>ぎご<wipe>ざメガのデータを集めた
 //<page>
 //
 //<end-byte>
@@ -28,7 +28,7 @@
 //<warp=><$05><$D0><wipe><name>は　LV<glitch5>ぐ（ぢになった<pause=><$3C>
 //<dialog-end2>
 //
-//<glitch1>ぐぐ<glitch6>づぎぐ<wipe><text-speed=><$01><cutout-right><cutout-left>どのrobotに使いますか？
+//<glitch1>ぐぐ<glitch6>づぎぐ<wipe><text-speed=><$01><cutout-right><cutout-left>どのロボットに使いますか？
 //<end-byte>
 //
 //<wipe><text-speed=><$01>使う必要がありません<wait>
@@ -39,19 +39,19 @@
 //
 //<$8A><wipe><$98><wipe><$B0><wipe><glitch7><wipe>
 //<display-top1>
-//<wipe><glitch25><wipe><shift>す0ぱ0ぼむ</shift>をひろった
+//<wipe><glitch25><wipe>スーパーボムをひろった
 //<end-byte>
 //
-//<shift>ぼ0なすで0た</shift>を0<shift>・</shift>5<shift>めが集</shift>めた
+//ボーナスデータを0.5<shift>めが集</shift>めた
 //<end-byte>
 //
-//<shift>ぼ0なすで0た</shift>を1<shift>・</shift>0<shift>めが集</shift>めた
+//ボーナスデータを1.0<shift>めが集</shift>めた
 //<end-byte>
 //
-//<shift>えねるぎ0</shift>が回復した
+//エネルギーが回復した
 //<end-byte>
 //
-//裝備の<shift>れべる</shift>があがった
+//裝備のレベルがあがった
 //<end-byte>
 //
 //持ち物がいっぱいでひろえない
@@ -67,7 +67,7 @@
 //<wipe>これは <line>
 //<glitch4>。<glitch16>回だよ
 //<page>
-//<glitch5>ご化<shift>とろん</shift>だけど買うかい？ <line>
+//<glitch5>ご化トロンだけど買うかい？ <line>
 //　買う <line>
 //　やめておく
 //<end-byte>
@@ -76,20 +76,20 @@
 //わたせないじゃないか。<wait>
 //<end-byte>
 //
-//<wipe><shift>とろん</shift>が　たりないよ <line>
+//<wipe>トロンが　たりないよ <line>
 //かわいそうだが　売れないな。 <line>
 //<wait>
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01>robotに使う<shift>あいてむ</shift>を <line>
+//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01>ロボットに使うアイテムを <line>
 //選んでください <line>
-//<glitch20>がか<shift>ぼたん</shift>で<shift>あいてむ説明</shift>です
+//<glitch20>がかボタンで<shift>あいてむ説明</shift>です
 //<end-byte>
 //
-//<wipe>どのrobotに使いますか？
+//<wipe>どのロボットに使いますか？
 //<end-byte>
 //
-//<wipe>このrobotには <line>
+//<wipe>このロボットには <line>
 //使う必要がありません。<wait>
 //<end-byte>
 //
@@ -98,13 +98,13 @@
 //　やめておく
 //<end-byte>
 //
-//<wipe>戦闘に登場させる順に<glitch20>名<shift>ぼたん</shift>を <line>
+//<wipe>戦闘に登場させる順に<glitch20>名ボタンを <line>
 //おしてください。
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01><glitch3>ご<glitch20>名<shift>ぼたん</shift></highlight>：裝備（ならびかえ） <line>
-//<glitch3>ご<glitch20>かが<shift>ぼたん</shift></highlight>：ならびかえ <line>
-//<glitch3>ご<glitch20>がか<shift>ぼたん</shift></highlight>：<shift>あいてむ説明</shift>
+//<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01><glitch3>ご<glitch20>名ボタン</highlight>：裝備（ならびかえ） <line>
+//<glitch3>ご<glitch20>かがボタン</highlight>：ならびかえ <line>
+//<glitch3>ご<glitch20>がかボタン</highlight>：<shift>あいてむ説明</shift>
 //<end-byte>
 //
 //<wipe><glitch4>。<glitch16><$9C>ぢ<wait>
@@ -126,15 +126,15 @@
 //
 //
 //<display-top1>
-//　<name>は　<shift>かぎ</shift>を使った。<wait><glitch7>
+//　<name>は　カギを使った。<wait><glitch7>
 //<end-byte>
 //
-//<wipe><shift>あいてむ</shift>の空きをつめますか？ <line>
+//<wipe>アイテムの空きをつめますか？ <line>
 //　空きをつめる <line>
 //　やめておく
 //<end-byte>
 //
-//<wipe><shift>あいてむ</shift>を順番にならびかえますか？ <line>
+//<wipe>アイテムを順番にならびかえますか？ <line>
 //　ならびかえる <line>
 //　やめておく
 //<end-byte>
@@ -148,26 +148,26 @@
 //　・・・背が　とどかない・・・
 //<dialog-end1>
 //
-//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>画面の上の　<shift>こまんど</shift>から <line>
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>画面の上の　コマンドから <line>
 //やりたい作業を　えらぶんじゃよ。
 //<end-byte>
 //
 //<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>ほお　はじめてみる顏だのぉ <line>
-//この　<shift>ましん</shift>を使うのは <line>
+//この　マシンを使うのは <line>
 //はじめてか？
 //<dialog-end2>
 //
-//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>おめでとう！<shift>れべるあっぷ</shift>です！ <line>
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>おめでとう！レベルアップです！ <line>
 //今なら　もれなく <line>
-//<shift>ぽ0たぶるましん</shift>が　使えます。
+//ポータブルマシンが　使えます。
 //<dialog-end2>
 //
-//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe><shift>ぽ0たぶるましん</shift>では <line>
-//robotは　作れません <line>
+//<glitch1>げ」<glitch6>でごが<text-speed=><$01><wipe>ポータブルマシンでは <line>
+//ロボットは　作れません <line>
 //ごめんなさい！
 //<dialog-end2>
 //
-//<glitch1>げ）<glitch6>でげが<wipe>作りたい<shift>あいてむ</shift>を選んでね。 <line>
+//<glitch1>げ）<glitch6>でげが<wipe>作りたいアイテムを選んでね。 <line>
 //<glitch4><glitch1><shift><$A0>ぢ
 //<end-byte>
 //
@@ -187,25 +187,25 @@
 //たくさん作っても仕方ないぞ。<wait>
 //<end-byte>
 //
-//<glitch4><shift><glitch39><shift><glitch3>ごL・R<shift>ぼたん</shift></highlight>：<shift>ろぼっとあいてむ</shift> <line>
-//<glitch3>ご<glitch20>がか<shift>ぼたん</shift></highlight>　　：<shift>あいてむ説明</shift>
+//<glitch4><shift><glitch39><shift><glitch3>ごL・Rボタン</highlight>：ロボットアイテム <line>
+//<glitch3>ご<glitch20>がかボタン</highlight>　　：<shift>あいてむ説明</shift>
 //<end-byte>
 //
-//<glitch3>ごL・R<shift>ぼたん</shift></highlight>：<name><shift>あいてむ</shift> <line>
-//<glitch3>ご<glitch20>がか<shift>ぼたん</shift></highlight>　　：<shift>あいてむ説明</shift>
+//<glitch3>ごL・Rボタン</highlight>：<name>アイテム <line>
+//<glitch3>ご<glitch20>がかボタン</highlight>　　：<shift>あいてむ説明</shift>
 //<end-byte>
 //
 //<glitch1>げ）<glitch6>でげが<wipe><glitch4>い<glitch20><$9C>ぢ<glitch4><$B3><glitch24><$9E>ぢは <line>
-//　こうげき　<shift>7</shift><glitch5>げ<$98>ぢ <line>
-//　Lv9のとき　<shift>7</shift><glitch5>げ<$9A>ぢだよ<wait>
+//　こうげき　+<glitch5>げ<$98>ぢ <line>
+//　Lv9のとき　+<glitch5>げ<$9A>ぢだよ<wait>
 //<end-byte>
 //
 //<glitch1>げ）<glitch6>でげが<wipe><glitch4>い<glitch20><$9C>ぢは <line>
-//　こうげき　<shift>7</shift><glitch5>げ<$98>ぢ <line>
-//　ぼうぎょ　<shift>7</shift><glitch5>げ<$9A>ぢ<wait>
+//　こうげき　+<glitch5>げ<$98>ぢ <line>
+//　ぼうぎょ　+<glitch5>げ<$9A>ぢ<wait>
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<warp=><$82><$D2><glitch1>げ）<glitch6>でげが<warp=><$8A><$D2><glitch1>げ）<glitch6>でげが<warp=><$A5><$D2><glitch1>げ）<glitch6>でげが<wipe>合成する<shift>あいてむ</shift>を　2つ選んでね。 <line>
+//<glitch1>げ）<glitch6>でげが<warp=><$82><$D2><glitch1>げ）<glitch6>でげが<warp=><$8A><$D2><glitch1>げ）<glitch6>でげが<warp=><$A5><$D2><glitch1>げ）<glitch6>でげが<wipe>合成するアイテムを　2つ選んでね。 <line>
 //<glitch4><glitch1><shift><$A0>ぢ
 //<end-byte>
 //
@@ -221,26 +221,26 @@
 //<end-byte>
 //
 //<wipe>持ち物がいっぱいで <line>
-//<warp=><$0C><$D6><glitch1>げ）<glitch6>でげが<wipe>いらない<shift>あいてむ</shift>を<shift>りさいくる</shift>します <line>
+//<warp=><$0C><$D6><glitch1>げ）<glitch6>でげが<wipe>いらないアイテムをリサイクルします <line>
 //<glitch4><glitch1><shift><$A0>ぢ
 //<end-byte>
 //
-//<wipe><glitch4>い<glitch20>回を<shift>りさいくる</shift>すると <line>
-//<glitch5>ご化<shift>とろん</shift>もどりますよ。 <line>
-//　やめておく　　　<shift>りさいくる</shift>する
+//<wipe><glitch4>い<glitch20>回をリサイクルすると <line>
+//<glitch5>ご化トロンん</shift>もどりますよ。 <line>
+//　やめておく　　　リサイクルする
 //<end-byte>
 //
-//<wipe>この<shift>あいてむ</shift>は　<shift>りさいくる</shift> <line>
+//<wipe>このアイテムは　リサイクル <line>
 //できませんね。<wait>
 //<end-byte>
 //
-//<glitch1>げ」<glitch6>でごがrobotを作るには <line>
+//<glitch1>げ」<glitch6>でごがロボットを作るには <line>
 //<glitch5>ご化<shift>とろん必要</shift>じゃぞ。 <line>
 //　作る　　　　　　やめておく
 //<end-byte>
 //
 //<glitch1>げ」<glitch6>でごがおまえさんは　もう3台も <line>
-//robotを　持っておるじゃろう <line>
+//ロボットを　持っておるじゃろう <line>
 //それだけおれば　十分じゃ。
 //<dialog-end1>
 //
@@ -248,37 +248,37 @@
 //作業にとりかかるぞ！！
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげが<wipe><glitch5>ご回<shift>とろん</shift>かかりますが <line>
-//<shift>めんてなんす</shift>しますか？ <line>
+//<glitch1>げ）<glitch6>でげが<wipe><glitch5>ご回トロンかかりますが <line>
+//メンテナンスしますか？ <line>
 //　する　　　　　　やめておく
 //<end-byte>
 //
-//<wipe><shift>めんてなんす</shift>が終わりました。<wait>
+//<wipe>メンテナンスが終わりました。<wait>
 //<end-byte>
 //
-//<glitch1>げ）<glitch6>でげがこのrobotは　<shift>めんてなんす</shift>の <line>
+//<glitch1>げ）<glitch6>でげがこのロボットは　メンテナンスの <line>
 //必要がありませんよ。<wait>
 //<end-byte>
 //
-//<glitch1>げび<glitch6>でぐが<shift>めんてなんす</shift>する <line>
-//robotを選んでください。
+//<glitch1>げび<glitch6>でぐがメンテナンスする <line>
+//ロボットを選んでください。
 //<end-byte>
 //
-//<glitch1>げび<glitch6>でぐが<shift>ぷろぐらむ</shift>する <line>
-//robotを選んでください。
+//<glitch1>げび<glitch6>でぐがプログラムする <line>
+//ロボットを選んでください。
 //<end-byte>
 //
-//<glitch1>ぐべ<glitch6>どぎが<shift>」「</shift>どちらを<shift>ぷろぐらむ</shift>しますか？
+//<glitch1>ぐべ<glitch6>どぎが←→どちらをプログラムしますか？
 //<end-byte>
 //
-//<glitch1>ぐび<glitch6>どぐが<shift>ぽいんと</shift>をふりわけてください <line>
-//<shift>「き0</shift>でふえて　<shift>」き0</shift>でへります。
+//<glitch1>ぐび<glitch6>どぐがポイントをふりわけてください <line>
+//→キーでふえて　←キーでへります。
 //<end-byte>
 //
 //<glitch1>げぷ<glitch6>でぎが<wipe>どの技をかえますか？
 //<end-byte>
 //
-//<wipe>R・L・<glitch20>かが<shift>ぼたん</shift>で設定してください
+//<wipe>R・L・<glitch20>かがボタンで設定してください
 //<end-byte>
 //
 //<wipe>この技をとうろくしますか？
@@ -288,7 +288,7 @@
 //<end-byte>
 //
 //<text-hasten><glitch1>ぞづ<glitch6>ずげぐ　冒険をはじめる <line>
-//　きろくの<shift>こぴ0</shift> <line>
+//　きろくのコピー <line>
 //　きろくを消す
 //<end-byte>
 //
@@ -296,7 +296,7 @@
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　きろくの<shift>こぴ0</shift> <line>
+//<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　きろくのコピー <line>
 // <line>
 //　　　　　　　　　　　　 <line>
 //　　　　　　　　　　　　 <line>
@@ -305,20 +305,20 @@
 //　　　　　　　　　　　　 <line>
 //　　　　　　　　　　　　 <line>
 // <line>
-//どれを<shift>こぴ0</shift>しますか？　 <line>
+//どれをコピーしますか？　 <line>
 //　　　　　　　　　　　　
 //<end-byte>
 //
-//<text-hasten><glitch1>ぜびどこへ<shift>こぴ0</shift>しますか？　 <line>
+//<text-hasten><glitch1>ぜびどこへコピーしますか？　 <line>
 //　　　　　　　　　　　　
 //<end-byte>
 //
 //<text-hasten><glitch1>ぜび　やめておく　　　　　　 <line>
-//　<shift>こぴ0</shift>する　　　　　　
+//　コピーする　　　　　　
 //<end-byte>
 //
-//<text-hasten><glitch1>ぜび<shift>で0た</shift>が　ありません <line>
-//<shift>こぴ0</shift>できません　　　　
+//<text-hasten><glitch1>ぜびデータが　ありません <line>
+//コピーできません　　　　
 //<dialog-end1>
 //
 //<text-hasten><glitch1>ぜげ<glitch6>だぢ<empty>　　きろくを消す<glitch1>ぜびどれを消しますか？　　　 <line>
@@ -329,7 +329,7 @@
 //　消します　　　　　　　
 //<end-byte>
 //
-//<glitch7><glitch1>だぐ<glitch6>ずぎぐ<text-speed=><$01>　<shift>びゅ0</shift>・<shift>も0ど</shift>　
+//<glitch7><glitch1>だぐ<glitch6>ずぎぐ<text-speed=><$01>　ビュー・モード　
 //<end-byte>
 //
 //<glitch7>
@@ -356,7 +356,7 @@
 //
 //<display-top1>
 //　<name>は <line>
-//<highlight-yellow>　<glitch5>ご<glitch27>ざ<shift>とろん</shift></highlight>を　見つけた！
+//<highlight-yellow>　<glitch5>ご<glitch27>ざトロンとろん</shift></highlight>を　見つけた！
 //<end-byte>
 //
 //
@@ -392,8 +392,8 @@
 //
 //
 //<display-top1>
-//　<name>は　<highlight-yellow><glitch17>ぎご<glitch27>ざ<shift>めが</shift> <line>
-//</highlight>　の<shift>で0た</shift>を集めた！
+//　<name>は　<highlight-yellow><glitch17>ぎご<glitch27>ざメガ <line>
+//</highlight>　のデータを集めた！
 //<dialog-end1>
 //
 //
@@ -423,17 +423,17 @@
 //そこには　なにもない
 //<end-byte>
 //
-//laboratoryのNagisaさんと　通信できる <line>
+//研究所のナギサさんと　通信できる <line>
 //しかし　電波状態が悪いと <line>
 //通信できない
 //<end-byte>
 //
-//使うと　大きな音が出る<shift>ほ0ん</shift> <line>
+//使うと　大きな音が出るホーン <line>
 //人をおどかしたり　注意をひいたり <line>
 //することができる
 //<end-byte>
 //
-//もぐら型の<shift>どりる</shift> <line>
+//もぐら型のドリル <line>
 //やわらかい岩やかべが <line>
 //これで　ほることができる
 //<end-byte>
@@ -443,34 +443,34 @@
 //効果が消えると　なくなってしまう
 //<end-byte>
 //
-//これを　使うと　<shift>ねずみ</shift>に変身して <line>
+//これを　使うと　ネズミに変身して <line>
 //<shift>ねずみ穴</shift>を　通ることができたり <line>
-//<shift>ねずみ</shift>と　話すことができる
+//ネズミと　話すことができる
 //<end-byte>
 //
 //これを裝備しておくと <line>
-//敵の<shift>わな</shift>や　かくし<shift>とびら</shift>など <line>
+//敵のワナや　かくしトビラなど <line>
 //ふだん　見えないものが見える
 //<end-byte>
 //
-//<shift>かぎ</shift>のかかった<shift>どあ</shift>を開ける<shift>かぎ</shift> <line>
+//カギのかかったドアを開けるカギ <line>
 //使うと　なくなってしまう
 //<end-byte>
 //
 //家事全般・日曜大工などをこなす <line>
-//robot <line>
+//ロボット <line>
 //困っている人に　貸してあげよう
 //<end-byte>
 //
 //くらやみをてらすことのできる <line>
-//<shift>らいと</shift>
+//ライト
 //<end-byte>
 //
 //森で手に入れた　花のたね <line>
 //その使い道は　不明
 //<end-byte>
 //
-//Curlのおとうさんがくれた <line>
+//カールのおとうさんがくれた <line>
 //飛行機で　歩いていけないような <line>
 //土地へ　移動することができる
 //<end-byte>
@@ -479,8 +479,8 @@
 //<shift>しょこら星</shift>へと　移動できる
 //<end-byte>
 //
-//<glitch20>がか<shift>ぼたん</shift>で使用すると <line>
-//<shift>わ0るどまっぷ</shift>へ<shift>わ0ぷ</shift>できる <line>
+//<glitch20>がかボタンで使用すると <line>
+//ワールドマップへワープできる <line>
 //ただし　使えないこともある
 //<end-byte>
 //
@@ -488,51 +488,51 @@
 //動物と　話ができるようになる
 //<end-byte>
 //
-//裝備すると　<shift>こんぴゅ0た0</shift>の <line>
+//裝備すると　コンピューターの <line>
 //中に入れるようになるという <line>
-//<shift>さいば0</shift>なしろもの
+//サイバーなしろもの
 //<end-byte>
 //
 //<shift>はっか0宇宙要塞</shift>の <line>
-//<shift>えんじん</shift>を止める　赤い<shift>ぽっと</shift>
+//エンジンを止める　赤いポット
 //<end-byte>
 //
 //<shift>はっか0宇宙要塞</shift>の <line>
-//<shift>えんじん</shift>を止める　青い<shift>ぽっと</shift>
+//エンジンを止める　青いポット
 //<end-byte>
 //
 //<shift>はっか0宇宙要塞</shift>の <line>
-//<shift>えんじん</shift>を止める　黄色い<shift>ぽっと</shift>
+//エンジンを止める　黄色いポット
 //<end-byte>
 //
-//<shift>ぺぷし</shift>Ojisanごじまんの　宝石
+//ペプシおじさんごじまんの　宝石
 //<end-byte>
 //
-//Curlのおとうさんから <line>
-//Curlへの手紙
+//カールのおとうさんから <line>
+//カールへの手紙
 //<end-byte>
 //
-//Curlがどうくつで見つけた <line>
+//カールがどうくつで見つけた <line>
 //石版
 //<end-byte>
 //
-//<shift>はっか0</shift>の幹部しか入れない場所へ <line>
-//入ることのできる<shift>ばっち</shift>
+//ハッカーの幹部しか入れない場所へ <line>
+//入ることのできるバッチ
 //<end-byte>
 //
-//<shift>はっか0</shift>の<shift>めんば0</shift>のしるしの <line>
-//<shift>ばっち</shift>
+//ハッカーのメンバーのしるしの <line>
+//バッチ
 //<end-byte>
 //
-//不思議な光を　<shift>きらきら</shift>と放つ <line>
+//不思議な光を　キラキラと放つ <line>
 //不思議な石　その1
 //<end-byte>
 //
-//不思議な光を　<shift>きらきら</shift>と放つ <line>
+//不思議な光を　キラキラと放つ <line>
 //不思議な石　その2
 //<end-byte>
 //
-//不思議な光を　<shift>きらきら</shift>と放つ <line>
+//不思議な光を　キラキラと放つ <line>
 //不思議な石　その3
 //<end-byte>
 //
@@ -547,37 +547,37 @@
 //さびていて　このままでは使えない
 //<end-byte>
 //
-//Napoleonという名のrobotの <line>
-//<shift>すくらっぷ</shift>
+//ナポレオンという名のロボットの <line>
+//スクラップ
 //<end-byte>
 //
 //<shift>ぽりんき0家</shift>のはいきょでもらった <line>
-//<shift>すくらっぷ</shift>
+//スクラップ
 //<end-byte>
 //
-//発明<shift>ましん</shift>で　いろんなものと <line>
-//合成できる<shift>すくらっぷ</shift>
+//発明マシンで　いろんなものと <line>
+//合成できるスクラップ
 //<end-byte>
 //
 //戦闘中使えば　戦闘からにげられ <line>
-//<shift>ふぃ0るど</shift>では　敵の動きを <line>
-//しばらく止められる<shift>あいてむ</shift>
+//フィールドでは　敵の動きを <line>
+//しばらく止められるアイテム
 //<end-byte>
 //
-//robotのENERGYを <line>
+//ロボットのENERGYを <line>
 //回復するもの
 //<end-byte>
 //
-//<shift>さび</shift>てしまって　ENERGYが <line>
+//サビてしまって　ENERGYが <line>
 //どんどん減っている <line>
-//robotっと</shift>を元にもどすもの
+//ロボットっと</shift>を元にもどすもの
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>になってしまった <line>
-//robotを　元にもどすもの
+//スクラップになってしまった <line>
+//ロボットを　元にもどすもの
 //<end-byte>
 //
-//戦闘時に　<name><shift>こまんど</shift>で <line>
+//戦闘時に　<name>コマンドで <line>
 //使用する　ばくだん
 //<end-byte>
 //
@@ -586,12 +586,12 @@
 //おどろくべき発明品
 //<end-byte>
 //
-//<shift>ぼく</shift>は　<shift>ごみ箱</shift>くんです <line>
-//捨てたい<shift>あいてむ</shift>をえらんで <line>
-//2<shift>こ目</shift>の<shift>か0そる</shift>をあわせてください
+//ボクは　<shift>ごみ箱</shift>くんです <line>
+//捨てたいアイテムをえらんで <line>
+//2<shift>こ目</shift>のカーソルをあわせてください
 //<end-byte>
 //
-//戦闘中の　robotいれかえ順番を <line>
+//戦闘中の　ロボットいれかえ順番を <line>
 //設定します
 //<end-byte>
 //
@@ -605,163 +605,163 @@
 //そうびなし
 //<end-byte>
 //
-//<shift>めたるそ0ど</shift>
+//メタルソード
 //<end-byte>
 //
-//<shift>ばとるそ0ど</shift>
+//バトルソード
 //<end-byte>
 //
-//<shift>ふるめたるそ0ど</shift>
+//フルメタルソードど</shift>
 //<end-byte>
 //
-//<shift>さんだ0そ0ど</shift>
+//サンダーソード
 //<end-byte>
 //
-//<shift>めたるあくす</shift>
+//メタルアクス
 //<end-byte>
 //
-//<shift>ばとるあくす</shift>
+//バトルアクス
 //<end-byte>
 //
-//<shift>ふるめたるあくす</shift>
+//フルメタルアクス
 //<end-byte>
 //
-//<shift>そにっくぶれいど</shift>
+//ソニックブレイド
 //<end-byte>
 //
-//<shift>ぷらずまぶれいど</shift>
+//プラズマブレイド
 //<end-byte>
 //
-//<shift>れ0ざ0ぶれいど</shift>
+//レーザーブレイド
 //<end-byte>
 //
-//<shift>そうるぶれいど</shift>
+//ソウルブレイド
 //<end-byte>
 //
-//<shift>どくどくはんま0</shift>
+//ドクドクハンマー
 //<end-byte>
 //
-//<shift>すっぽんはんま0</shift>
+//スッポンハンマー
 //<end-byte>
 //
-//<shift>めがとんはんま0</shift>
+//メガトンハンマー
 //<end-byte>
 //
-//<shift>へび0すと0ん</shift>
+//へビーストーン
 //<end-byte>
 //
-//<shift>ぱにっくすと0ん</shift>
+//パニックストーン
 //<end-byte>
 //
-//<shift>ぶれいくすと0ん</shift>
+//ブレイクストーン
 //<end-byte>
 //
-//<shift>ぱんぱんぱんち</shift>
+//パンパンパンチ
 //<end-byte>
 //
-//<shift>す0ぱ0ぱんち</shift>
+//スーパーパンチ
 //<end-byte>
 //
-//ひっさつ<shift>ぱんち</shift>
+//ひっさつパンチ
 //<end-byte>
 //
-//<shift>ろけっとぶろ0</shift>
+//ロケットブロー
 //<end-byte>
 //
-//<shift>ろ0りんぐぶろ0</shift>
+//ローリングブロー
 //<end-byte>
 //
-//<shift>まっはぶろ0</shift>
+//マッハブロー
 //<end-byte>
 //
-//<shift>はんどしょっと</shift>
+//ハンドショット
 //<end-byte>
 //
-//<shift>ないすしょっと</shift>
+//ナイスショット
 //<end-byte>
 //
-//<shift>ばず0か</shift>
+//バズーカ
 //<end-byte>
 //
-//<shift>ついすとれ0ざ0</shift>
+//ツイストレーザー
 //<end-byte>
 //
-//<shift>ちゃ0じれ0ざ0</shift>
+//チャージレーザー0</shift>
 //<end-byte>
 //
-//はどう<shift>れ0ざ0</shift>
+//はどうレーザー
 //<end-byte>
 //
-//<shift>すとれ0とぼむ</shift>
+//ストレートボム
 //<end-byte>
 //
-//<shift>なぱ0むぼむ</shift>
+//ナパームボム
 //<end-byte>
 //
-//<shift>あいすぼむ</shift>
+//アイスボム
 //<end-byte>
 //
-//かくさん<shift>ぼむ</shift>
+//かくさんボム
 //<end-byte>
 //
-//<shift>へび0し0るど</shift>
+//へビーシールド
 //<end-byte>
 //
-//<shift>さび0ずし0るど</shift>
+//サビーズシールド
 //<end-byte>
 //
-//<shift>さいこし0るど</shift>
+//サイコシールド
 //<end-byte>
 //
-//<shift>けみかるし0るど</shift>
+//ケミカルシールド
 //<end-byte>
 //
-//<shift>はいぱ0し0るど</shift>
+//ハイパーシールド
 //<end-byte>
 //
-//<shift>ぱっく</shift>ざんがい
+//パックざんがい
 //<end-byte>
 //
-//<shift>ぱわ0ぱっく</shift>
+//パワーパック
 //<end-byte>
 //
-//<shift>し0るどぱっく</shift>
+//シールドパック
 //<end-byte>
 //
-//<shift>た0ぼぱっく</shift>
+//ターボパック
 //<end-byte>
 //
-//<shift>そ0ら0ぱっく</shift>
+//ソーラーパック
 //<end-byte>
 //
-//<shift>くいっくぱっく</shift>
+//クイックパック
 //<end-byte>
 //
-//<shift>ぶ0つ</shift>
+//ブーツ
 //<end-byte>
 //
-//<shift>ぱわ0ぶ0つ</shift>
+//パワーブーツ
 //<end-byte>
 //
-//<shift>すわんぷぶ0つ</shift>
+//スワンプブーツ
 //<end-byte>
 //
-//4WD<shift>ぶ0つ</shift>
+//4WDブーツ
 //<end-byte>
 //
-//<shift>たんくぶ0つ</shift>
+//タンクブーツ
 //<end-byte>
 //
-//<shift>ほば0ぶ0つ</shift>
+//ホバーブーツ
 //<end-byte>
 //
-//<shift>とらんし0ば0</shift>
+//トランシーバー
 //<end-byte>
 //
-//びっくり<shift>ほ0ん</shift>
+//びっくりホーン
 //<end-byte>
 //
-//もぐら<shift>どりる</shift>
+//もぐらドリル
 //<end-byte>
 //
 //きえるんです
@@ -770,16 +770,16 @@
 //かわるんです
 //<end-byte>
 //
-//<shift>かめれおんぐらす</shift>
+//カメレオングラスかめれおんぐらす</shift>
 //<end-byte>
 //
-//<shift>かぎ</shift>
+//カギ
 //<end-byte>
 //
-//おてつだい<shift>ろぼ</shift>
+//おてつだいロボ
 //<end-byte>
 //
-//<shift>らいと</shift>
+//ライト
 //<end-byte>
 //
 //花のたね
@@ -791,22 +791,22 @@
 //うちゅうせん
 //<end-byte>
 //
-//<shift>わ0ぷしすてむ</shift>
+//ワープシステム
 //<end-byte>
 //
 //だべっこどうぶつ
 //<end-byte>
 //
-//<shift>さいば0じゃっく</shift>
+//サイバージャック
 //<end-byte>
 //
-//赤<shift>ぽっと</shift>
+//赤ポット
 //<end-byte>
 //
-//青<shift>ぽっと</shift>
+//青ポット
 //<end-byte>
 //
-//黄<shift>ぽっと</shift>
+//黄ポット
 //<end-byte>
 //
 //ほうせき
@@ -818,10 +818,10 @@
 //せきばん
 //<end-byte>
 //
-//かんぶ<shift>ばっち</shift>
+//かんぶバッチ
 //<end-byte>
 //
-//<shift>はっか0ばっち</shift>
+//ハッカーバッチ
 //<end-byte>
 //
 //石1
@@ -839,61 +839,61 @@
 //玉
 //<end-byte>
 //
-//さびた<shift>どりる</shift>
+//さびたドリル
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>A
+//スクラップA
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>B
+//スクラップB
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>1
+//スクラップ1
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>2
+//スクラップ2
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>3
+//スクラップ3
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>4
+//スクラップ4
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>5
+//スクラップ5
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>6
+//スクラップ6
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>7
+//スクラップ7
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>8
+//スクラップ8
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>9
+//スクラップ9
 //<end-byte>
 //
-//<shift>すくらっぷ</shift>10
+//スクラップ10
 //<end-byte>
 //
 //けむりだま
 //<end-byte>
 //
-//すぐ<shift>なお0る</shift>
+//すぐナオール
 //<end-byte>
 //
-//さび<shift>とれ0る</shift>
+//さびトレール
 //<end-byte>
 //
-//しゅうり<shift>きっと</shift>
+//しゅうりキット
 //<end-byte>
 //
-//<shift>す0ぱ0ぼむ</shift>
+//スーパーボム
 //<end-byte>
 //
-//おてんき<shift>まま</shift>さん
+//おてんきママさん
 //<end-byte>
 //
 //<glitch6><glitch24><glitch7><glitch24> <line>

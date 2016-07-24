@@ -24,19 +24,19 @@
 //　　　開発室
 //<end-byte>
 //
-//　<shift>ぺぷし</shift>さんの家
+//　ペプシさんの家
 //<end-byte>
 //
-//　<shift>こっか0</shift>さんの家
+//　コッカーさんの家
 //<end-byte>
 //
-//　<shift>すてら</shift>おばさんの家
+//　ステラおばさんの家
 //<end-byte>
 //
 //　　　　警察
 //<end-byte>
 //
-//　　Curlの家
+//　　カールの家
 //<end-byte>
 //
 //　　　道具屋
@@ -138,13 +138,13 @@
 //　　　　火山
 //<end-byte>
 //
-//　<shift>ばいおlaboratory入口</shift>
+//　<shift>ばいお研究所入口</shift>
 //<end-byte>
 //
-//　　　<shift>ばいおlaboratory究所</shift>
+//　　　<shift>ばいお研究所</shift>
 //<end-byte>
 //
-//　　　Lab Chief室
+//　　　研究所長室
 //<end-byte>
 //
 //　　　調理室
@@ -156,13 +156,13 @@
 //　　研究開発室
 //<end-byte>
 //
-//　　秘密laboratory
+//　　秘密研究所
 //<end-byte>
 //
 //　　<shift>ぺっぱ0私室</shift>
 //<end-byte>
 //
-//　　　<shift>といれ</shift>
+//　　　トイレ
 //<end-byte>
 //
 //　　火山どうくつ
@@ -183,13 +183,13 @@
 //　　　下水路
 //<end-byte>
 //
-//　　Mayor舍受付
+//　　町長舍受付
 //<end-byte>
 //
-//　　　Mayor室
+//　　　町長室
 //<end-byte>
 //
-//　　　Mayor舍
+//　　　町長舍
 //<end-byte>
 //
 //　　　雪山港
@@ -216,7 +216,7 @@
 //　　　作戦室
 //<end-byte>
 //
-//　Dr. G実驗室
+//　ドクターG実驗室
 //<end-byte>
 //
 //　　水路操作室
@@ -234,10 +234,10 @@
 //　　<shift>れ0ざ0室</shift>
 //<end-byte>
 //
-//<shift>まざ0こんぴゅ0た0</shift>
+//マザーコンピューター
 //<end-byte>
 //
-//　　Pollonの家
+//　　ポロンの家
 //<end-byte>
 //
 //　はくしゃくの館
@@ -291,13 +291,13 @@
 //　　　　倉庫
 //<end-byte>
 //
-//　　Gateauの部屋
+//　　ガトーの部屋
 //<end-byte>
 //
 //　　<shift>ごみ処理場</shift>
 //<end-byte>
 //
-//　<shift>えんじんる0む</shift>
+//　エンジンルーム
 //<end-byte>
 //
 //　宇宙要塞中心部
