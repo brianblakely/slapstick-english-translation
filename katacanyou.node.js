@@ -50,9 +50,9 @@ katacanyou()
 
       err=> {
         if(err) {
-          console.log(err);
+          console.error(err);
         }
       }
     )
   )
-  .catch(err=>console.log(err));
+  .catch(err=>console.error(err));
