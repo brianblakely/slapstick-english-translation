@@ -1,7 +1,8 @@
 const fs = require(`fs`),
       jconv = require(`jconv`),
       Text2Hex = require(`./text2hex.node.js`),
-      kataLookup = new Text2Hex(`./dialog-kata.tbl`);
+      kataLookup = new Text2Hex(`./dialog-kata.tbl`),
+      kanjiLookup = new Text2Hex(`./dialog.tbl`);
 
 const katacanyou = (file=`./roms/Slap Stick (Japan).sfc`)=> new Promise((resolve, reject)=> {
   const output = new Set();
@@ -12,6 +13,10 @@ const katacanyou = (file=`./roms/Slap Stick (Japan).sfc`)=> new Promise((resolve
       return;
     }
 
+    console.log(data.toString(`hex`).toUpperCase()
+      .match(/.{1,2}/g).join(` `).substr(0,1000));
+      return;
+
     const hexen = data.toString(`hex`).toUpperCase()
       .match(/.{1,2}/g).join(` `)
       .match(/D4 (.{1,80}?) D5/g)
@@ -19,21 +24,65 @@ const katacanyou = (file=`./roms/Slap Stick (Japan).sfc`)=> new Promise((resolve
 
     const phrases = [];
     for(const hex of hexen) {
-      if(hex.includes(`80`)) {
-        continue;
-      }
+      let phrase;
 
-      const phrase = kataLookup.getText(hex.replace(/ /g, ``));
+      // If the phrase includes kanji, process it letter by letter.
+      if(hex.includes(`80`) || hex.includes(`81`) || hex.includes(`82`)) {
+        phrase = new Promise((resolve, reject)=> {
+          const hexLetters = hex.split(` `),
+                len = hexLetters.length,
+                letters = [];
+
+          for(let i = 0; i < len; ++i) {
+            let letter = hexLetters[i];
+
+            if(letter === `80` || letter === `81` || letter === `82`) {
+              letter += hexLetters[++i];
+              letters.push(kanjiLookup.getText(letter, 4));
+            } else {
+              letters.push(kataLookup.getText(letter));
+            }
+          }
+
+          Promise.all(letters).then(results=> {
+            let isValid = true;
+
+            const output = results.reduce((prev, next)=> {
+              if(!isValid || !next.output) {
+                isValid = false;
+                return `false`;
+              }
+
+              return prev.output + next.output;
+            });
+
+            // Return as a string if it isn't valid, or an object if it is.
+            if(!isValid) {
+              resolve(output);
+            } else {
+              resolve({output});
+            }
+          });
+        });
+      }
+      // If the phrase is entirely Katakana, process it all together.
+      else {
+        phrase = kataLookup.getText(hex.replace(/ /g, ``));
+      }
 
       phrases.push(phrase);
     }
 
     Promise.all(phrases).then(results=> {
-      for(const result of results) {
-        result.output
-          && output.add(`D4${result.input}D5=${result.output}`);
+      try {
+        for(const result of results) {
+          result.output
+            && output.add(`D4${result.input}D5=${result.output}`);
+        }
+        resolve(output);
+      } catch(e) {
+        console.error(e);
       }
-      resolve(output);
     });
   });
 });
