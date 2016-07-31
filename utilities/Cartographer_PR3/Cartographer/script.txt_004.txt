@@ -15,7 +15,7 @@
 //　　　大宇宙
 //<end-byte>
 //
-//　　　<shift>ろここ町</shift>
+//　　　ロココ町
 //<end-byte>
 //
 //　<name>の家
@@ -48,10 +48,10 @@
 //　おとうさんの家
 //<end-byte>
 //
-//　　<shift>ろここ町</shift>の港
+//　　ロココ町の港
 //<end-byte>
 //
-//　<shift>ふらぼの博士</shift>の家
+//　フラボノ博士の家
 //<end-byte>
 //
 //　　漁師さんの家
@@ -69,13 +69,13 @@
 //　　　どうくつ
 //<end-byte>
 //
-//　<shift>はっか0基地入口</shift>
+//　ハッカー基地入口
 //<end-byte>
 //
 //　　さいくつ所
 //<end-byte>
 //
-//　<shift>とろっこ停車場</shift>
+//　トロッコ停車場
 //<end-byte>
 //
 //　　　司令室
@@ -138,10 +138,10 @@
 //　　　　火山
 //<end-byte>
 //
-//　<shift>ばいお研究所入口</shift>
+//　バイオ研究所入口
 //<end-byte>
 //
-//　　　<shift>ばいお研究所</shift>
+//　　　バイオ研究所究所</shift>
 //<end-byte>
 //
 //　　　研究所長室
@@ -159,7 +159,7 @@
 //　　秘密研究所
 //<end-byte>
 //
-//　　<shift>ぺっぱ0私室</shift>
+//　　ペッパー私室
 //<end-byte>
 //
 //　　　トイレ
@@ -201,16 +201,16 @@
 //<shift>はっか0航空基地入口</shift>
 //<end-byte>
 //
-//　<shift>はっか0航空基地</shift>
+//　ハッカー航空基地
 //<end-byte>
 //
 //　　　設計室
 //<end-byte>
 //
-//　<shift>はっか0要塞入口</shift>
+//　ハッカー要塞入口か0要塞入口</shift>
 //<end-byte>
 //
-//　　<shift>はっか0要塞</shift>
+//　　ハッカー要塞
 //<end-byte>
 //
 //　　　作戦室
@@ -231,7 +231,7 @@
 //　　　司令室
 //<end-byte>
 //
-//　　<shift>れ0ざ0室</shift>
+//　　レーザー室
 //<end-byte>
 //
 //マザーコンピューター
@@ -249,31 +249,31 @@
 //　楽しい日本語教室　
 //<end-byte>
 //
-//　　　<shift>きらら星</shift>
+//　　　キララ星
 //<end-byte>
 //
-//　　<shift>しょこら星</shift>
+//　　ショコラ星
 //<end-byte>
 //
-//<shift>しょこら星</shift>ひなん所
+//ショコラ星ひなん所
 //<end-byte>
 //
-//　<shift>しょこら星研究室</shift>
+//　ショコラ星研究室
 //<end-byte>
 //
-//　<shift>しょこら星司令室</shift>
+//　ショコラ星司令室
 //<end-byte>
 //
-//　<shift>しょこら星居住区</shift>
+//　ショコラ星居住区
 //<end-byte>
 //
-//　　<shift>めたるあいあん号</shift>
+//　　メタルアイアン号あいあん号</shift>
 //<end-byte>
 //
-//　　<shift>しょこら星宇宙船</shift>
+//　　ショコラ星宇宙船
 //<end-byte>
 //
-//　<shift>はっか0宇宙要塞</shift>
+//　ハッカー宇宙要塞
 //<end-byte>
 //
 //　　　貨物室
@@ -282,7 +282,7 @@
 //　　兵士休息所
 //<end-byte>
 //
-//<shift>えれべ0た0動力室</shift>
+//エレベーター動力室
 //<end-byte>
 //
 //　　　ろうや
@@ -294,7 +294,7 @@
 //　　ガトーの部屋
 //<end-byte>
 //
-//　　<shift>ごみ処理場</shift>
+//　　ゴミ処理場
 //<end-byte>
 //
 //　エンジンルーム

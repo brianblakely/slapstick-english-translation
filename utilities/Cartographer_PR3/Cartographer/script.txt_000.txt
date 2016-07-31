@@ -42,10 +42,10 @@
 //<wipe><glitch25><wipe>スーパーボムをひろった
 //<end-byte>
 //
-//ボーナスデータを0.5<shift>めが集</shift>めた
+//ボーナスデータを0.5メガ集めた
 //<end-byte>
 //
-//ボーナスデータを1.0<shift>めが集</shift>めた
+//ボーナスデータを1.0メガ集めた
 //<end-byte>
 //
 //エネルギーが回復した
@@ -83,7 +83,7 @@
 //
 //<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01>ロボットに使うアイテムを <line>
 //選んでください <line>
-//<glitch20>がかボタンで<shift>あいてむ説明</shift>です
+//<glitch20>がかボタンでアイテム説明です
 //<end-byte>
 //
 //<wipe>どのロボットに使いますか？
@@ -104,7 +104,7 @@
 //
 //<glitch1>げ）<glitch6>でげが<wipe><text-speed=><$01><glitch3>ご<glitch20>名ボタン</highlight>：裝備（ならびかえ） <line>
 //<glitch3>ご<glitch20>かがボタン</highlight>：ならびかえ <line>
-//<glitch3>ご<glitch20>がかボタン</highlight>：<shift>あいてむ説明</shift>
+//<glitch3>ご<glitch20>がかボタン</highlight>：アイテム説明
 //<end-byte>
 //
 //<wipe><glitch4>。<glitch16><$9C>ぢ<wait>
@@ -172,7 +172,7 @@
 //<end-byte>
 //
 //<wipe><glitch4>い<glitch20>回を作るには <line>
-//<glitch5>ご化<shift>とろん必要</shift>です。 <line>
+//<glitch5>ご化トロン必要です。 <line>
 //　作る　　　　　　やめておく
 //<end-byte>
 //
@@ -188,11 +188,11 @@
 //<end-byte>
 //
 //<glitch4><shift><glitch39><shift><glitch3>ごL・Rボタン</highlight>：ロボットアイテム <line>
-//<glitch3>ご<glitch20>がかボタン</highlight>　　：<shift>あいてむ説明</shift>
+//<glitch3>ご<glitch20>がかボタン</highlight>　　：アイテム説明
 //<end-byte>
 //
 //<glitch3>ごL・Rボタン</highlight>：<name>アイテム <line>
-//<glitch3>ご<glitch20>がかボタン</highlight>　　：<shift>あいてむ説明</shift>
+//<glitch3>ご<glitch20>がかボタン</highlight>　　：アイテム説明
 //<end-byte>
 //
 //<glitch1>げ）<glitch6>でげが<wipe><glitch4>い<glitch20><$9C>ぢ<glitch4><$B3><glitch24><$9E>ぢは <line>
@@ -235,7 +235,7 @@
 //<end-byte>
 //
 //<glitch1>げ」<glitch6>でごがロボットを作るには <line>
-//<glitch5>ご化<shift>とろん必要</shift>じゃぞ。 <line>
+//<glitch5>ご化トロン必要じゃぞ。 <line>
 //　作る　　　　　　やめておく
 //<end-byte>
 //
@@ -444,7 +444,7 @@
 //<end-byte>
 //
 //これを　使うと　ネズミに変身して <line>
-//<shift>ねずみ穴</shift>を　通ることができたり <line>
+//ネズミ穴を　通ることができたり <line>
 //ネズミと　話すことができる
 //<end-byte>
 //
@@ -476,7 +476,7 @@
 //<end-byte>
 //
 //これに秉ると　はるか宇宙のかなた <line>
-//<shift>しょこら星</shift>へと　移動できる
+//ショコラ星へと　移動できる
 //<end-byte>
 //
 //<glitch20>がかボタンで使用すると <line>
@@ -493,15 +493,15 @@
 //サイバーなしろもの
 //<end-byte>
 //
-//<shift>はっか0宇宙要塞</shift>の <line>
+//ハッカー宇宙要塞の <line>
 //エンジンを止める　赤いポット
 //<end-byte>
 //
-//<shift>はっか0宇宙要塞</shift>の <line>
+//ハッカー宇宙要塞の <line>
 //エンジンを止める　青いポット
 //<end-byte>
 //
-//<shift>はっか0宇宙要塞</shift>の <line>
+//ハッカー宇宙要塞の <line>
 //エンジンを止める　黄色いポット
 //<end-byte>
 //
@@ -551,7 +551,7 @@
 //スクラップ
 //<end-byte>
 //
-//<shift>ぽりんき0家</shift>のはいきょでもらった <line>
+//ポリンキー家のはいきょでもらった <line>
 //スクラップ
 //<end-byte>
 //
@@ -586,9 +586,9 @@
 //おどろくべき発明品
 //<end-byte>
 //
-//ボクは　<shift>ごみ箱</shift>くんです <line>
+//ボクは　ゴミ箱くんです <line>
 //捨てたいアイテムをえらんで <line>
-//2<shift>こ目</shift>のカーソルをあわせてください
+//2コ目のカーソルをあわせてください
 //<end-byte>
 //
 //戦闘中の　ロボットいれかえ順番を <line>
@@ -605,7 +605,7 @@
 //そうびなし
 //<end-byte>
 //
-//メタルソード
+//<shift>めたるそ0ど</shift>
 //<end-byte>
 //
 //バトルソード

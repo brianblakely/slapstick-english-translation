@@ -59,7 +59,7 @@ class Text2Hex {
           input: str,
           output: result.join(``)
         });
-      });
+      }).catch(e=> console.error(e));
     });
   }
 
@@ -85,7 +85,7 @@ class Text2Hex {
           input: str,
           output: result.join(``)
         });
-      });
+      }).catch(e=> console.error(e));
     });
   }
 }
@@ -111,9 +111,9 @@ if(require.main === module) {
             : ` `;
 
   if(!tbl || !str) {
-    console.log(`Usage: node text2hex.node.js <table> <string> [-cwr]`);
+    console.error(`Usage: node text2hex.node.js <table> <string> [-cwr]`);
 
-    return false;
+    process.exit(1);
   }
 
   const text2hex = new Text2Hex(tbl);
@@ -123,6 +123,6 @@ if(require.main === module) {
     : text2hex.getText(str, lim);
 
   method
-    .then(result=>console.log(result.output || result))
-    .catch(err=>console.log(err));
+    .then(result=>console.info(result.output || result))
+    .catch(err=>console.error(err));
 }

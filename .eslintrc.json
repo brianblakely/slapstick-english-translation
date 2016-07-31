@@ -40,7 +40,7 @@
     "no-unused-vars": "off",
     "quotes": ["error", "backtick"],
     "no-console": ["warn", {
-      "allow": ["warn", "error"]
+      "allow": ["info", "warn", "error"]
     }],
     "no-var": "error",
     "object-shorthand": "error",

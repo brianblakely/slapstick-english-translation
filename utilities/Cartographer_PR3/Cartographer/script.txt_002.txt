@@ -10124,7 +10124,7 @@
 //本当に・・・よかったわ。<pause=><$B4><glitch19>ががせががぐ<glitch8><$AD><$BE>ぞ<pause=><$03>が<glitch32>ぎぅぐはごぎぱぐぬぐ<$97>ぐね々ぐ合ぐ<$97>ぐぽ<$A3><glitch21><glitch30><$BE>ぞつ<$AA><glitch19>ぐはごぎ、ぐぬぐ<$97>ぐね々ぐ<wipe>がぎぐ<$B7>「がぐはごぎぷぐぬぐ<$97>ぐね々ぐ前ぐ<$97>ぐぽG<glitch22><glitch30><$BE>ぞぐはごぎ。ぐぬぐ<$97>ぐね々ぐ<$B2>ぅ<wipe><text-speed=><$06><glitch12>が
 //MINT:やったじゃないの！<name>！ <line>
 //トップニュースになるわ！<pause=><$64><wipe><text-speed=><$06><glitch12>が見出しは　こうよ！ <line>
-//<highlight-yellow><shift>ろここ町</shift>の少年　世界をすくう <line>
+//<highlight-yellow>ロココ町の少年　世界をすくう <line>
 //</highlight><pause=><$3C>どう？！いいでしょう！<pause=><$78><wipe><text-speed=><$06><glitch12>が
 //KOTETSU:・・・なんだ　それ <line>
 //<pause=><$3C>お前　本当に記者なの？<pause=><$B4><glitch19><wipe><text-speed=><$06><glitch12>が
@@ -10169,15 +10169,15 @@
 //　生命の　いとなみが <line>
 //　おこなわれていた<glitch19><wipe><text-speed=><$06><glitch12>がその大宇宙の　どこかに <line>
 //極楽星という　小さな星があり <line>
-//<shift>ろここ町</shift>という　町があった・・・
+//ロココ町という　町があった・・・
 //<end-byte>
 //
 //ががよががぐ<$AA>M
 //<dialog-end2>
 //
-//<$8B><$8E><glitch30>どれPぐぃぎ「「<glitch32>「<$90>「<glitch32>「<$90>ぐ<wipe>「がぐんがが<glitch43>ぎぐんぎ？がぎぐぽろ<glitch27>ぐんぎが<null3>ぎぐんぎ<glitch22>がぎぐぽ<$A2><glitch27>ぐ<wipe>　がぐんぎが（ぎぐんぎぜがぎぐぽ<glitch6><glitch27>ぐざ　がB！<glitch36><$87>ぐ<wipe>ぐがぐじぐ<wipe>5がぐぼずがぎがががぐ<glitch8>ぅ<glitch1>ざ）<glitch6>づげ<empty><text-speed=><$06><glitch12>が<shift>ろここ町</shift>は　小さな町ではあるが <line>
+//<$8B><$8E><glitch30>どれPぐぃぎ「「<glitch32>「<$90>「<glitch32>「<$90>ぐ<wipe>「がぐんがが<glitch43>ぎぐんぎ？がぎぐぽろ<glitch27>ぐんぎが<null3>ぎぐんぎ<glitch22>がぎぐぽ<$A2><glitch27>ぐ<wipe>　がぐんぎが（ぎぐんぎぜがぎぐぽ<glitch6><glitch27>ぐざ　がB！<glitch36><$87>ぐ<wipe>ぐがぐじぐ<wipe>5がぐぼずがぎがががぐ<glitch8>ぅ<glitch1>ざ）<glitch6>づげ<empty><text-speed=><$06><glitch12>がロココ町は　小さな町ではあるが <line>
 //それなりに　文明のすすんだ <line>
-//かいてきな　町であった<glitch19><wipe><text-speed=><$06><glitch12>が人々は　<shift>ろここ町</shift>で <line>
+//かいてきな　町であった<glitch19><wipe><text-speed=><$06><glitch12>が人々は　ロココ町で <line>
 //それなりに　幸せにくらしていた<glitch19><wipe><text-speed=><$06><glitch12>がだが　その平和は <line>
 //長くは　続かなかった・・・
 //<end-byte>
@@ -10186,8 +10186,8 @@
 //<dialog-end2>
 //
 //<$8B><$8E><glitch30>どぐ<wipe>「がぐぽは<menu-name>ぐ<wipe><text-speed=><$00>ぐぽ<$91><menu-name>ぐ<glitch8><$AD><$BE>ぞ<wipe>ぎぅぐぼUがぎがががぐ<glitch8>ぅ<$A9>がぜごじ<glitch20>　<glitch15><$A2>ぼが<$A0>こ<$8D>B4砲<glitch42><$A9>ご<$8D><$88>ぜ<$A9><$8F><$8D><$89>ぜ<$A0>ぐが<$8C><$8A>ぜ<glitch2>　ぐ<glitch8><glitch20>　<glitch15><$A2>ぼがBC砲<glitch42><glitch2>　ぅ<glitch1>ざ）<glitch6>づげ<empty><text-speed=><$06><glitch12>がある時　ハッカーとなのる <line>
-//悪の軍団が　<shift>ろここ町</shift>に <line>
-//姿をあらわすようになったのだ<glitch19><wipe><text-speed=><$06><glitch12>が彼らは　<shift>ろここ町</shift>の近辺で <line>
+//悪の軍団が　ロココ町に <line>
+//姿をあらわすようになったのだ<glitch19><wipe><text-speed=><$06><glitch12>が彼らは　ロココ町の近辺で <line>
 //さまざまな　悪行を <line>
 //かさねはじめた・・・
 //<end-byte>
@@ -10216,7 +10216,7 @@
 //
 //<$8B><$8E><glitch30>どぐ<wipe>「がぐぽづ<glitch30>ぐ<wipe><glitch7>がぐぽお<glitch30>ぐ<wipe><$A0>がぐ<glitch8><$AD><$BE>ぞ<wipe>ぎぅ<$A9>TETRON<$85>B<glitch20>　<$A5>B<glitch32>ど<$8D>RA<glitch24>B<glitch2>　ぐ <line>
 //<$89><glitch29><$84>ぐが<glitch20>　<$A9>（<$8D>LA<glitch2>　<glitch30><$BE>ぞB<$A1><glitch33><$87>ぐ<wipe>5が<$A9><empty>が<$85>B<glitch20>　<$A5>B<pause=><$DF><glitch32>ど<$8D>RA<glitch5>B<glitch2>　ぐ <line>
-//<$B6><glitch29><$84>ぐが<glitch15><glitch20>　<$A9><glitch2><$8D>Gざ<$A9>・<$8D>Fざ<glitch2>　<$A2><$99>こ<$A0>がY<$A9>。が　Dざ<glitch42><glitch30><$BE>ぞぐ<glitch8><$AD><$BE>ぞ<pause=><$0B>が<glitch32>ぎぅぐ6B）Nぴ<$A0>ぐ<wipe>んぎぐぼごがぎがががぐ<glitch8>ぅ<glitch1>げび<glitch6>でぐ<empty><text-speed=><$06><glitch12>がそんな<shift>ろここ町</shift>に　発明家の父を持つ <line>
+//<$B6><glitch29><$84>ぐが<glitch15><glitch20>　<$A9><glitch2><$8D>Gざ<$A9>・<$8D>Fざ<glitch2>　<$A2><$99>こ<$A0>がY<$A9>。が　Dざ<glitch42><glitch30><$BE>ぞぐ<glitch8><$AD><$BE>ぞ<pause=><$0B>が<glitch32>ぎぅぐ6B）Nぴ<$A0>ぐ<wipe>んぎぐぼごがぎがががぐ<glitch8>ぅ<glitch1>げび<glitch6>でぐ<empty><text-speed=><$06><glitch12>がそんなロココ町に　発明家の父を持つ <line>
 //少年が　ひっこしてきた<glitch19><wipe><text-speed=><$06><glitch12>が　　　少年の夢は　父のような <line>
 //　　　発明家になることだった
 //<end-byte>
@@ -12590,7 +12590,7 @@
 //「町の近辺に<highlight-yellow>ハッカー</highlight>となのる <line>
 //　あやしい人々が　現れています <line>
 //　ふしんな人物を見かけましたら <line>
-//　通報を！　　　　<shift>ろここ町警察</shift>」
+//　通報を！　　　　ロココ町警察」
 //<dialog-end1>
 //
 //
@@ -12605,7 +12605,7 @@
 //<display-top1>
 //<highlight-yellow>　「町役場からのおしらせ」 <line>
 //　天才発明家　ペッパーさんが <line>
-//　<shift>はっか0対策</shift>のため　来訪！ <line>
+//　ハッカー対策のため　来訪！ <line>
 //　町長と　会談なさる予定です。
 //<dialog-end1>
 //
@@ -12621,7 +12621,7 @@
 //<display-top1>
 //<highlight-yellow>　「町役場からのおしらせ」 <line>
 //　先日　行方不明になっていた <line>
-//　子供たちは　<shift>ろここ町</shift>にすむ <line>
+//　子供たちは　ロココ町にすむ <line>
 //　発明家<name>さんの手で
 //<page>
 //　ぶじ　助けられました <line>
@@ -12642,7 +12642,7 @@
 //　いい年してこまったもんね
 //<page>
 //　ただでさえ　町長は <line>
-//　<shift>はで好</shift>きの評判があるのに <line>
+//　ハデ好きの評判があるのに <line>
 //　わかってるのかしら？
 //<page>
 //　しっかりしてよ！町長！！ <line>
@@ -12729,12 +12729,12 @@
 //　にせものが　町長のかわりに <line>
 //　町長の仕事を行っていたのよ
 //<page>
-//　<shift>ろここ町</shift>をハッカーの手から <line>
-//　救ったのは　<shift>ろここ町在住</shift>の <line>
+//　ロココ町をハッカーの手から <line>
+//　救ったのは　ロココ町在住の <line>
 //　<name>くん！ <line>
 //　彼の手で　町長も救出されたわ
 //<page>
-//<warp=><$D5><$87><highlight-pink>　<shift>ろここ町事件記者</shift>　ミント</highlight>」
+//<warp=><$D5><$87><highlight-pink>　ロココ町事件記者　ミント</highlight>」
 //<dialog-end1>
 //
 //ががんが　ぐ<glitch4>PぐQ<$AD>JざIおがぼぁ、が<$85>どぐ
@@ -13204,7 +13204,7 @@
 //
 //<display-top1>
 //お前　知ってる？ <line>
-//なんでも最近　<shift>ろここ町</shift>の住人に <line>
+//なんでも最近　ロココ町の住人に <line>
 //<highlight-yellow>南の島に無料ご招待</highlight>とかいう <line>
 //手紙が　とどいているんだってさ
 //<page>
@@ -13438,7 +13438,7 @@
 //<display-top1>
 //
 //KUROGANE:おいらの　ご主人様は <line>
-//<shift>あきはばら博士</shift>だけだニャ <line>
+//アキハバラ博士だけだニャ <line>
 //お前は別に　ご主人じゃないニャ。
 //<dialog-end1>
 //
@@ -13460,7 +13460,7 @@
 //あいさつは　終わったか？
 //<page>
 //ん？この本か？これはな <line>
-//<shift>あきはばら家</shift>に　先祖代々伝わる <line>
+//アキハバラ家に　先祖代々伝わる <line>
 //<highlight-yellow>Robotの本</highlight>だよ <line>
 //おまえに　やろうと思ってな
 //<page>
@@ -13512,7 +13512,7 @@
 //AKIHABARA:よ・<pause=><$3C><text-speed=><$01>よかった！気がついたか！ <line>
 //<text-speed=><$00><pause=><$3C>どうした？<pause=><$1E>どこか　いたむのか！？
 //<page>
-//え？<pause=><$1E>過去の<shift>ろここ町</shift>だって？ <line>
+//え？<pause=><$1E>過去のロココ町だって？ <line>
 //<pause=><$32>はっはっはっ <line>
 //そうか　夢を見ていたんだな <line>
 //<pause=><$1E>ここは　おまえの家だよ
@@ -13520,7 +13520,7 @@
 //おぼえてるか？ <line>
 //<pause=><$28>とうさんは　スイッチがおされたら <line>
 //要塞が　自爆するように <line>
-//<shift>れ0ざ0裝置</shift>を　改造したんだ
+//レーザー裝置を　改造したんだ
 //<page>
 //それで要塞が　爆発して・・・ <line>
 //<pause=><$28>おまえは　要塞のガレキの中で <line>
@@ -13654,12 +13654,12 @@
 //
 //JIIYA:とつぜんのことで　とまどわれると <line>
 //思いますが　私どもは <line>
-//<highlight-yellow><shift>しょこら星</shift></highlight>という星からまいりました
+//<highlight-yellow>ショコラ星</highlight>という星からまいりました
 //<dialog-end2>
 //
 //
 //<display-top1>
-//こちらは　<shift>しょこら星</shift>の王女 <line>
+//こちらは　ショコラ星の王女 <line>
 //<highlight-pink>ティラミス</highlight>さまで　いらっしゃいます <line>
 //<name>さまに　おりいって <line>
 //おねがいがありまして　まいりました
@@ -13667,7 +13667,7 @@
 //
 //
 //<display-top1>
-//実は今F　<shift>しょこら星</shift>は <line>
+//実は今F　ショコラ星は <line>
 //<highlight-yellow>ハッカー</highlight>と名のる軍団に <line>
 //こうげきをうけ　<pause=><$1E>地表はやきつくされ <line>
 //やむなくシェルターにのがれてます
@@ -13709,7 +13709,7 @@
 //<page>
 //もし　ご協力いただけるのでしたら <line>
 //これを　お使いください <line>
-//これは　<shift>しょこら星</shift>にあなた様を <line>
+//これは　ショコラ星にあなた様を <line>
 //ご案内いたします　秉物でございます
 //<dialog-end2>
 //
@@ -13749,7 +13749,7 @@
 //<pause=><$1E>わたくしは　はじめて<pause=><$1E>　希望の光を <line>
 //<pause=><$1E>見た気が　いたしますわ
 //<page>
-//どうか　<pause=><$1E><shift>しょこら星</shift>に <line>
+//どうか　<pause=><$1E>ショコラ星に <line>
 //おいでくださいませね <line>
 //<pause=><$3C>また　<pause=><$1E>お目にかかれるのを <line>
 //<pause=><$1E>たのしみにしております。
@@ -14261,7 +14261,7 @@
 //<highlight-yellow>　「すてきな　おばさん」</highlight>の <line>
 //　本を　みつけた。
 //<page>
-//<highlight-yellow><shift>4今月</shift>の特集 <line>
+//<highlight-yellow>『今月の特集 <line>
 //　ヨーグルトきのこで <line>
 //　今日から　へルシーダイエット』</highlight>
 //<dialog-end1>
@@ -14292,7 +14292,7 @@
 //
 //
 //<display-top1>
-//<highlight-yellow>　<shift>6月6日</shift> <line>
+//<highlight-yellow>　＊月＊日 <line>
 //　今日も　彼女の家に行ったが <line>
 //　また　彼女のおやじさんに <line>
 //　門前ばらいにされた・・・
@@ -14305,7 +14305,7 @@
 //
 //
 //<display-top1>
-//<highlight-yellow>　<shift>6月6日</shift> <line>
+//<highlight-yellow>　＊月＊日 <line>
 //　彼女と　この町を出ることにした <line>
 //　彼女といっしょになるには <line>
 //　他に　方法が見つからなかった
@@ -14317,7 +14317,7 @@
 //
 //
 //<display-top1>
-//<highlight-yellow>　<shift>6月6日</shift> <line>
+//<highlight-yellow>　＊月＊日 <line>
 //　そろそろ　彼女とけっこんしきの <line>
 //　うちあわせをはじめることになった <line>
 //　しきの日が　今から楽しみだ
@@ -14775,7 +14775,7 @@
 //最近の　町長ときたら <line>
 //ちっとも　仕事をしないばかりか <line>
 //注意をうながした職員を <line>
-//次々に　クビにしているんだ！
+//次々に　<shift>くび</shift>にしているんだ！
 //<page>
 //それもこれも <line>
 //あの　秘書の<highlight-pink>ローズ</highlight>とかいう女が <line>
@@ -14887,7 +14887,7 @@
 //話す機会を　もうけているんだよ <line>
 //わははははは
 //<page>
-//君も　今日からこの<shift>ろここ町</shift>の <line>
+//君も　今日からこのロココ町の <line>
 //住人というわけだ <line>
 //世のため　人のため　町のために <line>
 //若い力を　使ってくれたまえ
@@ -14913,7 +14913,7 @@
 //有名な　発明家だそうだ
 //<page>
 //ハッカーのうわさを聞きつけて <line>
-//<shift>はっか0退治</shift>に <line>
+//ハッカー退治に <line>
 //協力してくださると言うんだ <line>
 //いやー　ありがたいことだねえ。
 //<dialog-end1>
@@ -15041,13 +15041,13 @@
 //いかにも　おれさまは <line>
 //にせの町長さ
 //<page>
-//その正体は　<highlight-pink><shift>はっか0副司令官</shift> <line>
-//<shift>ろ0ず様</shift>の　しんえい隊</highlight>さ！ <line>
+//その正体は　<highlight-pink>ハッカー副司令官 <line>
+//ローズ様の　しんえい隊</highlight>さ！ <line>
 //正体を知られたからにゃあ <line>
 //だまって帰すわけには　いかないな
 //<page>
 // <line>
-//我らの心のささえ　<shift>ろ0ず様</shift>のため <line>
+//我らの心のささえ　ローズ様のため <line>
 //お命ちょうだいするぜ！
 //<dialog-end1>
 //
@@ -15072,9 +15072,9 @@
 //
 //<display-top1>
 //<highlight-yellow>町長の　本日のスケジュール <line>
-//　あさ：<shift>ろここ町親</shift>ぼく会出席 <line>
-//　ひる：<shift>ろここ町発展会議出席</shift> <line>
-//　よる：<shift>むふふくらぶ出席</shift></highlight>
+//　あさ：ロココ町親ぼく会出席 <line>
+//　ひる：ロココ町発展会議出席 <line>
+//　よる：ムフフクラブ出席</highlight>
 //<dialog-end1>
 //
 //
@@ -15095,7 +15095,7 @@
 //
 //DR. PEPPER:そう　<pause=><$1E>この私こそが <line>
 //今世紀が生んだ　天才発明家 <line>
-//<highlight-yellow><shift>ぺっぱ0博士</shift></highlight>だ
+//<highlight-yellow>ペッパー博士</highlight>だ
 //<page>
 //お前も　発明家だと？ <line>
 //かっかっ　お前と私では <line>
@@ -15112,7 +15112,7 @@
 //<display-top1>
 //
 //DR. PEPPER:お前の発明など <line>
-//資源の<shift>むだ使</shift>いがせきの山だ <line>
+//資源のムダ使いがせきの山だ <line>
 //しょせんは　才能のちがいだよ。
 //<dialog-end1>
 //
@@ -17762,7 +17762,7 @@
 //<highlight-yellow>　危険！地割れがおきています <line>
 //　立ち入りを禁じます <line>
 // <line>
-//　<shift>ろここ町地割</shift>れ対策委員会</highlight>
+//　ロココ町地割れ対策委員会</highlight>
 //<dialog-end1>
 //
 //ががそががぐ2JぎぐこぐB4子るめ子使ぐ<$97>ぐりががょ子すじ<glitch46>太ぐしじ<glitch46>処ぐりぐが巨ぐぽ<$87>造ぐ　<$B4><glitch45>ぅ
@@ -17774,7 +17774,7 @@
 //
 //ががそががぐ2JぎぐこぐB4子る<$B7>子Hぜどじじぐぬぐ<$98>ぐねぐ「づざ<empty><wipe>仲<glitch25>ぐあがぜ<$B7>子りぐがめ子前ぐ<$97>ぐぽ<$87>仲<wipe>ががそががぐ2JぎぐこぐB4子る<glitch38>子前ぐ<$97>報ががそががぐ1D「F技こぐB<$9D>純し<empty><empty>ぐ「じべぎH純るぶ純前ぐ<$97>度ぐぢじ研純Tに<empty>ぐ前ぐ<$97>帰ぐす<empty><empty>ぐさぐ<$86>ざぎ」ぐ<$98>ぐSに<empty>ぐこぐぢご森純るつ純前ぐ<$97>帰ぐさぐ<$86>ごぎ」ぐ<$98>ぐ合ぐ<$97>ぐぽ<glitch37>純だざ技<wipe>、がぐTに<empty>ぐさぐ<$86>ごぎぎぐ<$98>ぐ<$85>ずぎ」ぐ<$98>ぐ<$86>ごぎぎぐ<$98>ぐSに<empty>ぐだF技ぐ<$B2>ぅぐぽ<$A6>純だぎ星
 //<display-top1>
-//<shift>ぺっぱ0博士</shift>が <line>
+//ペッパー博士が <line>
 //爆弾で　くずれた岩を <line>
 //ふきとばしてくれるそうだ <line>
 //いやあ　助かったよ。
@@ -17887,7 +17887,7 @@
 //子供たちを　助けるべく
 //<page>
 //この　<highlight-yellow>天才発明家ペッパー</highlight>めが <line>
-//自ら発明した　<shift>すぺしゃる爆弾</shift>で <line>
+//自ら発明した　スペシャル爆弾で <line>
 //このかべを　ふきとばします <line>
 //みなさま　一歩おさがりください。
 //<dialog-end1>
@@ -17933,7 +17933,7 @@
 //<highlight-yellow>　この先　急流につき <line>
 //　じゅうぶんに　注意せよ <line>
 // <line>
-//　<shift>ろここ町急流河川愛好会</shift></highlight>
+//　ロココ町急流河川愛好会</highlight>
 //<dialog-end1>
 //
 //
@@ -18053,14 +18053,14 @@
 //あなた様は <line>
 //<name>様でいらっしゃいますね？ <line>
 //<pause=><$3C>なんという　ぐうぜん！ <line>
-//これも　<shift>みるふぃ様</shift>のおみちびき！
+//これも　ミルフィ様のおみちびき！
 //<page>
 //<warp=><$C3><$8F>
 //<display-bottom>
 //あなた様は <line>
 //<name>様でいらっしゃいますね <line>
 //<pause=><$1E>いえ　姿を変えても私にはわかります <line>
-//<pause=><$3C>これも　<shift>みるふぃ様</shift>のおみちびき！
+//<pause=><$3C>これも　ミルフィ様のおみちびき！
 //<page>
 //<warp=><$C3><$8F>・・・<pause=><$3C>ここでは　人目が気になります <line>
 //場所をかえて　くわしいお話を <line>
@@ -18286,7 +18286,7 @@
 //何を　手間どっているんだ！？
 //<page>
 //こんな不始末が <line>
-//<shift>ぶらっくもあ様</shift>に知れてみろ <line>
+//ブラックモア様に知れてみろ <line>
 //お前たちの首は <line>
 //<pause=><$3C>チョン　だぞ！
 //<dialog-end1>
@@ -18423,7 +18423,7 @@
 //
 //<display-top1>
 //おいっ　どこへ行くんだ？ <line>
-//この　<shift>ぶらっくもあ様</shift>を <line>
+//この　ブラックモア様を <line>
 //無視するとは <line>
 //お前も　えらくなったじゃねえか。
 //<dialog-end1>
@@ -18436,7 +18436,7 @@
 //
 //ががぁがぎぐB<$99><$A1>ぐ<glitch8>ぅぐGぞ<$9F><$A1>ぅぐぽ<$A5><$A1>近
 //<display-top1>
-//　泉質は　単純<shift>あるかり泉</shift> <line>
+//　泉質は　単純アルカリ泉 <line>
 //　リウマチや　かたコリにきく。
 //<dialog-end1>
 //
@@ -18609,7 +18609,7 @@
 //
 //<$A9>が　ばじぐじぐ</shift>ざが2ぐ<$97>ぐさぐ<$B2>ぅぐぽM<$A9>ぐBぱ<$A9>ぅぐぽ<glitch35><$A9>ぐT<glitch32><empty><$BD>じがぞぎぐ<$9D>じがぐ<glitch8>ぅ
 //<display-top1>
-//今　<shift>めたくらぶ様</shift>が <line>
+//今　メタクラブ様が <line>
 //しんにゅう者を　ここに <line>
 //追いつめた所なんだ <line>
 //関係ない人は　立入り禁止だよ！
@@ -18620,7 +18620,7 @@
 //
 //ががががががぐげL<glitch43><$83>ぐこぐB<$96><$A9>ぐゎぜぐる<$88><$A9>ぐ名ぐ<$97>辺ぐぽ<$AB><$A9>ぐB<$9F><$A9>ぅぐぽ<glitch35><$A9><$A9>ぎぐごじぐ<glitch8>ぅ
 //<display-top1>
-//ここは　<shift>はっか0幹部</shift>の <line>
+//ここは　ハッカー幹部の <line>
 //<highlight-yellow>メタクラブさま</highlight>用の　おふろだよ <line>
 //関係ない人を入れると <line>
 //ボクが　おこられちゃうんだ。
@@ -18663,7 +18663,7 @@
 //
 //<wipe>まったく　しょうがないわね <line>
 //あたしは　<highlight-pink>ミント <line>
-//<highlight-yellow><shift>ろここ町</shift>の　事件記者</highlight>よ <line>
+//<highlight-yellow>ロココ町の　事件記者</highlight>よ <line>
 //<pause=><$1E>とりあえず　よろしくね！
 //<page>
 //じゃあ　あたしは後ろから <line>
@@ -19008,7 +19008,7 @@
 //<page>
 //</highlight>これでこの館も　正しい時を <line>
 //きざむことが　できるだろう <line>
-//<pause=><$1E><shift>らすく君</shift>との　やくそくも守れ <line>
+//<pause=><$1E>ラスク君との　やくそくも守れ <line>
 //ようやく　安らかにねむれるな。
 //<dialog-end1>
 //
@@ -19042,7 +19042,7 @@
 //なかったというわけか <line>
 //年よりはでしゃばるものではないな
 //<page>
-//一度　<shift>ろここ町</shift>にもどらんかね？ <line>
+//一度　ロココ町にもどらんかね？ <line>
 //君には　話しておかねば <line>
 //ならないこともあるしな。
 //<dialog-end1>
@@ -19192,7 +19192,7 @@
 //<display-top1>
 //
 //MINT:ちょっと　きみぃ！？ <line>
-//<shift>けが人</shift>を　見捨てていくの？ <line>
+//ケガ人を　見捨てていくの？ <line>
 //話ぐらい　聞いて行きなさいよ！
 //<dialog-end1>
 //
@@ -19345,7 +19345,7 @@
 //<display-top1>
 //<highlight-pink>あら・・・ <line>
 //<pause=><$28>あなた　いいものを持ってるわね <line>
-//<shift>きらきら光</shift>る　すてきな石 <line>
+//キラキラ光る　すてきな石 <line>
 //<pause=><$1E>わたしの　持ってるのと同じ・・・
 //<page>
 //わたし　それもほしいわ <line>
@@ -19586,7 +19586,7 @@
 // <line>
 //　ポリンキーはくしゃく・著
 //<page>
-//「<shift>らすく君</shift>の作った　時計塔が <line>
+//「ラスク君の作った　時計塔が <line>
 //　ついに　完成した <line>
 //　おおいに　滿足できるできだ
 //<page>
@@ -19600,7 +19600,7 @@
 //<pause=><$14>　イゴールは　変な顏をしていた <line>
 //<pause=><$14>　しっけいな！
 //<page>
-//　ところで<shift>らすく君</shift>は　美しい石を <line>
+//　ところでラスク君は　美しい石を <line>
 //　我がやしきに　かくしたいという <line>
 //　そこで　私は・・・<pause=><$3C>おっと <line>
 //<pause=><$1E>　ここで書いては　意味がない。」</highlight>
@@ -19618,12 +19618,12 @@
 //　肉体がはてた　今も <line>
 //　私は　こうして書を記している
 //<page>
-//　私は　<shift>らすく君</shift>の石を <line>
+//　私は　ラスク君の石を <line>
 //　あの中に　かくすべきではなかった <line>
 //　化け物と化したあれのことを思うと <line>
 //　安らかに　ねむることもできぬ
 //<page>
-//　たしか<shift>らすく君</shift>は　あの石を <line>
+//　たしかラスク君は　あの石を <line>
 //　少年が　取りにくると言っていた <line>
 //　その少年とやらは　あの化け物を <line>
 //　退治できるのであろうか。」
@@ -19665,7 +19665,7 @@
 //
 //<display-top1>
 // <line>
-//　<shift>ぶれ0か0室入口</shift>
+//　ブレーカー室入口
 //<dialog-end1>
 //
 //ががんががぐ2<$B9>子つべD<glitch44>ぐだが技Tに<empty>ぐ<wipe>かがぐく「ぐつべD<glitch45>ぐSに<empty>ぐだ<$B9>子<$B2>ぅががぁががぐ2ほ技だが技Tに<empty>ぐ<wipe>れがぐ<$A2><$8A><glitch12><$86>がHぐざTが<$A9>が　ごじぐ
@@ -19764,7 +19764,7 @@
 //
 //<display-top1>
 //だんな様 <line>
-//<pause=><$1E><highlight-yellow><shift>らすく様</shift></highlight>がおっしゃっていたのは <line>
+//<pause=><$1E><highlight-yellow>ラスク様</highlight>がおっしゃっていたのは <line>
 //あの方のことでしょうか？
 //<page>
 //<highlight-yellow><text-speed=><$09>・・・<text-speed=><$00>どうであろうな？ <line>
@@ -19854,7 +19854,7 @@
 //・・・では　この石を <line>
 //我が　やしきのいずこかに <line>
 //かくしてほしいと言うわけか？ <line>
-//<highlight-yellow><shift>らすく君</shift>？
+//<highlight-yellow>ラスク君？
 //<page>
 //お手数かけます　はくしゃく <line>
 //このやしきの中でなら <line>
