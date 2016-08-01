@@ -11,11 +11,34 @@ const calcPointer = (offset)=> `${
 
 const tickOffset = (offset, amount)=> (parseInt(offset, 16) + amount).toString(16).toUpperCase();
 
+const arrayIndex = (arrO, arrI)=> {
+  let indexOf = -1;
+
+  for(let i = 0, len = arrO.length; i < len; ++i) {
+    const el = arrO[i];
+
+    if(el === arrI[0]) {
+      let j = 1;
+
+      while(arrO[i+j] === arrI[j]) {
+        ++j;
+      }
+
+      if(j === arrI.length) {
+        indexOf = i;
+        return indexOf;
+      }
+    }
+  }
+
+  return indexOf;
+};
+
 const crawlFromOffset = (offset, data, tick)=> {
   const len = data.length;
 
   while(
-    !data.includes(calcPointer(offset))
+    !~arrayIndex(data.match(/.{1,2}/g), calcPointer(offset).match(/.{1,2}/g))
     && parseInt(offset, 16) > 0
     && parseInt(offset, 16) < data.length
   ) {
@@ -25,7 +48,7 @@ const crawlFromOffset = (offset, data, tick)=> {
   return {
     offset,
     pointer: calcPointer(offset),
-    location: (data.indexOf(calcPointer(offset))/2).toString(16).toUpperCase()
+    location: arrayIndex(data.match(/.{1,2}/g), calcPointer(offset).match(/.{1,2}/g)).toString(16).toUpperCase()
   };
 };
 
@@ -41,7 +64,7 @@ const pointersaurus = (file=`./roms/Slap Stick (Japan).sfc`, offset)=> new Promi
     offset = offset.toUpperCase();
 
     if(data.includes(calcPointer(offset))) {
-      resolve(`The pointer for offset ${offset} is ${calcPointer(offset)}, which resides at offset ${(data.indexOf(calcPointer(offset))/2).toString(16).toUpperCase()}`);
+      resolve(`The pointer for offset ${offset} is ${calcPointer(offset)}, which resides at offset ${arrayIndex(data.match(/.{1,2}/g), calcPointer(offset).match(/.{1,2}/g)).toString(16).toUpperCase()}`);
     } else {
       const revPointer = crawlFromOffset(offset, data, -1),
             fwdPointer = crawlFromOffset(offset, data, 1);
