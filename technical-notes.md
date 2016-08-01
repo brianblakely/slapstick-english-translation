@@ -54,7 +54,7 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `0001CA30` -- start of dialog?
 * `000FDC00` -- end of dialog?
 * `0005A3ED` -- Akihabara laughing
-* `0005DE90` -- Mayor laughing
+* `0005DE90` -- Mayor laughing (pnt: `31DFC500`)
 * `00027627` -- Unused block
 
 # Test Strings
