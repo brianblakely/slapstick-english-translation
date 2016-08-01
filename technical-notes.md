@@ -54,7 +54,11 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `0001CA30` -- start of dialog?
 * `000FDC00` -- end of dialog?
 * `0005A3ED` -- Akihabara laughing
-* `0005DE90` -- Mayor laughing (pnt: `31DFC500`)
+* `0005DE90` -- Mayor laughing
+    Pointersaurus output:
+    We couldn't find a valid pointer for offset 5DF31, but we did find these nearby:
+        - Pointer 00DDC500 for offset 5DD00 at offset 1C5DA
+        - Pointer 00E1C500 for offset 5E100 at offset 1C5DE
 * `00027627` -- Unused block
 
 # Test Strings
