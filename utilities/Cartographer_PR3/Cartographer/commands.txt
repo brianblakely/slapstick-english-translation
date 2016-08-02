@@ -1,91 +1,118 @@
 #GAME NAME: Slapstick (SFC)
 
-// #BLOCK NAME: All Text (RAW)
+// // #BLOCK NAME: All Text (RAW)
+// // #TYPE: NORMAL
+// // #METHOD: RAW
+// // #SCRIPT START: $00000000
+// // #SCRIPT STOP: $0017FFFF
+// // #TABLE: ../../../dialog.tbl
+// // #COMMENTS: Yes
+// // #END BLOCK
+//
+// // #BLOCK NAME: Garbage Block 1 (RAW)
+// // #TYPE: NORMAL
+// // #METHOD: RAW
+// // #SCRIPT START: $00000000
+// // #SCRIPT STOP: $0001CF69
+// // #TABLE: ../../../dialog.tbl
+// // #COMMENTS: Yes
+// // #END BLOCK
+//
+// #BLOCK NAME: Dialog Block 1 (RAW)
 // #TYPE: NORMAL
 // #METHOD: RAW
-// #SCRIPT START: $00000000
-// #SCRIPT STOP: $0017FFFF
+// #SCRIPT START: $0001CF69
+// #SCRIPT STOP: $0001E719
 // #TABLE: ../../../dialog.tbl
 // #COMMENTS: Yes
 // #END BLOCK
-
-// #BLOCK NAME: Garbage Block 1 (RAW)
+//
+// #BLOCK NAME: Character Naming Menu (RAW)
 // #TYPE: NORMAL
 // #METHOD: RAW
-// #SCRIPT START: $00000000
-// #SCRIPT STOP: $0001CF69
+// #SCRIPT START: $0001E719
+// #SCRIPT STOP: $0001E99A
+// #TABLE: ../../../menu.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+//
+// #BLOCK NAME: Dialog Block 2 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0001E99A
+// #SCRIPT STOP: $0006F350
 // #TABLE: ../../../dialog.tbl
 // #COMMENTS: Yes
 // #END BLOCK
-
-#BLOCK NAME: Dialog Block 1 (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0001CF69
-#SCRIPT STOP: $0001E719
-#TABLE: ../../../dialog.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-#BLOCK NAME: Character Naming Menu (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0001E719
-#SCRIPT STOP: $0001E99A
-#TABLE: ../../../menu.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-#BLOCK NAME: Dialog Block 2 (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0001E99A
-#SCRIPT STOP: $0006F350
-#TABLE: ../../../dialog.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-#BLOCK NAME: Names (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0006F350
-#SCRIPT STOP: $0006F4BF
-#TABLE: ../../../dialog.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-// #BLOCK NAME: Garbage Block 2 (RAW)
+//
+// #BLOCK NAME: Names (RAW)
 // #TYPE: NORMAL
 // #METHOD: RAW
-// #SCRIPT START: $0006F4BF
-// #SCRIPT STOP: $0006F905
+// #SCRIPT START: $0006F350
+// #SCRIPT STOP: $0006F4BF
 // #TABLE: ../../../dialog.tbl
 // #COMMENTS: Yes
 // #END BLOCK
-
-#BLOCK NAME: Locations (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0006F905
-#SCRIPT STOP: $0006FD99
-#TABLE: ../../../dialog.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-#BLOCK NAME: Dialog Block 4 (RAW)
-#TYPE: NORMAL
-#METHOD: RAW
-#SCRIPT START: $0006FD99
-#SCRIPT STOP: $0015AC62
-#TABLE: ../../../dialog.tbl
-#COMMENTS: Yes
-#END BLOCK
-
-// #BLOCK NAME: Garbage Block 3 (RAW)
+//
+// // #BLOCK NAME: Garbage Block 2 (RAW)
+// // #TYPE: NORMAL
+// // #METHOD: RAW
+// // #SCRIPT START: $0006F4BF
+// // #SCRIPT STOP: $0006F905
+// // #TABLE: ../../../dialog.tbl
+// // #COMMENTS: Yes
+// // #END BLOCK
+//
+// #BLOCK NAME: Locations (RAW)
 // #TYPE: NORMAL
 // #METHOD: RAW
-// #SCRIPT START: $0015AC62
-// #SCRIPT STOP: $0017FFFF
+// #SCRIPT START: $0006F905
+// #SCRIPT STOP: $0006FD99
 // #TABLE: ../../../dialog.tbl
 // #COMMENTS: Yes
 // #END BLOCK
+//
+// #BLOCK NAME: Dialog Block 4 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0006FD99
+// #SCRIPT STOP: $0015AC62
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+//
+// // #BLOCK NAME: Garbage Block 3 (RAW)
+// // #TYPE: NORMAL
+// // #METHOD: RAW
+// // #SCRIPT START: $0015AC62
+// // #SCRIPT STOP: $0017FFFF
+// // #TABLE: ../../../dialog.tbl
+// // #COMMENTS: Yes
+// // #END BLOCK
+//
+
+// #BLOCK NAME:		Dialogue Block (POINTER)
+// #TYPE:			NORMAL
+// #METHOD:		POINTER
+// #POINTER ENDIAN:	LITTLE
+// #POINTER TABLE START:	$1C4FD
+// #POINTER TABLE STOP:	$1C53C
+// #POINTER SIZE:		$02
+// #POINTER SPACE:		$00
+// #ATLAS PTRS:		No
+// #TABLE:			../../../dialog.tbl
+// #COMMENTS:		Yes
+// #END BLOCK
+
+#BLOCK NAME:		Dialogue Block 2 (POINTER)
+#TYPE:			NORMAL
+#METHOD:		POINTER
+#POINTER ENDIAN:	LITTLE
+#POINTER TABLE START:	$1C53D
+#POINTER TABLE STOP:	$1C650
+#POINTER SIZE:		$04
+#POINTER SPACE:		$00
+#ATLAS PTRS:		No
+#TABLE:			../../../dialog.tbl
+#COMMENTS:		Yes
+#END BLOCK

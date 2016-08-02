@@ -83,6 +83,6 @@ const pointersaurus = (file=`./roms/Slap Stick (Japan).sfc`, offset)=> new Promi
   });
 });
 
-pointersaurus(undefined, `5DF31`)
+pointersaurus(undefined, `5A3ED`)
   .then(result=> console.info(result))
   .catch(err=> console.error(err));
