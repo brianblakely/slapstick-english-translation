@@ -1,118 +1,151 @@
 #GAME NAME: Slapstick (SFC)
 
-// // #BLOCK NAME: All Text (RAW)
-// // #TYPE: NORMAL
-// // #METHOD: RAW
-// // #SCRIPT START: $00000000
-// // #SCRIPT STOP: $0017FFFF
-// // #TABLE: ../../../dialog.tbl
-// // #COMMENTS: Yes
-// // #END BLOCK
-//
-// // #BLOCK NAME: Garbage Block 1 (RAW)
-// // #TYPE: NORMAL
-// // #METHOD: RAW
-// // #SCRIPT START: $00000000
-// // #SCRIPT STOP: $0001CF69
-// // #TABLE: ../../../dialog.tbl
-// // #COMMENTS: Yes
-// // #END BLOCK
-//
-// #BLOCK NAME: Dialog Block 1 (RAW)
+// #BLOCK NAME: All Text (RAW)
 // #TYPE: NORMAL
 // #METHOD: RAW
-// #SCRIPT START: $0001CF69
-// #SCRIPT STOP: $0001E719
+// #SCRIPT START: $00000000
+// #SCRIPT STOP: $0017FFFF
 // #TABLE: ../../../dialog.tbl
 // #COMMENTS: Yes
-// #END BLOCK
-//
-// #BLOCK NAME: Character Naming Menu (RAW)
-// #TYPE: NORMAL
-// #METHOD: RAW
-// #SCRIPT START: $0001E719
-// #SCRIPT STOP: $0001E99A
-// #TABLE: ../../../menu.tbl
-// #COMMENTS: Yes
-// #END BLOCK
-//
-// #BLOCK NAME: Dialog Block 2 (RAW)
-// #TYPE: NORMAL
-// #METHOD: RAW
-// #SCRIPT START: $0001E99A
-// #SCRIPT STOP: $0006F350
-// #TABLE: ../../../dialog.tbl
-// #COMMENTS: Yes
-// #END BLOCK
-//
-// #BLOCK NAME: Names (RAW)
-// #TYPE: NORMAL
-// #METHOD: RAW
-// #SCRIPT START: $0006F350
-// #SCRIPT STOP: $0006F4BF
-// #TABLE: ../../../dialog.tbl
-// #COMMENTS: Yes
-// #END BLOCK
-//
-// // #BLOCK NAME: Garbage Block 2 (RAW)
-// // #TYPE: NORMAL
-// // #METHOD: RAW
-// // #SCRIPT START: $0006F4BF
-// // #SCRIPT STOP: $0006F905
-// // #TABLE: ../../../dialog.tbl
-// // #COMMENTS: Yes
-// // #END BLOCK
-//
-// #BLOCK NAME: Locations (RAW)
-// #TYPE: NORMAL
-// #METHOD: RAW
-// #SCRIPT START: $0006F905
-// #SCRIPT STOP: $0006FD99
-// #TABLE: ../../../dialog.tbl
-// #COMMENTS: Yes
-// #END BLOCK
-//
-// #BLOCK NAME: Dialog Block 4 (RAW)
-// #TYPE: NORMAL
-// #METHOD: RAW
-// #SCRIPT START: $0006FD99
-// #SCRIPT STOP: $0015AC62
-// #TABLE: ../../../dialog.tbl
-// #COMMENTS: Yes
-// #END BLOCK
-//
-// // #BLOCK NAME: Garbage Block 3 (RAW)
-// // #TYPE: NORMAL
-// // #METHOD: RAW
-// // #SCRIPT START: $0015AC62
-// // #SCRIPT STOP: $0017FFFF
-// // #TABLE: ../../../dialog.tbl
-// // #COMMENTS: Yes
-// // #END BLOCK
-//
-
-// #BLOCK NAME:		Dialogue Block (POINTER)
-// #TYPE:			NORMAL
-// #METHOD:		POINTER
-// #POINTER ENDIAN:	LITTLE
-// #POINTER TABLE START:	$1C4FD
-// #POINTER TABLE STOP:	$1C53C
-// #POINTER SIZE:		$02
-// #POINTER SPACE:		$00
-// #ATLAS PTRS:		No
-// #TABLE:			../../../dialog.tbl
-// #COMMENTS:		Yes
 // #END BLOCK
 
-#BLOCK NAME:		Dialogue Block 2 (POINTER)
+// #BLOCK NAME: Garbage Block 1 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $00000000
+// #SCRIPT STOP: $0001CF69
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+
+#BLOCK NAME: Informative Copy (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0001CF69
+#SCRIPT STOP: $0001E719
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+#BLOCK NAME: Character Naming Menu (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0001E719
+#SCRIPT STOP: $0001E99A
+#TABLE: ../../../menu.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+#BLOCK NAME: Other Menus (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0001E99A
+#SCRIPT STOP: $0001FFFF
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+// #BLOCK NAME: Garbage Block 2 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0001FFFF
+// #SCRIPT STOP: $0002FD06
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+
+#BLOCK NAME: Credits Headings (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0002FD06
+#SCRIPT STOP: $0002FFFF
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+// #BLOCK NAME: Garbage Block 3 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0002FFFF
+// #SCRIPT STOP: $0004E056
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+
+#BLOCK NAME: Dialog Block 1 (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0004E056
+#SCRIPT STOP: $0006F350
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+// #BLOCK NAME: Garbage Block 4 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0006F4BF
+// #SCRIPT STOP: $0006F905
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+
+#BLOCK NAME: Dialog Block 2 (RAW)
+#TYPE: NORMAL
+#METHOD: RAW
+#SCRIPT START: $0006FD99
+#SCRIPT STOP: $0015AC62
+#TABLE: ../../../dialog.tbl
+#COMMENTS: Yes
+#END BLOCK
+
+// #BLOCK NAME: Garbage Block 5 (RAW)
+// #TYPE: NORMAL
+// #METHOD: RAW
+// #SCRIPT START: $0015AC62
+// #SCRIPT STOP: $0017FFFF
+// #TABLE: ../../../dialog.tbl
+// #COMMENTS: Yes
+// #END BLOCK
+
+#BLOCK NAME:		Credits (POINTER)
 #TYPE:			NORMAL
-#METHOD:		POINTER
+#METHOD:		POINTER_RELATIVE
 #POINTER ENDIAN:	LITTLE
-#POINTER TABLE START:	$1C53D
-#POINTER TABLE STOP:	$1C650
-#POINTER SIZE:		$04
+#POINTER TABLE START:	$4F7C2
+#POINTER TABLE STOP:	$4F831
+#POINTER SIZE:		$02
 #POINTER SPACE:		$00
 #ATLAS PTRS:		No
+#BASE POINTER:    $40000
+#TABLE:			../../../dialog.tbl
+#COMMENTS:		Yes
+#END BLOCK
+
+#BLOCK NAME:		Names (POINTER)
+#TYPE:			NORMAL
+#METHOD:		POINTER_RELATIVE
+#POINTER ENDIAN:	LITTLE
+#POINTER TABLE START:	$6F318
+#POINTER TABLE STOP:	$6F34F
+#POINTER SIZE:		$02
+#POINTER SPACE:		$00
+#ATLAS PTRS:		No
+#BASE POINTER:    $60000
+#TABLE:			../../../dialog.tbl
+#COMMENTS:		Yes
+#END BLOCK
+
+#BLOCK NAME:		Locations (POINTER)
+#TYPE:			NORMAL
+#METHOD:		POINTER_RELATIVE
+#POINTER ENDIAN:	LITTLE
+#POINTER TABLE START:	$6F581
+#POINTER TABLE STOP:	$6F904
+#POINTER SIZE:		$02
+#POINTER SPACE:		$00
+#ATLAS PTRS:		No
+#BASE POINTER:    $60000
 #TABLE:			../../../dialog.tbl
 #COMMENTS:		Yes
 #END BLOCK

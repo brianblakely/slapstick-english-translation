@@ -1,0 +1,340 @@
+//GAME NAME:		
+
+//BLOCK #000 NAME:		Credits (POINTER)
+
+//POINTER #0 @ $4F7C2 - STRING #0 @ $4F832
+
+//
+//<end-byte>
+//
+//
+//POINTER #1 @ $4F7C4 - STRING #1 @ $4F833
+
+//<highlight-yellow>SLAPSTICK</highlight>
+//<end-byte>
+//
+//
+//POINTER #2 @ $4F7C6 - STRING #2 @ $4F841
+
+//はしもと　まさや
+//<end-byte>
+//
+//
+//POINTER #3 @ $4F7C8 - STRING #3 @ $4F84A
+
+//みやざき　ともよし
+//<end-byte>
+//
+//
+//POINTER #4 @ $4F7CA - STRING #4 @ $4F854
+
+//たけばやし　れいこ
+//<end-byte>
+//
+//
+//POINTER #5 @ $4F7CC - STRING #5 @ $4F85E
+
+//はしもと　たつお
+//<end-byte>
+//
+//
+//POINTER #6 @ $4F7CE - STRING #6 @ $4F867
+
+//きたのはら　あきら
+//<end-byte>
+//
+//
+//POINTER #7 @ $4F7D0 - STRING #7 @ $4F871
+
+//きた　しげみ
+//<end-byte>
+//
+//
+//POINTER #8 @ $4F7D2 - STRING #8 @ $4F878
+
+//いしだ　じゅんいち
+//<end-byte>
+//
+//
+//POINTER #9 @ $4F7D4 - STRING #9 @ $4F882
+
+//よこた　ひさし
+//<end-byte>
+//
+//
+//POINTER #10 @ $4F7D6 - STRING #10 @ $4F88A
+
+//すずき　なおこ
+//<end-byte>
+//
+//
+//POINTER #11 @ $4F7D8 - STRING #11 @ $4F892
+
+//つるの　めぐみ
+//<end-byte>
+//
+//
+//POINTER #12 @ $4F7DA - STRING #12 @ $4F89A
+
+//おおうら　たかひろ
+//<end-byte>
+//
+//
+//POINTER #13 @ $4F7DC - STRING #13 @ $4F8A4
+
+//こばやし　さだお
+//<end-byte>
+//
+//
+//POINTER #14 @ $4F7DE - STRING #14 @ $4F8AD
+
+//よだ　あやこ
+//<end-byte>
+//
+//
+//POINTER #15 @ $4F7E0 - STRING #15 @ $4F8B4
+
+//こしろ　ゆうぞう
+//<end-byte>
+//
+//
+//POINTER #16 @ $4F7E2 - STRING #16 @ $4F8BD
+
+//かわしま　もとひろ
+//<end-byte>
+//
+//
+//POINTER #17 @ $4F7E4 - STRING #17 @ $4F8C7
+
+//よこた　こうじ
+//<end-byte>
+//
+//
+//POINTER #18 @ $4F7E6 - STRING #18 @ $4F8CF
+
+//かいだ　よしみ
+//<end-byte>
+//
+//
+//POINTER #19 @ $4F7E8 - STRING #19 @ $4F8D7
+
+//たかい　まさひこ
+//<end-byte>
+//
+//
+//POINTER #20 @ $4F7EA - STRING #20 @ $4F8E0
+
+//くしやま　ただくに
+//<end-byte>
+//
+//
+//POINTER #21 @ $4F7EC - STRING #21 @ $4F8EA
+
+//ふたみ　しんじ
+//<end-byte>
+//
+//
+//POINTER #22 @ $4F7EE - STRING #22 @ $4F8F2
+
+//たかど　かずのり
+//<end-byte>
+//
+//
+//POINTER #23 @ $4F7F0 - STRING #23 @ $4F8FB
+
+//ふくしま　やすひろ
+//<end-byte>
+//
+//
+//POINTER #24 @ $4F7F2 - STRING #24 @ $4F905
+
+//ちだ　ゆきのぶ
+//<end-byte>
+//
+//
+//POINTER #25 @ $4F7F4 - STRING #25 @ $4F90D
+
+//そね　やすゆき
+//<end-byte>
+//
+//
+//POINTER #26 @ $4F7F6 - STRING #26 @ $4F915
+
+//ほんだ　けいじ
+//<end-byte>
+//
+//
+//POINTER #27 @ $4F7F8 - STRING #27 @ $4F91D
+
+//まき　とおる
+//<end-byte>
+//
+//
+//POINTER #28 @ $4F7FA - STRING #28 @ $4F924
+
+//やまもと　ひでき
+//<end-byte>
+//
+//
+//POINTER #29 @ $4F7FC - STRING #29 @ $4F92D
+
+//おおつか　たかし
+//<end-byte>
+//
+//
+//POINTER #30 @ $4F7FE - STRING #30 @ $4F936
+
+//さいとう　よしひさ
+//<end-byte>
+//
+//
+//POINTER #31 @ $4F800 - STRING #31 @ $4F940
+
+//やはぎ　さだお
+//<end-byte>
+//
+//
+//POINTER #32 @ $4F802 - STRING #32 @ $4F948
+
+//かの　けんじろう
+//<end-byte>
+//
+//
+//POINTER #33 @ $4F804 - STRING #33 @ $4F951
+
+//ささき　ゆたか
+//<end-byte>
+//
+//
+//POINTER #34 @ $4F806 - STRING #34 @ $4F959
+
+//たけした　よしろう
+//<end-byte>
+//
+//
+//POINTER #35 @ $4F808 - STRING #35 @ $4F963
+
+//ほんま　かずふみ
+//<end-byte>
+//
+//
+//POINTER #36 @ $4F80A - STRING #36 @ $4F96C
+
+//くろだ　ひろふみ
+//<end-byte>
+//
+//
+//POINTER #37 @ $4F80C - STRING #37 @ $4F975
+
+//かきざわ　みのる
+//<end-byte>
+//
+//
+//POINTER #38 @ $4F80E - STRING #38 @ $4F97E
+
+//すぎなか　なおひと
+//<end-byte>
+//
+//
+//POINTER #39 @ $4F810 - STRING #39 @ $4F988
+
+//しげの　あきたか
+//<end-byte>
+//
+//
+//POINTER #40 @ $4F812 - STRING #40 @ $4F991
+
+//はやし　つとむ
+//<end-byte>
+//
+//
+//POINTER #41 @ $4F814 - STRING #41 @ $4F999
+
+//おいかけ　ひでゆき
+//<end-byte>
+//
+//
+//POINTER #42 @ $4F816 - STRING #42 @ $4F9A3
+
+//よしだ　しんいち
+//<end-byte>
+//
+//
+//POINTER #43 @ $4F818 - STRING #43 @ $4F9AC
+
+//いしづか　だいすけ
+//<end-byte>
+//
+//
+//POINTER #44 @ $4F81A - STRING #44 @ $4F9B6
+
+//みやざき　ともこ
+//<end-byte>
+//
+//
+//POINTER #45 @ $4F81C - STRING #45 @ $4F9BF
+
+//たかはし　なおこ
+//<end-byte>
+//
+//
+//POINTER #46 @ $4F81E - STRING #46 @ $4F9C8
+
+//やざき　みや
+//<end-byte>
+//
+//
+//POINTER #47 @ $4F820 - STRING #47 @ $4F9CF
+
+//さとう　のぶかず
+//<end-byte>
+//
+//
+//POINTER #48 @ $4F822 - STRING #48 @ $4F9D8
+
+//さいとう　のぶお
+//<end-byte>
+//
+//
+//POINTER #49 @ $4F824 - STRING #49 @ $4F9E1
+
+//いいだ　まりこ
+//<end-byte>
+//
+//
+//POINTER #50 @ $4F826 - STRING #50 @ $4F9E9
+
+//とのき　なおと
+//<end-byte>
+//
+//
+//POINTER #51 @ $4F828 - STRING #51 @ $4F9F1
+
+//くわばら　こうじ
+//<end-byte>
+//
+//
+//POINTER #52 @ $4F82A - STRING #52 @ $4F9FA
+
+//すみた　まり
+//<end-byte>
+//
+//
+//POINTER #53 @ $4F82C - STRING #53 @ $4FA01
+
+//<highlight-yellow><name></highlight>
+//<end-byte>
+//
+//
+//POINTER #54 @ $4F82E - STRING #54 @ $4FA08
+
+//わかばやし　かおる
+//<end-byte>
+//
+//
+//POINTER #55 @ $4F830 - STRING #55 @ $4FA12
+
+//あらい　あきら
+//<end-byte>
+//
+//
