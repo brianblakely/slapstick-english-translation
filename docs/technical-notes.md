@@ -69,7 +69,7 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 
 * Each bank starting with `50000` keeps dialog in pages `8000`-`FFFF`.
 
-* The banks list all the dialog in a certain location. Each progressive bank features later-game locations.
+* A banks lists all the dialog per-character, per-location. Each progressive bank features later-game locations.
 
 ## Individual Dialog
 
@@ -77,7 +77,7 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 
 * In this description, `02` begins each section.
 
-* The section whose first following byte is `1D` will indicate a pointer.
+* The section whose first following byte is `1D` will indicate a pointer to dialog.
 
 * The pointer to the dialog is followed by byte `6B`, executed to flag when the dialog has been read.
 
