@@ -55,11 +55,31 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 * `000FDC00` -- end of dialog?
 * `0005A3ED` -- Akihabara laughing
 * `0005DE90` -- Mayor laughing
+
     Pointersaurus output:
+
     We couldn't find a valid pointer for offset 5DF31, but we did find these nearby:
-        - Pointer 00DDC500 for offset 5DD00 at offset 1C5DA
-        - Pointer 00E1C500 for offset 5E100 at offset 1C5DE
+    - Pointer 00DDC500 for offset 5DD00 at offset 1C5DA
+    - Pointer 00E1C500 for offset 5E100 at offset 1C5DE
 * `00027627` -- Unused block
+
+# The Search for Dialog Pointer Tables
+
+## ROM Structure
+
+* Each bank starting with `50000` keeps dialog in pages `8000`-`FFFF`.
+
+* The banks list all the dialog in a certain location. Each progressive bank features later-game locations.
+
+## Individual Dialog
+
+* Each dialog box appears to be preceded by a (non-textual) description of the character.
+
+* In this description, `02` begins each section.
+
+* The section whose first following byte is `1D` will indicate a pointer.
+
+* The pointer to the dialog is followed by byte `6B`, executed to flag when the dialog has been read.
 
 # Test Strings
 町*さんは

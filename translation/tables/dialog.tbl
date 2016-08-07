@@ -816,7 +816,7 @@ DA=<glitch15>
 DB=<glitch16>
 $DC=<text-speed=>,1
 DD=<text-hasten>
-DE=\r<dialog-end2>\r\r
+/DE=\r<dialog-end2>\r\r
 DF=<glitch17>
 E0=<glitch18>
 E1=<glitch19>
