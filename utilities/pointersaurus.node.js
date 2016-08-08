@@ -54,7 +54,7 @@ const crawlFromOffset = (offset, data, tick)=> {
   };
 };
 
-const pointersaurus = (file=`./roms/Slap Stick (Japan).sfc`, offset)=> new Promise((resolve, reject)=> {
+const pointersaurus = (file=`../roms/Slap Stick (Japan).sfc`, offset)=> new Promise((resolve, reject)=> {
   fs.readFile(file, (err, data)=> {
     if(err) {
       reject(err);
@@ -83,6 +83,6 @@ const pointersaurus = (file=`./roms/Slap Stick (Japan).sfc`, offset)=> new Promi
   });
 });
 
-pointersaurus(undefined, `5A3ED`)
+pointersaurus(undefined, `58000`)
   .then(result=> console.info(result))
   .catch(err=> console.error(err));

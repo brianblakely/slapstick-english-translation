@@ -782,7 +782,7 @@
 828D=àÁ
 828E=ç∏
 828F=å¿
-/C0=\r<dialog-end1>\r\r
+C0=\r<end-dialog1>\r\r
 C1=<glitch1>
 C2=<glitch2>
 C200=<name>
@@ -798,7 +798,7 @@ C8=<glitch7>
 $C9=<pause=>,1
 CA=<null1>
 CB=<glitch8>
-/CC=\r<end-byte>\r\r
+CC=\r<end-byte>\r\r
 CD= <line>\r
 $CE=<padding=>,1
 CF=<glitch10>
@@ -816,7 +816,7 @@ DA=<glitch15>
 DB=<glitch16>
 $DC=<text-speed=>,1
 DD=<text-hasten>
-/DE=\r<dialog-end2>\r\r
+DE=\r<end-dialog2>\r\r
 DF=<glitch17>
 E0=<glitch18>
 E1=<glitch19>
