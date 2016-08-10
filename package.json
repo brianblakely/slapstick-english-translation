@@ -4,7 +4,8 @@
   "description": "An English translation of the Super Famicom title \"Slapstick\"",
   "main": "none",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dump": "translation\\cartographer.exe roms\\Slap\\ Stick\\ \\(Japan\\).sfc commands.txt script -m"
   },
   "repository": {
     "type": "git",

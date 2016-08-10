@@ -1,15 +1,16 @@
 const fs = require(`fs`);
 
-const hiromOffset = parseInt(`C00000`, 16);
+const hiromOffset = parseInt(`800000`, 16);
 
 const calcPointer = (offset)=> `${
   (parseInt(offset, 16) + hiromOffset)
     .toString(16)
     .toUpperCase()
+  }00000000`
+    .substr(0,8)
     .match(/.{1,2}/g)
     .reverse()
-    .join(``)
-}00000000`.substr(0,8);
+    .join(``);
 
 const tickOffset = (offset, amount)=> (parseInt(offset, 16) + amount).toString(16).toUpperCase();
 
