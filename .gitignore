@@ -3,3 +3,4 @@ third_party
 .swp
 roms/*
 translation/script*
+*.log
