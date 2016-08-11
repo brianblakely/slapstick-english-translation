@@ -32,6 +32,9 @@
         "const": {
           "after": true
         },
+        "case": {
+          "after": true
+        },
         "return": {
           "after": true
         }
