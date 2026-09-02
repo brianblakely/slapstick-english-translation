@@ -9,4 +9,6 @@ roms/*
 translation/script*.txt
 build/
 dist/*.sfc
+scenarios/checkpoints/*.state
+scenarios/checkpoints/*.bin
 *.log

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/slapstick-scenario.schema.json",
+  "title": "Slap Stick test scenario",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "checkpoint"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "name": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$" },
+    "description": { "type": "string" },
+    "checkpoint": { "type": "string", "minLength": 1 },
+    "catalog": { "type": "string", "minLength": 1 },
+    "rom": { "type": "string", "minLength": 1 },
+    "map": { "$ref": "#/$defs/reference" },
+    "room": { "$ref": "#/$defs/reference" },
+    "direction": { "$ref": "#/$defs/direction" },
+    "position": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "$ref": "#/$defs/integerReference" },
+        "y": { "$ref": "#/$defs/integerReference" },
+        "direction": { "$ref": "#/$defs/direction" }
+      }
+    },
+    "flags": {
+      "type": "object",
+      "additionalProperties": { "type": "boolean" }
+    },
+    "inventory": {
+      "oneOf": [
+        { "$ref": "#/$defs/itemList" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mode": { "enum": ["replace", "merge"] },
+            "items": { "$ref": "#/$defs/itemList" },
+            "equipped": {
+              "oneOf": [
+                { "$ref": "#/$defs/item" },
+                { "type": "null" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "party": {
+      "oneOf": [
+        {
+          "type": "array",
+          "maxItems": 2,
+          "items": { "$ref": "#/$defs/reference" }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "members": {
+              "type": "array",
+              "maxItems": 2,
+              "items": { "$ref": "#/$defs/reference" }
+            },
+            "robots": { "$ref": "#/$defs/robots" },
+            "robotsAvailable": { "$ref": "#/$defs/robots" },
+            "active": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "activeRobot": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "order": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "uniqueItems": true,
+              "items": { "type": "integer", "minimum": 1, "maximum": 3 }
+            }
+          }
+        }
+      ]
+    },
+    "interaction": {
+      "oneOf": [
+        { "$ref": "#/$defs/button" },
+        { "const": false },
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "button": { "$ref": "#/$defs/button" },
+            "delayFrames": { "type": "integer", "minimum": 0 },
+            "holdFrames": { "type": "integer", "minimum": 1 },
+            "afterFrames": { "type": "integer", "minimum": 0 }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "reference": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "type": "integer", "minimum": 0, "maximum": 65535 },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id"],
+          "properties": { "id": { "$ref": "#/$defs/integerReference" } }
+        }
+      ]
+    },
+    "integerReference": {
+      "oneOf": [
+        { "type": "integer", "minimum": 0, "maximum": 65535 },
+        { "type": "string", "pattern": "^(?:[0-9]+|0[xX][0-9A-Fa-f]+|\\$[0-9A-Fa-f]+)$" }
+      ]
+    },
+    "direction": {
+      "oneOf": [
+        { "enum": ["down", "up", "left", "right"] },
+        { "type": "integer", "minimum": 0, "maximum": 3 }
+      ]
+    },
+    "button": {
+      "enum": ["a", "b", "x", "y", "l", "r", "start", "select", "up", "down", "left", "right"]
+    },
+    "itemList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/item" }
+    },
+    "item": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "type": "integer", "minimum": 0, "maximum": 65535 },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "oneOf": [
+            { "required": ["item"] },
+            { "required": ["id"] },
+            { "required": ["raw"] }
+          ],
+          "allOf": [
+            {
+              "if": { "required": ["raw"] },
+              "then": { "not": { "required": ["level"] } }
+            }
+          ],
+          "properties": {
+            "item": { "$ref": "#/$defs/reference" },
+            "id": { "$ref": "#/$defs/integerReference" },
+            "raw": { "$ref": "#/$defs/integerReference" },
+            "level": { "type": "integer", "minimum": 0, "maximum": 255 },
+            "quantity": { "type": "integer", "minimum": 1, "maximum": 70 }
+          }
+        }
+      ]
+    },
+    "robots": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 1, "maximum": 3 }
+    }
+  }
+}

@@ -12,6 +12,7 @@ import argparse
 import ctypes
 import hashlib
 import json
+import os
 import signal
 from pathlib import Path
 from typing import Final
@@ -293,7 +294,15 @@ def state_hash(core: ctypes.CDLL, size: int, buffer: ctypes.Array) -> str | None
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("rom", type=Path)
-    parser.add_argument("--core", type=Path, default=Path("/usr/lib/libretro/snes9x_libretro.so"))
+    parser.add_argument(
+        "--core",
+        type=Path,
+        default=Path(
+            os.environ.get(
+                "SNES9X_LIBRETRO_CORE", "/usr/lib/libretro/snes9x_libretro.so"
+            )
+        ),
+    )
     parser.add_argument("--frames", type=int, default=1800)
     parser.add_argument("--snapshot-every", type=int, default=120)
     parser.add_argument("--pulse", action="append", default=[], help="button:start:duration")
@@ -307,8 +316,16 @@ def main() -> None:
     parser.add_argument("--dump-wram-at", action="append", type=int, default=[])
     parser.add_argument("--load-state", type=Path)
     parser.add_argument("--save-state-at", action="append", type=int, default=[])
+    parser.add_argument(
+        "--save-state-output",
+        type=Path,
+        help="serialize the final frame directly to this path",
+    )
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
+
+    if args.frames < 0:
+        raise SystemExit("--frames must not be negative")
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     pulses = parse_pulses(args.pulse) + parse_repeats(args.repeat)
@@ -352,6 +369,7 @@ def main() -> None:
         if not core.retro_unserialize(state_buffer, serialize_size):
             raise SystemExit("The libretro core rejected the save state")
     samples = []
+    wram_size = core.retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM)
 
     try:
         for frame in range(args.frames + 1):
@@ -391,6 +409,11 @@ def main() -> None:
                 )
             if frontend.shutdown:
                 break
+        if args.save_state_output:
+            if not core.retro_serialize(serialize_buffer, serialize_size):
+                raise RuntimeError("The libretro core could not serialize final state")
+            args.save_state_output.parent.mkdir(parents=True, exist_ok=True)
+            args.save_state_output.write_bytes(serialize_buffer.raw[:serialize_size])
     finally:
         core.retro_unload_game()
         core.retro_deinit()
@@ -407,6 +430,7 @@ def main() -> None:
         "pixelFormat": frontend.pixel_format,
         "wramSize": wram_size,
         "serializeSize": serialize_size,
+        "finalState": str(args.save_state_output) if args.save_state_output else None,
         "environmentCommands": sorted(frontend.environment_commands),
         "samples": samples,
     }

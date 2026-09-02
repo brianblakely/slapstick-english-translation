@@ -87,6 +87,21 @@ nix run .#smoke -- \
   --output-dir build/smoke
 ```
 
+## Runtime scenarios
+
+Focused test states can be generated from small, reviewable scenario files:
+
+```sh
+npm run scenario -- invention-machine
+```
+
+The runner can mutate a named local Snes9x checkpoint or build a test ROM whose
+new-game initializer applies the same player position/direction, story flags,
+inventory, and party state. An optional interaction can be sent through the
+deterministic libretro harness before a final state is serialized. See
+[scenarios/README.md](scenarios/README.md) for setup, the JSON format, and
+examples.
+
 Run `nix flake check` to build the pinned core and verify that the expected
 `snes9x_libretro.so` is present. Snes9x has a non-commercial license, so
 Nixpkgs classifies it as unfree; this flake opts in to that package explicitly.
