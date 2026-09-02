@@ -9,7 +9,11 @@ const SOURCE_SHA256 = "08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900
 const SOURCE_SIZE = 0x180000;
 const TARGET_SIZE = 0x200000;
 const HEADER_OFFSET = 0xffc0;
-const EXPANSION_START = 0x180100;
+// Only the upper 32 KiB of each expanded HiROM file bank is used for text.
+// It can be addressed through banks 98-9F, whose lower halves retain the SNES
+// WRAM/I/O mirrors required by the stock text interpreters. Banks D8-DF expose
+// ROM in their lower halves and therefore cannot safely serve as the data bank.
+const EXPANSION_START = 0x188000;
 const DIALOG_REDIRECT = 0xcf;
 const CONSOLE_REDIRECT = 0x0c;
 let crcTable = null;
@@ -385,18 +389,19 @@ function largestSafeDialogPrefix(bytes, start, maximum) {
 }
 
 function placeWithoutCrossingBank(cursor, size) {
+  if (size > 0x8000) throw new Error(`A relocated string exceeds one mirrored HiROM half-bank (${size} bytes)`);
+  if ((cursor & 0xffff) < 0x8000) cursor = (cursor & ~0xffff) + 0x8000;
   const remaining = 0x10000 - (cursor & 0xffff);
-  return size <= remaining ? cursor : (cursor + 0xffff) & ~0xffff;
+  return size <= remaining ? cursor : ((cursor + 0x10000) & ~0xffff) + 0x8000;
 }
 
 function romPointer(offset) {
   const fileBank = offset >>> 16;
   const address = offset & 0xffff;
-  if (offset < SOURCE_SIZE) {
-    if (address < 0x8000) throw new Error(`Cannot address original HiROM offset ${offset.toString(16)} via bank 80-BF`);
-    return { bank: 0x80 + fileBank, address };
+  if (address < 0x8000) {
+    throw new Error(`Cannot address HiROM text offset ${offset.toString(16)} through a WRAM-mirrored bank`);
   }
-  return { bank: 0xc0 + fileBank, address };
+  return { bank: 0x80 + fileBank, address };
 }
 
 function scanDialogLength(rom, start) {
@@ -445,6 +450,13 @@ function encodeDialog(source) {
   let mode = null;
   let endedByHalt = false;
 
+  const restoreBaseMode = () => {
+    if (mode === "alternate") {
+      output.push(0xd5);
+      mode = "base";
+    }
+  };
+
   for (const part of tokenize(source)) {
     if (part.type === "text") {
       endedByHalt = false;
@@ -470,13 +482,22 @@ function encodeDialog(source) {
     const command = DIALOG_COMMANDS[part.name];
     if (!command) throw new Error(`Unknown dialog command [${part.value}]`);
     const [opcode, types, halt = false] = command;
+    // $0EC6 combines the interpreter nesting depth with the alternate-font
+    // flag.  The stock exit handler only recognizes a completed top-level
+    // string when the whole word reaches zero, so an English string ending in
+    // lowercase must explicitly restore the base font before it terminates.
+    // D3 is a jump, not a semantic exit, and therefore preserves font state.
+    if (halt && opcode !== 0xd3) restoreBaseMode();
     output.push(opcode, ...encodeParameters(types, part.args));
     if (opcode === 0xd5) mode = "base";
     if (opcode === 0xd4) mode = "alternate";
     endedByHalt = halt;
   }
 
-  if (!endedByHalt) output.push(0xcc);
+  if (!endedByHalt) {
+    restoreBaseMode();
+    output.push(0xcc);
+  }
   return Buffer.from(output);
 }
 

@@ -51,13 +51,15 @@
     "offset": "04E98E",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0] その中では さまざまな[N] 生命の いとなみが[N] おこなわれていた[ESC]",
-    "translation": "[CLR][DLY:6][SFX:0] Across its vast expanse,[N] countless forms of life[N] went about their days.[ESC]"
+    "translation": "[CLR][DLY:6][SFX:0]Across its vast expanse,[N]countless forms of life[N]went about their days.[ESC]",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04E9B8",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]その大宇宙の どこかに[N]極楽星という 小さな星があり[N]ロココ町という 町があった···",
-    "translation": "[CLR][DLY:6][SFX:0]Somewhere in that universe[N]was a small world called[N]Bliss,[N]and on it, Rococo Town..."
+    "translation": "[CLR][DLY:6][SFX:0]In that vast universe[N]lay Bliss, a tiny world,[N]home to Rococo Town...",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EA65",
@@ -69,13 +71,15 @@
     "offset": "04EAA2",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]人々は ロココ町で[N]それなりに 幸せにくらしていた[ESC]",
-    "translation": "[CLR][DLY:6][SFX:0]The people of Rococo[N]lived modest, happy lives.[ESC]"
+    "translation": "[CLR][DLY:6][SFX:0]Rococo's people lived[N]modest, happy lives.[ESC]",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EAC7",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]だが その平和は[N]長くは 続かなかった···",
-    "translation": "[CLR][DLY:6][SFX:0]But their peace[N]would not last long..."
+    "translation": "[CLR][DLY:6][SFX:0]But their peace[N]would not last long...",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EB54",
@@ -87,7 +91,8 @@
     "offset": "04EB91",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]彼らは ロココ町の近辺で[N]さまざまな 悪行を[N]かさねはじめた···",
-    "translation": "[CLR][DLY:6][SFX:0]Around Rococo, they began[N]committing every sort[N]of wicked deed..."
+    "translation": "[CLR][DLY:6][SFX:0]Near Rococo, they began[N]committing every kind[N]of wicked deed...",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EC10",
@@ -99,19 +104,22 @@
     "offset": "04EC28",
     "kind": "dialog",
     "source": "[CLR][ESC]",
-    "translation": "[CLR][ESC]"
+    "translation": "[CLR][ESC]",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EC2A",
     "kind": "dialog",
     "source": "[CLR][DLY:1][SFX:0][N]  ···はかい···[ESC]",
-    "translation": "[CLR][DLY:1][SFX:0][N]    ...destruction...[ESC]"
+    "translation": "[CLR][DLY:1][SFX:0][N]    ...destruction...[ESC]",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EC3C",
     "kind": "dialog",
     "source": "[CLR][DLY:1][SFX:0][N]  ···などなど···",
-    "translation": "[CLR][DLY:1][SFX:0][N]     ...and more..."
+    "translation": "[CLR][DLY:1][SFX:0][N]     ...and more...",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04ECE3",
@@ -123,7 +131,8 @@
     "offset": "04ED24",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]彼らがどこからやってくるのか[N]その真の目的は 何なのか[N]知るよしもなかった···",
-    "translation": "[CLR][DLY:6][SFX:0]No one knew where they[N]came[N]from, or what their true[N]purpose could be..."
+    "translation": "[CLR][DLY:6][SFX:0]No one knew their origin[N]or their true purpose.[N]Fear only grew...",
+    "layout": { "columns": 24, "rows": 3 }
   },
   {
     "offset": "04EE0C",
@@ -135,7 +144,8 @@
     "offset": "04EE3F",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]   少年の夢は 父のような[N]   発明家になることだった",
-    "translation": "[CLR][DLY:6][SFX:0]   The boy dreamed of[N]becoming[N]   an inventor like his[N]father."
+    "translation": "[CLR][DLY:6][SFX:0]His dream was to become[N]an inventor like his dad.",
+    "layout": { "columns": 26, "rows": 2 }
   },
   {
     "offset": "04F7A3",

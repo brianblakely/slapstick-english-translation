@@ -108,8 +108,14 @@ independently translated `translation` field is encoded into the English ROM.
 
 Most translated strings no longer fit their original slots. The builder
 reclaims the bytes after each four-byte entry stub, packs strings into suitable
-same-bank gaps when possible, and otherwise places them in expanded HiROM
-banks beginning at file offset `0x180100`.
+same-bank gaps when possible, and otherwise places them in the upper half of
+each expanded HiROM file bank beginning at file offset `0x188000`.
+
+Expanded text is addressed through banks `$98`-`$9F`, not their full-ROM
+`$D8`-`$DF` mirrors. The dialogue and console handlers use absolute low-bank
+addresses for work RAM. Banks `$98`-`$9F` preserve those WRAM/I/O mirrors below
+`$8000`, while `$D8`-`$DF` would resolve the same addresses as ROM and can lock
+the renderer when it reads its box state.
 
 Dialogue entry stubs use command `CF` followed by a 24-bit address. Console
 entry stubs use the previously unused command `0C` with the same address

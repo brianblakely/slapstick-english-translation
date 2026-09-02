@@ -26,7 +26,11 @@ for (const filename of files) {
 
   for (const entry of entries) {
     if (!shouldReflow(entry.translation)) continue;
-    const result = reflow(entry.translation);
+    const result = reflow(
+      entry.translation,
+      entry.layout?.columns ?? MAX_COLUMNS,
+      entry.layout?.rows ?? MAX_ROWS,
+    );
     if (result.text === entry.translation) continue;
     if (samples.length < 4) {
       samples.push({ location: `${filename}:${entry.offset}`, before: entry.translation, after: result.text });
@@ -60,7 +64,7 @@ function shouldReflow(text) {
   return /\[(?:DEF|DF2|DFT|CLR|N|FIN|NXT|END|DES|ESC|WAI|TPL:)/.test(text);
 }
 
-function reflow(text) {
+function reflow(text, maxColumns, maxRows) {
   const atoms = tokenize(text);
   const output = [];
   let column = 0;
@@ -69,7 +73,7 @@ function reflow(text) {
   let pageBreaks = 0;
 
   const emitBreak = (forcePage = false) => {
-    if (forcePage || row >= MAX_ROWS - 1) {
+    if (forcePage || row >= maxRows - 1) {
       output.push("[FIN]");
       row = 0;
       pageBreaks += 1;
@@ -86,16 +90,16 @@ function reflow(text) {
     if (atom.type === "character") {
       if (atom.value === " ") {
         const followingWidth = nextWordWidth(atoms, index + 1);
-        if (column > 0 && followingWidth > 0 && column + 1 + followingWidth > MAX_COLUMNS) {
+        if (column > 0 && followingWidth > 0 && column + 1 + followingWidth > maxColumns) {
           emitBreak();
-        } else if (column < MAX_COLUMNS) {
+        } else if (column < maxColumns) {
           output.push(atom.value);
           column += 1;
         }
         continue;
       }
 
-      if (column >= MAX_COLUMNS) emitBreak();
+      if (column >= maxColumns) emitBreak();
       output.push(atom.value);
       column += 1;
       continue;
@@ -104,7 +108,7 @@ function reflow(text) {
     const { name } = atom;
     if (name === "N") {
       const choices = consecutiveIndentedLines(atoms, index + 1);
-      emitBreak(choices >= 2 && row + choices > MAX_ROWS - 1);
+      emitBreak(choices >= 2 && row + choices > maxRows - 1);
       continue;
     }
     if (name === "FIN") {
@@ -121,7 +125,7 @@ function reflow(text) {
     }
 
     if (name === "TPL" && isSpeakerTemplate(atom.args[0])) {
-      if (row >= MAX_ROWS - 1) emitBreak(true);
+      if (row >= maxRows - 1) emitBreak(true);
       output.push(atom.value);
       row += 1;
       column = 0;
@@ -129,7 +133,7 @@ function reflow(text) {
     }
 
     const width = commandWidth(atom);
-    if (width > 0 && column > 0 && column + width > MAX_COLUMNS) emitBreak();
+    if (width > 0 && column > 0 && column + width > maxColumns) emitBreak();
     output.push(atom.value);
     column += width;
   }

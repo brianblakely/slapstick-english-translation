@@ -19,7 +19,7 @@ for (const filename of files) {
     if (entry.kind === "dialog" && /\[(?:JMP|STR):/.test(entry.translation)) {
       errors.push(`${location}: translated dialogue still contains a shared-text jump`);
     }
-    if (entry.kind === "dialog") validateDialogLayout(entry.translation, location);
+    if (entry.kind === "dialog") validateDialogLayout(entry.translation, location, entry.layout);
   }
 }
 
@@ -31,9 +31,9 @@ if (errors.length) {
   console.log(`Validated ${entryCount} script entries: complete, English-only, and within dialogue boxes.`);
 }
 
-function validateDialogLayout(text, location) {
-  let columns = 26;
-  let rows = 4;
+function validateDialogLayout(text, location, inheritedLayout) {
+  let columns = inheritedLayout?.columns ?? 26;
+  let rows = inheritedLayout?.rows ?? 4;
   let column = 0;
   let row = 0;
 
