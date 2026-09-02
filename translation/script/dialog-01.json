@@ -1,0 +1,1490 @@
+[
+  {
+    "offset": "01CF63",
+    "kind": "dialog",
+    "source": "[CA][DES]",
+    "translation": "[CA][DES]"
+  },
+  {
+    "offset": "01CF66",
+    "kind": "dialog",
+    "source": "[CB][DES]",
+    "translation": "[CB][DES]"
+  },
+  {
+    "offset": "01CF69",
+    "kind": "dialog",
+    "source": "[CLR]もうしわけございません[N]トロンが たりないので[N]またおこしください˳[WAI]",
+    "translation": "[CLR]Sorry, you do not have[N]enough tron. Please come[N]again later.[WAI]"
+  },
+  {
+    "offset": "01CF9A",
+    "kind": "dialog",
+    "source": "     ",
+    "translation": "     "
+  },
+  {
+    "offset": "01CFA8",
+    "kind": "dialog",
+    "source": "[CA][POS:2,1C][BOX:E,1,2][DLY:1]     名前をつけてください",
+    "translation": "[CA][POS:2,1C][BOX:E,1,2][DLY:1]       Enter a name"
+  },
+  {
+    "offset": "01CFC4",
+    "kind": "dialog",
+    "source": "[CA][POS:2,1C][BOX:E,1,2][DLY:1]   技の名前をつけてください",
+    "translation": "[CA][POS:2,1C][BOX:E,1,2][DLY:1]    Name this technique"
+  },
+  {
+    "offset": "01CFE1",
+    "kind": "dialog",
+    "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N]ボーナスデータ[DEC:1,4,5D2]メガ[N]合計[::][DEC:1,4,5D0]メガのデータを集めた[FIN]",
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] mega in bonus data,[N][DEC:1,4,5D0] mega in all.[FIN]"
+  },
+  {
+    "offset": "01D01B",
+    "kind": "dialog",
+    "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N][JMP:&string_01CFE1+M]",
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] mega in bonus data,[N][DEC:1,4,5D0] mega in all.[FIN]"
+  },
+  {
+    "offset": "01D02B",
+    "kind": "dialog",
+    "source": "[CLR][NAM:0]は LV[NUM:2,B12]になった[PAU:3C][NXT]",
+    "translation": "[CLR][NAM:0] reached LV [NUM:2,B12]![PAU:3C][NXT]"
+  },
+  {
+    "offset": "01D03D",
+    "kind": "dialog",
+    "source": "[POS:2,2][BOX:C,1,2][CLR][DLY:1]▌▐どのロボットに使いますか?",
+    "translation": "[POS:2,2][BOX:C,1,2][CLR][DLY:1]▌▐Use on which robot?"
+  },
+  {
+    "offset": "01D05C",
+    "kind": "dialog",
+    "source": "[CLR][DLY:1]使う必要がありません[WAI]",
+    "translation": "[CLR][DLY:1]There is no need to use[N]it.[WAI]"
+  },
+  {
+    "offset": "01D06E",
+    "kind": "dialog",
+    "source": "[POS:2,2][BOX:C,1,2][CLR][DLY:1][TBL:&string_list_01D07E,0B80][END]",
+    "translation": "[POS:2,2][BOX:C,1,2][CLR][DLY:1][TBL:&string_list_01D07E,0B80][END]"
+  },
+  {
+    "offset": "01D08A",
+    "kind": "dialog",
+    "source": "スーパーボムをひろった",
+    "translation": "Found a Super Bomb!"
+  },
+  {
+    "offset": "01D098",
+    "kind": "dialog",
+    "source": "ボーナスデータを0.5メガ集めた",
+    "translation": "Got 0.5 mega bonus data!"
+  },
+  {
+    "offset": "01D0B0",
+    "kind": "dialog",
+    "source": "ボーナスデータを1.0メガ集めた",
+    "translation": "Got 1.0 mega bonus data!"
+  },
+  {
+    "offset": "01D0C8",
+    "kind": "dialog",
+    "source": "エネルギーが回復した",
+    "translation": "Energy restored!"
+  },
+  {
+    "offset": "01D0D7",
+    "kind": "dialog",
+    "source": "裝備のレベルがあがった",
+    "translation": "Equipment level increased!"
+  },
+  {
+    "offset": "01D0E7",
+    "kind": "dialog",
+    "source": "持ち物がいっぱいでひろえない",
+    "translation": "Your inventory is full."
+  },
+  {
+    "offset": "01D0F8",
+    "kind": "dialog",
+    "source": "[CLR]何がほしいんだ?選んでくれよ˳",
+    "translation": "[CLR]What do you want? Pick[N]one."
+  },
+  {
+    "offset": "01D10B",
+    "kind": "dialog",
+    "source": "[CLR]ほしいものがあったら[N]いつでも 来なよ˳[END]",
+    "translation": "[CLR]Come by whenever you[N]need something.[END]"
+  },
+  {
+    "offset": "01D122",
+    "kind": "dialog",
+    "source": "[CLR]これは[N][TBL:&string_list_01DB1F,0B80]だよ[FIN][NUM:4,B82]トロンだけど買うかい?[N] 買う[N] やめておく",
+    "translation": "[CLR]This is[N][TBL:&string_list_01DB1F,0B80].[FIN]It costs [NUM:4,B82] tron. Buy[N]it?[N] Buy[N] Never mind"
+  },
+  {
+    "offset": "01D14E",
+    "kind": "dialog",
+    "source": "[CLR]なんだ 持ち物がいっぱいで[N]わたせないじゃないか˳[WAI]",
+    "translation": "[CLR]Your inventory is full,[N]so I cannot hand it over.[WAI]"
+  },
+  {
+    "offset": "01D16C",
+    "kind": "dialog",
+    "source": "[CLR]トロンが たりないよ[N]かわいそうだが 売れないな˳[N][WAI]",
+    "translation": "[CLR]You do not have enough[N]tron.[N]Sorry, but I cannot sell[N]it.[FIN][WAI]"
+  },
+  {
+    "offset": "01D18C",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR][DLY:1]ロボットに使うアイテムを[N]選んでください[N][E2:4000]ボタンでアイテム説明です",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][DLY:1]Choose an item to use[N]on a robot.[N][E2:4000] shows item details."
+  },
+  {
+    "offset": "01D1C7",
+    "kind": "dialog",
+    "source": "[CLR]どのロボットに使いますか?",
+    "translation": "[CLR]Use on which robot?"
+  },
+  {
+    "offset": "01D1D9",
+    "kind": "dialog",
+    "source": "[CLR]このロボットには[N]使う必要がありません˳[WAI]",
+    "translation": "[CLR]This robot does not[N]need that item.[WAI]"
+  },
+  {
+    "offset": "01D1F5",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]を 使いますか?[N] 使う[N] やめておく",
+    "translation": "[CLR]Use [TBL:&string_list_01E23C,0B80]?[N] Use it[N] Never mind"
+  },
+  {
+    "offset": "01D211",
+    "kind": "dialog",
+    "source": "[CLR]戦闘に登場させる順に[E2:80]ボタンを[N]おしてください˳",
+    "translation": "[CLR]Press [E2:80] in the order[N]the robots should enter[N]battle."
+  },
+  {
+    "offset": "01D234",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR][DLY:1][PAL:4][E2:80]ボタン[PAL:0]:裝備(ならびかえ)[N][PAL:4][E2:40]ボタン[PAL:0]:ならびかえ[N][PAL:4][E2:4000]ボタン[PAL:0]:アイテム説明",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][DLY:1][PAL:4][E2:80][PAL:0]: equip or reorder[N][PAL:4][E2:40][PAL:0]: reorder[N][PAL:4][E2:4000][PAL:0]: item details"
+  },
+  {
+    "offset": "01D282",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01DB1F,0B9C][WAI]",
+    "translation": "[CLR][TBL:&string_list_01DB1F,0B9C][WAI]"
+  },
+  {
+    "offset": "01D28A",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]を すてますか?[N] やめておく[N] すてる",
+    "translation": "[CLR]Discard [TBL:&string_list_01E23C,0B80]?[N] Keep it[N] Discard it"
+  },
+  {
+    "offset": "01D2A5",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]は すてられません˳[WAI]",
+    "translation": "[CLR][TBL:&string_list_01E23C,0B80][N]cannot be discarded.[WAI]"
+  },
+  {
+    "offset": "01D2B7",
+    "kind": "dialog",
+    "source": "[DEF][TBL:&string_list_01E23C,0676]は[N]ここでは使えません˳[END]",
+    "translation": "[DEF][TBL:&string_list_01E23C,0676] cannot[N]be used here.[END]"
+  },
+  {
+    "offset": "01D2CB",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は カギを使った˳[WAI][DES]",
+    "translation": "[DEF] [NAM:0] used the key.[WAI][DES]"
+  },
+  {
+    "offset": "01D2DE",
+    "kind": "dialog",
+    "source": "[CLR]アイテムの空きをつめますか?[N] 空きをつめる[N] やめておく",
+    "translation": "[CLR]Remove gaps in the item[N]list?[N] Remove gaps[N] Never mind"
+  },
+  {
+    "offset": "01D301",
+    "kind": "dialog",
+    "source": "[CLR]アイテムを順番にならびかえますか?[N] ならびかえる[N] やめておく",
+    "translation": "[CLR]Reorder the item list?[N] Reorder it[N] Never mind"
+  },
+  {
+    "offset": "01D327",
+    "kind": "dialog",
+    "source": "[POS:3,1B][BOX:D,1,0][DLY:1]技は戦闘中のRUNで実行します˳",
+    "translation": "[POS:3,1B][BOX:D,1,0][DLY:1]RUN can trigger combos."
+  },
+  {
+    "offset": "01D347",
+    "kind": "dialog",
+    "source": "[DEF][N] ···背が とどかない···[END]",
+    "translation": "[DEF][N] ...It is out of reach...[END]"
+  },
+  {
+    "offset": "01D35A",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]画面の上の コマンドから[N]やりたい作業を えらぶんじゃよ˳",
+    "translation": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]Choose what you want to do[N]from the commands above."
+  },
+  {
+    "offset": "01D389",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]ほお はじめてみる顔だのぉ[N]この マシンを使うのは[N]はじめてか?[NXT]",
+    "translation": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]Well, a new face![N]Is this your first time[N]using this machine?[NXT]"
+  },
+  {
+    "offset": "01D3B8",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]おめでとう!レベルアップです![N]今なら もれなく[N]ポータブルマシンが 使えます˳[NXT]",
+    "translation": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]Congratulations! Level up![N]You can now use the[N]portable machine at no[N]extra charge![NXT]"
+  },
+  {
+    "offset": "01D3F1",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]ポータブルマシンでは[N]ロボットは 作れません[N]ごめんなさい![NXT]",
+    "translation": "[POS:3,11][BOX:D,4,0][DLY:1][CLR]You cannot build robots[N]with the portable machine.[N]Sorry![NXT]"
+  },
+  {
+    "offset": "01D41F",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR]作りたいアイテムを選んでね˳[N][TBL:&string_list_01D4C1,0BA0]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR]Choose an item to invent.[N][TBL:&string_list_01D4C1,0BA0]"
+  },
+  {
+    "offset": "01D440",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]を作るには[N][NUM:4,B82]トロン必要です˳[N] 作る      やめておく",
+    "translation": "[CLR]Making [TBL:&string_list_01E23C,0B80][N]costs [NUM:4,B82] tron.[N] Make it    Never mind"
+  },
+  {
+    "offset": "01D46E",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]ができました![WAI]",
+    "translation": "[CLR]Made [TBL:&string_list_01E23C,0B80]![WAI]"
+  },
+  {
+    "offset": "01D47D",
+    "kind": "dialog",
+    "source": "[CLR]持ち物が いっぱいで[N]新しいものは 作れませんよ˳[WAI]",
+    "translation": "[CLR]Your inventory is full.[N]You cannot make a new[N]item.[WAI]"
+  },
+  {
+    "offset": "01D49D",
+    "kind": "dialog",
+    "source": "[CLR]これは もう持っておるじゃろ[N]たくさん作っても仕方ないぞ˳[WAI]",
+    "translation": "[CLR]You already have one.[N]There is no point making[N]more.[WAI]"
+  },
+  {
+    "offset": "01D4C5",
+    "kind": "dialog",
+    "source": "[PAL:4]L·Rボタン[PAL:0]:ロボットアイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
+    "translation": "[PAL:4]L/R[PAL:0]: robot items[N][PAL:4][E2:4000][PAL:0]: item details"
+  },
+  {
+    "offset": "01D4F7",
+    "kind": "dialog",
+    "source": "[PAL:4]L·Rボタン[PAL:0]:[NAM:0]アイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
+    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items[N][PAL:4][E2:4000][PAL:0]: item details"
+  },
+  {
+    "offset": "01D527",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]は[N] こうげき +[NUM:3,B98][N] ŁⅨのとき +[NUM:3,B9A]だよ[WAI]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]:[N] ATTACK +[NUM:3,B98][N] SPECIAL +[NUM:3,B9A][WAI]"
+  },
+  {
+    "offset": "01D55D",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01E23C,0B9C]は[N] こうげき +[NUM:3,B98][N] ぼうぎょ +[NUM:3,B9A][WAI]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01E23C,0B9C]:[N] ATTACK +[NUM:3,B98][N] DEFENSE +[NUM:3,B9A][WAI]"
+  },
+  {
+    "offset": "01D589",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][JMP:&string_01D282]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01DB1F,0B9C][WAI]"
+  },
+  {
+    "offset": "01D593",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][JMP:&string_01D28A]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR]Discard [TBL:&string_list_01E23C,0B80]?[N] Keep it[N] Discard it"
+  },
+  {
+    "offset": "01D59D",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][JMP:&string_01D2A5]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR][TBL:&string_list_01E23C,0B80][N]cannot be discarded.[WAI]"
+  },
+  {
+    "offset": "01D5A7",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR]合成するアイテムを 2つ選んでね˳[N][TBL:&string_list_01D4C1,0BA0]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR]Pick two items to combine.[N][TBL:&string_list_01D4C1,0BA0]"
+  },
+  {
+    "offset": "01D5CC",
+    "kind": "dialog",
+    "source": "[CLR]合成すると[N][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]が できるよ˳[N] やめておく   合成する",
+    "translation": "[CLR]Combining them makes[N][TBL:&string_list_01E23C,0B9C][N][TBL:&string_list_01E6B3,0B9E].[N] Cancel       Combine"
+  },
+  {
+    "offset": "01D5F7",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]ができました![WAI]",
+    "translation": "[CLR]Made[N][TBL:&string_list_01E23C,0B9C][N][TBL:&string_list_01E6B3,0B9E]![WAI]"
+  },
+  {
+    "offset": "01D60B",
+    "kind": "dialog",
+    "source": "[CLR][::]これは 合成できないよ˳[WAI]",
+    "translation": "[CLR][::]These items cannot be[N]combined.[WAI]"
+  },
+  {
+    "offset": "01D61C",
+    "kind": "dialog",
+    "source": "[CLR]持ち物がいっぱいで[N][JMP:&string_01D60B+M]",
+    "translation": "[CLR]Your inventory is full,[N]so these cannot be[N]combined.[WAI]"
+  },
+  {
+    "offset": "01D62C",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR]いらないアイテムをリサイクルします[N][TBL:&string_list_01D4C1,0BA0]",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR]Choose an item to recycle.[N][TBL:&string_list_01D4C1,0BA0]"
+  },
+  {
+    "offset": "01D650",
+    "kind": "dialog",
+    "source": "[CLR][TBL:&string_list_01E23C,0B80]をリサイクルすると[N][NUM:4,B82]トロンもどりますよ˳[N] やめておく   リサイクルする",
+    "translation": "[CLR]Recycle [TBL:&string_list_01E23C,0B80]?[N]Refund: [NUM:4,B82] tron.[N] Cancel       Recycle"
+  },
+  {
+    "offset": "01D686",
+    "kind": "dialog",
+    "source": "[CLR]このアイテムは リサイクル[N]できませんね˳[WAI]",
+    "translation": "[CLR]That item cannot[N]be recycled.[WAI]"
+  },
+  {
+    "offset": "01D6A2",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0]ロボットを作るには[N][NUM:4,B82]トロン必要じゃぞ˳[N] 作る      やめておく",
+    "translation": "[POS:3,11][BOX:D,4,0]Building a robot costs[N][NUM:4,B82] tron.[N] Build it    Never mind"
+  },
+  {
+    "offset": "01D6D8",
+    "kind": "dialog",
+    "source": "[POS:3,11][BOX:D,4,0]おまえさんは もう3台も[N]ロボットを 持っておるじゃろう[N]それだけおれば 十分じゃ˳[END]",
+    "translation": "[POS:3,11][BOX:D,4,0]You already have three[N]robots. Surely that is[N]enough for anyone.[END]"
+  },
+  {
+    "offset": "01D710",
+    "kind": "dialog",
+    "source": "[CLR]ほい きたっ!さっそく[N]作業にとりかかるぞ!!",
+    "translation": "[CLR]All right! I will get[N]to work at once!"
+  },
+  {
+    "offset": "01D72B",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0][CLR][NUM:4,B80]トロンかかりますが[N]メンテナンスしますか?[N] する      やめておく",
+    "translation": "[POS:3,13][BOX:D,3,0][CLR]Service: [NUM:4,B80] tron.[N]Proceed?[N] Yes         Never mind"
+  },
+  {
+    "offset": "01D760",
+    "kind": "dialog",
+    "source": "[CLR]メンテナンスが終わりました˳[WAI]",
+    "translation": "[CLR]Maintenance complete.[WAI]"
+  },
+  {
+    "offset": "01D774",
+    "kind": "dialog",
+    "source": "[POS:3,13][BOX:D,3,0]このロボットは メンテナンスの[N]必要がありませんよ˳[WAI]",
+    "translation": "[POS:3,13][BOX:D,3,0]This robot does not[N]need maintenance.[WAI]"
+  },
+  {
+    "offset": "01D79D",
+    "kind": "dialog",
+    "source": "[POS:3,15][BOX:D,2,0]メンテナンスする[N]ロボットを選んでください˳",
+    "translation": "[POS:3,15][BOX:D,2,0]Choose a robot[N]for maintenance."
+  },
+  {
+    "offset": "01D7C0",
+    "kind": "dialog",
+    "source": "[POS:3,15][BOX:D,2,0]プログラムする[N]ロボットを選んでください˳",
+    "translation": "[POS:3,15][BOX:D,2,0]Choose a robot[N]to program."
+  },
+  {
+    "offset": "01D7E2",
+    "kind": "dialog",
+    "source": "[POS:2,17][BOX:E,1,0]←→どちらをプログラムしますか?",
+    "translation": "[POS:2,17][BOX:E,1,0]←→Program which side?"
+  },
+  {
+    "offset": "01D7FE",
+    "kind": "dialog",
+    "source": "[POS:2,15][BOX:E,2,0]ポイントをふりわけてください[N]→キーでふえて ←キーでへります˳",
+    "translation": "[POS:2,15][BOX:E,2,0]Assign the points.[N]→ adds and ← subtracts."
+  },
+  {
+    "offset": "01D82C",
+    "kind": "dialog",
+    "source": "[POS:3,1B][BOX:D,1,0][CLR]どの技をかえますか?",
+    "translation": "[POS:3,1B][BOX:D,1,0][CLR]Change which technique?"
+  },
+  {
+    "offset": "01D840",
+    "kind": "dialog",
+    "source": "[CLR]R·L·[E2:40]ボタンで設定してください",
+    "translation": "[CLR]Set it with R, L, or [E2:40]."
+  },
+  {
+    "offset": "01D859",
+    "kind": "dialog",
+    "source": "[CLR]この技をとうろくしますか?",
+    "translation": "[CLR]Register this technique?"
+  },
+  {
+    "offset": "01D869",
+    "kind": "dialog",
+    "source": "[CLR] とうろく    さくじょ",
+    "translation": "[CLR] Register     Delete"
+  },
+  {
+    "offset": "01D878",
+    "kind": "dialog",
+    "source": "[DD][POS:9,C][BOX:7,3,2] 冒険をはじめる[N] きろくのコピー[N] きろくを消す",
+    "translation": "[DD][POS:9,C][BOX:7,3,2] New Adventure[N] Copy Record[N] Erase Record"
+  },
+  {
+    "offset": "01D89F",
+    "kind": "dialog",
+    "source": "[DD][POS:8,3][BOX:A,B,FF]  冒険のきろく[POS:8,15]きろくを選んでください [N]            ",
+    "translation": "[DD][POS:8,3][BOX:A,B,FF] ADVENTURE RECORDS[POS:8,15]Choose a record.    [N]            "
+  },
+  {
+    "offset": "01D8CF",
+    "kind": "dialog",
+    "source": "[DD][POS:8,3][BOX:A,B,FF]  きろくのコピー[N][N]            [N]            [N]            [N]            [N]            [N]            [N][N]どれをコピーしますか? [N]            ",
+    "translation": "[DD][POS:8,3][BOX:A,B,FF] COPY A RECORD[N][N]            [N]            [N]            [N]            [N]            [N]            [N][N]Which one to copy?  [N]            "
+  },
+  {
+    "offset": "01D94F",
+    "kind": "dialog",
+    "source": "[DD][POS:8,15]どこへコピーしますか? [N]            ",
+    "translation": "[DD][POS:8,15]Copy it where?       [N]            "
+  },
+  {
+    "offset": "01D96F",
+    "kind": "dialog",
+    "source": "[DD][POS:8,15] やめておく      [N] コピーする      ",
+    "translation": "[DD][POS:8,15] Cancel          [N] Copy            "
+  },
+  {
+    "offset": "01D98F",
+    "kind": "dialog",
+    "source": "[DD][POS:8,15]データが ありません[N]コピーできません    [END]",
+    "translation": "[DD][POS:8,15]There is no data.    [N]Cannot copy it.      [END]"
+  },
+  {
+    "offset": "01D9AF",
+    "kind": "dialog",
+    "source": "[DD][POS:8,3][BOX:A,B,FF]  きろくを消す[POS:8,15]どれを消しますか?   [N]            ",
+    "translation": "[DD][POS:8,3][BOX:A,B,FF] ERASE A RECORD[POS:8,15]Erase which one?    [N]            "
+  },
+  {
+    "offset": "01D9DE",
+    "kind": "dialog",
+    "source": "[DD][POS:8,15] やめておく      [N] 消します       ",
+    "translation": "[DD][POS:8,15] Cancel          [N] Erase           "
+  },
+  {
+    "offset": "01D9FD",
+    "kind": "dialog",
+    "source": "[DES][POS:A,2][BOX:7,1,2][DLY:1] ビュー·モード ",
+    "translation": "[DES][POS:A,2][BOX:7,1,2][DLY:1] VIEW MODE "
+  },
+  {
+    "offset": "01DA15",
+    "kind": "dialog",
+    "source": "[DES]",
+    "translation": "[DES]"
+  },
+  {
+    "offset": "01DA17",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は[N][PAL:2] [TBL:&string_list_01E23C,05EA][PAL:0]を 手に入れた!",
+    "translation": "[DEF] [NAM:0] obtained[N][PAL:2] [TBL:&string_list_01E23C,05EA][PAL:0]!"
+  },
+  {
+    "offset": "01DA32",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は[N][PAL:2] [TBL:&string_list_01E23C,05EA][PAL:0]を 見つけた!",
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] [TBL:&string_list_01E23C,05EA][PAL:0]!"
+  },
+  {
+    "offset": "01DA4B",
+    "kind": "dialog",
+    "source": "[DEF][N] 中は からっぽだった˳[END]",
+    "translation": "[DEF][N] It was empty.[END]"
+  },
+  {
+    "offset": "01DA5B",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は[N][PAL:2] [NUM:4,5EA]トロン[PAL:0]を 見つけた!",
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] [NUM:4,5EA] tron[PAL:0]!"
+  },
+  {
+    "offset": "01DA78",
+    "kind": "dialog",
+    "source": "[DEF][N] 持ち物が いっぱいだ˳[END]",
+    "translation": "[DEF][N] Your inventory is full.[END]"
+  },
+  {
+    "offset": "01DA89",
+    "kind": "dialog",
+    "source": "[DEF][N][DLY:7] ········[PAU:1E][DLY:3]開かない?[END]",
+    "translation": "[DEF][N][DLY:7] ........[PAU:1E][DLY:3]It will not open.[END]"
+  },
+  {
+    "offset": "01DAA1",
+    "kind": "dialog",
+    "source": "[WAI][DES]",
+    "translation": "[WAI][DES]"
+  },
+  {
+    "offset": "01DAA4",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は [PAL:2][TBL:&string_list_01E23C,05EE][PAL:0][N] をひらめいた![END]",
+    "translation": "[DEF] [NAM:0] got the idea for[N] [PAL:2][TBL:&string_list_01E23C,05EE][PAL:0]![END]"
+  },
+  {
+    "offset": "01DABD",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は [PAL:2][TBL:&string_list_01E23C,05EE][PAL:0][N] を半分ひらめいた![END]",
+    "translation": "[DEF] [NAM:0] half-understood[N] [PAL:2][TBL:&string_list_01E23C,05EE][PAL:0]![END]"
+  },
+  {
+    "offset": "01DADA",
+    "kind": "dialog",
+    "source": "[PAL:2] [TBL:&string_list_01E23C,05EE][PAL:0]のことが[N] 書いてある˳",
+    "translation": "It describes[N][PAL:2] [TBL:&string_list_01E23C,05EE][PAL:0]."
+  },
+  {
+    "offset": "01DAF2",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は [PAL:2][DEC:1,4,5EA]メガ[N][PAL:0] のデータを集めた![END]",
+    "translation": "[DEF] [NAM:0] collected [PAL:2][DEC:1,4,5EA][N]mega[N][PAL:0] of data![END]"
+  },
+  {
+    "offset": "01DB14",
+    "kind": "dialog",
+    "source": "[DEF] ·····???[END]",
+    "translation": "[DEF] ......???[END]"
+  },
+  {
+    "offset": "01DC4B",
+    "kind": "dialog",
+    "source": "おっと···[N]そこには なにもない",
+    "translation": "Hold on...[N]There is nothing there."
+  },
+  {
+    "offset": "01DC5D",
+    "kind": "dialog",
+    "source": "研究所のナギサさんと 通信できる[N]しかし 電波状態が悪いと[N]通信できない",
+    "translation": "Call Nagisa at the lab.[N]It will not work when[N]the signal is poor."
+  },
+  {
+    "offset": "01DC90",
+    "kind": "dialog",
+    "source": "使うと 大きな音が出るホーン[N]人をおどかしたり 注意をひいたり[N]することができる",
+    "translation": "A horn that makes a loud[N]noise. Use it to startle[N]people or get attention."
+  },
+  {
+    "offset": "01DCC2",
+    "kind": "dialog",
+    "source": "もぐら型のドリル[N]やわらかい岩やかべが[N]これで ほることができる",
+    "translation": "A mole-shaped drill.[N]It can bore through soft[N]rock and walls."
+  },
+  {
+    "offset": "01DCE7",
+    "kind": "dialog",
+    "source": "これを身にまとうと しばらく[N]自分の姿を 消すことができる[N]効果が消えると なくなってしまう",
+    "translation": "Wear it to turn invisible[N]for a while. It vanishes[N]when the effect wears off."
+  },
+  {
+    "offset": "01DD1E",
+    "kind": "dialog",
+    "source": "これを 使うと ネズミに変身して[N]ネズミ穴を 通ることができたり[N]ネズミと 話すことができる",
+    "translation": "Turns you into a mouse.[N]You can use mouse holes[N]and talk with mice."
+  },
+  {
+    "offset": "01DD59",
+    "kind": "dialog",
+    "source": "これを裝備しておくと[N]敵のワナや かくしトビラなど[N]ふだん 見えないものが見える",
+    "translation": "Reveals enemy traps,[N]hidden doors, and other[N]things normally unseen."
+  },
+  {
+    "offset": "01DD8B",
+    "kind": "dialog",
+    "source": "カギのかかったドアを開けるカギ[N]使うと なくなってしまう",
+    "translation": "A key for locked doors.[N]It disappears after use."
+  },
+  {
+    "offset": "01DDB0",
+    "kind": "dialog",
+    "source": "家事全般·日曜大工などをこなす[N]ロボット[N]困っている人に 貸してあげよう",
+    "translation": "A robot for housework[N]and home repairs. Lend it[N]to someone in need."
+  },
+  {
+    "offset": "01DDE2",
+    "kind": "dialog",
+    "source": "くらやみをてらすことのできる[N]ライト",
+    "translation": "A light that can[N]illuminate dark places."
+  },
+  {
+    "offset": "01DDF7",
+    "kind": "dialog",
+    "source": "森で手に入れた 花のたね[N]その使い道は 不明",
+    "translation": "Flower seeds found in[N]the forest. Their purpose[N]is unknown."
+  },
+  {
+    "offset": "01DE16",
+    "kind": "dialog",
+    "source": "カールのおとうさんがくれた[N]飛行機で 步いていけないような[N]土地へ 移動することができる",
+    "translation": "A plane from Carl's[N]father.[N]It reaches lands that[N]cannot[FIN]be reached on foot."
+  },
+  {
+    "offset": "01DE4D",
+    "kind": "dialog",
+    "source": "これに乘ると はるか宇宙のかなた[N]ショコラ星へと 移動できる",
+    "translation": "Ride this far across space[N]to Planet Chocolat."
+  },
+  {
+    "offset": "01DE74",
+    "kind": "dialog",
+    "source": "[E2:4000]ボタンで使用すると[N]ワールドマップへワープできる[N]ただし 使えないこともある",
+    "translation": "Press [E2:4000] to warp to[N]the world map. It cannot[N]always be used."
+  },
+  {
+    "offset": "01DEA7",
+    "kind": "dialog",
+    "source": "これを身につけると[N]動物と 話ができるようになる",
+    "translation": "Wear this to understand[N]and speak with animals."
+  },
+  {
+    "offset": "01DEC4",
+    "kind": "dialog",
+    "source": "裝備すると コンピューターの[N]中に入れるようになるという[N]サイバーなしろもの",
+    "translation": "Cyber gear said to let[N]its wearer enter[N]computers."
+  },
+  {
+    "offset": "01DEF3",
+    "kind": "dialog",
+    "source": "ハッカー宇宙要塞の[N]エンジンを止める 赤いポット",
+    "translation": "A red pot that stops an[N]engine in the Hacker[N]fortress."
+  },
+  {
+    "offset": "01DF18",
+    "kind": "dialog",
+    "source": "ハッカー宇宙要塞の[N]エンジンを止める 青いポット",
+    "translation": "A blue pot that stops an[N]engine in the Hacker[N]fortress."
+  },
+  {
+    "offset": "01DF3D",
+    "kind": "dialog",
+    "source": "ハッカー宇宙要塞の[N]エンジンを止める 黄色いポット",
+    "translation": "A yellow pot that stops an[N]engine in the Hacker[N]fortress."
+  },
+  {
+    "offset": "01DF64",
+    "kind": "dialog",
+    "source": "ペプシおじさんごじまんの 宝石",
+    "translation": "Mr. Pepsi's treasured gem."
+  },
+  {
+    "offset": "01DF78",
+    "kind": "dialog",
+    "source": "カールのおとうさんから[N]カールへの手紙",
+    "translation": "A letter from Carl's[N]father[N]to Carl."
+  },
+  {
+    "offset": "01DF92",
+    "kind": "dialog",
+    "source": "カールがどうくつで見つけた[N]石版",
+    "translation": "A stone tablet Carl found[N]in a cave."
+  },
+  {
+    "offset": "01DFA8",
+    "kind": "dialog",
+    "source": "ハッカーの幹部しか入れない場所へ[N]入ることのできるバッチ",
+    "translation": "A badge granting access to[N]areas reserved for Hacker[N]officers."
+  },
+  {
+    "offset": "01DFCF",
+    "kind": "dialog",
+    "source": "ハッカーのメンバーのしるしの[N]バッチ",
+    "translation": "A badge identifying[N]members of the Hackers."
+  },
+  {
+    "offset": "01DFE8",
+    "kind": "dialog",
+    "source": "不思誄な光を キラキラと放つ[N]不思誄な石 その1",
+    "translation": "A mysterious stone that[N]glitters strangely. Number[N]1."
+  },
+  {
+    "offset": "01E00C",
+    "kind": "dialog",
+    "source": "不思誄な光を キラキラと放つ[N]不思誄な石 その2",
+    "translation": "A mysterious stone that[N]glitters strangely. Number[N]2."
+  },
+  {
+    "offset": "01E030",
+    "kind": "dialog",
+    "source": "不思誄な光を キラキラと放つ[N]不思誄な石 その3",
+    "translation": "A mysterious stone that[N]glitters strangely. Number[N]3."
+  },
+  {
+    "offset": "01E054",
+    "kind": "dialog",
+    "source": "はなれ島で手に入れた 赤い花[N]熱病に 効果があるらしい",
+    "translation": "A red flower from a remote[N]island. It may cure fever."
+  },
+  {
+    "offset": "01E079",
+    "kind": "dialog",
+    "source": "玉???",
+    "translation": "Orb???"
+  },
+  {
+    "offset": "01E07F",
+    "kind": "dialog",
+    "source": "どうくつでひろったもの[N]さびていて このままでは使えない",
+    "translation": "Found in a cave. It is too[N]rusty to use as it is."
+  },
+  {
+    "offset": "01E09D",
+    "kind": "dialog",
+    "source": "ナポレオンという名のロボットの[N]スクラップ",
+    "translation": "Scrap from a robot[N]named Napoleon."
+  },
+  {
+    "offset": "01E0BA",
+    "kind": "dialog",
+    "source": "ポリンキー家のはいきょでもらった[N]スクラップ",
+    "translation": "Scrap received at the[N]ruins[N]of the Polinky estate."
+  },
+  {
+    "offset": "01E0D6",
+    "kind": "dialog",
+    "source": "発明マシンで いろんなものと[N]合成できるスクラップ",
+    "translation": "Scrap that can be combined[N]with many things in the[N]Invention Machine."
+  },
+  {
+    "offset": "01E0F8",
+    "kind": "dialog",
+    "source": "戦闘中使えば 戦闘からにげられ[N]フィールドでは 敵の動きを[N]しばらく止められるアイテム",
+    "translation": "Use in battle to escape.[N]On the field, it freezes[N]enemy movement briefly."
+  },
+  {
+    "offset": "01E131",
+    "kind": "dialog",
+    "source": "ロボットのENERGYを[N]回復するもの",
+    "translation": "Restores a robot's ENERGY."
+  },
+  {
+    "offset": "01E149",
+    "kind": "dialog",
+    "source": "サビてしまって ENERGYが[N]どんどん減っている[N]ロボットを元にもどすもの",
+    "translation": "Removes rust that makes a[N]robot steadily lose[N]ENERGY."
+  },
+  {
+    "offset": "01E176",
+    "kind": "dialog",
+    "source": "スクラップになってしまった[N]ロボットを 元にもどすもの",
+    "translation": "Restores a robot that[N]has been reduced to scrap."
+  },
+  {
+    "offset": "01E197",
+    "kind": "dialog",
+    "source": "戦闘時に [NAM:0]コマンドで[N]使用する ばくだん",
+    "translation": "A bomb used with the[N][NAM:0] command in battle."
+  },
+  {
+    "offset": "01E1B5",
+    "kind": "dialog",
+    "source": "なんと 自分で天気を[N]自在に操ることができるという[N]おどろくべき発明品",
+    "translation": "An amazing invention that[N]lets you control the[N]weather[N]at will."
+  },
+  {
+    "offset": "01E1E3",
+    "kind": "dialog",
+    "source": "ボクは ゴミ箱くんです[N]捨てたいアイテムをえらんで[N]2コ目のカーソルをあわせてください",
+    "translation": "I am the Trash Can.[N]Choose an item to discard,[N]then move the second[N]cursor."
+  },
+  {
+    "offset": "01E21C",
+    "kind": "dialog",
+    "source": "戦闘中の ロボットいれかえ順番を[N]設定します",
+    "translation": "Set the order for swapping[N]robots during battle."
+  },
+  {
+    "offset": "01E340",
+    "kind": "dialog",
+    "source": "        ",
+    "translation": "        "
+  },
+  {
+    "offset": "01E349",
+    "kind": "dialog",
+    "source": "そうびなし",
+    "translation": "No Equipment"
+  },
+  {
+    "offset": "01E34F",
+    "kind": "dialog",
+    "source": "メタルソード",
+    "translation": "Metal Sword"
+  },
+  {
+    "offset": "01E358",
+    "kind": "dialog",
+    "source": "バトルソード",
+    "translation": "Battle Sword"
+  },
+  {
+    "offset": "01E361",
+    "kind": "dialog",
+    "source": "フルメタルソード",
+    "translation": "Full Metal Sword"
+  },
+  {
+    "offset": "01E36C",
+    "kind": "dialog",
+    "source": "サンダーソード",
+    "translation": "Thunder Sword"
+  },
+  {
+    "offset": "01E376",
+    "kind": "dialog",
+    "source": "メタルアクス",
+    "translation": "Metal Axe"
+  },
+  {
+    "offset": "01E37F",
+    "kind": "dialog",
+    "source": "バトルアクス",
+    "translation": "Battle Axe"
+  },
+  {
+    "offset": "01E388",
+    "kind": "dialog",
+    "source": "フルメタルアクス",
+    "translation": "Full Metal Axe"
+  },
+  {
+    "offset": "01E393",
+    "kind": "dialog",
+    "source": "ソニックブレイド",
+    "translation": "Sonic Blade"
+  },
+  {
+    "offset": "01E39E",
+    "kind": "dialog",
+    "source": "プラズマブレイド",
+    "translation": "Plasma Blade"
+  },
+  {
+    "offset": "01E3A9",
+    "kind": "dialog",
+    "source": "レーザーブレイド",
+    "translation": "Laser Blade"
+  },
+  {
+    "offset": "01E3B4",
+    "kind": "dialog",
+    "source": "ソウルブレイド",
+    "translation": "Soul Blade"
+  },
+  {
+    "offset": "01E3BE",
+    "kind": "dialog",
+    "source": "ドクドクハンマー",
+    "translation": "Toxic Hammer"
+  },
+  {
+    "offset": "01E3C9",
+    "kind": "dialog",
+    "source": "スッポンハンマー",
+    "translation": "Plunger Hammer"
+  },
+  {
+    "offset": "01E3D4",
+    "kind": "dialog",
+    "source": "メガトンハンマー",
+    "translation": "Megaton Hammer"
+  },
+  {
+    "offset": "01E3DF",
+    "kind": "dialog",
+    "source": "ヘビーストーン",
+    "translation": "Heavy Stone"
+  },
+  {
+    "offset": "01E3E9",
+    "kind": "dialog",
+    "source": "パニックストーン",
+    "translation": "Panic Stone"
+  },
+  {
+    "offset": "01E3F4",
+    "kind": "dialog",
+    "source": "ブレイクストーン",
+    "translation": "Break Stone"
+  },
+  {
+    "offset": "01E3FF",
+    "kind": "dialog",
+    "source": "パンパンパンチ",
+    "translation": "Triple Punch"
+  },
+  {
+    "offset": "01E409",
+    "kind": "dialog",
+    "source": "スーパーパンチ",
+    "translation": "Super Punch"
+  },
+  {
+    "offset": "01E413",
+    "kind": "dialog",
+    "source": "ひっさつパンチ",
+    "translation": "Finishing Punch"
+  },
+  {
+    "offset": "01E41D",
+    "kind": "dialog",
+    "source": "ロケットブロー",
+    "translation": "Rocket Blow"
+  },
+  {
+    "offset": "01E427",
+    "kind": "dialog",
+    "source": "ローリングブロー",
+    "translation": "Rolling Blow"
+  },
+  {
+    "offset": "01E432",
+    "kind": "dialog",
+    "source": "マッハブロー",
+    "translation": "Mach Blow"
+  },
+  {
+    "offset": "01E43B",
+    "kind": "dialog",
+    "source": "ハンドショット",
+    "translation": "Hand Shot"
+  },
+  {
+    "offset": "01E445",
+    "kind": "dialog",
+    "source": "ナイスショット",
+    "translation": "Nice Shot"
+  },
+  {
+    "offset": "01E44F",
+    "kind": "dialog",
+    "source": "バズーカ",
+    "translation": "Bazooka"
+  },
+  {
+    "offset": "01E456",
+    "kind": "dialog",
+    "source": "ツイストレーザー",
+    "translation": "Twist Laser"
+  },
+  {
+    "offset": "01E461",
+    "kind": "dialog",
+    "source": "チャージレーザー",
+    "translation": "Charge Laser"
+  },
+  {
+    "offset": "01E46C",
+    "kind": "dialog",
+    "source": "はどうレーザー",
+    "translation": "Wave Laser"
+  },
+  {
+    "offset": "01E476",
+    "kind": "dialog",
+    "source": "ストレートボム",
+    "translation": "Straight Bomb"
+  },
+  {
+    "offset": "01E480",
+    "kind": "dialog",
+    "source": "ナパームボム",
+    "translation": "Napalm Bomb"
+  },
+  {
+    "offset": "01E489",
+    "kind": "dialog",
+    "source": "アイスボム",
+    "translation": "Ice Bomb"
+  },
+  {
+    "offset": "01E491",
+    "kind": "dialog",
+    "source": "かくさんボム",
+    "translation": "Scatter Bomb"
+  },
+  {
+    "offset": "01E49A",
+    "kind": "dialog",
+    "source": "ヘビーシールド",
+    "translation": "Heavy Shield"
+  },
+  {
+    "offset": "01E4A4",
+    "kind": "dialog",
+    "source": "サビーズシールド",
+    "translation": "Rusty Shield"
+  },
+  {
+    "offset": "01E4AF",
+    "kind": "dialog",
+    "source": "サイコシールド",
+    "translation": "Psycho Shield"
+  },
+  {
+    "offset": "01E4B9",
+    "kind": "dialog",
+    "source": "ケミカルシールド",
+    "translation": "Chemical Shield"
+  },
+  {
+    "offset": "01E4C4",
+    "kind": "dialog",
+    "source": "ハイパーシールド",
+    "translation": "Hyper Shield"
+  },
+  {
+    "offset": "01E4CF",
+    "kind": "dialog",
+    "source": "パックざんがい",
+    "translation": "Pack Wreckage"
+  },
+  {
+    "offset": "01E4D9",
+    "kind": "dialog",
+    "source": "パワーパック",
+    "translation": "Power Pack"
+  },
+  {
+    "offset": "01E4E2",
+    "kind": "dialog",
+    "source": "シールドパック",
+    "translation": "Shield Pack"
+  },
+  {
+    "offset": "01E4EC",
+    "kind": "dialog",
+    "source": "ターボパック",
+    "translation": "Turbo Pack"
+  },
+  {
+    "offset": "01E4F5",
+    "kind": "dialog",
+    "source": "ソーラーパック",
+    "translation": "Solar Pack"
+  },
+  {
+    "offset": "01E4FF",
+    "kind": "dialog",
+    "source": "クイックパック",
+    "translation": "Quick Pack"
+  },
+  {
+    "offset": "01E509",
+    "kind": "dialog",
+    "source": "ブーツ",
+    "translation": "Boots"
+  },
+  {
+    "offset": "01E50F",
+    "kind": "dialog",
+    "source": "パワーブーツ",
+    "translation": "Power Boots"
+  },
+  {
+    "offset": "01E518",
+    "kind": "dialog",
+    "source": "スワンプブーツ",
+    "translation": "Swamp Boots"
+  },
+  {
+    "offset": "01E522",
+    "kind": "dialog",
+    "source": "4WDブーツ",
+    "translation": "4WD Boots"
+  },
+  {
+    "offset": "01E52B",
+    "kind": "dialog",
+    "source": "タンクブーツ",
+    "translation": "Tank Boots"
+  },
+  {
+    "offset": "01E534",
+    "kind": "dialog",
+    "source": "ホバーブーツ",
+    "translation": "Hover Boots"
+  },
+  {
+    "offset": "01E53D",
+    "kind": "dialog",
+    "source": "トランシーバー",
+    "translation": "Transceiver"
+  },
+  {
+    "offset": "01E547",
+    "kind": "dialog",
+    "source": "びっくりホーン",
+    "translation": "Surprise Horn"
+  },
+  {
+    "offset": "01E551",
+    "kind": "dialog",
+    "source": "もぐらドリル",
+    "translation": "Mole Drill"
+  },
+  {
+    "offset": "01E55A",
+    "kind": "dialog",
+    "source": "きえるんです",
+    "translation": "Vanisher"
+  },
+  {
+    "offset": "01E561",
+    "kind": "dialog",
+    "source": "かわるんです",
+    "translation": "Transformer"
+  },
+  {
+    "offset": "01E568",
+    "kind": "dialog",
+    "source": "カメレオングラス",
+    "translation": "Chameleon Glasses"
+  },
+  {
+    "offset": "01E573",
+    "kind": "dialog",
+    "source": "カギ",
+    "translation": "Key"
+  },
+  {
+    "offset": "01E578",
+    "kind": "dialog",
+    "source": "おてつだいロボ",
+    "translation": "Helper Robot"
+  },
+  {
+    "offset": "01E582",
+    "kind": "dialog",
+    "source": "ライト",
+    "translation": "Light"
+  },
+  {
+    "offset": "01E588",
+    "kind": "dialog",
+    "source": "花のたね",
+    "translation": "Flower Seeds"
+  },
+  {
+    "offset": "01E58E",
+    "kind": "dialog",
+    "source": "ひこうせん",
+    "translation": "Airship"
+  },
+  {
+    "offset": "01E594",
+    "kind": "dialog",
+    "source": "うちゅうせん",
+    "translation": "Spaceship"
+  },
+  {
+    "offset": "01E59B",
+    "kind": "dialog",
+    "source": "ワープシステム",
+    "translation": "Warp System"
+  },
+  {
+    "offset": "01E5A5",
+    "kind": "dialog",
+    "source": "だべっこどうぶつ",
+    "translation": "Animal Chatter"
+  },
+  {
+    "offset": "01E5AE",
+    "kind": "dialog",
+    "source": "サイバージャック",
+    "translation": "Cyber Jack"
+  },
+  {
+    "offset": "01E5B9",
+    "kind": "dialog",
+    "source": "赤ポット",
+    "translation": "Red Pot"
+  },
+  {
+    "offset": "01E5C1",
+    "kind": "dialog",
+    "source": "青ポット",
+    "translation": "Blue Pot"
+  },
+  {
+    "offset": "01E5C9",
+    "kind": "dialog",
+    "source": "黄ポット",
+    "translation": "Yellow Pot"
+  },
+  {
+    "offset": "01E5D1",
+    "kind": "dialog",
+    "source": "ほうせき",
+    "translation": "Gem"
+  },
+  {
+    "offset": "01E5D6",
+    "kind": "dialog",
+    "source": "てがみ",
+    "translation": "Letter"
+  },
+  {
+    "offset": "01E5DA",
+    "kind": "dialog",
+    "source": "せきばん",
+    "translation": "Stone Tablet"
+  },
+  {
+    "offset": "01E5DF",
+    "kind": "dialog",
+    "source": "かんぶバッチ",
+    "translation": "Officer Badge"
+  },
+  {
+    "offset": "01E5E8",
+    "kind": "dialog",
+    "source": "ハッカーバッチ",
+    "translation": "Hacker Badge"
+  },
+  {
+    "offset": "01E5F2",
+    "kind": "dialog",
+    "source": "石1",
+    "translation": "Stone 1"
+  },
+  {
+    "offset": "01E5F6",
+    "kind": "dialog",
+    "source": "石2",
+    "translation": "Stone 2"
+  },
+  {
+    "offset": "01E5FA",
+    "kind": "dialog",
+    "source": "石3",
+    "translation": "Stone 3"
+  },
+  {
+    "offset": "01E5FE",
+    "kind": "dialog",
+    "source": "赤い花",
+    "translation": "Red Flower"
+  },
+  {
+    "offset": "01E604",
+    "kind": "dialog",
+    "source": "玉",
+    "translation": "Orb"
+  },
+  {
+    "offset": "01E607",
+    "kind": "dialog",
+    "source": "さびたドリル",
+    "translation": "Rusty Drill"
+  },
+  {
+    "offset": "01E610",
+    "kind": "dialog",
+    "source": "スクラップA",
+    "translation": "Scrap A"
+  },
+  {
+    "offset": "01E619",
+    "kind": "dialog",
+    "source": "スクラップB",
+    "translation": "Scrap B"
+  },
+  {
+    "offset": "01E622",
+    "kind": "dialog",
+    "source": "スクラップ1",
+    "translation": "Scrap 1"
+  },
+  {
+    "offset": "01E62B",
+    "kind": "dialog",
+    "source": "スクラップ2",
+    "translation": "Scrap 2"
+  },
+  {
+    "offset": "01E634",
+    "kind": "dialog",
+    "source": "スクラップ3",
+    "translation": "Scrap 3"
+  },
+  {
+    "offset": "01E63D",
+    "kind": "dialog",
+    "source": "スクラップ4",
+    "translation": "Scrap 4"
+  },
+  {
+    "offset": "01E646",
+    "kind": "dialog",
+    "source": "スクラップ5",
+    "translation": "Scrap 5"
+  },
+  {
+    "offset": "01E64F",
+    "kind": "dialog",
+    "source": "スクラップ6",
+    "translation": "Scrap 6"
+  },
+  {
+    "offset": "01E658",
+    "kind": "dialog",
+    "source": "スクラップ7",
+    "translation": "Scrap 7"
+  },
+  {
+    "offset": "01E661",
+    "kind": "dialog",
+    "source": "スクラップ8",
+    "translation": "Scrap 8"
+  },
+  {
+    "offset": "01E66A",
+    "kind": "dialog",
+    "source": "スクラップ9",
+    "translation": "Scrap 9"
+  },
+  {
+    "offset": "01E673",
+    "kind": "dialog",
+    "source": "スクラップ10",
+    "translation": "Scrap 10"
+  },
+  {
+    "offset": "01E67D",
+    "kind": "dialog",
+    "source": "けむりだま",
+    "translation": "Smoke Bomb"
+  },
+  {
+    "offset": "01E683",
+    "kind": "dialog",
+    "source": "すぐナオール",
+    "translation": "Quick Fix"
+  },
+  {
+    "offset": "01E68C",
+    "kind": "dialog",
+    "source": "さびトレール",
+    "translation": "Rust Remover"
+  },
+  {
+    "offset": "01E695",
+    "kind": "dialog",
+    "source": "しゅうりキット",
+    "translation": "Repair Kit"
+  },
+  {
+    "offset": "01E69F",
+    "kind": "dialog",
+    "source": "スーパーボム",
+    "translation": "Super Bomb"
+  },
+  {
+    "offset": "01E6A8",
+    "kind": "dialog",
+    "source": "おてんきママさん",
+    "translation": "Weather Mama"
+  },
+  {
+    "offset": "01E6C7",
+    "kind": "dialog",
+    "source": "",
+    "translation": ""
+  },
+  {
+    "offset": "01E6C8",
+    "kind": "dialog",
+    "source": "ŁⅠ",
+    "translation": "ŁⅠ"
+  },
+  {
+    "offset": "01E6CD",
+    "kind": "dialog",
+    "source": "ŁⅡ",
+    "translation": "ŁⅡ"
+  },
+  {
+    "offset": "01E6D2",
+    "kind": "dialog",
+    "source": "ŁⅢ",
+    "translation": "ŁⅢ"
+  },
+  {
+    "offset": "01E6D7",
+    "kind": "dialog",
+    "source": "ŁⅣ",
+    "translation": "ŁⅣ"
+  },
+  {
+    "offset": "01E6DC",
+    "kind": "dialog",
+    "source": "ŁⅤ",
+    "translation": "ŁⅤ"
+  },
+  {
+    "offset": "01E6E1",
+    "kind": "dialog",
+    "source": "ŁⅥ",
+    "translation": "ŁⅥ"
+  },
+  {
+    "offset": "01E6E6",
+    "kind": "dialog",
+    "source": "ŁⅦ",
+    "translation": "ŁⅦ"
+  },
+  {
+    "offset": "01E6EB",
+    "kind": "dialog",
+    "source": "ŁⅧ",
+    "translation": "ŁⅧ"
+  },
+  {
+    "offset": "01E6F0",
+    "kind": "dialog",
+    "source": "ŁⅨ",
+    "translation": "ŁⅨ"
+  }
+]

@@ -1,6 +1,8 @@
-node_modules
-third_party
-.swp
+node_modules/
+third_party/
+*.swp
 roms/*
-translation/script*
+translation/script*.txt
+build/
+dist/*.sfc
 *.log

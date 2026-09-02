@@ -1,11 +1,61 @@
-# Slapstick English Translation
+# Slap Stick English Translation
 
-An English translation of the 1994 Super Famicom title "Slapstick"
+This repository builds an English patch for the 1994 Super Famicom RPG
+`Slap Stick`.
 
-Custom hacking utilities are written in JavaScript and expect the [Node.js](https://nodejs.org/) runtime environment
+The complete 2,381-entry script was translated directly from the Japanese ROM
+with GPT. The commercial `Robotrek` English script was not used as a
+translation source. The notes already in this repository were used only to
+keep names and recurring terms consistent.
 
-Script generation (you'll need the ROM):
+## Build
 
-1. cd to translation directory
+Requirements:
 
-2. Run `./cartographer.exe ../roms/rom.sfc commands.txt script -m`
+- Node.js 18 or newer
+- A clean, unheadered Japanese ROM at `roms/Slap Stick (Japan).sfc`
+
+The required source ROM is 1,572,864 bytes and has this SHA-256 digest:
+
+```text
+08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900ad4be21
+```
+
+Run:
+
+```sh
+npm test
+npm run build
+```
+
+The build creates these redistributable files in `dist/`:
+
+- `Slap Stick (Japan) [EN].bps`
+- `Slap Stick (Japan) [EN].ips`
+- `manifest.json`
+
+Apply either patch to the exact clean ROM above with a compatible patching
+utility. BPS is the preferred format because it verifies its source and target.
+No ROM image is written or distributed by the normal build.
+
+For a private local smoke test, the builder can also write a patched ROM:
+
+```sh
+node tools/build-patch.mjs --rom-output "build/Slap Stick (Japan) [EN].sfc"
+```
+
+## What the build does
+
+- Checks the source ROM size and SHA-256 before changing anything.
+- Encodes the freshly translated dialogue, menus, items, equipment, and enemy
+  names from `translation/script/`.
+- Expands the ROM from 1.5 MiB to 2 MiB and installs bank-safe text redirects.
+- Converts the original 16-pixel dialogue alphabet to a legible 8-pixel font.
+- Reflows prose at word boundaries and validates custom dialogue-box sizes.
+- Recalculates the SNES checksum and verifies both generated patches by
+  applying them in memory and comparing every output byte.
+
+`translation/glossary.md` records localization choices. `npm run reflow`
+reapplies the deterministic line-wrapping pass after script edits. The patch is
+structurally verified, but a complete emulator or hardware playthrough is still
+recommended before calling it fully playtested.

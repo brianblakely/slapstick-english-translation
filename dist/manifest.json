@@ -1,0 +1,29 @@
+{
+  "title": "Slap Stick English Translation",
+  "source": {
+    "filename": "Slap Stick (Japan).sfc",
+    "size": 1572864,
+    "sha256": "08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900ad4be21"
+  },
+  "target": {
+    "size": 2097152,
+    "sha256": "77216273f452b09053f3496e0bfc2aa59cd7f8e2669fcbc1b58fae315714c1bd",
+    "checksum": "A170"
+  },
+  "script": {
+    "total": 2381,
+    "translated": 2381,
+    "changed": 2231,
+    "untranslated": 0
+  },
+  "patches": {
+    "bps": {
+      "size": 640127,
+      "sha256": "615d07da4d5ff82b932cb2ef31ea385a4b12f23690f0040f8f3c5982358b7579"
+    },
+    "ips": {
+      "size": 244436,
+      "sha256": "c8e5f60045806c79139fe410849bf65a4a3cf152403bc0bc363150200604ada2"
+    }
+  }
+}

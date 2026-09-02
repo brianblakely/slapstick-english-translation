@@ -2,10 +2,11 @@
   "name": "slapstick-english-translation",
   "version": "1.0.0",
   "description": "An English translation of the Super Famicom title \"Slapstick\"",
-  "main": "none",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dump": "translation\\cartographer.exe \"roms\\Slap\\ Stick\\ \\(Japan\\).sfc\" commands.txt script -m"
+    "build": "npm run check && node tools/build-patch.mjs",
+    "check": "node tools/reflow-dialog.mjs --check && node tools/validate-script.mjs && node tools/build-patch.mjs --check",
+    "reflow": "node tools/reflow-dialog.mjs --write",
+    "test": "npm run check"
   },
   "repository": {
     "type": "git",

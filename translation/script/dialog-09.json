@@ -1,0 +1,1335 @@
+[
+  {
+    "offset": "09805A",
+    "kind": "dialog",
+    "source": "[DF2]あった あった[N]これだな みつぎものは[N][N]よし研究所長の部屋まで運ぶぞ˳[END]",
+    "translation": "[DF2]Found them![N]These must be the[N]offerings.[N][FIN]Right, carry them to the[N]director's room.[END]"
+  },
+  {
+    "offset": "09829B",
+    "kind": "dialog",
+    "source": "[DEF]こらこら[N]勝手に 持ち場を動いちゃだめだよ[N]どっちにしても この先には[N]通してあげられないからね![END]",
+    "translation": "[DEF]Hey![N]Don't leave your post![N]Either way, I can't let[N]you[FIN]pass beyond here![END]"
+  },
+  {
+    "offset": "0982D5",
+    "kind": "dialog",
+    "source": "[DEF]あ·[PAU:1E]君が新しいいけにえの人?[N]よかった 人手がたりなくて[N]困ってたんだよ[N]ささ 作業場に案内するよ˳[END]",
+    "translation": "[DEF]Oh, [PAU:1E]are you the new[N]sacrifice?[N]Good. We're short on[N]workers.[FIN]Come, I'll show you your[N]station.[END]"
+  },
+  {
+    "offset": "098316",
+    "kind": "dialog",
+    "source": "[DEF]ここが 君の作業場だよ[N]言っておくけど[N]にげようなんてしたら[N]火山にほうりこんじゃうからね˳[END]",
+    "translation": "[DEF]This is your workstation.[N]Try to escape,[N]and we'll throw you in the[N]volcano![END]"
+  },
+  {
+    "offset": "098382",
+    "kind": "dialog",
+    "source": "[DEF]おやっ おチビちゃんじゃないかい[N]あんたも 招待されたのかい?[N]でも 変わってるよね[N]工場の体驗ツアーがあるなんて˳[END]",
+    "translation": "[DEF]Why, if it isn't the[N]little one.[N]Were you invited too?[N]A factory experience tour[FIN]is certainly unusual.[END]"
+  },
+  {
+    "offset": "0983C9",
+    "kind": "dialog",
+    "source": "[DEF]でも この工場は[N]一体 何を作ってるんだろうねえ?[N]それに そろそろあきたから[N]次のツアーに行ってくれないかねえ˳[END]",
+    "translation": "[DEF]What does this factory[N]make?[N]And I'm getting bored.[N]When does the next part[FIN]of the tour begin?[END]"
+  },
+  {
+    "offset": "09840E",
+    "kind": "dialog",
+    "source": "[DEF]おや こんな所にネズミかい?[END]",
+    "translation": "[DEF]A mouse? In here?[END]"
+  },
+  {
+    "offset": "098440",
+    "kind": "dialog",
+    "source": "[DEF]これが観光ツアーなものか![N]俺たちは だまされたんだ![N]ああ これからどうなるんだ[N]お先真っ暗だ![END]",
+    "translation": "[DEF]This is no sightseeing[N]tour![N]We were deceived![N]What will become of us[FIN]now?[N]The future looks bleak![END]"
+  },
+  {
+    "offset": "09847B",
+    "kind": "dialog",
+    "source": "ががそががぐ2[B0]技こぐB[95][84]ぐる[8A][84]ぐ▐ぐ[97]報ぐぽ[9A][84]ぅ[DEF]やっぱり 世の中には[N]おいしい話はないってことだね[N]勉強になったよ とほほ˳[END]",
+    "translation": "[DEF]I learned there is no such[N]thing[N]as an offer too good to be[N]true.[FIN]What an expensive[N]lesson...[END]",
+    "patchOffset": "09849A"
+  },
+  {
+    "offset": "09858D",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2][N] 中から カギがかけられている˳[PAL:0][END]",
+    "translation": "[DEF][PAL:2][N] It is locked from the[N]inside.[PAL:0][END]"
+  },
+  {
+    "offset": "0985A7",
+    "kind": "dialog",
+    "source": "[DEF] 耳をすますと[N] 中の 話し声が聞こえてきた[FIN][PAL:3]まったく おそまつな計画だわ[N]まさか ロココ町から[N]工場の人手をさらってくるなんて˳[FIN][PAL:2]ふんっ!人手が足りないんだ![N]大体 本部からの予算も足りん![N]ハッカーとやらは 神聖な発明を[N]なんだと思っているんだ!?[FIN][PAL:3]あら 別にあなたに発明を[N]たのんだ営えはなくってよ[N]あなたは この改造人間の研究所の[N]管理さえしていればいいのよ[FIN]それと 例のものはどうなったの?[N]たかだか 村の村長をおどすのに[N]ずいぶん時間がかかるものだわ˳[FIN][PAL:2]···ふんっ![N]こっちには こっちの都合がある[N]口出しせんでもらおうか![FIN][PAL:3]そう[N][PAU:1E]じゃあ お手なみ拝見しましょう[N]よろしくたのんだわよ[N][PAU:1E]ペッパー博士[FIN]それと 町長だけは連れて帰るわ[N]あれは 私の今後の計画の[N]大切なコマですからね[FIN]···ところでさっきから[N]そこに 聞き耳たてている[N]ぶすいなお客さんが[N]いるみたいだけど?[FIN][PAL:2]なに!?[N][PAU:3C]むむむっ···[N]なんだ おまえはっ!![PAL:0][END]",
+    "translation": "[DEF] Listening closely, you[N]hear[N] voices speaking inside.[FIN][PAL:3]What a pathetic plan.[N]Abducting workers from[N]Rococo Town[N]to staff your factory?[FIN][PAL:2]Hmph! I lack manpower![N]Headquarters barely funds[N]me![N]What do those Hackers[FIN]think[N]of the sacred art of[N]invention?![FIN][PAL:3]I don't recall asking you[N]to invent.[N]You need only manage[N]this cyborg laboratory.[FIN]And what of the other[N]matter?[N]You are taking a very long[N]time[FIN]to threaten a mere village[N]chief.[FIN][PAL:2]...Hmph![N]I have my own[N]circumstances.[N]Kindly stay out of them![FIN][PAL:3]Very well.[N][PAU:1E]Let's see what you can do.[N]I'm counting on you, [PAU:1E]Dr.[N]Pepper.[FIN]I will take only the mayor[N]with me.[N]He is an important piece[N]in my plans for the[FIN]future.[FIN]...By the way,[N]it seems a rude guest has[N]been[N]eavesdropping out there.[FIN][PAL:2]What?![N][PAU:3C]Hmm...[N]Who are you?!![PAL:0][END]"
+  },
+  {
+    "offset": "0987AB",
+    "kind": "dialog",
+    "source": "[DEF]ばっかもーんっ!![N]おまえは むこう100年間[N][PAL:2]トイレそうじ[PAL:0]だっ!![N]さっさと行けーーーーっ!![END]",
+    "translation": "[DEF]You fool!![N]You're on [PAL:2]toilet-cleaning[N]duty[PAL:0][N]for the next hundred[FIN]years!![N]Now get moving!![END]"
+  },
+  {
+    "offset": "09886A",
+    "kind": "dialog",
+    "source": "[DEF][N]チュウ チュウ[END]",
+    "translation": "[DEF][N]Squeak, squeak.[END]"
+  },
+  {
+    "offset": "098878",
+    "kind": "dialog",
+    "source": "[DEF]ネズミは この後ろにある[N][PAL:2]ねずみ穴[PAL:0]から出入りできて[N]いろいろと 便利なんだチュウ˳[END]",
+    "translation": "[DEF]Mice can use the [PAL:2]mouse[N]hole[PAL:0][N]behind me to come and go.[N]Very convenient, squeak.[END]"
+  },
+  {
+    "offset": "098921",
+    "kind": "dialog",
+    "source": "[DFT][TPL:4][NAM:0][N]あいつら 行ったみたいよ[N][PAU:1E]だけど ここは一体どこなの?[END]",
+    "translation": "[DFT][TPL:4][NAM:0],[N]I think they're gone.[N][PAU:1E]But where are we?[END]"
+  },
+  {
+    "offset": "09898E",
+    "kind": "dialog",
+    "source": "[DFT]よぉーこそ かわいこちゃん[N]こわがらなくてもいいんだよぉ[N]私は やさしーやさしー[N]神樣だからねえーっ[FIN][N][DLY:9]···············[N][DLY:0][PAU:A]お[PAU:A]·おまえは···ミントッ![FIN][TPL:4]あっ····あんたはっ![N][PAU:1E]まだ こんな悪さを続けてるの!?[N]いい年して はずかしい!![END]",
+    "translation": "[DFT]Weeelcome, pretty lady.[N]No need to be afraid.[N]I am a very, very gentle[N]god![FIN][N][DLY:9]...............[N][DLY:0][PAU:A]Y-you... Mint![FIN][TPL:4]Ah... You![N][PAU:1E]You're still doing these[N]evil things?![FIN]Aren't you ashamed at your[N]age?![END]"
+  },
+  {
+    "offset": "098A2A",
+    "kind": "dialog",
+    "source": "[DFT][TPL:4]あっ!にげる気ねっ!![N]この ひきょう者っ![END]",
+    "translation": "[DFT][TPL:4]Hey! You're running away![N]Coward![END]"
+  },
+  {
+    "offset": "098A79",
+    "kind": "dialog",
+    "source": "[DEF]おいおい[N]そこは まだそうじ中なんだよ[N]勝手に入らねえでくれよ˳[END]",
+    "translation": "[DEF]Hey, that area is still[N]being cleaned.[N]Don't go in without[N]permission.[END]"
+  },
+  {
+    "offset": "098B0E",
+    "kind": "dialog",
+    "source": "[DEF]お?[PAU:1E][NAM:0]じゃねえか![N]俺だよ 俺···っと[N]このカッコじゃわからねえか[N]ちょっと そこで待ってな[END]",
+    "translation": "[DEF]Oh?[PAU:1E] Is that you, [NAM:0]?[N]It's me... Ah,[N]you can't tell in this[N]outfit.[FIN]Wait there a moment.[END]"
+  },
+  {
+    "offset": "098BB7",
+    "kind": "dialog",
+    "source": "[DF2]俺だよ コテツだよ[N][N]なんだよ お前もにせ招待状に[N]だまされたのか?なさけないねえ˳[END]",
+    "translation": "[DF2]It's me, Kotetsu.[N][N]Did that fake invitation[N]fool you too? How[FIN]pathetic.[END]"
+  },
+  {
+    "offset": "098BEA",
+    "kind": "dialog",
+    "source": "[DEF]え?ここで何してるかって?[N]···うるせえなあ これも[N]大切なお仕事のひとつなんだよ[FIN]お前こそ ここから出られなくて[N]困ってるんじゃねえのか?[N][PAU:14]まあ お前には借りもあるしな[N]ちょっと こっちに来な![END]",
+    "translation": "[DEF]What am I doing here?[N]...Shut up. This is also[N]an important job.[FIN]Aren't you the one[N]trapped in here?[N][PAU:14]I owe you a favor anyway.[N]Come this way![END]"
+  },
+  {
+    "offset": "098CCD",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]にげるんなら ここからにげな[N]こいつは ゴミ捨て口だけどよ[N]火山のどっかに出られるはずだぜ˳[END]",
+    "translation": "[DEF][TPL:3]Escape through here.[N]It's a garbage chute,[N]but it should open[FIN]somewhere[N]inside the volcano.[END]"
+  },
+  {
+    "offset": "098D06",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]なにぃ?中がくさいだあっ?[N]つべこべ文句ばかり言ってると[N]戦闘員の奴らに つきだすぞ˳[END]",
+    "translation": "[DEF][TPL:3]What? It smells bad?![N]Keep complaining,[N]and I'll hand you to the[FIN]troopers.[END]"
+  },
+  {
+    "offset": "098D3D",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]あーーーったくもうっ![N]そこは おえらいさんのトイレだよ[N]出口は こっち![END]",
+    "translation": "[DEF][TPL:3]Oh, for crying out loud![N]That's the executive[N]restroom.[FIN]The exit is over here![END]"
+  },
+  {
+    "offset": "098D6C",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]あばよ [NAM:0]![N]元気でな˳[END]",
+    "translation": "[DEF][TPL:3]See you, [NAM:0]![N]Take care.[END]"
+  },
+  {
+    "offset": "098E50",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4][NAM:0]じゃない![N]いい所に来てくれたわ![N]お願いがあるのよ![FIN]あいつ···ペッパーが[N]この先に にげこんだのよ[N]ちょっと さがしてきてくれない?[N]このまま野放しにできないわ![FIN]なんで自分で見にいかないかって?[N][PAU:14]···ここ男子便所でしょっ![N][PAL:3]レディ[PAL:0]が うろうろできるわけ[N]ないでしょっ![END]",
+    "translation": "[DEF][TPL:4][NAM:0]![N]Perfect timing![N]I need a favor![FIN]Pepper fled up ahead.[N]Will you find him?[N]We can't let him run free![FIN]Why don't I go myself?[N][PAU:14]This is the men's room![N]A [PAL:3]lady[PAL:0] cannot wander[N]around[FIN]in there![END]"
+  },
+  {
+    "offset": "098EF8",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4]あのいかさま発明家のことだもの[N]なにをしでかすか わからないわ[N]お願い!早くさがしてきて![END]",
+    "translation": "[DEF][TPL:4]That fraud could do[N]anything.[N]Please! Find him quickly![END]"
+  },
+  {
+    "offset": "098F2E",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4]どうだった?[PAU:1E]え?[PAU:1E]いない?[N][PAU:1E]本当にさがしたの?[N]お願い!もっとよく探してきてよ[FIN]あいつは いかさま発明家なのよ![N]あいつが おこした事件は[N]いくつも取材してきたんだから![N]今度もきっと 何かしでかす気よ![END]",
+    "translation": "[DEF][TPL:4]Well?[PAU:1E] What?[PAU:1E] He's not[N]there?[N][PAU:1E]Did you really look?[FIN]Search more carefully![FIN]He's a fraudulent[N]inventor![N]I've covered several[N]incidents[FIN]he caused. He's surely[N]plotting something again![END]"
+  },
+  {
+    "offset": "098FAC",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4]どう?見つかった?[PAU:14]え?[N]行き止まりでだれもいなかった?[N][PAU:1E]···そう[PAU:14] しかたないわね[FIN]わかったわ あたしは他をさがすわ[N]ここには まだ何かありそうだし[N]じゃあね [NAM:0][N]君も 気をつけるのよ![END]",
+    "translation": "[DEF][TPL:4]Did you find him?[PAU:14] What?[N]A dead end with nobody[N]there?[FIN][PAU:1E]...I see. It can't be[N]helped.[FIN]I'll search elsewhere.[N]There is more to this[N]place.[N]See you, [NAM:0].[FIN]Be careful![END]"
+  },
+  {
+    "offset": "09906A",
+    "kind": "dialog",
+    "source": "[DEF]え?研究所長を探してるの?[N]研究所長なら そこの[PAL:2]專用トイレ[PAL:0]に[N]はいったけど?[FIN]え?コテツは どうしたって?[N]ここの そうじをしていた奴なら[N]今 食事に行っているよ[N][PAL:2]食堂[PAL:0]に 行ってるはずだよ˳[END]",
+    "translation": "[DEF]Looking for the lab[N]director?[N]He entered the [PAL:2]private[N]restroom[PAL:0][FIN]over there.[FIN]What happened to Kotetsu?[N]The cleaner went to eat.[N]He should be in the[N][PAL:2]cafeteria[PAL:0].[END]"
+  },
+  {
+    "offset": "0990EA",
+    "kind": "dialog",
+    "source": "[DEF]なんだか 最近[N]ネズミが增えたなあ···˳[END]",
+    "translation": "[DEF]There seem to be[N]more mice lately...[END]"
+  },
+  {
+    "offset": "099106",
+    "kind": "dialog",
+    "source": "[DEF]おいおい そこはゴミ捨て場だよ[N]落ちたら あぶないよ˳[END]",
+    "translation": "[DEF]That's the garbage pit.[N]You'll get hurt if you[N]fall in.[END]"
+  },
+  {
+    "offset": "099217",
+    "kind": "dialog",
+    "source": "[DEF]ここの所長は 気に入らない奴を[N][PAL:2]ネズミに変身させる機械[PAL:0]を作ったんだ[N]君も 気をつけてね[N]それと [PAU:1E]あの話は[PAL:3]ナイショ[PAL:0]だよ˳[END]",
+    "translation": "[DEF]The director built [PAL:2]a[N]machine[N]that turns people into[N]mice[PAL:0][FIN]for anyone he dislikes.[N]Be careful.[N]And keep that [PAL:3]secret[PAL:0].[END]"
+  },
+  {
+    "offset": "09926F",
+    "kind": "dialog",
+    "source": "[DEF]はあ···やってられないよな[N]せっかくの南の島だっていうのに[N]こんな暗い研究所で 每日每日[N]はたらかされてさあっ[FIN]でも 本部の雪山よりはマシだよ[N][PAU:A][N]ところでさ 今度来た所長って[N]いやな奴だと思わない?[FIN]やっぱり そう思う?[N]あの人ロココ町にうらみがあるから[N]わざわざ 町の人たちをさらって[N]働かせてるんでしょ?[PAU:A]暗いよね[FIN]でも あの人に逆らうと[N]よくてむこうしばらく[PAL:2]トイレそうじ[N][PAL:0]悪いと 変な発明品で[N][PAL:2]ネズミ[PAL:0]にされちゃうらしいよ[FIN][N]ふぅん きをつけようっと[END]",
+    "translation": "[DEF]Sigh... I can't take this.[N]We're on a tropical[N]island,[N]yet I work every day[FIN]inside this gloomy lab.[FIN]Still, it beats the snowy[N]mountain[N]where headquarters is.[N][PAU:A]By the way, don't you[FIN]think[N]our new director is awful?[FIN]You do too?[N]He holds a grudge against[N]Rococo Town,[N]so he abducted its people[FIN]and forces them to work.[N]Grim, huh?[FIN]Oppose him, and at best[N]you clean [PAL:2]toilets[PAL:0] forever.[N]At worst, a strange[N]invention[FIN]turns you into a [PAL:2]mouse[PAL:0].[FIN][N]Hmm. I'd better be[N]careful.[END]"
+  },
+  {
+    "offset": "09938B",
+    "kind": "dialog",
+    "source": "[DEF][N][DLY:7]··········[DLY:0][END]",
+    "translation": "[DEF][N][DLY:7]..........[DLY:0][END]"
+  },
+  {
+    "offset": "09939C",
+    "kind": "dialog",
+    "source": "[DEF]ねっ![PAU:A]ねっ![PAU:A]ねっ![N]今の話 聞いてた!?[N]だれかに 話すつもり!?[N] それは ひみつです[N] 話したりしないよ",
+    "translation": "[DEF]Hey![PAU:A] Hey![PAU:A] Hey![N]You heard that, didn't[N]you?![N]Are you going to tell[FIN]someone?[N] That's our secret[N] I won't tell anyone"
+  },
+  {
+    "offset": "0993DD",
+    "kind": "dialog",
+    "source": "[CLR]うわーっ お·おねがいっ![N]所長には ナイショにしてよーっ[N]ネズミにされちゃうよーっ![END]",
+    "translation": "[CLR]Aagh! P-please![N]Don't tell the director![N]He'll turn me into a[N]mouse![END]"
+  },
+  {
+    "offset": "099416",
+    "kind": "dialog",
+    "source": "[CLR]そ·そっか···よかった![N][PAU:1E]そ·そうだ!口止め料がわりに[N][PAL:2]スタンプ[PAL:0]を手におしてあげる![FIN]これが おしてあれば[N]この研究所の たいていの所には[N]出入りすることができるからね[N]でも所長には [PAL:3]ナイショ[PAL:0]だよ˳[FIN] [NAM:0]は 戦闘員に[N][PAL:2] スタンプ[PAL:0]を おしてもらった![END]",
+    "translation": "[CLR]R-really? Thank goodness![N][PAU:1E]I know! As hush money,[N]I'll stamp your hand![FIN]The stamp grants access[N]to most of this[N]laboratory.[N]But keep it [PAL:3]secret[PAL:0] from[FIN]the director.[FIN] A trooper gave [NAM:0][N][PAL:2] the Stamp[PAL:0]![END]"
+  },
+  {
+    "offset": "0994E1",
+    "kind": "dialog",
+    "source": "[DEF]たのむよぉ[N]早くここから 出てってくれよ[N]あやしまれちゃうだろ![END]",
+    "translation": "[DEF]Please, hurry and leave![N]Someone will get[N]suspicious![END]"
+  },
+  {
+    "offset": "099554",
+    "kind": "dialog",
+    "source": "[DEF]なんだよ おとなしくなら[DLY:6]···[N][DLY:0][PAU:3C]なんだ[NAM:0]じゃねえか[N][PAU:1E]俺だよ コテツだよ[NXT]",
+    "translation": "[DEF]Hey, settle do...[DLY:6][N][DLY:0][PAU:3C]Oh, it's [NAM:0].[N][PAU:1E]It's me, Kotetsu.[NXT]"
+  },
+  {
+    "offset": "099585",
+    "kind": "dialog",
+    "source": "[DEF]え?なにしてるかって?[N][PAU:1E]飯を食うんだよ[N]腹がへっては 戦はできねえからな˳[END]",
+    "translation": "[DEF]What am I doing?[N][PAU:1E]Eating.[N]An army marches on its[N]stomach.[END]"
+  },
+  {
+    "offset": "0995B2",
+    "kind": "dialog",
+    "source": "[DEF]え?所長を探してるんだが[N]見失ったって?[N][PAU:3C]ばっかだねえお前 この研究所には[N]ちょっとした しかけがあるのさ[FIN]ふつうじゃ 見えないドアや[N]トラップがあってな[N][PAL:2]カメレオングラス[PAL:0]ってのがないと[N]それを 見ることはできねえんだぜ[FIN]俺?俺はもちろん持ってるさ[N][PAU:28]え?[PAU:14]欲しい?[N][PAU:14]へへへ 世の中そんなにあまくないぜ[N]男なら 自分で手に入れな[FIN]たしか[N][PAL:2]研究開発室[PAL:0]って所で[N]作ってるはずだぜ[FIN][JMP:&string_0996A3+M]",
+    "translation": "[DEF]What? You lost the[N]director?[N][PAU:3C]You're a real fool.[N]This laboratory has a[FIN]trick to it.[FIN]There are invisible doors[N]and traps.[N]You need [PAL:2]Chameleon Glasses[PAL:0][N]to see them.[FIN]Me? Of course I have some.[N][PAU:28]What?[PAU:14] You want them?[N][PAU:14]Life isn't that easy.[N]A man gets his own pair.[FIN]They should make them[N]in the [PAL:2]R and D Room[PAL:0].[FIN]It's to the right[N]after you leave the[N]cafeteria,[N]but they won't let you in[FIN]easily.[END]"
+  },
+  {
+    "offset": "0996A3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3][::][PAL:2]研究開発室[PAL:0]は 食堂を出て[N]→の方だけど そうかんたんに[N]入れてくれないんじゃねえかあ?[END]",
+    "translation": "[DEF][TPL:3][::]The [PAL:2]R and D Room[PAL:0] is to the[N]right[N]after you leave the[FIN]cafeteria,[N]but they won't let you in[N]easily.[END]"
+  },
+  {
+    "offset": "0996E2",
+    "kind": "dialog",
+    "source": "[DEF]おれは[N][PAL:2]ママのてづくりハンバーグ[PAL:0]をくれよ[N]ごはんは 大もりでな[N][PAU:1E]え?[PAU:14]そんなものないって?[END]",
+    "translation": "[DEF]I'll have [PAL:2]Mom's homemade[N]hamburger[PAL:0].[N]And a large serving of[N]rice.[FIN][PAU:1E]What?[PAU:14] You don't have that?[END]"
+  },
+  {
+    "offset": "0997E3",
+    "kind": "dialog",
+    "source": "[DEF]每日同じメニューばかりで[N]いやになっちゃうよ···[N]仕事する気もなくなっちゃうよな˳[END]",
+    "translation": "[DEF]The same menu every day...[N]It drains your will to[N]work.[END]"
+  },
+  {
+    "offset": "099817",
+    "kind": "dialog",
+    "source": "[DEF][N]あっ!またネズミだ![N]このやろうめっ!![END]",
+    "translation": "[DEF][N]Ah! Another mouse![N]You little pest!![END]"
+  },
+  {
+    "offset": "099830",
+    "kind": "dialog",
+    "source": "[DEF]なんだ このネズミ!?[N]ちっとも人間をこわがってない![N][N]生意気な奴め!こらしめてやる![END]",
+    "translation": "[DEF]What's with this mouse?![N]It isn't afraid of humans[N]at all![N][FIN]Insolent pest! I'll teach[N]you![END]"
+  },
+  {
+    "offset": "099866",
+    "kind": "dialog",
+    "source": "[DEF]こ·[PAU:14]このねずみ![N]ばけもんだあぁぁっ!![N]た·たすけて おかあちゃーんっ![END]",
+    "translation": "[DEF]Th-[PAU:14]this mouse![N]It's a monster![N]H-help me, Mommy![END]"
+  },
+  {
+    "offset": "0998CB",
+    "kind": "dialog",
+    "source": "[DEF]なんだよぉ[N]おとなしく 順番をまてよぉ˳[END]",
+    "translation": "[DEF]Hey![N]Wait your turn quietly.[END]"
+  },
+  {
+    "offset": "0998E3",
+    "kind": "dialog",
+    "source": "[DEF]食堂のおやじが[N][PAL:2]出前[PAL:0]する奴がいない!って[N]俺に あたるんだよ···[N][PAU:14]どこも 人手不足なんだよね˳[END]",
+    "translation": "[DEF]The cafeteria boss yells[N]at me[N]because nobody makes[N][PAL:2]deliveries[PAL:0]...[FIN][PAU:14]Everywhere is[N]short-staffed.[END]"
+  },
+  {
+    "offset": "099925",
+    "kind": "dialog",
+    "source": "[DEF]俺 Aランチ!はやくしてね[N]これから ネズミたいじの当番なんだ[N]まったく 最近[N]ネズミが多くて 困っちゃうよ˳[END]",
+    "translation": "[DEF]Lunch A, and make it[N]quick![N]I'm on mouse-control duty[N]next.[FIN]There are so many mice[N]lately.[END]"
+  },
+  {
+    "offset": "09998C",
+    "kind": "dialog",
+    "source": "[DEF]ここはね 改造人間の[N]研究を 行っているんだけど[N]最近は 新しい所長のしゅみで[N]変な機械ばかり 作らされてるんだ[FIN][N]···おっと[N]しゃべりすぎちゃったかな˳[END]",
+    "translation": "[DEF]We research cyborgs here,[N]but our new director's[N]hobbies[N]have us making nothing[FIN]but strange machines[N]lately.[FIN][N]...Oops.[N]Maybe I said too much.[END]"
+  },
+  {
+    "offset": "099A52",
+    "kind": "dialog",
+    "source": "[DEF]てやんでいっ[N]所長の奴が 本部からの予算を[N]全部 研究につぎこんじまうから[N]ロクな料理が 作れやしねえよ![END]",
+    "translation": "[DEF]Blast it![N]The director spends every[N]bit[N]of our headquarters[FIN]funding[N]on research. I can't cook[N]anything![END]"
+  },
+  {
+    "offset": "099A99",
+    "kind": "dialog",
+    "source": "[DEF]おおっ!いい所に人が来たぜ![N]お前さん 今ヒマかい?[N] はい ヒマでーす[N] 今 いそがしいでーす",
+    "translation": "[DEF]Oh! Someone came at the[N]right time![N]Are you free right now?[FIN] Yes, I'm free[N] No, I'm busy"
+  },
+  {
+    "offset": "099AD9",
+    "kind": "dialog",
+    "source": "[CLR]それは よかったぜ![N]人手が足りなくて 困ってたんだよ[N][PAL:2]研究開発室に 出前を[N]とどけてくれねえかい?[FIN][PAL:0]食堂の出前だって言えば[N]開けてくれるからよ[N]わりいな たのんだぜ![N][PAU:14]ああ いそがしいいそがしい![END]",
+    "translation": "[CLR]Wonderful![N]We're badly short-staffed.[N]Will you deliver an order[N]to the [PAL:2]R and D Room[PAL:0]?[FIN]Say it's from the[N]cafeteria,[N]and they'll open the door.[N]Thanks! I'm counting on[FIN]you![N][PAU:14]So busy! So busy![END]"
+  },
+  {
+    "offset": "099B55",
+    "kind": "dialog",
+    "source": "[CLR]てやんでいっ![N]最近の 若いもんはすぐに[N]いそがしいで にげやがる![N]じゃまだじゃまだ 出ていきなっ![END]",
+    "translation": "[CLR]Blast it![N]Young people always claim[N]they're busy and run away![N]Out of my way! Get out![END]"
+  },
+  {
+    "offset": "099B8E",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2]研究開発室[PAL:0]は 食堂を出て[N]→の方だからな[N]いいかい まちがえるんじゃねえぞ˳[END]",
+    "translation": "[DEF]The [PAL:2]R and D Room[PAL:0] is to the[N]right[N]after you leave the[N]cafeteria.[FIN]Don't get lost![END]"
+  },
+  {
+    "offset": "099BC5",
+    "kind": "dialog",
+    "source": "[DEF]最近よぉ きょう暴なネズミが[N]出るっつうんで みんなこわがって[N]だれも食事に こなくなっちまった[FIN]仕方ねえから ネズミどもに[N]めしを くわしてやってるんだ[N]ま 文句を言わねえ分[N]あいつらの方が かわいいもんさ˳[END]",
+    "translation": "[DEF]Everyone is scared away[N]by rumors of vicious mice[N]lately,[N]so no one comes to eat.[FIN]I have to feed the mice[N]instead.[N]At least they're cuter[N]and never complain.[END]"
+  },
+  {
+    "offset": "099C9D",
+    "kind": "dialog",
+    "source": "[DEF]だれだい?[N]部外者の立入りは おことわりだよ[N]研究のじゃまだよ!帰って帰って![END]",
+    "translation": "[DEF]Who are you?[N]No outsiders allowed![N]You interrupt our[N]research![FIN]Go home! Go home![END]"
+  },
+  {
+    "offset": "099CCF",
+    "kind": "dialog",
+    "source": "[DEF]だれ?食堂の出前の人?[N]え?ちがうの[N]じゃあ 帰った帰った![N]部外者の立入りは おことわりだよ˳[END]",
+    "translation": "[DEF]Who is it? Cafeteria[N]delivery?[N]What? No?[N]Then go away![FIN]No outsiders allowed.[END]"
+  },
+  {
+    "offset": "099D0D",
+    "kind": "dialog",
+    "source": "[DEF]だれ?食堂の出前の人?[N]ああよかった お腹ぺこぺこだよ[N]さあ 入って入って![END]",
+    "translation": "[DEF]Who is it? Cafeteria[N]delivery?[N]Thank goodness! We're[N]starving.[FIN]Come in! Come in![END]"
+  },
+  {
+    "offset": "099D3D",
+    "kind": "dialog",
+    "source": "[DEF]だれ?食堂の出前の人?[N]え?おさらを取りにきたの?[N]じゃあ 入っていいよ˳[END]",
+    "translation": "[DEF]Who is it? Cafeteria[N]delivery?[N]You're collecting the[N]dishes?[FIN]Then you may enter.[END]"
+  },
+  {
+    "offset": "099DA7",
+    "kind": "dialog",
+    "source": "[DEF]新しい所長が来てから[N]変なものばかり開発させられてるよ[N]この間は [PAL:2]人間をネズミに変える[N]機械[PAL:0]を作ったしね[FIN]今は 所長が拾ってきた[N]部品を調べているんだ[N]所長は[PAL:2]大むかしの発明品[PAL:0]だって[N]言ってたけど 本当かねえ?[END]",
+    "translation": "[DEF]Since the new director[N]came,[N]we only develop strange[N]things.[FIN]Recently, we built [PAL:2]a[N]machine[N]that turns people into[N]mice[PAL:0].[FIN]Now we're examining parts[N]the director found.[N]He says they're [PAL:2]an ancient[N]invention[PAL:0],[FIN]but is that really true?[END]"
+  },
+  {
+    "offset": "099E39",
+    "kind": "dialog",
+    "source": "[DEF]ありがとーっ!今いそがしくて[N]手が はなせないんだ[N]その辺に置いておいてねーっ![END]",
+    "translation": "[DEF]Thanks! My hands are full[N]right now.[N]Leave it anywhere nearby![END]"
+  },
+  {
+    "offset": "099E96",
+    "kind": "dialog",
+    "source": "[DEF]今は おてごろサイズの[N][PAL:2]人間をネズミにするレーザー[PAL:0]を[N]作らされているんだ···[N]変なもんばっかで いやになるよ[FIN][N]少し てぬきしちゃおうかな˳[END]",
+    "translation": "[DEF]Now we're building a[N]compact[N][PAL:2]human-to-mouse laser[PAL:0]...[N]I'm sick of making weird[FIN]things.[FIN][N]Maybe I'll cut a few[N]corners.[END]"
+  },
+  {
+    "offset": "099EEF",
+    "kind": "dialog",
+    "source": "[DEF]おフロに10日も入ってないし[N]くつ下も くさくなってきたし···[N][PAU:1E]たまには おうちのベッドで[N]ゆっくり ねたいよ···˳[END]",
+    "translation": "[DEF]I haven't bathed in ten[N]days,[N]and my socks are starting[N]to stink...[FIN][PAU:1E]I want one quiet night[N]in my own bed...[END]"
+  },
+  {
+    "offset": "099FA6",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は 本をみつけた[N] 本には [PAL:2]カメレオングラス[PAL:0]の[N] ことが 書かれていた˳[END]",
+    "translation": "[DEF] [NAM:0] found a book[N] about [PAL:2]Chameleon Glasses[PAL:0].[END]"
+  },
+  {
+    "offset": "09A08D",
+    "kind": "dialog",
+    "source": "[DEF]あっ!こらっ![N]勝手に 出てきちゃダメだよっ![N]ほら!持ち場にもどって![END]",
+    "translation": "[DEF]Hey! Stop![N]You can't come out on your[N]own![N]Return to your post![END]"
+  },
+  {
+    "offset": "09A243",
+    "kind": "dialog",
+    "source": "[DEF] ··········[N][PAU:1E] なんとなく あやしい˳[END]",
+    "translation": "[DEF] ..........[N][PAU:1E] Something seems[N]suspicious.[END]"
+  },
+  {
+    "offset": "09A30B",
+    "kind": "dialog",
+    "source": "[DEF][TPL:5]はっはっはっ いいかっこうだ[N]天才発明家ペッパー樣にさからうと[N]こういう目にあうのだ![END]",
+    "translation": "[DEF][TPL:5]Ha ha ha! What a fine[N]look![N]Defy the genius Dr.[FIN]Pepper,[N]and this is what happens![END]"
+  },
+  {
+    "offset": "09A343",
+    "kind": "dialog",
+    "source": "[DEF][TPL:5]けがらわしい ねずみめっ![N]さっさと その部屋のすみの[N]ねずみ穴から 出て行け![END]",
+    "translation": "[DEF][TPL:5]Filthy mouse![N]Leave through the mouse[N]hole[FIN]in the corner of that[N]room![END]"
+  },
+  {
+    "offset": "09A374",
+    "kind": "dialog",
+    "source": "[DEF][TPL:5]むむむっ なんだお前は![N]神聖な研究所に 勝手に入りおって![END]",
+    "translation": "[DEF][TPL:5]Hmm! Who are you?![N]You entered this sacred[N]laboratory[FIN]without permission![END]"
+  },
+  {
+    "offset": "09A39F",
+    "kind": "dialog",
+    "source": "[DEF][TPL:5]お前のような ふとどき者は[N]こうしてくれる![END]",
+    "translation": "[DEF][TPL:5]This is what I do[N]to insolent intruders like[N]you![END]"
+  },
+  {
+    "offset": "09A415",
+    "kind": "dialog",
+    "source": "[DEF][N][PAL:2] 天才発明家 ペッパーの日記[FIN] *月*日[N] ハッカーにスカウトされ[N] ここへ来たが ただの[N] 工場ではないか!バカにしとる![FIN] *月*日[N] 今私は もうれつに感動してる![N] 火山の中で とんでもないものを[N] 発見したのだ![FIN] 一体 どれぐらい昔のものか[N][PAL:3] 火山のふん火を操作する機械[PAL:2]だ![N] これを利用しない手はない[N] 早速 研究所に持ち帰ってきた˳[FIN] *月*日[N] あの機械は 思わぬ効果があった[N] これで島の村人を操ることができる[N] 大いに利用しよう˳[FIN] *月*日[N] ハッカーの戦闘員どもが[N] やる気のない奴らばかりなので[N] ロココ町から 人を連れてきた[FIN] タダで南の島に招待すると言ったら[N] だまされたバカどもがやってきた[N] いつぞや このペッパー樣を[N] バカにした仕返しだ ざまみろ[FIN] あの機械のことが気になるので[N] 火山を 色々調べることにした[N] 他にも 先人の作った発明品が[N] 見つかるかもしれん···˳[PAL:0][END]",
+    "translation": "[DEF][N][PAL:2] Diary of the Genius Dr.[N]Pepper[FIN] * Month * Day[N] The Hackers recruited me,[N] so I came here. But this[N]is[FIN] merely a factory! An[N]insult![FIN] * Month * Day[N] Today, I am profoundly[N]moved![FIN] I found something[N]incredible[N] inside the volcano![FIN] How ancient could it be?[N][PAL:3] A machine controlling[N]eruptions![PAL:2][FIN] I must take advantage of[N]it.[N] I brought it back to the[N]lab.[FIN] * Month * Day[FIN] The machine had another[N]effect.[FIN] With it, I can control[N] the island's villagers.[N] I shall exploit it fully.[FIN] * Month * Day[N] The Hacker troopers are[N]all lazy,[FIN] so I brought workers[N] from Rococo Town.[FIN] I offered a free tropical[N]trip,[FIN] and the fools fell for[N]it.[N] Revenge for ridiculing[N] the great Dr. Pepper![FIN]Serves them right.[FIN] The machine still[N]intrigues me,[FIN] so I will search the[N]volcano.[N] Perhaps I can find more[N]inventions[FIN] left by those who came[N]before...[PAL:0][END]"
+  },
+  {
+    "offset": "09A62D",
+    "kind": "dialog",
+    "source": "[DEF] ···[PAU:28]赤くて読みずらい˳[END]",
+    "translation": "[DEF] ...[PAU:28]The red ink is hard to[N]read.[END]"
+  },
+  {
+    "offset": "09A6FF",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]よう来たな ネズ公[N]今すぐ この機械で人間に[N]もどしてやるからな [PAU:14]いいか?[END]",
+    "translation": "[DEF][TPL:3]About time, mouse.[N]I'll turn you human again[N]with this machine. [PAU:14]Ready?[END]"
+  },
+  {
+    "offset": "09A733",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]おいおい ネズ公[N]そんなはじっこにいないで[N]前に来な˳[END]",
+    "translation": "[DEF][TPL:3]Come on, mouse.[N]Don't hide at the edge.[N]Move to the front.[END]"
+  },
+  {
+    "offset": "09A757",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は 人間にもどった![END]",
+    "translation": "[DEF] [NAM:0] returned to human[N]form![END]"
+  },
+  {
+    "offset": "09A768",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3][DLY:9]···なんだよ···お前[N][DLY:0][NAM:0]じゃねえかよ[N]かーっ お前も青いねえ[FIN]だいたい 何でもどってきたんだ?[N][PAU:1E]え?[PAU:1E]地震を止めにきた?[N]バカだねえ [PAL:2]地震発生裝置[PAL:0]を[N]止めるには やり方があるんだぞ[FIN]知っているのは 研究所長と[N][PAL:2]管理してた戦闘員[PAL:0]ぐらいだろうな[N][PAU:1E]もっとも 戦闘員の方は[N][PAL:2]ネズミにされた[PAL:0]って話だしな[FIN]さてひと仕事終ったし 帰るかな[N]あの はねっかえり女が来たら[N]かなわんしな[FIN][N]じゃ あばよ![N]もう ドジふむんじゃねえぞ![END]",
+    "translation": "[DEF][TPL:3][DLY:9]...What the...[N][DLY:0]It's you, [NAM:0].[N]You're still green, kid.[FIN]Why did you come back[N]anyway?[N][PAU:1E]What?[PAU:1E] To stop the[N]earthquakes?[FIN]Fool. There's a special[N]way[N]to stop the [PAL:2]earthquake[N]device[PAL:0].[FIN]Only the lab director and[N][PAL:2]the trooper who maintained[N]it[PAL:0][N]would know. But I hear[FIN][PAL:2]the trooper became a[N]mouse[PAL:0].[FIN]Well, my work is done.[N]Time to go.[N]I don't want that wild[N]woman[FIN]showing up again.[FIN][N]See you![N]Try not to blunder again![END]"
+  },
+  {
+    "offset": "09A976",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4][DLY:1]ちょっと!!しっしっ![N]こっちに 来ないでよぉっ![DLY:0][END]",
+    "translation": "[DEF][TPL:4][DLY:1]No!! Shoo! Shoo![N]Stay away from me![DLY:0][END]"
+  },
+  {
+    "offset": "09A998",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4][DLY:9]···········[N][DLY:1]きゃーーーーーーーーーーーーっ![N]ネズミぃぃぃぃぃぃぃぃぃぃっ!![DLY:0][END]",
+    "translation": "[DEF][TPL:4][DLY:9]...........[N][DLY:1]Aaaaaaaaaaaaaaaaaah![N]A moooooouuuuuuse!![DLY:0][END]"
+  },
+  {
+    "offset": "09A9D3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4]だっ·[PAU:28]だめーーーーーーっ[N]もう たえらんないぃぃっ!![END]",
+    "translation": "[DEF][TPL:4]N-[PAU:28]nooooooo![N]I can't take it anymore!![END]"
+  },
+  {
+    "offset": "09AB1C",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]たのむわ 俺この手の女苦手なんだ[N]うまく言ったら お前が人間に[N]もどる方法を教えてやってもいいぜ˳[END]",
+    "translation": "[DEF][TPL:3]Please. I can't handle[N]women like her.[N]Get rid of her, and I may[FIN]tell you[N]how to become human again.[END]"
+  },
+  {
+    "offset": "09AB5D",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]へっへっへっ でかしたな[N]まったく なんだよあの女は[N]とんだ はねっかえりだぜ[FIN]さて 商談に入ろうか[N][PAU:14]実はな この研究所の中に[N]本部とか言う所から送られてくる[N][PAL:2]研究資金[PAL:0]てのが あるらしいんだ[FIN]だがな [PAL:2]部屋の前に[N]3人も見張りがいて[PAL:0]入りこめねえんだ[N]お前は ネズミだ[N]俺よりは 色んな所に動けるだろ?[FIN]そこでだ![PAL:2]その資金を手に入れて[N]俺に わたしてほしいんだ[N][PAL:0]そうしたら お前を[N]人間にもどす手伝いをしてやるよ[FIN]俺は ここで待ってるからな[N]そこの ねずみ穴から[N]色んな所に 行けるはずだぜ[N]たのんだぜ ネズ公よ![END]",
+    "translation": "[DEF][TPL:3]Heh heh! Well done.[N]What is with that woman?[N]She's completely wild![FIN]Now, let's discuss[N]business.[N][PAU:14]This laboratory receives[N][PAL:2]research funds[PAL:0] from[FIN]headquarters.[FIN]But [PAL:2]three guards stand[N]in front of the room[PAL:0],[N]so I can't get inside.[N]You're a mouse. You can[FIN]fit[N]in more places than I can.[FIN]So [PAL:2]steal those funds[N]and bring them to me[PAL:0].[N]Then I'll help you[N]become human again.[FIN]I'll wait here.[N]That mouse hole should[N]lead[N]to all sorts of places.[FIN]I'm counting on you,[N]mouse![END]"
+  },
+  {
+    "offset": "09ACA1",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]どうした?お宝はみつかったか?[N][PAU:A]···なんだ てぶらじゃねえか[N]お前だって人間にもどりたいだろ?[FIN]研究資金のある 部屋の前には[N][PAL:2]3人の見張り[PAL:0]がいるはずだ[N]それを目印にして さがすんだぞ[N]たのんだぜ ネズ公![END]",
+    "translation": "[DEF][TPL:3]Well? Find the treasure?[N][PAU:A]...You're empty-handed.[N]You want to be human[FIN]again, right?[FIN]Look for a room[N]with [PAL:2]three guards[PAL:0] outside.[N]That's where the research[N]funds are.[FIN]I'm counting on you,[N]mouse![END]"
+  },
+  {
+    "offset": "09AD25",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]でかしたじゃねえか ネズ公![N]早速だが そのお宝は[N]こっちに ちょうだいするぜ[NXT]",
+    "translation": "[DEF][TPL:3]Good work, mouse![N]I'll take that treasure[N]now.[NXT]"
+  },
+  {
+    "offset": "09AD56",
+    "kind": "dialog",
+    "source": "[DEF] コテツに [PAL:2]5000トロン[PAL:0]を[N] とられてしまった![FIN][::]さて やくそくは守ろうか[N]お前 [PAL:2]秘密研究室[PAL:0]は知ってるな?[N]お前が ネズミに変えられた所だよ[N]そこで待ってるから 後から来な˳[END]",
+    "translation": "[DEF] Kotetsu took [PAL:2]5000 tron[PAL:0]![FIN][::]Now I'll keep my promise.[N]You know the [PAL:2]secret[N]laboratory[PAL:0]?[N]Where you became a mouse.[FIN]I'll wait there. Come[N]after me.[END]"
+  },
+  {
+    "offset": "09ADCC",
+    "kind": "dialog",
+    "source": "[DEF]ん?[N][PAU:28]···おい···本当に[N]これしか 入ってなかったのか?[N]···まあしかたねえや[FIN] コテツに [PAL:2]所持金全部[PAL:0]を[N] とられてしまった![FIN][JMP:&string_09AD56+M]",
+    "translation": "[DEF]Hmm?[N][PAU:28]...Hey... Was this[N]really all that was[N]inside?[FIN]...Well, I can't complain.[FIN] Kotetsu took [PAL:2]all your[N]tron[PAL:0]![FIN]Now I'll keep my promise.[N]You know the [PAL:2]secret[N]laboratory[PAL:0]?[N]Where you became a mouse.[FIN]I'll wait there. Come[N]after me.[END]"
+  },
+  {
+    "offset": "09AE23",
+    "kind": "dialog",
+    "source": "[DEF]ん?···ちょっとまて[N]金はどうしたんだ 金だよ![N]金がなきゃ 人間にもどせねえなあ[N]あーあー かわいそうに˳[END]",
+    "translation": "[DEF]Hmm? Wait a minute.[N]Where's the money? The[N]money![N]No money, no becoming[FIN]human.[N]Oh, what a pity.[END]"
+  },
+  {
+    "offset": "09AE65",
+    "kind": "dialog",
+    "source": "[DEF]あやしいわねえ この機械···[N]スイッチおしても[N]うんともすんとも言わないじゃない[N]こわれているのかしら···˳[END]",
+    "translation": "[DEF]This machine looks[N]suspicious...[N]I press the switch,[N]but nothing happens.[FIN]Is it broken?[END]"
+  },
+  {
+    "offset": "09AEA4",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]···········[N]···なんだ?お前?[N]何やってんだ?こんな所で˳[END]",
+    "translation": "[DEF][TPL:3]...........[N]...Who are you?[N]What are you doing here?[END]"
+  },
+  {
+    "offset": "09AECF",
+    "kind": "dialog",
+    "source": "[DEF][TPL:4]むっ [PAU:1E]お前とは何よ!お前とはっ![N]あんたこそ何よっ 見た所[N]ここの關係者でもなさそうだけど?[FIN][TPL:3]かーっ かわいくねえ女だなっ![N]ところでそこのネズ公はなんだよ[N]お前も バカ所長のぎせい者か?[FIN][TPL:4]ネズミなんかに話をして[N]ますますもって 変な奴だわ![N]あんた一体 何なのよ?[FIN][TPL:3]···ったく うるせえ女だな[N]おいネズ公![N]お前 人間の言葉がわかるなら[N]この女を 追いはらってくれ˳[END]",
+    "translation": "[DEF][TPL:4]Hmph! Don't call me you![N]Who are you? You don't[N]look[FIN]like you belong here[N]either.[FIN][TPL:3]What an unpleasant woman![N]And what's with that[N]mouse?[FIN]Did the idiot director get[N]you too?[FIN][TPL:4]Now you're speaking to a[N]mouse?[N]You grow stranger by the[FIN]second![N]What exactly are you?[FIN][TPL:3]...What a noisy woman.[N]Hey, mouse![N]If you understand human[FIN]speech,[N]chase this woman away.[END]"
+  },
+  {
+    "offset": "09AFBC",
+    "kind": "dialog",
+    "source": "[DEF][TPL:3]おいおい ネズ公よ[N]お前を 人間にもどす方法を[N]教えてやってもいいんだぜ?[END]",
+    "translation": "[DEF][TPL:3]Come on, mouse.[N]I might tell you[N]how to become human again.[END]"
+  },
+  {
+    "offset": "09B119",
+    "kind": "dialog",
+    "source": "[DEF]また新参者の ネズミだチュウ[N]最近 よそ者が增えて困るチュウ[N]ココは オレ達のなわばりだチュウ[N]あっちに行くチュウ˳[END]",
+    "translation": "[DEF]Another newcomer mouse,[N]squeak.[N]Too many outsiders lately.[N]This is our territory,[FIN]squeak.[N]Go away![END]"
+  },
+  {
+    "offset": "09B16D",
+    "kind": "dialog",
+    "source": "[DEF]何度きても ダメだチュウ[N][PAU:14]···ナニナニ?[N]お前は元々人間で これから[N]人間にもどしてもらうチュウ?[FIN]どうも あやしいチュウ[N]でも ネズミのくせに[N]人間にあこがれるのも変だチュウ[N][PAU:14]よし!じゃあお前を試すチュウ[FIN]今[PAL:2]食堂[PAL:0]で[N][PAL:2]ネズミそうじ[PAL:0] がおこなわれていて[N]食べ物を取りに行けなくて[N]とても困ってるチュウ[FIN]お前 ちょっと行って[N]あいつらを 何とかするチュウ[N]できないんだったら[N]ここは 通してやらないチュウ˳[END]",
+    "translation": "[DEF]Coming again won't help,[N]squeak.[N][PAU:14]...What's that?[N]You were human and will[FIN]soon[N]be changed back, squeak?[FIN]That sounds suspicious.[N]But no real mouse would[N]want to become human.[N][PAU:14]Fine! We'll test you,[FIN]squeak.[FIN]They're holding a [PAL:2]mouse[N]roundup[PAL:0][N]in the [PAL:2]cafeteria[PAL:0] right[N]now,[FIN]so we can't get food.[FIN]Go there and do something[N]about those humans,[N]squeak.[N]If you can't, you cannot[FIN]pass.[END]"
+  },
+  {
+    "offset": "09B277",
+    "kind": "dialog",
+    "source": "[DEF]まだ 食堂の奴らを[N]なんとかできないのかチュウ?[N]本当は 人間だなんて[N]ウソだろ チュウ˳[END]",
+    "translation": "[DEF]You still haven't dealt[N]with[N]the cafeteria people,[N]squeak?[FIN]You lied about being[N]human![END]"
+  },
+  {
+    "offset": "09B2B3",
+    "kind": "dialog",
+    "source": "[DEF]え?本当に食堂の奴らを[N]なんとかしてくれたチュウ?[N]お前は すごいチュウ![N]じゃあ 食事に行くチュウ![END]",
+    "translation": "[DEF]You really dealt with[N]them, squeak?[N]You're incredible![N]Now we can go eat, squeak![END]"
+  },
+  {
+    "offset": "09B324",
+    "kind": "dialog",
+    "source": "[DEF]お前も 工場長にネズミに[N]されたチュウ?[N]そのうち この工場は[N]ネズミだらけになるチュウ[FIN]そういえば この上の方にある[N][PAL:2]地震発生裝置[PAL:0]の管理人も[N]ネズミにされたらしいチュウ[N]あいつは どこに行ったかチュウ˳[END]",
+    "translation": "[DEF]Did the director turn you[N]into a mouse too, squeak?[N]Soon this factory[N]will be full of mice.[FIN]I hear the keeper of the[N][PAL:2]earthquake device[PAL:0] upstairs[N]was also made a mouse.[N]Where did he go, squeak?[END]"
+  },
+  {
+    "offset": "09B3B0",
+    "kind": "dialog",
+    "source": "[DEF]さっき この先の部屋に[N]女の子が ウロウロしてたチュウ[N]ちょっとのぞいたら すごい声で[N]さけばれて びっくりしたチュウ˳[END]",
+    "translation": "[DEF]A girl was wandering[N]in the room ahead, squeak.[N]I peeked in, and her[N]scream[FIN]nearly scared me to death![END]"
+  },
+  {
+    "offset": "09B455",
+    "kind": "dialog",
+    "source": "[DEF]ちょっと 食事に来ただけなのに[N]あの人間が じゃまするチュウ[N]なんとかしてほしいチュウ˳[END]",
+    "translation": "[DEF]We only came to eat,[N]but that human gets in our[N]way.[N]Please do something,[FIN]squeak.[END]"
+  },
+  {
+    "offset": "09B48C",
+    "kind": "dialog",
+    "source": "[DEF]これで ゆっくり[N]食事ができるようになったチュウ[N]ここのごはんは[N]なかなかいけるチュウ˳[END]",
+    "translation": "[DEF]Now we can eat in peace,[N]squeak.[N]The food here is rather[N]good.[END]"
+  },
+  {
+    "offset": "09B523",
+    "kind": "dialog",
+    "source": "[DEF]オレも 前は[N]戦闘員だったチュウ···[N]こんな目にあうなんて[N]所長を うらむチュウ˳[END]",
+    "translation": "[DEF]I used to be a trooper,[N]squeak...[N]Curse the director[N]for doing this to me.[END]"
+  },
+  {
+    "offset": "09B55C",
+    "kind": "dialog",
+    "source": "[DEF]オレも 前は戦闘員だったチュウ[N]まちがって 地震発生裝置の[N]自爆スイッチを おしそうになって[N]所長に ネズミにされたチュウ[FIN]地震発生裝置は[N][PAL:2]右に3回 左に2回[PAL:0]スイッチをおすと[N]自爆してしまうらしいチュウ[FIN]でも 今のオレには關係ないチュウ[N]ネズミは おきらくでいいチュウ˳[END]",
+    "translation": "[DEF]I used to be a trooper,[N]squeak.[N]I almost pressed the[N]earthquake[FIN]device's self-destruct[N]switch,[N]so the director made me a[N]mouse.[FIN]Press its switch [PAL:2]right[N]three times,[N]then left twice[PAL:0], and the[N]device[FIN]will apparently[N]self-destruct.[FIN]But it doesn't concern me[N]now.[N]Being a mouse is carefree,[N]squeak.[END]"
+  },
+  {
+    "offset": "09B6B6",
+    "kind": "dialog",
+    "source": "[DEF]こらあっ!何をうろうろしてるんだ![N][PAU:14]トイレにでも行きたいのか?[N][PAL:2]トイレ[PAL:0]なら この下だ[N]その辺で もらすんじゃないぞ![END]",
+    "translation": "[DEF]Hey! Why are you wandering[N]around?![N][PAU:14]Need the restroom?[N]The [PAL:2]restroom[PAL:0] is below.[FIN]Don't make a mess here![END]"
+  },
+  {
+    "offset": "09B700",
+    "kind": "dialog",
+    "source": "[DEF]こらあっ!何をうろうろしてるんだ![N]ん?[PAU:1E][PAL:2]スタンプ[PAL:0]をおしてあるのか[N]じゃあ 通してもいいということか˳[END]",
+    "translation": "[DEF]Hey! Why are you wandering[N]around?![N]Hmm?[PAU:1E] You have the [PAL:2]Stamp[PAL:0].[N]I suppose that means you[FIN]may pass.[END]"
+  },
+  {
+    "offset": "09B73E",
+    "kind": "dialog",
+    "source": "[DEF]用が終ったら[N]さっさと 持ち場にもどれよ![N]人手不足でいそがしいんだから![END]",
+    "translation": "[DEF]Return to your post when[N]finished![N]We're short-staffed and[N]busy![END]"
+  },
+  {
+    "offset": "09B76D",
+    "kind": "dialog",
+    "source": "[DEF]さっき所長が 女の子に[N]追いかけられながら[PAL:2]トイレ[PAL:0]に[N]入っていったけど[DLY:9]···[N][PAU:1E][DLY:0]一体 何かんがえてるんだろ˳[END]",
+    "translation": "[DEF]The director ran into the[N][PAL:2]restroom[PAL:0][N]while a girl chased him...[N][PAU:1E][DLY:0]What could he be thinking?[END]"
+  },
+  {
+    "offset": "09B7D6",
+    "kind": "dialog",
+    "source": "[DEF] 見張りがいて 外に出れない···[END]",
+    "translation": "[DEF] Guards keep you from[N]leaving...[END]"
+  },
+  {
+    "offset": "09B81B",
+    "kind": "dialog",
+    "source": "[DEF]ここにはねえ この研究所の[N][PAL:2]開発費[PAL:0]がおいてあるんだ[N]だから 特に見張りもきびしいのさ[N][PAU:1E]えっへん˳[END]",
+    "translation": "[DEF]The laboratory's[N][PAL:2]development funds[PAL:0][N]are stored here.[N]That's why security is so[FIN]strict.[N][PAU:1E]Ahem![END]"
+  },
+  {
+    "offset": "09B85C",
+    "kind": "dialog",
+    "source": "[DEF]ここには だれも[N]入れちゃだめって言われてるんだ[N]悪いけど 絕対に入れられないよ[N]あきらめて 帰った方がいいよ˳[END]",
+    "translation": "[DEF]We were told to let nobody[N]inside.[N]Sorry, but absolutely no[N]entry.[FIN]Give up and go home.[END]"
+  },
+  {
+    "offset": "09B8AF",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2] 今月は ハッカー直営研究所の[N] 作業強化月間です[N] みなさん がんばりましょう[PAL:0][END]",
+    "translation": "[DEF][PAL:2] This month is[N]Productivity Month[N] at Hacker Laboratories.[N] Everyone, work hard![PAL:0][END]"
+  },
+  {
+    "offset": "09B9E1",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3] 所長專用トイレ[N][N][PAL:2] かってに使ったら[N] むこう10年間トイレそうじだ![PAL:0][END]",
+    "translation": "[DEF][PAL:3] Director's Private[N]Restroom[N][FIN][PAL:2] Unauthorized use earns[N] ten years of toilet duty![PAL:0][END]"
+  },
+  {
+    "offset": "09BA18",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2] ハッカー公設トイレ[N][N][PAL:3] 所長專用トイレ[PAL:2]は使わないこと![N][PAU:1E] 流し忘れには 注意しましょう[PAL:0][END]",
+    "translation": "[DEF][PAL:2] Hacker Public Restroom[N][N][PAL:3] Do not use the director's[N]restroom![PAL:2][FIN][PAU:1E] Remember to flush.[PAL:0][END]"
+  },
+  {
+    "offset": "09BA5F",
+    "kind": "dialog",
+    "source": "[DEF] 左 [PAL:2]研究開発室[N][PAL:0] 部外者の立入り おことわり[N][N] ろうかは 静かに步きましょう[END]",
+    "translation": "[DEF] Left: [PAL:2]R and D Room[N][PAL:0] No outsiders allowed.[N][N] Walk quietly in the[FIN]corridor.[END]"
+  },
+  {
+    "offset": "09BA9A",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2] ハッカー公営食堂[N][N] 今週の定食は[N][PAL:3] モツにこみ定食[PAL:2]です[PAL:0][END]",
+    "translation": "[DEF][PAL:2] Hacker Public Cafeteria[N][N] This week's special:[N][PAL:3] Stewed Offal Set Meal[PAL:0][END]"
+  },
+  {
+    "offset": "09BACF",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3] 地震発生裝置室[N][PAL:2] かってに入ったら おしおきだ![N][N][SKP:12]天才発明家ペッパー[PAL:0][END]",
+    "translation": "[DEF][PAL:3] Earthquake Device Room[N][PAL:2] Enter without permission[N] and face punishment![N][FIN][SKP:A]The genius Dr. Pepper[PAL:0][END]"
+  },
+  {
+    "offset": "09BB0C",
+    "kind": "dialog",
+    "source": "[DEF] 上 研究開発室[N] 左 食堂[N][N] まいごにならないよう 要注意[END]",
+    "translation": "[DEF] Up: R and D Room[N] Left: Cafeteria[N][N] Take care not to get[FIN]lost.[END]"
+  },
+  {
+    "offset": "09BB5B",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2] スカッと さわやか[N] ブラックモア司令官 ご用達[N][PAL:3] ハッカードーピングドリンク[PAL:2]で[N] あなたも今日から 強化人間![PAL:0][END]",
+    "translation": "[DEF][PAL:2] Crisp and refreshing![N] Commander Blackmore's[N]favorite,[FIN][PAL:3] Hacker Doping Drink[PAL:2]![N] Become a superhuman[N]today![PAL:0][END]"
+  },
+  {
+    "offset": "09BBAF",
+    "kind": "dialog",
+    "source": "[DEF][PAL:2] 知的なあなたに みなぎるパワー![N] 天才発明家ペッパー特製[N][PAL:3] ぎんぎんダイナマイトドリンク[PAL:2]で[N] あなたも今日から 大発明家![PAL:0][END]",
+    "translation": "[DEF][PAL:2] Power for discerning[N]minds![FIN] The genius Dr. Pepper's[N]own[N][PAL:3] Raging Dynamite Drink[PAL:2]![N] Become a great inventor[FIN]today![PAL:0][END]"
+  },
+  {
+    "offset": "09BC61",
+    "kind": "dialog",
+    "source": "[DEF]···ここは いったい[N]どこなのだ···[FIN]宇宙船は?[N][PAU:1E]ティアトロンは?[N][PAU:1E]···[PAU:1E][NAM:0]は?[END]",
+    "translation": "[DEF]...Where in the world am[N]I...?[FIN]The spaceship?[N][PAU:1E]Tiatron?[N][PAU:1E]...[PAU:1E][NAM:0]?[END]"
+  },
+  {
+    "offset": "09BCE1",
+    "kind": "dialog",
+    "source": "[DFT][PAL:2]村人:[N][PAL:0]···[PAU:1E]ややややややややっ![FIN]たいへん たいへん![N]なにか 大きいの やってきた![N]たいへん たいへん![END]",
+    "translation": "[DFT][PAL:2]Villager:[N][PAL:0]...[PAU:1E]Y-y-y-yikes![FIN]Terrible! Terrible![N]Something big came here![N]Terrible! Terrible![END]"
+  },
+  {
+    "offset": "09BE44",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]···あたしには わからないわ[N][PAU:28]じゃあ あなたは···[N]いったい なにものなの?[END]",
+    "translation": "[DEF][TPL:12]...I don't know.[N][PAU:28]Then who...[N]What are you?[END]"
+  },
+  {
+    "offset": "09BE72",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]あの[TPL:1A]は[PAL:2]ナポレオン[PAL:0]と言って[N]私たちの 大切な仲間なの[N]私たち以外の人には 口が悪いけど[N][PAU:1E]気をわるくしないでね˳[END]",
+    "translation": "[DEF][TPL:12]That [TPL:1A] is [PAL:2]Napoleon[PAL:0],[N]a treasured companion of[N]ours.[FIN]He is rude to everyone[N]else,[N][PAU:1E]so please don't take[N]offense.[END]"
+  },
+  {
+    "offset": "09BEC3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]見ず知らずの あなたを[N]まきこんで ごめんなさいね[FIN]でも あなたなら信用できそうなの[N]はじめて会ったのに···[N][PAU:1E]なぜかしらね˳[END]",
+    "translation": "[DEF][TPL:12]I'm sorry to involve[N]a complete stranger.[FIN]But I feel I can trust[N]you,[N]even though we just met...[N][PAU:1E]I wonder why.[END]"
+  },
+  {
+    "offset": "09BF0D",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]ラスク···[PAU:1E]じゃないわね[N][PAU:1E]ナポレオンから 聞いたわ[N][PAL:0]ラスクは ケガをしてるんですって?[FIN]心配だわ···[PAU:1E]でも 私は[N]ここを はなれるわけには[N]いかないし···[FIN]え?[PAU:1E]ナポレオンとガトー?[N][PAU:1E]ラスクが とても大切なものを[N]だれかに うばわれたらしいの[FIN]それを さがしに[N][PAL:2]どうくつ[PAL:0]へ 行ったわ[N]あれが だれかの手にわたったら[N]大変なことになるから···˳[END]",
+    "translation": "[DEF][TPL:12]Rusk...[PAU:1E] No, you're not.[N][PAU:1E]Napoleon told me[N]Rusk has been injured.[FIN]I'm worried...[PAU:1E] But I[N]cannot[N]leave this place...[FIN]What?[PAU:1E] Napoleon and Gateau?[N][PAU:1E]Someone apparently stole[N]something precious from[N]Rusk.[FIN]They went to search for it[N]in the [PAL:2]cave[PAL:0].[N]If it falls into the wrong[N]hands,[FIN]the consequences will be[N]terrible...[END]"
+  },
+  {
+    "offset": "09BFE5",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]私たちはね[N]ちがう星から やってきたの···[N][PAU:1E]信じて もらえるかしら?[FIN]ラスクとガトーとわたしは[N]同じ仕事をしていたの[N]それなのに···[N][PAU:1E]ラスクは どうして···˳[END]",
+    "translation": "[DEF][TPL:12]We came here[N]from another planet...[N][PAU:1E]Can you believe that?[FIN]Rusk, Gateau, and I[N]all did the same kind of[N]work.[N]And yet...[FIN][PAU:1E]Why would Rusk...?[END]"
+  },
+  {
+    "offset": "09C04B",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]本当に [PAL:2]ラスク[PAL:0]だったのか?[N][PAU:1E]···[PAU:28]それで あいつは[N]何か 言っていなかったか?[FIN][TPL:12]なんだか ぼおっとしていたけど[N]それは いつものことだし···[N][PAU:1E]とりあえず この場所のことは[N]話してきたけど···˳[END]",
+    "translation": "[DF2][TPL:D]It truly was [PAL:2]Rusk[PAL:0]?[N][PAU:1E]...[PAU:28]Did he say anything?[FIN][TPL:12]He seemed rather[N]absentminded,[N]but he is always like[FIN]that...[N][PAU:1E]I told him about this[N]place[N]for the time being...[END]"
+  },
+  {
+    "offset": "09C0C6",
+    "kind": "dialog",
+    "source": "[DFT]···[PAU:1E]ラスク![PAU:1E]よかった![N]今 あなたのことを話してた所よ[FIN]ねえ [PAU:1E]いったい何があったの?[N][PAU:1E]どうして [PAL:2]ショコラ星[PAL:0]から[N]ぬけ出したりしたのよ?[N][PAU:1E]それに [TPL:0]はどうしたの?[END]",
+    "translation": "[DFT]...[PAU:1E]Rusk![PAU:1E] Thank goodness![N]We were just speaking of[N]you.[FIN]What happened?[N][PAU:1E]Why did you leave [PAL:2]Planet[N]Chocolat[PAL:0]?[N][PAU:1E]And what happened to[FIN][TPL:0]?[END]"
+  },
+  {
+    "offset": "09C132",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]ちょっと 待って![END]",
+    "translation": "[DEF][TPL:12]Wait![END]"
+  },
+  {
+    "offset": "09C140",
+    "kind": "dialog",
+    "source": "[DEF]あなた 自分にそっくりの男を[N]見たことはない?[N][PAU:28]···え?[PAU:1E]あの町の 民家に?[N][PAU:1E]本当なの?[END]",
+    "translation": "[DEF]Have you seen a man[N]who looks exactly like[N]you?[N][PAU:28]...What?[PAU:1E] In a house in[FIN]that town?[N][PAU:1E]Is that true?[END]"
+  },
+  {
+    "offset": "09C17D",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]ミルフィ[PAU:1E] 待て[N][PAU:1E]こいつの言うことが 本当かどうか[N]こいつに 案内をさせて[N]ナポレオンに たしかめさせよう˳[END]",
+    "translation": "[DF2][TPL:D]Wait, Mille.[N][PAU:1E]We do not know if he[N]speaks truth.[FIN]Let him guide us,[N]and Napoleon can verify[N]it.[END]"
+  },
+  {
+    "offset": "09C1C4",
+    "kind": "dialog",
+    "source": "[DFT][TPL:12]あら [PAU:1E]それなら私が···˳[END]",
+    "translation": "[DFT][TPL:12]Oh. [PAU:1E]Then I will...[END]"
+  },
+  {
+    "offset": "09C1D8",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]お前や俺では 見わけがつかん[N][PAU:1E]それにこいつは どうもあやしい[N]目をはなすわけには いかない˳[END]",
+    "translation": "[DF2][TPL:D]Neither you nor I can tell[N]them apart.[N][PAU:1E]Besides, this one is[FIN]suspicious.[N]We cannot let him out of[N]our sight.[END]"
+  },
+  {
+    "offset": "09C210",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]···············[N][PAU:1E]··········わかったわ[NXT]",
+    "translation": "[DEF][TPL:12]...............[N][PAU:1E]..........All right.[NXT]"
+  },
+  {
+    "offset": "09C235",
+    "kind": "dialog",
+    "source": "[END]",
+    "translation": "[END]"
+  },
+  {
+    "offset": "09C236",
+    "kind": "dialog",
+    "source": "[DEF]ねえ [PAU:28]あなたに あの[TPL:1A]と[N]ラスクのいる場所に 行ってほしいの[N][PAU:1E]あなたのことは 悪いようには[N]しないから···[PAU:1E]おねがいよ˳[END]",
+    "translation": "[DEF]Please take them[N]to Napoleon and Rusk.[N][PAU:1E]We won't harm you...[N]Please.[END]"
+  },
+  {
+    "offset": "09C281",
+    "kind": "dialog",
+    "source": "[DEF]···おどろいたわ[N]あなた そんな姿になれるの?[N]でも 私たちにはあなたの[N]本当の姿は 見えてしまうのよ˳[END]",
+    "translation": "[DEF]...How surprising.[N]You can assume that form?[N]But we can still see[N]your true form.[END]"
+  },
+  {
+    "offset": "09C3B1",
+    "kind": "dialog",
+    "source": "[DEF][TPL:D]············[N][PAU:28]きさま まさか俺を[N]だまそうとしてるんじゃないのか?[END]",
+    "translation": "[DEF][TPL:D]............[N][PAU:28]You aren't trying[N]to deceive me, are you?[END]"
+  },
+  {
+    "offset": "09C3DF",
+    "kind": "dialog",
+    "source": "[DEF][TPL:D]ラスクか?[PAU:1E]いや どちらでもいい[N][PAU:14]のこのこ 現れたか[N]バカなやつめ[FIN]なに?[PAU:14]この[TPL:0]は[N]不完全体だと?[N][PAU:1E]はははっ [PAU:14]そんな手に[N]だまされると 思っているのか?[FIN]おまえは いつもそうだったよ[N][PAU:14]ラスク[N][PAU:1E]にこやかな顔をして いつのまにか[N]おれの前を 走っている···[FIN]たしかに この[TPL:0]も[N]おまえの 発明品だ[N][PAU:14]しかし おまえは これの使用を[N]こばんだ···[FIN]だから このおれが使ってやるのさ[N][PAU:14]時を見るプリズムで[N]過去を [PAU:A]未来を [PAU:A]自由にのぞき[N]時の流れを あやつってやる![END]",
+    "translation": "[DEF][TPL:D]Rusk?[PAU:1E] No matter.[N][PAU:14]You came strolling back,[N]you fool.[FIN]What?[PAU:14] This [TPL:0][N]is incomplete?[N][PAU:1E]Ha ha! Do you think[N]such a trick could fool[FIN]me?[FIN]You were always like this,[N]Rusk.[N][PAU:14]Smiling pleasantly,[N][PAU:1E]then somehow racing ahead[FIN]of me...[FIN]Yes, you invented this[N][TPL:0].[N][PAU:14]But you refused to use[N]it...[FIN]So I shall use it instead![N][PAU:14]With this prism that sees[N]time,[N]I'll gaze freely into past[FIN]and future[N]and command the flow of[N]time![END]"
+  },
+  {
+    "offset": "09C500",
+    "kind": "dialog",
+    "source": "[DF2][TPL:C]ガトー樣っ[N]な·なんと おそろしいことを![N]ミルフィ樣も 反対なさいます![FIN][TPL:D]關係ない もうすぐこの船は発進する[N]私は どこか人の目にふれぬ場所で[N]この 研究を進めるつもりだ[FIN]ナポレオン[N]お前は この星を飛び立ったら[N]メモリーを 改造してやろう[N]今後は 私の助手として働くのだ˳[FIN][TPL:C]···[PAU:1E][TPL:1A]であるワタシは[N]あなたには さからえません[N][PAU:1E]···出発の準備をしてまいります˳[END]",
+    "translation": "[DF2][TPL:C]Lord Gateau![N]What a terrifying plan![N]Lady Mille will oppose it[FIN]too![FIN][TPL:D]It does not matter.[N]This ship will launch[N]soon.[FIN]I will continue my[N]research[N]somewhere beyond human[N]eyes.[FIN]Napoleon, once we leave[N]this planet,[N]I will alter your memory.[N]From then on, you will[FIN]serve[N]as my assistant.[FIN][TPL:C]...[PAU:1E]As a [TPL:1A],[N]I cannot defy you.[N][PAU:1E]...I will prepare for[FIN]departure.[END]"
+  },
+  {
+    "offset": "09C5EE",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]···だが 見えるのだ···[N]この計画の じゃまをする[N]あの ラスクに似た少年が···˳[PAU:3C][END]",
+    "translation": "[DF2][TPL:D]...But I can see him...[N]That boy who resembles[N]Rusk[FIN]and interferes with my[N]plan...[PAU:3C][END]"
+  },
+  {
+    "offset": "09C628",
+    "kind": "dialog",
+    "source": "[DEF]···なんだ?![N]なにが おこったのだ?![END]",
+    "translation": "[DEF]...What?![N]What is happening?![END]"
+  },
+  {
+    "offset": "09C63F",
+    "kind": "dialog",
+    "source": "[DEF][N][DLY:6]···[PAU:1E]まさか···[PAU:3C]こいつが?![END]",
+    "translation": "[DEF][N][DLY:6]...[PAU:1E]It cannot be...[PAU:3C] Is this[N]him?![END]"
+  },
+  {
+    "offset": "09C657",
+    "kind": "dialog",
+    "source": "[DEF]ふざけた姿をして···[N]わからないとでも 思っているのか?[END]",
+    "translation": "[DEF]What a ridiculous[N]disguise...[N]Did you think I wouldn't[N]know?[END]"
+  },
+  {
+    "offset": "09C78C",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]ワタシは ラスク樣に作られた[N][PAU:1E]だから ラスク樣のことは[N]よく わかる[FIN]オマエは ラスク樣ではない[N]···だが[N][PAU:28]どこか ラスク樣と[N]おなじような所も···˳[END]",
+    "translation": "[DEF][TPL:C]Rusk created me.[N][PAU:1E]Therefore, I know him[N]well.[FIN]You are not Rusk.[N]...And yet,[N][PAU:28]something about you[N]resembles him...[END]"
+  },
+  {
+    "offset": "09C7F3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]ちがいます ミルフィ樣[N][PAU:1E]この男は ラスク樣ではありません[N]遺伝子構成は よく似ていますが[N]別人です˳[NXT]",
+    "translation": "[DEF][TPL:C]No, Lady Mille.[N][PAU:1E]This man is not Rusk.[N]His genetic structure is[FIN]very similar,[N]but he is someone else.[NXT]"
+  },
+  {
+    "offset": "09C83A",
+    "kind": "dialog",
+    "source": "[DEF][TPL:12]······[PAU:3C]なんですって!?[N][PAU:1E]でも 変よ!この星の人間が[N]宇宙船を 見つけられるわけないわ[N]文化レベルが ちがいすぎるもの![END]",
+    "translation": "[DEF][TPL:12]......[PAU:3C]What?![N][PAU:1E]But that makes no sense![N]No one from this planet[FIN]could find a spaceship.[N]Its civilization is far[N]too primitive![END]"
+  },
+  {
+    "offset": "09C88C",
+    "kind": "dialog",
+    "source": "[TPL:12]······[PAU:3C]なんですって!?[N][PAU:1E]でも···ラスクだと思ったのよ[N]私が ラスクと他人を[N]まちがえるなんて···˳[END]",
+    "translation": "[TPL:12]......[PAU:3C]What?![N][PAU:1E]But... I was certain he[N]was Rusk.[FIN]How could I mistake[N]someone else for him...?[END]"
+  },
+  {
+    "offset": "09C8D1",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]オマエのような ニンゲンの[N]後を步くのは 気が すすまぬが[N]ミルフィ樣の ご命令とあれば[N]仕方あるまい[FIN]ワタシは この世界の人間に[N]けいかいされぬよう[N][PAL:2]姿をかくして[N][PAL:0]オマエの後を ついて行く[FIN]だがオマエが すみやかに[N]ラスク樣の所に 案内せねば[N]すかさず けいこくをあたえる[N][PAU:1E]よく おぼえておくのだな˳[END]",
+    "translation": "[DEF][TPL:C]I dislike following[N]a human like you,[N]but Lady Mille commanded[FIN]it.[N]I have no choice.[FIN]I will [PAL:2]hide my form[PAL:0][N]and follow behind you[N]so this world's humans[N]do not become alarmed.[FIN]But if you fail to guide[N]us[N]to Rusk immediately,[N]I will issue a warning[FIN]attack.[N][PAU:1E]Remember that well.[END]"
+  },
+  {
+    "offset": "09C993",
+    "kind": "dialog",
+    "source": "[DF2][TPL:C]ガトー樣 一体何を[N]お考えなんです!?[FIN]このティアトロンを使い[N]何を なさろうと言うのです?[NXT]",
+    "translation": "[DF2][TPL:C]Lord Gateau,[N]what are you thinking?![FIN]What will you do[N]with this Tiatron?[NXT]"
+  },
+  {
+    "offset": "09C9D1",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]知りたいか?ナポレオン[N]ならば 教えてやろう[N]この ティアトロンをのぞくがいい[END]",
+    "translation": "[DF2][TPL:D]You wish to know,[N]Napoleon?[N]Then I shall show you.[FIN]Look into this Tiatron.[END]"
+  },
+  {
+    "offset": "09CAC3",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]見えるだろう?[N]これが 数百年後にショコラ星を[N]攻擊する 宇宙要塞だ[END]",
+    "translation": "[DF2][TPL:D]You see it, yes?[N]This is the space fortress[N]that will attack Planet[FIN]Chocolat[N]several centuries from[N]now.[END]"
+  },
+  {
+    "offset": "09CAF7",
+    "kind": "dialog",
+    "source": "[DF2][TPL:D]この宇宙要塞はな[N]この 強力なエネルギーろを持ち[N]それが バリアにもなっているのだ[END]",
+    "translation": "[DF2][TPL:D]This space fortress has[N]a mighty energy furnace[N]that also powers its[FIN]barrier.[END]"
+  },
+  {
+    "offset": "09CB2F",
+    "kind": "dialog",
+    "source": "[DF2]さらに この宇宙要塞は[N]ショコラ星に とどまることなく[N]全宇宙を きょうふに落としいれる[N]力を持っているのだよ[END]",
+    "translation": "[DF2]And the fortress has power[N]far beyond conquering[N]Chocolat.[N]It can plunge the entire[FIN]universe[N]into terror.[END]"
+  },
+  {
+    "offset": "09CC05",
+    "kind": "dialog",
+    "source": "[DEF][TPL:14]おお!マジックを 使う少年![N]よく 来てくれた[N]ささ [PAU:1E]我が館に入られよ[FIN]···と 言いたい所なのだが[N]あいにくと 館はまだ[N]完成しておらぬのだ[FIN]なにせ イゴールひとりで[N]作業をしておるものでな[N][PAU:1E]やれやれ [PAU:1E]どこかに たよりになる[N]人手は おらぬものか···˳[END]",
+    "translation": "[DEF][TPL:14]Ah! The boy who uses[N]magic![N]How good of you to come.[FIN]Please, enter my manor.[FIN]...Or so I would say,[N]but unfortunately[N]the manor is not finished.[FIN]Igor is doing all the work[N]alone.[N][PAU:1E]If only we had[N]some reliable help...[END]"
+  },
+  {
+    "offset": "09CCA3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:14]マジックを使う 少年よ[N]もし よき人手があれば[N]つれてきてほしく 思うぞ˳[END]",
+    "translation": "[DEF][TPL:14]Boy who uses magic,[N]if you find a good worker,[N]please bring them here.[END]"
+  },
+  {
+    "offset": "09CCD4",
+    "kind": "dialog",
+    "source": "[DEF][TPL:14]まこと ありがたく思うぞ[N]これで イゴールにも[N]楽をさせてやることができる˳[END]",
+    "translation": "[DEF][TPL:14]You have my sincere[N]gratitude.[N]This will lighten Igor's[FIN]burden.[END]"
+  },
+  {
+    "offset": "09CD02",
+    "kind": "dialog",
+    "source": "[DEF][TPL:14]おお 少年か![N]この間の からくり人形は[N]実に よくはたらく![FIN]この分ならば まもなく[N]館も 完成することであろう[N]心より 礼をもうすぞ˳[END]",
+    "translation": "[DEF][TPL:14]Ah, the boy![N]That mechanical doll from[N]before[FIN]works exceptionally hard![FIN]At this rate, the manor[N]will soon be complete.[N]You have my heartfelt[N]thanks.[END]"
+  },
+  {
+    "offset": "09CD57",
+    "kind": "dialog",
+    "source": "[DEF][TPL:14]···はて[N]これは 不可思誄な物体を[N]持っておる[FIN]なに?これは人の手助けをする[N]からくり人形とな?[N][PAU:1E]では 館の建設を[N]することもできるのか?[FIN]少年よ!このからくり人形を[N]貸しあたえては くれぬか?[N] おやすいご用です[N] おことわりします",
+    "translation": "[DEF][TPL:14]...Hmm.[N]You carry a curious[N]object.[FIN]What? A mechanical doll[N]that helps people?[N][PAU:1E]Could it assist[N]with building my manor?[FIN]Boy, will you lend me this[N]doll?[N] Gladly[N] I must refuse"
+  },
+  {
+    "offset": "09CDE8",
+    "kind": "dialog",
+    "source": "[CLR]つれないことだ[N][PAU:1E]考えなおすことがあれば[N]また からくり人形を見せてくれ[N]礼なら 十分にいたすぞ˳[END]",
+    "translation": "[CLR]How cold of you.[N][PAU:1E]If you reconsider,[N]show me the mechanical[N]doll again.[FIN]I will reward you well.[END]"
+  },
+  {
+    "offset": "09CE23",
+    "kind": "dialog",
+    "source": "[CLR]それは まことか?[N][PAU:1E]では ありがたくちょうだいしよう[N]イゴールも おおいに[N]助かることであろう[FIN]そなたには 礼をせねばなるまいな[N][PAU:1E]少ないが これをうけとってほしい[N]まことに 心より感謝いたすぞ˳[FIN][N] [NAM:0]は[N][PAL:2] 5000トロン[PAL:0]を もらった![END]",
+    "translation": "[CLR]Truly?[N][PAU:1E]Then I gratefully accept.[N]It should be a great help[N]to Igor.[FIN]I must reward you.[N][PAU:1E]Please accept this small[N]sum.[N]You have my deepest[FIN]gratitude.[FIN][N] [NAM:0] received[N][PAL:2] 5000 tron[PAL:0]![END]"
+  },
+  {
+    "offset": "09CEAE",
+    "kind": "dialog",
+    "source": "[DEF]ふむ ずいぶんと[N]あいきょうのある ネズミだな˳[END]",
+    "translation": "[DEF]Hmm. What a charming[N]little mouse.[END]"
+  },
+  {
+    "offset": "09CF15",
+    "kind": "dialog",
+    "source": "[DEF][TPL:13]私は けっこう器用でして···[N]はくしゃくのご用は たいてい[N]こなすことが できるのですよ˳[END]",
+    "translation": "[DEF][TPL:13]I am rather handy...[N]I can perform almost any[N]task[FIN]the Count requires.[END]"
+  },
+  {
+    "offset": "09CF4B",
+    "kind": "dialog",
+    "source": "[DEF][TPL:13]はて[PAU:1E] 私の仕事を手伝う[N]からくり人形を[N]だんなさまが?[FIN]それは それは···[N][PAU:1E]だんなさまの お考えでしたら[N]ありがたく 手伝ってもらうことに[N]いたしましょう˳[END]",
+    "translation": "[DEF][TPL:13]What?[PAU:1E] The master found[N]a mechanical doll to help[N]me?[FIN]Well, then...[N][PAU:1E]If it is the master's[N]wish,[N]I will gratefully accept[FIN]its aid.[END]"
+  },
+  {
+    "offset": "09CFAC",
+    "kind": "dialog",
+    "source": "[DEF][TPL:13]これは これは···[N][PAU:1E]おかげさまで たいへん[N]仕事の方も 進みまして···[FIN]しかし あのからくり人形は[N]つかれも知らず よく働くものです[N][PAU:1E]だんなさまも あれの働きぶりを[N]面白くごらんになってるようですよ˳[END]",
+    "translation": "[DEF][TPL:13]Why, hello...[N][PAU:1E]Thanks to you, the work[N]has progressed greatly.[FIN]That mechanical doll never[N]tires.[N][PAU:1E]The master seems quite[N]entertained[FIN]by the way it works.[END]"
+  },
+  {
+    "offset": "09D025",
+    "kind": "dialog",
+    "source": "[DEF]はて···ネズミ?[END]",
+    "translation": "[DEF]Hmm... A mouse?[END]"
+  },
+  {
+    "offset": "09D27D",
+    "kind": "dialog",
+    "source": "[DF2][PAL:3]女の子:[N][PAL:0]あの [PAU:1E]通していただけないですか?[N]家に病人が いるんです[N][PAU:1E]いそいで 帰らないと···˳[FIN][TPL:8]病人なんて ほっといてさ[N]ボクちゃんと つきあわない?[N]ね?[PAU:1E]かわいこちゃん˳[FIN][PAL:3]女の子:[N][PAL:0]あの···こまります···[N]···········あっ[N][PAU:1E][DLY:1]あなたは····![DLY:0][END]",
+    "translation": "[DF2][PAL:3]Girl:[N][PAL:0]Um, [PAU:1E]will you let me pass?[N]Someone at home is ill.[N][PAU:1E]I must hurry back...[FIN][TPL:8]Forget the sick person.[N]Why not spend time with[N]me,[FIN]pretty girl?[FIN][PAL:3]Girl:[N][PAL:0]Please... You're troubling[N]me...[N].........Ah![FIN][PAU:1E][DLY:1]You...![DLY:0][END]"
+  },
+  {
+    "offset": "09D324",
+    "kind": "dialog",
+    "source": "[DFT][TPL:8]むっ![N][PAU:1E]なんなの この[PAL:2]でばがめ[PAL:0]はっ![N]せっかく いい所なのにさ![FIN]おいらは [PAL:2]ローズとうぞく団[PAL:0]の[N]一員よ![N]おいらの じゃまをすると[N]痛い目に あっちゃうんだからね![END]",
+    "translation": "[DFT][TPL:8]Hmph![N][PAU:1E]Who invited this [PAL:2]peeping[N]creep[PAL:0]?![FIN]I was getting somewhere![FIN]I'm a member of[N]the [PAL:2]Rose Bandit Gang[PAL:0]![N]Interfere with me,[N]and you'll be sorry![END]"
+  },
+  {
+    "offset": "09D38C",
+    "kind": "dialog",
+    "source": "[DFT][TPL:8]しょせん こしぬけね[N]うちに 帰って[N]おとなしく おねんねなさい![END]",
+    "translation": "[DFT][TPL:8]Coward.[N]Go home and[N]sleep like a good child![END]"
+  },
+  {
+    "offset": "09D3B2",
+    "kind": "dialog",
+    "source": "[DFT][TPL:8]また あんたなの?こりないねえ[N]しょうがない 相手してあげるから[N]かかってきなさい![END]",
+    "translation": "[DFT][TPL:8]You again? You never[N]learn.[N]Fine, I'll entertain you.[FIN]Come and get me![END]"
+  },
+  {
+    "offset": "09D3E2",
+    "kind": "dialog",
+    "source": "[DFT][TPL:8]ち·ちくしょぉーっ[N]ローズ樣に 言いつけてやる![N]おぼえてろよっ!![END]",
+    "translation": "[DFT][TPL:8]D-damn you![N]I'll tell Lady Rose![N]Remember this!![END]"
+  },
+  {
+    "offset": "09D40E",
+    "kind": "dialog",
+    "source": "[DEF]むっ!なんだ このネズミ![N]じゃまだ!あっちにいっちゃえ![END]",
+    "translation": "[DEF]Hmm! What's with this[N]mouse?![N]You're in the way! Get[N]lost![END]"
+  },
+  {
+    "offset": "09D478",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3]女の子:[N][PAL:0]あなた ぐあいはもういいの?[N]あんなに 熱を出していたのに[N]それに 今だって無理して···[FIN]あ···[PAU:1E]ごめんなさいね[N][PAU:1E]あなたは ねていたんだもの[N]何も 知らないわよね[N][PAU:1E]わたしは [PAL:3]ポロン[PAL:0]っていいます[FIN]河原でたおれていた[N]あなたを 見つけて[N]私の家に つれてきたの[N][PAU:1E]あなた ひどいケガだったし···[FIN]とにかく 私の家に帰りましょう[N]あなたも まだ無理しない方が[N]いいと思うから···[PAU:3C]ね?[END]",
+    "translation": "[DEF][PAL:3]Girl:[N][PAL:0]Are you feeling better?[N]Your fever was so high,[N]and even now you're[FIN]pushing yourself...[FIN]Oh...[PAU:1E] I'm sorry.[N][PAU:1E]You were asleep,[N]so you don't know[N]anything.[FIN][PAU:1E]My name is [PAL:3]Polon[PAL:0].[FIN]I found you unconscious[N]by the river and took you[N]home.[N][PAU:1E]You were badly injured...[FIN]Let's return to my house.[N]I don't think you should[N]overexert yourself yet...[PAU:3C][N]All right?[END]"
+  },
+  {
+    "offset": "09D78D",
+    "kind": "dialog",
+    "source": "[DEF]なんだよ お前は[N]今 とりこみ中なんだから[N]あっちへ 行ってくれよな···˳[END]",
+    "translation": "[DEF]Who are you?[N]We're busy right now,[N]so go away...[END]"
+  },
+  {
+    "offset": "09D894",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3]かわいい ネズミちゃんだこと[N][PAU:14]でもね そんな姿をしたって[N]私には ごまかせなくてよ[NXT]",
+    "translation": "[DEF][PAL:3]What an adorable little[N]mouse.[N][PAU:14]But that form[N]cannot deceive me.[NXT]"
+  },
+  {
+    "offset": "09D8C7",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3]また 来たの?ぼうや[N][PAU:1E]あれだけ いためつけたのに[N]ずいぶん早く なおったものね[FIN]まさかこの声を 忘れたの?[N]そんな さびしいこと言わないわよね[N][PAU:28]そう [PAU:1E]私よ[N][PAU:1E]ハッカー幹部の [PAL:2]ローズ[PAL:3]よ[FIN]ハッカー要塞の 爆発で[N]どういったわけか[N][PAL:2]百年も過去へ[PAL:3]タイムスリップ···[N][PAU:3C]あれからの日々は 苦しかったわ[FIN]同じように ここへやってきた[N]戦闘員たちと とうぞく団を作り[N]資金を集め 元の世界へもどるため[N]いろいろ 研究してきたわ[FIN]それも これも[N]みんな ぼうやのおかげ···[N][PAU:1E]ええ[PAU:1E] あなたが私の計画を[N]めちゃくちゃにしたのよ [PAU:14]キーッ!![FIN]この世界で 会えた時は[N]本当に うれしかったわ[N]それに あなたから[TPL:0][PAL:3]を[N]ふたたび うばい取ることもできた[FIN]この [TPL:0][PAL:3]は[N]今度こそ 私のものよ[N][PAU:1E]でも もう二度と[N]じゃまできないようにしてあげる˳[PAL:0][END]",
+    "translation": "[DEF][PAL:3]Back again, little boy?[N][PAU:1E]You recovered quickly[N]after the beating I gave[N]you.[FIN]Surely you remember this[N]voice.[N]Don't tell me you've[N]forgotten.[FIN][PAU:28]Yes, [PAU:1E]it's me,[N][PAU:1E][PAL:2]Rose[PAL:3], a Hacker officer.[FIN]The Hacker fortress[N]exploded,[N]and somehow I slipped[N][PAL:2]a hundred years into the[FIN]past[PAL:3]...[N][PAU:3C]Life since then has been[N]hard.[FIN]I formed a bandit gang[N]with[N]the troopers who came here[N]too.[FIN]We've raised money and[N]researched[N]how to return to our own[N]time.[FIN]And it is all thanks to[N]you...[N][PAU:1E]Yes, [PAU:1E]you ruined every part[N]of my plan! [PAU:14]Aaaagh!![FIN]I was truly delighted[N]to meet you in this era.[N]I could even steal [TPL:0][N]from you all over again.[FIN]This [TPL:0] is mine for[N]good.[N][PAU:1E]And now I'll make certain[N]you never interfere again.[PAL:0][END]"
+  },
+  {
+    "offset": "09DA8A",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B][PAL:3]おーっほっほっほっほっ[N]どう? 陽の光のとどかない[N]くらやみの中は···[FIN]さようなら ぼうや[N]もう 二度と会うこともないわね˳[N]おーっほっほっほっほっ[N]いいきみだわ![PAL:0][END]",
+    "translation": "[DEF][TPL:B][PAL:3]Oh ho ho ho ho![N]How do you like the[N]darkness[FIN]where sunlight never[N]reaches?[FIN]Goodbye, little boy.[N]We shall never meet again.[N]Oh ho ho ho ho![N]Serves you right![PAL:0][END]"
+  },
+  {
+    "offset": "09DAEF",
+    "kind": "dialog",
+    "source": "[DEF] [NAM:0]は[N][PAL:2] 持ち物[PAL:0]を いくつか[N] 落としたのに 気がついた![END]",
+    "translation": "[DEF] [NAM:0] noticed[N] several [PAL:2]items[PAL:0] were[N]missing![END]"
+  },
+  {
+    "offset": "09DBE0",
+    "kind": "dialog",
+    "source": "[DEF][TPL:8]あきれた!タフな[TPL:1A]だね[N]こんなに 痛めつけても[N]まだ 動いているの?[FIN][TPL:C]···あたりまえだ ワタシは[N]ラスク樣と ガトー樣に[N]設計された [TPL:1A]···[N][PAU:1E]そうかんたんには やられぬ˳[FIN][TPL:8]でもね その[PAL:2]ガトー[PAL:0]っていう人が[N]キミを始末しろって言ったんだよ[N]そのかわりに 協力するからってね˳[FIN][TPL:C]ガトー樣が!?[N][PAU:28]···まさか···˳[FIN][TPL:8]さて とどめをさして帰らないと[N]ヒステリーぎみの ローズ樣に[N]おこられちゃう˳[END]",
+    "translation": "[DEF][TPL:8]Incredible! You're a tough[N][TPL:1A].[N]You're still moving[FIN]after all that punishment?[FIN][TPL:C]...Of course.[N]Rusk and Gateau designed[N]me.[FIN][PAU:1E]I will not fall so easily.[FIN][TPL:8]But [PAL:2]Gateau[PAL:0] told us[N]to dispose of you,[N]in exchange for his[FIN]cooperation.[FIN][TPL:C]Lord Gateau did?![N][PAU:28]...It cannot be...[FIN][TPL:8]Now I must finish you off[N]before that hysterical[N]Lady Rose[FIN]gets angry with me.[END]"
+  },
+  {
+    "offset": "09DCDB",
+    "kind": "dialog",
+    "source": "[DEF][TPL:8]ん?だれだ!?[N][PAU:28]あーっ でばがめやろうっ![N]あの時は よくもーっ![FIN]今度こそ まけないからなっ![N]かくごしろよ![END]",
+    "translation": "[DEF][TPL:8]Hmm? Who's there?![N][PAU:28]Ah! You peeping creep![N]You'll pay for last time![FIN]I won't lose again![N]Prepare yourself![END]"
+  },
+  {
+    "offset": "09DD20",
+    "kind": "dialog",
+    "source": "[DEF][TPL:8]ん?だれだ!?[N][PAU:1E]何なの このネズミは!?[FIN]今 ボクちゃんは[N]きげんが悪いんだからね![N]先に お前からしまつしちゃうぞ![END]",
+    "translation": "[DEF][TPL:8]Hmm? Who's there?![N][PAU:1E]What's with this mouse?![FIN]I'm in a bad mood right[N]now![N]I'll dispose of you first![END]"
+  },
+  {
+    "offset": "09DD6A",
+    "kind": "dialog",
+    "source": "[DEF][TPL:8][DLY:4]お·女の子と 手をつないで[N]步きたかっただけなんだよおーっ![DLY:0][END]",
+    "translation": "[DEF][TPL:8][DLY:4]I-I only wanted to walk[N]holding hands with a girl![DLY:0][END]"
+  },
+  {
+    "offset": "09DF53",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]···おどろいたな[N][PAU:1E]この星の 人間に[N][TPL:1A]を作ることが できるとは[FIN]ワタシか?ワタシは ガトー樣と[N]ここへ来たのだが と中ではぐれて[N][PAU:1E]しかしまさか ガトー樣が[N]あのようなことを···˳[END]",
+    "translation": "[DEF][TPL:C]...I am surprised.[N][PAU:1E]Humans on this planet[N]can build a [TPL:1A]?[FIN]Me? I came here with Lord[N]Gateau,[N]but we were separated on[N]the way.[FIN][PAU:1E]I never imagined Lord[N]Gateau[N]would do such a thing...[END]"
+  },
+  {
+    "offset": "09DFC7",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]ワタシに かまうことはない[N]キズをいやすことができなければ[N]動くこともできぬ 鉄クズ同然だ[FIN]それに あるじに裹切られた今[N]動く気力も うせた˳[N] なおしてあげるよ[N] それもそうだね かわいそうに",
+    "translation": "[DEF][TPL:C]Do not concern yourself[N]with me.[N]Unless I can repair my[FIN]damage,[N]I cannot move. I am mere[N]scrap.[FIN]And now that my master[N]betrayed me,[N]I have lost the will to[N]move.[FIN] I'll repair you[N] You're right. How sad"
+  },
+  {
+    "offset": "09E03C",
+    "kind": "dialog",
+    "source": "[CLR][TPL:C]オマエがか?無理だ![N][PAL:2]修理をするためのもの[PAL:0]も持たぬのに[N]修理が できるわけないだろう![END]",
+    "translation": "[CLR][TPL:C]You? Impossible![N]You carry [PAL:2]nothing for[N]repairs[PAL:0].[FIN]How could you repair me?[END]"
+  },
+  {
+    "offset": "09E078",
+    "kind": "dialog",
+    "source": "[CLR][TPL:C]それは 修理の道具か?[N][PAU:1E]そうだ···[PAU:1E]忘れていた[N]はたさねばならぬことも残っている[FIN][TPL:0]を 取り返さねば[N]ラスク樣に 顔むけできぬ[N][PAU:1E][NAM:0]と 言ったか···[N][PAU:1E]この恩は わすれぬぞ[FIN] [NAM:0]は[N][PAL:2] しゅうりキット[PAL:0]を[N][PAL:2] ナポレオン[PAL:0]に 使った![END]",
+    "translation": "[CLR][TPL:C]Is that a repair tool?[N][PAU:1E]Yes...[PAU:1E] I had forgotten.[N]I still have a duty to[FIN]fulfill.[FIN]I must recover [TPL:0],[N]or I cannot face Lord[N]Rusk.[N][PAU:1E]Your name was [NAM:0]...[FIN][PAU:1E]I will not forget this[N]debt.[FIN] [NAM:0] used the [PAL:2]Repair[N]Kit[PAL:0][N] on [PAL:2]Napoleon[PAL:0]![END]"
+  },
+  {
+    "offset": "09E112",
+    "kind": "dialog",
+    "source": "[CLR][TPL:C]同情などいらぬ 早く行け![N]動きの止まる所など[N]他のものに 見せたくはない![END]",
+    "translation": "[CLR][TPL:C]I do not need pity. Go![N]I do not wish anyone else[N]to see me cease[FIN]functioning![END]"
+  },
+  {
+    "offset": "09E145",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]···うむ よく動く[N][NAM:0]の おかげだな[N]礼を 言わなくてはな[FIN]それはそうと オマエは[N]この暗い中 あかりも持たぬのか?[N]なに?[PAU:1E]どこかで 落としたと?[FIN]何を落としたんだ?大切なものか?[N]ワタシが いっしょに步いてやろう[N]やみをてらすことが できれば[N]さがしものも 楽になろう˳[END]",
+    "translation": "[DEF][TPL:C]...Good. I move well.[N]I owe that to you, [NAM:0].[N]I must thank you.[FIN]More importantly,[N]you have no light in this[N]darkness?[N]What?[PAU:1E] You dropped it[FIN]somewhere?[FIN]What did you lose? Was it[N]important?[N]I will walk with you.[N]If I illuminate the dark,[FIN]your search will be[N]easier.[END]"
+  },
+  {
+    "offset": "09E1E6",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]では 行くとするか˳[END]",
+    "translation": "[DEF][TPL:C]Then let us go.[END]"
+  },
+  {
+    "offset": "09E1F5",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]何を 心配しているのだ?[N]こう見えても ワタシはがんじょうだ[N]さあ 後ろにさがって˳[END]",
+    "translation": "[DEF][TPL:C]Why are you worried?[N]I am sturdier than I look.[N]Now stand back.[END]"
+  },
+  {
+    "offset": "09E22A",
+    "kind": "dialog",
+    "source": "[DEF][NAM:0]だろう?[N]そんな姿で···のんきな奴め˳[END]",
+    "translation": "[DEF]You're [NAM:0], aren't you?[N]Wandering in that form...[N]What a carefree fool.[END]"
+  },
+  {
+    "offset": "09E2D4",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]それは オマエのものか?[N]他にも まだ落ちているかもしれん[N]よく さがしておいた方がいいぞ˳[END]",
+    "translation": "[DEF][TPL:C]Does this belong to you?[N]More may still be[N]scattered around.[FIN]Search carefully before we[N]leave.[END]"
+  },
+  {
+    "offset": "09E30B",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]おい 宝ばこがあるぞ[N]とらなくても いいのか?[END]",
+    "translation": "[DEF][TPL:C]There is a treasure chest.[N]Do you not want it?[END]"
+  },
+  {
+    "offset": "09E327",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]そのていどのカベなら こわせるな[N]どれ ひと仕事するか[N]オマエは 少しさがってくれ˳[END]",
+    "translation": "[DEF][TPL:C]I can break a wall like[N]this.[N]Time to get to work.[FIN]Stand back a little.[END]"
+  },
+  {
+    "offset": "09E422",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]これは······[N][PAU:1E]ラスク樣の 宇宙船!?[END]",
+    "translation": "[DEF][TPL:C]This is...[N][PAU:1E]Lord Rusk's spaceship?![END]"
+  },
+  {
+    "offset": "09E443",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]部品を 持っていかれたように[N]バラバラにされている···[N][PAU:1E]しかし だれが[PAU:1E] 何のために···[FIN]いやな予感がしてきた···[N]すまない ワタシは先に行く[N][PAU:1E]ライトがあれば 道にまようまい[N][PAU:1E]すまぬ!オマエも気をつけろ![END]",
+    "translation": "[DEF][TPL:C]It has been torn apart,[N]as though someone took its[N]parts...[FIN][PAU:1E]But who?[PAU:1E] And why?[FIN]I have a terrible[N]feeling...[N]Forgive me. I must go[N]ahead.[FIN][PAU:1E]With the Light, you will[N]not get lost.[N][PAU:1E]Take care![END]"
+  },
+  {
+    "offset": "09E5FB",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]本当に [TPL:0]を[N]あなたにわたせば[N]元の時代にもどれるんでしょうね˳[FIN][TPL:D]本当に 何もしらんのだな[N][TPL:0]は[PAL:2]時を見せる[N]プリズム[PAL:0]のようなものだ[FIN]ためしに おまえの過去を[N]この プリズムの中に[N]写し出してやろう˳[END]",
+    "translation": "[DEF][TPL:B]If I give you [TPL:0],[N]you truly can return me[N]to my own time?[FIN][TPL:D]You know nothing.[N][TPL:0] is like [PAL:2]a prism[N]that reveals time[PAL:0].[FIN]As a demonstration,[N]I will project your past[N]inside this prism.[END]"
+  },
+  {
+    "offset": "09E67D",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]···[PAU:1E]おどろいたわね[N][PAU:1E]前は まったく[N]反応しなかったのに···˳[FIN][TPL:D]本当の力を 知らない者が[N]持っていた所で 何もできまい[N][PAU:1E]さあ [PAU:1E]どうするんだ?[FIN][TPL:B]そうね[PAU:1E] あなたには[N][PAL:2]あのマシン[PAL:0]を完成させてもらったし[N][PAU:1E]信用しても よさそうね[END]",
+    "translation": "[DEF][TPL:B]...[PAU:1E]How surprising.[N][PAU:1E]It never reacted before...[FIN][TPL:D]Those ignorant of its true[N]power[N]can do nothing with it.[FIN][PAU:1E]Now, [PAU:1E]what will you do?[FIN][TPL:B]Very well.[N]You completed [PAL:2]that machine[PAL:0][N]for me,[FIN][PAU:1E]so I suppose I can trust[N]you.[END]"
+  },
+  {
+    "offset": "09E714",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B][DLY:1]だれっ!?[N][PAU:1E]いまは だれも入ってくるなと···[N][PAU:1E][DLY:0]おまえ···[PAU:14][NAM:0]![END]",
+    "translation": "[DEF][TPL:B][DLY:1]Who is there?![N][PAU:1E]I ordered everyone to stay[N]out...[FIN][PAU:1E][DLY:0]You...[PAU:14] [NAM:0]![END]"
+  },
+  {
+    "offset": "09E744",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B][DLY:1]だれっ!?[N][PAU:1E]いまは だれも入ってくるなと···[N][PAU:1E][DLY:0]おまえ···[PAU:14][NAM:0]ね!?[END]",
+    "translation": "[DEF][TPL:B][DLY:1]Who is there?![N][PAU:1E]I ordered everyone to stay[N]out...[FIN][PAU:1E][DLY:0]You...[PAU:14] [NAM:0]?![END]"
+  },
+  {
+    "offset": "09E776",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]しぶといわね ぼうや[N]でも 今度こそおしまいよ[N]今度は私にも 強力なメカがあるわ[FIN]大人の女を おこらすと[N]どういうことになるか[N]思い知らせてあげるわ![END]",
+    "translation": "[DEF][TPL:B]You're persistent, little[N]boy.[N]But this time, it ends.[FIN]Now I have a powerful[N]machine too.[FIN]I'll teach you what[N]happens[N]when you anger a grown[N]woman![END]"
+  },
+  {
+    "offset": "09E7D3",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]こ·こんなはずでは···[N][PAU:28]そうよ···[PAU:1E]ガトーとか言ったわ[N]みんな あいつのせいよ![FIN]きーっ!ゆるせないわ![N]私の[TPL:0]を[N]返しなさいよっ!![END]",
+    "translation": "[DEF][TPL:B]Th-this wasn't supposed to[N]happen...[N][PAU:28]That's right...[PAU:1E] Gateau![FIN]This is all his fault![FIN]Aagh! I won't forgive him![N]Give me back my [TPL:0]!![END]"
+  },
+  {
+    "offset": "09E827",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]きゃーーーーーーーーーーっ![END]",
+    "translation": "[DEF][TPL:B]Aaaaaaaaaaaaaah![END]"
+  },
+  {
+    "offset": "09E83B",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]戦いから にげたところで[N]ここは 行き止まりよ[N]どうするつもり?ぼうや?[END]",
+    "translation": "[DEF][TPL:B]Even if you flee the[N]battle,[N]this is a dead end.[FIN]What now, little boy?[END]"
+  },
+  {
+    "offset": "09E866",
+    "kind": "dialog",
+    "source": "[DEF][TPL:B]さあ 今度こそおしまいよ[N]かくごなさい!ぼうや![END]",
+    "translation": "[DEF][TPL:B]This time, it truly ends.[N]Prepare yourself, little[N]boy![END]"
+  },
+  {
+    "offset": "09E8E5",
+    "kind": "dialog",
+    "source": "[DEF][TPL:D]未来で[TPL:0]を[N]集めていたというのは[N]やはり こいつだったか···[FIN]おまえの息の根を 止めておけば[N]のちのち[N]めんどうもなくなるわけだ˳[FIN][TPL:C]ガ···ガトー樣っ![N]お待ちくださいっ!![END]",
+    "translation": "[DEF][TPL:D]So this is indeed the one[N]who gathered [TPL:0] in[N]the future...[FIN]If I end your life now,[N]you cannot trouble me[N]later.[FIN][TPL:C]L-Lord Gateau![N]Please wait!![END]"
+  },
+  {
+    "offset": "09E9A4",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]いったい 何をお考えなんです!?[N][TPL:0]は ラスク樣が[N]発明なさったものなのに···[FIN]わ·ワタシは 知っています···[N][PAU:1E]ラスク樣は それを作ったことを[N]ひどく こうかいなさってた···[N][PAU:14]時の流れなど 知るものではないと[FIN]だからおひとりで ショコラ星を出て[N]それを ほうむる場所を[N]さがしておられたのに···˳[FIN][TPL:D]ふん[PAU:1E] しょせんおまえは[N][TPL:1A]だな [PAU:14]ナポレオン[N][PAU:1E]人の心など おまえにわかるものか[NXT]",
+    "translation": "[DEF][TPL:C]What are you thinking?![N][TPL:0] was invented[N]by Lord Rusk...[FIN]I-I know this...[N][PAU:1E]Lord Rusk deeply regretted[N]ever creating it...[N][PAU:14]He said no one should know[FIN]the flow of time.[FIN]That is why he left[N]Chocolat alone[N]to find a place[N]where he could bury it...[FIN][TPL:D]Hmph.[PAU:1E] You are only a[N][TPL:1A],[N][PAU:14]Napoleon.[FIN][PAU:1E]What could you know of a[N]human heart?[NXT]"
+  },
+  {
+    "offset": "09EA90",
+    "kind": "dialog",
+    "source": "[DEF]ローズ···とか言ったな[N]続きは こいつを始末した後だ[N]あのマシンを ためしてみるといい[N][PAU:1E][TPL:0]は いただいていくぞ˳[END]",
+    "translation": "[DEF]Your name was Rose, yes?[N]We will continue after I[N]dispose of him.[N]Try that machine.[FIN][PAU:1E]I am taking [TPL:0].[END]"
+  },
+  {
+    "offset": "09EAD7",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]ガ···ガトー樣っ![END]",
+    "translation": "[DEF][TPL:C]L-Lord Gateau![END]"
+  },
+  {
+    "offset": "09EB88",
+    "kind": "dialog",
+    "source": "[DF2][TPL:B]ねえ 町長さん[N]おねがいが あるんですけどぉ···[FIN][TPL:9]おお?なんだ?おねだりか?[N]なんでも 言ってみなさい[FIN][TPL:B]本当ね?[N][PAU:1E][NAM:0]って子がもっている[N]3つの宝石がほしいの˳[NXT]",
+    "translation": "[DF2][TPL:B]Mayor,[N]I have a tiny favor to[N]ask...[FIN][TPL:9]Oh? Something you want?[N]Ask me for anything.[FIN][TPL:B]You mean that?[N][PAU:1E]A boy named [NAM:0] has[N]three jewels I want.[NXT]"
+  },
+  {
+    "offset": "09EBEB",
+    "kind": "dialog",
+    "source": "[DF2][TPL:9]ひ·人のものなのか?[N][PAU:1E]他のものでは いかんのか?[N]新しく 買ってやるぞ˳[NXT]",
+    "translation": "[DF2][TPL:9]Th-they belong to someone[N]else?[N][PAU:1E]Wouldn't another jewel do?[FIN]I'll buy you a new one.[NXT]"
+  },
+  {
+    "offset": "09EC19",
+    "kind": "dialog",
+    "source": "[DF2][TPL:B]いいえ あれでなければだめよ![N][PAU:28]そう[PAU:1E] どうしても [PAU:1E]ほしいのよ˳[END]",
+    "translation": "[DF2][TPL:B]No! It must be those[N]jewels![N][PAU:28]Yes, [PAU:1E]I simply [PAU:1E]must have[FIN]them.[END]"
+  },
+  {
+    "offset": "09EC9E",
+    "kind": "dialog",
+    "source": "[DF2][TPL:B]ぐずぐず するんじゃないわよ[N]おまえたち![FIN]この時代の やつらから[N]金目のものを まきあげるのよ![N]そうすればいつか 元の時代にもどる[N]足がかりが つかめるはずよ![END]",
+    "translation": "[DF2][TPL:B]Stop dawdling, you fools![FIN]Steal anything valuable[N]from the people of this[N]era![N]Then one day we'll find a[FIN]way[N]back to our own time![END]"
+  },
+  {
+    "offset": "09ED1E",
+    "kind": "dialog",
+    "source": "[DEF] とびらは かたくとざされている˳[END]",
+    "translation": "[DEF] The door is shut tight.[END]"
+  },
+  {
+    "offset": "09ED9B",
+    "kind": "dialog",
+    "source": "[DEF] ネズミでは[N] とびらが 重くて開けられない˳[END]",
+    "translation": "[DEF] The door is too heavy[N] for a mouse to open.[END]"
+  },
+  {
+    "offset": "09EDB8",
+    "kind": "dialog",
+    "source": "[DEF][PAL:3] ナポレオン ガトーごめんなさい[N] ラスクのようすが どうしても[N] 心配なので 見てきます˳[N][SKP:24]ミルフィ[PAL:0][END]",
+    "translation": "[DEF][PAL:3] Napoleon, Gateau, forgive[N]me.[N] I cannot stop worrying[N]about Rusk,[FIN] so I am going to check on[N]him.[N][SKP:24]Mille[PAL:0][END]"
+  },
+  {
+    "offset": "09EE60",
+    "kind": "dialog",
+    "source": "[DEF][N] ハッチが しまっている![END]",
+    "translation": "[DEF][N] The hatch is closed![END]"
+  },
+  {
+    "offset": "09EE72",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C]オマエは なぜ[N]そんな かっこうをするのだ?[N]元に もどったらどうだ?[END]",
+    "translation": "[DEF][TPL:C]Why are you wearing that[N]form?[N]Why not change back?[END]"
+  },
+  {
+    "offset": "09EEAF",
+    "kind": "dialog",
+    "source": "[DEF][N] この先 エンジンルーム[N] 非常時以外 立入り禁止[END]",
+    "translation": "[DEF][N] Engine Room Ahead[N] No entry except in[N]emergencies.[END]"
+  },
+  {
+    "offset": "09EF56",
+    "kind": "dialog",
+    "source": "[DEF][TPL:C][NAM:0]か![N][PAU:14]ミルフィ樣を みなかったか?[N][PAU:14]ガトー樣が たいへんなのだ[FIN]ミルフィ樣とラスク樣を[N]待たずに 宇宙船を出すと[N]言い出して···[NXT]",
+    "translation": "[DEF][TPL:C][NAM:0]![N][PAU:14]Have you seen Lady Mille?[N][PAU:14]Lord Gateau is behaving[FIN]terribly.[FIN]He says he will launch the[N]ship[N]without waiting for[N]Lady Mille or Lord Rusk...[NXT]"
+  },
+  {
+    "offset": "09EFB4",
+    "kind": "dialog",
+    "source": "[DEF]いかん!動きはじめてしまった![N]すまない [NAM:0][N]コクピットに行って[N]ガトー樣の 注意をひいてくれ[FIN]10分でいい![N]ワタシは その間に[N]地上にもどれるよう エンジンを[N]そうさする˳[END]",
+    "translation": "[DEF]No! It has started moving![N]Forgive me, [NAM:0].[N]Go to the cockpit[N]and distract Lord Gateau.[FIN]I need only ten minutes![N]Meanwhile, I will operate[N]the engine[N]so we can return to the[FIN]ground.[END]"
+  },
+  {
+    "offset": "09F020",
+    "kind": "dialog",
+    "source": "[DEF][NAM:0]か!?[N]そんな姿で あそんでいる[N]場合ではないんだぞ!?[END]",
+    "translation": "[DEF][NAM:0]?![N]This is no time[N]to play around in that[N]form![END]"
+  }
+]

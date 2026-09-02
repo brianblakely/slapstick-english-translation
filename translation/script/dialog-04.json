@@ -1,0 +1,488 @@
+[
+  {
+    "offset": "04E04C",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0][TPL:3]なんか もったいなくないか?[N]ティアトロン······˳[PAU:78][CLR][DLY:6][SFX:0][TPL:1]あれで いいのよ[N][PAU:3C]ティアトロンもねむりについたのよ[PAU:78][CLR]時も 何もかもわすれた[N][PAU:3C]ふかい [PAU:1E]ふかい [PAU:1E]ねむりにね˳[PAU:B4][DES]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0][TPL:3]What a waste, though.[N]Tiatron......[PAU:78][CLR][DLY:6][SFX:0][TPL:1]It is for the best.[N][PAU:3C]Tiatron is asleep too.[PAU:78][CLR]Forgetting time and[N]everything else... [PAU:3C]in a[N]deep, [PAU:1E]deep [PAU:1E]sleep.[PAU:B4][DES]"
+  },
+  {
+    "offset": "04E25D",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0][TPL:3][NAM:0]![N]こんな所で 何やってんだよ?[PAU:78][CLR][DLY:6][SFX:0]なに?[PAU:28]ハッカーの親玉を[N]やっつけただと?![N][PAU:50]こいつぁ おどろいたぜ![PAU:78][CLR][DLY:6][SFX:0]やるときゃあ やるもんだなあ[N]ただの たよりねえ子供だと[N]今まで 思っていたけどよ˳[PAU:B4][ESC]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0][TPL:3][NAM:0]![N]What are you doing here?[PAU:78][CLR][DLY:6][SFX:0]What? [PAU:28]You beat the[N]leader of the Hackers?![N][PAU:50]Now that is a shock![PAU:78][CLR][DLY:6][SFX:0]You came through when[N]it counted. I thought[N]you were weak.[PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E313",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0][TPL:1][NAM:0] 無事で よかった[N]本当に···よかったわ˳[PAU:B4][ESC]",
+    "translation": "[CLR][DLY:6][SFX:0][TPL:1][NAM:0], you are safe![N]I am so... so glad.[PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E3A3",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0][TPL:4]やったじゃないの![NAM:0]![N]トップニュースになるわ![PAU:64][CLR][DLY:6][SFX:0]見出しは こうよ![N][PAL:2]ロココ町の少年 世界をすくう[N][PAL:0][PAU:3C]どう?!いいでしょう![PAU:78][CLR][DLY:6][SFX:0][TPL:3]···なんだ それ[N][PAU:3C]お前 本当に記者なの?[PAU:B4][ESC]",
+    "translation": "[CLR][DLY:6][SFX:0][TPL:4]You did it, [NAM:0]![N]This is front-page news![PAU:64][CLR][DLY:6][SFX:0]Here is the headline:[N][PAL:2]ROCOCO BOY SAVES WORLD[N][PAL:0][PAU:3C]Well? Great, right?![PAU:78][CLR][DLY:6][SFX:0][TPL:3]...What is that?[N][PAU:3C]Are you really a reporter?[PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E427",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0][TPL:4]ちょっと!なにやってんのよ![N]早くにげないと あぶないのよ![PAU:78][CLR][DLY:6][SFX:0][TPL:3]いや···その···[N]あの テ···ティアトロンは?[PAU:B4][ESC]",
+    "translation": "[CLR][DLY:6][SFX:0][TPL:4]Hey! What are you doing?[N]Get out before it is too[N]late![PAU:78][CLR][DLY:6][SFX:0][TPL:3]Well... I... [N]What about Ti... Tiatron?[PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E4C2",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0][TPL:2][NAM:0] よくがんばったな[N]ご先祖樣も よろこんでいるだろう[PAU:78][CLR][DLY:6][SFX:0]ガトーは 人には手におえぬ力を[N]持ってしまったようだな···[PAU:78][CLR][DLY:6][SFX:0]発明に 命をあたえるのは[N]それを 使う人たちだ[PAU:50][CLR][DLY:6][SFX:0]よく使ってやれば よく働き[N]悪く使えば 悪い方へと働く···[PAU:78][CLR][DLY:6][SFX:0]ティアトロンは 作った者の心と[N]使う者の心の はざまで[N]迷ってしまったのかもしれんな˳[PAU:B4][ESC]",
+    "translation": "[CLR][DLY:6][SFX:0][TPL:2]Well done, [NAM:0].[N]Your ancestor would be[N]proud.[PAU:78][CLR][DLY:6][SFX:0]Gateau gained a power[N]no person could control...[PAU:78][CLR][DLY:6][SFX:0]The people who use an[N]invention are the ones[N]who give it life.[PAU:50][CLR][DLY:6][SFX:0]Use it well, and it works[N]for good. Use it poorly,[N]and it works for evil...[PAU:78][CLR][DLY:6][SFX:0]Perhaps Tiatron was lost[N]between the heart of its[N]maker[N]and the heart of its user.[PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E5A0",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0][TPL:2]いかん 時空の波にのまれるぞ[N]とにかく ここから出るんだ![PAU:B4][ESC]",
+    "translation": "[CLR][DLY:6][SFX:0][TPL:2]No! The waves of spacetime[N]will swallow us! We must[N]get out of here![PAU:B4][ESC]"
+  },
+  {
+    "offset": "04E970",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]  無限にひろがる 大宇宙[ESC]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]  The boundless universe[ESC]"
+  },
+  {
+    "offset": "04E98E",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0] その中では さまざまな[N] 生命の いとなみが[N] おこなわれていた[ESC]",
+    "translation": "[CLR][DLY:6][SFX:0] Across its vast expanse,[N] countless forms of life[N] went about their days.[ESC]"
+  },
+  {
+    "offset": "04E9B8",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]その大宇宙の どこかに[N]極楽星という 小さな星があり[N]ロココ町という 町があった···",
+    "translation": "[CLR][DLY:6][SFX:0]Somewhere in that universe[N]was a small world called[N]Bliss,[N]and on it, Rococo Town..."
+  },
+  {
+    "offset": "04EA65",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]ロココ町は 小さな町ではあるが[N]それなりに 文明のすすんだ[N]かいてきな 町であった[ESC]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]Though Rococo was small,[N]its technology made it[N]a pleasant home.[ESC]"
+  },
+  {
+    "offset": "04EAA2",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]人々は ロココ町で[N]それなりに 幸せにくらしていた[ESC]",
+    "translation": "[CLR][DLY:6][SFX:0]The people of Rococo[N]lived modest, happy lives.[ESC]"
+  },
+  {
+    "offset": "04EAC7",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]だが その平和は[N]長くは 続かなかった···",
+    "translation": "[CLR][DLY:6][SFX:0]But their peace[N]would not last long..."
+  },
+  {
+    "offset": "04EB54",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]ある時 ハッカーとなのる[N]悪の軍団が ロココ町に[N]姿をあらわすようになったのだ[ESC]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]One day, the evil[N]Hackers began appearing[N]throughout Rococo Town.[ESC]"
+  },
+  {
+    "offset": "04EB91",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]彼らは ロココ町の近辺で[N]さまざまな 悪行を[N]かさねはじめた···",
+    "translation": "[CLR][DLY:6][SFX:0]Around Rococo, they began[N]committing every sort[N]of wicked deed..."
+  },
+  {
+    "offset": "04EC10",
+    "kind": "dialog",
+    "source": "[POS:6,F][BOX:C,3,FF][DLY:1][SFX:0][N]  ···ぬすみ···[ESC]",
+    "translation": "[POS:6,F][BOX:C,3,FF][DLY:1][SFX:0][N]       ...theft...[ESC]"
+  },
+  {
+    "offset": "04EC28",
+    "kind": "dialog",
+    "source": "[CLR][ESC]",
+    "translation": "[CLR][ESC]"
+  },
+  {
+    "offset": "04EC2A",
+    "kind": "dialog",
+    "source": "[CLR][DLY:1][SFX:0][N]  ···はかい···[ESC]",
+    "translation": "[CLR][DLY:1][SFX:0][N]    ...destruction...[ESC]"
+  },
+  {
+    "offset": "04EC3C",
+    "kind": "dialog",
+    "source": "[CLR][DLY:1][SFX:0][N]  ···などなど···",
+    "translation": "[CLR][DLY:1][SFX:0][N]     ...and more..."
+  },
+  {
+    "offset": "04ECE3",
+    "kind": "dialog",
+    "source": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]さらに 彼らに製造された[N]改造人間たちが 現れ始め[N]人々の不安はますばかりだった[ESC]",
+    "translation": "[POS:5,13][BOX:C,3,FF][DLY:6][SFX:0]Then cyborgs made by the[N]Hackers began to appear.[N]People lived in fear.[ESC]"
+  },
+  {
+    "offset": "04ED24",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]彼らがどこからやってくるのか[N]その真の目的は 何なのか[N]知るよしもなかった···",
+    "translation": "[CLR][DLY:6][SFX:0]No one knew where they[N]came[N]from, or what their true[N]purpose could be..."
+  },
+  {
+    "offset": "04EE0C",
+    "kind": "dialog",
+    "source": "[POS:3,15][BOX:D,2,FF][DLY:6][SFX:0]そんなロココ町に 発明家の父を持つ[N]少年が ひっこしてきた[ESC]",
+    "translation": "[POS:3,15][BOX:D,2,FF][DLY:6][SFX:0]An inventor's son moved[N]to troubled Rococo Town.[ESC]"
+  },
+  {
+    "offset": "04EE3F",
+    "kind": "dialog",
+    "source": "[CLR][DLY:6][SFX:0]   少年の夢は 父のような[N]   発明家になることだった",
+    "translation": "[CLR][DLY:6][SFX:0]   The boy dreamed of[N]becoming[N]   an inventor like his[N]father."
+  },
+  {
+    "offset": "04F7A3",
+    "kind": "dialog",
+    "source": "[POS:9,15][BOX:A,3,FF][ESC]",
+    "translation": "[POS:9,15][BOX:A,3,FF][ESC]"
+  },
+  {
+    "offset": "04F7AB",
+    "kind": "dialog",
+    "source": "[CLR][DLY:1][SFX:0][TBL:&string_list_04F7C2,0B84][N][TBL:&string_list_04F7C2,0B86][N][TBL:&string_list_04F7C2,0B88][ESC]",
+    "translation": "[CLR][DLY:1][SFX:0][TBL:&string_list_04F7C2,0B84][N][TBL:&string_list_04F7C2,0B86][N][TBL:&string_list_04F7C2,0B88][ESC]"
+  },
+  {
+    "offset": "04F832",
+    "kind": "dialog",
+    "source": "",
+    "translation": ""
+  },
+  {
+    "offset": "04F833",
+    "kind": "dialog",
+    "source": "[PAL:2]SLAPSTICK[PAL:0]",
+    "translation": "[PAL:2]SLAPSTICK[PAL:0]"
+  },
+  {
+    "offset": "04F841",
+    "kind": "dialog",
+    "source": "はしもと まさや",
+    "translation": "Masaya Hashimoto"
+  },
+  {
+    "offset": "04F84A",
+    "kind": "dialog",
+    "source": "みやざき ともよし",
+    "translation": "Tomoyoshi Miyazaki"
+  },
+  {
+    "offset": "04F854",
+    "kind": "dialog",
+    "source": "たけばやし れいこ",
+    "translation": "Reiko Takebayashi"
+  },
+  {
+    "offset": "04F85E",
+    "kind": "dialog",
+    "source": "はしもと たつお",
+    "translation": "Tatsuo Hashimoto"
+  },
+  {
+    "offset": "04F867",
+    "kind": "dialog",
+    "source": "きたのはら あきら",
+    "translation": "Akira Kitanohara"
+  },
+  {
+    "offset": "04F871",
+    "kind": "dialog",
+    "source": "きた しげみ",
+    "translation": "Shigemi Kita"
+  },
+  {
+    "offset": "04F878",
+    "kind": "dialog",
+    "source": "いしだ じゅんいち",
+    "translation": "Junichi Ishida"
+  },
+  {
+    "offset": "04F882",
+    "kind": "dialog",
+    "source": "よこた ひさし",
+    "translation": "Hisashi Yokota"
+  },
+  {
+    "offset": "04F88A",
+    "kind": "dialog",
+    "source": "すずき なおこ",
+    "translation": "Naoko Suzuki"
+  },
+  {
+    "offset": "04F892",
+    "kind": "dialog",
+    "source": "つるの めぐみ",
+    "translation": "Megumi Tsuruno"
+  },
+  {
+    "offset": "04F89A",
+    "kind": "dialog",
+    "source": "おおうら たかひろ",
+    "translation": "Takahiro Oura"
+  },
+  {
+    "offset": "04F8A4",
+    "kind": "dialog",
+    "source": "こばやし さだお",
+    "translation": "Sadao Kobayashi"
+  },
+  {
+    "offset": "04F8AD",
+    "kind": "dialog",
+    "source": "よだ あやこ",
+    "translation": "Ayako Yoda"
+  },
+  {
+    "offset": "04F8B4",
+    "kind": "dialog",
+    "source": "こしろ ゆうぞう",
+    "translation": "Yuzo Koshiro"
+  },
+  {
+    "offset": "04F8BD",
+    "kind": "dialog",
+    "source": "かわしま もとひろ",
+    "translation": "Motohiro Kawashima"
+  },
+  {
+    "offset": "04F8C7",
+    "kind": "dialog",
+    "source": "よこた こうじ",
+    "translation": "Koji Yokota"
+  },
+  {
+    "offset": "04F8CF",
+    "kind": "dialog",
+    "source": "かいだ よしみ",
+    "translation": "Yoshimi Kaida"
+  },
+  {
+    "offset": "04F8D7",
+    "kind": "dialog",
+    "source": "たかい まさひこ",
+    "translation": "Masahiko Takai"
+  },
+  {
+    "offset": "04F8E0",
+    "kind": "dialog",
+    "source": "くしやま ただくに",
+    "translation": "Tadakuni Kushiyama"
+  },
+  {
+    "offset": "04F8EA",
+    "kind": "dialog",
+    "source": "ふたみ しんじ",
+    "translation": "Shinji Futami"
+  },
+  {
+    "offset": "04F8F2",
+    "kind": "dialog",
+    "source": "たかど かずのり",
+    "translation": "Kazunori Takado"
+  },
+  {
+    "offset": "04F8FB",
+    "kind": "dialog",
+    "source": "ふくしま やすひろ",
+    "translation": "Yasuhiro Fukushima"
+  },
+  {
+    "offset": "04F905",
+    "kind": "dialog",
+    "source": "ちだ ゆきのぶ",
+    "translation": "Yukinobu Chida"
+  },
+  {
+    "offset": "04F90D",
+    "kind": "dialog",
+    "source": "そね やすゆき",
+    "translation": "Yasuyuki Sone"
+  },
+  {
+    "offset": "04F915",
+    "kind": "dialog",
+    "source": "ほんだ けいじ",
+    "translation": "Keiji Honda"
+  },
+  {
+    "offset": "04F91D",
+    "kind": "dialog",
+    "source": "まき とおる",
+    "translation": "Toru Maki"
+  },
+  {
+    "offset": "04F924",
+    "kind": "dialog",
+    "source": "やまもと ひでき",
+    "translation": "Hideki Yamamoto"
+  },
+  {
+    "offset": "04F92D",
+    "kind": "dialog",
+    "source": "おおつか たかし",
+    "translation": "Takashi Otsuka"
+  },
+  {
+    "offset": "04F936",
+    "kind": "dialog",
+    "source": "さいとう よしひさ",
+    "translation": "Yoshihisa Saito"
+  },
+  {
+    "offset": "04F940",
+    "kind": "dialog",
+    "source": "やはぎ さだお",
+    "translation": "Sadao Yahagi"
+  },
+  {
+    "offset": "04F948",
+    "kind": "dialog",
+    "source": "かの けんじろう",
+    "translation": "Kenjiro Kano"
+  },
+  {
+    "offset": "04F951",
+    "kind": "dialog",
+    "source": "ささき ゆたか",
+    "translation": "Yutaka Sasaki"
+  },
+  {
+    "offset": "04F959",
+    "kind": "dialog",
+    "source": "たけした よしろう",
+    "translation": "Yoshiro Takeshita"
+  },
+  {
+    "offset": "04F963",
+    "kind": "dialog",
+    "source": "ほんま かずふみ",
+    "translation": "Kazufumi Honma"
+  },
+  {
+    "offset": "04F96C",
+    "kind": "dialog",
+    "source": "くろだ ひろふみ",
+    "translation": "Hirofumi Kuroda"
+  },
+  {
+    "offset": "04F975",
+    "kind": "dialog",
+    "source": "かきざわ みのる",
+    "translation": "Minoru Kakizawa"
+  },
+  {
+    "offset": "04F97E",
+    "kind": "dialog",
+    "source": "すぎなか なおひと",
+    "translation": "Naohito Suginaka"
+  },
+  {
+    "offset": "04F988",
+    "kind": "dialog",
+    "source": "しげの あきたか",
+    "translation": "Akitaka Shigeno"
+  },
+  {
+    "offset": "04F991",
+    "kind": "dialog",
+    "source": "はやし つとむ",
+    "translation": "Tsutomu Hayashi"
+  },
+  {
+    "offset": "04F999",
+    "kind": "dialog",
+    "source": "おいかけ ひでゆき",
+    "translation": "Hideyuki Oikake"
+  },
+  {
+    "offset": "04F9A3",
+    "kind": "dialog",
+    "source": "よしだ しんいち",
+    "translation": "Shinichi Yoshida"
+  },
+  {
+    "offset": "04F9AC",
+    "kind": "dialog",
+    "source": "いしづか だいすけ",
+    "translation": "Daisuke Ishizuka"
+  },
+  {
+    "offset": "04F9B6",
+    "kind": "dialog",
+    "source": "みやざき ともこ",
+    "translation": "Tomoko Miyazaki"
+  },
+  {
+    "offset": "04F9BF",
+    "kind": "dialog",
+    "source": "たかはし なおこ",
+    "translation": "Naoko Takahashi"
+  },
+  {
+    "offset": "04F9C8",
+    "kind": "dialog",
+    "source": "やざき みや",
+    "translation": "Miya Yazaki"
+  },
+  {
+    "offset": "04F9CF",
+    "kind": "dialog",
+    "source": "さとう のぶかず",
+    "translation": "Nobukazu Sato"
+  },
+  {
+    "offset": "04F9D8",
+    "kind": "dialog",
+    "source": "さいとう のぶお",
+    "translation": "Nobuo Saito"
+  },
+  {
+    "offset": "04F9E1",
+    "kind": "dialog",
+    "source": "いいだ まりこ",
+    "translation": "Mariko Iida"
+  },
+  {
+    "offset": "04F9E9",
+    "kind": "dialog",
+    "source": "とのき なおと",
+    "translation": "Naoto Tonoki"
+  },
+  {
+    "offset": "04F9F1",
+    "kind": "dialog",
+    "source": "くわばら こうじ",
+    "translation": "Koji Kuwabara"
+  },
+  {
+    "offset": "04F9FA",
+    "kind": "dialog",
+    "source": "すみた まり",
+    "translation": "Mari Sumita"
+  },
+  {
+    "offset": "04FA01",
+    "kind": "dialog",
+    "source": "[PAL:2][NAM:0][PAL:0]",
+    "translation": "[PAL:2][NAM:0][PAL:0]"
+  },
+  {
+    "offset": "04FA08",
+    "kind": "dialog",
+    "source": "わかばやし かおる",
+    "translation": "Kaoru Wakabayashi"
+  },
+  {
+    "offset": "04FA12",
+    "kind": "dialog",
+    "source": "あらい あきら",
+    "translation": "Akira Arai"
+  }
+]

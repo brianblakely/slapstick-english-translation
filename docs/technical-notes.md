@@ -89,3 +89,72 @@ Names themselves stored at `0006F350`. End byte is `CC`.
 あいさつが - 158774
 町長
 80998082
+
+# Implemented English Build
+
+## Source and output
+
+The builder accepts only the 1,572,864-byte unheadered Japanese ROM whose
+SHA-256 is
+`08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900ad4be21`.
+It expands the ROM to 2 MiB, writes the title `SLAP STICK ENGLISH`, changes the
+country byte to North America, and recalculates the checksum pair.
+
+All 2,381 extracted dialogue and console strings live as structured JSON in
+`translation/script/`. The `source` field is retained as provenance; only the
+independently translated `translation` field is encoded into the English ROM.
+
+## Text relocation
+
+Most translated strings no longer fit their original slots. The builder
+reclaims the bytes after each four-byte entry stub, packs strings into suitable
+same-bank gaps when possible, and otherwise places them in expanded HiROM
+banks beginning at file offset `0x180100`.
+
+Dialogue entry stubs use command `CF` followed by a 24-bit address. Console
+entry stubs use the previously unused command `0C` with the same address
+layout. Dialogue containing pointer-table (`TBL`) commands remains in its
+original bank; oversized entries can be split across reclaimed fragments and
+joined with `CF` redirects. A two-byte Orb string is handled through its
+existing bank-01 pointer table because it cannot hold a four-byte stub.
+
+Three runtime-filled text buffers are deliberately preserved. Their redirects
+begin at the first static text command instead:
+
+- `07B1B3` patches from `07B1C9`
+- `09847B` patches from `09849A`
+- `0ADBDC` patches from `0ADBF1`
+
+## Interpreter hooks
+
+The dialogue `CF` handler at `0x049FF9` is converted into a tail redirect so
+execution does not return into reclaimed source-string bytes. The recursive
+dialogue `TBL` handler at `0x04A0F7` preserves and restores the data bank around
+nested strings, allowing redirected table entries to execute safely.
+
+Console command-table slot `0C` at `0x04ACEA` points through a small trampoline
+at `0x04A008` to the redirect routine at `0x180000`. The console interpreter's
+existing bank-preservation behavior then resumes the caller correctly.
+
+## Dialogue font and layout
+
+The original dialogue alphabet is stored as 16x16, four-tile 2bpp glyphs at
+`0x040000` and `0x042000`, with a 12-pixel advance. The build compresses the
+Latin glyph art into the left eight pixels of each cell and changes the three
+renderer increments at `0x04A65A`, `0x04A768`, and `0x04A772` from three tile
+units to two. This provides an eight-pixel English dialogue font without
+requiring replacement artwork.
+
+`tools/reflow-dialog.mjs` wraps normal dialogue to 26 English columns and four
+rows while retaining control codes. `tools/validate-script.mjs` additionally
+checks custom box dimensions, dynamic inserts, supported characters, control
+structure, and full translation coverage.
+
+## Build verification
+
+`tools/build-patch.mjs` asserts the clean ROM hash and every modified code
+signature before patching. It generates BPS and IPS, reapplies each patch in
+memory, compares the resulting ROM byte-for-byte, and validates the final SNES
+header checksum. These checks establish deterministic patch construction; an
+emulator or hardware playthrough is still needed to assess every visual and
+gameplay context.
