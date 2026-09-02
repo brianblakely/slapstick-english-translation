@@ -211,6 +211,8 @@ def configure_core(core: ctypes.CDLL) -> None:
     core.retro_serialize_size.restype = ctypes.c_size_t
     core.retro_serialize.argtypes = [ctypes.c_void_p, ctypes.c_size_t]
     core.retro_serialize.restype = ctypes.c_bool
+    core.retro_unserialize.argtypes = [ctypes.c_void_p, ctypes.c_size_t]
+    core.retro_unserialize.restype = ctypes.c_bool
 
 
 def parse_pulses(values: list[str]) -> list[tuple[int, int, int]]:
@@ -303,6 +305,8 @@ def main() -> None:
     )
     parser.add_argument("--trap-at", type=int, help="raise SIGTRAP after this frame for GDB")
     parser.add_argument("--dump-wram-at", action="append", type=int, default=[])
+    parser.add_argument("--load-state", type=Path)
+    parser.add_argument("--save-state-at", action="append", type=int, default=[])
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
@@ -338,6 +342,15 @@ def main() -> None:
     core.retro_get_system_av_info(ctypes.byref(av_info))
     serialize_size = core.retro_serialize_size()
     serialize_buffer = ctypes.create_string_buffer(serialize_size)
+    if args.load_state:
+        state_bytes = args.load_state.read_bytes()
+        if len(state_bytes) != serialize_size:
+            raise SystemExit(
+                f"Save state is {len(state_bytes)} bytes; expected {serialize_size}"
+            )
+        state_buffer = ctypes.create_string_buffer(state_bytes)
+        if not core.retro_unserialize(state_buffer, serialize_size):
+            raise SystemExit("The libretro core rejected the save state")
     samples = []
 
     try:
@@ -355,6 +368,12 @@ def main() -> None:
                     (args.output_dir / f"wram-{frame:06d}.bin").write_bytes(
                         ctypes.string_at(wram_pointer, wram_size)
                     )
+            if frame in args.save_state_at:
+                if not core.retro_serialize(serialize_buffer, serialize_size):
+                    raise RuntimeError("The libretro core could not serialize state")
+                (args.output_dir / f"state-{frame:06d}.bin").write_bytes(
+                    serialize_buffer.raw[:serialize_size]
+                )
             if args.trap_at == frame:
                 signal.raise_signal(signal.SIGTRAP)
             if frame % args.snapshot_every == 0 and frontend.framebuffer:

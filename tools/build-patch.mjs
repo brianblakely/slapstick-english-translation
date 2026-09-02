@@ -16,6 +16,10 @@ const HEADER_OFFSET = 0xffc0;
 const EXPANSION_START = 0x188000;
 const DIALOG_REDIRECT = 0xcf;
 const CONSOLE_REDIRECT = 0x0c;
+const DIALOG_JUMP = 0xd3;
+const DIALOG_RETURN = 0xcc;
+const CONSOLE_REDIRECT_ROUTINE = 0x180000;
+const DIALOG_REDIRECT_ROUTINE = 0x180020;
 let crcTable = null;
 
 const DIALOG_COMMANDS = {
@@ -134,15 +138,19 @@ for (const entry of changedEntries) {
   const bytes = entry.kind === "dialog"
     ? encodeDialog(entry.translation)
     : encodeConsole(entry.translation);
+  const sourceStubLength = entry.kind === "dialog" ? 5 : 4;
 
-  if (originalLength < 4) {
+  if (originalLength < sourceStubLength) {
     shortEntries.push({ ...entry, offset, originalLength, bytes });
     continue;
   }
 
   const bank = offset >>> 16;
-  if (originalLength > 4) {
-    addGap(freeByBank, bank, { start: offset + 4, length: originalLength - 4 });
+  if (originalLength > sourceStubLength) {
+    addGap(freeByBank, bank, {
+      start: offset + sourceStubLength,
+      length: originalLength - sourceStubLength,
+    });
   }
 
   if (entry.kind === "dialog" && entry.translation.includes("[STR:")) {
@@ -158,29 +166,48 @@ for (const entry of changedEntries) {
     originalLength,
     bytes,
     bank,
+    terminator: entry.kind === "dialog" ? dialogTerminator(bytes, entry.offset) : null,
     mustStayInBank: entry.kind === "dialog" && entry.translation.includes("[TBL:"),
   });
 }
 
-if (shortEntries.some((entry) => entry.offset !== 0x01e604)) {
-  const details = shortEntries.map((entry) => `${entry.offset.toString(16)} (${entry.originalLength})`).join(", ");
-  throw new Error(`No redirect gateway is defined for short strings: ${details}`);
+const jumpEntries = shortEntries.filter(
+  (entry) => entry.kind === "dialog" && entry.originalLength === 4,
+);
+for (const entry of jumpEntries) {
+  candidates.push({
+    ...entry,
+    bank: entry.offset >>> 16,
+    terminator: dialogTerminator(entry.bytes, entry.offset),
+    mustStayInBank: true,
+    jumpStub: true,
+  });
 }
 
-let orbGateway = null;
-if (shortEntries.length) {
-  orbGateway = takeBestFit(freeByBank.get(0x01) ?? [], 4);
-  if (orbGateway === null) throw new Error("No bank-01 space is available for the Orb redirect gateway");
-  const pointerOffset = 0x01e304;
-  if (sourceRom.readUInt16LE(pointerOffset) !== 0xe604) {
+const pointerEntries = shortEntries.filter((entry) => entry.offset === 0x01e604);
+const unsupportedShortEntries = shortEntries.filter(
+  (entry) => entry.originalLength !== 4 && entry.offset !== 0x01e604,
+);
+if (unsupportedShortEntries.length) {
+  const details = unsupportedShortEntries
+    .map((entry) => `${entry.offset.toString(16)} (${entry.originalLength})`)
+    .join(", ");
+  throw new Error(`No short-string redirect is defined for: ${details}`);
+}
+
+if (pointerEntries.length > 1) throw new Error("Duplicate Orb string entries");
+if (pointerEntries.length) {
+  const entry = pointerEntries[0];
+  const pointerTableOffset = 0x01e304;
+  if (sourceRom.readUInt16LE(pointerTableOffset) !== 0xe604) {
     throw new Error("Unexpected Orb pointer table contents at 0x01E304");
   }
-  targetRom.writeUInt16LE(orbGateway & 0xffff, pointerOffset);
   candidates.push({
-    ...shortEntries[0],
+    ...entry,
     bank: 0x01,
-    mustStayInBank: false,
-    gateway: orbGateway,
+    terminator: dialogTerminator(entry.bytes, entry.offset),
+    mustStayInBank: true,
+    pointerTableOffset,
   });
 }
 
@@ -221,9 +248,20 @@ for (const candidate of orderedCandidates) {
 
 for (const candidate of candidates) {
   const placement = placements.get(candidate.offset);
+  const hasRecursiveSourceRedirect = candidate.kind === "dialog"
+    && candidate.pointerTableOffset === undefined
+    && !candidate.jumpStub;
+  // Nested payloads return with TER; the original semantic terminator (END,
+  // NXT, and so on) runs only after the outermost redirect restores DB and Y.
+  const neutralizePayloadTerminator = hasRecursiveSourceRedirect
+    || placement.fragments.length > 1;
+
   for (let index = 0; index < placement.fragments.length; index += 1) {
     const fragment = placement.fragments[index];
     fragment.bytes.copy(targetRom, fragment.offset);
+    if (index + 1 === placement.fragments.length && neutralizePayloadTerminator) {
+      targetRom[fragment.offset + fragment.bytes.length - 1] = DIALOG_RETURN;
+    }
     if (index + 1 < placement.fragments.length) {
       const nextPointer = romPointer(placement.fragments[index + 1].offset);
       Buffer.from([
@@ -232,10 +270,26 @@ for (const candidate of candidates) {
         nextPointer.address >>> 8,
         nextPointer.bank,
       ]).copy(targetRom, fragment.offset + fragment.bytes.length);
+      const isOutermostTail = !hasRecursiveSourceRedirect && index === 0;
+      targetRom[fragment.offset + fragment.bytes.length + 4] = isOutermostTail
+        ? candidate.terminator
+        : DIALOG_RETURN;
     }
   }
 
   const pointer = romPointer(placement.first);
+  if (candidate.pointerTableOffset !== undefined) {
+    targetRom.writeUInt16LE(pointer.address, candidate.pointerTableOffset);
+    continue;
+  }
+  if (candidate.jumpStub) {
+    Buffer.from([
+      DIALOG_JUMP,
+      pointer.address & 0xff,
+      pointer.address >>> 8,
+    ]).copy(targetRom, candidate.offset);
+    continue;
+  }
   const stub = Buffer.from([
     candidate.kind === "dialog" ? DIALOG_REDIRECT : CONSOLE_REDIRECT,
     pointer.address & 0xff,
@@ -243,11 +297,8 @@ for (const candidate of candidates) {
     pointer.bank,
   ]);
 
-  if (candidate.gateway !== undefined) {
-    stub.copy(targetRom, candidate.gateway);
-  } else {
-    stub.copy(targetRom, candidate.offset);
-  }
+  stub.copy(targetRom, candidate.offset);
+  if (candidate.kind === "dialog") targetRom[candidate.offset + 4] = candidate.terminator;
 }
 
 installNarrowDialogFont(targetRom);
@@ -339,7 +390,7 @@ function allocateDialogFragments(gaps, bytes, bank) {
 
     let largestIndex = -1;
     for (let index = 0; index < workingGaps.length; index += 1) {
-      if (workingGaps[index].length < 5) continue;
+      if (workingGaps[index].length < 6) continue;
       if (largestIndex === -1 || workingGaps[index].length > workingGaps[largestIndex].length) {
         largestIndex = index;
       }
@@ -347,15 +398,18 @@ function allocateDialogFragments(gaps, bytes, bank) {
     if (largestIndex === -1) return null;
 
     const gap = workingGaps[largestIndex];
-    const capacity = gap.length - 4;
+    // A recursive redirect must be followed by a return sentinel. Once the
+    // nested fragment returns, that byte unwinds the current interpreter level
+    // while preserving the caller's DB and Y.
+    const capacity = gap.length - 5;
     const chunkLength = largestSafeDialogPrefix(bytes, byteOffset, capacity);
     if (chunkLength === 0) return null;
     fragments.push({
       offset: gap.start,
       bytes: bytes.subarray(byteOffset, byteOffset + chunkLength),
     });
-    gap.start += chunkLength + 4;
-    gap.length -= chunkLength + 4;
+    gap.start += chunkLength + 5;
+    gap.length -= chunkLength + 5;
     if (gap.length === 0) workingGaps.splice(largestIndex, 1);
     byteOffset += chunkLength;
   }
@@ -365,6 +419,14 @@ function allocateDialogFragments(gaps, bytes, bank) {
     if ((fragment.offset >>> 16) !== bank) throw new Error("Fragment allocator crossed a ROM bank");
   }
   return fragments;
+}
+
+function dialogTerminator(bytes, offset) {
+  const terminator = bytes[bytes.length - 1];
+  if (![0xc0, 0xcc, 0xde, 0xe1].includes(terminator)) {
+    throw new Error(`Translated dialog ${offset} does not end in a semantic terminator`);
+  }
+  return terminator;
 }
 
 function largestSafeDialogPrefix(bytes, start, maximum) {
@@ -402,6 +464,18 @@ function romPointer(offset) {
     throw new Error(`Cannot address HiROM text offset ${offset.toString(16)} through a WRAM-mirrored bank`);
   }
   return { bank: 0x80 + fileBank, address };
+}
+
+function longCallTrampoline(offset) {
+  const fileBank = offset >>> 16;
+  const address = offset & 0xffff;
+  return Buffer.from([
+    0x22,
+    address & 0xff,
+    address >>> 8,
+    0xc0 + fileBank,
+    0x60,
+  ]);
 }
 
 function scanDialogLength(rom, start) {
@@ -726,18 +800,24 @@ function installInterpreterHooks(rom) {
     throw new Error("Unexpected dialog STR handler bytes");
   }
 
-  const dialogTail = Buffer.from("b9000048e220b9020048abc2207a60", "hex");
+  // Keep CF's stock recursive behavior so it restores the caller's data bank
+  // and text cursor. Relocate the handler to expanded ROM to make room for the
+  // two long-call trampolines, changing only its final RTS to RTL.
   rom.fill(0xea, 0x049ff9, 0x04a013);
-  dialogTail.copy(rom, 0x049ff9);
+  longCallTrampoline(DIALOG_REDIRECT_ROUTINE).copy(rom, 0x049ff9);
+  Buffer.concat([
+    originalDialogHandler.subarray(0, -1),
+    Buffer.from([0x6b]),
+  ]).copy(rom, DIALOG_REDIRECT_ROUTINE);
 
-  // The unused tail of the old handler becomes a bank-84 trampoline for
-  // console command 0C. The actual redirect routine lives at D8:0000.
-  Buffer.from([0x22, 0x00, 0x00, 0xd8, 0x60]).copy(rom, 0x04a008);
+  // Console command 0C uses the second trampoline. Its redirect routine also
+  // lives in the lower, code-only half of expanded bank D8.
+  longCallTrampoline(CONSOLE_REDIRECT_ROUTINE).copy(rom, 0x049ffe);
   if (sourceRom.readUInt16LE(0x04acea) !== 0x0000) throw new Error("Console command 0C is not unused");
-  rom.writeUInt16LE(0xa008, 0x04acea);
+  rom.writeUInt16LE(0x9ffe, 0x04acea);
 
   const consoleRedirectRoutine = Buffer.from("e220b9020048c220b90000a8e2206848abc2206b", "hex");
-  consoleRedirectRoutine.copy(rom, 0x180000);
+  consoleRedirectRoutine.copy(rom, CONSOLE_REDIRECT_ROUTINE);
 }
 
 function writeHeader(rom) {

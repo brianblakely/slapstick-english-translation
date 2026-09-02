@@ -107,9 +107,10 @@ independently translated `translation` field is encoded into the English ROM.
 ## Text relocation
 
 Most translated strings no longer fit their original slots. The builder
-reclaims the bytes after each four-byte entry stub, packs strings into suitable
-same-bank gaps when possible, and otherwise places them in the upper half of
-each expanded HiROM file bank beginning at file offset `0x188000`.
+reclaims the bytes after each redirect stub and its continuation byte, packs
+strings into suitable same-bank gaps when possible, and otherwise places them
+in the upper half of each expanded HiROM file bank beginning at file offset
+`0x188000`.
 
 Expanded text is addressed through banks `$98`-`$9F`, not their full-ROM
 `$D8`-`$DF` mirrors. The dialogue and console handlers use absolute low-bank
@@ -117,12 +118,19 @@ addresses for work RAM. Banks `$98`-`$9F` preserve those WRAM/I/O mirrors below
 `$8000`, while `$D8`-`$DF` would resolve the same addresses as ROM and can lock
 the renderer when it reads its box state.
 
-Dialogue entry stubs use command `CF` followed by a 24-bit address. Console
-entry stubs use the previously unused command `0C` with the same address
-layout. Dialogue containing pointer-table (`TBL`) commands remains in its
-original bank; oversized entries can be split across reclaimed fragments and
-joined with `CF` redirects. A two-byte Orb string is handled through its
-existing bank-01 pointer table because it cannot hold a four-byte stub.
+Dialogue entry stubs use command `CF` followed by a 24-bit address and the
+translated string's one-byte terminator. The stock recursive `CF` behavior
+renders the relocated string, restores the caller's data bank and text cursor,
+then reaches that terminator at the original call site. This is important for
+`NXT` strings used by scripted UI such as the Invention Machine. Console entry
+stubs use the previously unused command `0C` with a 24-bit address.
+
+Dialogue containing pointer-table (`TBL`) commands remains in its original
+bank; oversized entries can be split across reclaimed fragments and joined
+with `CF` redirects followed by return sentinels. Four-byte dialogue slots use
+the engine's existing same-bank `JMP` command instead. The two-byte Orb string
+is handled directly through its existing bank-01 pointer table because it
+cannot hold a redirect stub.
 
 Three runtime-filled text buffers are deliberately preserved. Their redirects
 begin at the first static text command instead:
@@ -133,13 +141,13 @@ begin at the first static text command instead:
 
 ## Interpreter hooks
 
-The dialogue `CF` handler at `0x049FF9` is converted into a tail redirect so
-execution does not return into reclaimed source-string bytes. The recursive
-dialogue `TBL` handler at `0x04A0F7` preserves and restores the data bank around
-nested strings, allowing redirected table entries to execute safely.
+The dialogue `CF` handler at `0x049FF9` retains its recursive behavior but is
+relocated to `0x180020` behind a long-call trampoline. The recursive dialogue
+`TBL` handler at `0x04A0F7` preserves and restores the data bank around nested
+strings, allowing redirected table entries to execute safely.
 
 Console command-table slot `0C` at `0x04ACEA` points through a small trampoline
-at `0x04A008` to the redirect routine at `0x180000`. The console interpreter's
+at `0x049FFE` to the redirect routine at `0x180000`. The console interpreter's
 existing bank-preservation behavior then resumes the caller correctly.
 
 ## Dialogue font and layout
