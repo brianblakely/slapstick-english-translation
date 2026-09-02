@@ -44,6 +44,53 @@ For a private local smoke test, the builder can also write a patched ROM:
 node tools/build-patch.mjs --rom-output "build/Slap Stick (Japan) [EN].sfc"
 ```
 
+## Nix development workflow
+
+With [Nix](https://nixos.org/download/) and flakes enabled, enter the pinned
+development shell:
+
+```sh
+nix develop
+```
+
+The shell contains Node.js, Python, RetroArch, and only the Snes9x libretro
+core. Build a private patched ROM and launch it with the pinned emulator:
+
+```sh
+node tools/build-patch.mjs --rom-output "build/Slap Stick (Japan) [EN].sfc"
+slapstick-retroarch "build/Slap Stick (Japan) [EN].sfc"
+```
+
+The launcher keeps RetroArch's configuration, saves, states, caches, and other
+runtime data in the gitignored `.retroarch/` directory. Set
+`SLAPSTICK_RETROARCH_HOME` to use a different project-local directory.
+
+The same launcher can be used without entering the shell:
+
+```sh
+nix run . -- "build/Slap Stick (Japan) [EN].sfc"
+```
+
+For deterministic headless runs, `slapstick-smoke` passes the exact same pinned
+Snes9x core to `tools/libretro-smoke.py`:
+
+```sh
+slapstick-smoke \
+  "build/Slap Stick (Japan) [EN].sfc" \
+  --frames 1800 \
+  --output-dir build/smoke
+
+# Equivalent without entering the shell:
+nix run .#smoke -- \
+  "build/Slap Stick (Japan) [EN].sfc" \
+  --frames 1800 \
+  --output-dir build/smoke
+```
+
+Run `nix flake check` to build the pinned core and verify that the expected
+`snes9x_libretro.so` is present. Snes9x has a non-commercial license, so
+Nixpkgs classifies it as unfree; this flake opts in to that package explicitly.
+
 ## What the build does
 
 - Checks the source ROM size and SHA-256 before changing anything.

@@ -1,5 +1,9 @@
 node_modules/
 third_party/
+.direnv/
+.retroarch/
+result
+result-*
 *.swp
 roms/*
 translation/script*.txt
