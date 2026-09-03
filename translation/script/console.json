@@ -717,301 +717,301 @@
     "offset": "01F8B3",
     "kind": "console",
     "source": "メタルソード  ",
-    "translation": "METL SWD"
+    "translation": "METAL[ICON:SWORD]"
   },
   {
     "offset": "01F8BD",
     "kind": "console",
     "source": "バトルソード  ",
-    "translation": "BTL SWD"
+    "translation": "BATTLE[ICON:SWORD]"
   },
   {
     "offset": "01F8C8",
     "kind": "console",
     "source": "フルメタルソード",
-    "translation": "FM SWORD"
+    "translation": "F.METAL[ICON:SWORD]"
   },
   {
     "offset": "01F8D2",
     "kind": "console",
     "source": "サンダーソード ",
-    "translation": "THDR SWD"
+    "translation": "THUNDER[ICON:SWORD]"
   },
   {
     "offset": "01F8DD",
     "kind": "console",
     "source": "メタルアクス  ",
-    "translation": "METL AXE"
+    "translation": "METAL[ICON:AXE]"
   },
   {
     "offset": "01F8E6",
     "kind": "console",
     "source": "バトルアクス  ",
-    "translation": "BTL AXE"
+    "translation": "BATTLE[ICON:AXE]"
   },
   {
     "offset": "01F8F0",
     "kind": "console",
     "source": "フルメタルアクス",
-    "translation": "FM AXE"
+    "translation": "F.METAL[ICON:AXE]"
   },
   {
     "offset": "01F8F9",
     "kind": "console",
     "source": "ソニックブレイド",
-    "translation": "SONC BLD"
+    "translation": "SONIC[ICON:BLADE]"
   },
   {
     "offset": "01F904",
     "kind": "console",
     "source": "プラズマブレイド",
-    "translation": "PLAS BLD"
+    "translation": "PLASMA[ICON:BLADE]"
   },
   {
     "offset": "01F911",
     "kind": "console",
     "source": "レーザーブレイド",
-    "translation": "LASR BLD"
+    "translation": "LASER[ICON:BLADE]"
   },
   {
     "offset": "01F91D",
     "kind": "console",
     "source": "ソウルブレイド ",
-    "translation": "SOUL BLD"
+    "translation": "SOUL[ICON:BLADE]"
   },
   {
     "offset": "01F928",
     "kind": "console",
     "source": "ドクドクハンマー",
-    "translation": "PSN HAMR"
+    "translation": "TOXIC[ICON:HAMMER]"
   },
   {
     "offset": "01F933",
     "kind": "console",
     "source": "スッポンハンマー",
-    "translation": "PLUNGER"
+    "translation": "PLUNGER[ICON:HAMMER]"
   },
   {
     "offset": "01F93D",
     "kind": "console",
     "source": "メガトンハンマー",
-    "translation": "MEGA HMR"
+    "translation": "MEGATON[ICON:HAMMER]"
   },
   {
     "offset": "01F947",
     "kind": "console",
     "source": "ヘビーストーン ",
-    "translation": "HVY STON"
+    "translation": "HEAVY[ICON:STONE]"
   },
   {
     "offset": "01F951",
     "kind": "console",
     "source": "パニックストーン",
-    "translation": "PNC STON"
+    "translation": "PANIC[ICON:STONE]"
   },
   {
     "offset": "01F95B",
     "kind": "console",
     "source": "ブレイクストーン",
-    "translation": "BRK STON"
+    "translation": "BREAK[ICON:STONE]"
   },
   {
     "offset": "01F965",
     "kind": "console",
     "source": "パンパンパンチ ",
-    "translation": "BAM PNCH"
+    "translation": "TRIPLE[ICON:PUNCH]"
   },
   {
     "offset": "01F971",
     "kind": "console",
     "source": "スーパーパンチ ",
-    "translation": "SUPR PCH"
+    "translation": "SUPER[ICON:PUNCH]"
   },
   {
     "offset": "01F97C",
     "kind": "console",
     "source": "ひっさつパンチ ",
-    "translation": "FIN PNCH"
+    "translation": "FINISH[ICON:PUNCH]"
   },
   {
     "offset": "01F986",
     "kind": "console",
     "source": "ロケットブロー ",
-    "translation": "RCKT BLW"
+    "translation": "ROCKET[ICON:BLOW]"
   },
   {
     "offset": "01F990",
     "kind": "console",
     "source": "ローリングブロー",
-    "translation": "ROLL BLW"
+    "translation": "ROLLING[ICON:BLOW]"
   },
   {
     "offset": "01F99B",
     "kind": "console",
     "source": "マッハブロー  ",
-    "translation": "MACH BLW"
+    "translation": "MACH[ICON:BLOW]"
   },
   {
     "offset": "01F9A5",
     "kind": "console",
     "source": "ハンドショット ",
-    "translation": "HND SHOT"
+    "translation": "HAND[ICON:SHOT]"
   },
   {
     "offset": "01F9AF",
     "kind": "console",
     "source": "ナイスショット ",
-    "translation": "NICE SHT"
+    "translation": "NICE[ICON:SHOT]"
   },
   {
     "offset": "01F9B8",
     "kind": "console",
     "source": "バズーカ    ",
-    "translation": "BAZOOKA"
+    "translation": "BAZOOKA[ICON:SHOT]"
   },
   {
     "offset": "01F9C3",
     "kind": "console",
     "source": "ツイストレーザー",
-    "translation": "TWST LSR"
+    "translation": "TWIST[ICON:LASER]"
   },
   {
     "offset": "01F9CD",
     "kind": "console",
     "source": "チャージレーザー",
-    "translation": "CHRG LSR"
+    "translation": "CHARGE[ICON:LASER]"
   },
   {
     "offset": "01F9D8",
     "kind": "console",
     "source": "はどうレーザー ",
-    "translation": "WAVE LSR"
+    "translation": "WAVE[ICON:LASER]"
   },
   {
     "offset": "01F9E3",
     "kind": "console",
     "source": "ストレートボム ",
-    "translation": "STRT BMB"
+    "translation": "DIRECT[ICON:BOMB]"
   },
   {
     "offset": "01F9ED",
     "kind": "console",
     "source": "ナパームボム  ",
-    "translation": "NPLM BMB"
+    "translation": "NAPALM[ICON:BOMB]"
   },
   {
     "offset": "01F9F8",
     "kind": "console",
     "source": "アイスボム   ",
-    "translation": "ICE BOMB"
+    "translation": "ICE[ICON:BOMB]"
   },
   {
     "offset": "01FA02",
     "kind": "console",
     "source": "かくさんボム  ",
-    "translation": "SCTR BMB"
+    "translation": "SCATTER[ICON:BOMB]"
   },
   {
     "offset": "01FA0C",
     "kind": "console",
     "source": "ヘビーシールド ",
-    "translation": "HVY SHLD"
+    "translation": "HEAVY[ICON:SHIELD]"
   },
   {
     "offset": "01FA17",
     "kind": "console",
     "source": "サビーズシールド",
-    "translation": "RSTY SHLD"
+    "translation": "RUSTY[ICON:SHIELD]"
   },
   {
     "offset": "01FA23",
     "kind": "console",
     "source": "サイコシールド ",
-    "translation": "PSY SHLD"
+    "translation": "PSYCHO[ICON:SHIELD]"
   },
   {
     "offset": "01FA2D",
     "kind": "console",
     "source": "ケミカルシールド",
-    "translation": "CHEM SHLD"
+    "translation": "CHEMICAL[ICON:SHIELD]"
   },
   {
     "offset": "01FA37",
     "kind": "console",
     "source": "ハイパーシールド",
-    "translation": "HYPR SHLD"
+    "translation": "HYPER[ICON:SHIELD]"
   },
   {
     "offset": "01FA42",
     "kind": "console",
     "source": "パックざんがい ",
-    "translation": "PACK SCRP"
+    "translation": "WRECKAGE[ICON:PACK]"
   },
   {
     "offset": "01FA4E",
     "kind": "console",
     "source": "パワーパック  ",
-    "translation": "PWR PACK"
+    "translation": "POWER[ICON:PACK]"
   },
   {
     "offset": "01FA59",
     "kind": "console",
     "source": "シールドパック ",
-    "translation": "SHLD PACK"
+    "translation": "SHIELD[ICON:PACK]"
   },
   {
     "offset": "01FA64",
     "kind": "console",
     "source": "ターボパック  ",
-    "translation": "TRBO PACK"
+    "translation": "TURBO[ICON:PACK]"
   },
   {
     "offset": "01FA6F",
     "kind": "console",
     "source": "ソーラーパック ",
-    "translation": "SOLR PACK"
+    "translation": "SOLAR[ICON:PACK]"
   },
   {
     "offset": "01FA79",
     "kind": "console",
     "source": "クイックパック ",
-    "translation": "QCK PACK"
+    "translation": "QUICK[ICON:PACK]"
   },
   {
     "offset": "01FA83",
     "kind": "console",
     "source": "ブーツ     ",
-    "translation": "BOOTS"
+    "translation": "STANDARD[ICON:BOOTS]"
   },
   {
     "offset": "01FA8D",
     "kind": "console",
     "source": "パワーブーツ  ",
-    "translation": "PWR BOOTS"
+    "translation": "POWER[ICON:BOOTS]"
   },
   {
     "offset": "01FA98",
     "kind": "console",
     "source": "スワンプブーツ ",
-    "translation": "SWMP BOOT"
+    "translation": "SWAMP[ICON:BOOTS]"
   },
   {
     "offset": "01FAA3",
     "kind": "console",
     "source": "4WDブーツ  ",
-    "translation": "4WD BOOTS"
+    "translation": "4WD[ICON:BOOTS]"
   },
   {
     "offset": "01FAAD",
     "kind": "console",
     "source": "タンクブーツ  ",
-    "translation": "TANK BOOT"
+    "translation": "TANK[ICON:BOOTS]"
   },
   {
     "offset": "01FAB7",
     "kind": "console",
     "source": "ホバーブーツ  ",
-    "translation": "HOVR BOOT"
+    "translation": "HOVER[ICON:BOOTS]"
   },
   {
     "offset": "01FAC2",

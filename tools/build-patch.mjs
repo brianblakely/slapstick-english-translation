@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import { CONSOLE_EQUIPMENT_ICONS, consoleEquipmentIcon } from "./console-icons.mjs";
 
 const SOURCE_SHA256 = "08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900ad4be21";
 const SOURCE_SIZE = 0x180000;
@@ -26,6 +27,9 @@ const BATTLE_UI_BITMAP_START = 0x132d06;
 const BATTLE_UI_BITMAP_END = 0x133a98;
 const BATTLE_UI_BITMAP_SHA256 = "1f91c329ff1927c21e9ea7b80161bacc068330c4ba0a7a0260fc961afb86cedc";
 const BATTLE_MISS_TILE_OFFSET = 0x0540;
+const CONSOLE_FONT_BITMAP_START = 0x12873d;
+const CONSOLE_FONT_BITMAP_END = 0x128fb7;
+const CONSOLE_FONT_BITMAP_SHA256 = "572beac31b489e75d71845c55164b4e61ef18187ed7226074110a9c483a6742e";
 const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
@@ -339,6 +343,7 @@ for (const candidate of candidates) {
 
 installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
+installConsoleEquipmentIcons(targetRom);
 installInterpreterHooks(targetRom);
 installConsoleSelectorMirrors(targetRom);
 installRuntimeDefaults(targetRom);
@@ -655,6 +660,13 @@ function encodeConsole(source) {
       for (const character of part.value) output.push(consoleCharacter(character, source));
       continue;
     }
+    if (part.name === "ICON") {
+      const icon = part.args.length === 1 ? consoleEquipmentIcon(part.args[0]) : undefined;
+      if (!icon) throw new Error(`Unknown console equipment icon [${part.value}]`);
+      output.push(icon.code);
+      endedByHalt = false;
+      continue;
+    }
     const command = CONSOLE_COMMANDS[part.name];
     if (!command) throw new Error(`Unknown console command [${part.value}]`);
     const [opcode, types, halt = false] = command;
@@ -920,6 +932,54 @@ function installBattleMissGlyphs(rom) {
   compressed.copy(rom, BATTLE_UI_BITMAP_START);
 }
 
+function installConsoleEquipmentIcons(rom) {
+  const slotLength = CONSOLE_FONT_BITMAP_END - CONSOLE_FONT_BITMAP_START;
+  const bitmap = expandQuintetLz(sourceRom, CONSOLE_FONT_BITMAP_START, slotLength);
+  if (bitmap.length !== 0x1000 || sha256(bitmap) !== CONSOLE_FONT_BITMAP_SHA256) {
+    throw new Error("Unexpected console font bitmap at 0x12873D");
+  }
+
+  const occupiedCodes = new Set();
+  for (const [name, icon] of Object.entries(CONSOLE_EQUIPMENT_ICONS)) {
+    if (!Number.isInteger(icon.code) || icon.code < 0x0f || icon.code > 0xff) {
+      throw new Error(`Console equipment icon ${name} has an invalid character code`);
+    }
+    if (occupiedCodes.has(icon.code)) {
+      throw new Error(`Console equipment icon code 0x${icon.code.toString(16)} is duplicated`);
+    }
+    occupiedCodes.add(icon.code);
+    createConsoleEquipmentIconTile(name, icon.pixels).copy(bitmap, icon.code * 16);
+  }
+
+  const compressed = compactQuintetLz(bitmap);
+  if (compressed.length > slotLength) {
+    throw new Error(
+      `English console font needs ${compressed.length} bytes but has ${slotLength}`,
+    );
+  }
+  const expanded = expandQuintetLz(compressed, 0, compressed.length);
+  if (!expanded.equals(bitmap)) throw new Error("Console font bitmap compression did not round-trip");
+  compressed.copy(rom, CONSOLE_FONT_BITMAP_START);
+}
+
+function createConsoleEquipmentIconTile(name, pixels) {
+  if (
+    !Array.isArray(pixels)
+    || pixels.length !== 8
+    || pixels.some((row) => typeof row !== "string" || !/^[.#]{8}$/.test(row))
+  ) {
+    throw new Error(`Console equipment icon ${name} must be an 8x8 . and # bitmap`);
+  }
+
+  const tile = Buffer.alloc(16, 0xff);
+  for (let y = 0; y < 8; y += 1) {
+    for (let x = 0; x < 8; x += 1) {
+      if (pixels[y][x] === "#") tile[y * 2 + 1] &= ~(1 << (7 - x));
+    }
+  }
+  return tile;
+}
+
 function createBattleLabelTile(left, right) {
   const patterns = new Map([
     ["M", [0b101, 0b111, 0b101, 0b101, 0b101]],
@@ -1024,14 +1084,16 @@ function compactQuintetLz(source) {
     }
   };
 
+  // The dictionary after a given output prefix is independent of how that
+  // prefix was tokenized. Record every available match, then use dynamic
+  // programming to choose the globally smallest 9-bit literals / 13-bit
+  // matches. A greedy longest match can miss a better match one byte later.
+  const matchStarts = new Uint16Array(source.length);
+  const matchLengths = new Uint8Array(source.length);
   const dictionary = Buffer.alloc(0x100, 0x20);
   let dictionaryWrite = 0xef;
-  let sourceRead = 0;
-  while (sourceRead < source.length) {
+  for (let sourceRead = 0; sourceRead < source.length; sourceRead += 1) {
     const maximumLength = Math.min(17, source.length - sourceRead);
-    let matchStart = 0;
-    let matchLength = 0;
-
     if (maximumLength >= 2) {
       for (let candidate = 0; candidate < 0x100; candidate += 1) {
         // Simulate dictionary writes while probing so overlapping matches can
@@ -1047,29 +1109,45 @@ function compactQuintetLz(source) {
           probeWrite = (probeWrite + 1) & 0xff;
           length += 1;
         }
-        if (length > matchLength) {
-          matchStart = candidate;
-          matchLength = length;
+        if (length > matchLengths[sourceRead]) {
+          matchStarts[sourceRead] = candidate;
+          matchLengths[sourceRead] = length;
           if (length === maximumLength) break;
         }
       }
     }
+    dictionary[dictionaryWrite] = source[sourceRead];
+    dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+  }
 
-    if (matchLength >= 2) {
-      writeBits(0, 1);
-      writeBits(matchStart, 8);
-      writeBits(matchLength - 2, 4);
-      for (let index = 0; index < matchLength; index += 1) {
-        dictionary[dictionaryWrite] = source[sourceRead++];
-        dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+  const bitCosts = new Uint32Array(source.length + 1);
+  const tokenLengths = new Uint8Array(source.length);
+  for (let sourceRead = source.length - 1; sourceRead >= 0; sourceRead -= 1) {
+    let bestCost = 9 + bitCosts[sourceRead + 1];
+    let bestLength = 1;
+    for (let length = 2; length <= matchLengths[sourceRead]; length += 1) {
+      const cost = 13 + bitCosts[sourceRead + length];
+      if (cost <= bestCost) {
+        bestCost = cost;
+        bestLength = length;
       }
-    } else {
-      const sample = source[sourceRead++];
-      writeBits(1, 1);
-      writeBits(sample, 8);
-      dictionary[dictionaryWrite] = sample;
-      dictionaryWrite = (dictionaryWrite + 1) & 0xff;
     }
+    bitCosts[sourceRead] = bestCost;
+    tokenLengths[sourceRead] = bestLength;
+  }
+
+  let sourceRead = 0;
+  while (sourceRead < source.length) {
+    const length = tokenLengths[sourceRead];
+    if (length === 1) {
+      writeBits(1, 1);
+      writeBits(source[sourceRead], 8);
+    } else {
+      writeBits(0, 1);
+      writeBits(matchStarts[sourceRead], 8);
+      writeBits(length - 2, 4);
+    }
+    sourceRead += length;
   }
   if (usedBits) payload.push(currentByte << (8 - usedBits));
 

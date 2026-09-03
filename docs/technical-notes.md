@@ -219,11 +219,26 @@ at both initialization sites.
 
 Console boxes advance one eight-pixel cell per Latin character. Main-menu and
 Invention Machine captions have eight cells. Battle attack names also have eight
-cells before their separate level suffix, while the selected-item header has
-nine. Those limits are why the tables use compact forms such as `THDR SWD` and
-`CHAM LENS`. The validator checks every literal console line against its active
-`BOX`, plus the complete item-name, machine-option, main-caption, and
-battle-target tables.
+cells including their equipment-type icon and before the separate level suffix,
+while the selected-item header has nine. Equipment names reserve their final
+cell for one of 13 build-time `[ICON:TYPE]` tokens, leaving seven or eight cells
+for the distinctive part of the name; for example, `THUNDER[ICON:SWORD]`
+replaces `THDR SWD`. The validator requires the correct trailing icon on every
+equipment entry and counts it as one cell when checking both layouts.
+
+The equipment glyphs occupy console character codes `0x3B` through `0x47`,
+which were unused kana in the English script. Their one-color 8x8 silhouettes
+are reductions of the level-1 Sword, Axe, Blade, Hammer, Celtis/Stone, Punch,
+Blow, Shot, Laser, Bomb, Shield, Empty Pack, and Boots art from the
+[Robotrek equipment compendium](https://www.thesupersnes.tv/compendium/robotrek/equipment/).
+The build expands the stock 4 KiB console font bitmap at
+`0x12873D`, replaces those tiles, and uses an optimal parse of the game's
+Quintet-LZ format to keep the modified bitmap inside its original compressed
+slot. It verifies exact decompression before writing the ROM.
+
+The validator also checks every literal console line against its active `BOX`,
+plus the complete item-name, machine-option, main-caption, and battle-target
+tables.
 
 Battle damage uses two special 8x8 tiles for the zero-damage indicator. The
 build expands the stock Quintet-LZ battle bitmap at `0x132D06`, replaces the

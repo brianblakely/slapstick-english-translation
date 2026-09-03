@@ -2,6 +2,10 @@
 
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import {
+  CONSOLE_EQUIPMENT_ICONS,
+  EQUIPMENT_ICON_BY_OFFSET,
+} from "./console-icons.mjs";
 
 const SCRIPT_DIRECTORY = path.resolve("translation/script");
 const JAPANESE = /[\u3040-\u30ff\u3400-\u9fff]/u;
@@ -120,6 +124,7 @@ function validateLocationLabel(entry, location) {
 function validateConsoleLayout(entry, location) {
   validateConsoleBoxLayout(entry.translation, location);
   validateConsoleLabel(entry, location);
+  validateConsoleEquipmentIcons(entry, location);
 
   if (entry.offset === STATUS_SCREEN_OFFSET) {
     const glyphs = [...entry.translation.matchAll(/\[FIL:([0-9A-F]+),&word_01E9D6\+2\]/g)]
@@ -176,6 +181,24 @@ function validateConsoleLayout(entry, location) {
     if (choices.length !== 4 || choices.some((choice) => choice !== "A B X Y")) {
       errors.push(`${location}: button choices must remain aligned in four fixed A/B/X/Y rows`);
     }
+  }
+}
+
+function validateConsoleEquipmentIcons(entry, location) {
+  const icons = [...entry.translation.matchAll(/\[ICON:([^\]]+)\]/g)]
+    .map((match) => match[1].toUpperCase());
+  for (const icon of icons) {
+    if (!CONSOLE_EQUIPMENT_ICONS[icon]) {
+      errors.push(`${location}: unknown console equipment icon ${JSON.stringify(icon)}`);
+    }
+  }
+
+  const expected = EQUIPMENT_ICON_BY_OFFSET.get(entry.offset);
+  if (!expected) return;
+  if (icons.length !== 1 || icons[0] !== expected) {
+    errors.push(`${location}: equipment name must contain exactly one [ICON:${expected}]`);
+  } else if (!entry.translation.endsWith(`[ICON:${expected}]`)) {
+    errors.push(`${location}: equipment type icon must follow the item name`);
   }
 }
 
@@ -274,7 +297,10 @@ function validateFixedChoiceRows(entry, location) {
 }
 
 function visibleText(text) {
-  return text.replace(/\[[^\]]+\]/g, "");
+  return tokenize(text)
+    .filter((atom) => atom.type === "character" || atom.name === "ICON")
+    .map((atom) => atom.type === "character" ? atom.value : "■")
+    .join("");
 }
 
 function leadingText(text) {
@@ -290,6 +316,7 @@ function dialogTextWidth(text) {
 }
 
 function consoleCommandWidth(atom) {
+  if (atom.name === "ICON") return 1;
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);
   if (atom.name === "DEC") return Number.parseInt(atom.args[1] ?? "1", 16);
   return 0;

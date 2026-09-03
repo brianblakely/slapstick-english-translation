@@ -144,6 +144,7 @@ Nixpkgs classifies it as unfree; this flake opts in to that package explicitly.
   names from `translation/script/`.
 - Expands the ROM from 1.5 MiB to 2 MiB and installs bank-safe text redirects.
 - Installs the native 8×16 Spleen bitmap font for crisp, legible dialogue.
+- Replaces equipment-type abbreviations with 13 compact 8×8 menu icons.
 - Reflows prose at word boundaries and validates custom dialogue-box sizes.
 - Recalculates the SNES checksum and verifies both generated patches by
   applying them in memory and comparing every output byte.
