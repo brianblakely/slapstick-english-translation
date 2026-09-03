@@ -4,15 +4,27 @@ import { createScenarioRom } from "./scenario-rom.mjs";
 import { ScenarioError, WRAM } from "./scenario-state.mjs";
 
 const NEW_GAME_INITIALIZER = 0x04cb0b;
+const BOOT_INITIAL_MAP_OPERAND = 0x0085dc;
+const AUTOBOOT_ACTOR = 0x04e705;
 const ORIGINAL_NEW_GAME_INITIALIZER = Buffer.from(
   "8bdaa20000bf46cb84300ea8bf48cb84990000e8e8e8e880ece220a97e48abc220" +
     "a20000bf90cb84300ea8bf92cb84990000e8e8e8e880ecfaab6b",
+  "hex",
+);
+const ORIGINAL_BOOT_INITIAL_MAP = Buffer.from(
+  "c1018ca6058ca805a002008cac0522ff8280",
+  "hex",
+);
+const ORIGINAL_AUTOBOOT_ACTOR = Buffer.from(
+  "02aa26e78402d07800a93f2f8d6e059c60050238c0d0021805000001000002b26b",
   "hex",
 );
 
 function romFixture() {
   const rom = Buffer.alloc(0x200000, 0xff);
   ORIGINAL_NEW_GAME_INITIALIZER.copy(rom, NEW_GAME_INITIALIZER);
+  ORIGINAL_BOOT_INITIAL_MAP.copy(rom, BOOT_INITIAL_MAP_OPERAND);
+  ORIGINAL_AUTOBOOT_ACTOR.copy(rom, AUTOBOOT_ACTOR);
   return rom;
 }
 
@@ -51,8 +63,15 @@ test("generates a checksummed ROM with a one-shot new-game initializer", () => {
   assert.equal(source[NEW_GAME_INITIALIZER], 0x8b, "source buffer is not mutated");
   assert.equal(generated.rom[NEW_GAME_INITIALIZER], 0x5c);
   assert.equal(generated.rom[NEW_GAME_INITIALIZER + 4], 0xea);
+  assert.equal(generated.rom.readUInt16LE(BOOT_INITIAL_MAP_OPERAND), 4);
+  assert.equal(generated.rom[AUTOBOOT_ACTOR], 0x5c);
   assert.equal(generated.initializerAddress, 0xdf0000);
   assert.equal(generated.initializerOffset, 0x1f0000);
+  assert.equal(generated.autobootOffset, generated.initializerOffset + generated.initializerSize);
+  assert.equal(
+    generated.rom.readUIntLE(AUTOBOOT_ACTOR + 1, 3),
+    generated.autobootAddress,
+  );
   assert.equal(
     generated.rom.readUIntLE(NEW_GAME_INITIALIZER + 1, 3),
     generated.initializerAddress,
@@ -77,7 +96,7 @@ test("generates a checksummed ROM with a one-shot new-game initializer", () => {
   assert.equal(writes.get(WRAM.inventory).value, 0x49);
   assert.equal(writes.get(WRAM.inventory + 2).value, 0x75);
   assert.equal(writes.get(WRAM.partyMemberA).value, 0x4c);
-  assert.equal(writes.get(WRAM.robotAvailability).value, 5);
+  assert.equal(writes.get(WRAM.robotAvailability).value, 0x0505);
   assert.equal(writes.get(WRAM.activeRobot).value, 6);
   assert.deepEqual(
     [0, 1, 2].map((index) => writes.get(WRAM.battleOrder + index * 2).value),
@@ -111,3 +130,15 @@ test("rejects the wrong ROM revision and size", () => {
   );
 });
 
+test("uses a non-recursive autoboot wrapper when the title map is the target", () => {
+  const generated = createScenarioRom(
+    romFixture(),
+    { name: "title", map: 4 },
+    catalog,
+  );
+  assert.equal(generated.autobootSize, 17);
+  assert.deepEqual(
+    generated.rom.subarray(generated.autobootOffset + 13, generated.autobootOffset + 17),
+    Buffer.from([0x5c, 0x0a, 0xe7, 0xc4]),
+  );
+});

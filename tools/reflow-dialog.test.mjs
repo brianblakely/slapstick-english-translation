@@ -57,6 +57,17 @@ test("preserves spacing around dynamic text and punctuation", () => {
   assert.equal(reflow("[DEF]Wait[N]![END]").text, "[DEF]Wait![END]");
 });
 
+test("reserves the five-character maximum player name width", () => {
+  assert.equal(
+    reflow("[DEF]12345678901234567890[N][NAM:0][END]").text,
+    "[DEF]12345678901234567890 [NAM:0][END]",
+  );
+  assert.equal(
+    reflow("[DEF]123456789012345678901[N][NAM:0][END]").text,
+    "[DEF]123456789012345678901[N][NAM:0][END]",
+  );
+});
+
 test("reflow output is idempotent", () => {
   const first = reflow("[DEF]Thanks to you, my plan[N]should[N]go smoothly.[END]").text;
 

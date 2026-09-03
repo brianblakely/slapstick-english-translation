@@ -4,7 +4,7 @@
   "title": "Slap Stick test scenario",
   "type": "object",
   "additionalProperties": false,
-  "required": ["name", "checkpoint"],
+  "required": ["name"],
   "properties": {
     "$schema": { "type": "string" },
     "version": { "const": 1 },
@@ -13,9 +13,39 @@
     "checkpoint": { "type": "string", "minLength": 1 },
     "catalog": { "type": "string", "minLength": 1 },
     "rom": { "type": "string", "minLength": 1 },
+    "money": {
+      "oneOf": [
+        { "type": "integer", "minimum": 0, "maximum": 99999 },
+        { "type": "string", "pattern": "^[0-9]{1,5}$" }
+      ]
+    },
     "map": { "$ref": "#/$defs/reference" },
     "room": { "$ref": "#/$defs/reference" },
     "direction": { "$ref": "#/$defs/direction" },
+    "entry": {
+      "oneOf": [
+        { "const": "field" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "type": { "const": "field" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "encounter"],
+          "properties": {
+            "type": { "const": "battle" },
+            "encounter": { "$ref": "#/$defs/reference" },
+            "ready": { "enum": ["loaded", "command"] },
+            "settleFrames": { "type": "integer", "minimum": 0, "maximum": 60000 },
+            "timeoutFrames": { "type": "integer", "minimum": 1, "maximum": 60000 }
+          }
+        }
+      ]
+    },
     "position": {
       "type": "object",
       "additionalProperties": false,
@@ -49,6 +79,18 @@
         }
       ]
     },
+    "player": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["name"] },
+        { "required": ["level"] }
+      ],
+      "properties": {
+        "name": { "type": "string", "pattern": "^[A-Za-z]{1,5}$" },
+        "level": { "type": "integer", "minimum": 1, "maximum": 99 }
+      }
+    },
     "party": {
       "oneOf": [
         {
@@ -80,22 +122,52 @@
         }
       ]
     },
+    "launch": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ready": { "enum": ["map", "field"] },
+        "settleFrames": { "type": "integer", "minimum": 0, "maximum": 60000 },
+        "timeoutFrames": { "type": "integer", "minimum": 1, "maximum": 60000 }
+      }
+    },
     "interaction": {
       "oneOf": [
         { "$ref": "#/$defs/button" },
         { "const": false },
         { "type": "null" },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "button": { "$ref": "#/$defs/button" },
-            "delayFrames": { "type": "integer", "minimum": 0 },
-            "holdFrames": { "type": "integer", "minimum": 1 },
-            "afterFrames": { "type": "integer", "minimum": 0 }
-          }
-        }
+        { "$ref": "#/$defs/inputStep" }
       ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/$defs/button" },
+          { "$ref": "#/$defs/inputStep" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["waitFrames"],
+            "properties": {
+              "waitFrames": { "type": "integer", "minimum": 1, "maximum": 60000 }
+            }
+          }
+        ]
+      }
+    },
+    "wram": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["address", "value"],
+        "properties": {
+          "address": { "$ref": "#/$defs/wramAddress" },
+          "width": { "enum": [1, 2] },
+          "value": { "$ref": "#/$defs/integerReference" }
+        }
+      }
     }
   },
   "$defs": {
@@ -125,6 +197,22 @@
     },
     "button": {
       "enum": ["a", "b", "x", "y", "l", "r", "start", "select", "up", "down", "left", "right"]
+    },
+    "inputStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "button": { "$ref": "#/$defs/button" },
+        "delayFrames": { "type": "integer", "minimum": 0, "maximum": 60000 },
+        "holdFrames": { "type": "integer", "minimum": 1, "maximum": 60000 },
+        "afterFrames": { "type": "integer", "minimum": 0, "maximum": 60000 }
+      }
+    },
+    "wramAddress": {
+      "oneOf": [
+        { "type": "integer", "minimum": 0, "maximum": 131071 },
+        { "type": "string", "pattern": "^(?:[0-9]+|0[xX][0-9A-Fa-f]+|\\$[0-9A-Fa-f]+)$" }
+      ]
     },
     "itemList": {
       "type": "array",

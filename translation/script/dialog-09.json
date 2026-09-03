@@ -148,7 +148,7 @@
     "offset": "098D6C",
     "kind": "dialog",
     "source": "[DEF][TPL:3]あばよ [NAM:0]![N]元気でな˳[END]",
-    "translation": "[DEF][TPL:3]See you, [NAM:0]! Take[N]care.[END]"
+    "translation": "[DEF][TPL:3]See you, [NAM:0]! Take care.[END]"
   },
   {
     "offset": "098E50",
@@ -472,7 +472,7 @@
     "offset": "09A768",
     "kind": "dialog",
     "source": "[DEF][TPL:3][DLY:9]···なんだよ···お前[N][DLY:0][NAM:0]じゃねえかよ[N]かーっ お前も青いねえ[FIN]だいたい 何でもどってきたんだ?[N][PAU:1E]え?[PAU:1E]地震を止めにきた?[N]バカだねえ [PAL:2]地震発生裝置[PAL:0]を[N]止めるには やり方があるんだぞ[FIN]知っているのは 研究所長と[N][PAL:2]管理してた戦闘員[PAL:0]ぐらいだろうな[N][PAU:1E]もっとも 戦闘員の方は[N][PAL:2]ネズミにされた[PAL:0]って話だしな[FIN]さてひと仕事終ったし 帰るかな[N]あの はねっかえり女が来たら[N]かなわんしな[FIN][N]じゃ あばよ![N]もう ドジふむんじゃねえぞ![END]",
-    "translation": "[DEF][TPL:3][DLY:9]...What the... [DLY:0]It's you,[N][NAM:0]. You're still[N]green, kid.[FIN]Why did you come back[N]anyway? [PAU:1E]What?[PAU:1E] To stop the[N]earthquakes?[FIN]Fool. There's a special[N]way to stop the [PAL:2]earthquake[N]device[PAL:0].[FIN]Only the lab director and[N][PAL:2]the trooper who maintained[N]it[PAL:0] would know. But I hear[FIN][PAL:2]the trooper became a[N]mouse[PAL:0].[FIN]Well, my work is done.[N]Time to go. I don't want[N]that wild woman showing up[N]again.[FIN][N]See you! Try not to[N]blunder again![END]"
+    "translation": "[DEF][TPL:3][DLY:9]...What the... [DLY:0]It's you,[N][NAM:0]. You're still green,[N]kid.[FIN]Why did you come back[N]anyway? [PAU:1E]What?[PAU:1E] To stop the[N]earthquakes?[FIN]Fool. There's a special[N]way to stop the [PAL:2]earthquake[N]device[PAL:0].[FIN]Only the lab director and[N][PAL:2]the trooper who maintained[N]it[PAL:0] would know. But I hear[FIN][PAL:2]the trooper became a[N]mouse[PAL:0].[FIN]Well, my work is done.[N]Time to go. I don't want[N]that wild woman showing up[N]again.[FIN][N]See you! Try not to[N]blunder again![END]"
   },
   {
     "offset": "09A976",
@@ -1114,7 +1114,7 @@
     "offset": "09E078",
     "kind": "dialog",
     "source": "[CLR][TPL:C]それは 修理の道具か?[N][PAU:1E]そうだ···[PAU:1E]忘れていた[N]はたさねばならぬことも残っている[FIN][TPL:0]を 取り返さねば[N]ラスク樣に 顔むけできぬ[N][PAU:1E][NAM:0]と 言ったか···[N][PAU:1E]この恩は わすれぬぞ[FIN] [NAM:0]は[N][PAL:2] しゅうりキット[PAL:0]を[N][PAL:2] ナポレオン[PAL:0]に 使った![END]",
-    "translation": "[CLR][TPL:C]Is that a repair tool?[N][PAU:1E]Yes...[PAU:1E] I had forgotten. I[FIN]still have a duty to[N]fulfill.[FIN]I must recover [TPL:0], or[N]I cannot face Lord[N]Biscotte. [PAU:1E]Your name was[N][NAM:0]...[FIN][PAU:1E]I will not forget this[N]debt.[FIN] [NAM:0] used the [PAL:2]Repair[N]Kit[PAL:0][N] on [PAL:2]Newton[PAL:0]![END]"
+    "translation": "[CLR][TPL:C]Is that a repair tool?[N][PAU:1E]Yes...[PAU:1E] I had forgotten. I[FIN]still have a duty to[N]fulfill.[FIN]I must recover [TPL:0], or[N]I cannot face Lord[N]Biscotte. [PAU:1E]Your name was[N][NAM:0]...[FIN][PAU:1E]I will not forget this[N]debt.[FIN] [NAM:0] used the [PAL:2]Repair Kit[PAL:0][N] on [PAL:2]Newton[PAL:0]![END]"
   },
   {
     "offset": "09E112",
@@ -1330,6 +1330,6 @@
     "offset": "09F020",
     "kind": "dialog",
     "source": "[DEF][NAM:0]か!?[N]そんな姿で あそんでいる[N]場合ではないんだぞ!?[END]",
-    "translation": "[DEF][NAM:0]?! This is no time[N]to play around in that[N]form![END]"
+    "translation": "[DEF][NAM:0]?! This is no time to[N]play around in that form![END]"
   }
 ]

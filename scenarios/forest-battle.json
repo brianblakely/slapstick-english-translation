@@ -1,0 +1,23 @@
+{
+  "$schema": "./schema.json",
+  "version": 1,
+  "name": "forest-battle",
+  "description": "Checkpoint-free direct entry to a forest encounter at command-ready state.",
+  "map": "forest",
+  "position": {
+    "x": 128,
+    "y": 128,
+    "direction": "down"
+  },
+  "party": {
+    "robots": [1],
+    "activeRobot": 1,
+    "order": [1, 2, 3]
+  },
+  "entry": {
+    "type": "battle",
+    "encounter": 0,
+    "ready": "command",
+    "settleFrames": 0
+  }
+}

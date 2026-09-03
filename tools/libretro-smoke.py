@@ -103,6 +103,14 @@ BUTTONS: Final = {
     "l": 10,
     "r": 11,
 }
+WRAM_COMPARATORS: Final = {
+    "eq": lambda actual, expected: actual == expected,
+    "ne": lambda actual, expected: actual != expected,
+    "lt": lambda actual, expected: actual < expected,
+    "le": lambda actual, expected: actual <= expected,
+    "gt": lambda actual, expected: actual > expected,
+    "ge": lambda actual, expected: actual >= expected,
+}
 
 
 class Frontend:
@@ -267,6 +275,56 @@ def parse_repeats(values: list[str]) -> list[tuple[int, int, int]]:
     return pulses
 
 
+def parse_integer(text: str) -> int:
+    normalized = text.strip().lower()
+    if normalized.startswith("$"):
+        normalized = "0x" + normalized[1:]
+    return int(normalized, 0)
+
+
+def parse_wram_conditions(values: list[str]) -> list[dict[str, int | str]]:
+    conditions = []
+    for value in values:
+        try:
+            address_text, width_text, operator, expected_text = value.split(":")
+            address = parse_integer(address_text)
+            width = int(width_text)
+            expected = parse_integer(expected_text)
+            if width not in (1, 2, 4):
+                raise ValueError
+            if operator not in WRAM_COMPARATORS:
+                raise ValueError
+            if address < 0 or address + width > 0x20000:
+                raise ValueError
+            if expected < 0 or expected >= 1 << (width * 8):
+                raise ValueError
+        except ValueError as error:
+            raise SystemExit(
+                f"Invalid WRAM condition {value!r}; expected "
+                "address:width:eq|ne|lt|le|gt|ge:value"
+            ) from error
+        conditions.append(
+            {
+                "address": address,
+                "width": width,
+                "operator": operator,
+                "expected": expected,
+            }
+        )
+    return conditions
+
+
+def read_wram_condition(
+    memory: bytes, condition: dict[str, int | str]
+) -> tuple[int, bool]:
+    address = int(condition["address"])
+    width = int(condition["width"])
+    operator = str(condition["operator"])
+    expected = int(condition["expected"])
+    actual = int.from_bytes(memory[address : address + width], "little")
+    return actual, WRAM_COMPARATORS[operator](actual, expected)
+
+
 def write_ppm(path: Path, framebuffer: tuple[bytes, int, int, int, int]) -> str:
     data, width, height, pitch, pixel_format = framebuffer
     output = bytearray(width * height * 3)
@@ -372,6 +430,35 @@ def main() -> None:
         type=Path,
         help="serialize the final frame directly to this path",
     )
+    parser.add_argument(
+        "--stop-when-wram",
+        action="append",
+        default=[],
+        metavar="ADDRESS:WIDTH:OP:VALUE",
+        help=(
+            "stop when all WRAM comparisons match; OP is "
+            "eq, ne, lt, le, gt, or ge"
+        ),
+    )
+    parser.add_argument(
+        "--stop-when-stable",
+        type=int,
+        default=1,
+        metavar="FRAMES",
+        help="require stop conditions to match for this many consecutive frames",
+    )
+    parser.add_argument(
+        "--stop-after-match",
+        type=int,
+        default=0,
+        metavar="FRAMES",
+        help="run this many additional frames after the stop conditions first match",
+    )
+    parser.add_argument(
+        "--require-stop",
+        action="store_true",
+        help="fail if WRAM stop conditions do not match before --frames",
+    )
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
@@ -386,6 +473,12 @@ def main() -> None:
         raise SystemExit("--frames must not be negative")
     if args.snapshot_every <= 0:
         raise SystemExit("--snapshot-every must be positive")
+    if args.stop_when_stable <= 0:
+        raise SystemExit("--stop-when-stable must be positive")
+    if args.stop_after_match < 0:
+        raise SystemExit("--stop-after-match must not be negative")
+    if args.require_stop and not args.stop_when_wram:
+        raise SystemExit("--require-stop needs at least one --stop-when-wram condition")
     if not args.rom.is_file():
         raise SystemExit(f"ROM does not exist: {args.rom.resolve()}")
     if args.load_state and not args.load_state.is_file():
@@ -393,6 +486,7 @@ def main() -> None:
 
     core_path = resolve_core_path(args.core)
     pulses = parse_pulses(args.pulse) + parse_repeats(args.repeat)
+    stop_conditions = parse_wram_conditions(args.stop_when_wram)
     core_sha256 = hashlib.sha256(core_path.read_bytes()).hexdigest()
     # Some Snes9x builds write diagnostics with C stdio. Keep stdout reserved
     # for the machine-readable report while still exposing that output on stderr.
@@ -451,6 +545,10 @@ def main() -> None:
     wram_size = core.retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM)
 
     final_state_sha256 = None
+    stop_matched = False
+    stop_match_frame = None
+    stable_frames = 0
+    final_condition_values = []
     try:
         for frame in range(args.frames + 1):
             frontend.frame = frame
@@ -487,6 +585,23 @@ def main() -> None:
                         "stateSha256": state_hash(core, serialize_size, serialize_buffer),
                     }
                 )
+            if stop_conditions and stop_match_frame is None:
+                wram_pointer = core.retro_get_memory_data(RETRO_MEMORY_SYSTEM_RAM)
+                wram_size = core.retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM)
+                if wram_pointer and wram_size:
+                    memory = ctypes.string_at(wram_pointer, wram_size)
+                    final_condition_values = []
+                    all_match = True
+                    for condition in stop_conditions:
+                        actual, matched = read_wram_condition(memory, condition)
+                        final_condition_values.append({**condition, "actual": actual, "matched": matched})
+                        all_match = all_match and matched
+                    stable_frames = stable_frames + 1 if all_match else 0
+                    if stable_frames >= args.stop_when_stable:
+                        stop_match_frame = frame
+            if stop_match_frame is not None and frame - stop_match_frame >= args.stop_after_match:
+                stop_matched = True
+                break
             if frontend.shutdown:
                 break
         if args.save_state_output:
@@ -519,6 +634,15 @@ def main() -> None:
         },
         "framesRequested": args.frames,
         "framesRun": frame + 1,
+        "stop": {
+            "conditions": final_condition_values,
+            "stableFramesRequired": args.stop_when_stable,
+            "stableFramesObserved": stable_frames,
+            "matchedAtFrame": stop_match_frame,
+            "framesAfterMatch": args.stop_after_match,
+            "matched": stop_matched,
+            "required": args.require_stop,
+        } if stop_conditions else None,
         "snapshotEvery": args.snapshot_every,
         "fps": av_info.timing.fps,
         "geometry": [av_info.geometry.base_width, av_info.geometry.base_height],
@@ -536,6 +660,14 @@ def main() -> None:
     ctypes.CDLL(None).fflush(None)
     with os.fdopen(sys_stdout_fd, "w") as report_stdout:
         report_stdout.write(report_json)
+    if args.require_stop and not stop_matched:
+        observed = ", ".join(
+            f"${int(condition['address']):04X}={int(condition['actual']):0{int(condition['width']) * 2}X}"
+            for condition in final_condition_values
+        ) or "WRAM unavailable"
+        raise SystemExit(
+            f"WRAM stop conditions did not match within {args.frames + 1} frames ({observed})"
+        )
 
 
 if __name__ == "__main__":

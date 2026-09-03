@@ -5,23 +5,37 @@ const WRAM_SIZE = 0x20000;
 // Japanese Slap Stick addresses. In particular, its player-position globals
 // are two bytes earlier than the corresponding US Robotrek symbols.
 export const WRAM = Object.freeze({
+  mapLoadBusy: 0x0544,
+  mapLoadComplete: 0x056a,
+  task2Function: 0x00d3,
   nextMap: 0x05a6,
   currentMap: 0x05a8,
   currentMapTimesTwo: 0x05aa,
   robotAvailability: 0x060e,
+  money: 0x06e6,
   partyMemberA: 0x0676,
   partyMemberB: 0x0678,
+  playerNameDialogue: 0x0612,
+  playerNameMenu: 0x0642,
+  robotNameDialogue: 0x061e,
+  robotNameMenu: 0x064e,
+  level: 0x0686,
+  statBudget: 0x0688,
   activeRobot: 0x070a,
   battleOrder: 0x070c,
   eventFlags: 0x0730,
   playerX: 0x0ba4,
   playerY: 0x0ba6,
   playerDirection: 0x0ba8,
+  battleReturnMap: 0x05c2,
+  battleEncounter: 0x05c6,
+  battleMode: 0x05c8,
+  battleReady: 0x0bbe,
   playerTileX: 0x0bb0,
   playerTileY: 0x0bb2,
   playerSnappedX: 0x0bb4,
   playerSnappedY: 0x0bb6,
-  playerActorSlot: 0x0eee,
+  playerActorSlot: 0x0eea,
   inventory: 0x4102,
 });
 
@@ -58,10 +72,16 @@ const TOP_LEVEL_FIELDS = new Set([
   "room",
   "position",
   "direction",
+  "entry",
+  "money",
   "flags",
   "inventory",
+  "player",
   "party",
+  "launch",
+  "steps",
   "interaction",
+  "wram",
 ]);
 
 export class ScenarioError extends Error {
@@ -275,6 +295,50 @@ function normalizeParty(value) {
   };
 }
 
+function normalizePlayer(value) {
+  if (value === undefined) return undefined;
+  assertPlainObject(value, "player");
+  const allowed = new Set(["name", "level"]);
+  for (const key of Object.keys(value)) {
+    if (!allowed.has(key)) throw new ScenarioError(`Unknown player field ${JSON.stringify(key)}`);
+  }
+  if (value.name !== undefined &&
+      (typeof value.name !== "string" || !/^[A-Za-z]{1,5}$/.test(value.name))) {
+    throw new ScenarioError("player.name must contain 1 through 5 ASCII letters");
+  }
+  if (value.name === undefined && value.level === undefined) {
+    throw new ScenarioError("player needs name or level");
+  }
+  return {
+    name: value.name,
+    level: value.level === undefined
+      ? undefined
+      : parseInteger(value.level, "player.level", 1, 99),
+  };
+}
+
+function encodeMenuName(name) {
+  return [...name].map((character) => {
+    const code = character.codePointAt(0);
+    if (code >= 0x41 && code <= 0x5a) return code - 0x41 + 0x21;
+    return code - 0x61 + 0xa1;
+  });
+}
+
+function encodeDialogueName(name) {
+  const encoded = [];
+  let lowercase = false;
+  for (const character of name) {
+    const code = character.codePointAt(0);
+    const nextLowercase = code >= 0x61 && code <= 0x7a;
+    if (nextLowercase !== lowercase) encoded.push(nextLowercase ? 0xd4 : 0xd5);
+    lowercase = nextLowercase;
+    encoded.push((nextLowercase ? code - 0x61 : code - 0x41) + 0x21);
+  }
+  encoded.push(0xd5, 0xcc);
+  return encoded;
+}
+
 export function normalizeInteraction(value) {
   if (value === undefined || value === null || value === false) return undefined;
   let interaction = value;
@@ -294,6 +358,102 @@ export function normalizeInteraction(value) {
   };
 }
 
+export function normalizeSteps(value) {
+  if (value === undefined) return [];
+  if (!Array.isArray(value)) throw new ScenarioError("scenario.steps must be an array");
+  return value.map((step, index) => {
+    if (typeof step === "string") return normalizeInteraction(step);
+    assertPlainObject(step, `steps[${index}]`);
+    if (Object.hasOwn(step, "waitFrames")) {
+      if (Object.keys(step).length !== 1) {
+        throw new ScenarioError(`steps[${index}].waitFrames cannot be combined with an input`);
+      }
+      return {
+        waitFrames: parseInteger(step.waitFrames, `steps[${index}].waitFrames`, 1, 60000),
+      };
+    }
+    return normalizeInteraction(step);
+  });
+}
+
+export function normalizeLaunch(value) {
+  if (value === undefined) {
+    return { ready: "map", settleFrames: 120, timeoutFrames: 3600 };
+  }
+  assertPlainObject(value, "scenario.launch");
+  const allowed = new Set(["ready", "settleFrames", "timeoutFrames"]);
+  for (const key of Object.keys(value)) {
+    if (!allowed.has(key)) throw new ScenarioError(`Unknown launch field ${JSON.stringify(key)}`);
+  }
+  const ready = value.ready ?? "map";
+  if (ready !== "map" && ready !== "field") {
+    throw new ScenarioError('launch.ready must be "map" or "field"');
+  }
+  return {
+    ready,
+    settleFrames: parseInteger(value.settleFrames ?? 120, "launch.settleFrames", 0, 60000),
+    timeoutFrames: parseInteger(value.timeoutFrames ?? 3600, "launch.timeoutFrames", 1, 60000),
+  };
+}
+
+function normalizeWramWrites(value) {
+  if (value === undefined) return [];
+  if (!Array.isArray(value)) throw new ScenarioError("scenario.wram must be an array");
+  return value.map((write, index) => {
+    assertPlainObject(write, `wram[${index}]`);
+    const allowed = new Set(["address", "width", "value"]);
+    for (const key of Object.keys(write)) {
+      if (!allowed.has(key)) throw new ScenarioError(`Unknown wram[${index}] field ${JSON.stringify(key)}`);
+    }
+    if (write.address === undefined || write.value === undefined) {
+      throw new ScenarioError(`wram[${index}] needs address and value`);
+    }
+    const width = parseInteger(write.width ?? 2, `wram[${index}].width`, 1, 2);
+    const address = parseInteger(write.address, `wram[${index}].address`, 0, WRAM_SIZE - width);
+    const maximum = width === 1 ? 0xff : 0xffff;
+    const writeValue = parseInteger(write.value, `wram[${index}].value`, 0, maximum);
+    return { address, width, value: writeValue };
+  });
+}
+
+function validateEntry(value) {
+  if (value === undefined || value === "field") return { type: "field" };
+  assertPlainObject(value, "entry");
+  const allowed = new Set(["type", "encounter", "ready", "settleFrames", "timeoutFrames"]);
+  for (const key of Object.keys(value)) {
+    if (!allowed.has(key)) throw new ScenarioError(`Unknown entry field ${JSON.stringify(key)}`);
+  }
+  const type = value.type ?? "field";
+  if (type !== "field" && type !== "battle") {
+    throw new ScenarioError('entry.type must be "field" or "battle"');
+  }
+  if (type === "field") {
+    if (Object.keys(value).some((key) => key !== "type")) {
+      throw new ScenarioError("A field entry cannot contain battle options");
+    }
+    return { type };
+  }
+  if (value.encounter === undefined) throw new ScenarioError("A battle entry needs encounter");
+  const ready = value.ready ?? "command";
+  if (ready !== "loaded" && ready !== "command") {
+    throw new ScenarioError('entry.ready must be "loaded" or "command"');
+  }
+  return {
+    type,
+    encounter: value.encounter,
+    ready,
+    // A command-ready battle is already interactive at the matching frame;
+    // even a short delay can let a fast encounter resolve autonomously.
+    settleFrames: parseInteger(
+      value.settleFrames ?? (ready === "command" ? 0 : 30),
+      "entry.settleFrames",
+      0,
+      60000,
+    ),
+    timeoutFrames: parseInteger(value.timeoutFrames ?? 3600, "entry.timeoutFrames", 1, 60000),
+  };
+}
+
 export function validateScenario(scenario) {
   assertPlainObject(scenario, "scenario");
   for (const key of Object.keys(scenario)) {
@@ -302,8 +462,9 @@ export function validateScenario(scenario) {
   if (typeof scenario.name !== "string" || !/^[a-z0-9][a-z0-9._-]*$/i.test(scenario.name)) {
     throw new ScenarioError("scenario.name must be a filename-safe name");
   }
-  if (typeof scenario.checkpoint !== "string" || !scenario.checkpoint.trim()) {
-    throw new ScenarioError("scenario.checkpoint must name a base checkpoint");
+  if (scenario.checkpoint !== undefined &&
+      (typeof scenario.checkpoint !== "string" || !scenario.checkpoint.trim())) {
+    throw new ScenarioError("scenario.checkpoint must name a non-empty base checkpoint");
   }
   for (const field of ["$schema", "description", "catalog", "rom"]) {
     if (scenario[field] !== undefined && typeof scenario[field] !== "string") {
@@ -319,6 +480,11 @@ export function validateScenario(scenario) {
     throw new ScenarioError(`Unsupported scenario version ${JSON.stringify(scenario.version)}`);
   }
   normalizeInteraction(scenario.interaction);
+  normalizeLaunch(scenario.launch);
+  normalizePlayer(scenario.player);
+  normalizeSteps(scenario.steps);
+  normalizeWramWrites(scenario.wram);
+  validateEntry(scenario.entry);
   return scenario;
 }
 
@@ -326,7 +492,7 @@ function applyScenarioToRam(
   ram,
   scenario,
   catalog = {},
-  { allowMapChange = false, updateLiveActor = true } = {},
+  { allowMapChange = false, updateLiveActor = true, initializeRobots = false } = {},
 ) {
   validateScenario(scenario);
   assertPlainObject(catalog, "catalog");
@@ -337,6 +503,7 @@ function applyScenarioToRam(
   const flags = catalogIndex(catalog.flags, "flags");
   const items = catalogIndex(catalog.items, "items");
   const partyMembers = catalogIndex(catalog.partyMembers, "partyMembers");
+  const encounters = catalogIndex(catalog.encounters, "encounters");
   const changes = [];
 
   const readByte = (offset) => ram.readUInt8(offset);
@@ -355,9 +522,9 @@ function applyScenarioToRam(
   };
 
   let requestedMap;
-  if (scenario.map !== undefined) requestedMap = resolveReference(scenario.map, maps, "map", 0xffff);
+  if (scenario.map !== undefined) requestedMap = resolveReference(scenario.map, maps, "map", 0x01f3);
   if (scenario.room !== undefined) {
-    const room = resolveReference(scenario.room, maps, "room", 0xffff);
+    const room = resolveReference(scenario.room, maps, "room", 0x01f3);
     if (requestedMap !== undefined && requestedMap !== room) {
       throw new ScenarioError(`scenario.map and scenario.room resolve to different map IDs (${formatHex(requestedMap)} and ${formatHex(room)})`);
     }
@@ -419,6 +586,36 @@ function applyScenarioToRam(
       }
       writeWord(actorSlot + 0x0c, value, "direction.actor");
     }
+  }
+
+  if (scenario.money !== undefined) {
+    const amount = parseInteger(scenario.money, "money", 0, 99999);
+    const digits = String(amount).padStart(5, "0");
+    const packed = [
+      Number(digits[4]) | (Number(digits[3]) << 4),
+      Number(digits[2]) | (Number(digits[1]) << 4),
+      Number(digits[0]),
+    ];
+    packed.forEach((value, index) => writeByte(WRAM.money + index, value, "money"));
+  }
+
+  const player = normalizePlayer(scenario.player);
+  if (player?.name) {
+    const encoded = encodeMenuName(player.name);
+    const dialogueEncoded = encodeDialogueName(player.name);
+    const dialogue = Buffer.alloc(12);
+    Buffer.from(dialogueEncoded).copy(dialogue);
+    const menu = Buffer.alloc(12);
+    menu.fill(0x20, 0, 5);
+    Buffer.from(encoded).copy(menu);
+    for (let index = 0; index < 12; index += 1) {
+      writeByte(WRAM.playerNameDialogue + index, dialogue[index], `player.name.dialogue[${index}]`);
+      writeByte(WRAM.playerNameMenu + index, menu[index], `player.name.menu[${index}]`);
+    }
+  }
+  if (player?.level !== undefined) {
+    writeWord(WRAM.level, player.level, "player.level");
+    writeWord(WRAM.statBudget, 30 + 10 * player.level, "player.statBudget");
   }
 
   if (scenario.flags !== undefined) {
@@ -489,10 +686,56 @@ function applyScenarioToRam(
       robots = party.robots.map((robot, index) => parseInteger(robot, `party.robots[${index}]`, 1, 3));
       if (new Set(robots).size !== robots.length) throw new ScenarioError("party.robots cannot contain duplicates");
       const mask = robots.reduce((result, robot) => result | (1 << (robot - 1)), 0);
-      writeWord(WRAM.robotAvailability, (readWord(WRAM.robotAvailability) & ~0x0007) | mask, "party.robots");
+      writeWord(
+        WRAM.robotAvailability,
+        (readWord(WRAM.robotAvailability) & ~0x0707) | mask | (mask << 8),
+        "party.robots",
+      );
+      if (initializeRobots) {
+        const level = player?.level ?? 1;
+        const energy = 30 + 10 * level;
+        const names = ["Alpha", "Beta", "Gamma"];
+        for (const robot of robots) {
+          const wordIndex = robot * 2;
+          writeWord(0x0688 + wordIndex, energy, `party.robots[${robot}].energy`);
+          writeWord(0x068e + wordIndex, energy, `party.robots[${robot}].maxEnergy`);
+          for (const address of [0x0694, 0x069a, 0x06a0, 0x06a6]) {
+            writeWord(address + wordIndex, 0, `party.robots[${robot}].stats`);
+          }
+          for (const [address, value, slot] of [
+            [0x06c4, 0x0101, "right"],
+            [0x06ca, 0x0118, "left"],
+            [0x06d0, 0x011e, "back"],
+            [0x06d6, 0x002d, "movement"],
+          ]) {
+            writeWord(address + wordIndex, value, `party.robots[${robot}].equipment.${slot}`);
+          }
+          const menuName = encodeMenuName(names[robot - 1]);
+          const dialogueName = encodeDialogueName(names[robot - 1]);
+          const dialogue = Buffer.alloc(12);
+          const menu = Buffer.alloc(12);
+          Buffer.from(dialogueName).copy(dialogue);
+          menu.fill(0x20, 0, 5);
+          Buffer.from(menuName).copy(menu);
+          for (let byte = 0; byte < 12; byte += 1) {
+            writeByte(
+              WRAM.robotNameDialogue + (robot - 1) * 12 + byte,
+              dialogue[byte],
+              `party.robots[${robot}].name.dialogue[${byte}]`,
+            );
+            writeByte(
+              WRAM.robotNameMenu + (robot - 1) * 12 + byte,
+              menu[byte],
+              `party.robots[${robot}].name.menu[${byte}]`,
+            );
+          }
+        }
+      }
     }
-    if (party.activeRobot !== undefined) {
-      const active = parseInteger(party.activeRobot, "party.activeRobot", 1, 3);
+    const activeRobot = party.activeRobot ??
+      (initializeRobots && robots?.length ? robots[0] : undefined);
+    if (activeRobot !== undefined) {
+      const active = parseInteger(activeRobot, "party.activeRobot", 1, 3);
       if (robots !== undefined && !robots.includes(active)) {
         throw new ScenarioError(`party.activeRobot ${active} is not included in party.robots`);
       }
@@ -508,12 +751,96 @@ function applyScenarioToRam(
     }
   }
 
+  for (const [index, write] of normalizeWramWrites(scenario.wram).entries()) {
+    const field = `wram[${index}]`;
+    if (write.width === 1) writeByte(write.address, write.value, field);
+    else writeWord(write.address, write.value, field);
+  }
+
+  const entry = validateEntry(scenario.entry);
+  if (entry.type === "battle") {
+    entry.encounter = resolveReference(entry.encounter, encounters, "encounter", 0xffff);
+  }
+
   return {
     ram,
     changes,
     currentMap: readWord(WRAM.currentMap),
     requestedMap,
+    entry,
     interaction: normalizeInteraction(scenario.interaction),
+    launch: normalizeLaunch(scenario.launch),
+    steps: normalizeSteps(scenario.steps),
+  };
+}
+
+export function resolveBattleEntry(romInput, returnMapInput, encounterInput) {
+  const rom = Buffer.from(romInput);
+  const returnMap = parseInteger(returnMapInput, "battle return map", 0, 0xffff);
+  const battleMapTable = 0x01ad3b;
+  if (returnMap > 0x01c1 || battleMapTable + returnMap * 2 + 2 > rom.length) {
+    throw new ScenarioError(`Map ${formatHex(returnMap)} has no normal battle-map lookup entry`);
+  }
+  const battleMap = rom.readUInt16LE(battleMapTable + returnMap * 2);
+  if (battleMap === 0) {
+    throw new ScenarioError(`Map ${formatHex(returnMap)} cannot start a normal encounter`);
+  }
+  const encounter = parseInteger(encounterInput, "entry.encounter", 0, 0xd1);
+  const encounterPointer = rom.readUInt16LE(0x038000 + encounter * 2);
+  if (encounterPointer === 0) {
+    throw new ScenarioError(`Encounter ${formatHex(encounter, 2)} has no ROM definition`);
+  }
+  return { battleMap, returnMap, encounter };
+}
+
+export function applyBattleEntryToState(input, romInput, entry) {
+  const parsed = parseSnes9xState(input);
+  const ram = parsed.ram;
+  if (!entry || entry.type !== "battle") {
+    throw new ScenarioError("applyBattleEntryToState needs a normalized battle entry");
+  }
+  const resolved = resolveBattleEntry(
+    romInput,
+    ram.readUInt16LE(WRAM.currentMap),
+    entry.encounter,
+  );
+  const { battleMap, returnMap, encounter } = resolved;
+  const actorSlot = ram.readUInt16LE(WRAM.playerActorSlot);
+  if (actorSlot < 0x1000 || actorSlot >= 0x2000) {
+    throw new ScenarioError(
+      `Battle entry needs a loaded field player, but player actor slot is ${formatHex(actorSlot)}`,
+    );
+  }
+  const availabilityMask = ram.readUInt16LE(WRAM.robotAvailability) & 0x0007;
+  if (availabilityMask === 0) {
+    throw new ScenarioError("Battle entry needs at least one available robot in party.robots");
+  }
+
+  const changes = [];
+  const writeWord = (address, value, field) => {
+    const before = ram.readUInt16LE(address);
+    if (before === value) return;
+    ram.writeUInt16LE(value, address);
+    changes.push({ field, offset: formatHex(address), width: 2, before, after: value });
+  };
+  writeWord(WRAM.battleReturnMap, returnMap, "entry.battle.returnMap");
+  writeWord(WRAM.nextMap, battleMap, "entry.battle.map");
+  writeWord(0x05b6, 0, "entry.battle.direction");
+  writeWord(0x05ba, 0x0120, "entry.battle.x");
+  writeWord(0x05be, 0x0080, "entry.battle.y");
+  writeWord(WRAM.battleEncounter, encounter, "entry.battle.encounter");
+  for (const address of [0x05ca, 0x05cc, 0x05ce, 0x05d0, 0x05d2]) {
+    writeWord(address, 0, "entry.battle.runtime");
+  }
+  writeWord(WRAM.battleMode, 0x8000, "entry.battle.mode");
+  writeWord(WRAM.task2Function, 0x84cb, "entry.battle.scheduler");
+  return {
+    state: parsed.state,
+    changes,
+    battleMap,
+    returnMap,
+    encounter,
+    availabilityMask,
   };
 }
 
@@ -524,22 +851,40 @@ export function applyScenarioToState(input, scenario, catalog = {}) {
 }
 
 export function applyScenarioToNewGameRam(scenario, catalog = {}) {
+  // Validate the caller's object before adding launcher-only defaults so an
+  // invalid value (for example player: null) cannot be hidden by the merge.
+  validateScenario(scenario);
   const initialRam = Buffer.alloc(WRAM_SIZE);
   initialRam.writeUInt16LE(11, WRAM.currentMap);
   initialRam.writeUInt16LE(22, WRAM.currentMapTimesTwo);
   initialRam.writeUInt16LE(48, WRAM.playerX);
   initialRam.writeUInt16LE(640, WRAM.playerY);
   initialRam.writeUInt16LE(0, WRAM.playerDirection);
+  initialRam.writeUInt16LE(0x00cc, 0x061e);
+  initialRam.writeUInt16LE(0x00cc, 0x062a);
+  initialRam.writeUInt16LE(0x00cc, 0x0636);
+  initialRam.writeUInt16LE(1, 0x0608);
+  initialRam.writeUInt16LE(0x0070, 0x060a);
+  initialRam.writeUInt16LE(0x0070, 0x060c);
   initialRam.writeUInt16LE(2, WRAM.activeRobot);
   initialRam.writeUInt16LE(1, WRAM.battleOrder);
   initialRam.writeUInt16LE(2, WRAM.battleOrder + 2);
   initialRam.writeUInt16LE(3, WRAM.battleOrder + 4);
   initialRam.writeUInt16LE(0x0087, WRAM.inventory + INVENTORY_TRASH_SLOT * 2);
+  initialRam.writeUInt16LE(0x0087, 0x4220);
 
   const ram = Buffer.from(initialRam);
-  const applied = applyScenarioToRam(ram, scenario, catalog, {
+  // The normal name-entry screen is deliberately bypassed by checkpoint-free
+  // launches, so provide its English default unless the scenario supplies a
+  // name. Preserve independent player settings such as level while doing so.
+  const launchScenario = {
+    ...scenario,
+    player: { name: "Rask", ...(scenario.player ?? {}) },
+  };
+  const applied = applyScenarioToRam(ram, launchScenario, catalog, {
     allowMapChange: true,
     updateLiveActor: false,
+    initializeRobots: true,
   });
   return { ...applied, initialRam };
 }

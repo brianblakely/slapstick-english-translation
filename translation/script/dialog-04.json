@@ -21,7 +21,7 @@
     "offset": "04E3A3",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0][TPL:4]やったじゃないの![NAM:0]![N]トップニュースになるわ![PAU:64][CLR][DLY:6][SFX:0]見出しは こうよ![N][PAL:2]ロココ町の少年 世界をすくう[N][PAL:0][PAU:3C]どう?!いいでしょう![PAU:78][CLR][DLY:6][SFX:0][TPL:3]···なんだ それ[N][PAU:3C]お前 本当に記者なの?[PAU:B4][ESC]",
-    "translation": "[CLR][DLY:6][SFX:0][TPL:4]You did it, [NAM:0]! This[N]is front-page news![PAU:64][CLR][DLY:6][SFX:0]Here is the headline:[N][PAL:2]ROCOCO BOY SAVES WORLD[N][PAL:0][PAU:3C]Well? Great, right?![PAU:78][CLR][DLY:6][SFX:0][TPL:3]...What is that? [PAU:3C]Are you[N]really a reporter?[PAU:B4][ESC]"
+    "translation": "[CLR][DLY:6][SFX:0][TPL:4]You did it, [NAM:0]! This is[N]front-page news![PAU:64][CLR][DLY:6][SFX:0]Here is the headline:[N][PAL:2]ROCOCO BOY SAVES WORLD[N][PAL:0][PAU:3C]Well? Great, right?![PAU:78][CLR][DLY:6][SFX:0][TPL:3]...What is that? [PAU:3C]Are you[N]really a reporter?[PAU:B4][ESC]"
   },
   {
     "offset": "04E427",

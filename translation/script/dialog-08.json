@@ -87,7 +87,7 @@
     "offset": "0886B4",
     "kind": "dialog",
     "source": "[DEF][TPL:9]おお [NAM:0]くん!助かったよ![N]君は 命の恩人だ![FIN]そうそう 石だったな[N]この先の部屋に [PAL:2]だんろ[PAL:0]があってな[N]そこから かくし部屋に[N]行くことができる[FIN]君の石は そこにしまってある[N]あんな いまいましい石など[N]はやく 片づけてしまってくれ[N][PAU:1E]やれやれ ひどい目にあったよ˳[END]",
-    "translation": "[DEF][TPL:9][NAM:0]! You saved me! I[N]owe you my life![FIN]Ah, yes. The stone. The[N]next room has a [PAL:2]fireplace[PAL:0][N]leading to a secret[N]chamber.[FIN]Your stone is stored[N]there. Take that wretched[N]thing away.[FIN][PAU:1E]What an awful experience.[END]"
+    "translation": "[DEF][TPL:9][NAM:0]! You saved me! I owe[N]you my life![FIN]Ah, yes. The stone. The[N]next room has a [PAL:2]fireplace[PAL:0][N]leading to a secret[N]chamber.[FIN]Your stone is stored[N]there. Take that wretched[N]thing away.[FIN][PAU:1E]What an awful experience.[END]"
   },
   {
     "offset": "088754",
@@ -1287,13 +1287,13 @@
     "offset": "08E6B0",
     "kind": "dialog",
     "source": "[DEF][TPL:E][NAM:0]樣[N]ようこそ おいでくださいました[N]きっと 来てくださると[N]おもっていましたわ[FIN]くわしい話は[N]じいが してくれます[N]どうぞ じいに聞いてくださいませ˳[END]",
-    "translation": "[DEF][TPL:E][NAM:0], welcome. I knew[N]you would come.[FIN]Jeeves will explain the[N]details. Please speak with[N]him.[END]"
+    "translation": "[DEF][TPL:E][NAM:0], welcome. I knew you[N]would come.[FIN]Jeeves will explain the[N]details. Please speak with[N]him.[END]"
   },
   {
     "offset": "08E705",
     "kind": "dialog",
     "source": "[DEF][TPL:E]本当に [NAM:0]樣は[N]ふしぎな方で いらっしゃるのですね[N]なぜ あんなものをお持ちでしたの?[END]",
-    "translation": "[DEF][TPL:E]You truly are mysterious,[N][NAM:0]. Why did you[FIN]possess something like[N]that?[END]"
+    "translation": "[DEF][TPL:E]You truly are mysterious,[N][NAM:0]. Why did you possess[N]something like that?[END]"
   },
   {
     "offset": "08E73A",
@@ -1335,7 +1335,7 @@
     "offset": "08EB2F",
     "kind": "dialog",
     "source": "[DEF][NAM:0]樣 [PAU:1E]早速ですが[N][TPL:0]をおあずかりして[N]よろしいですか?[FIN]この[TPL:0]は[N]時の流れをうつしだすことのできる[N]発明品だと 聞いています[FIN]この[TPL:0]から あの要塞の[N]弱点を うつしだし[N]あれに 対こうできるものを[N]発明することができるはずです[FIN][N] [NAM:0]は[N][PAL:2] 石1[PAL:0]を わたした[FIN][N] [NAM:0]は[N][PAL:2] 石2[PAL:0]を わたした[FIN][N] [NAM:0]は[N][PAL:2] 石3[PAL:0]を わたした[FIN]···おや?[N][PAU:1E]かわったものを おもちですね[N]その[PAL:2]スクラップA[PAL:0]ですよ[N][TPL:1A]の スクラップですね[FIN]私は ロボットの研究もしてましてね[N]参考に 見せていただけませんか?[N] ちょっとだけだよ[N] ······やだ",
-    "translation": "[DEF][NAM:0], may we take[N][TPL:0] now?[FIN]I am told this invention[N]can reveal the flow of[N]time.[FIN]It should show us a[N]weakness in that fortress,[N]allowing us to invent a[N]way to oppose it.[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 1[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 2[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 3[PAL:0].[FIN]...Oh? [PAU:1E]You carry something[N]unusual. That [PAL:2]Scrap A[PAL:0].[FIN]It came from a [TPL:1A], yes?[FIN]I also study robots. May I[N]examine it for reference?[FIN] Just for a little while[N] ......No"
+    "translation": "[DEF][NAM:0], may we take [TPL:0][N]now?[FIN]I am told this invention[N]can reveal the flow of[N]time.[FIN]It should show us a[N]weakness in that fortress,[N]allowing us to invent a[N]way to oppose it.[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 1[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 2[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 3[PAL:0].[FIN]...Oh? [PAU:1E]You carry something[N]unusual. That [PAL:2]Scrap A[PAL:0].[FIN]It came from a [TPL:1A], yes?[FIN]I also study robots. May I[N]examine it for reference?[FIN] Just for a little while[N] ......No"
   },
   {
     "offset": "08EC6F",

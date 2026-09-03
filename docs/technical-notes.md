@@ -150,6 +150,15 @@ Console command-table slot `0C` at `0x04ACEA` points through a small trampoline
 at `0x049FFE` to the redirect routine at `0x180000`. The console interpreter's
 existing bank-preservation behavior then resumes the caller correctly.
 
+Some console `TBL` and `FIL` commands keep only the 16-bit address of the
+stock name/icon selector at `0x01E9D6`. When a translated string runs from an
+expanded bank, those commands read through that bank instead. The build reserves
+the corresponding range and mirrors the selector into banks `$98`-`$9F`, keeping
+dynamic player names and menu/icon selections intact across equipment, robot,
+battle-command, and exit-menu paths. Shared robot point-allocation and Program
+panels reached through `STR` remain inline at their stock addresses so the
+console interpreter never has to follow two relocation redirects at once.
+
 ## Dialogue font and layout
 
 The original dialogue alphabet is stored as 16x16, four-tile 2bpp glyphs at
@@ -170,7 +179,8 @@ binary patches in `dist/LICENSE.spleen`.
 The base-font byte `0x1F` draws the Japanese circular full stop, so the dialogue
 encoder never uses it for an English period. ASCII `.` always selects the
 alternate-font Western dot at `0x7E`; console text uses its Western dot at
-`0xFE`.
+`0xFE`. Alternate-font cell `0x76` is reserved for the compact `A` marker that
+menus address directly, so it is not available to the dialogue encoder.
 
 Dialogue commands `NAM`, `TBL`, `NUM`, `STR`, `DEC`, `TPL`, and `E2` insert text
 through stock runtime routines which return in base-font mode. The encoder emits
@@ -203,13 +213,49 @@ its labels. Message-speed choices occupy three-column slots beginning at
 columns 9, 15, and 21; sound choices occupy four-column slots beginning at
 columns 9 and 15. Button action labels have 14 columns before the fixed A/B/X/Y
 choices. The script validator enforces these constraints so text, selection
-palettes, and cursors remain aligned.
+palettes, and cursors remain aligned. New games initialize with high message
+speed and stereo sound; the duplicated message-speed runtime setting is patched
+at both initialization sites.
 
-Console boxes advance one eight-pixel cell per Latin character. The main-menu
-caption has eight cells, and the selected-item header has nine; the latter is
-why inventory names use compact menu forms such as `THNDR SWD` and `CHAM LENS`.
-The validator checks every literal console line against its active `BOX`, plus
-the complete item-name, machine-option, main-caption, and battle-target tables.
+Console boxes advance one eight-pixel cell per Latin character. Main-menu and
+Invention Machine captions have eight cells. Battle attack names also have eight
+cells before their separate level suffix, while the selected-item header has
+nine. Those limits are why the tables use compact forms such as `THDR SWD` and
+`CHAM LENS`. The validator checks every literal console line against its active
+`BOX`, plus the complete item-name, machine-option, main-caption, and
+battle-target tables.
+
+Battle damage uses two special 8x8 tiles for the zero-damage indicator. The
+build expands the stock Quintet-LZ battle bitmap at `0x132D06`, replaces the
+Japanese `スカ` tiles with paired `MI`/`SS` glyphs, recompresses the bitmap into
+its original slot, and verifies an exact decompression round trip.
+
+## Checkpoint-free scenario entry
+
+Scenario ROMs reuse the engine's real reset and map-loading path. The generator
+changes the reset destination operand at `0x0085DC` to title map `$0004`, hooks
+that map's director at `0x04E705`, and relocates the stock new-game initializer
+from `0x04CB0B` into unused expanded-ROM code space. A small wrapper applies the
+scenario's WRAM values, calls the stock level/stat derivation at `$87F576`,
+mirrors map, direction, and position into the persistent load block, and jumps
+to the normal new-game map transition at `$C4B40B`. Map `$0004` has a separate
+one-shot return path so targeting the title itself cannot recurse through the
+hook. All three original code regions are fingerprinted before patching and the
+temporary ROM checksum is regenerated.
+
+The libretro harness can stop on ANDed one-, two-, or four-byte WRAM
+comparisons. The scenario runner latches the transient `$056A == $70FF` map-
+load completion signal, verifies `$05A8`/`$05A6`, optionally waits for the real
+player actor pointer at `$0EEA`, and then runs configurable settle frames before
+serializing. This makes field, actorless, menu, and cutscene readiness explicit
+without baking emulator checkpoints into the repository.
+
+Direct battle scenarios start from that initialized field state, resolve the
+battle map through the field table at ROM `0x01AD3B`, validate the encounter
+definition table at `0x038000`, and schedule the stock field-to-battle task at
+WRAM `$00D3`. Command readiness is detected from `$0BBE` and the low byte of
+`$05C8`; the saved state therefore contains the engine-created battle actors
+and resources rather than a fabricated battle map ID.
 
 ## Build verification
 

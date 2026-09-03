@@ -3,7 +3,7 @@
     "offset": "158451",
     "kind": "dialog",
     "source": "[DEF][TPL:2][NAM:0][N][PAU:1E]ちょっと きてくれるか?[END]",
-    "translation": "[DEF][TPL:2][NAM:0]. [PAU:1E]Could you come[N]here a moment?[END]"
+    "translation": "[DEF][TPL:2][NAM:0]. [PAU:1E]Could you come here[N]a moment?[END]"
   },
   {
     "offset": "158466",
@@ -27,7 +27,7 @@
     "offset": "1584CB",
     "kind": "dialog",
     "source": "[DF5][TPL:1]ふふっ ちょっとためしてみたの[N][PAU:A]トランシーバーは[N]ちゃんと 動いてるみたいね[FIN]ついでに セーブしておいたら?[N] セーブしてみる[N] 今は しなくてもいいや",
-    "translation": "[DF5][TPL:1]Hee hee. That was a little[N]test. [PAU:A]Your transceiver[FIN]seems to be working[N]properly.[FIN]Why not save while we are[N]here?[N] Save now[N] Not right now"
+    "translation": "[DF5][TPL:1]Hee hee. That was a little[N]test. [PAU:A]Your transceiver[FIN]seems to be working[N]properly.[FIN]Save while we are here?[N] Save now[N] Not right now"
   },
   {
     "offset": "158525",
@@ -105,7 +105,7 @@
     "offset": "158863",
     "kind": "dialog",
     "source": "[DF5][TPL:1]あらやだ···地しんかしら[N][PAU:28][NAM:0][PAU:1E] 出かけるのはいいけど[N]まだ 無理しないでね˳[END]",
-    "translation": "[DF5][TPL:1]Oh my... Was that an[N]earthquake? [PAU:28][NAM:0], [PAU:1E]you[N]may go out, but please do[FIN]not overdo it.[END]"
+    "translation": "[DF5][TPL:1]Oh my... Was that an[N]earthquake? [PAU:28][NAM:0], [PAU:1E]you may[FIN]go out, but please do not[N]overdo it.[END]"
   },
   {
     "offset": "158896",

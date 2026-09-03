@@ -255,7 +255,7 @@
     "offset": "0A8F95",
     "kind": "dialog",
     "source": "[DF2]さて このたびのボ金で[N]特にご協力いただいた方がいます[N]そちらにいらっしゃいます[N][PAL:2][NAM:0][PAL:0]さんです[END]",
-    "translation": "[DF2]One person gave us[N]particularly generous[N]support. That person is[FIN][PAL:2][NAM:0][PAL:0], standing right[N]over there.[END]"
+    "translation": "[DF2]One person gave us[N]particularly generous[N]support. That person is[FIN][PAL:2][NAM:0][PAL:0], standing right over[N]there.[END]"
   },
   {
     "offset": "0A8FD1",
@@ -1077,7 +1077,7 @@
     "offset": "0AC8BC",
     "kind": "dialog",
     "source": "[DEF][TPL:E][NAM:0]樣[N][PAU:14]ここが 終点ですわ[N][PAU:14]どうも ごくろうさまでした˳[END]",
-    "translation": "[DEF][TPL:E]Sir [NAM:0], [PAU:14]this is the[N]end of the line.[FIN][PAU:14]Thank you for your[N]trouble.[END]"
+    "translation": "[DEF][TPL:E]Sir [NAM:0], [PAU:14]this is the end[N]of the line.[FIN][PAU:14]Thank you for your[N]trouble.[END]"
   },
   {
     "offset": "0AC992",
@@ -1257,7 +1257,7 @@
     "offset": "0AD759",
     "kind": "dialog",
     "source": "[DEF][TPL:E][NAM:0]樣ではありませんか[N][PAU:14][NAM:0]樣も [PAU:14]ガトーに[N]連れてこられたのですか?[FIN]ここは広くて [PAU:14]人がたくさんいて[N][PAU:14]面白い所ですわね[N][PAU:14]こんな 大きな要塞があれば[N][PAU:14]ハッカーなど こわくないですね˳[END]",
-    "translation": "[DEF][TPL:E]Why, Sir [NAM:0]! [PAU:14]Did[N]Gateau bring you here too?[FIN]This is such an[N]interesting place, [PAU:14]so[N]spacious and full of[N]people.[FIN][PAU:14]With a fortress this[N]enormous, [PAU:14]we need not fear[N]the Hackers![END]"
+    "translation": "[DEF][TPL:E]Why, Sir [NAM:0]! [PAU:14]Did Gateau[N]bring you here too?[FIN]This is such an[N]interesting place, [PAU:14]so[N]spacious and full of[N]people.[FIN][PAU:14]With a fortress this[N]enormous, [PAU:14]we need not fear[N]the Hackers![END]"
   },
   {
     "offset": "0AD7D2",
@@ -1480,19 +1480,19 @@
     "offset": "0AEB15",
     "kind": "dialog",
     "source": "[DEF][TPL:1][NAM:0][N][PAU:1E]話はきいてたわ ガトーの後を[N]追うつもりなんでしょ?[FIN]いまさら 止めてもムダね[N][PAU:28]ひとりだちしたばかりのころは[N]まだ たよりなかったけど[N]少しの間で りっぱになったわね[FIN]この先 何があるかわからないわ[N]セーブしておいたらどう?[N] セーブしておく[N] ううん いいや",
-    "translation": "[DEF][TPL:1][NAM:0]. [PAU:1E]I heard[N]everything. You mean to[N]follow Gateau, right?[FIN]It is too late to stop you[N]now. [PAU:28]When you first set[N]out alone, you still[N]seemed so helpless. You[FIN]have grown in such a short[N]time.[FIN]There is no telling what[N]lies ahead. Would you like[N]to save?[FIN] Save[N] Not now"
+    "translation": "[DEF][TPL:1][NAM:0]. [PAU:1E]I heard everything.[N]You mean to follow Gateau,[N]right?[FIN]It is too late to stop you[N]now. [PAU:28]When you first set[N]out alone, you still[N]seemed so helpless. You[FIN]have grown in such a short[N]time.[FIN]There is no telling what[N]lies ahead. Would you like[N]to save?[FIN] Save[N] Not now"
   },
   {
     "offset": "0AEBB2",
     "kind": "dialog",
     "source": "[CLR][PAU:30]はいっ セーブしたわ[N][::][PAU:3C]ねえ [NAM:0][PAU:1E][N]おとうさまも 私も[N]あなたのことが 大好きよ[FIN]きっと あなたのお友達も[N]あなたを 大切に思ってるわ[N][PAU:28]だから [PAU:14]気をつけて[N][PAU:28]がんばってらっしゃい˳[END]",
-    "translation": "[CLR][PAU:30]All right, your game is[N]saved. [::][PAU:3C]Listen, [NAM:0].[PAU:1E][N]Your father and I both[N]love you very much.[FIN]I am sure your friends[N]treasure you just as much.[N][PAU:28]So please be careful, [PAU:28]and[N]do your very best.[END]"
+    "translation": "[CLR][PAU:30]All right, your game is[N]saved. [::][PAU:3C]Listen, [NAM:0].[PAU:1E] Your[N]father and I both love you[N]very much.[FIN]I am sure your friends[N]treasure you just as much.[N][PAU:28]So please be careful, [PAU:28]and[N]do your very best.[END]"
   },
   {
     "offset": "0AEC23",
     "kind": "dialog",
     "source": "[CLR]···はいっ わかったわ[N][JMP:&string_0AEBB2+M]",
-    "translation": "[CLR]...All right. I[N]understand. [::][PAU:3C]Listen,[N][NAM:0].[PAU:1E] Your father and I[N]both love you very much.[FIN]I am sure your friends[N]treasure you just as much.[N][PAU:28]So please be careful, [PAU:28]and[N]do your very best.[END]"
+    "translation": "[CLR]...All right. I[N]understand. [::][PAU:3C]Listen, [NAM:0].[PAU:1E][N]Your father and I both[N]love you very much.[FIN]I am sure your friends[N]treasure you just as much.[N][PAU:28]So please be careful, [PAU:28]and[N]do your very best.[END]"
   },
   {
     "offset": "0AEC78",
@@ -1582,7 +1582,7 @@
     "offset": "0AF227",
     "kind": "dialog",
     "source": "[DEF][PAL:3]おかあさん:[N][PAL:0][NAM:0]···[PAU:1E]いい名前ね[FIN]よかったわね [NAM:0][N]おとうさんから すてきな[N]おくりものを もらえて···˳[NXT]",
-    "translation": "[DEF][PAL:3]Mother: [PAL:0][NAM:0]...[PAU:1E] That is[N]a lovely name.[FIN]Good for you, [NAM:0]. Your[N]father has given you a[N]wonderful gift...[NXT]"
+    "translation": "[DEF][PAL:3]Mother: [PAL:0][NAM:0]...[PAU:1E] That is a[N]lovely name.[FIN]Good for you, [NAM:0]. Your[N]father has given you a[N]wonderful gift...[NXT]"
   },
   {
     "offset": "0AF269",

@@ -1,0 +1,15 @@
+{
+  "$schema": "./schema.json",
+  "version": 1,
+  "name": "final-dungeon",
+  "description": "Checkpoint-free entry to the Hacker Fortress's opening crystal path.",
+  "map": "final-dungeon",
+  "position": {
+    "x": 48,
+    "y": 640,
+    "direction": "down"
+  },
+  "launch": {
+    "ready": "field"
+  }
+}

@@ -65,9 +65,9 @@ archive can be supplied with `--archive <file>`. The bootstrap requires
 `SNES9X_LIBRETRO_CORE` remain available for an explicitly managed core.
 Each `report.json` records the runner, core, ROM, and loaded-state hashes plus
 the complete input schedule. The source revision is intentionally frozen to the
-Snes9x 1.63 build used by the project's checkpoints; recapture every checkpoint
-before changing that pin. Reusing an output directory replaces its prior
-numbered snapshots, dumps, states, and completion report.
+Snes9x 1.63 build used by the project's legacy checkpoints; recapture those
+checkpoints before changing that pin. Reusing an output directory replaces its
+prior numbered snapshots, dumps, states, and completion report.
 
 ## Nix development workflow
 
@@ -120,15 +120,18 @@ desktop frontend into the headless harness closure.
 Focused test states can be generated from small, reviewable scenario files:
 
 ```sh
-npm run scenario -- invention-machine
+npm run build:rom
+npm run scenario -- chicken-farm
+npm run scenario -- final-dungeon
 ```
 
-The runner can mutate a named local Snes9x checkpoint or build a test ROM whose
-new-game initializer applies the same player position/direction, story flags,
-inventory, and party state. An optional interaction can be sent through the
-deterministic libretro harness before a final state is serialized. See
-[scenarios/README.md](scenarios/README.md) for setup, the JSON format, and
-examples.
+The runner cold-boots directly into the requested map through the stock loader,
+then serializes a state after the scene is ready—no playthrough or captured
+checkpoint is needed. Scenarios can select any numeric map, all named scenes in
+the catalog, direct battles, player position and progression state, and ordered
+controller inputs. Self-booting test ROMs and legacy checkpoint seeds are also
+supported. See [scenarios/README.md](scenarios/README.md) for the JSON format
+and examples.
 
 Run `nix flake check` to build the pinned core and verify that the expected
 `snes9x_libretro.so` is present. Snes9x has a non-commercial license, so

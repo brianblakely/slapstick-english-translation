@@ -3,7 +3,6 @@
   "version": 1,
   "name": "invention-machine-first-use",
   "description": "Ready to exercise the Invention Machine's first-use path.",
-  "checkpoint": "after-mayor",
   "map": "home-r-and-d",
   "position": {
     "x": 128,

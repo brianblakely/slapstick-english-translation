@@ -285,14 +285,14 @@
     "offset": "01D4C5",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:ロボットアイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: robot items[N][PAL:4][E2:4000][PAL:0]: item details",
+    "translation": "[PAL:4]L/R[PAL:0]: Robot items[N][PAL:4][E2:4000][PAL:0]: Item details",
     "reflow": false
   },
   {
     "offset": "01D4F7",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:[NAM:0]アイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items[N][PAL:4][E2:4000][PAL:0]: item details",
+    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items[N][PAL:4][E2:4000][PAL:0]: Item details",
     "reflow": false
   },
   {
@@ -389,7 +389,7 @@
     "offset": "01D710",
     "kind": "dialog",
     "source": "[CLR]ほい きたっ!さっそく[N]作業にとりかかるぞ!!",
-    "translation": "[CLR]All right! I will get to[N]work at once!"
+    "translation": "[CLR]All right! We will get to[N]work at once!"
   },
   {
     "offset": "01D72B",
@@ -815,7 +815,7 @@
     "offset": "01E197",
     "kind": "dialog",
     "source": "戦闘時に [NAM:0]コマンドで[N]使用する ばくだん",
-    "translation": "A bomb used with the[N][NAM:0] command in battle."
+    "translation": "A bomb used with the [NAM:0][N]command in battle."
   },
   {
     "offset": "01E1B5",

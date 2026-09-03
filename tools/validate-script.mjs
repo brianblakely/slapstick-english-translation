@@ -21,15 +21,19 @@ const SINGLE_LINE_CHOICE_LAYOUTS = new Map([
   ["08C7A4", 2],
   ["08E377", 2],
 ]);
+const FIXED_CHOICE_ROWS = new Map([
+  ["079056", { choices: 2, firstRow: 2, description: "post-Surprise Horn choice" }],
+  ["1584CB", { choices: 2, firstRow: 1, description: "first transceiver save choice" }],
+]);
 const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
-  ["01FC95", { columns: 12, description: "Invention Machine option" }],
-  ["01FC9E", { columns: 12, description: "Invention Machine option" }],
-  ["01FCA8", { columns: 12, description: "Invention Machine option" }],
-  ["01FCB1", { columns: 12, description: "Invention Machine option" }],
-  ["01FCBB", { columns: 12, description: "Invention Machine option" }],
-  ["01FCC4", { columns: 12, description: "Invention Machine option" }],
+  ["01FC95", { columns: 8, description: "Invention Machine option" }],
+  ["01FC9E", { columns: 8, description: "Invention Machine option" }],
+  ["01FCA8", { columns: 8, description: "Invention Machine option" }],
+  ["01FCB1", { columns: 8, description: "Invention Machine option" }],
+  ["01FCBB", { columns: 8, description: "Invention Machine option" }],
+  ["01FCC4", { columns: 8, description: "Invention Machine option" }],
   ["01FCCF", { columns: 8, description: "main-menu caption" }],
-  ["01FCD8", { columns: 12, description: "Invention Machine option" }],
+  ["01FCD8", { columns: 8, description: "Invention Machine option" }],
   ["01FCE3", { columns: 8, description: "main-menu caption" }],
   ["01FCED", { columns: 8, description: "main-menu caption" }],
   ["01FCF6", { columns: 8, description: "main-menu caption" }],
@@ -40,6 +44,12 @@ const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
 const CONSOLE_LABEL_RANGES = [
   {
     start: 0x01f8a0,
+    end: 0x01fa02,
+    columns: 8,
+    description: "battle attack name",
+  },
+  {
+    start: 0x01fa0c,
     end: 0x01fc8c,
     columns: 9,
     description: "item name",
@@ -71,6 +81,7 @@ for (const filename of files) {
     if (entry.kind === "dialog") {
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
       validateSingleLineChoices(entry, location);
+      validateFixedChoiceRows(entry, location);
       validateLocationLabel(entry, location);
     }
     if (entry.kind === "console") validateConsoleLayout(entry, location);
@@ -243,6 +254,25 @@ function validateSingleLineChoices(entry, location) {
   }
 }
 
+function validateFixedChoiceRows(entry, location) {
+  const layout = FIXED_CHOICE_ROWS.get(entry.offset);
+  if (!layout) return;
+
+  const finalPage = entry.translation.slice(entry.translation.lastIndexOf("[FIN]") + 5);
+  const lines = finalPage.split("[N]");
+  const choiceLines = lines.slice(-layout.choices);
+  const firstRow = lines.length - layout.choices;
+  if (
+    choiceLines.length !== layout.choices
+    || choiceLines.some((line) => !leadingText(line).startsWith(" "))
+    || firstRow !== layout.firstRow
+  ) {
+    errors.push(
+      `${location}: ${layout.description} choices must begin on row ${layout.firstRow}`,
+    );
+  }
+}
+
 function visibleText(text) {
   return text.replace(/\[[^\]]+\]/g, "");
 }
@@ -348,7 +378,7 @@ function tokenize(text) {
 }
 
 function commandWidth(atom) {
-  if (atom.name === "NAM") return 6;
+  if (atom.name === "NAM") return 5;
   if (atom.name === "TPL") return atom.args[0]?.toUpperCase() === "0" ? 7 : 5;
   if (atom.name === "TBL") return atom.args[0]?.includes("01E6B3") ? 2 : 17;
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);

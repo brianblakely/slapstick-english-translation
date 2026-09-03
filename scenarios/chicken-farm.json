@@ -1,0 +1,15 @@
+{
+  "$schema": "./schema.json",
+  "version": 1,
+  "name": "chicken-farm",
+  "description": "Checkpoint-free field entry for the chicken farm.",
+  "map": "chicken-farm",
+  "position": {
+    "x": 128,
+    "y": 128,
+    "direction": "down"
+  },
+  "launch": {
+    "ready": "field"
+  }
+}

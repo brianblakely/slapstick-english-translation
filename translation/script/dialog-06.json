@@ -819,7 +819,7 @@
     "offset": "06C655",
     "kind": "dialog",
     "source": "[DEF]はて?どこかで会ったような···[N][PAU:1E]え?君が [NAM:0]くんか?[N][PAU:1E]なるほど おとうさんによく似てる[FIN]わしは [PAL:2]フラボノ[N][PAU:1E][PAL:0]君のとうさんの 知人でな[N]とちゅうまで 君のとうさんと[N]いっしょだったのだが···[FIN]アタタ···[N][PAU:1E]ハッカーとかいうやつらに[N]おいかけられて この中へ[N]にげこんだ時に こしをうってな[FIN][PAL:2]すまんが わしのかばんを[N]さがしてきてくれんか?[N][PAL:0]わしの犬が 持っているはずだ[N]白い犬で パセリというんだ[FIN][JMP:&string_06C746+M]",
-    "translation": "[DEF]Have we met somewhere[N]before...? [PAU:1E]What? You're[N][NAM:0]? [PAU:1E]I see. You[N]resemble your father.[FIN]I am [PAL:2]Dentyne[PAL:0], [PAU:1E]an[N]acquaintance of his. I[N]traveled with your father[N]part of the way, but...[FIN]Ouch... [PAU:1E]Those Hackers[N]chased me in here, and I[N]hurt my back while[N]fleeing.[FIN][PAL:2]Would you find my bag?[PAL:0] My[N]dog should have it. His[N]name is Parsley, and he is[N]small and white.[FIN]Parsley carries a bundle[N]on his back. He also [PAL:2]loves[N]shiny objects[PAL:0].[FIN]Show him one, and he'll[N]come near.[END]"
+    "translation": "[DEF]Have we met somewhere[N]before...? [PAU:1E]What? You're[N][NAM:0]? [PAU:1E]I see. You resemble[N]your father.[FIN]I am [PAL:2]Dentyne[PAL:0], [PAU:1E]an[N]acquaintance of his. I[N]traveled with your father[N]part of the way, but...[FIN]Ouch... [PAU:1E]Those Hackers[N]chased me in here, and I[N]hurt my back while[N]fleeing.[FIN][PAL:2]Would you find my bag?[PAL:0] My[N]dog should have it. His[N]name is Parsley, and he is[N]small and white.[FIN]Parsley carries a bundle[N]on his back. He also [PAL:2]loves[N]shiny objects[PAL:0].[FIN]Show him one, and he'll[N]come near.[END]"
   },
   {
     "offset": "06C746",

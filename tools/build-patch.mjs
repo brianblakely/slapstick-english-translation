@@ -20,10 +20,23 @@ const DIALOG_JUMP = 0xd3;
 const DIALOG_RETURN = 0xcc;
 const CONSOLE_REDIRECT_ROUTINE = 0x180000;
 const DIALOG_REDIRECT_ROUTINE = 0x180020;
+const CONSOLE_SELECTOR_START = 0xe9d6;
+const CONSOLE_SELECTOR_END = 0xe9ea;
+const BATTLE_UI_BITMAP_START = 0x132d06;
+const BATTLE_UI_BITMAP_END = 0x133a98;
+const BATTLE_UI_BITMAP_SHA256 = "1f91c329ff1927c21e9ea7b80161bacc068330c4ba0a7a0260fc961afb86cedc";
+const BATTLE_MISS_TILE_OFFSET = 0x0540;
 const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
 const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
+const INLINE_CONSOLE_OFFSETS = new Set([
+  0x01f2c7, // robot 1 point-allocation values
+  0x01f300, // robot 2 point-allocation values
+  0x01f339, // robot 3 point-allocation values
+  0x01f372, // robot point-allocation panel, nested through STR
+  0x01f498, // robot Program panel, nested through STR
+]);
 let crcTable = null;
 
 const DIALOG_COMMANDS = {
@@ -147,6 +160,20 @@ for (const entry of changedEntries) {
   const bytes = entry.kind === "dialog"
     ? encodeDialog(entry.translation)
     : encodeConsole(entry.translation);
+
+  // These shared panels are called through STR. Keeping them at their stock
+  // addresses avoids a second redirect level while the parent console string
+  // is active, which otherwise drops the panel and corrupts subsequent menus.
+  if (entry.kind === "console" && INLINE_CONSOLE_OFFSETS.has(offset)) {
+    if (bytes.length > originalLength) {
+      throw new Error(
+        `Inline console string ${entry.offset} needs ${bytes.length} bytes but has ${originalLength}`,
+      );
+    }
+    bytes.copy(targetRom, offset);
+    targetRom.fill(0x00, offset + bytes.length, offset + originalLength);
+    continue;
+  }
   const sourceStubLength = entry.kind === "dialog" ? 5 : 4;
 
   if (originalLength < sourceStubLength) {
@@ -311,7 +338,10 @@ for (const candidate of candidates) {
 }
 
 installDialogFont(targetRom, dialogFont);
+installBattleMissGlyphs(targetRom);
 installInterpreterHooks(targetRom);
+installConsoleSelectorMirrors(targetRom);
+installRuntimeDefaults(targetRom);
 writeHeader(targetRom);
 
 const targetHash = sha256(targetRom);
@@ -462,6 +492,11 @@ function largestSafeDialogPrefix(bytes, start, maximum) {
 function placeWithoutCrossingBank(cursor, size) {
   if (size > 0x8000) throw new Error(`A relocated string exceeds one mirrored HiROM half-bank (${size} bytes)`);
   if ((cursor & 0xffff) < 0x8000) cursor = (cursor & ~0xffff) + 0x8000;
+  const bankStart = cursor & ~0xffff;
+  const start = cursor & 0xffff;
+  if (start < CONSOLE_SELECTOR_END && start + size > CONSOLE_SELECTOR_START) {
+    cursor = bankStart + CONSOLE_SELECTOR_END;
+  }
   const remaining = 0x10000 - (cursor & 0xffff);
   return size <= remaining ? cursor : ((cursor + 0x10000) & ~0xffff) + 0x8000;
 }
@@ -603,7 +638,7 @@ function dialogCharacterOptions(character) {
   ]);
   const alternate = new Map([
     ["…", 0x0f], ["→", 0x10], ["←", 0x11], ["↑", 0x12], ["↓", 0x13],
-    ["\"", 0x1e], ["'", 0x1f], ["%", 0x75], ["=", 0x76], ["*", 0x79],
+    ["\"", 0x1e], ["'", 0x1f], ["%", 0x75], ["*", 0x79],
     ["+", 0x7a], ["-", 0x7b], ["/", 0x7c], ["&", 0x7d], [".", 0x7e],
   ]);
   if (base.has(character)) options.push({ mode: "base", byte: base.get(character) });
@@ -758,7 +793,10 @@ function installDialogFont(rom, font) {
   const alternateGlyphs = [
     ...[..."abcdefghijklmnopqrstuvwxyz"].map((character, index) => [0x21 + index, character]),
     [0x0f, "…"], [0x10, "→"], [0x11, "←"], [0x12, "↑"], [0x13, "↓"],
-    [0x1e, "\""], [0x1f, "'"], [0x75, "%"], [0x76, "="], [0x79, "*"],
+    [0x1e, "\""], [0x1f, "'"], [0x75, "%"],
+    // Menus address this cell directly for their A-button selection marker.
+    // Keep the compact English A here; the dialogue encoder reserves the cell.
+    [0x76, "A"], [0x79, "*"],
     [0x7a, "+"], [0x7b, "-"], [0x7c, "/"], [0x7d, "&"], [0x7e, "."],
     [0x7f, " "],
   ];
@@ -857,6 +895,189 @@ function writeGlyph(rom, offset, pixels) {
   }
 }
 
+function installBattleMissGlyphs(rom) {
+  const slotLength = BATTLE_UI_BITMAP_END - BATTLE_UI_BITMAP_START;
+  const bitmap = expandQuintetLz(sourceRom, BATTLE_UI_BITMAP_START, slotLength);
+  if (bitmap.length !== 0x2000 || sha256(bitmap) !== BATTLE_UI_BITMAP_SHA256) {
+    throw new Error("Unexpected battle UI bitmap at 0x132D06");
+  }
+
+  // Zero damage is displayed with tiles 2A and 2B. In the Japanese asset
+  // those tiles spell スカ; put two narrow Latin letters in each tile so the
+  // stock two-sprite actor displays MISS without requiring any battle-code or
+  // object-layout changes.
+  createBattleLabelTile("M", "I").copy(bitmap, BATTLE_MISS_TILE_OFFSET);
+  createBattleLabelTile("S", "S").copy(bitmap, BATTLE_MISS_TILE_OFFSET + 0x20);
+
+  const compressed = compactQuintetLz(bitmap);
+  if (compressed.length > slotLength) {
+    throw new Error(
+      `English battle UI bitmap needs ${compressed.length} bytes but has ${slotLength}`,
+    );
+  }
+  const expanded = expandQuintetLz(compressed, 0, compressed.length);
+  if (!expanded.equals(bitmap)) throw new Error("Battle UI bitmap compression did not round-trip");
+  compressed.copy(rom, BATTLE_UI_BITMAP_START);
+}
+
+function createBattleLabelTile(left, right) {
+  const patterns = new Map([
+    ["M", [0b101, 0b111, 0b101, 0b101, 0b101]],
+    ["I", [0b111, 0b010, 0b010, 0b010, 0b111]],
+    ["S", [0b111, 0b100, 0b111, 0b001, 0b111]],
+  ]);
+  const pixels = Array.from({ length: 8 }, () => Array(8).fill(0));
+  for (const [character, startX] of [[left, 0], [right, 4]]) {
+    const pattern = patterns.get(character);
+    if (!pattern) throw new Error(`Unsupported battle-label character ${character}`);
+    for (let y = 0; y < pattern.length; y += 1) {
+      for (let x = 0; x < 3; x += 1) {
+        if (pattern[y] & (1 << (2 - x))) pixels[y + 1][startX + x] = 0x0b;
+      }
+    }
+  }
+
+  // The damage-number palette uses index B for the light face and index 1 for
+  // its dark edge. Add the same one-pixel lower-right edge used by the digits.
+  const face = pixels.map((row) => row.map((pixel) => pixel === 0x0b));
+  for (let y = 0; y < 7; y += 1) {
+    for (let x = 0; x < 7; x += 1) {
+      if (face[y][x] && pixels[y + 1][x + 1] === 0) pixels[y + 1][x + 1] = 1;
+    }
+  }
+
+  const tile = Buffer.alloc(0x20);
+  for (let y = 0; y < 8; y += 1) {
+    for (let x = 0; x < 8; x += 1) {
+      const pixel = pixels[y][x];
+      const shift = 7 - x;
+      tile[y * 2] |= (pixel & 1) << shift;
+      tile[y * 2 + 1] |= ((pixel >>> 1) & 1) << shift;
+      tile[0x10 + y * 2] |= ((pixel >>> 2) & 1) << shift;
+      tile[0x10 + y * 2 + 1] |= ((pixel >>> 3) & 1) << shift;
+    }
+  }
+  return tile;
+}
+
+function expandQuintetLz(source, start, length) {
+  let byte = start + 2;
+  let bit = 7;
+  const stop = start + length;
+  const readBits = (count) => {
+    let value = 0;
+    for (let index = 0; index < count; index += 1) {
+      if (byte >= stop) throw new Error("Truncated Quintet LZ stream");
+      value = (value << 1) | ((source[byte] >>> bit) & 1);
+      bit -= 1;
+      if (bit < 0) {
+        byte += 1;
+        bit = 7;
+      }
+    }
+    return value;
+  };
+
+  const encodedLength = source.readUInt16LE(start);
+  if (encodedLength === 0) return Buffer.from(source.subarray(start + 2, stop));
+  const outputLength = encodedLength & 0x8000 ? 0x10000 - encodedLength : encodedLength;
+  const output = Buffer.alloc(outputLength);
+  const dictionary = Buffer.alloc(0x100, 0x20);
+  let dictionaryWrite = 0xef;
+  let outputWrite = 0;
+
+  while (outputWrite < output.length) {
+    if (readBits(1)) {
+      const sample = readBits(8);
+      output[outputWrite++] = sample;
+      dictionary[dictionaryWrite] = sample;
+      dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+      continue;
+    }
+
+    let dictionaryRead = readBits(8);
+    const matchLength = readBits(4) + 2;
+    for (let index = 0; index < matchLength && outputWrite < output.length; index += 1) {
+      const sample = dictionary[dictionaryRead];
+      dictionaryRead = (dictionaryRead + 1) & 0xff;
+      output[outputWrite++] = sample;
+      dictionary[dictionaryWrite] = sample;
+      dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+    }
+  }
+  return output;
+}
+
+function compactQuintetLz(source) {
+  const payload = [];
+  let currentByte = 0;
+  let usedBits = 0;
+  const writeBits = (value, count) => {
+    for (let bit = count - 1; bit >= 0; bit -= 1) {
+      currentByte = (currentByte << 1) | ((value >>> bit) & 1);
+      usedBits += 1;
+      if (usedBits === 8) {
+        payload.push(currentByte);
+        currentByte = 0;
+        usedBits = 0;
+      }
+    }
+  };
+
+  const dictionary = Buffer.alloc(0x100, 0x20);
+  let dictionaryWrite = 0xef;
+  let sourceRead = 0;
+  while (sourceRead < source.length) {
+    const maximumLength = Math.min(17, source.length - sourceRead);
+    let matchStart = 0;
+    let matchLength = 0;
+
+    if (maximumLength >= 2) {
+      for (let candidate = 0; candidate < 0x100; candidate += 1) {
+        // Simulate dictionary writes while probing so overlapping matches can
+        // encode repeated bytes exactly as the game's decoder expands them.
+        const probe = Buffer.from(dictionary);
+        let probeRead = candidate;
+        let probeWrite = dictionaryWrite;
+        let length = 0;
+        while (length < maximumLength && probe[probeRead] === source[sourceRead + length]) {
+          const sample = probe[probeRead];
+          probeRead = (probeRead + 1) & 0xff;
+          probe[probeWrite] = sample;
+          probeWrite = (probeWrite + 1) & 0xff;
+          length += 1;
+        }
+        if (length > matchLength) {
+          matchStart = candidate;
+          matchLength = length;
+          if (length === maximumLength) break;
+        }
+      }
+    }
+
+    if (matchLength >= 2) {
+      writeBits(0, 1);
+      writeBits(matchStart, 8);
+      writeBits(matchLength - 2, 4);
+      for (let index = 0; index < matchLength; index += 1) {
+        dictionary[dictionaryWrite] = source[sourceRead++];
+        dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+      }
+    } else {
+      const sample = source[sourceRead++];
+      writeBits(1, 1);
+      writeBits(sample, 8);
+      dictionary[dictionaryWrite] = sample;
+      dictionaryWrite = (dictionaryWrite + 1) & 0xff;
+    }
+  }
+  if (usedBits) payload.push(currentByte << (8 - usedBits));
+
+  const header = Buffer.alloc(2);
+  header.writeUInt16LE(source.length);
+  return Buffer.concat([header, Buffer.from(payload)]);
+}
+
 function installInterpreterHooks(rom) {
   // TBL recursively renders a string chosen from a pointer table. The stock
   // handler preserves Y but assumes the nested string remains in the current
@@ -897,6 +1118,32 @@ function installInterpreterHooks(rom) {
 
   const consoleRedirectRoutine = Buffer.from("e220b9020048c220b90000a8e2206848abc2206b", "hex");
   consoleRedirectRoutine.copy(rom, CONSOLE_REDIRECT_ROUTINE);
+}
+
+function installRuntimeDefaults(rom) {
+  const wordPatches = [
+    [0x04b110, 0x0090, 0x0091, "default stereo sound"],
+    [0x04b114, 0x0003, 0x0001, "default high message speed"],
+    [0x04b118, 0x0003, 0x0001, "default high message-speed mirror"],
+  ];
+  for (const [offset, expected, replacement, description] of wordPatches) {
+    if (sourceRom.readUInt16LE(offset) !== expected) {
+      throw new Error(`Unexpected ${description} word at 0x${offset.toString(16).toUpperCase()}`);
+    }
+    rom.writeUInt16LE(replacement, offset);
+  }
+}
+
+function installConsoleSelectorMirrors(rom) {
+  // Several stock console commands store their selector address as a 16-bit
+  // operand and therefore read it through the current data bank. Relocated
+  // English strings run from banks 98-9F, so mirror the stock name/icon
+  // selector words at the same address in each expansion bank. The allocator
+  // reserves this range to keep relocated strings from overlapping it.
+  const source = sourceRom.subarray(0x01e9d6, 0x01e9ea);
+  for (let bank = 0x18; bank <= 0x1f; bank += 1) {
+    source.copy(rom, (bank << 16) + CONSOLE_SELECTOR_START);
+  }
 }
 
 function writeHeader(rom) {

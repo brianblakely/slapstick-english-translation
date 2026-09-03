@@ -309,7 +309,7 @@
     "offset": "05977C",
     "kind": "dialog",
     "source": "[DEF]むむっ![PAU:28]おたずね者の[N][NAM:0]じゃないかっ![FIN][JMP:&string_05A58F+M]",
-    "translation": "[DEF]Aha! The wanted fugitive[N][NAM:0]![FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not[N]to make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
+    "translation": "[DEF]Aha! The wanted fugitive[N][NAM:0]![FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
   },
   {
     "offset": "059798",
@@ -543,7 +543,7 @@
     "offset": "05A4DD",
     "kind": "dialog",
     "source": "[DEF][SFX:0]たのむ···![NAM:0]![N][PAU:32]はやく 目をさまして[N]元気な姿を 見せてくれ![END]",
-    "translation": "[DEF][SFX:0]Please... [NAM:0]! [PAU:32]Open[N]your eyes and show us that[N]you are all right![END]"
+    "translation": "[DEF][SFX:0]Please... [NAM:0]! [PAU:32]Open your[N]eyes and show us that you[N]are all right![END]"
   },
   {
     "offset": "05A573",
@@ -555,7 +555,7 @@
     "offset": "05A58F",
     "kind": "dialog",
     "source": "[DF5][PAL:3]ナギサ:[N][PAL:0]ああ よかった[N][NAM:0] あのね···[FIN][PAL:2]おまわりさん:[N][PAL:0][::]もんどうむよーっ![NAM:0]![N]問題をおこすなと言ったのに[N]やはり 血はあらそえんなっ![FIN]お前に[PAL:2]宝石3つ[PAL:0]をぬすまれたと[N]町長から とどけが出ているぞ![N]しんみょうに おなわを[N]ちょうだいしろっ!![END]",
-    "translation": "[DF5][PAL:3]Nagisa: [PAL:0]Oh, thank[N]goodness. [NAM:0],[N]listen...[FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not[N]to make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
+    "translation": "[DF5][PAL:3]Nagisa: [PAL:0]Oh, thank[N]goodness. [NAM:0], listen...[FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
   },
   {
     "offset": "05A74D",
@@ -597,7 +597,7 @@
     "offset": "05AB04",
     "kind": "dialog",
     "source": "[DEF][TPL:2][NAM:0]か[N][PAU:14]子供たちを 助けたそうじゃないか[N]よくやったな えらいぞ[FIN]ところでな [PAU:1E]とうさんは しばらく[N]友人の [PAL:2]フラボノ[PAL:0]さんと[N]旅に出ることにした[N]帰りは いつになるかわからん[FIN]とうさんがいなくても[N]お前は うまくやってけるだろう[N]クロガネは あずけていくからな[N]めんどう見てやってくれ[FIN]じゃあな [PAU:1E][NAM:0][PAU:1E][N]がんばるんだぞ˳[END]",
-    "translation": "[DEF][TPL:2][NAM:0], I heard you saved[N]the children. Well done![FIN]I will be traveling for a[N]while with my friend[N][PAL:2]Dentyne[PAL:0]. I do not know[N]when I will return.[FIN]You will manage without[N]me. I am leaving Ebony[N]with you, so take good[N]care of him.[FIN]Goodbye, [NAM:0]. Keep[N]doing your best.[END]"
+    "translation": "[DEF][TPL:2][NAM:0], I heard you saved[N]the children. Well done![FIN]I will be traveling for a[N]while with my friend[N][PAL:2]Dentyne[PAL:0]. I do not know[N]when I will return.[FIN]You will manage without[N]me. I am leaving Ebony[N]with you, so take good[N]care of him.[FIN]Goodbye, [NAM:0]. Keep doing[N]your best.[END]"
   },
   {
     "offset": "05ABC0",
@@ -627,7 +627,7 @@
     "offset": "05AD7C",
     "kind": "dialog",
     "source": "[DEF][TPL:2][NAM:0][PAU:1E] 本当に平気なのか?[N][PAU:28]それなら 自由にしていいが[N]あまり 無理はするんじゃないぞ˳[END]",
-    "translation": "[DEF][TPL:2][NAM:0], are you truly[N]well? [PAU:28]You may do as you[FIN]please, but do not overdo[N]it.[END]"
+    "translation": "[DEF][TPL:2][NAM:0], are you truly well?[N][PAU:28]You may do as you please,[N]but do not overdo it.[END]"
   },
   {
     "offset": "05ADB7",

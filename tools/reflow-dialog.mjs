@@ -429,7 +429,7 @@ function followingPageWordCount(atoms, start, limit) {
 }
 
 function commandWidth(atom) {
-  if (atom.name === "NAM") return 6;
+  if (atom.name === "NAM") return 5;
   if (atom.name === "TPL") return atom.args[0]?.toUpperCase() === "0" ? 7 : 5;
   if (atom.name === "TBL") return atom.args[0]?.includes("01E6B3") ? 2 : 17;
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);

@@ -4,12 +4,13 @@
   "description": "An English translation of the Super Famicom title \"Slapstick\"",
   "scripts": {
     "build": "npm run check && node tools/build-patch.mjs",
+    "build:rom": "npm run check && node tools/build-patch.mjs --rom-output \"build/Slap Stick (Japan) [EN].sfc\"",
     "check": "node tools/reflow-dialog.mjs --check && node tools/validate-script.mjs && node tools/build-patch.mjs --check",
     "reflow": "node tools/reflow-dialog.mjs --write",
     "scenario": "node tools/run-scenario.mjs",
     "setup:smoke": "node tools/setup-libretro-core.mjs",
     "smoke": "node tools/run-libretro-smoke.mjs",
-    "test:harness": "node --test tools/libretro-core.test.mjs",
+    "test:harness": "node --test tools/libretro-core.test.mjs && python3 tools/libretro-smoke.test.py",
     "test:reflow": "node --test tools/reflow-dialog.test.mjs",
     "test:scenario": "node --test tools/scenario-state.test.mjs tools/scenario-rom.test.mjs",
     "test": "npm run check && npm run test:harness && npm run test:reflow && npm run test:scenario"

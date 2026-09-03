@@ -81,7 +81,8 @@
     "offset": "0787C5",
     "kind": "dialog",
     "source": "[DEF] お墓には[N][PAL:2] アキハバラ家先祖代々の墓[N][PAL:0] と 書かれている[FIN] [NAM:0]は[N] お墓に 今までのことを[N] 報告した[END]",
-    "translation": "[DEF] The grave reads:[N][PAL:2] Akihabara Family[N]Ancestors[PAL:0].[FIN] [NAM:0] told his ancestors[N] all that had happened.[END]"
+    "translation": "[DEF]The grave reads:[N][PAL:2]Akihabara Family Ancestors[PAL:0][FIN][NAM:0] told his ancestors[N]all that had happened.[END]",
+    "reflow": false
   },
   {
     "offset": "07880E",
@@ -141,7 +142,7 @@
     "offset": "078FBA",
     "kind": "dialog",
     "source": "[DEF][TPL:2]ん?どうした [NAM:0][N]···[PAU:3C]え?[PAU:1E]ハッカーの戦闘員が?[N]···そうだったのか[FIN]とにかく 無事でよかった[N][JMP:&string_078FFD+M]",
-    "translation": "[DEF][TPL:2]What is it, [NAM:0]?[N]...[PAU:3C]What?[PAU:1E] A Hacker trooper?[N]...I see.[FIN]I'm simply glad you're[N]safe. Nagisa will worry if[N]you're late, so return to[N]Rococo Town.[END]"
+    "translation": "[DEF][TPL:2]What is it, [NAM:0]?...[PAU:3C]What?[PAU:1E][N]A Hacker trooper?...I see.[FIN]I'm simply glad you're[N]safe. Nagisa will worry if[N]you're late, so return to[N]Rococo Town.[END]"
   },
   {
     "offset": "078FFD",
@@ -159,7 +160,7 @@
     "offset": "079056",
     "kind": "dialog",
     "source": "[DEF][TPL:2]せっかくきたんだから[N]この アキハバラ博士が[FIN]発明に 關する知識を[N]教えてやろうじゃないか[N] おしえておしえて![N] えーっ いいよお",
-    "translation": "[DEF][TPL:2]Since you're here, the[N]great Dr. Akihabara will[N]teach you about invention.[FIN] Teach me! Teach me![N] No, thanks"
+    "translation": "[DEF][TPL:2]Since you're here, I have[N]a proposal for you.[FIN]I will teach you about[N]invention.[N] Teach me! Teach me![N] No, thanks"
   },
   {
     "offset": "0790A8",
@@ -483,19 +484,19 @@
     "offset": "07B111",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] ┌発明の友 レベル[NUM:2,5F0]┘[PAL:0]の[N] 本を 読んでみた[FIN] だが むずかしくて[N] よく わからなかった˳[END]",
-    "translation": "[DEF] [NAM:0] tried reading[N][PAL:2] The Inventor's Friend, LV[N][NUM:2,5F0][PAL:0].[FIN] It was too difficult[N] to understand.[END]"
+    "translation": "[DEF][NAM:0] tried to read [PAL:2]The[N]Inventor's Friend LV [NUM:2,5F0][PAL:0].[FIN]It was too difficult to[N]understand.[END]"
   },
   {
     "offset": "07B155",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] ┌発明の友 レベル[NUM:2,5F0]┘[PAL:0]の[N] 本を 読んでみた[END]",
-    "translation": "[DEF] [NAM:0] read[N][PAL:2] The Inventor's Friend, LV[N][NUM:2,5F0][PAL:0].[END]"
+    "translation": "[DEF][NAM:0] read [PAL:2]The Inventor's[N]Friend LV [NUM:2,5F0][PAL:0].[END]"
   },
   {
     "offset": "07B181",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] ┌発明の友 レベル[NUM:2,5F0]┘[PAL:0]の[N] 本を 読みかえした[FIN][STR:@string_01DADA][END]",
-    "translation": "[DEF] [NAM:0] reread[N][PAL:2] The Inventor's Friend, LV[N][NUM:2,5F0][PAL:0].[FIN] It describes[N][PAL:2] [TBL:&string_list_01E23C,05EE][PAL:0].[END]"
+    "translation": "[DEF][NAM:0] reread [PAL:2]The[N]Inventor's Friend LV [NUM:2,5F0][PAL:0].[FIN]It describes[N][PAL:2][TBL:&string_list_01E23C,05EE][PAL:0].[END]"
   },
   {
     "offset": "07B1B3",
@@ -1060,7 +1061,7 @@
     "offset": "07D9FD",
     "kind": "dialog",
     "source": "[DEF][TPL:4][NAM:0]じゃないっ![N]まだ こんな所にいたのっ!?[FIN]他の ロココ町の人たちは[N]もう にげだしたわよっ![N]ここにいたら あぶないわよ![N]ほらっ!早くにげるのよっ![END]",
-    "translation": "[DEF][TPL:4][NAM:0]! You're still[N]here?![FIN]Everyone else from Rococo[N]Town has already escaped![N]It's dangerous here![FIN]Come on! Run![END]"
+    "translation": "[DEF][TPL:4][NAM:0]! You're still here?![FIN]Everyone else from Rococo[N]Town has already escaped![N]It's dangerous here![FIN]Come on! Run![END]"
   },
   {
     "offset": "07DA56",
