@@ -117,19 +117,19 @@
     "offset": "01D10B",
     "kind": "dialog",
     "source": "[CLR]ほしいものがあったら[N]いつでも 来なよ˳[END]",
-    "translation": "[CLR]Come by whenever you[N]need something.[END]"
+    "translation": "[CLR]Come by whenever you need[N]something.[END]"
   },
   {
     "offset": "01D122",
     "kind": "dialog",
     "source": "[CLR]これは[N][TBL:&string_list_01DB1F,0B80]だよ[FIN][NUM:4,B82]トロンだけど買うかい?[N] 買う[N] やめておく",
-    "translation": "[CLR]This is[N][TBL:&string_list_01DB1F,0B80].[FIN]It costs [NUM:4,B82] tron. Buy[N]it?[N] Buy[N] Never mind"
+    "translation": "[CLR]This is [TBL:&string_list_01DB1F,0B80].[FIN]It costs [NUM:4,B82] tron. Buy[N]it?[N] Buy[N] Never mind"
   },
   {
     "offset": "01D14E",
     "kind": "dialog",
     "source": "[CLR]なんだ 持ち物がいっぱいで[N]わたせないじゃないか˳[WAI]",
-    "translation": "[CLR]Your inventory is full,[N]so I cannot hand it over.[WAI]"
+    "translation": "[CLR]Your inventory is full, so[N]I cannot hand it over.[WAI]"
   },
   {
     "offset": "01D16C",
@@ -153,7 +153,7 @@
     "offset": "01D1D9",
     "kind": "dialog",
     "source": "[CLR]このロボットには[N]使う必要がありません˳[WAI]",
-    "translation": "[CLR]This robot does not[N]need that item.[WAI]"
+    "translation": "[CLR]This robot does not need[N]that item.[WAI]"
   },
   {
     "offset": "01D1F5",
@@ -165,7 +165,7 @@
     "offset": "01D211",
     "kind": "dialog",
     "source": "[CLR]戦闘に登場させる順に[E2:80]ボタンを[N]おしてください˳",
-    "translation": "[CLR]Press [E2:80] in the order[N]the robots should enter[N]battle."
+    "translation": "[CLR]Press [E2:80] in the order the[N]robots should enter[N]battle."
   },
   {
     "offset": "01D234",
@@ -189,7 +189,7 @@
     "offset": "01D2A5",
     "kind": "dialog",
     "source": "[CLR][TBL:&string_list_01E23C,0B80]は すてられません˳[WAI]",
-    "translation": "[CLR][TBL:&string_list_01E23C,0B80][N]cannot be discarded.[WAI]"
+    "translation": "[CLR][TBL:&string_list_01E23C,0B80] cannot[N]be discarded.[WAI]"
   },
   {
     "offset": "01D2B7",
@@ -285,13 +285,13 @@
     "offset": "01D4C5",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:ロボットアイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: robot items[N][PAL:4][E2:4000][PAL:0]: item details"
+    "translation": "[PAL:4]L/R[PAL:0]: robot items [PAL:4][E2:4000][PAL:0]: item[N]details"
   },
   {
     "offset": "01D4F7",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:[NAM:0]アイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items[N][PAL:4][E2:4000][PAL:0]: item details"
+    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items [PAL:4][E2:4000][PAL:0]:[N]item details"
   },
   {
     "offset": "01D527",
@@ -333,13 +333,13 @@
     "offset": "01D5CC",
     "kind": "dialog",
     "source": "[CLR]合成すると[N][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]が できるよ˳[N] やめておく   合成する",
-    "translation": "[CLR]Combining them makes[N][TBL:&string_list_01E23C,0B9C][N][TBL:&string_list_01E6B3,0B9E].[N] Cancel       Combine"
+    "translation": "[CLR]Combining them makes[N][TBL:&string_list_01E23C,0B9C] [TBL:&string_list_01E6B3,0B9E].[N] Cancel       Combine"
   },
   {
     "offset": "01D5F7",
     "kind": "dialog",
     "source": "[CLR][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]ができました![WAI]",
-    "translation": "[CLR]Made[N][TBL:&string_list_01E23C,0B9C][N][TBL:&string_list_01E6B3,0B9E]![WAI]"
+    "translation": "[CLR]Made [TBL:&string_list_01E23C,0B9C] [TBL:&string_list_01E6B3,0B9E]![WAI]"
   },
   {
     "offset": "01D60B",
@@ -351,7 +351,7 @@
     "offset": "01D61C",
     "kind": "dialog",
     "source": "[CLR]持ち物がいっぱいで[N][JMP:&string_01D60B+M]",
-    "translation": "[CLR]Your inventory is full,[N]so these cannot be[N]combined.[WAI]"
+    "translation": "[CLR]Your inventory is full, so[N]these cannot be combined.[WAI]"
   },
   {
     "offset": "01D62C",
@@ -369,7 +369,7 @@
     "offset": "01D686",
     "kind": "dialog",
     "source": "[CLR]このアイテムは リサイクル[N]できませんね˳[WAI]",
-    "translation": "[CLR]That item cannot[N]be recycled.[WAI]"
+    "translation": "[CLR]That item cannot be[N]recycled.[WAI]"
   },
   {
     "offset": "01D6A2",
@@ -387,7 +387,7 @@
     "offset": "01D710",
     "kind": "dialog",
     "source": "[CLR]ほい きたっ!さっそく[N]作業にとりかかるぞ!!",
-    "translation": "[CLR]All right! I will get[N]to work at once!"
+    "translation": "[CLR]All right! I will get to[N]work at once!"
   },
   {
     "offset": "01D72B",
@@ -597,7 +597,7 @@
     "offset": "01DC5D",
     "kind": "dialog",
     "source": "研究所のナギサさんと 通信できる[N]しかし 電波状態が悪いと[N]通信できない",
-    "translation": "Call Nagisa at the lab.[N]It will not work when[N]the signal is poor."
+    "translation": "Call Nagisa at the lab.[N]It will not work when the[N]signal is poor."
   },
   {
     "offset": "01DC90",
@@ -639,7 +639,7 @@
     "offset": "01DDB0",
     "kind": "dialog",
     "source": "家事全般·日曜大工などをこなす[N]ロボット[N]困っている人に 貸してあげよう",
-    "translation": "A robot for housework[N]and home repairs. Lend it[N]to someone in need."
+    "translation": "A robot for housework and[N]home repairs. Lend it to[N]someone in need."
   },
   {
     "offset": "01DDE2",
@@ -651,13 +651,13 @@
     "offset": "01DDF7",
     "kind": "dialog",
     "source": "森で手に入れた 花のたね[N]その使い道は 不明",
-    "translation": "Flower seeds found in[N]the forest. Their purpose[N]is unknown."
+    "translation": "Flower seeds found in the[N]forest. Their purpose is[N]unknown."
   },
   {
     "offset": "01DE16",
     "kind": "dialog",
     "source": "カールのおとうさんがくれた[N]飛行機で 步いていけないような[N]土地へ 移動することができる",
-    "translation": "A plane from Carl's[N]father.[N]It reaches lands that[N]cannot[FIN]be reached on foot."
+    "translation": "A plane from Carl's[N]father.[N]It reaches lands that[N]cannot be reached on foot."
   },
   {
     "offset": "01DE4D",
@@ -669,7 +669,7 @@
     "offset": "01DE74",
     "kind": "dialog",
     "source": "[E2:4000]ボタンで使用すると[N]ワールドマップへワープできる[N]ただし 使えないこともある",
-    "translation": "Press [E2:4000] to warp to[N]the world map. It cannot[N]always be used."
+    "translation": "Press [E2:4000] to warp to the[N]world map. It cannot[N]always be used."
   },
   {
     "offset": "01DEA7",
@@ -681,7 +681,7 @@
     "offset": "01DEC4",
     "kind": "dialog",
     "source": "裝備すると コンピューターの[N]中に入れるようになるという[N]サイバーなしろもの",
-    "translation": "Cyber gear said to let[N]its wearer enter[N]computers."
+    "translation": "Cyber gear said to let its[N]wearer enter computers."
   },
   {
     "offset": "01DEF3",
@@ -711,7 +711,7 @@
     "offset": "01DF78",
     "kind": "dialog",
     "source": "カールのおとうさんから[N]カールへの手紙",
-    "translation": "A letter from Carl's[N]father[N]to Carl."
+    "translation": "A letter from Carl's[N]father to Carl."
   },
   {
     "offset": "01DF92",
@@ -771,13 +771,13 @@
     "offset": "01E09D",
     "kind": "dialog",
     "source": "ナポレオンという名のロボットの[N]スクラップ",
-    "translation": "Scrap from a robot[N]named Napoleon."
+    "translation": "Scrap from a robot named[N]Napoleon."
   },
   {
     "offset": "01E0BA",
     "kind": "dialog",
     "source": "ポリンキー家のはいきょでもらった[N]スクラップ",
-    "translation": "Scrap received at the[N]ruins[N]of the Polinky estate."
+    "translation": "Scrap received at the[N]ruins of the Polinky[N]estate."
   },
   {
     "offset": "01E0D6",
@@ -807,7 +807,7 @@
     "offset": "01E176",
     "kind": "dialog",
     "source": "スクラップになってしまった[N]ロボットを 元にもどすもの",
-    "translation": "Restores a robot that[N]has been reduced to scrap."
+    "translation": "Restores a robot that has[N]been reduced to scrap."
   },
   {
     "offset": "01E197",
@@ -819,7 +819,7 @@
     "offset": "01E1B5",
     "kind": "dialog",
     "source": "なんと 自分で天気を[N]自在に操ることができるという[N]おどろくべき発明品",
-    "translation": "An amazing invention that[N]lets you control the[N]weather[N]at will."
+    "translation": "An amazing invention that[N]lets you control the[N]weather at will."
   },
   {
     "offset": "01E1E3",

@@ -63,19 +63,19 @@
     "offset": "01E9EA",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,3,84] メッセージ   はやい   ふつう   おそい",
-    "translation": "[PAL:4][BOX:1A,3,84] MESSAGE   FAST     NORMAL   SLOW"
+    "translation": "[PAL:4][BOX:1A,3,84] MSG SPD HI    MED   LOW"
   },
   {
     "offset": "01EA0B",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,3,1C4] サウンド    ステレオ  モノラル",
-    "translation": "[PAL:4][BOX:1A,3,1C4] SOUND     STEREO   MONO"
+    "translation": "[PAL:4][BOX:1A,3,1C4] SOUND   2 CH  MONO"
   },
   {
     "offset": "01EA27",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,D,304] ボタンせってい[N][POS:40C]けってい·はなす·しらべる[N]とりけし·ダッシュ[N]ウィンドウ[N]アイテムをつかう[N]おわり[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y",
-    "translation": "[PAL:4][BOX:1A,D,304] BUTTON SETUP[N][POS:40C]CONFIRM TALK CHECK[N]CANCEL DASH[N]MENU[N]USE ITEM[N]DONE[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y"
+    "translation": "[PAL:4][BOX:1A,D,304] BUTTON SETUP[N][POS:40C]CONFIRM TALK[N]CANCEL DASH[N]MENU[N]USE ITEM[N]DONE[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y"
   },
   {
     "offset": "01EA8B",

@@ -7,23 +7,23 @@
   },
   "target": {
     "size": 2097152,
-    "sha256": "8e5ad9d4b86da2a8360d3a5727de1909b06088681a8a0e8a50420cb4c06d5796",
-    "checksum": "3597"
+    "sha256": "30db3781f000798aae351f7e447f5270922c47a50c1a2f4742ea6532c9d84a27",
+    "checksum": "0C92"
   },
   "script": {
     "total": 2381,
     "translated": 2381,
-    "changed": 2231,
+    "changed": 2234,
     "untranslated": 0
   },
   "patches": {
     "bps": {
-      "size": 640807,
-      "sha256": "5e2f27ed6f71927affa4c8e343c12d6d4ce22a6d10c85690a016e370deae543c"
+      "size": 640836,
+      "sha256": "e789d0153b8f6809dabb6845edec1889c4618c58ae82149dbacc89109c364362"
     },
     "ips": {
-      "size": 247090,
-      "sha256": "cc5d6a743b5911e0e7b20a702eacf592772131d326c384b9e357b2f87f06c7dc"
+      "size": 247129,
+      "sha256": "931055327c60385ea52d2c54fc795f275b25063a9825e3369fa7c2d5bd991209"
     }
   }
 }

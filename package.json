@@ -7,8 +7,9 @@
     "check": "node tools/reflow-dialog.mjs --check && node tools/validate-script.mjs && node tools/build-patch.mjs --check",
     "reflow": "node tools/reflow-dialog.mjs --write",
     "scenario": "node tools/run-scenario.mjs",
+    "test:reflow": "node --test tools/reflow-dialog.test.mjs",
     "test:scenario": "node --test tools/scenario-state.test.mjs tools/scenario-rom.test.mjs",
-    "test": "npm run check && npm run test:scenario"
+    "test": "npm run check && npm run test:reflow && npm run test:scenario"
   },
   "repository": {
     "type": "git",

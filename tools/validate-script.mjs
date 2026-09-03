@@ -5,6 +5,15 @@ import path from "node:path";
 
 const SCRIPT_DIRECTORY = path.resolve("translation/script");
 const JAPANESE = /[\u3040-\u30ff\u3400-\u9fff]/u;
+const LOCATION_LABEL_START = 0x06f910;
+const LOCATION_LABEL_END = 0x06fd89;
+const LOCATION_LABEL_LAYOUT = { columns: 26, rows: 1 };
+const LOCATION_BANNER_OFFSETS = new Set(["06F54B", "06F55D", "06F56F"]);
+const CONFIG_OPTION_LAYOUTS = new Map([
+  ["01E9EA", { columns: 26, slots: [[9, 3], [15, 3], [21, 3]] }],
+  ["01EA0B", { columns: 26, slots: [[9, 4], [15, 4]] }],
+]);
+const CONFIG_BUTTON_OFFSET = "01EA27";
 const errors = [];
 let entryCount = 0;
 
@@ -19,7 +28,13 @@ for (const filename of files) {
     if (entry.kind === "dialog" && /\[(?:JMP|STR):/.test(entry.translation)) {
       errors.push(`${location}: translated dialogue still contains a shared-text jump`);
     }
-    if (entry.kind === "dialog") validateDialogLayout(entry.translation, location, entry.layout);
+    if (LOCATION_BANNER_OFFSETS.has(entry.offset) && !entry.translation.includes("[BOX:E,1,2]")) {
+      errors.push(`${location}: location banner must provide 28 English columns`);
+    }
+    if (entry.kind === "dialog") {
+      validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
+    }
+    if (entry.kind === "console") validateConfigLayout(entry, location);
   }
 }
 
@@ -28,7 +43,63 @@ if (errors.length) {
   if (errors.length > 100) console.error(`...and ${errors.length - 100} more errors`);
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${entryCount} script entries: complete, English-only, and within dialogue boxes.`);
+  console.log(`Validated ${entryCount} script entries: complete, English-only, and within their UI layouts.`);
+}
+
+function inferredLayout(entry) {
+  const offset = Number.parseInt(entry.offset, 16);
+  if (offset >= LOCATION_LABEL_START && offset <= LOCATION_LABEL_END) return LOCATION_LABEL_LAYOUT;
+  return undefined;
+}
+
+function validateConfigLayout(entry, location) {
+  const optionLayout = CONFIG_OPTION_LAYOUTS.get(entry.offset);
+  if (optionLayout) {
+    const line = entry.translation.replace(/\[[^\]]+\]/g, "");
+    if (line.length > optionLayout.columns) {
+      errors.push(`${location}: config line requires ${line.length} columns in a ${optionLayout.columns}-column box`);
+    }
+
+    const occupied = new Set();
+    for (const [start, width] of optionLayout.slots) {
+      for (let column = start; column < start + width; column += 1) occupied.add(column);
+      if (line[start - 1] !== " ") {
+        errors.push(`${location}: config cursor column ${start - 1} is not clear`);
+      }
+      if (!line.slice(start, start + width).trim()) {
+        errors.push(`${location}: config option is missing from columns ${start}-${start + width - 1}`);
+      }
+    }
+
+    const firstOption = optionLayout.slots[0][0];
+    for (let column = firstOption; column < line.length; column += 1) {
+      if (!occupied.has(column) && line[column] !== " ") {
+        errors.push(`${location}: config text at column ${column} overlaps a cursor or option gap`);
+        break;
+      }
+    }
+  }
+
+  if (entry.offset === CONFIG_BUTTON_OFFSET) {
+    const match = entry.translation.match(/\[POS:40C\]([\s\S]*?)\[POS:42A\]([\s\S]*)$/);
+    if (!match) {
+      errors.push(`${location}: button setup is missing its fixed text positions`);
+      return;
+    }
+
+    const actionLabels = match[1].split("[N]");
+    if (actionLabels.length !== 5) errors.push(`${location}: button setup must contain five action rows`);
+    for (const label of actionLabels) {
+      if (label.length > 14) {
+        errors.push(`${location}: button label ${JSON.stringify(label)} overlaps the choices at column 15`);
+      }
+    }
+
+    const choices = match[2].split("[N]");
+    if (choices.length !== 4 || choices.some((choice) => choice !== "A B X Y")) {
+      errors.push(`${location}: button choices must remain aligned in four fixed A/B/X/Y rows`);
+    }
+  }
 }
 
 function validateDialogLayout(text, location, inheritedLayout) {

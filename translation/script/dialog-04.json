@@ -27,13 +27,13 @@
     "offset": "04E427",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0][TPL:4]ちょっと!なにやってんのよ![N]早くにげないと あぶないのよ![PAU:78][CLR][DLY:6][SFX:0][TPL:3]いや···その···[N]あの テ···ティアトロンは?[PAU:B4][ESC]",
-    "translation": "[CLR][DLY:6][SFX:0][TPL:4]Hey! What are you doing?[N]Get out before it is too[N]late![PAU:78][CLR][DLY:6][SFX:0][TPL:3]Well... I... [N]What about Ti... Tiatron?[PAU:B4][ESC]"
+    "translation": "[CLR][DLY:6][SFX:0][TPL:4]Hey! What are you doing?[N]Get out before it is too[N]late![PAU:78][CLR][DLY:6][SFX:0][TPL:3]Well... I... What about[N]Ti... Tiatron?[PAU:B4][ESC]"
   },
   {
     "offset": "04E4C2",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0][TPL:2][NAM:0] よくがんばったな[N]ご先祖樣も よろこんでいるだろう[PAU:78][CLR][DLY:6][SFX:0]ガトーは 人には手におえぬ力を[N]持ってしまったようだな···[PAU:78][CLR][DLY:6][SFX:0]発明に 命をあたえるのは[N]それを 使う人たちだ[PAU:50][CLR][DLY:6][SFX:0]よく使ってやれば よく働き[N]悪く使えば 悪い方へと働く···[PAU:78][CLR][DLY:6][SFX:0]ティアトロンは 作った者の心と[N]使う者の心の はざまで[N]迷ってしまったのかもしれんな˳[PAU:B4][ESC]",
-    "translation": "[CLR][DLY:6][SFX:0][TPL:2]Well done, [NAM:0].[N]Your ancestor would be[N]proud.[PAU:78][CLR][DLY:6][SFX:0]Gateau gained a power[N]no person could control...[PAU:78][CLR][DLY:6][SFX:0]The people who use an[N]invention are the ones[N]who give it life.[PAU:50][CLR][DLY:6][SFX:0]Use it well, and it works[N]for good. Use it poorly,[N]and it works for evil...[PAU:78][CLR][DLY:6][SFX:0]Perhaps Tiatron was lost[N]between the heart of its[N]maker[N]and the heart of its user.[PAU:B4][ESC]"
+    "translation": "[CLR][DLY:6][SFX:0][TPL:2]Well done, [NAM:0].[N]Your ancestor would be[N]proud.[PAU:78][CLR][DLY:6][SFX:0]Gateau gained a power no[N]person could control...[PAU:78][CLR][DLY:6][SFX:0]The people who use an[N]invention are the ones who[N]give it life.[PAU:50][CLR][DLY:6][SFX:0]Use it well, and it works[N]for good. Use it poorly,[N]and it works for evil...[PAU:78][CLR][DLY:6][SFX:0]Perhaps Tiatron was lost[N]between the heart of its[N]maker and the heart of its[N]user.[PAU:B4][ESC]"
   },
   {
     "offset": "04E5A0",
@@ -52,14 +52,20 @@
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0] その中では さまざまな[N] 生命の いとなみが[N] おこなわれていた[ESC]",
     "translation": "[CLR][DLY:6][SFX:0]Across its vast expanse,[N]countless forms of life[N]went about their days.[ESC]",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04E9B8",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]その大宇宙の どこかに[N]極楽星という 小さな星があり[N]ロココ町という 町があった···",
     "translation": "[CLR][DLY:6][SFX:0]In that vast universe[N]lay Bliss, a tiny world,[N]home to Rococo Town...",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EA65",
@@ -72,14 +78,20 @@
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]人々は ロココ町で[N]それなりに 幸せにくらしていた[ESC]",
     "translation": "[CLR][DLY:6][SFX:0]Rococo's people lived[N]modest, happy lives.[ESC]",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EAC7",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]だが その平和は[N]長くは 続かなかった···",
-    "translation": "[CLR][DLY:6][SFX:0]But their peace[N]would not last long...",
-    "layout": { "columns": 24, "rows": 3 }
+    "translation": "[CLR][DLY:6][SFX:0]But their peace would[N]not last long...",
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EB54",
@@ -91,8 +103,11 @@
     "offset": "04EB91",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]彼らは ロココ町の近辺で[N]さまざまな 悪行を[N]かさねはじめた···",
-    "translation": "[CLR][DLY:6][SFX:0]Near Rococo, they began[N]committing every kind[N]of wicked deed...",
-    "layout": { "columns": 24, "rows": 3 }
+    "translation": "[CLR][DLY:6][SFX:0]Near Rococo, they began[N]committing every kind of[N]wicked deed...",
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EC10",
@@ -105,21 +120,30 @@
     "kind": "dialog",
     "source": "[CLR][ESC]",
     "translation": "[CLR][ESC]",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EC2A",
     "kind": "dialog",
     "source": "[CLR][DLY:1][SFX:0][N]  ···はかい···[ESC]",
     "translation": "[CLR][DLY:1][SFX:0][N]    ...destruction...[ESC]",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EC3C",
     "kind": "dialog",
     "source": "[CLR][DLY:1][SFX:0][N]  ···などなど···",
     "translation": "[CLR][DLY:1][SFX:0][N]     ...and more...",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04ECE3",
@@ -132,7 +156,10 @@
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]彼らがどこからやってくるのか[N]その真の目的は 何なのか[N]知るよしもなかった···",
     "translation": "[CLR][DLY:6][SFX:0]No one knew their origin[N]or their true purpose.[N]Fear only grew...",
-    "layout": { "columns": 24, "rows": 3 }
+    "layout": {
+      "columns": 24,
+      "rows": 3
+    }
   },
   {
     "offset": "04EE0C",
@@ -144,8 +171,11 @@
     "offset": "04EE3F",
     "kind": "dialog",
     "source": "[CLR][DLY:6][SFX:0]   少年の夢は 父のような[N]   発明家になることだった",
-    "translation": "[CLR][DLY:6][SFX:0]His dream was to become[N]an inventor like his dad.",
-    "layout": { "columns": 26, "rows": 2 }
+    "translation": "[CLR][DLY:6][SFX:0]His dream was to become an[N]inventor like his dad.",
+    "layout": {
+      "columns": 26,
+      "rows": 2
+    }
   },
   {
     "offset": "04F7A3",

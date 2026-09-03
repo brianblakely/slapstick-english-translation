@@ -159,10 +159,24 @@ renderer increments at `0x04A65A`, `0x04A768`, and `0x04A772` from three tile
 units to two. This provides an eight-pixel English dialogue font without
 requiring replacement artwork.
 
-`tools/reflow-dialog.mjs` wraps normal dialogue to 26 English columns and four
-rows while retaining control codes. `tools/validate-script.mjs` additionally
-checks custom box dimensions, dynamic inserts, supported characters, control
-structure, and full translation coverage.
+`tools/reflow-dialog.mjs` removes stale mid-sentence layout breaks when the next
+word fits, then wraps normal dialogue to 26 English columns and four rows while
+retaining deliberate sentence, speaker, and choice boundaries.
+`tools/validate-script.mjs` additionally checks custom box dimensions, dynamic
+inserts, supported characters, control structure, and full translation
+coverage.
+
+Map names at `0x06F910` through `0x06FD89` are nested inside the one-row
+location banner. The English banner uses a 14-tile box (28 English columns),
+leaving 27 columns after its fixed leading space so the complete translated
+names remain on that single row.
+
+The configuration screen uses hard-coded tile positions rather than measuring
+its labels. Message-speed choices occupy three-column slots beginning at
+columns 9, 15, and 21; sound choices occupy four-column slots beginning at
+columns 9 and 15. Button action labels have 14 columns before the fixed A/B/X/Y
+choices. The script validator enforces these constraints so text, selection
+palettes, and cursors remain aligned.
 
 ## Build verification
 
