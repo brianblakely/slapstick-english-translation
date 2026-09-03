@@ -44,6 +44,31 @@ For a private local smoke test, the builder can also write a patched ROM:
 node tools/build-patch.mjs --rom-output "build/Slap Stick (Japan) [EN].sfc"
 ```
 
+## Headless visual harness
+
+The deterministic visual harness builds its pinned Snes9x core on first use and
+caches it under gitignored `.cache/libretro/`. The bootstrap verifies the source
+archive before compiling it, so it never depends on a system-wide core or a
+moving upstream build:
+
+```sh
+npm run smoke -- \
+  "build/Slap Stick (Japan) [EN].sfc" \
+  --frames 1800 \
+  --output-dir build/smoke
+```
+
+Run `npm run setup:smoke` to prepare the core without starting a ROM, or
+`npm run setup:smoke -- --check` to validate the cache. An offline source
+archive can be supplied with `--archive <file>`. The bootstrap requires
+`curl`, `tar`, `make`, a C/C++ compiler, and Python 3; `--core <file>` and
+`SNES9X_LIBRETRO_CORE` remain available for an explicitly managed core.
+Each `report.json` records the runner, core, ROM, and loaded-state hashes plus
+the complete input schedule. The source revision is intentionally frozen to the
+Snes9x 1.63 build used by the project's checkpoints; recapture every checkpoint
+before changing that pin. Reusing an output directory replaces its prior
+numbered snapshots, dumps, states, and completion report.
+
 ## Nix development workflow
 
 With [Nix](https://nixos.org/download/) and flakes enabled, enter the pinned
@@ -71,8 +96,8 @@ The same launcher can be used without entering the shell:
 nix run . -- "build/Slap Stick (Japan) [EN].sfc"
 ```
 
-For deterministic headless runs, `slapstick-smoke` passes the exact same pinned
-Snes9x core to `tools/libretro-smoke.py`:
+Inside the shell, `slapstick-smoke` passes the exact same pinned Snes9x source
+revision to `tools/libretro-smoke.py`:
 
 ```sh
 slapstick-smoke \
@@ -86,6 +111,9 @@ nix run .#smoke -- \
   --frames 1800 \
   --output-dir build/smoke
 ```
+
+`nix build .#core` builds only the pinned core. It does not pull the RetroArch
+desktop frontend into the headless harness closure.
 
 ## Runtime scenarios
 
@@ -112,7 +140,7 @@ Nixpkgs classifies it as unfree; this flake opts in to that package explicitly.
 - Encodes the freshly translated dialogue, menus, items, equipment, and enemy
   names from `translation/script/`.
 - Expands the ROM from 1.5 MiB to 2 MiB and installs bank-safe text redirects.
-- Converts the original 16-pixel dialogue alphabet to a legible 8-pixel font.
+- Installs the native 8×16 Spleen bitmap font for crisp, legible dialogue.
 - Reflows prose at word boundaries and validates custom dialogue-box sizes.
 - Recalculates the SNES checksum and verifies both generated patches by
   applying them in memory and comparing every output byte.

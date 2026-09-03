@@ -411,7 +411,7 @@
     "offset": "069F54",
     "kind": "dialog",
     "source": "[DEF][DLY:6]······ん?[N][DLY:0]スクリーンを[N]まだなおしてねえのか?[N]ふんっ···まあいい[FIN]ところで [TPL:0]は[N]もう みつかったのか?[N] はい[N] なんのことでしょう?",
-    "translation": "[DEF][DLY:6]...Hmm?[N][DLY:0]You still haven't fixed[N]the screen? Hmph... Fine.[FIN]Well? Have you found[N][TPL:0] yet?[N] Yes[N] What are you talking[FIN]about?"
+    "translation": "[DEF][DLY:6]...Hmm?[N][DLY:0]You still haven't fixed[N]the screen? Hmph... Fine.[FIN]Well? Have you found[N][TPL:0] yet?[N] Yes[N] What do you mean?"
   },
   {
     "offset": "069FA7",

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "name": "Snes9x",
+  "version": "1.63",
+  "sourceOwner": "libretro",
+  "sourceRepository": "snes9x",
+  "revision": "890b5d445538fe790aa3add3d5702c80f551e0ae",
+  "sourceUrl": "https://github.com/libretro/snes9x/archive/890b5d445538fe790aa3add3d5702c80f551e0ae.tar.gz",
+  "sourceSha256": "fcc32b536d3e7b1def0d15489917dd043d5e1d9636de8af7851c48e771276613",
+  "nixSourceHash": "sha256-YFEN2KE1MiVZ21G9WIjjqIN+WEt1HT0s9/5cBwJ8I5I=",
+  "sourceDirectory": "libretro",
+  "libraryFile": "snes9x_libretro.so"
+}

@@ -153,11 +153,24 @@ existing bank-preservation behavior then resumes the caller correctly.
 ## Dialogue font and layout
 
 The original dialogue alphabet is stored as 16x16, four-tile 2bpp glyphs at
-`0x040000` and `0x042000`, with a 12-pixel advance. The build compresses the
-Latin glyph art into the left eight pixels of each cell and changes the three
-renderer increments at `0x04A65A`, `0x04A768`, and `0x04A772` from three tile
-units to two. This provides an eight-pixel English dialogue font without
-requiring replacement artwork.
+`0x040000` and `0x042000`, with a 12-pixel advance. Horizontally resampling
+those glyphs made narrow letters irregular and difficult to distinguish, so the
+build now installs the native 8x16 Spleen 2.2.0 bitmap glyphs in the left half
+of each cell. It changes the three renderer increments at `0x04A65A`,
+`0x04A768`, and `0x04A772` from three tile units to two, preserving the
+26-column dialogue layout with an exact eight-pixel advance.
+
+The bundled subset and its upstream BDF digest are pinned in
+`assets/fonts/spleen-8x16.json`. The build validates the subset hash, cell
+dimensions, version, and every bitmap before modifying the ROM. Spleen is
+Copyright (c) 2018-2026 Frederic Cambus and distributed under BSD-2-Clause;
+the complete license is in `assets/fonts/LICENSE.spleen` and alongside the
+binary patches in `dist/LICENSE.spleen`.
+
+The base-font byte `0x1F` draws the Japanese circular full stop, so the dialogue
+encoder never uses it for an English period. ASCII `.` always selects the
+alternate-font Western dot at `0x7E`; console text uses its Western dot at
+`0xFE`.
 
 `tools/reflow-dialog.mjs` removes stale mid-sentence layout breaks when the next
 word fits, then wraps normal dialogue to 26 English columns and four rows while
@@ -177,6 +190,12 @@ columns 9, 15, and 21; sound choices occupy four-column slots beginning at
 columns 9 and 15. Button action labels have 14 columns before the fixed A/B/X/Y
 choices. The script validator enforces these constraints so text, selection
 palettes, and cursors remain aligned.
+
+Console boxes advance one eight-pixel cell per Latin character. The main-menu
+caption has eight cells, and the selected-item header has nine; the latter is
+why inventory names use compact menu forms such as `THNDR SWD` and `CHAM LENS`.
+The validator checks every literal console line against its active `BOX`, plus
+the complete item-name, machine-option, main-caption, and battle-target tables.
 
 ## Build verification
 

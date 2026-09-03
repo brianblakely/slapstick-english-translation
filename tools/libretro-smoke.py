@@ -13,9 +13,23 @@ import ctypes
 import hashlib
 import json
 import os
+import re
 import signal
 from pathlib import Path
 from typing import Final
+
+
+REPOSITORY_ROOT: Final = Path(__file__).resolve().parent.parent
+CACHED_CORE: Final = REPOSITORY_ROOT / ".cache" / "libretro" / "snes9x_libretro.so"
+SYSTEM_CORES: Final = (
+    Path("/usr/lib/libretro/snes9x_libretro.so"),
+    Path("/usr/lib/x86_64-linux-gnu/libretro/snes9x_libretro.so"),
+    Path("/usr/lib/aarch64-linux-gnu/libretro/snes9x_libretro.so"),
+    Path("/usr/local/lib/libretro/snes9x_libretro.so"),
+)
+GENERATED_ARTIFACT: Final = re.compile(
+    r"^(?:frame-\d{6}\.ppm|wram-\d{6}\.bin|state-\d{6}\.bin)$"
+)
 
 
 class RetroSystemInfo(ctypes.Structure):
@@ -291,16 +305,53 @@ def state_hash(core: ctypes.CDLL, size: int, buffer: ctypes.Array) -> str | None
     return hashlib.sha256(buffer.raw[:size]).hexdigest()
 
 
+def resolve_core_path(argument: Path | None) -> Path:
+    if argument is not None:
+        candidates = [("--core", argument)]
+    elif os.environ.get("SNES9X_LIBRETRO_CORE"):
+        candidates = [
+            ("SNES9X_LIBRETRO_CORE", Path(os.environ["SNES9X_LIBRETRO_CORE"]))
+        ]
+    else:
+        candidates = [("project cache", CACHED_CORE)] + [
+            ("system", path) for path in SYSTEM_CORES
+        ]
+
+    checked = []
+    for source, candidate in candidates:
+        path = candidate.expanduser().resolve()
+        checked.append(str(path))
+        if path.is_file():
+            return path
+
+    if argument is not None or os.environ.get("SNES9X_LIBRETRO_CORE"):
+        source = candidates[0][0]
+        raise SystemExit(f"The Snes9x core selected by {source} does not exist: {checked[0]}")
+    locations = "\n  ".join(checked)
+    raise SystemExit(
+        "No Snes9x libretro core was found. Run `npm run setup:smoke` to "
+        f"build the pinned project core.\nChecked:\n  {locations}"
+    )
+
+
+def prepare_output_directory(path: Path, protected_paths: set[Path]) -> None:
+    path.mkdir(parents=True, exist_ok=True)
+    for artifact in path.iterdir():
+        if artifact.name == "report.json" or GENERATED_ARTIFACT.fullmatch(artifact.name):
+            is_protected = artifact.resolve() in protected_paths
+            if not is_protected and (artifact.is_file() or artifact.is_symlink()):
+                artifact.unlink()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("rom", type=Path)
     parser.add_argument(
         "--core",
         type=Path,
-        default=Path(
-            os.environ.get(
-                "SNES9X_LIBRETRO_CORE", "/usr/lib/libretro/snes9x_libretro.so"
-            )
+        help=(
+            "Snes9x libretro core (defaults to SNES9X_LIBRETRO_CORE, the "
+            "project cache, then common system paths)"
         ),
     )
     parser.add_argument("--frames", type=int, default=1800)
@@ -324,12 +375,33 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
 
+    # report.json is the completion marker, and numbered artifacts belong to a
+    # single run. Remove only those known outputs so a failed or shorter rerun
+    # can never masquerade as an earlier successful run.
+    protected_paths = {args.rom.resolve()}
+    if args.load_state:
+        protected_paths.add(args.load_state.resolve())
+    prepare_output_directory(args.output_dir, protected_paths)
     if args.frames < 0:
         raise SystemExit("--frames must not be negative")
+    if args.snapshot_every <= 0:
+        raise SystemExit("--snapshot-every must be positive")
+    if not args.rom.is_file():
+        raise SystemExit(f"ROM does not exist: {args.rom.resolve()}")
+    if args.load_state and not args.load_state.is_file():
+        raise SystemExit(f"Save state does not exist: {args.load_state.resolve()}")
 
-    args.output_dir.mkdir(parents=True, exist_ok=True)
+    core_path = resolve_core_path(args.core)
     pulses = parse_pulses(args.pulse) + parse_repeats(args.repeat)
-    core = ctypes.CDLL(str(args.core.resolve()))
+    core_sha256 = hashlib.sha256(core_path.read_bytes()).hexdigest()
+    # Some Snes9x builds write diagnostics with C stdio. Keep stdout reserved
+    # for the machine-readable report while still exposing that output on stderr.
+    sys_stdout_fd = os.dup(1)
+    os.dup2(2, 1)
+    try:
+        core = ctypes.CDLL(str(core_path))
+    except OSError as error:
+        raise SystemExit(f"Could not load Snes9x core {core_path}: {error}") from error
     configure_core(core)
     frontend = Frontend(args.output_dir, args.snapshot_every)
     core.retro_set_environment(frontend.environment_callback)
@@ -341,6 +413,7 @@ def main() -> None:
 
     core.retro_init()
     rom_bytes = args.rom.read_bytes()
+    rom_sha256 = hashlib.sha256(rom_bytes).hexdigest()
     rom_buffer = ctypes.create_string_buffer(rom_bytes)
     game = RetroGameInfo(
         str(args.rom.resolve()).encode(),
@@ -359,8 +432,14 @@ def main() -> None:
     core.retro_get_system_av_info(ctypes.byref(av_info))
     serialize_size = core.retro_serialize_size()
     serialize_buffer = ctypes.create_string_buffer(serialize_size)
+    loaded_state = None
     if args.load_state:
         state_bytes = args.load_state.read_bytes()
+        loaded_state = {
+            "path": str(args.load_state),
+            "size": len(state_bytes),
+            "sha256": hashlib.sha256(state_bytes).hexdigest(),
+        }
         if len(state_bytes) != serialize_size:
             raise SystemExit(
                 f"Save state is {len(state_bytes)} bytes; expected {serialize_size}"
@@ -371,6 +450,7 @@ def main() -> None:
     samples = []
     wram_size = core.retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM)
 
+    final_state_sha256 = None
     try:
         for frame in range(args.frames + 1):
             frontend.frame = frame
@@ -412,30 +492,50 @@ def main() -> None:
         if args.save_state_output:
             if not core.retro_serialize(serialize_buffer, serialize_size):
                 raise RuntimeError("The libretro core could not serialize final state")
+            final_state_bytes = serialize_buffer.raw[:serialize_size]
             args.save_state_output.parent.mkdir(parents=True, exist_ok=True)
-            args.save_state_output.write_bytes(serialize_buffer.raw[:serialize_size])
+            args.save_state_output.write_bytes(final_state_bytes)
+            final_state_sha256 = hashlib.sha256(final_state_bytes).hexdigest()
     finally:
         core.retro_unload_game()
         core.retro_deinit()
 
     report = {
+        "schemaVersion": 1,
+        "harnessSha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "core": {
             "name": info.library_name.decode() if info.library_name else None,
             "version": info.library_version.decode() if info.library_version else None,
+            "path": str(core_path),
+            "sha256": core_sha256,
         },
         "rom": str(args.rom),
+        "romSize": len(rom_bytes),
+        "romSha256": rom_sha256,
+        "loadState": loaded_state,
+        "inputs": {
+            "pulses": args.pulse,
+            "repeats": args.repeat,
+        },
+        "framesRequested": args.frames,
         "framesRun": frame + 1,
+        "snapshotEvery": args.snapshot_every,
         "fps": av_info.timing.fps,
         "geometry": [av_info.geometry.base_width, av_info.geometry.base_height],
         "pixelFormat": frontend.pixel_format,
         "wramSize": wram_size,
         "serializeSize": serialize_size,
         "finalState": str(args.save_state_output) if args.save_state_output else None,
+        "finalStateSha256": final_state_sha256,
+        "shutdownRequested": frontend.shutdown,
         "environmentCommands": sorted(frontend.environment_commands),
         "samples": samples,
     }
-    (args.output_dir / "report.json").write_text(json.dumps(report, indent=2) + "\n")
-    print(json.dumps(report, indent=2))
+    report_json = json.dumps(report, indent=2) + "\n"
+    (args.output_dir / "report.json").write_text(report_json)
+    ctypes.CDLL(None).fflush(None)
+    with os.fdopen(sys_stdout_fd, "w") as report_stdout:
+        report_stdout.write(report_json)
 
 
 if __name__ == "__main__":

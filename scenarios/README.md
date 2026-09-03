@@ -113,7 +113,8 @@ Add an input to run it immediately after applying memory changes:
 The shorthand `"interaction": "a"` uses 1 delay frame, 1 held frame, and 2
 frames afterward. This path loads the patched state in the existing libretro
 harness, sends the input, and serializes the resulting state. It needs the
-private patched ROM plus Snes9x core; `nix develop` supplies the core through
+private patched ROM; the harness prepares its pinned project-local Snes9x core
+on first use. `nix develop` can instead supply the core through
 `SNES9X_LIBRETRO_CORE`. Use `--rom`, `--core`, or `--no-interaction` as needed.
 Interactions are intentionally state-only: a generated ROM applies memory
 initialization when New Game is selected but does not synthesize controller

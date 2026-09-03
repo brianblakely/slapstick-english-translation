@@ -879,7 +879,7 @@
     "offset": "08C7A4",
     "kind": "dialog",
     "source": "[CLR]な·なにが ほしいんだ?[N]無事に出たら 考えるぞ![N] きおくを失った男のこと[N] お金がほしい",
-    "translation": "[CLR]Wh-what do you want?[N]I'll consider it once[N]we're safe![FIN] The man who lost his[N]memory[N] I want money"
+    "translation": "[CLR]Wh-what do you want?[N]I'll consider it once[N]we're safe![FIN] Ask about the amnesiac[N] Ask for money"
   },
   {
     "offset": "08C7DB",
@@ -1233,7 +1233,7 @@
     "offset": "08E377",
     "kind": "dialog",
     "source": "[DEF]これは[NAM:0]樣[N][PAU:14]何か ご用ですか?[N] やっぱり 協力してあげる[N] なんでもないよ よんだだけ",
-    "translation": "[DEF]Ah, [NAM:0].[N][PAU:14]Do you need something?[N] I'll help after all[N] Nothing, just saying[FIN]hello"
+    "translation": "[DEF]Ah, [NAM:0].[N][PAU:14]Do you need something?[N] I'll help after all[N] Just saying hello"
   },
   {
     "offset": "08E3AD",

@@ -39,7 +39,7 @@
     "offset": "01E97B",
     "kind": "console",
     "source": "[BOX:5,13,182][POS:484] はじめ[N] ページ[N] もどる[N] おわり",
-    "translation": "[BOX:5,13,182][POS:484] Start[N] Page[N] Back[N] Done"
+    "translation": "[BOX:5,13,182][POS:484] Home[N] Page[N] Back[N] Done"
   },
   {
     "offset": "01E99B",
@@ -69,7 +69,7 @@
     "offset": "01EA0B",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,3,1C4] サウンド    ステレオ  モノラル",
-    "translation": "[PAL:4][BOX:1A,3,1C4] SOUND   2 CH  MONO"
+    "translation": "[PAL:4][BOX:1A,3,1C4] SOUND   ST.   MONO"
   },
   {
     "offset": "01EA27",
@@ -81,7 +81,7 @@
     "offset": "01EA8B",
     "kind": "console",
     "source": "[PAL:4][BOX:18,2,608]1つのボタンにかならず1つせっていをしてください",
-    "translation": "[PAL:4][BOX:18,2,608]Assign exactly one action to each button."
+    "translation": "[PAL:4][BOX:18,2,608]One action per button."
   },
   {
     "offset": "01EAAE",
@@ -93,7 +93,7 @@
     "offset": "01EAB8",
     "kind": "console",
     "source": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6]トロン",
-    "translation": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6] tron"
+    "translation": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6] tr"
   },
   {
     "offset": "01EADA",
@@ -165,7 +165,7 @@
     "offset": "01EBD4",
     "kind": "console",
     "source": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE]メガ[N] つぎのレベルまで[N] [DEC:1,5,06E2]メガ[N][BOX:A,4,582] おかね[N] [NUM:5,06E6]トロン[BOX:10,19,5A]プログラム [PAL:8][NUM:4,0B86]ポイント[PAL:4][N]そうび[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]ひらめき[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84]コ[PAL:4]",
-    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE] mega[N] TO NEXT LEVEL[N] [DEC:1,5,06E2] mega[N][BOX:A,4,582] MONEY[N] [NUM:5,06E6] tron[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] POINTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
+    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] M[N]NEXT LEVEL[N][DEC:1,5,06E2] M[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
   },
   {
     "offset": "01EC91",
@@ -309,7 +309,7 @@
     "offset": "01F07B",
     "kind": "console",
     "source": "[PAL:4][BOX:8,2,28][NUM:5,06E6]トロン",
-    "translation": "[PAL:4][BOX:8,2,28][NUM:5,06E6] tron"
+    "translation": "[PAL:4][BOX:8,2,28][NUM:5,06E6] tr"
   },
   {
     "offset": "01F08A",
@@ -441,13 +441,13 @@
     "offset": "01F277",
     "kind": "console",
     "source": "[PAL:4][BOX:9,13,42][PAL:8]きほんステータス[PAL:4][POS:1C4]エネルギー[N]パワー[N]ガード[N]スピード[N]チャージ",
-    "translation": "[PAL:4][BOX:9,13,42][PAL:8]BASE STATS[PAL:4][POS:1C4]ENERGY[N]POWER[N]GUARD[N]SPEED[N]CHARGE"
+    "translation": "[PAL:4][BOX:9,13,42][PAL:8]STATS[PAL:4][POS:1C4]ENERGY[N]POWER[N]GUARD[N]SPEED[N]CHARGE"
   },
   {
     "offset": "01F2AC",
     "kind": "console",
     "source": "[PAL:4][BOX:9,13,68][PAL:8]れんぞくわざ[PAL:4][POS:16C][STR:@consolestring_01F4DD]",
-    "translation": "[PAL:4][BOX:9,13,68][PAL:8]COMBO MOVES[PAL:4][POS:16C][STR:@consolestring_01F4DD]"
+    "translation": "[PAL:4][BOX:9,13,68][PAL:8]COMBOS[PAL:4][POS:16C][STR:@consolestring_01F4DD]"
   },
   {
     "offset": "01F2C7",
@@ -717,25 +717,25 @@
     "offset": "01F8B3",
     "kind": "console",
     "source": "メタルソード  ",
-    "translation": "METAL SWORD"
+    "translation": "METAL SWD"
   },
   {
     "offset": "01F8BD",
     "kind": "console",
     "source": "バトルソード  ",
-    "translation": "BATTLE SWORD"
+    "translation": "BTL SWORD"
   },
   {
     "offset": "01F8C8",
     "kind": "console",
     "source": "フルメタルソード",
-    "translation": "FULL METAL SWORD"
+    "translation": "FM SWORD"
   },
   {
     "offset": "01F8D2",
     "kind": "console",
     "source": "サンダーソード ",
-    "translation": "THUNDER SWORD"
+    "translation": "THNDR SWD"
   },
   {
     "offset": "01F8DD",
@@ -747,103 +747,103 @@
     "offset": "01F8E6",
     "kind": "console",
     "source": "バトルアクス  ",
-    "translation": "BATTLE AXE"
+    "translation": "BTL AXE"
   },
   {
     "offset": "01F8F0",
     "kind": "console",
     "source": "フルメタルアクス",
-    "translation": "FULL METAL AXE"
+    "translation": "FM AXE"
   },
   {
     "offset": "01F8F9",
     "kind": "console",
     "source": "ソニックブレイド",
-    "translation": "SONIC BLADE"
+    "translation": "SONIC BLD"
   },
   {
     "offset": "01F904",
     "kind": "console",
     "source": "プラズマブレイド",
-    "translation": "PLASMA BLADE"
+    "translation": "PLAS BLD"
   },
   {
     "offset": "01F911",
     "kind": "console",
     "source": "レーザーブレイド",
-    "translation": "LASER BLADE"
+    "translation": "LASER BLD"
   },
   {
     "offset": "01F91D",
     "kind": "console",
     "source": "ソウルブレイド ",
-    "translation": "SOUL BLADE"
+    "translation": "SOUL BLD"
   },
   {
     "offset": "01F928",
     "kind": "console",
     "source": "ドクドクハンマー",
-    "translation": "POISON HAMMER"
+    "translation": "PSN HAMMR"
   },
   {
     "offset": "01F933",
     "kind": "console",
     "source": "スッポンハンマー",
-    "translation": "PLUNGER HAMMER"
+    "translation": "PLUNGER"
   },
   {
     "offset": "01F93D",
     "kind": "console",
     "source": "メガトンハンマー",
-    "translation": "MEGATON HAMMER"
+    "translation": "MEGA HAMR"
   },
   {
     "offset": "01F947",
     "kind": "console",
     "source": "ヘビーストーン ",
-    "translation": "HEAVY STONE"
+    "translation": "HVY STONE"
   },
   {
     "offset": "01F951",
     "kind": "console",
     "source": "パニックストーン",
-    "translation": "PANIC STONE"
+    "translation": "PNC STONE"
   },
   {
     "offset": "01F95B",
     "kind": "console",
     "source": "ブレイクストーン",
-    "translation": "BREAK STONE"
+    "translation": "BRK STONE"
   },
   {
     "offset": "01F965",
     "kind": "console",
     "source": "パンパンパンチ ",
-    "translation": "BAM-BAM PUNCH"
+    "translation": "BAM PUNCH"
   },
   {
     "offset": "01F971",
     "kind": "console",
     "source": "スーパーパンチ ",
-    "translation": "SUPER PUNCH"
+    "translation": "SUPR PNCH"
   },
   {
     "offset": "01F97C",
     "kind": "console",
     "source": "ひっさつパンチ ",
-    "translation": "FINISHER PUNCH"
+    "translation": "FIN PUNCH"
   },
   {
     "offset": "01F986",
     "kind": "console",
     "source": "ロケットブロー ",
-    "translation": "ROCKET BLOW"
+    "translation": "RCKT BLOW"
   },
   {
     "offset": "01F990",
     "kind": "console",
     "source": "ローリングブロー",
-    "translation": "ROLLING BLOW"
+    "translation": "ROLL BLOW"
   },
   {
     "offset": "01F99B",
@@ -873,31 +873,31 @@
     "offset": "01F9C3",
     "kind": "console",
     "source": "ツイストレーザー",
-    "translation": "TWIST LASER"
+    "translation": "TWST LASR"
   },
   {
     "offset": "01F9CD",
     "kind": "console",
     "source": "チャージレーザー",
-    "translation": "CHARGE LASER"
+    "translation": "CHRG LASR"
   },
   {
     "offset": "01F9D8",
     "kind": "console",
     "source": "はどうレーザー ",
-    "translation": "WAVE LASER"
+    "translation": "WAVE LASR"
   },
   {
     "offset": "01F9E3",
     "kind": "console",
     "source": "ストレートボム ",
-    "translation": "STRAIGHT BOMB"
+    "translation": "STRT BOMB"
   },
   {
     "offset": "01F9ED",
     "kind": "console",
     "source": "ナパームボム  ",
-    "translation": "NAPALM BOMB"
+    "translation": "NAPLM BMB"
   },
   {
     "offset": "01F9F8",
@@ -909,73 +909,73 @@
     "offset": "01FA02",
     "kind": "console",
     "source": "かくさんボム  ",
-    "translation": "SCATTER BOMB"
+    "translation": "SCTR BOMB"
   },
   {
     "offset": "01FA0C",
     "kind": "console",
     "source": "ヘビーシールド ",
-    "translation": "HEAVY SHIELD"
+    "translation": "HVY SHLD"
   },
   {
     "offset": "01FA17",
     "kind": "console",
     "source": "サビーズシールド",
-    "translation": "RUSTY SHIELD"
+    "translation": "RSTY SHLD"
   },
   {
     "offset": "01FA23",
     "kind": "console",
     "source": "サイコシールド ",
-    "translation": "PSYCHO SHIELD"
+    "translation": "PSY SHLD"
   },
   {
     "offset": "01FA2D",
     "kind": "console",
     "source": "ケミカルシールド",
-    "translation": "CHEMICAL SHIELD"
+    "translation": "CHEM SHLD"
   },
   {
     "offset": "01FA37",
     "kind": "console",
     "source": "ハイパーシールド",
-    "translation": "HYPER SHIELD"
+    "translation": "HYPR SHLD"
   },
   {
     "offset": "01FA42",
     "kind": "console",
     "source": "パックざんがい ",
-    "translation": "PACK WRECKAGE"
+    "translation": "PACK SCRP"
   },
   {
     "offset": "01FA4E",
     "kind": "console",
     "source": "パワーパック  ",
-    "translation": "POWER PACK"
+    "translation": "PWR PACK"
   },
   {
     "offset": "01FA59",
     "kind": "console",
     "source": "シールドパック ",
-    "translation": "SHIELD PACK"
+    "translation": "SHLD PACK"
   },
   {
     "offset": "01FA64",
     "kind": "console",
     "source": "ターボパック  ",
-    "translation": "TURBO PACK"
+    "translation": "TRBO PACK"
   },
   {
     "offset": "01FA6F",
     "kind": "console",
     "source": "ソーラーパック ",
-    "translation": "SOLAR PACK"
+    "translation": "SOLR PACK"
   },
   {
     "offset": "01FA79",
     "kind": "console",
     "source": "クイックパック ",
-    "translation": "QUICK PACK"
+    "translation": "QCK PACK"
   },
   {
     "offset": "01FA83",
@@ -987,13 +987,13 @@
     "offset": "01FA8D",
     "kind": "console",
     "source": "パワーブーツ  ",
-    "translation": "POWER BOOTS"
+    "translation": "PWR BOOTS"
   },
   {
     "offset": "01FA98",
     "kind": "console",
     "source": "スワンプブーツ ",
-    "translation": "SWAMP BOOTS"
+    "translation": "SWMP BOOT"
   },
   {
     "offset": "01FAA3",
@@ -1005,31 +1005,31 @@
     "offset": "01FAAD",
     "kind": "console",
     "source": "タンクブーツ  ",
-    "translation": "TANK BOOTS"
+    "translation": "TANK BOOT"
   },
   {
     "offset": "01FAB7",
     "kind": "console",
     "source": "ホバーブーツ  ",
-    "translation": "HOVER BOOTS"
+    "translation": "HOVR BOOT"
   },
   {
     "offset": "01FAC2",
     "kind": "console",
     "source": "トランシーバー ",
-    "translation": "TRANSCEIVER"
+    "translation": "COMLINK"
   },
   {
     "offset": "01FACC",
     "kind": "console",
     "source": "びっくりホーン ",
-    "translation": "SURPRISE HORN"
+    "translation": "SURP HORN"
   },
   {
     "offset": "01FAD6",
     "kind": "console",
     "source": "もぐらドリル  ",
-    "translation": "MOLE DRILL"
+    "translation": "MOLE DRIL"
   },
   {
     "offset": "01FAE1",
@@ -1041,13 +1041,13 @@
     "offset": "01FAEB",
     "kind": "console",
     "source": "かわるんです  ",
-    "translation": "TRANSFORMER"
+    "translation": "TRANSFORM"
   },
   {
     "offset": "01FAF5",
     "kind": "console",
     "source": "カメレオングラス",
-    "translation": "CHAMELEON GLASSES"
+    "translation": "CHAM LENS"
   },
   {
     "offset": "01FAFF",
@@ -1059,7 +1059,7 @@
     "offset": "01FB09",
     "kind": "console",
     "source": "おてつだいロボ ",
-    "translation": "HELPER ROBOT"
+    "translation": "HELPERBOT"
   },
   {
     "offset": "01FB14",
@@ -1071,7 +1071,7 @@
     "offset": "01FB1D",
     "kind": "console",
     "source": "はなのたね   ",
-    "translation": "FLOWER SEEDS"
+    "translation": "FLWR SEED"
   },
   {
     "offset": "01FB26",
@@ -1089,19 +1089,19 @@
     "offset": "01FB38",
     "kind": "console",
     "source": "ワープシステム ",
-    "translation": "WARP SYSTEM"
+    "translation": "WARP SYS"
   },
   {
     "offset": "01FB42",
     "kind": "console",
     "source": "だべっこどうぶつ",
-    "translation": "ANIMAL CHATTER"
+    "translation": "ANML TALK"
   },
   {
     "offset": "01FB4F",
     "kind": "console",
     "source": "サイバージャック",
-    "translation": "CYBER JACK"
+    "translation": "CYBR JACK"
   },
   {
     "offset": "01FB5A",
@@ -1119,7 +1119,7 @@
     "offset": "01FB6E",
     "kind": "console",
     "source": "きいろポット  ",
-    "translation": "YELLOW POT"
+    "translation": "YLW POT"
   },
   {
     "offset": "01FB78",
@@ -1137,19 +1137,19 @@
     "offset": "01FB8B",
     "kind": "console",
     "source": "せきばん    ",
-    "translation": "STONE TABLET"
+    "translation": "TABLET"
   },
   {
     "offset": "01FB95",
     "kind": "console",
     "source": "かんぶバッチ  ",
-    "translation": "OFFICER BADGE"
+    "translation": "COP BADGE"
   },
   {
     "offset": "01FBA0",
     "kind": "console",
     "source": "ハッカーバッチ ",
-    "translation": "HACKER BADGE"
+    "translation": "HKR BADGE"
   },
   {
     "offset": "01FBAA",
@@ -1173,7 +1173,7 @@
     "offset": "01FBC5",
     "kind": "console",
     "source": "あかいはな   ",
-    "translation": "RED FLOWER"
+    "translation": "RED FLWR"
   },
   {
     "offset": "01FBCE",
@@ -1185,7 +1185,7 @@
     "offset": "01FBD7",
     "kind": "console",
     "source": "さびたドリル  ",
-    "translation": "RUSTY DRILL"
+    "translation": "RSTY DRIL"
   },
   {
     "offset": "01FBE2",
@@ -1263,7 +1263,7 @@
     "offset": "01FC5A",
     "kind": "console",
     "source": "けむりだま   ",
-    "translation": "SMOKE BOMB"
+    "translation": "SMOKE BMB"
   },
   {
     "offset": "01FC64",
@@ -1275,25 +1275,25 @@
     "offset": "01FC6E",
     "kind": "console",
     "source": "さびトレール  ",
-    "translation": "RUST REMOVER"
+    "translation": "RUST-OFF"
   },
   {
     "offset": "01FC78",
     "kind": "console",
     "source": "しゅうりキット ",
-    "translation": "REPAIR KIT"
+    "translation": "REPR KIT"
   },
   {
     "offset": "01FC81",
     "kind": "console",
     "source": "スーパーボム  ",
-    "translation": "SUPER BOMB"
+    "translation": "SUPR BOMB"
   },
   {
     "offset": "01FC8C",
     "kind": "console",
     "source": "おてんきママさん",
-    "translation": "WEATHER MAMA"
+    "translation": "WTHR MAMA"
   },
   {
     "offset": "01FC95",
@@ -1347,13 +1347,13 @@
     "offset": "01FCE3",
     "kind": "console",
     "source": "アイテムそうび ",
-    "translation": "EQUIP ITEMS"
+    "translation": " EQUIP"
   },
   {
     "offset": "01FCED",
     "kind": "console",
     "source": " メンテナンス ",
-    "translation": " MAINTENANCE"
+    "translation": " MAINT."
   },
   {
     "offset": "01FCF6",
@@ -1365,7 +1365,7 @@
     "offset": "01FCFF",
     "kind": "console",
     "source": " れんぞくわざ ",
-    "translation": " COMBO MOVES"
+    "translation": " COMBOS"
   },
   {
     "offset": "01FD0A",
@@ -1377,7 +1377,7 @@
     "offset": "01FD14",
     "kind": "console",
     "source": "いれかえじゅん ",
-    "translation": "SWITCH ORDER"
+    "translation": " ORDER"
   },
   {
     "offset": "01FDD2",

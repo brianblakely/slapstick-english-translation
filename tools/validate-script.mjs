@@ -14,6 +14,41 @@ const CONFIG_OPTION_LAYOUTS = new Map([
   ["01EA0B", { columns: 26, slots: [[9, 4], [15, 4]] }],
 ]);
 const CONFIG_BUTTON_OFFSET = "01EA27";
+const SINGLE_LINE_CHOICE_LAYOUTS = new Map([
+  ["069F54", 2],
+  ["08C7A4", 2],
+  ["08E377", 2],
+]);
+const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
+  ["01FC95", { columns: 13, description: "Invention Machine option" }],
+  ["01FC9E", { columns: 13, description: "Invention Machine option" }],
+  ["01FCA8", { columns: 13, description: "Invention Machine option" }],
+  ["01FCB1", { columns: 13, description: "Invention Machine option" }],
+  ["01FCBB", { columns: 13, description: "Invention Machine option" }],
+  ["01FCC4", { columns: 13, description: "Invention Machine option" }],
+  ["01FCCF", { columns: 8, description: "main-menu caption" }],
+  ["01FCD8", { columns: 13, description: "Invention Machine option" }],
+  ["01FCE3", { columns: 8, description: "main-menu caption" }],
+  ["01FCED", { columns: 8, description: "main-menu caption" }],
+  ["01FCF6", { columns: 8, description: "main-menu caption" }],
+  ["01FCFF", { columns: 8, description: "main-menu caption" }],
+  ["01FD0A", { columns: 8, description: "main-menu caption" }],
+  ["01FD14", { columns: 8, description: "main-menu caption" }],
+]);
+const CONSOLE_LABEL_RANGES = [
+  {
+    start: 0x01f8a0,
+    end: 0x01fc8c,
+    columns: 9,
+    description: "item name",
+  },
+  {
+    start: 0x01fddb,
+    end: 0x01ffac,
+    columns: 23,
+    description: "battle target name",
+  },
+];
 const errors = [];
 let entryCount = 0;
 
@@ -33,8 +68,9 @@ for (const filename of files) {
     }
     if (entry.kind === "dialog") {
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
+      validateSingleLineChoices(entry, location);
     }
-    if (entry.kind === "console") validateConfigLayout(entry, location);
+    if (entry.kind === "console") validateConsoleLayout(entry, location);
   }
 }
 
@@ -52,7 +88,10 @@ function inferredLayout(entry) {
   return undefined;
 }
 
-function validateConfigLayout(entry, location) {
+function validateConsoleLayout(entry, location) {
+  validateConsoleBoxLayout(entry.translation, location);
+  validateConsoleLabel(entry, location);
+
   const optionLayout = CONFIG_OPTION_LAYOUTS.get(entry.offset);
   if (optionLayout) {
     const line = entry.translation.replace(/\[[^\]]+\]/g, "");
@@ -100,6 +139,103 @@ function validateConfigLayout(entry, location) {
       errors.push(`${location}: button choices must remain aligned in four fixed A/B/X/Y rows`);
     }
   }
+}
+
+function validateConsoleLabel(entry, location) {
+  const offset = Number.parseInt(entry.offset, 16);
+  const layout = FIXED_CONSOLE_LABEL_LAYOUTS.get(entry.offset)
+    ?? CONSOLE_LABEL_RANGES.find(({ start, end }) => offset >= start && offset <= end);
+  if (!layout) return;
+
+  const width = visibleText(entry.translation).length;
+  if (width > layout.columns) {
+    errors.push(
+      `${location}: ${layout.description} requires ${width} columns in its ${layout.columns}-column layout`,
+    );
+  }
+}
+
+function validateConsoleBoxLayout(text, location) {
+  let columns = null;
+  let column = 0;
+  let reported = false;
+
+  const finishLine = () => {
+    if (!reported && columns !== null && column !== null && column > columns) {
+      errors.push(
+        `${location}: console line requires ${column} columns in a ${columns}-column box`,
+      );
+      reported = true;
+    }
+  };
+
+  for (const atom of tokenize(text)) {
+    if (atom.type === "character") {
+      if (column !== null) column += 1;
+      continue;
+    }
+
+    if (atom.name === "BOX") {
+      finishLine();
+      columns = Number.parseInt(atom.args[0], 16);
+      column = 0;
+      reported = false;
+      continue;
+    }
+    if (["N", "POS"].includes(atom.name)) {
+      finishLine();
+      column = 0;
+      reported = false;
+      continue;
+    }
+    if (["TBL", "STR", "FIL"].includes(atom.name)) {
+      // These commands render runtime-selected strings. Their source tables
+      // have separate fixed-width validation where the possible values are known.
+      column = null;
+      continue;
+    }
+    if (column !== null) column += consoleCommandWidth(atom);
+  }
+  finishLine();
+}
+
+function validateSingleLineChoices(entry, location) {
+  const expectedChoices = SINGLE_LINE_CHOICE_LAYOUTS.get(entry.offset);
+  if (!expectedChoices) return;
+
+  const lines = entry.translation.split(/\[(?:N|FIN)\]/).slice(-expectedChoices);
+  if (lines.length !== expectedChoices || lines.some((line) => !leadingText(line).startsWith(" "))) {
+    errors.push(`${location}: each of the ${expectedChoices} choices must occupy one indented line`);
+    return;
+  }
+  for (const line of lines) {
+    const width = dialogTextWidth(line);
+    if (width > 26) {
+      errors.push(`${location}: choice requires ${width} columns in a 26-column dialogue box`);
+    }
+  }
+}
+
+function visibleText(text) {
+  return text.replace(/\[[^\]]+\]/g, "");
+}
+
+function leadingText(text) {
+  return text.replace(/^(?:\[[^\]]+\])*/, "");
+}
+
+function dialogTextWidth(text) {
+  let width = 0;
+  for (const atom of tokenize(text)) {
+    width += atom.type === "character" ? 1 : commandWidth(atom);
+  }
+  return width;
+}
+
+function consoleCommandWidth(atom) {
+  if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);
+  if (atom.name === "DEC") return Number.parseInt(atom.args[1] ?? "1", 16);
+  return 0;
 }
 
 function validateDialogLayout(text, location, inheritedLayout) {

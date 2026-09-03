@@ -1,7 +1,10 @@
 node_modules/
+__pycache__/
+*.pyc
 third_party/
 .direnv/
 .retroarch/
+.cache/
 result
 result-*
 *.swp

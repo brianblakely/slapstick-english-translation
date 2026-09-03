@@ -20,6 +20,9 @@ const DIALOG_JUMP = 0xd3;
 const DIALOG_RETURN = 0xcc;
 const CONSOLE_REDIRECT_ROUTINE = 0x180000;
 const DIALOG_REDIRECT_ROUTINE = 0x180020;
+const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
+const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
+const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
 let crcTable = null;
 
 const DIALOG_COMMANDS = {
@@ -91,6 +94,8 @@ const allowIncomplete = hasFlag("--allow-incomplete");
 const checkOnly = hasFlag("--check");
 const romOutput = valueAfter("--rom-output", null);
 
+const dialogFont = JSON.parse(await readFile(DIALOG_FONT_PATH, "utf8"));
+validateDialogFont(dialogFont);
 const sourceRom = await readFile(sourceFilename);
 if (sourceRom.length !== SOURCE_SIZE) {
   throw new Error(`Expected a ${SOURCE_SIZE}-byte unheadered ROM, got ${sourceRom.length} bytes`);
@@ -100,6 +105,8 @@ const sourceHash = sha256(sourceRom);
 if (sourceHash !== SOURCE_SHA256) {
   throw new Error(`Wrong source ROM. Expected SHA-256 ${SOURCE_SHA256}, got ${sourceHash}`);
 }
+
+assertEnglishPeriodEncoding();
 
 const scriptFiles = (await readdir(scriptDirectory))
   .filter((filename) => filename.endsWith(".json"))
@@ -301,7 +308,7 @@ for (const candidate of candidates) {
   if (candidate.kind === "dialog") targetRom[candidate.offset + 4] = candidate.terminator;
 }
 
-installNarrowDialogFont(targetRom);
+installDialogFont(targetRom, dialogFont);
 installInterpreterHooks(targetRom);
 writeHeader(targetRom);
 
@@ -581,9 +588,11 @@ function dialogCharacterOptions(character) {
   if (character >= "A" && character <= "Z") options.push({ mode: "base", byte: 0x21 + character.charCodeAt(0) - 65 });
   if (character >= "a" && character <= "z") options.push({ mode: "alternate", byte: 0x21 + character.charCodeAt(0) - 97 });
   if (character >= "0" && character <= "9") options.push({ mode: "base", byte: 0x73 + character.charCodeAt(0) - 48 });
+  // Base 0x1F is the Japanese circular full stop. English periods use only
+  // alternate 0x7E, even when that requires a temporary font-mode switch.
   const base = new Map([
     ["?", 0x0f], ["┌", 0x10], ["┘", 0x11], ["(", 0x12], [")", 0x13],
-    [",", 0x1e], [".", 0x1f], ["!", 0x7d], ["·", 0x7e], [":", 0x7f],
+    [",", 0x1e], ["!", 0x7d], ["·", 0x7e], [":", 0x7f],
   ]);
   const alternate = new Map([
     ["…", 0x0f], ["→", 0x10], ["←", 0x11], ["↑", 0x12], ["↓", 0x13],
@@ -623,11 +632,22 @@ function consoleCharacter(character, source) {
     ["!", 0x7d], ["·", 0x7e], [":", 0x7f], ["?", 0x84], ["►", 0x85],
     ["├", 0x86], ["┬", 0x87], ["┤", 0x88], ["┗", 0x8f], ["┓", 0x9f],
     ["▼", 0xa0], ["ー", 0xf3], ["(", 0xf4], [")", 0xf5], [",", 0xf6],
-    ["┏", 0xf7], ["┛", 0xf8], ["*", 0xfa], ["+", 0xfb], ["-", 0xfc],
-    ["/", 0xfd], ["&", 0xfe], [".", 0xff],
+    ["┏", 0xf7], ["┛", 0xf8], ["*", 0xf9], ["+", 0xfa], ["-", 0xfb],
+    ["/", 0xfc], ["&", 0xfd], [".", 0xfe],
   ]);
   if (!symbols.has(character)) throw new Error(`Unsupported console character ${JSON.stringify(character)} in ${source}`);
   return symbols.get(character);
+}
+
+function assertEnglishPeriodEncoding() {
+  const dialog = encodeDialog(".");
+  const console = encodeConsole(".");
+  if (!dialog.equals(Buffer.from([0xd4, 0x7e, 0xd5, DIALOG_RETURN]))) {
+    throw new Error("English dialogue periods must use alternate-font glyph 0x7E");
+  }
+  if (!console.equals(Buffer.from([0xfe, 0x00]))) {
+    throw new Error("English console periods must use glyph 0xFE");
+  }
 }
 
 function tokenize(source) {
@@ -692,24 +712,31 @@ function pushAddress(output, value) {
   output.push(value & 0xff, (value >>> 8) & 0xff, (value >>> 16) & 0xff);
 }
 
-function installNarrowDialogFont(rom) {
-  // Dialogue glyphs are stored as four 8x8 2bpp tiles in a 16x16 cell. The
-  // original renderer advances by twelve pixels. English needs more room, so
-  // preserve the hand-drawn font while sampling each pair of horizontal
-  // pixels into the left half of the cell, then advance by eight pixels.
-  const baseCodes = [
-    ...range(0x21, 0x3a),
-    ...range(0x73, 0x7f),
-    0x0f, 0x10, 0x11, 0x12, 0x13, 0x1e, 0x1f,
+function installDialogFont(rom, font) {
+  // Each stock glyph occupies a 16x16 four-tile cell, but the English renderer
+  // advances by eight pixels. Install a native 8x16 bitmap in the cell's left
+  // tile column instead of distorting the original art with horizontal
+  // downsampling. Spleen's two-pixel stems remain distinct at SNES resolution.
+  const baseGlyphs = [
+    ...[..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"].map((character, index) => [0x21 + index, character]),
+    ...[..."0123456789"].map((character, index) => [0x73 + index, character]),
+    [0x0f, "?"], [0x10, "┌"], [0x11, "┘"], [0x12, "("], [0x13, ")"],
+    [0x1e, ","], [0x20, " "], [0x7d, "!"], [0x7e, "·"], [0x7f, ":"],
   ];
-  const alternateCodes = [
-    ...range(0x21, 0x3a),
-    0x0f, 0x10, 0x11, 0x12, 0x13, 0x1e, 0x1f,
-    0x75, 0x76, 0x79, 0x7a, 0x7b, 0x7c, 0x7d, 0x7e,
+  const alternateGlyphs = [
+    ...[..."abcdefghijklmnopqrstuvwxyz"].map((character, index) => [0x21 + index, character]),
+    [0x0f, "…"], [0x10, "→"], [0x11, "←"], [0x12, "↑"], [0x13, "↓"],
+    [0x1e, "\""], [0x1f, "'"], [0x75, "%"], [0x76, "="], [0x79, "*"],
+    [0x7a, "+"], [0x7b, "-"], [0x7c, "/"], [0x7d, "&"], [0x7e, "."],
+    [0x7f, " "],
   ];
 
-  for (const code of new Set(baseCodes)) narrowGlyph(rom, 0x040000 + code * 64);
-  for (const code of new Set(alternateCodes)) narrowGlyph(rom, 0x042000 + code * 64);
+  for (const [code, character] of baseGlyphs) {
+    installBitmapGlyph(rom, 0x040000 + code * 64, font, character);
+  }
+  for (const [code, character] of alternateGlyphs) {
+    installBitmapGlyph(rom, 0x042000 + code * 64, font, character);
+  }
 
   const bytePatches = [
     [0x04a65a, 0x03, 0x02], // line-wrap width for a one-byte glyph
@@ -728,35 +755,55 @@ function range(start, end) {
   return Array.from({ length: end - start + 1 }, (_, index) => start + index);
 }
 
-function narrowGlyph(rom, offset) {
-  const sourcePixels = readGlyph(rom, offset);
+function validateDialogFont(font) {
+  const expected = {
+    schemaVersion: 1,
+    name: "Spleen",
+    variant: "8x16",
+    version: "2.2.0",
+    license: "BSD-2-Clause",
+    sourceSha256: DIALOG_FONT_SOURCE_SHA256,
+    subsetSha256: DIALOG_FONT_SUBSET_SHA256,
+    cellWidth: 8,
+    cellHeight: 16,
+  };
+  for (const [field, value] of Object.entries(expected)) {
+    if (font[field] !== value) {
+      throw new Error(`Dialogue font ${field} is ${JSON.stringify(font[field])}; expected ${JSON.stringify(value)}`);
+    }
+  }
+  if (!font.glyphs || typeof font.glyphs !== "object" || Array.isArray(font.glyphs)) {
+    throw new Error("Dialogue font glyphs must be an object");
+  }
+  for (const [codepoint, bitmap] of Object.entries(font.glyphs)) {
+    if (!/^(?:0|[1-9]\d*)$/.test(codepoint) || !/^[0-9a-f]{32}$/.test(bitmap)) {
+      throw new Error(`Invalid dialogue font glyph ${JSON.stringify(codepoint)}`);
+    }
+  }
+  const canonical = Object.entries(font.glyphs)
+    .sort(([left], [right]) => Number(left) - Number(right))
+    .map(([codepoint, bitmap]) => `${codepoint}:${bitmap}`)
+    .join("\n") + "\n";
+  const actualHash = createHash("sha256").update(canonical).digest("hex");
+  if (actualHash !== DIALOG_FONT_SUBSET_SHA256) {
+    throw new Error(`Dialogue font subset SHA-256 is ${actualHash}; expected ${DIALOG_FONT_SUBSET_SHA256}`);
+  }
+}
+
+function installBitmapGlyph(rom, offset, font, character) {
+  const codepoint = character.codePointAt(0);
+  const bitmap = font.glyphs[codepoint];
+  if (!bitmap) throw new Error(`Spleen has no bundled glyph for ${JSON.stringify(character)}`);
   const targetPixels = Array.from({ length: 16 }, () => Array(16).fill(3));
   for (let y = 0; y < 16; y += 1) {
+    const row = Number.parseInt(bitmap.slice(y * 2, y * 2 + 2), 16);
     for (let x = 0; x < 8; x += 1) {
-      // Color 3 is the transparent/background color. Choosing the lower value
-      // retains the solid stroke when it shares a pair with an outline pixel.
-      targetPixels[y][x] = Math.min(sourcePixels[y][x * 2], sourcePixels[y][x * 2 + 1]);
+      // The stock dialogue palettes use index 1 for the visible stroke and
+      // index 3 for the transparent/background portion of each glyph.
+      if (row & (1 << (7 - x))) targetPixels[y][x] = 1;
     }
   }
   writeGlyph(rom, offset, targetPixels);
-}
-
-function readGlyph(rom, offset) {
-  const pixels = Array.from({ length: 16 }, () => Array(16).fill(0));
-  for (let tile = 0; tile < 4; tile += 1) {
-    const tileX = tile & 1;
-    const tileY = tile >>> 1;
-    for (let y = 0; y < 8; y += 1) {
-      const plane0 = rom[offset + tile * 16 + y * 2];
-      const plane1 = rom[offset + tile * 16 + y * 2 + 1];
-      for (let x = 0; x < 8; x += 1) {
-        const shift = 7 - x;
-        pixels[tileY * 8 + y][tileX * 8 + x] =
-          ((plane0 >>> shift) & 1) | (((plane1 >>> shift) & 1) << 1);
-      }
-    }
-  }
-  return pixels;
 }
 
 function writeGlyph(rom, offset, pixels) {

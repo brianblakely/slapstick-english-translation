@@ -23,7 +23,6 @@ const defaultScenariosDirectory = join(root, "scenarios");
 const defaultCheckpointDirectory = join(defaultScenariosDirectory, "checkpoints");
 const defaultCatalogPath = join(defaultScenariosDirectory, "catalog.json");
 const defaultRomPath = join(root, "build", "Slap Stick (Japan) [EN].sfc");
-const defaultCorePath = "/usr/lib/libretro/snes9x_libretro.so";
 
 function usage() {
   return `Usage: npm run scenario -- <name-or-file> [options]
@@ -43,8 +42,9 @@ Options:
       --list                List available scenarios
   -h, --help                Show this help
 
-Named checkpoint resolution also honors SLAPSTICK_CHECKPOINT_DIR. The core
-defaults to SNES9X_LIBRETRO_CORE, then ${defaultCorePath}.
+Named checkpoint resolution also honors SLAPSTICK_CHECKPOINT_DIR. Immediate
+interaction honors SNES9X_LIBRETRO_CORE and otherwise prepares the pinned
+project core through the visual harness.
 `;
 }
 
@@ -155,9 +155,9 @@ function runInteraction(state, interaction, options, scenario, scenarioDirectory
   if (!existsSync(rom)) {
     fail(`Interaction needs a ROM, but none was found at ${rom}. Build one or pass --rom.`);
   }
-  const core = resolve(options.core ?? defaultCorePath);
-  if (!existsSync(core)) {
-    fail(`Interaction needs the Snes9x libretro core, but none was found at ${core}. Enter nix develop or pass --core.`);
+  const core = options.core ? resolve(options.core) : undefined;
+  if (core && !existsSync(core)) {
+    fail(`Interaction needs the Snes9x libretro core selected by --core or SNES9X_LIBRETRO_CORE, but none was found at ${core}.`);
   }
 
   const work = mkdtempSync(join(tmpdir(), "slapstick-scenario-"));
@@ -168,10 +168,8 @@ function runInteraction(state, interaction, options, scenario, scenarioDirectory
   const frameCount = interaction.delayFrames + interaction.holdFrames + interaction.afterFrames;
   const finalFrame = Math.max(0, frameCount - 1);
   const arguments_ = [
-    join(root, "tools", "libretro-smoke.py"),
+    join(root, "tools", "run-libretro-smoke.mjs"),
     rom,
-    "--core",
-    core,
     "--load-state",
     input,
     "--frames",
@@ -185,9 +183,10 @@ function runInteraction(state, interaction, options, scenario, scenarioDirectory
     "--output-dir",
     runnerOutput,
   ];
+  if (core) arguments_.push("--core", core);
 
   try {
-    const result = spawnSync(process.env.PYTHON ?? "python3", arguments_, {
+    const result = spawnSync(process.execPath, arguments_, {
       cwd: root,
       encoding: "utf8",
       maxBuffer: 16 * 1024 * 1024,

@@ -22,8 +22,33 @@
       componentsFor = system:
         let
           pkgs = pkgsFor system;
-          retroarch = pkgs.retroarch.withCores (cores: [ cores.snes9x ]);
-          core = "${retroarch}/lib/retroarch/cores/snes9x_libretro.so";
+          snes9xPin = builtins.fromJSON (builtins.readFile ./tools/snes9x-core.json);
+          snes9x = pkgs.libretro.snes9x.overrideAttrs (previous: {
+            version = "0-pinned-${builtins.substring 0 12 snes9xPin.revision}";
+            src = pkgs.fetchFromGitHub {
+              owner = snes9xPin.sourceOwner;
+              repo = snes9xPin.sourceRepository;
+              rev = snes9xPin.revision;
+              hash = snes9xPin.nixSourceHash;
+            };
+            postPatch = (previous.postPatch or "") + ''
+              substituteInPlace libretro/Makefile \
+                --replace-fail \
+                'git rev-parse --short HEAD || echo unknown' \
+                'git rev-parse --short HEAD 2>/dev/null || echo unknown'
+            '';
+            # A core used through ctypes does not need mkLibretroCore's
+            # convenience RetroArch launcher. Omitting it keeps the headless
+            # smoke-test closure independent of the desktop frontend.
+            installPhase = ''
+              runHook preInstall
+              install -Dm755 snes9x_libretro.so \
+                "$out/lib/retroarch/cores/snes9x_libretro.so"
+              runHook postInstall
+            '';
+          });
+          retroarch = pkgs.wrapRetroArch { cores = [ snes9x ]; };
+          core = "${snes9x}/lib/retroarch/cores/snes9x_libretro.so";
           launcher = pkgs.writeShellApplication {
             name = "slapstick-retroarch";
             runtimeInputs = [ pkgs.coreutils ];
@@ -63,6 +88,7 @@
             launcher
             pkgs
             retroarch
+            snes9x
             smoke
             ;
         };
@@ -75,6 +101,7 @@
         in
         {
           default = components.launcher;
+          core = components.snes9x;
           inherit (components) launcher retroarch smoke;
         }
       );
