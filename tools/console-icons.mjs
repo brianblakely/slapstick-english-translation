@@ -205,6 +205,43 @@ export const EQUIPMENT_ICON_BY_OFFSET = new Map([
   ...iconRange("BOOTS", ["01FA83", "01FA8D", "01FA98", "01FAA3", "01FAAD", "01FAB7"]),
 ]);
 
+// Console TBL commands need an item-indexed pointer table to render the type
+// glyph separately from the translated name. Keep it at the beginning of the
+// first WRAM-mirrored expansion bank, immediately below relocated text.
+export const CONSOLE_EQUIPMENT_ICON_TABLE = Object.freeze({
+  pcOffset: 0x188000,
+  snesAddress: 0x988000,
+  entryCount: 0x100,
+});
+
+export const EQUIPMENT_ICON_BY_ITEM_ID = new Map(
+  [...EQUIPMENT_ICON_BY_OFFSET.values()].map((family, index) => [index + 1, family]),
+);
+
+export function createConsoleEquipmentIconTable() {
+  const { snesAddress, entryCount } = CONSOLE_EQUIPMENT_ICON_TABLE;
+  const tableLength = entryCount * 2;
+  const tableAddress = snesAddress & 0xffff;
+  const emptyStringAddress = tableAddress + tableLength;
+  const families = Object.keys(CONSOLE_EQUIPMENT_ICONS);
+  const familyStringAddress = new Map(
+    families.map((family, index) => [family, emptyStringAddress + 1 + index * 2]),
+  );
+  const data = Buffer.alloc(tableLength + 1 + families.length * 2);
+
+  for (let itemId = 0; itemId < entryCount; itemId += 1) {
+    data.writeUInt16LE(emptyStringAddress, itemId * 2);
+  }
+  for (const [itemId, family] of EQUIPMENT_ICON_BY_ITEM_ID) {
+    data.writeUInt16LE(familyStringAddress.get(family), itemId * 2);
+  }
+  for (const [index, family] of families.entries()) {
+    data[tableLength + 1 + index * 2] = CONSOLE_EQUIPMENT_ICONS[family].code;
+  }
+
+  return data;
+}
+
 export function consoleEquipmentIcon(name) {
   return CONSOLE_EQUIPMENT_ICONS[name.toUpperCase()];
 }

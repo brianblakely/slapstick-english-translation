@@ -165,25 +165,25 @@
     "offset": "01EBD4",
     "kind": "console",
     "source": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE]メガ[N] つぎのレベルまで[N] [DEC:1,5,06E2]メガ[N][BOX:A,4,582] おかね[N] [NUM:5,06E6]トロン[BOX:10,19,5A]プログラム [PAL:8][NUM:4,0B86]ポイント[PAL:4][N]そうび[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]ひらめき[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84]コ[PAL:4]",
-    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] MB[N]NEXT LEVEL[N][DEC:1,5,06E2] MB[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
+    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] MB[N]NEXT LEVEL[N][DEC:1,5,06E2] MB[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2][PAL:8]    [EICON:0676][TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
   },
   {
     "offset": "01EC91",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][N][TBL:@string_list_01F774,06D8][PAL:4]",
-    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][N][TBL:@string_list_01F774,06D8][PAL:4]"
+    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][EICON:06C6][TBL:@string_list_01F74C,06C7][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F74C,06CD][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F74C,06D3][TBL:@string_list_01F774,06D2][N][EICON:06D8][TBL:@string_list_01F774,06D8][PAL:4]"
   },
   {
     "offset": "01ED11",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][N][TBL:@string_list_01F774,06DA][PAL:4]",
-    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][N][TBL:@string_list_01F774,06DA][PAL:4]"
+    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][EICON:06C8][TBL:@string_list_01F74C,06C9][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F74C,06CF][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F74C,06D5][TBL:@string_list_01F774,06D4][N][EICON:06DA][TBL:@string_list_01F774,06DA][PAL:4]"
   },
   {
     "offset": "01ED91",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][N][TBL:@string_list_01F774,06DC][PAL:4]",
-    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][N][TBL:@string_list_01F774,06DC][PAL:4]"
+    "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][EICON:06CA][TBL:@string_list_01F74C,06CB][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F74C,06D1][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F74C,06D7][TBL:@string_list_01F774,06D6][N][EICON:06DC][TBL:@string_list_01F774,06DC][PAL:4]"
   },
   {
     "offset": "01EE11",
@@ -201,7 +201,7 @@
     "offset": "01EE97",
     "kind": "console",
     "source": "[PAL:4][BOX:8,2,28][TBL:@string_list_01F774,0B80]",
-    "translation": "[PAL:4][BOX:8,2,28][TBL:@string_list_01F774,0B80]"
+    "translation": "[PAL:4][BOX:8,2,28][EICON:0B80][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01EEA5",
@@ -249,7 +249,7 @@
     "offset": "01EF77",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] そうび    [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] EQUIPPED  [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]"
+    "translation": "[PAL:4][BOX:10,2,4] EQUIPPED  [PAL:8][EICON:0B82][TBL:@string_list_01F774,0B82][PAL:4]"
   },
   {
     "offset": "01EF92",
@@ -291,7 +291,7 @@
     "offset": "01F034",
     "kind": "console",
     "source": "[PAL:4][BOX:9,2,26][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
-    "translation": "[PAL:4][BOX:9,2,26][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]"
+    "translation": "[PAL:4][BOX:9,2,26][EICON:0B80][TBL:@string_list_01F74C,0BA2][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01F048",
@@ -315,7 +315,7 @@
     "offset": "01F08A",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
-    "translation": "[PAL:4][BOX:10,2,4][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]"
+    "translation": "[PAL:4][BOX:10,2,4][EICON:0B80][TBL:@string_list_01F74C,0BA2][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01F09E",
@@ -369,19 +369,19 @@
     "offset": "01F109",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C6][N][TBL:@string_list_01F774,06CC][N][TBL:@string_list_01F774,06D2][N][TBL:@string_list_01F774,06D8][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C6][N][TBL:@string_list_01F774,06CC][N][TBL:@string_list_01F774,06D2][N][TBL:@string_list_01F774,06D8][PAL:4]"
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][EICON:06C6][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F774,06D2][N][EICON:06D8][TBL:@string_list_01F774,06D8][PAL:4]"
   },
   {
     "offset": "01F150",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C8][N][TBL:@string_list_01F774,06CE][N][TBL:@string_list_01F774,06D4][N][TBL:@string_list_01F774,06DA][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C8][N][TBL:@string_list_01F774,06CE][N][TBL:@string_list_01F774,06D4][N][TBL:@string_list_01F774,06DA][PAL:4]"
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][EICON:06C8][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F774,06D4][N][EICON:06DA][TBL:@string_list_01F774,06DA][PAL:4]"
   },
   {
     "offset": "01F197",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][TBL:@string_list_01F774,06CA][N][TBL:@string_list_01F774,06D0][N][TBL:@string_list_01F774,06D6][N][TBL:@string_list_01F774,06DC][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][TBL:@string_list_01F774,06CA][N][TBL:@string_list_01F774,06D0][N][TBL:@string_list_01F774,06D6][N][TBL:@string_list_01F774,06DC][PAL:4]"
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][EICON:06CA][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F774,06D6][N][EICON:06DC][TBL:@string_list_01F774,06DC][PAL:4]"
   },
   {
     "offset": "01F1DE",
@@ -477,19 +477,19 @@
     "offset": "01F3E7",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][PAL:4]"
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][EICON:06C6][TBL:@string_list_01F74C,06C7][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F74C,06CD][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F74C,06D3][TBL:@string_list_01F774,06D2][PAL:4]"
   },
   {
     "offset": "01F422",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][PAL:4]"
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][EICON:06C8][TBL:@string_list_01F74C,06C9][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F74C,06CF][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F74C,06D5][TBL:@string_list_01F774,06D4][PAL:4]"
   },
   {
     "offset": "01F45D",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][PAL:4]"
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][EICON:06CA][TBL:@string_list_01F74C,06CB][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F74C,06D1][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F74C,06D7][TBL:@string_list_01F774,06D6][PAL:4]"
   },
   {
     "offset": "01F498",
@@ -555,13 +555,13 @@
     "offset": "01F5E8",
     "kind": "console",
     "source": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][TBL:@string_list_01F774,0B84][TBL:@string_list_01F74C,0B85][N][TBL:@string_list_01F774,0B86][TBL:@string_list_01F74C,0B87][N][TBL:@string_list_01F774,0B88][TBL:@string_list_01F74C,0B89]",
-    "translation": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][TBL:@string_list_01F774,0B84][TBL:@string_list_01F74C,0B85][N][TBL:@string_list_01F774,0B86][TBL:@string_list_01F74C,0B87][N][TBL:@string_list_01F774,0B88][TBL:@string_list_01F74C,0B89]"
+    "translation": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][EICON:0B84][TBL:@string_list_01F74C,0B85][TBL:@string_list_01F774,0B84][N][EICON:0B86][TBL:@string_list_01F74C,0B87][TBL:@string_list_01F774,0B86][N][EICON:0B88][TBL:@string_list_01F74C,0B89][TBL:@string_list_01F774,0B88]"
   },
   {
     "offset": "01F61D",
     "kind": "console",
     "source": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]ロボットいれかえ[N][PAL:4][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][TBL:@string_list_01F774,0B91][NUM:2,0B90]",
-    "translation": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]SWITCH ROBOT[N][PAL:4][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][TBL:@string_list_01F774,0B91][NUM:2,0B90]"
+    "translation": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]SWITCH ROBOT[N][PAL:4][EICON:0B85][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][EICON:0B87][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][EICON:0B89][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][EICON:0B8B][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][EICON:0B8D][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][EICON:0B8F][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][EICON:0B91][TBL:@string_list_01F774,0B91][NUM:2,0B90]"
   },
   {
     "offset": "01F684",
@@ -717,301 +717,301 @@
     "offset": "01F8B3",
     "kind": "console",
     "source": "メタルソード  ",
-    "translation": "METAL[ICON:SWORD]"
+    "translation": "METAL"
   },
   {
     "offset": "01F8BD",
     "kind": "console",
     "source": "バトルソード  ",
-    "translation": "BATTLE[ICON:SWORD]"
+    "translation": "BATTLE"
   },
   {
     "offset": "01F8C8",
     "kind": "console",
     "source": "フルメタルソード",
-    "translation": "F.METAL[ICON:SWORD]"
+    "translation": "F.METAL"
   },
   {
     "offset": "01F8D2",
     "kind": "console",
     "source": "サンダーソード ",
-    "translation": "THUNDER[ICON:SWORD]"
+    "translation": "THUNDER"
   },
   {
     "offset": "01F8DD",
     "kind": "console",
     "source": "メタルアクス  ",
-    "translation": "METAL[ICON:AXE]"
+    "translation": "METAL"
   },
   {
     "offset": "01F8E6",
     "kind": "console",
     "source": "バトルアクス  ",
-    "translation": "BATTLE[ICON:AXE]"
+    "translation": "BATTLE"
   },
   {
     "offset": "01F8F0",
     "kind": "console",
     "source": "フルメタルアクス",
-    "translation": "F.METAL[ICON:AXE]"
+    "translation": "F.METAL"
   },
   {
     "offset": "01F8F9",
     "kind": "console",
     "source": "ソニックブレイド",
-    "translation": "SONIC[ICON:BLADE]"
+    "translation": "SONIC"
   },
   {
     "offset": "01F904",
     "kind": "console",
     "source": "プラズマブレイド",
-    "translation": "PLASMA[ICON:BLADE]"
+    "translation": "PLASMA"
   },
   {
     "offset": "01F911",
     "kind": "console",
     "source": "レーザーブレイド",
-    "translation": "LASER[ICON:BLADE]"
+    "translation": "LASER"
   },
   {
     "offset": "01F91D",
     "kind": "console",
     "source": "ソウルブレイド ",
-    "translation": "SOUL[ICON:BLADE]"
+    "translation": "SOUL"
   },
   {
     "offset": "01F928",
     "kind": "console",
     "source": "ドクドクハンマー",
-    "translation": "TOXIC[ICON:HAMMER]"
+    "translation": "TOXIC"
   },
   {
     "offset": "01F933",
     "kind": "console",
     "source": "スッポンハンマー",
-    "translation": "PLUNGER[ICON:HAMMER]"
+    "translation": "PLUNGER"
   },
   {
     "offset": "01F93D",
     "kind": "console",
     "source": "メガトンハンマー",
-    "translation": "MEGATON[ICON:HAMMER]"
+    "translation": "MEGATON"
   },
   {
     "offset": "01F947",
     "kind": "console",
     "source": "ヘビーストーン ",
-    "translation": "HEAVY[ICON:STONE]"
+    "translation": "HEAVY"
   },
   {
     "offset": "01F951",
     "kind": "console",
     "source": "パニックストーン",
-    "translation": "PANIC[ICON:STONE]"
+    "translation": "PANIC"
   },
   {
     "offset": "01F95B",
     "kind": "console",
     "source": "ブレイクストーン",
-    "translation": "BREAK[ICON:STONE]"
+    "translation": "BREAK"
   },
   {
     "offset": "01F965",
     "kind": "console",
     "source": "パンパンパンチ ",
-    "translation": "TRIPLE[ICON:PUNCH]"
+    "translation": "TRIPLE"
   },
   {
     "offset": "01F971",
     "kind": "console",
     "source": "スーパーパンチ ",
-    "translation": "SUPER[ICON:PUNCH]"
+    "translation": "SUPER"
   },
   {
     "offset": "01F97C",
     "kind": "console",
     "source": "ひっさつパンチ ",
-    "translation": "FINISH[ICON:PUNCH]"
+    "translation": "FINISH"
   },
   {
     "offset": "01F986",
     "kind": "console",
     "source": "ロケットブロー ",
-    "translation": "ROCKET[ICON:BLOW]"
+    "translation": "ROCKET"
   },
   {
     "offset": "01F990",
     "kind": "console",
     "source": "ローリングブロー",
-    "translation": "ROLLING[ICON:BLOW]"
+    "translation": "ROLLING"
   },
   {
     "offset": "01F99B",
     "kind": "console",
     "source": "マッハブロー  ",
-    "translation": "MACH[ICON:BLOW]"
+    "translation": "MACH"
   },
   {
     "offset": "01F9A5",
     "kind": "console",
     "source": "ハンドショット ",
-    "translation": "HAND[ICON:SHOT]"
+    "translation": "HAND"
   },
   {
     "offset": "01F9AF",
     "kind": "console",
     "source": "ナイスショット ",
-    "translation": "NICE[ICON:SHOT]"
+    "translation": "NICE"
   },
   {
     "offset": "01F9B8",
     "kind": "console",
     "source": "バズーカ    ",
-    "translation": "BAZOOKA[ICON:SHOT]"
+    "translation": "BAZOOKA"
   },
   {
     "offset": "01F9C3",
     "kind": "console",
     "source": "ツイストレーザー",
-    "translation": "TWIST[ICON:LASER]"
+    "translation": "TWIST"
   },
   {
     "offset": "01F9CD",
     "kind": "console",
     "source": "チャージレーザー",
-    "translation": "CHARGE[ICON:LASER]"
+    "translation": "CHARGE"
   },
   {
     "offset": "01F9D8",
     "kind": "console",
     "source": "はどうレーザー ",
-    "translation": "WAVE[ICON:LASER]"
+    "translation": "WAVE"
   },
   {
     "offset": "01F9E3",
     "kind": "console",
     "source": "ストレートボム ",
-    "translation": "DIRECT[ICON:BOMB]"
+    "translation": "DIRECT"
   },
   {
     "offset": "01F9ED",
     "kind": "console",
     "source": "ナパームボム  ",
-    "translation": "NAPALM[ICON:BOMB]"
+    "translation": "NAPALM"
   },
   {
     "offset": "01F9F8",
     "kind": "console",
     "source": "アイスボム   ",
-    "translation": "ICE[ICON:BOMB]"
+    "translation": "ICE"
   },
   {
     "offset": "01FA02",
     "kind": "console",
     "source": "かくさんボム  ",
-    "translation": "SCATTER[ICON:BOMB]"
+    "translation": "SCATTER"
   },
   {
     "offset": "01FA0C",
     "kind": "console",
     "source": "ヘビーシールド ",
-    "translation": "HEAVY[ICON:SHIELD]"
+    "translation": "HEAVY"
   },
   {
     "offset": "01FA17",
     "kind": "console",
     "source": "サビーズシールド",
-    "translation": "RUSTY[ICON:SHIELD]"
+    "translation": "RUSTY"
   },
   {
     "offset": "01FA23",
     "kind": "console",
     "source": "サイコシールド ",
-    "translation": "PSYCHO[ICON:SHIELD]"
+    "translation": "PSYCHO"
   },
   {
     "offset": "01FA2D",
     "kind": "console",
     "source": "ケミカルシールド",
-    "translation": "CHEMICAL[ICON:SHIELD]"
+    "translation": "CHEMICAL"
   },
   {
     "offset": "01FA37",
     "kind": "console",
     "source": "ハイパーシールド",
-    "translation": "HYPER[ICON:SHIELD]"
+    "translation": "HYPER"
   },
   {
     "offset": "01FA42",
     "kind": "console",
     "source": "パックざんがい ",
-    "translation": "WRECKAGE[ICON:PACK]"
+    "translation": "WRECKAGE"
   },
   {
     "offset": "01FA4E",
     "kind": "console",
     "source": "パワーパック  ",
-    "translation": "POWER[ICON:PACK]"
+    "translation": "POWER"
   },
   {
     "offset": "01FA59",
     "kind": "console",
     "source": "シールドパック ",
-    "translation": "SHIELD[ICON:PACK]"
+    "translation": "SHIELD"
   },
   {
     "offset": "01FA64",
     "kind": "console",
     "source": "ターボパック  ",
-    "translation": "TURBO[ICON:PACK]"
+    "translation": "TURBO"
   },
   {
     "offset": "01FA6F",
     "kind": "console",
     "source": "ソーラーパック ",
-    "translation": "SOLAR[ICON:PACK]"
+    "translation": "SOLAR"
   },
   {
     "offset": "01FA79",
     "kind": "console",
     "source": "クイックパック ",
-    "translation": "QUICK[ICON:PACK]"
+    "translation": "QUICK"
   },
   {
     "offset": "01FA83",
     "kind": "console",
     "source": "ブーツ     ",
-    "translation": "STANDARD[ICON:BOOTS]"
+    "translation": "STANDARD"
   },
   {
     "offset": "01FA8D",
     "kind": "console",
     "source": "パワーブーツ  ",
-    "translation": "POWER[ICON:BOOTS]"
+    "translation": "POWER"
   },
   {
     "offset": "01FA98",
     "kind": "console",
     "source": "スワンプブーツ ",
-    "translation": "SWAMP[ICON:BOOTS]"
+    "translation": "SWAMP"
   },
   {
     "offset": "01FAA3",
     "kind": "console",
     "source": "4WDブーツ  ",
-    "translation": "4WD[ICON:BOOTS]"
+    "translation": "4WD"
   },
   {
     "offset": "01FAAD",
     "kind": "console",
     "source": "タンクブーツ  ",
-    "translation": "TANK[ICON:BOOTS]"
+    "translation": "TANK"
   },
   {
     "offset": "01FAB7",
     "kind": "console",
     "source": "ホバーブーツ  ",
-    "translation": "HOVER[ICON:BOOTS]"
+    "translation": "HOVER"
   },
   {
     "offset": "01FAC2",

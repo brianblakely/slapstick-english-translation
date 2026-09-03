@@ -218,13 +218,13 @@ speed and stereo sound; the duplicated message-speed runtime setting is patched
 at both initialization sites.
 
 Console boxes advance one eight-pixel cell per Latin character. Main-menu and
-Invention Machine captions have eight cells. Battle attack names also have eight
-cells including their equipment-type icon and before the separate level suffix,
-while the selected-item header has nine. Equipment names reserve their final
-cell for one of 13 build-time `[ICON:TYPE]` tokens, leaving seven or eight cells
-for the distinctive part of the name; for example, `THUNDER[ICON:SWORD]`
-replaces `THDR SWD`. The validator requires the correct trailing icon on every
-equipment entry and counts it as one cell when checking both layouts.
+Invention Machine captions have eight cells. Battle attack names have seven
+cells for their distinctive text, while the selected-item header has eight.
+At runtime, equipment displays prepend the type glyph and level to produce
+`[icon][level][name]`; equipment without a level uses `[icon][name]`. Thus the
+full name `THUNDER` replaces `THDR SWD` without changing the field width. The
+validator reserves the icon cell on every equipment name and enforces the
+dynamic icon, level, name command order in every item-table display.
 
 The equipment glyphs occupy console character codes `0x3B` through `0x47`,
 which were unused kana in the English script. Their one-color 8x8 silhouettes
@@ -234,7 +234,11 @@ Blow, Shot, Laser, Bomb, Shield, Empty Pack, and Boots art from the
 The build expands the stock 4 KiB console font bitmap at
 `0x12873D`, replaces those tiles, and uses an optimal parse of the game's
 Quintet-LZ format to keep the modified bitmap inside its original compressed
-slot. It verifies exact decompression before writing the ROM.
+slot. It verifies exact decompression before writing the ROM. A 256-entry
+lookup table at PC `0x188000` returns the proper glyph for equipment IDs 1–50
+and an empty string for every other item. The build-time `[EICON:offset]`
+pseudo-command expands to the stock `TBL` operation against this lookup, so it
+inherits each display's live item selector without adding runtime code.
 
 The validator also checks every literal console line against its active `BOX`,
 plus the complete item-name, machine-option, main-caption, and battle-target

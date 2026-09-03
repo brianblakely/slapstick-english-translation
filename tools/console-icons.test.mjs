@@ -3,8 +3,11 @@ import test from "node:test";
 import {
   CONSOLE_EQUIPMENT_ICON_REFERENCE_URL,
   CONSOLE_EQUIPMENT_ICONS,
+  CONSOLE_EQUIPMENT_ICON_TABLE,
+  EQUIPMENT_ICON_BY_ITEM_ID,
   EQUIPMENT_ICON_BY_OFFSET,
   consoleEquipmentIcon,
+  createConsoleEquipmentIconTable,
 } from "./console-icons.mjs";
 
 const REFERENCE_ITEMS = [
@@ -47,6 +50,7 @@ test("defines one valid console glyph for every equipment family", () => {
 
 test("assigns a family icon to all 50 equipment-name entries", () => {
   assert.equal(EQUIPMENT_ICON_BY_OFFSET.size, 50);
+  assert.equal(EQUIPMENT_ICON_BY_ITEM_ID.size, 50);
   const counts = Object.fromEntries(Object.keys(CONSOLE_EQUIPMENT_ICONS).map((name) => [name, 0]));
   for (const family of EQUIPMENT_ICON_BY_OFFSET.values()) counts[family] += 1;
   assert.deepEqual(counts, {
@@ -64,4 +68,25 @@ test("assigns a family icon to all 50 equipment-name entries", () => {
     PACK: 6,
     BOOTS: 6,
   });
+});
+
+test("builds a total item lookup table for dynamic equipment icons", () => {
+  const { snesAddress, entryCount } = CONSOLE_EQUIPMENT_ICON_TABLE;
+  const table = createConsoleEquipmentIconTable();
+  const pointerBytes = entryCount * 2;
+  const emptyStringAddress = (snesAddress & 0xffff) + pointerBytes;
+  assert.equal(table.length, pointerBytes + 1 + Object.keys(CONSOLE_EQUIPMENT_ICONS).length * 2);
+  assert.equal(table[emptyStringAddress - (snesAddress & 0xffff)], 0x00);
+
+  for (let itemId = 0; itemId < entryCount; itemId += 1) {
+    const pointer = table.readUInt16LE(itemId * 2);
+    const family = EQUIPMENT_ICON_BY_ITEM_ID.get(itemId);
+    if (!family) {
+      assert.equal(pointer, emptyStringAddress, `item ${itemId} uses the empty icon string`);
+      continue;
+    }
+    const stringOffset = pointer - (snesAddress & 0xffff);
+    assert.equal(table[stringOffset], CONSOLE_EQUIPMENT_ICONS[family].code, `item ${itemId}`);
+    assert.equal(table[stringOffset + 1], 0x00, `item ${itemId} icon terminator`);
+  }
 });

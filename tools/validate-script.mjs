@@ -15,6 +15,8 @@ const LOCATION_LABEL_LAYOUT = { columns: 26, rows: 1 };
 const LOCATION_BANNER_OFFSETS = new Set(["06F54B", "06F55D", "06F56F"]);
 const STATUS_SCREEN_OFFSET = "01EBD4";
 const STATUS_ITEM_GLYPHS = ["29", "34", "25", "2D"];
+const EQUIPMENT_NAME_TABLE = "@string_list_01F774";
+const EQUIPMENT_LEVEL_TABLE = "@string_list_01F74C";
 const CONFIG_OPTION_LAYOUTS = new Map([
   ["01E9EA", { columns: 26, slots: [[9, 3], [15, 3], [21, 3]] }],
   ["01EA0B", { columns: 26, slots: [[9, 4], [15, 4]] }],
@@ -194,11 +196,40 @@ function validateConsoleEquipmentIcons(entry, location) {
   }
 
   const expected = EQUIPMENT_ICON_BY_OFFSET.get(entry.offset);
-  if (!expected) return;
-  if (icons.length !== 1 || icons[0] !== expected) {
-    errors.push(`${location}: equipment name must contain exactly one [ICON:${expected}]`);
-  } else if (!entry.translation.endsWith(`[ICON:${expected}]`)) {
-    errors.push(`${location}: equipment type icon must follow the item name`);
+  if (expected && icons.length !== 0) {
+    errors.push(`${location}: equipment name must not embed its dynamically rendered ${expected} icon`);
+  }
+
+  for (const match of entry.translation.matchAll(/\[EICON:([^\]]*)\]/g)) {
+    const selector = match[1];
+    const suffix = entry.translation.slice(match.index + match[0].length);
+    const display = suffix.match(
+      new RegExp(
+        `^(?:\\[TBL:${EQUIPMENT_LEVEL_TABLE},[^\\]]+\\])?`
+        + `\\[TBL:${EQUIPMENT_NAME_TABLE},([^\\]]+)\\]`,
+      ),
+    );
+    if (!selector || !display || display[1] !== selector) {
+      errors.push(`${location}: [EICON:${selector}] must begin an equipment display using the same selector`);
+    }
+  }
+
+  const itemCallPattern = new RegExp(`\\[TBL:${EQUIPMENT_NAME_TABLE},([^\\]]+)\\]`, "g");
+  for (const match of entry.translation.matchAll(itemCallPattern)) {
+    const selector = match[1];
+    const prefix = entry.translation.slice(0, match.index).match(
+      new RegExp(
+        `\\[EICON:([^\\]]+)\\]`
+        + `(?:\\[TBL:${EQUIPMENT_LEVEL_TABLE},[^\\]]+\\])?$`,
+      ),
+    );
+    if (!prefix || prefix[1] !== selector) {
+      errors.push(`${location}: equipment display for ${selector} must begin with its dynamic icon`);
+    }
+    const suffix = entry.translation.slice(match.index + match[0].length);
+    if (suffix.startsWith(`[TBL:${EQUIPMENT_LEVEL_TABLE},`)) {
+      errors.push(`${location}: equipment level must precede the item name`);
+    }
   }
 }
 
@@ -208,10 +239,12 @@ function validateConsoleLabel(entry, location) {
     ?? CONSOLE_LABEL_RANGES.find(({ start, end }) => offset >= start && offset <= end);
   if (!layout) return;
 
+  const reservedIconColumns = EQUIPMENT_ICON_BY_OFFSET.has(entry.offset) ? 1 : 0;
+  const availableColumns = layout.columns - reservedIconColumns;
   const width = visibleText(entry.translation).length;
-  if (width > layout.columns) {
+  if (width > availableColumns) {
     errors.push(
-      `${location}: ${layout.description} requires ${width} columns in its ${layout.columns}-column layout`,
+      `${location}: ${layout.description} requires ${width + reservedIconColumns} columns in its ${layout.columns}-column layout`,
     );
   }
 }
@@ -316,7 +349,7 @@ function dialogTextWidth(text) {
 }
 
 function consoleCommandWidth(atom) {
-  if (atom.name === "ICON") return 1;
+  if (["ICON", "EICON"].includes(atom.name)) return 1;
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);
   if (atom.name === "DEC") return Number.parseInt(atom.args[1] ?? "1", 16);
   return 0;

@@ -4,7 +4,14 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
-import { CONSOLE_EQUIPMENT_ICONS, consoleEquipmentIcon } from "./console-icons.mjs";
+import {
+  CONSOLE_EQUIPMENT_ICONS,
+  CONSOLE_EQUIPMENT_ICON_TABLE,
+  EQUIPMENT_ICON_BY_ITEM_ID,
+  EQUIPMENT_ICON_BY_OFFSET,
+  consoleEquipmentIcon,
+  createConsoleEquipmentIconTable,
+} from "./console-icons.mjs";
 
 const SOURCE_SHA256 = "08144ea1ce3cf6ab107837278d308e4e859574a047a2ee8eb456f7900ad4be21";
 const SOURCE_SIZE = 0x180000;
@@ -14,7 +21,7 @@ const HEADER_OFFSET = 0xffc0;
 // It can be addressed through banks 98-9F, whose lower halves retain the SNES
 // WRAM/I/O mirrors required by the stock text interpreters. Banks D8-DF expose
 // ROM in their lower halves and therefore cannot safely serve as the data bank.
-const EXPANSION_START = 0x188000;
+const EXPANSION_START = 0x188400;
 const DIALOG_REDIRECT = 0xcf;
 const CONSOLE_REDIRECT = 0x0c;
 const DIALOG_JUMP = 0xd3;
@@ -344,6 +351,7 @@ for (const candidate of candidates) {
 installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
 installConsoleEquipmentIcons(targetRom);
+installConsoleEquipmentIconTable(targetRom);
 installInterpreterHooks(targetRom);
 installConsoleSelectorMirrors(targetRom);
 installRuntimeDefaults(targetRom);
@@ -667,6 +675,16 @@ function encodeConsole(source) {
       endedByHalt = false;
       continue;
     }
+    if (part.name === "EICON") {
+      if (part.args.length !== 1) {
+        throw new Error(`Expected one equipment selector for [${part.value}]`);
+      }
+      output.push(CONSOLE_COMMANDS.TBL[0]);
+      pushAddress(output, CONSOLE_EQUIPMENT_ICON_TABLE.snesAddress);
+      pushWord(output, parseValue(part.args[0]));
+      endedByHalt = false;
+      continue;
+    }
     const command = CONSOLE_COMMANDS[part.name];
     if (!command) throw new Error(`Unknown console command [${part.value}]`);
     const [opcode, types, halt = false] = command;
@@ -960,6 +978,31 @@ function installConsoleEquipmentIcons(rom) {
   const expanded = expandQuintetLz(compressed, 0, compressed.length);
   if (!expanded.equals(bitmap)) throw new Error("Console font bitmap compression did not round-trip");
   compressed.copy(rom, CONSOLE_FONT_BITMAP_START);
+}
+
+function installConsoleEquipmentIconTable(rom) {
+  const { pcOffset } = CONSOLE_EQUIPMENT_ICON_TABLE;
+  const table = createConsoleEquipmentIconTable();
+  const end = pcOffset + table.length;
+  if (end > EXPANSION_START) {
+    throw new Error("Console equipment icon table overlaps relocated text");
+  }
+  if (!rom.subarray(pcOffset, end).every((byte) => byte === 0xff)) {
+    throw new Error("Console equipment icon table does not occupy free expanded ROM");
+  }
+
+  const nameOffsets = [...EQUIPMENT_ICON_BY_OFFSET.keys()];
+  for (const [itemId, family] of EQUIPMENT_ICON_BY_ITEM_ID) {
+    const sourceNamePointer = sourceRom.readUInt16LE(0x01f774 + itemId * 2);
+    const expectedNamePointer = Number.parseInt(nameOffsets[itemId - 1], 16) & 0xffff;
+    if (sourceNamePointer !== expectedNamePointer) {
+      throw new Error(
+        `Equipment icon table item ${itemId} (${family}) does not match the stock name table`,
+      );
+    }
+  }
+
+  table.copy(rom, pcOffset);
 }
 
 function createConsoleEquipmentIconTile(name, pixels) {
