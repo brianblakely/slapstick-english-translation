@@ -729,7 +729,7 @@
     "offset": "01F8C8",
     "kind": "console",
     "source": "フルメタルソード",
-    "translation": "F.METAL"
+    "translation": "MILSPEC"
   },
   {
     "offset": "01F8D2",
@@ -753,7 +753,7 @@
     "offset": "01F8F0",
     "kind": "console",
     "source": "フルメタルアクス",
-    "translation": "F.METAL"
+    "translation": "MILSPEC"
   },
   {
     "offset": "01F8F9",
@@ -819,7 +819,7 @@
     "offset": "01F965",
     "kind": "console",
     "source": "パンパンパンチ ",
-    "translation": "TRIPLE"
+    "translation": "ONE-TWO"
   },
   {
     "offset": "01F971",
@@ -831,7 +831,7 @@
     "offset": "01F97C",
     "kind": "console",
     "source": "ひっさつパンチ ",
-    "translation": "FINISH"
+    "translation": "FINAL"
   },
   {
     "offset": "01F986",
