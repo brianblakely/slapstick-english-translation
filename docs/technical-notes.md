@@ -172,22 +172,31 @@ encoder never uses it for an English period. ASCII `.` always selects the
 alternate-font Western dot at `0x7E`; console text uses its Western dot at
 `0xFE`.
 
-Dialogue command `E2` renders the button currently assigned to an action. Since
-its A/B/X/Y byte overlaps the lowercase alphabet while alternate-font mode is
-active, the encoder emits `D5` before every `E2` command. Dynamic controller
-labels therefore remain uppercase even when the preceding word is lowercase.
+Dialogue commands `NAM`, `TBL`, `NUM`, `STR`, `DEC`, `TPL`, and `E2` insert text
+through stock runtime routines which return in base-font mode. The encoder emits
+`D5` before any of these commands when lowercase mode is active, then tracks the
+base mode for following text. This keeps names and template suffixes correctly
+cased, prevents alternate spaces and punctuation from becoming base-font
+symbols, protects numeric inserts, and keeps dynamic A/B/X/Y labels uppercase.
 
-`tools/reflow-dialog.mjs` removes stale mid-sentence layout breaks when the next
-word fits, then wraps normal dialogue to 26 English columns and four rows while
-retaining deliberate sentence, speaker, and choice boundaries.
+`tools/reflow-dialog.mjs` removes dialogue newlines whenever the next word fits,
+then wraps normal dialogue to 26 English columns and four rows while retaining
+speaker, intentional page, and choice boundaries. Soft page markers are
+repaginated from the current row count; if that would leave only one or two
+words on a generated page, the last line of the preceding page moves forward.
+Entries whose
+row structure is itself meaningful, such as the Invention Machine's two-line
+control legend, opt out with `"reflow": false`.
 `tools/validate-script.mjs` additionally checks custom box dimensions, dynamic
 inserts, supported characters, control structure, and full translation
 coverage.
 
 Map names at `0x06F910` through `0x06FD89` are nested inside the one-row
 location banner. The English banner uses a 14-tile box (28 English columns),
-leaving 27 columns after its fixed leading space so the complete translated
-names remain on that single row.
+with one fixed margin column on either side of a 26-column label area. Each
+nested name is padded by `floor((26 - width) / 2)` columns, and the validator
+enforces that centering. The player's variable-length home label uses the fixed
+name `Your House` so it remains centered for every chosen player name.
 
 The configuration screen uses hard-coded tile positions rather than measuring
 its labels. Message-speed choices occupy three-column slots beginning at

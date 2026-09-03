@@ -3,31 +3,31 @@
     "offset": "07808E",
     "kind": "dialog",
     "source": "[DEF][TPL:F]困った時は 相談してくれ[N]だてに 年はとっておらん[N]力になれることも あるだろう˳[END]",
-    "translation": "[DEF][TPL:F]Come to me when you need[N]advice.[N]I have not aged for[FIN]nothing.[N]I may be able to help.[END]"
+    "translation": "[DEF][TPL:F]Come to me when you need[N]advice. I have not aged[FIN]for nothing. I may be able[N]to help.[END]"
   },
   {
     "offset": "0780C1",
     "kind": "dialog",
     "source": "[DEF][TPL:F][NAM:0]くん[N]うわさは 聞いたよ[N]ティアトロンのこともな[FIN]しかし 町長がティアトロンを[N]ねらうなんて どうもおかしい[N]わしは 今の町長は[N]にせものではないかと思うのだ[FIN]君は [PAL:2]町長の苦手なもの[PAL:0]を[N]知らんか?[N]それを利用すれば 町長の正体を[N]うまく あばけるかもしれんぞ˳[END]",
-    "translation": "[DEF][TPL:F][NAM:0], I have heard the[N]rumors, including the one[N]about Tiatron.[FIN]But the mayor seeking[N]Tiatron does not make[N]sense.[N]I suspect the present[FIN]mayor may be an impostor.[FIN]Do you know [PAL:2]something the[N]mayor hates[PAL:0]?[N]Use it, and you may be[N]able to reveal his true[FIN]identity.[END]"
+    "translation": "[DEF][TPL:F][NAM:0], I have heard the[N]rumors, including the one[N]about Tiatron.[FIN]But the mayor seeking[N]Tiatron does not make[N]sense. I suspect the[FIN]present mayor may be an[N]impostor.[FIN]Do you know [PAL:2]something the[N]mayor hates[PAL:0]? Use it, and[N]you may be able to reveal[N]his true identity.[END]"
   },
   {
     "offset": "078164",
     "kind": "dialog",
     "source": "[DEF][TPL:F]ようやく おちついて[N]話をすることが できるな[FIN]まずは 君のとうさんのことを[N]話しておかないと いかんな···[N][PAU:1E]いいか [NAM:0]くん[N]おちついて よくきいておくれ[FIN]あれは 数日前のこと···[N]わしと 君のとうさんは[N][TPL:0]さがしの[N]旅に 出たばかりだった···˳[END]",
-    "translation": "[DEF][TPL:F]At last, we can speak in[N]peace.[FIN]First, I must tell you[N]about your father...[N][PAU:1E]Listen calmly and[N]carefully, [NAM:0].[FIN]It was several days ago...[N]Your father and I had just[N]begun our journey to find[FIN][TPL:0]...[END]"
+    "translation": "[DEF][TPL:F]At last, we can speak in[N]peace.[FIN]First, I must tell you[N]about your father...[N][PAU:1E]Listen calmly and[N]carefully, [NAM:0].[FIN]It was several days ago...[N]Your father and I had just[N]begun our journey to find[N][TPL:0]...[END]"
   },
   {
     "offset": "0781F3",
     "kind": "dialog",
     "source": "[DEF][TPL:F]その後 ずいぶんさがしたが[N]きみの とうさんの姿を[N]見つけることは できなかった···[FIN]わしは 君のとうさんがさがしてた[N][TPL:0]というものが[N]君のとうさんの 行方を知る[N]カギのような気がしてな···[FIN]そういえば わしは昔[N][PAL:2]南の島[PAL:0]に行ったことがあってな[N]そこの 神樣の像には[N]不思誄な石がはまっているという[FIN]残念ながら 結局見ることは[N]できなかったが···[N][PAU:28]ひょっとしたら それが[N][TPL:0]のひとつかもしれんな˳[END]",
-    "translation": "[DEF][TPL:F]I searched for a long[N]time, but found no trace[N]of your father...[FIN]I have a feeling the[N][TPL:0] he sought may be[N]the key to learning where[N]he went.[FIN]Long ago, I visited the[N][PAL:2]southern island[PAL:0].[N]They say a mysterious[N]stone is set in the statue[FIN]of its god.[FIN]I never managed to see[N]it...[N][PAU:28]But perhaps it is one[N]piece of [TPL:0].[END]"
+    "translation": "[DEF][TPL:F]I searched for a long[N]time, but found no trace[N]of your father...[FIN]I have a feeling the[N][TPL:0] he sought may be[N]the key to learning where[N]he went.[FIN]Long ago, I visited the[N][PAL:2]southern island[PAL:0]. They say[N]a mysterious stone is set[N]in the statue of its god.[FIN]I never managed to see[N]it... [PAU:28]But perhaps it is[N]one piece of [TPL:0].[END]"
   },
   {
     "offset": "0782E2",
     "kind": "dialog",
     "source": "[DEF]おや ネズミか[N]ずいぶん 人なつっこいネズミだな˳[END]",
-    "translation": "[DEF]Oh, a mouse.[N]You're remarkably[N]friendly.[END]"
+    "translation": "[DEF]Oh, a mouse. You're[N]remarkably friendly.[END]"
   },
   {
     "offset": "07833F",
@@ -39,7 +39,7 @@
     "offset": "078345",
     "kind": "dialog",
     "source": "[DEF]ずいぶん長い間[N]ご主人樣と旅してたワン[N]久しぶりに 落ちつけるワン˳[END]",
-    "translation": "[DEF]I traveled with Master for[N]such a long time.[N]It's nice to settle down,[N]woof.[END]"
+    "translation": "[DEF]I traveled with Master for[N]such a long time. It's[N]nice to settle down, woof.[END]"
   },
   {
     "offset": "078386",
@@ -57,19 +57,19 @@
     "offset": "07869A",
     "kind": "dialog",
     "source": "[DEF][TPL:8]あ·そこの ぼうや[N]ちょっと まってよ![END]",
-    "translation": "[DEF][TPL:8]H-hey, kid![N]Wait a second![END]"
+    "translation": "[DEF][TPL:8]H-hey, kid! Wait a second![END]"
   },
   {
     "offset": "0786B2",
     "kind": "dialog",
     "source": "[DEF][TPL:8]ねねね ぼうやさあ[N]アキハバラ博士の子でしょ?[N]いっしょに きてくれないかなあ?[FIN]博士が 協力してくれないなら[N]君を 人質にしろって[N]ハッカーの えらい人に言われてさ[N]悪く思わないでね [PAU:3C]せえのっ![END]",
-    "translation": "[DEF][TPL:8]You're Dr. Akihabara's[N]son, right?[N]Would you come with me?[FIN]A Hacker big shot told me[N]to take you hostage if the[N]doctor refused to help.[FIN]No hard feelings. [PAU:3C]Here[N]goes![END]"
+    "translation": "[DEF][TPL:8]You're Dr. Akihabara's[N]son, right? Would you come[N]with me?[FIN]A Hacker big shot told me[N]to take you hostage if the[N]doctor refused to help.[FIN]No hard feelings. [PAU:3C]Here[N]goes![END]"
   },
   {
     "offset": "07872C",
     "kind": "dialog",
     "source": "[DEF][TPL:8]ざんねんだけど[N]にがすわけには いかないよ[N]おこられるの いやだもん![END]",
-    "translation": "[DEF][TPL:8]Sorry, but I can't let you[N]go.[N]I don't want to get yelled[FIN]at![END]"
+    "translation": "[DEF][TPL:8]Sorry, but I can't let you[N]go. I don't want to get[N]yelled at![END]"
   },
   {
     "offset": "078753",
@@ -93,19 +93,19 @@
     "offset": "0788A8",
     "kind": "dialog",
     "source": "[DEF]ようこそ ぼくの子孫たち[N][PAU:14]ぼくの名前は ラスク[N][PAU:14]君たちに 伝えたいことがあって[N]このメッセージを残している[FIN]この極楽星のどこかに[N][TPL:0]という名の石が[N]3つにくだけちってねむっている[N]不思誄な力をひめた 石だ[FIN]いつの時代か その石をもとめて[N]悪の手がのびるだろう[N]どうか そいつらの手にわたる前に[N][TPL:0]を 集めてほしいんだ[FIN]ぼくの手では ひとつだけしか[N]見つけることができなかった···[N]それは [PAL:2]ポリンキーはくしゃく[N][PAL:0]という人にあずけてある[FIN]君の代に はくしゃくの館が[N]残っているかどうかはわからない[N]でも まずは館をたずねてみてほしい[FIN]はくしゃくの館は[N]ここよりさらに →へと進んだ[N][PAL:2]迷いの森[PAL:0]の中にある˳[END]",
-    "translation": "[DEF]Welcome, my descendants.[N][PAU:14]My name is Biscotte.[N][PAU:14]I left this message to[N]tell you something.[FIN]Somewhere on Bliss, a[N]stone called [TPL:0] lies[N]broken into three pieces.[FIN]It holds a mysterious[N]power.[FIN]In some age, evil hands[N]will reach out in search[N]of that stone.[FIN]Please gather [TPL:0][N]before they can claim it.[FIN]I could find only one[N]piece...[N]I entrusted it to a man[N]named [PAL:2]Count Chocula[PAL:0].[FIN]I do not know if his manor[N]will remain in your era,[N]but please search there[N]first.[FIN]His manor stands in the[N][PAL:2]Lost Woods[PAL:0], farther to the[N]right of this place.[END]"
+    "translation": "[DEF]Welcome, my descendants.[N][PAU:14]My name is Biscotte. [PAU:14]I[N]left this message to tell[N]you something.[FIN]Somewhere on Bliss, a[N]stone called [TPL:0] lies[N]broken into three pieces.[FIN]It holds a mysterious[N]power.[FIN]In some age, evil hands[N]will reach out in search[N]of that stone.[FIN]Please gather [TPL:0][N]before they can claim it.[FIN]I could find only one[N]piece... I entrusted it to[N]a man named [PAL:2]Count Chocula[PAL:0].[FIN]I do not know if his manor[N]will remain in your era,[N]but please search there[N]first.[FIN]His manor stands in the[N][PAL:2]Lost Woods[PAL:0], farther to the[N]right of this place.[END]"
   },
   {
     "offset": "078BDA",
     "kind": "dialog",
     "source": "[DF2][TPL:8]どうですか?アキハバラ博士[N]うちでしたら お給料もばっちり![N]さらに 完全週休二日制ですよ[FIN][TPL:2]何度きても 同じことだ![N][PAL:2]ハッカー[PAL:0]の うわさは聞いている[N]悪の軍団ではないか?![FIN][TPL:8]そうは おっしゃいますがぁ[N]悪は いいですよぉ[N]悪いことが お仕事ですからね[FIN]そこで ハッカーの今後のために[N]博士のような[N]すぐれた 発明家の力が[N]必要なんですよ![NXT]",
-    "translation": "[DF2][TPL:8]What do you say, Dr.[N]Akihabara?[N]We offer excellent pay and[FIN]a full two-day weekend![FIN][TPL:2]My answer will not change![N]I know of the [PAL:2]Hackers[PAL:0].[N]You are a band of[FIN]villains![FIN][TPL:8]But villainy is wonderful![N]Being bad is our actual[N]job.[FIN]The Hackers need a[N]brilliant inventor like[N]you to secure our future![NXT]"
+    "translation": "[DF2][TPL:8]What do you say, Dr.[N]Akihabara? We offer[FIN]excellent pay and a full[N]two-day weekend![FIN][TPL:2]My answer will not change![N]I know of the [PAL:2]Hackers[PAL:0]. You[N]are a band of villains![FIN][TPL:8]But villainy is wonderful![N]Being bad is our actual[N]job.[FIN]The Hackers need a[N]brilliant inventor like[N]you to secure our future![NXT]"
   },
   {
     "offset": "078CB5",
     "kind": "dialog",
     "source": "[DF2][TPL:2]うむ···[PAU:1E]私に目をつけたことは[N]ほめてやるが 私は自分の発明を[N]悪のために 利用する気はない[FIN]まあ せっかく来たんだから[N]私の新しい 発明品を見せてやろう[N]これが なんだかわかるか?[FIN][TPL:8]···ほお [PAU:1E]ラッパですか?[N]なつかしいなあ [PAU:1E]私 高校のころ[N]トランペット部に入ってたんですよ[FIN][TPL:2]ただのラッパとは わけがちがう[N]これは こうやって使うのだ˳[END]",
-    "translation": "[DF2][TPL:2]Hmm...[PAU:1E] I commend your eye[N]for talent, but I will[N]never let my inventions[FIN]serve evil.[FIN]Since you came all this[N]way, I will show you my[N]latest invention.[FIN]Do you know what this is?[FIN][TPL:8]...Oh, [PAU:1E]a horn?[N]How nostalgic. In high[N]school, I was in the[FIN]trumpet club.[FIN][TPL:2]This is no ordinary horn.[N]You use it like this.[END]"
+    "translation": "[DF2][TPL:2]Hmm...[PAU:1E] I commend your eye[N]for talent, but I will[FIN]never let my inventions[N]serve evil.[FIN]Since you came all this[N]way, I will show you my[N]latest invention.[FIN]Do you know what this is?[FIN][TPL:8]...Oh, [PAU:1E]a horn? How[N]nostalgic. In high school,[N]I was in the trumpet club.[FIN][TPL:2]This is no ordinary horn.[N]You use it like this.[END]"
   },
   {
     "offset": "078D8A",
@@ -117,13 +117,13 @@
     "offset": "078DA3",
     "kind": "dialog",
     "source": "[DEF][TPL:2]おお[NAM:0]か[N]ん?変わったものを[N]持ってるじゃないか[FIN]その [PAL:2]スクラップ[PAL:0]だよ[N]そういうものを拾ったら[N]まずは 発明マシンで[N]いろいろ合成してみなさい[FIN]いがいに 面白いものが[N]できあがったりするもんだ[N]なんでも 失敗をおそれず[N]ためしてみなさい˳[END]",
-    "translation": "[DEF][TPL:2]Oh, [NAM:0].[N]Hmm? You have something[N]unusual.[FIN]That [PAL:2]scrap[PAL:0].[N]When you find something[N]like that, try combining[N]it with things in the[FIN]Invention Machine.[FIN]You may create something[N]surprisingly useful.[N]Experiment without fearing[N]failure.[END]"
+    "translation": "[DEF][TPL:2]Oh, [NAM:0]. Hmm? You have[N]something unusual.[FIN]That [PAL:2]scrap[PAL:0]. When you find[N]something like that, try[N]combining it with things[N]in the Invention Machine.[FIN]You may create something[N]surprisingly useful.[N]Experiment without fearing[N]failure.[END]"
   },
   {
     "offset": "078E32",
     "kind": "dialog",
     "source": "[DEF][TPL:2]おお [NAM:0]か[N]お?[TPL:1A]が作れたのか![N]でも 作りっぱなしじゃだめだぞ[FIN]発明マシンで [TPL:1A]の[N][PAL:2]ステータスや連続攻擊の[N]プログラム[PAL:0]をしてやれば[N][TPL:1A]をさらによく使えるぞ[FIN]なに?さっきの人か?[N]最近 この近辺をあらし回っている[N][PAL:2]ハッカー[PAL:0]の 戦闘員さ[N]スカウトにきたんだとさ[FIN]だが 発明は人の役に立ってこそ[N]意味のあるものなんだぞ[N]悪用なぞ もっての他だ[N]おまえもよく おぼえておきなさい[FIN]そうそう これはおまえにやろう[N][PAL:2]びっくりホーン[PAL:0]と言って[N]大きな音を出す ラッパだ[N]何か 役にたつこともあるだろう[NXT]",
-    "translation": "[DEF][TPL:2]Oh, [NAM:0].[N]You built a [TPL:1A]![N]But building it is only[FIN]the start.[FIN]Use the Invention Machine[N]to [PAL:2]program its stats and[N]combo attacks[PAL:0].[N]Then it will serve you[FIN]even better.[FIN]That man from before?[N]He was a trooper with the[N][PAL:2]Hackers[PAL:0], who have been[N]causing trouble nearby.[FIN]He came to recruit me.[FIN]Inventions have meaning[N]only when they help[N]people.[N]Using them for evil is[FIN]unthinkable.[N]Remember that well.[FIN]Here, you may have this.[N]It's a [PAL:2]Surprise Horn[PAL:0], a[N]horn that makes a[N]tremendous noise.[FIN]It may prove useful.[NXT]"
+    "translation": "[DEF][TPL:2]Oh, [NAM:0]. You built a[N][TPL:1A]! But building it is[N]only the start.[FIN]Use the Invention Machine[N]to [PAL:2]program its stats and[N]combo attacks[PAL:0]. Then it[FIN]will serve you even[N]better.[FIN]That man from before? He[N]was a trooper with the[N][PAL:2]Hackers[PAL:0], who have been[N]causing trouble nearby.[FIN]He came to recruit me.[FIN]Inventions have meaning[N]only when they help[N]people. Using them for[N]evil is unthinkable.[FIN]Remember that well.[FIN]Here, you may have this.[N]It's a [PAL:2]Surprise Horn[PAL:0], a[N]horn that makes a[N]tremendous noise.[FIN]It may prove useful.[NXT]"
   },
   {
     "offset": "078F69",
@@ -141,7 +141,7 @@
     "offset": "078FBA",
     "kind": "dialog",
     "source": "[DEF][TPL:2]ん?どうした [NAM:0][N]···[PAU:3C]え?[PAU:1E]ハッカーの戦闘員が?[N]···そうだったのか[FIN]とにかく 無事でよかった[N][JMP:&string_078FFD+M]",
-    "translation": "[DEF][TPL:2]What is it, [NAM:0]?[N]...[PAU:3C]What?[PAU:1E] A Hacker trooper?[N]...I see.[FIN]I'm simply glad you're[N]safe.[N]Nagisa will worry if[N]you're late, so return to[FIN]Rococo Town.[END]"
+    "translation": "[DEF][TPL:2]What is it, [NAM:0]?[N]...[PAU:3C]What?[PAU:1E] A Hacker trooper?[N]...I see.[FIN]I'm simply glad you're[N]safe. Nagisa will worry if[N]you're late, so return to[N]Rococo Town.[END]"
   },
   {
     "offset": "078FFD",
@@ -153,7 +153,7 @@
     "offset": "07902C",
     "kind": "dialog",
     "source": "[DEF][TPL:2]せっかく来たんだから[N]ご先祖樣のお墓に[N]あいさつして帰るんだぞ˳[END]",
-    "translation": "[DEF][TPL:2]Since you came all this[N]way, pay your respects at[N]the family grave before[FIN]leaving.[END]"
+    "translation": "[DEF][TPL:2]Since you came all this[N]way, pay your respects at[FIN]the family grave before[N]leaving.[END]"
   },
   {
     "offset": "079056",
@@ -177,19 +177,19 @@
     "offset": "079108",
     "kind": "dialog",
     "source": "[CLR]発明には まず[N][PAL:2]ひらめき[PAL:0]が 必要だぞ[N]ひらめく場合は さまざまだが[N]まずは [PAL:2]本を読む[PAL:0]ことだな[FIN]お前の家にも [PAL:2]┌発明の友┘[N][PAL:0]という本があっただろう?[N]まずは あれを読むことだ[FIN]もっとも今は むずかしくて[N]読めないかもしれないが[N]そのうち 書いてあることが[N]わかるようになるだろう[FIN]あとは[N][PAL:2]人のなやみを聞くこと[N]いろんなものを 調べること[N][PAL:0]これが ひらめきの第一步だ[FIN]そうそう ひらめいたものを[N]作るには [PAL:2]材料費[PAL:0]として[N][PAL:2]トロンがかかる[PAL:0]のを 忘れるなよ[N]タダじゃ 発明品は作れんぞ˳[FIN][JMP:&string_079308+M]",
-    "translation": "[CLR]Every invention begins[N]with an [PAL:2]inspiration[PAL:0].[N]Inspiration comes in many[N]ways, but first, [PAL:2]read[FIN]books[PAL:0].[FIN]You have a book called [PAL:2]The[N]Inventor's Friend[PAL:0] at home.[N]Start by reading that.[FIN]It may be too difficult[N]now, but one day you will[N]understand what is written[N]there.[FIN][PAL:2]Listen to people's[N]problems, and examine all[N]kinds of things.[PAL:0][FIN]That is the first step[N]toward inspiration.[FIN]And remember, creating an[N]idea costs [PAL:2]tron for[N]materials[PAL:0].[N]You cannot invent for[FIN]free.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]Every invention begins[N]with an [PAL:2]inspiration[PAL:0].[N]Inspiration comes in many[FIN]ways, but first, [PAL:2]read[N]books[PAL:0].[FIN]You have a book called [PAL:2]The[N]Inventor's Friend[PAL:0] at home.[N]Start by reading that.[FIN]It may be too difficult[N]now, but one day you will[N]understand what is written[N]there.[FIN][PAL:2]Listen to people's[N]problems, and examine all[N]kinds of things.[PAL:0][FIN]That is the first step[N]toward inspiration.[FIN]And remember, creating an[N]idea costs [PAL:2]tron for[N]materials[PAL:0]. You cannot[N]invent for free.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "079238",
     "kind": "dialog",
     "source": "[CLR]自分の持ってるアイテムや[N][TPL:1A]の 裝備品などを[N]ふたつ 組み合せて 実驗すること[N]これを[PAL:2]合成[PAL:0]というんだ[FIN]特に [PAL:2]スクラップ[PAL:0]ってやつは[N]いろんなものが できあがるぞ[N]合成は トロンもかからんし[N]いろいろためしてみることだな[FIN]それと 新しく作った武器と[N]使いこんだ武器を 合成すると[N]新しい武器でも[N]強力になったりするからな˳[FIN][JMP:&string_079308+M]",
-    "translation": "[CLR]Experiment by joining two[N]items you own, including[N]equipment for your [TPL:1A].[N]This is called [PAL:2]combining[PAL:0].[FIN][PAL:2]Scrap[PAL:0] in particular can[N]produce all sorts of[N]things.[N]Combining costs no tron,[FIN]so experiment freely.[FIN]Combine a newly made[N]weapon with one you have[N]used a lot, and even the[N]new weapon may become[FIN]powerful.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]Experiment by joining two[N]items you own, including[N]equipment for your [TPL:1A].[N]This is called [PAL:2]combining[PAL:0].[FIN][PAL:2]Scrap[PAL:0] in particular can[N]produce all sorts of[N]things. Combining costs no[FIN]tron, so experiment[N]freely.[FIN]Combine a newly made[N]weapon with one you have[N]used a lot, and even the[FIN]new weapon may become[N]powerful.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "079308",
     "kind": "dialog",
     "source": "[CLR][TPL:1A]がいると[N]なにかと たよりになるもんだ[N][TPL:1A]は 発明マシンで[N]3体まで登錄できるぞ˳[FIN][TPL:1A]ができたら 裝備品で[N]パワーアップさせていくんだ[N][TPL:1A]の 武器や裝備は[N]発明や合成で作れるぞ[FIN]発明マシンの[N][PAL:2]プログラム[PAL:0]で[N]パラメーターを 変えてやったり[N][PAL:2]連続技[PAL:0]のプログラムもできるぞ[FIN][TPL:1A]のHPがへったら[N][PAL:2]すぐナオール[PAL:0]で 回復できる[N]開発マシンのある所なら[N][PAL:2]メンテナンス[PAL:0]をすればいいんだ[FIN][TPL:1A]が 何体かできたら[N]戦闘中に [PAL:2][NAM:0]コマンド[PAL:0]で[N]いれかえができるぞ[FIN][::]他にも 何か聞きたいか?[N] うん おしえて[N] もう いいよ",
-    "translation": "[CLR]A [TPL:1A] is a reliable[N]companion.[N]You can register up to[N]three in the Invention[FIN]Machine.[FIN]Once you build a [TPL:1A],[N]power it up with[N]equipment.[N]Invent or combine to[FIN]create its weapons and[N]gear.[FIN]Use [PAL:2]Programming[PAL:0] in the[N]machine to adjust its[N]parameters and program[N][PAL:2]combo attacks[PAL:0].[FIN]Restore lost HP with a[N][PAL:2]Quick Fix[PAL:0].[N]At any Invention Machine,[N]you can perform[FIN][PAL:2]maintenance[PAL:0].[FIN]Once you have several[N][TPL:1A]s, use the [PAL:2][NAM:0][N]command[PAL:0] in battle to swap[N]between them.[FIN][::]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]A [TPL:1A] is a reliable[N]companion. You can[N]register up to three in[N]the Invention Machine.[FIN]Once you build a [TPL:1A],[N]power it up with[N]equipment. Invent or[N]combine to create its[FIN]weapons and gear.[FIN]Use [PAL:2]Programming[PAL:0] in the[N]machine to adjust its[N]parameters and program[N][PAL:2]combo attacks[PAL:0].[FIN]Restore lost HP with a[N][PAL:2]Quick Fix[PAL:0]. At any[N]Invention Machine, you can[N]perform [PAL:2]maintenance[PAL:0].[FIN]Once you have several[N][TPL:1A]s, use the [PAL:2][NAM:0][N]command[PAL:0] in battle to swap[N]between them.[FIN][::]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "07950C",
@@ -213,7 +213,7 @@
     "offset": "07953A",
     "kind": "dialog",
     "source": "[DEF][TPL:6]おいらの ご主人樣は[N]アキハバラ博士だけだニャ[N]お前は別に ご主人じゃないニャ˳[END]",
-    "translation": "[DEF][TPL:6]My only master is Dr.[N]Akihabara.[N]You aren't my master,[FIN]meow.[END]"
+    "translation": "[DEF][TPL:6]My only master is Dr.[N]Akihabara. You aren't my[N]master, meow.[END]"
   },
   {
     "offset": "079595",
@@ -255,7 +255,7 @@
     "offset": "0798CE",
     "kind": "dialog",
     "source": "[DEF]┌この先には ハッカーの[N] かい人たちが うろついています[N] 用のない方は立ち入らないように[N] してください   ロココ町警察┘[END]",
-    "translation": "[DEF]Beyond this point, strange[N]Hacker creatures are at[N]large.[N]Keep out unless you have[FIN]business.[N]                 Rococo[N]Police[END]"
+    "translation": "[DEF]Beyond this point, strange[N]Hacker creatures are at[N]large. Keep out unless you[N]have business.[FIN]                 Rococo[N]Police[END]"
   },
   {
     "offset": "07991D",
@@ -297,7 +297,7 @@
     "offset": "079A26",
     "kind": "dialog",
     "source": "[DEF]おらも おめえぐらい若かった時は[N]船で りょうに出て[N]ブイブイいわせてたもんだべ[N]今となっちゃ 昔の話だべ˳[END]",
-    "translation": "[DEF]When I was young like you,[N]I sailed out to fish and[N]ruled the waves.[N]Those days are long gone[FIN]now.[END]"
+    "translation": "[DEF]When I was young like you,[N]I sailed out to fish and[N]ruled the waves. Those[N]days are long gone now.[END]"
   },
   {
     "offset": "079A67",
@@ -309,61 +309,61 @@
     "offset": "079A98",
     "kind": "dialog",
     "source": "[DEF]おう お前か しゃべるカニから[N]話は 聞いてるべ[N][PAU:14]他人を 船には乘せたくねえが[N]カニの たのみじゃことわれねえべ[FIN]おらは昔 カニの漁をしててなあ[N]カニで おまんま食ってたのよ[N]たのみぐらい聞いてやらんと[N]バチが あたるべよ[NXT]",
-    "translation": "[DEF]Oh, it's you. That talking[N]crab told me about you.[N][PAU:14]I don't take strangers[FIN]aboard, but I can't refuse[N]a crab's request.[FIN]I used to fish for crab.[N]Crab put food on my table,[N]so ignoring one now would[N]bring me bad luck.[NXT]"
+    "translation": "[DEF]Oh, it's you. That talking[N]crab told me about you. [PAU:14]I[N]don't take strangers[N]aboard, but I can't refuse[FIN]a crab's request.[FIN]I used to fish for crab.[N]Crab put food on my table,[N]so ignoring one now would[N]bring me bad luck.[NXT]"
   },
   {
     "offset": "079B20",
     "kind": "dialog",
     "source": "[DEF]船だったら[N][PAL:2]さんばしの右[PAL:0]にとまっている船を[N]使いな 雪山までおめえを[N]つれてってくれるはずだべ˳[END]",
-    "translation": "[DEF]Use the boat [PAL:2]right of the[N]pier[PAL:0].[N]It should carry you to the[N]snowy mountain.[END]"
+    "translation": "[DEF]Use the boat [PAL:2]right of the[N]pier[PAL:0]. It should carry you[N]to the snowy mountain.[END]"
   },
   {
     "offset": "079B5C",
     "kind": "dialog",
     "source": "[DEF]おうっ ネズ公かいっ[N]おらも 若かった時は[N]かわいいあの子に [PAL:3]チュウチュウ[N][PAL:0]言わせてたもんだべ˳[END]",
-    "translation": "[DEF]Well, if it isn't a little[N]mouse.[N]When I was young, I made[N]all the pretty girls go[FIN][PAL:3]squeak squeak[PAL:0].[END]"
+    "translation": "[DEF]Well, if it isn't a little[N]mouse. When I was young, I[N]made all the pretty girls[N]go [PAL:3]squeak squeak[PAL:0].[END]"
   },
   {
     "offset": "079C15",
     "kind": "dialog",
     "source": "[DEF]おれ 南の島のガイド![N]お前 とっても運がいい![N]南の島 とてもいい所![N]おれ 案内する![NXT]",
-    "translation": "[DEF]Me southern island guide![N]You very lucky![N]Southern island very nice[N]place![FIN]Me show you![NXT]"
+    "translation": "[DEF]Me southern island guide![N]You very lucky! Southern[N]island very nice place![FIN]Me show you![NXT]"
   },
   {
     "offset": "079C4F",
     "kind": "dialog",
     "source": "[DEF]この船 お前を乘せる![N]この船 南の島へ行く![N]さあ 乘る乘る!![END]",
-    "translation": "[DEF]This boat carry you![N]This boat go southern[N]island![N]Now get on, get on!![END]"
+    "translation": "[DEF]This boat carry you! This[N]boat go southern island![N]Now get on, get on!![END]"
   },
   {
     "offset": "079CDD",
     "kind": "dialog",
     "source": "[DEF]だ·だんなじゃないですかっ![N]あっしですよ![N]むかし ハッカーの幹部をしていた[N]さわガニですよ![FIN]だんなにお教えしたいことがあって[N]はるばる やってきたんですが[N]この 子供たちに[N]つかまっちまいましてね トホホ˳[END]",
-    "translation": "[DEF]B-boss! Is that you?![N]It's me![N]The river crab who used to[N]be a Hacker officer![FIN]I came all this way to[N]tell you something, but[N]these children caught me.[FIN]Oh, woe is me![END]"
+    "translation": "[DEF]B-boss! Is that you?! It's[N]me! The river crab who[N]used to be a Hacker[N]officer![FIN]I came all this way to[N]tell you something, but[N]these children caught me.[FIN]Oh, woe is me![END]"
   },
   {
     "offset": "079D54",
     "kind": "dialog",
     "source": "[DEF]だんなぁ[N]なんとかしてくださいよ[N]これじゃだんなと[N]話もでき···イテテテ˳[END]",
-    "translation": "[DEF]Boss, help me![N]I can't even talk to you[N]like this... Ouch, ouch![END]"
+    "translation": "[DEF]Boss, help me! I can't[N]even talk to you like[N]this... Ouch, ouch![END]"
   },
   {
     "offset": "079D7F",
     "kind": "dialog",
     "source": "[DEF]あ·ありがとうございやした![N]だんなは やっぱり[N]いい方ですねえ [PAU:1E]グスン[FIN]そうそう 話ってのはですね[N][PAL:2]だんなの 父上[PAL:0]のことなんですよ[N]あっしの ハッカー時代の[N]仲間から 聞いたんですけどね[FIN]なんでも だんなの父上は[N]今 [PAL:2]ハッカー本部[PAL:0]で[N]はたらかされてるって話ですよ[FIN]あいつらのことです お父上が[N]どんな目にあってるか···[N][PAU:28]だんなっ!すぐにでも[N]助けにいくべきじゃないですかい?[FIN][PAL:2]ハッカー本部[PAL:0]なら あっしも[N]研修旅行で 行ったことがありやす[N]だんなに 場所をお教えします[N]すぐにでも 行ってくださいっ![FIN]上の家の 漁師のおやじに[N]ハッカー本部のある島まで行ける[N][PAL:2]船[PAL:0]を出してくれるよう[N]話をつけてありやす[FIN]ささっ[PAU:14]だんなっ!急いで![N]とりあえずは 漁師のおやじに[N]声をかけてやってくだせえ˳[END]",
-    "translation": "[DEF]Th-thank you, boss![N]You're a wonderful person[N]after all.[N][PAU:1E]Sniff...[FIN]What I came to tell you[N]concerns [PAL:2]your father[PAL:0].[N]I heard it from one of my[N]old Hacker associates.[FIN]They say your father is[N]being forced to work at[N][PAL:2]Hacker Headquarters[PAL:0].[FIN]Knowing them, who can say[N]what they're doing to[N]him...[N][PAU:28]Boss! You must hurry to[FIN]his rescue![FIN]I once visited [PAL:2]Hacker[N]Headquarters[PAL:0] on a training[N]trip.[N]I'll show you where it is.[FIN]Please go at once![FIN]I've arranged for the[N]fisherman in the house[N]above to lend you a [PAL:2]boat[PAL:0][N]to the island.[FIN]Hurry, boss![N]Talk to the fisherman[N]first.[END]"
+    "translation": "[DEF]Th-thank you, boss! You're[N]a wonderful person after[N]all. [PAU:1E]Sniff...[FIN]What I came to tell you[N]concerns [PAL:2]your father[PAL:0]. I[N]heard it from one of my[N]old Hacker associates.[FIN]They say your father is[N]being forced to work at[N][PAL:2]Hacker Headquarters[PAL:0].[FIN]Knowing them, who can say[N]what they're doing to[N]him... [PAU:28]Boss! You must[N]hurry to his rescue![FIN]I once visited [PAL:2]Hacker[N]Headquarters[PAL:0] on a training[N]trip. I'll show you where[N]it is.[FIN]Please go at once![FIN]I've arranged for the[N]fisherman in the house[N]above to lend you a [PAL:2]boat[PAL:0][N]to the island.[FIN]Hurry, boss! Talk to the[N]fisherman first.[END]"
   },
   {
     "offset": "079F25",
     "kind": "dialog",
     "source": "[DEF]まずは 漁師のおやじに[N]声をかけてやってくだせえ[N]ハッカー本部のある所は 雪山で[N]寒いですから気をつけてくだせえ˳[END]",
-    "translation": "[DEF]Talk to the fisherman[N]first.[N]Hacker Headquarters is on[N]a freezing mountain, so[FIN]please be careful.[END]"
+    "translation": "[DEF]Talk to the fisherman[N]first. Hacker Headquarters[N]is on a freezing mountain,[N]so please be careful.[END]"
   },
   {
     "offset": "079F6C",
     "kind": "dialog",
     "source": "[DEF]ネズミなんかにゃあ[N]カニの気持ちは わかるまいよ[N][PAU:1E]ふっ···˳[END]",
-    "translation": "[DEF]A mouse could never[N]understand how a crab[N]feels.[N][PAU:1E]Sigh...[END]"
+    "translation": "[DEF]A mouse could never[N]understand how a crab[N]feels. [PAU:1E]Sigh...[END]"
   },
   {
     "offset": "07A03E",
@@ -375,13 +375,13 @@
     "offset": "07A06F",
     "kind": "dialog",
     "source": "[DEF]え?カニいじめをやめろ?[N]なんでだよ 面白いのに![N][PAU:1E][DLY:9]···[DLY:0]そうだな やめてもいいよ[N]でも タダってわけにはいかないぜ[FIN]にいちゃん 発明家だろ?[N][PAL:2]面白い発明品[PAL:0]を[N]何か ぼくたちにちょうだいよ[N]いいのを [PAL:2]裝備して[PAL:0]見せてね˳[END]",
-    "translation": "[DEF]What? Stop teasing the[N]crab?[N]Why? It's fun![N][PAU:1E][DLY:9]...[DLY:0]Fine, we can stop, but[FIN]not for free.[FIN]You're an inventor, right?[N]Give us some [PAL:2]fun[N]invention[PAL:0].[N][PAL:2]Equip[PAL:0] a good one and show[FIN]us.[END]"
+    "translation": "[DEF]What? Stop teasing the[N]crab? Why? It's fun![N][PAU:1E][DLY:9]...[DLY:0]Fine, we can stop, but[N]not for free.[FIN]You're an inventor, right?[N]Give us some [PAL:2]fun[N]invention[PAL:0]. [PAL:2]Equip[PAL:0] a good[N]one and show us.[END]"
   },
   {
     "offset": "07A0FE",
     "kind": "dialog",
     "source": "[DEF]なんだよ それ[N]そんな つまんないものじゃやだよ[N]そうだなあ 人にいたずらして[N]遊べるものなんて いいなあ˳[END]",
-    "translation": "[DEF]What's that?[N]We don't want something[N]boring.[N]Something we can use to[FIN]play pranks would be good.[END]"
+    "translation": "[DEF]What's that? We don't want[N]something boring.[N]Something we can use to[N]play pranks would be good.[END]"
   },
   {
     "offset": "07A138",
@@ -393,7 +393,7 @@
     "offset": "07A162",
     "kind": "dialog",
     "source": "[DEF][DLY:1]わあっ それなに!?[N][PAU:1E][DLY:0]え?大きな音をだして[N]人をおどかせるもの?[N][PAU:1E]いいないいな それちょうだい![FIN] [NAM:0]は[N][PAL:2] びっくりホーン[PAL:0]を うばわれた![FIN][N]わーい わーい[N]これを使って 遊ぼうぜーっ![END]",
-    "translation": "[DEF][DLY:1]Wow! What's that?![N][PAU:1E][DLY:0]It makes a huge noise to[N]scare people?[N][PAU:1E]That's great! Give it to[FIN]us![FIN] [NAM:0] lost[N][PAL:2] the Surprise Horn[PAL:0]![FIN][N]Hooray![N]Let's go play with it![END]"
+    "translation": "[DEF][DLY:1]Wow! What's that?! [PAU:1E][DLY:0]It[N]makes a huge noise to[N]scare people? [PAU:1E]That's[N]great! Give it to us![FIN] [NAM:0] lost[N][PAL:2] the Surprise Horn[PAL:0]![FIN][N]Hooray! Let's go play with[N]it![END]"
   },
   {
     "offset": "07A1DB",
@@ -405,19 +405,19 @@
     "offset": "07A318",
     "kind": "dialog",
     "source": "[DEF]オレはなあ 今悲しいんだ![N]オレのかわいい カトリーヌ···[N]···あ [PAU:3C]にわとりの名前だけどね[N][PAU:1E]が [PAU:1E]いなくなっちまったんだよ![END]",
-    "translation": "[DEF]I'm heartbroken![N]My darling Catherine...[N]Oh, [PAU:3C]she's a chicken.[N][PAU:1E]She disappeared![END]"
+    "translation": "[DEF]I'm heartbroken! My[N]darling Catherine... Oh,[N][PAU:3C]she's a chicken. [PAU:1E]She[N]disappeared![END]"
   },
   {
     "offset": "07A369",
     "kind": "dialog",
     "source": "[DEF]カ·[PAU:1E]カトリーヌぅっ!!![N]どこに行ってたんだあっ![N]とても 心配したんだぞぉっ!![FIN]君が 見つけてくれたのか?[N]ありがとう![N]そうだ!何か礼をさせてくれ![NXT]",
-    "translation": "[DEF]C-[PAU:1E]Catherine!!![N]Where have you been?![N]I was worried sick!![FIN]Did you find her?[N]Thank you![N]Let me give you a reward![NXT]"
+    "translation": "[DEF]C-[PAU:1E]Catherine!!! Where have[N]you been?! I was worried[N]sick!![FIN]Did you find her? Thank[N]you! Let me give you a[N]reward![NXT]"
   },
   {
     "offset": "07A3C5",
     "kind": "dialog",
     "source": "[DEF]持ち物が いっぱいのようだね[N]にもつの少ない時に[N]また ぜひ 来てくれ![END]",
-    "translation": "[DEF]Your pockets seem to be[N]full.[N]Please come back when[N]you're carrying less.[END]"
+    "translation": "[DEF]Your pockets seem to be[N]full. Please come back[N]when you're carrying less.[END]"
   },
   {
     "offset": "07A3F0",
@@ -459,7 +459,7 @@
     "offset": "07A52D",
     "kind": "dialog",
     "source": "[DEF]きゃーっ あんたって[N]コケティッシュな顔してるわね[N]あたし ファンになりそうよ[N]コケケッ![END]",
-    "translation": "[DEF]Oh! What a cluck-tivating[N]face![N]I may become your biggest[N]fan.[FIN]Cluck cluck![END]"
+    "translation": "[DEF]Oh! What a cluck-tivating[N]face! I may become your[N]biggest fan.[FIN]Cluck cluck![END]"
   },
   {
     "offset": "07A565",
@@ -471,7 +471,7 @@
     "offset": "07A60D",
     "kind": "dialog",
     "source": "[DEF]え?また ご主人樣が[N]大さわぎしてるコケ?[N]いつも こうなんだコケ[N]ちょっと さんぽしてただけだコケ˳[END]",
-    "translation": "[DEF]What? Is Master making a[N]fuss again?[N]He's always like that,[N]cluck.[FIN]I only went for a little[N]walk.[END]"
+    "translation": "[DEF]What? Is Master making a[N]fuss again? He's always[N]like that, cluck.[FIN]I only went for a little[N]walk.[END]"
   },
   {
     "offset": "07A64C",
@@ -501,230 +501,230 @@
     "offset": "07B1B3",
     "kind": "dialog",
     "source": "ぐB[PGE][B1]ぐこぐる[B9][B1]ぐ復ぐ[97]報ぐぽ[PAU:B1]ぅ[DEF]雨ふった!雨ふった![N]やった やった![END]",
-    "translation": "[DEF]Rain! Rain![N]Hooray! Hooray![END]",
+    "translation": "[DEF]Rain! Rain! Hooray![N]Hooray![END]",
     "patchOffset": "07B1C9"
   },
   {
     "offset": "07B23D",
     "kind": "dialog",
     "source": "[DEF]ここ おれの村![N]あした おまえを火山に案内する[N]火山すごい おまえ気に入る![N]今日は 村の中見るといい˳[END]",
-    "translation": "[DEF]This my village![N]Tomorrow me guide you to[N]volcano.[N]Volcano amazing. You like![FIN]Today look around village.[END]"
+    "translation": "[DEF]This my village! Tomorrow[N]me guide you to volcano.[N]Volcano amazing. You like![FIN]Today look around village.[END]"
   },
   {
     "offset": "07B282",
     "kind": "dialog",
     "source": "[DEF]今日は 火山見るのにいい日![N]おまえ 俺の後ついてくる![N]おれ 火山に案内する![N]神樣よろこぶ!みんなよろこぶ![END]",
-    "translation": "[DEF]Today good day see[N]volcano![N]You follow behind me![N]Me guide you![FIN]God happy! Everyone happy![END]"
+    "translation": "[DEF]Today good day see[N]volcano! You follow behind[N]me! Me guide you![FIN]God happy! Everyone happy![END]"
   },
   {
     "offset": "07B36E",
     "kind": "dialog",
     "source": "[DEF]火山 神樣が住んでる[N]でも 神樣おこってる[N]神樣おこると とてもこわい![END]",
-    "translation": "[DEF]God live in volcano.[N]But God angry.[N]Angry God very scary![END]"
+    "translation": "[DEF]God live in volcano. But[N]God angry. Angry God very[N]scary![END]"
   },
   {
     "offset": "07B39D",
     "kind": "dialog",
     "source": "[DEF]こわい こわい[N]また 神樣おこってる![END]",
-    "translation": "[DEF]Scary, scary![N]God angry again![END]"
+    "translation": "[DEF]Scary, scary! God angry[N]again![END]"
   },
   {
     "offset": "07B3B4",
     "kind": "dialog",
     "source": "[DEF]たいへん たいへん[N]きとう師が 神樣のたたりと言って[N]村の人 みんなネズミにした![N]どうしよう どうしよう˳[END]",
-    "translation": "[DEF]Terrible! Terrible![N]Shaman call it God's curse[N]and turn whole village[N]into mice![FIN]What we do? What we do?[END]"
+    "translation": "[DEF]Terrible! Terrible! Shaman[N]call it God's curse and[N]turn whole village into[N]mice![FIN]What we do? What we do?[END]"
   },
   {
     "offset": "07B3F4",
     "kind": "dialog",
     "source": "[DEF]おまえ 村の人助けた![N]神樣も おこらなくなった![N]おれたち うれしい![N]みんな おまえのおかげ![END]",
-    "translation": "[DEF]You save village people![N]God not angry anymore![N]We very happy![N]All thanks to you![END]"
+    "translation": "[DEF]You save village people![N]God not angry anymore! We[N]very happy! All thanks to[N]you![END]"
   },
   {
     "offset": "07B42C",
     "kind": "dialog",
     "source": "[DEF]ネズミいらない![N]あっち行く![END]",
-    "translation": "[DEF]No mice![N]Go away![END]"
+    "translation": "[DEF]No mice! Go away![END]"
   },
   {
     "offset": "07B4EF",
     "kind": "dialog",
     "source": "[DEF]よくきた よくきた[N]かんげい!かんげい![N]これ かんげいのおどり![END]",
-    "translation": "[DEF]Welcome! Welcome![N]This welcome dance![END]"
+    "translation": "[DEF]Welcome! Welcome! This[N]welcome dance![END]"
   },
   {
     "offset": "07B512",
     "kind": "dialog",
     "source": "[DEF]たくさん 話しかけるのだめ![N]おどり みんなといっしょに[N]うまく おどれなくなる![END]",
-    "translation": "[DEF]No talk so much![N]Then me cannot dance well[N]with everyone![END]"
+    "translation": "[DEF]No talk so much! Then me[N]cannot dance well with[N]everyone![END]"
   },
   {
     "offset": "07B53E",
     "kind": "dialog",
     "source": "[DEF]こ·これ まよけのおどりっ![N]死んだ人 帰ってきちゃだめ![END]",
-    "translation": "[DEF]Th-this dance ward off[N]evil![N]Dead people must not come[N]back![END]"
+    "translation": "[DEF]Th-this dance ward off[N]evil! Dead people must not[N]come back![END]"
   },
   {
     "offset": "07B560",
     "kind": "dialog",
     "source": "[DEF]たいへん たいへん![N]みんな ねずみになった![N]ねずみ おどることできない[N]こまった こまった˳[END]",
-    "translation": "[DEF]Terrible! Terrible![N]Everyone become mice![N]Mice cannot dance.[N]Big trouble! Big trouble![END]"
+    "translation": "[DEF]Terrible! Terrible![N]Everyone become mice! Mice[N]cannot dance. Big trouble![N]Big trouble![END]"
   },
   {
     "offset": "07B592",
     "kind": "dialog",
     "source": "[DEF]おまえ やっぱり神樣の使い![N]これ 神樣をたたえるおどり![END]",
-    "translation": "[DEF]You really God's[N]messenger![N]This dance praise God![END]"
+    "translation": "[DEF]You really God's[N]messenger! This dance[N]praise God![END]"
   },
   {
     "offset": "07B5B6",
     "kind": "dialog",
     "source": "[DEF]これ 雨ごいのおどり![N]あつくて おどるのもたいへん![END]",
-    "translation": "[DEF]This rain dance![N]Too hot. Dancing hard![END]"
+    "translation": "[DEF]This rain dance! Too hot.[N]Dancing hard![END]"
   },
   {
     "offset": "07B5D4",
     "kind": "dialog",
     "source": "[DEF]雨ふった 雨ふった![N]これ かんげきのおどり![END]",
-    "translation": "[DEF]Rain! Rain![N]This dance of joy![END]"
+    "translation": "[DEF]Rain! Rain! This dance of[N]joy![END]"
   },
   {
     "offset": "07B6C0",
     "kind": "dialog",
     "source": "[DEF]ねずみになると 料理できない![N]料理できないと おれ 仕事ない![N]こまった こまった˳[END]",
-    "translation": "[DEF]Cannot cook as mouse![N]Cannot cook, no work for[N]me![N]Big trouble! Big trouble![END]"
+    "translation": "[DEF]Cannot cook as mouse![N]Cannot cook, no work for[N]me! Big trouble! Big[N]trouble![END]"
   },
   {
     "offset": "07B6F3",
     "kind": "dialog",
     "source": "[DEF]ねずみっ![N]ねずみ すごいごちそう![N]おまえ 料理の材料になる![END]",
-    "translation": "[DEF]Mouse![N]Mouse great feast![N]You become food![END]"
+    "translation": "[DEF]Mouse! Mouse great feast![N]You become food![END]"
   },
   {
     "offset": "07B719",
     "kind": "dialog",
     "source": "[DEF]オレ この村の料理人![N]オレ おいしい料理作る![N]料理の材料 このつぼで[N]ぐつぐつ にこむ!![FIN]今日の 料理の材料は···[N][PAL:2][PAU:1E]あ[PAU:A]ん[PAU:A]た[PAU:A]の [PAU:A]肉[PAU:A]だ[PAU:A]よ[PAL:0][END]",
-    "translation": "[DEF]Me village cook![N]Me cook delicious food![N]Put food in this pot and[N]boil, boil!![FIN]Today's main ingredient...[N][PAL:2][PAU:1E]I[PAU:A]S [PAU:A]Y[PAU:A]O[PAU:A]U[PAU:A]R [PAU:A]M[PAU:A]E[PAU:A]A[PAU:A]T[PAL:0]![END]"
+    "translation": "[DEF]Me village cook! Me cook[N]delicious food! Put food[N]in this pot and boil,[N]boil!![FIN]Today's main ingredient...[N][PAL:2][PAU:1E]I[PAU:A]S [PAU:A]Y[PAU:A]O[PAU:A]U[PAU:A]R [PAU:A]M[PAU:A]E[PAU:A]A[PAU:A]T[PAL:0]![END]"
   },
   {
     "offset": "07B789",
     "kind": "dialog",
     "source": "[DEF]おどろいたか?[N][PAU:1E]これ おれたちの村につたわる[N]古いじょうだん![N]みんな おどろく˳[END]",
-    "translation": "[DEF]You surprised?[N][PAU:1E]This old village joke![N]Everyone surprised.[END]"
+    "translation": "[DEF]You surprised? [PAU:1E]This old[N]village joke! Everyone[N]surprised.[END]"
   },
   {
     "offset": "07B7B8",
     "kind": "dialog",
     "source": "[DEF]このごろ 火山に[N]ばけもの あらわれる[N]ばけもの にてもやいても食えない[N]おれ うれしくない![END]",
-    "translation": "[DEF]Lately monster appear in[N]volcano.[N]Cannot boil it or roast[N]it.[FIN]Me not happy![END]"
+    "translation": "[DEF]Lately monster appear in[N]volcano. Cannot boil it or[N]roast it.[FIN]Me not happy![END]"
   },
   {
     "offset": "07B7EC",
     "kind": "dialog",
     "source": "[DEF]お·おれ ただの料理作る人![N]おれ ちっとも悪くない![N]だから おれ うらむのよくない![END]",
-    "translation": "[DEF]M-me only simple cook![N]Me not bad at all![N]So no hold grudge against[N]me![END]"
+    "translation": "[DEF]M-me only simple cook! Me[N]not bad at all! So no hold[N]grudge against me![END]"
   },
   {
     "offset": "07B81F",
     "kind": "dialog",
     "source": "[DEF]おまえ 村のえいゆう![N]おれ おまえのため 料理つくる[N]今日は アリゲーターのからあげ![N]おぎくぼでは ちょっと有名![END]",
-    "translation": "[DEF]You village hero![N]Me cook for you.[N]Today, fried alligator![N]Little famous in Ogikubo![END]"
+    "translation": "[DEF]You village hero! Me cook[N]for you. Today, fried[N]alligator! Little famous[N]in Ogikubo![END]"
   },
   {
     "offset": "07B865",
     "kind": "dialog",
     "source": "[DEF]あつくて 料理もたいへん![N]おれ あせ だくだく![END]",
-    "translation": "[DEF]Too hot for cooking![N]Me sweat buckets![END]"
+    "translation": "[DEF]Too hot for cooking! Me[N]sweat buckets![END]"
   },
   {
     "offset": "07B925",
     "kind": "dialog",
     "source": "[DEF]ここ おまえのねるとこ[N]でも 今ねるのはなまけもの[N]村の中 ぐるぐるまわる[N]つかれてねむる これ最高![END]",
-    "translation": "[DEF]This your sleeping place.[N]But sleep now is lazy.[N]Walk all around village.[N]Sleep when tired. That[FIN]best![END]"
+    "translation": "[DEF]This your sleeping place.[N]But sleep now is lazy.[N]Walk all around village.[FIN]Sleep when tired. That[N]best![END]"
   },
   {
     "offset": "07B95F",
     "kind": "dialog",
     "source": "[DEF]いっぱい 村まわったか?[N]おまえ 明日は火山に行く[N]今日ねると 明日元気いっぱい![FIN]おまえのベッド ←の方![N]さあ ねるねる[N]おやすみ おやすみ˳[END]",
-    "translation": "[DEF]You see whole village?[N]Tomorrow you go volcano.[N]Sleep today, strong[N]tomorrow![FIN]Your bed to the left![N]Now sleep, sleep.[N]Good night! Good night![END]"
+    "translation": "[DEF]You see whole village?[N]Tomorrow you go volcano.[N]Sleep today, strong[N]tomorrow![FIN]Your bed to the left! Now[N]sleep, sleep. Good night![N]Good night![END]"
   },
   {
     "offset": "07B9BB",
     "kind": "dialog",
     "source": "[DEF]今日も とてもいい天気![N]おまえ 今日火山に行く[N]案内する奴 村の出口にいる[N]行ってこい 行ってこい![END]",
-    "translation": "[DEF]Today also very good[N]weather![N]You go volcano today.[N]Guide wait at village[FIN]exit.[N]Go now! Go now![END]"
+    "translation": "[DEF]Today also very good[N]weather! You go volcano[N]today. Guide wait at[FIN]village exit. Go now! Go[N]now![END]"
   },
   {
     "offset": "07BA01",
     "kind": "dialog",
     "source": "[DEF]おれもねずみ みんなもねずみ[N]村中 ねずみだらけ[N]みんな きとう師のしわざ![N]おれの商売 あがったり![END]",
-    "translation": "[DEF]Me mouse, everyone mouse.[N]Whole village full of[N]mice.[N]All shaman's doing![FIN]Business ruined![END]"
+    "translation": "[DEF]Me mouse, everyone mouse.[N]Whole village full of[N]mice. All shaman's doing![FIN]Business ruined![END]"
   },
   {
     "offset": "07BA3B",
     "kind": "dialog",
     "source": "[DEF]お·おまえを 火山に送ったの[N]きとう師の め·命令![N]お·おれ 悪くない![END]",
-    "translation": "[DEF]S-sending you to volcano[N]was shaman's o-order![N]M-me not bad![END]"
+    "translation": "[DEF]S-sending you to volcano[N]was shaman's o-order! M-me[N]not bad![END]"
   },
   {
     "offset": "07BA69",
     "kind": "dialog",
     "source": "[DEF]おまえ 村の恩人![N]村の恩人は あつくもてなす![N]好きなだけ ねるといい![END]",
-    "translation": "[DEF]You village savior![N]Savior get best welcome![N]Sleep as much as you want![END]"
+    "translation": "[DEF]You village savior! Savior[N]get best welcome! Sleep as[N]much as you want![END]"
   },
   {
     "offset": "07BB93",
     "kind": "dialog",
     "source": "[DEF]おや [NAM:0]くん[N]君も 招待をうけたのかね?[N]わたしかね?わたしはこれも[N]仕事のうちでな はっはっはっ[FIN]ところできみ [PAL:3]ローズ[PAL:0]君を[N]見かけなかったかね?[N]これからいっしょに海[PAU:14]···いや[N]視察に出ようと思ったんだがな˳[END]",
-    "translation": "[DEF]Why, [NAM:0].[N]Were you invited too?[N]Me? This is part of my[N]work.[FIN]Ha ha ha![FIN]By the way, have you seen[N][PAL:3]Rose[PAL:0]?[N]I was hoping we could go[N]to the sea...[FIN]I mean, inspect the island[N]together.[END]"
+    "translation": "[DEF]Why, [NAM:0]. Were you[N]invited too? Me? This is[N]part of my work.[FIN]Ha ha ha![FIN]By the way, have you seen[N][PAL:3]Rose[PAL:0]? I was hoping we[N]could go to the sea...[FIN]I mean, inspect the island[N]together.[END]"
   },
   {
     "offset": "07BC13",
     "kind": "dialog",
     "source": "[DEF]ローズ君を見かけたら[N]すぐもどるように伝えてくれ[N]せっかく 視察にいい天気なのに[N]まったく![END]",
-    "translation": "[DEF]If you see Rose, tell her[N]to return at once.[N]It's perfect weather for[FIN]an inspection too![END]"
+    "translation": "[DEF]If you see Rose, tell her[N]to return at once. It's[N]perfect weather for an[N]inspection too![END]"
   },
   {
     "offset": "07BD44",
     "kind": "dialog",
     "source": "[DEF]ここ 村のきとう師樣の家![N]きとう師 神樣のいかりおさめる[N]だから きとう師樣えらい[N]だから みつぎものいっぱい![END]",
-    "translation": "[DEF]This village shaman's[N]house![N]Shaman calm God's anger.[N]So shaman very important.[FIN]So many offerings![END]"
+    "translation": "[DEF]This village shaman's[N]house! Shaman calm God's[N]anger. So shaman very[N]important.[FIN]So many offerings![END]"
   },
   {
     "offset": "07BD88",
     "kind": "dialog",
     "source": "[DEF]きとう師樣 今 おでかけ![N]きとう師樣 るすの間[N]家の中には だれも入れない[N]だから おまえも帰る![END]",
-    "translation": "[DEF]Shaman away now![N]Nobody enter house while[N]shaman gone.[N]So you go home too![END]"
+    "translation": "[DEF]Shaman away now! Nobody[N]enter house while shaman[N]gone. So you go home too![END]"
   },
   {
     "offset": "07BDC6",
     "kind": "dialog",
     "source": "[DEF]おれ とてもまちがってた[N]きとう師 本当は悪い奴[N]おれ とてもはずかしい˳[END]",
-    "translation": "[DEF]Me very wrong.[N]Shaman really evil man.[N]Me very ashamed.[END]"
+    "translation": "[DEF]Me very wrong. Shaman[N]really evil man. Me very[N]ashamed.[END]"
   },
   {
     "offset": "07BDF2",
     "kind": "dialog",
     "source": "[DEF]きとう師樣 今村長の家にいる[N]村長 きとう師樣の言うこと聞けば[N]ちゃんと みんな元にもどる![END]",
-    "translation": "[DEF]Shaman at chief's house[N]now.[N]If chief do what shaman[N]says, everyone turn back[FIN]to normal![END]"
+    "translation": "[DEF]Shaman at chief's house[N]now. If chief do what[N]shaman says, everyone turn[N]back to normal![END]"
   },
   {
     "offset": "07BE2F",
     "kind": "dialog",
     "source": "[DEF]お·おれ ちっともこわくない![N]おれ きとう師樣 信じてる![N]きとう師樣には 神樣ついてる![END]",
-    "translation": "[DEF]M-me not scared at all![N]Me believe shaman![N]God stand behind shaman![END]"
+    "translation": "[DEF]M-me not scared at all! Me[N]believe shaman! God stand[N]behind shaman![END]"
   },
   {
     "offset": "07BE66",
     "kind": "dialog",
     "source": "[DEF][N]やややややややややっ![N][DLY:9]お·お·おまえっ!?[FIN][DLY:1]たいへん たいへん![N]死んだ人 生き返った![N]たたり!たたり![DLY:0][END]",
-    "translation": "[DEF][N]Y-y-y-y-yikes![N][DLY:9]Y-you?![FIN][DLY:1]Terrible! Terrible![N]Dead person come back[N]alive![N]Curse! Curse![DLY:0][END]"
+    "translation": "[DEF][N]Y-y-y-y-yikes! [DLY:9]Y-you?![FIN][DLY:1]Terrible! Terrible! Dead[N]person come back alive![N]Curse! Curse![DLY:0][END]"
   },
   {
     "offset": "07BEA9",
     "kind": "dialog",
     "source": "[DEF]おまえ よく帰ってきた![N]村長が おまえを待ってる![N]はやく行く![END]",
-    "translation": "[DEF]You return safely![N]Chief waiting for you![N]Go quickly![END]"
+    "translation": "[DEF]You return safely! Chief[N]waiting for you! Go[N]quickly![END]"
   },
   {
     "offset": "07BF69",
@@ -736,43 +736,43 @@
     "offset": "07BF99",
     "kind": "dialog",
     "source": "[CLR]むかしむかし この島に[N]神樣 空からふってきた[N]神樣 火も熱くない[N]神樣 ヤリも痛くない[FIN]むかしの村の人 火山に困ってた[N]じしんいっぱい 火の粉いっぱい[N]でも神樣 火山に行って[N]火山を おとなしくさせた![FIN]ある時 神樣いなくなった[N]神樣のいる場所 村長だけ知ってる[N]でも神樣 村の人困った時[N]きっと また 助けてくれる˳[END]",
-    "translation": "[CLR]Long, long ago, God fall[N]from sky to island.[N]Fire not hot for God.[FIN]Spear not hurt God.[FIN]Old villagers troubled by[N]volcano.[N]Many quakes, many sparks.[N]But God go to volcano and[FIN]make volcano quiet![FIN]One day God disappear.[N]Only chief know where God[N]is.[N]But when village in[FIN]trouble, God surely help[N]again.[END]"
+    "translation": "[CLR]Long, long ago, God fall[N]from sky to island. Fire[N]not hot for God.[FIN]Spear not hurt God.[FIN]Old villagers troubled by[N]volcano. Many quakes, many[N]sparks. But God go to[FIN]volcano and make volcano[N]quiet![FIN]One day God disappear.[N]Only chief know where God[N]is. But when village in[FIN]trouble, God surely help[N]again.[END]"
   },
   {
     "offset": "07C067",
     "kind": "dialog",
     "source": "[CLR]聞くは 一時のはじ![N]聞かぬは 一生のはじ![N]いつでも 聞きにこい![END]",
-    "translation": "[CLR]Ask, and shame lasts a[N]moment![N]Never ask, and shame lasts[N]forever![FIN]Come ask anytime![END]"
+    "translation": "[CLR]Ask, and shame lasts a[N]moment! Never ask, and[N]shame lasts forever![FIN]Come ask anytime![END]"
   },
   {
     "offset": "07C092",
     "kind": "dialog",
     "source": "[DEF]きとう師 変な光で[N]みんなを ネズミにした![N]きとう師 神樣のいる場所聞きに[N]村長の家に 行った![FIN]あいつ 本当は悪い奴![N]神樣の場所 知られたら大変![N]おまえ 神樣の使い![N]村長 助ける![END]",
-    "translation": "[DEF]Shaman use strange light[N]to turn everyone into[N]mice![N]Shaman go chief's house to[FIN]ask where God is![FIN]He really evil man![N]Terrible if he learn God's[N]place![N]You God's messenger![FIN]Save chief![END]"
+    "translation": "[DEF]Shaman use strange light[N]to turn everyone into[N]mice! Shaman go chief's[N]house to ask where God is![FIN]He really evil man![N]Terrible if he learn God's[N]place! You God's[N]messenger![FIN]Save chief![END]"
   },
   {
     "offset": "07C113",
     "kind": "dialog",
     "source": "[DEF]村の言い伝え こう言ってる[N]いつか 神樣の使いやってきて[N]村を救い 村の宝受け取る[N]おまえきっと 宝 手に入れる![END]",
-    "translation": "[DEF]Village legend say God's[N]messenger come one day,[N]save village, receive[FIN]treasure.[N]You surely get treasure![END]"
+    "translation": "[DEF]Village legend say God's[N]messenger come one day,[N]save village, receive[FIN]treasure. You surely get[N]treasure![END]"
   },
   {
     "offset": "07C15E",
     "kind": "dialog",
     "source": "[DEF]おれ 見た![N]火山の裹の 秘密のいりえに[N]変な男 にげてった[FIN]変な男 変な船に乘って[N]いりえから 出てった![END]",
-    "translation": "[DEF]Me saw![N]Strange man flee to secret[N]cove behind volcano.[FIN]Strange man board strange[N]ship and leave cove![END]"
+    "translation": "[DEF]Me saw! Strange man flee[N]to secret cove behind[N]volcano.[FIN]Strange man board strange[N]ship and leave cove![END]"
   },
   {
     "offset": "07C1D9",
     "kind": "dialog",
     "source": "[DEF][TPL:4][NAM:0]じゃないの![N]···ひょっとして君も招待状を[N]もらって ここに来たの?[FIN]ああもうっ だまされやすい子ね![N]あの招待状をもらった人たちが[N]行方不明になってるの 知らないの?[FIN]あたしはね この一件に[N]あの ハッカーとかいう奴らが[N]關係してると にらんでるのよ[FIN]いい?何か変わったことがあったら[N]あたしに知らせるのよ わかった?[END]",
-    "translation": "[DEF][TPL:4][NAM:0]![N]Don't tell me you received[N]an invitation too?[FIN]You're far too trusting![N]Don't you know the people[N]who got those letters[N]vanished?[FIN]I suspect those Hackers[N]are behind this whole[N]affair.[FIN]If anything unusual[N]happens, report it to me.[N]Understood?[END]"
+    "translation": "[DEF][TPL:4][NAM:0]! Don't tell me you[N]received an invitation[N]too?[FIN]You're far too trusting![N]Don't you know the people[N]who got those letters[N]vanished?[FIN]I suspect those Hackers[N]are behind this whole[N]affair.[FIN]If anything unusual[N]happens, report it to me.[N]Understood?[END]"
   },
   {
     "offset": "07C299",
     "kind": "dialog",
     "source": "[DEF][TPL:4]どう?何かわかったの?[N]え?[PAU:A]あたしと 話がしたかっただけ?[N][PAU:1E]か·かわいいこと言うじゃないの˳[END]",
-    "translation": "[DEF][TPL:4]Well? Find anything?[N]What?[PAU:A] You only wanted to[N]talk to me?[FIN][PAU:1E]Th-that's rather sweet of[N]you.[END]"
+    "translation": "[DEF][TPL:4]Well? Find anything? What?[PAU:A][N]You only wanted to talk to[N]me?[FIN][PAU:1E]Th-that's rather sweet of[N]you.[END]"
   },
   {
     "offset": "07C2E3",
@@ -784,43 +784,43 @@
     "offset": "07C3B6",
     "kind": "dialog",
     "source": "[DEF]旅の人 よく来た![N]私 この村の村長![N]旅の人 とても かんげいする![END]",
-    "translation": "[DEF]Traveler, welcome![N]Me chief of village![N]Me welcome traveler[N]greatly![END]"
+    "translation": "[DEF]Traveler, welcome! Me[N]chief of village! Me[N]welcome traveler greatly![END]"
   },
   {
     "offset": "07C3E4",
     "kind": "dialog",
     "source": "[DEF]旅の人 すまない[N]とても はずかしい所見せた[N]でも あれ なんでもない[N]忘れる 忘れる![END]",
-    "translation": "[DEF]Traveler, me sorry.[N]You see very shameful[N]thing.[N]But that nothing.[FIN]Forget! Forget![END]"
+    "translation": "[DEF]Traveler, me sorry. You[N]see very shameful thing.[N]But that nothing.[FIN]Forget! Forget![END]"
   },
   {
     "offset": "07C418",
     "kind": "dialog",
     "source": "[DEF]神のいけにえ 帰ってきた![N]きっとおまえ 本当の神の使い![N]神の使い 村を救う![N]神の使い 村長の話聞く![FIN]村の神樣 本当はやさしい神樣[N]でもきとう師 こう言った[N]いけにえないと 神樣おこる![N]神樣おこると 火山がおこる![FIN]島にきた人たち いけにえになった[N]神樣 今度は[PAL:3]美しい娘[PAL:0]ほしがってる[N]でも 村に美しい娘いない[N]村長 とてもこまった こまった[END]",
-    "translation": "[DEF]Sacrifice return alive![N]You surely true messenger[N]of God![N]Messenger save village![FIN]Messenger hear chief's[N]story![FIN]Village God really kind.[N]But shaman say no[N]sacrifice make God angry![FIN]Angry God make volcano[N]angry![FIN]Visitors to island became[N]sacrifices.[N]Now God wants [PAL:3]beautiful[N]maiden[PAL:0].[FIN]But village has no[N]beautiful maiden.[N]Chief very troubled![N]Troubled![END]"
+    "translation": "[DEF]Sacrifice return alive![N]You surely true messenger[N]of God! Messenger save[N]village![FIN]Messenger hear chief's[N]story![FIN]Village God really kind.[N]But shaman say no[N]sacrifice make God angry![FIN]Angry God make volcano[N]angry![FIN]Visitors to island became[N]sacrifices. Now God wants[N][PAL:3]beautiful maiden[PAL:0].[FIN]But village has no[N]beautiful maiden. Chief[N]very troubled! Troubled![END]"
   },
   {
     "offset": "07C4F8",
     "kind": "dialog",
     "source": "[DEF]おまえ 村を救った![N]おまえ 神樣の使い![N]村長の家には むかしから[N]こんな 言い伝えがある[FIN]村を救う 神樣の使いくる[N]神樣の使いを しんでんに連れてく[N]しんでんに 神樣の宝ある[N]神樣の宝 そいつのもの![FIN]このふたり 村長に使える者[N]しんでんの中への[N]道を開けることできる[FIN]こいつらに しんでんの案内させる[N]このふたりと しんでんに行って[N]神の宝 うけとってほしい˳[END]",
-    "translation": "[DEF]You save village![N]You God's messenger![N]Chief's family has old[N]legend.[FIN]Messenger come save[N]village.[N]Take messenger to temple.[N]God's treasure in temple.[FIN]Treasure belong to[N]messenger![FIN]These two serve chief.[N]They can open path inside[N]temple.[FIN]They guide you to temple.[N]Go with them and receive[N]God's treasure.[END]"
+    "translation": "[DEF]You save village! You[N]God's messenger! Chief's[N]family has old legend.[FIN]Messenger come save[N]village. Take messenger to[N]temple. God's treasure in[N]temple.[FIN]Treasure belong to[N]messenger![FIN]These two serve chief.[N]They can open path inside[N]temple.[FIN]They guide you to temple.[N]Go with them and receive[N]God's treasure.[END]"
   },
   {
     "offset": "07C5D6",
     "kind": "dialog",
     "source": "[DEF]おまえと あの娘 男気がある![N]でも おまえ 平気![N]おまえ 神の使い![N]きっと 本当の神樣 守ってくれる![END]",
-    "translation": "[DEF]You and young woman brave![N]But you be fine![N]You God's messenger![N]Real God surely protect[FIN]you![END]"
+    "translation": "[DEF]You and young woman brave![N]But you be fine! You God's[N]messenger! Real God surely[N]protect you![END]"
   },
   {
     "offset": "07C61A",
     "kind": "dialog",
     "source": "[DEF]おまえ 神の宝手に入れたか![N]これからおまえを 村一番の[N]えいゆうにあたえる 名前でよぶ![N]その名前[PAL:2] ホンジャラヘノヘ![FIN][PAL:0][::]神樣の名前かたる 悪者[N]海の方へ にげたらしい[N][PAL:2]宿屋の前にいる 村の男[N][PAL:0]変な男 海に行くのを見たらしい[FIN]でも これで 村は安心![N]これ みんな[N]ホンジャラヘノヘの おかげ!![END]",
-    "translation": "[DEF]You obtain God's treasure![N]Now chief bestow name[N]given to greatest village[N]hero![FIN]That name, [PAL:2]Honjarahenohe![FIN][PAL:0][::]Villain pretending to be[N]God apparently fled toward[N]sea.[FIN][PAL:2]Man in front of inn[PAL:0] saw[N]strange man go there.[FIN]But village safe now![N]All thanks to[N]Honjarahenohe!![END]"
+    "translation": "[DEF]You obtain God's treasure![N]Now chief bestow name[N]given to greatest village[N]hero![FIN]That name, [PAL:2]Honjarahenohe![FIN][PAL:0][::]Villain pretending to be[N]God apparently fled toward[N]sea.[FIN][PAL:2]Man in front of inn[PAL:0] saw[N]strange man go there.[FIN]But village safe now! All[N]thanks to Honjarahenohe!![END]"
   },
   {
     "offset": "07C6DC",
     "kind": "dialog",
     "source": "[DEF][JMP:&string_07C61A+M]",
-    "translation": "[DEF][::]Villain pretending to be[N]God apparently fled toward[N]sea.[FIN][PAL:2]Man in front of inn[PAL:0] saw[N]strange man go there.[FIN]But village safe now![N]All thanks to[N]Honjarahenohe!![END]"
+    "translation": "[DEF][::]Villain pretending to be[N]God apparently fled toward[N]sea.[FIN][PAL:2]Man in front of inn[PAL:0] saw[N]strange man go there.[FIN]But village safe now! All[N]thanks to Honjarahenohe!![END]"
   },
   {
     "offset": "07C6E0",
@@ -832,13 +832,13 @@
     "offset": "07C703",
     "kind": "dialog",
     "source": "[DEF][TPL:1B][N]よくきた よくきた![N]今 この村とても困っている![FIN]ここ数日 雨がぜんぜんふらない[N]村の中 からから[N]村の人も からから[FIN]ホンジャラヘノヘの力で[N]雨 ふらすことできないか?[N]おまえ 神樣の使い[N]きっと 雨ふらせる![END]",
-    "translation": "[DEF][TPL:1B][N]Welcome! Welcome![N]Village in great trouble[FIN]now![FIN]No rain for many days.[N]Village all dry.[N]Villagers all dry too.[FIN]Can Honjarahenohe power[N]make rain fall?[N]You God's messenger.[N]You surely make rain![END]"
+    "translation": "[DEF][TPL:1B][N]Welcome! Welcome! Village[N]in great trouble now![FIN]No rain for many days.[N]Village all dry. Villagers[N]all dry too.[FIN]Can Honjarahenohe power[N]make rain fall? You God's[N]messenger. You surely make[N]rain![END]"
   },
   {
     "offset": "07C785",
     "kind": "dialog",
     "source": "[DEF][TPL:1B][N]おまえ いのったら 雨ふった![N]村人 とてもよろこんでる![FIN]お前 やっぱり村のえいゆう![N]村長の 感謝のしるし![N]すみにある ふたつの箱[N]しらべてみるといい!![END]",
-    "translation": "[DEF][TPL:1B][N]You pray and rain fall![N]Villagers very happy![FIN]You truly village hero![N]Chief give thanks![N]Look in two chests in[N]corner!![END]"
+    "translation": "[DEF][TPL:1B][N]You pray and rain fall![N]Villagers very happy![FIN]You truly village hero![N]Chief give thanks! Look in[N]two chests in corner!![END]"
   },
   {
     "offset": "07C7E4",
@@ -850,49 +850,49 @@
     "offset": "07C8BF",
     "kind": "dialog",
     "source": "[DEF]この人 村長![N]村長 本当は 村で一番えらい![N]でも最近 きとう師の方がえらい![N]だけど とてもやさしい いい人![END]",
-    "translation": "[DEF]This village chief![N]Chief really most[N]important.[N]But lately shaman more[FIN]important.[N]Still, chief very kind[N]man![END]"
+    "translation": "[DEF]This village chief! Chief[N]really most important. But[N]lately shaman more[N]important.[FIN]Still, chief very kind[N]man![END]"
   },
   {
     "offset": "07C909",
     "kind": "dialog",
     "source": "[DEF]いけにえ 帰ってきた![N]きっとおまえ 神樣の使い![N]えらい村長 そう言ってる![END]",
-    "translation": "[DEF]Sacrifice return![N]You surely God's[N]messenger![N]Esteemed chief say so![END]"
+    "translation": "[DEF]Sacrifice return! You[N]surely God's messenger![N]Esteemed chief say so![END]"
   },
   {
     "offset": "07C939",
     "kind": "dialog",
     "source": "[DEF]おまえ 村を救った![N]おまえ やっぱり神の使い![N]えらい村長 そう言ってる![END]",
-    "translation": "[DEF]You save village![N]You really God's[N]messenger![N]Esteemed chief say so![END]"
+    "translation": "[DEF]You save village! You[N]really God's messenger![N]Esteemed chief say so![END]"
   },
   {
     "offset": "07C968",
     "kind": "dialog",
     "source": "[DEF]おれたち 秘密のおどり知ってる[N]おどりおどると しんでんの道開く[N]おまえのために おどりおどる[N]おれたちに ついてくる![END]",
-    "translation": "[DEF]We know secret dance.[N]Dance open path to temple.[N]We dance for you.[N]You follow us![END]"
+    "translation": "[DEF]We know secret dance.[N]Dance open path to temple.[N]We dance for you. You[N]follow us![END]"
   },
   {
     "offset": "07C9AB",
     "kind": "dialog",
     "source": "[DEF]宝 見つかったか?[N]神樣 人をためす[N]でも 本当に神樣の使いなら[N]きっと 神樣の宝手に入れる![END]",
-    "translation": "[DEF]Find treasure?[N]God test people.[N]But true messenger surely[N]obtain God's treasure![END]"
+    "translation": "[DEF]Find treasure? God test[N]people. But true messenger[N]surely obtain God's[N]treasure![END]"
   },
   {
     "offset": "07C9EB",
     "kind": "dialog",
     "source": "[DEF]おまえ 村の恩人!村の恩人![N]おまえのこと これからずっと[N]村で 言い伝えられる![END]",
-    "translation": "[DEF]You village savior![N]Savior![N]Village tell your story[N]forever![END]"
+    "translation": "[DEF]You village savior![N]Savior! Village tell your[N]story forever![END]"
   },
   {
     "offset": "07CA1F",
     "kind": "dialog",
     "source": "[DEF]宿屋の前にいる男 [PAL:2]いりえで[N]変な男 にげたの見たらしい[N]変な男きっと 神樣の名前かたる[N]悪いやつ![END]",
-    "translation": "[DEF]Man in front of inn [PAL:2]saw[N]strange man flee through[N]cove[PAL:0].[N]Strange man surely evil[FIN]villain pretending to be[N]God![END]"
+    "translation": "[DEF]Man in front of inn [PAL:2]saw[N]strange man flee through[N]cove[PAL:0]. Strange man surely[FIN]evil villain pretending to[N]be God![END]"
   },
   {
     "offset": "07CA62",
     "kind": "dialog",
     "source": "[DEF]村ずっと 雨ふらない[N]村 からから[N]おれたちも からから˳[END]",
-    "translation": "[DEF]No rain for long time.[N]Village dry.[N]We dry too.[END]"
+    "translation": "[DEF]No rain for long time.[N]Village dry. We dry too.[END]"
   },
   {
     "offset": "07CAFB",
@@ -910,91 +910,91 @@
     "offset": "07CB45",
     "kind": "dialog",
     "source": "[DEF]ちょっと![PAU:14]人の話を 聞いてるの?[N][PAU:14]このミントさんが いけにえに[N]なってあげるって言ってるのよ![N]神樣とかの正体をつきとめてやるわ[FIN][NAM:0][N][PAU:14]君もいっしょにくるのよ[N]何を いやそうな顔してるのよ?[N]かよわい女性ひとりで行かせる気?[END]",
-    "translation": "[DEF]Hey![PAU:14] Are you listening?[N][PAU:14]I, Mint, am volunteering[N]to be the sacrifice![N]I'll expose this so-called[FIN]god.[FIN][NAM:0]![N][PAU:14]You're coming with me.[N]Why the long face?[N]Would you send a frail[FIN]woman alone?[END]"
+    "translation": "[DEF]Hey![PAU:14] Are you listening? [PAU:14]I,[N]Mint, am volunteering to[N]be the sacrifice! I'll[N]expose this so-called god.[FIN][NAM:0]! [PAU:14]You're coming with[N]me. Why the long face?[N]Would you send a frail[N]woman alone?[END]"
   },
   {
     "offset": "07CCD9",
     "kind": "dialog",
     "source": "[DF2][PAL:2]きとうし:[N][PAL:0]村長!神樣 宝返すように言ってる[N]このままだと 火山どっかーん![N]だから 早く神樣の宝返す![NXT]",
-    "translation": "[DF2][PAL:2]Shaman:[N][PAL:0]Chief! God say return[N]treasure![N]If not, volcano go boom![FIN]So return God's treasure[N]quickly![NXT]"
+    "translation": "[DF2][PAL:2]Shaman: [PAL:0]Chief! God say[N]return treasure! If not,[N]volcano go boom![FIN]So return God's treasure[N]quickly![NXT]"
   },
   {
     "offset": "07CD23",
     "kind": "dialog",
     "source": "[DF2][PAL:2]村長:[N][PAL:0]神樣 いい神樣 そんなことしない[N]村長 神樣の宝守るのが仕事[N]神樣の宝 わたせない˳[NXT]",
-    "translation": "[DF2][PAL:2]Chief:[N][PAL:0]God is good. God not do[N]that.[N]Chief's duty protect God's[FIN]treasure.[N]Cannot hand it over.[NXT]"
+    "translation": "[DF2][PAL:2]Chief: [PAL:0]God is good. God[N]not do that. Chief's duty[N]protect God's treasure.[N]Cannot hand it over.[NXT]"
   },
   {
     "offset": "07CD68",
     "kind": "dialog",
     "source": "[DF2][PAL:2]きとうし:[N][PAL:0]村長 ごうじょう![N]きっと よくないことおきる![N]早く考え変える!またくる![END]",
-    "translation": "[DF2][PAL:2]Shaman:[N][PAL:0]Chief too stubborn![N]Something bad surely[N]happen![FIN]Change mind quickly! Me[N]return![END]"
+    "translation": "[DF2][PAL:2]Shaman: [PAL:0]Chief too[N]stubborn! Something bad[N]surely happen![FIN]Change mind quickly! Me[N]return![END]"
   },
   {
     "offset": "07CD9F",
     "kind": "dialog",
     "source": "[DFT]えらい きとう師の前立つ[N]とても なまいき![N]おまえ そこどくっ![END]",
-    "translation": "[DFT]You stand before esteemed[N]shaman?[N]Very rude![N]Move aside![END]"
+    "translation": "[DFT]You stand before esteemed[N]shaman? Very rude! Move[N]aside![END]"
   },
   {
     "offset": "07CDC5",
     "kind": "dialog",
     "source": "[DF2][PAL:2]きとうし:[N][PAL:0]村長 神樣の言うこときかない![N]だから神樣 きとう師に言った[FIN]これで 村の人ネズミにする![N]言うこときかないとダメ![N]神樣の宝のある場所 教える![END]",
-    "translation": "[DF2][PAL:2]Shaman:[N][PAL:0]Chief not listen to God![N]So God tell shaman this:[FIN]Use this, turn villagers[N]into mice![N]Make them obey![N]Then chief reveal where[FIN]God's treasure is![END]"
+    "translation": "[DF2][PAL:2]Shaman: [PAL:0]Chief not listen[N]to God! So God tell shaman[N]this:[FIN]Use this, turn villagers[N]into mice! Make them obey![N]Then chief reveal where[N]God's treasure is![END]"
   },
   {
     "offset": "07CE30",
     "kind": "dialog",
     "source": "[DF2][PAL:2]村長:[N][PAL:0]神樣 そんなことしない[N]村長 神樣の宝守るのが仕事[N]神樣の宝 わたせない˳[FIN][PAL:2]きとうし:[N][PAL:0]村長 あいかわらず ごうじょう![N]これ 神樣がくれたまほう![FIN]神樣 言うこときかない奴[N]ネズミに変えてしまえと言った[N]これを 見るいい![END]",
-    "translation": "[DF2][PAL:2]Chief:[N][PAL:0]God not do such thing.[N]Chief's duty protect God's[N]treasure.[FIN]Cannot hand it over.[FIN][PAL:2]Shaman:[N][PAL:0]Chief still stubborn![N]This magic God give me![FIN]God say turn disobedient[N]people into mice![N]Now watch this![END]"
+    "translation": "[DF2][PAL:2]Chief: [PAL:0]God not do such[N]thing. Chief's duty[N]protect God's treasure.[FIN]Cannot hand it over.[FIN][PAL:2]Shaman: [PAL:0]Chief still[N]stubborn! This magic God[N]give me![FIN]God say turn disobedient[N]people into mice! Now[N]watch this![END]"
   },
   {
     "offset": "07CECA",
     "kind": "dialog",
     "source": "[DF2]これで 村の人[N]みんな ネズミになった[N]あとは 村長だけ![N]······むっ?[END]",
-    "translation": "[DF2]Now all villagers are[N]mice.[N]Only chief remain![N]......Hmm?[END]"
+    "translation": "[DF2]Now all villagers are[N]mice. Only chief remain![N]......Hmm?[END]"
   },
   {
     "offset": "07CEF9",
     "kind": "dialog",
     "source": "[DFT]おまえ またじゃまする[N]えらいきとう師 おこった[N]おまえを ネズミにする![N]神の たたり![FIN][DLY:9]·········[N][PAU:1E][N][DLY:1]???????????[DLY:0][END]",
-    "translation": "[DFT]You interfere again![N]Esteemed shaman angry![N]Turn you into mouse![N]Curse of God![FIN][DLY:9].........[N][PAU:1E][N][DLY:1]???????????[DLY:0][END]"
+    "translation": "[DFT]You interfere again![N]Esteemed shaman angry![N]Turn you into mouse! Curse[N]of God![FIN][DLY:9].........[N][PAU:1E][N][DLY:1]???????????[DLY:0][END]"
   },
   {
     "offset": "07CF4B",
     "kind": "dialog",
     "source": "[DEF]なんで えらいきとう師[N]ねずみになる!?[N]元にもどせ!もどさないと[N]神のたたり きっと落ちる![END]",
-    "translation": "[DEF]Why esteemed shaman become[N]mouse?![N]Change me back! If not,[N]God's curse surely strike![END]"
+    "translation": "[DEF]Why esteemed shaman become[N]mouse?! Change me back! If[N]not, God's curse surely[N]strike![END]"
   },
   {
     "offset": "07CF9F",
     "kind": "dialog",
     "source": "[DEF]おまえ なに!?[N]えらいきとう師 神樣に[N]おいのりささげてる![N]たいせつな お仕事![FIN]えらいきとう師 いのると[N]神樣の声 きこえる[N]じゃますると 天ばつくだる![N]帰る!帰る![END]",
-    "translation": "[DEF]Who are you?![N]Esteemed shaman offers[N]prayers to God! Very[N]important work![FIN]When esteemed shaman pray,[N]hear voice of God.[N]Interrupt and heaven[N]punish you![FIN]Go home! Go home![END]"
+    "translation": "[DEF]Who are you?! Esteemed[N]shaman offers prayers to[N]God! Very important work![FIN]When esteemed shaman pray,[N]hear voice of God.[N]Interrupt and heaven[N]punish you![FIN]Go home! Go home![END]"
   },
   {
     "offset": "07D07A",
     "kind": "dialog",
     "source": "[DEF][N]こらっ![N]神樣の場所に 近づくだめっ![END]",
-    "translation": "[DEF][N]Hey![N]No go near God's place![END]"
+    "translation": "[DEF][N]Hey! No go near God's[N]place![END]"
   },
   {
     "offset": "07D192",
     "kind": "dialog",
     "source": "[DF2]おまえ ここで待つ![N]すぐに 神樣のおむかえくる[N]おれたち 神樣こわい[N]だから 帰る![END]",
-    "translation": "[DF2]You wait here![N]God's servant come soon.[N]We afraid of God, so we go[N]home![END]"
+    "translation": "[DF2]You wait here! God's[N]servant come soon. We[N]afraid of God, so we go[N]home![END]"
   },
   {
     "offset": "07D210",
     "kind": "dialog",
     "source": "[DEF][DLY:1]おやっ[PAU:1E] おちびちゃん![N][PAU:1E]面白い ツアーだったねえ![N]最後に 工場が爆発する所なんて[N]年がいもなく どきどきしたよ![DLY:0][END]",
-    "translation": "[DEF][DLY:1]Well, little one![N][PAU:1E]That was an exciting tour![N]The factory exploding at[N]the end made this old[FIN]heart race![DLY:0][END]"
+    "translation": "[DEF][DLY:1]Well, little one! [PAU:1E]That was[N]an exciting tour! The[N]factory exploding at the[FIN]end made this old heart[N]race![DLY:0][END]"
   },
   {
     "offset": "07D280",
     "kind": "dialog",
     "source": "[DEF]やれやれ ようやく[N]町に 帰ることができる[N]こんなツアー[N]もう こりごりだ![FIN]え?我々を助け出してくれた[N]娘はどうしたかって?[N]なんでも 人をさがすとかで[N]どこかに 行ってしまったぞ˳[END]",
-    "translation": "[DEF]At last, we can return to[N]town.[N]I've had enough tours like[N]this for one lifetime![FIN]What happened to the young[N]woman who rescued us?[N]She went somewhere to[N]search for someone.[END]"
+    "translation": "[DEF]At last, we can return to[N]town. I've had enough[N]tours like this for one[N]lifetime![FIN]What happened to the young[N]woman who rescued us? She[N]went somewhere to search[N]for someone.[END]"
   },
   {
     "offset": "07D310",
@@ -1006,7 +1006,7 @@
     "offset": "07D37C",
     "kind": "dialog",
     "source": "[DEF]はいはい こちら[N]村一番えらい きとう師![N]神樣の言うこと 何でもきく![FIN]···あれ?[N][PAU:14]神樣 今日とても声若い![N]きっと いけにえのせい![N]とても いいこと![END]",
-    "translation": "[DEF]Yes, yes! This is most[N]esteemed village shaman![N]Me obey every word of God![FIN]...Huh?[N][PAU:14]God sound very young[N]today![N]Must be because of[FIN]sacrifice![N]Very good thing![END]"
+    "translation": "[DEF]Yes, yes! This is most[N]esteemed village shaman![N]Me obey every word of God![FIN]...Huh? [PAU:14]God sound very[N]young today! Must be[N]because of sacrifice! Very[N]good thing![END]"
   },
   {
     "offset": "07D3DD",
@@ -1018,19 +1018,19 @@
     "offset": "07D477",
     "kind": "dialog",
     "source": "[DEF]やい やい やい[N]アキハバラとフラボノだな![N]我々ハッカーの研究のためには[N]おふたりの力が必要だ![FIN]···と えらい人が言ってるので[N]痛い思いを したくなかったら[N]おとなしく いっしょに[N]来てちょうだい˳[END]",
-    "translation": "[DEF]Hey, hey, hey![N]You're Akihabara and[N]Dentyne![N]The Hackers need both of[FIN]you for our research![FIN]...That's what the big[N]boss says.[N]Come quietly with us[N]unless you want to get[FIN]hurt.[END]"
+    "translation": "[DEF]Hey, hey, hey! You're[N]Akihabara and Dentyne! The[N]Hackers need both of you[N]for our research![FIN]...That's what the big[N]boss says. Come quietly[N]with us unless you want to[N]get hurt.[END]"
   },
   {
     "offset": "07D543",
     "kind": "dialog",
     "source": "[DEF][TPL:2]フラボノ君[N]君は このままにげたまえ[N]こいつは 私がなんとかしよう[FIN][TPL:F]し·しかし···[FIN][TPL:2]わはは わたしは発明家だぞ?[N]こんな時のために役立つものを[N]ひとつふたつ用意してあるんだ[FIN]さあ[N][PAU:1E]危ないから 後ろに下がるんだ[N]なに こんな奴ら[N]あっという間に ふきとばしてやる˳[END]",
-    "translation": "[DEF][TPL:2]Dentyne, you escape.[N]I will handle this one.[FIN][TPL:F]B-but...[FIN][TPL:2]Ha ha! I am an inventor.[N]I prepared one or two[N]devices for occasions like[FIN]this.[FIN]Now stand back.[N][PAU:1E]It will be dangerous.[N]I'll blow these thugs away[N]in the blink of an eye.[END]"
+    "translation": "[DEF][TPL:2]Dentyne, you escape. I[N]will handle this one.[FIN][TPL:F]B-but...[FIN][TPL:2]Ha ha! I am an inventor. I[N]prepared one or two[FIN]devices for occasions like[N]this.[FIN]Now stand back. [PAU:1E]It will be[N]dangerous. I'll blow these[N]thugs away in the blink of[N]an eye.[END]"
   },
   {
     "offset": "07D6CD",
     "kind": "dialog",
     "source": "[DEF][TPL:F]···········[N]···········[N]··········˳[END]",
-    "translation": "[DEF][TPL:F]...........[N]...........[N]..........[END]"
+    "translation": "[DEF][TPL:F]......................[N]..........[END]"
   },
   {
     "offset": "07D77D",
@@ -1048,25 +1048,25 @@
     "offset": "07D80B",
     "kind": "dialog",
     "source": "[DEF]この下 火山[N]火山の中 スリルまんてん![N]ここから おまえひとり![N]おれ ここで待つ![END]",
-    "translation": "[DEF]Volcano below here.[N]Inside volcano full of[N]thrills![N]From here, you go alone![FIN]Me wait here![END]"
+    "translation": "[DEF]Volcano below here. Inside[N]volcano full of thrills![N]From here, you go alone![FIN]Me wait here![END]"
   },
   {
     "offset": "07D870",
     "kind": "dialog",
     "source": "[DEF][PAL:2]ガイド:[N][PAL:0]観光なんて 本当はうそ![N]うそつき よくないが[N]神樣 いけにえほしがってる[FIN]きっと 神樣のお使い[N]お前を むかえてくれる[N]お前 神樣のいけにえになる[N]うらむのよくない ばいばい˳[END]",
-    "translation": "[DEF][PAL:2]Guide:[N][PAL:0]Tour really a lie![N]Lying bad, but God demand[N]sacrifice.[FIN]God's servant surely come[N]welcome you.[N]You become sacrifice to[N]God.[FIN]No hold grudge. Bye-bye![END]"
+    "translation": "[DEF][PAL:2]Guide: [PAL:0]Tour really a lie![N]Lying bad, but God demand[N]sacrifice.[FIN]God's servant surely come[N]welcome you. You become[N]sacrifice to God.[FIN]No hold grudge. Bye-bye![END]"
   },
   {
     "offset": "07D9FD",
     "kind": "dialog",
     "source": "[DEF][TPL:4][NAM:0]じゃないっ![N]まだ こんな所にいたのっ!?[FIN]他の ロココ町の人たちは[N]もう にげだしたわよっ![N]ここにいたら あぶないわよ![N]ほらっ!早くにげるのよっ![END]",
-    "translation": "[DEF][TPL:4][NAM:0]![N]You're still here?![FIN]Everyone else from Rococo[N]Town has already escaped![N]It's dangerous here![FIN]Come on! Run![END]"
+    "translation": "[DEF][TPL:4][NAM:0]! You're still[N]here?![FIN]Everyone else from Rococo[N]Town has already escaped![N]It's dangerous here![FIN]Come on! Run![END]"
   },
   {
     "offset": "07DA56",
     "kind": "dialog",
     "source": "[DEF][TPL:4]···ふうっ かんいっぱつ![N]もう少し おそかったら[N]まきこまれていた所じゃないの![FIN]あたしは ちょっと[N]気になることがあるから[N]先に 村に行ってるわよ[N]いい?[PAU:1E]寄り道しないでもどるのよ![END]",
-    "translation": "[DEF][TPL:4]...Whew! That was close![N]Any later, and you'd have[N]been caught in the[FIN]explosion![FIN]Something is bothering me,[N]so I'm heading to the[N]village first.[N]No detours on your way[FIN]back![END]"
+    "translation": "[DEF][TPL:4]...Whew! That was close![N]Any later, and you'd have[FIN]been caught in the[N]explosion![FIN]Something is bothering me,[N]so I'm heading to the[N]village first. No detours[N]on your way back![END]"
   },
   {
     "offset": "07DB38",
@@ -1078,25 +1078,25 @@
     "offset": "07DB66",
     "kind": "dialog",
     "source": "[DEF]神樣のいる場所への 道開いた[N]神樣の使い この先に行く[N]おれたち仕事おしまい 帰る[N]神樣に よろしく!![END]",
-    "translation": "[DEF]Path to God's place now[N]open.[N]God's messenger go ahead.[N]Our work finished. We go[FIN]home.[N]Say hello to God!![END]"
+    "translation": "[DEF]Path to God's place now[N]open. God's messenger go[N]ahead. Our work finished.[FIN]We go home. Say hello to[N]God!![END]"
   },
   {
     "offset": "07DC75",
     "kind": "dialog",
     "source": "[DEF]はっはっはっはっ[N]これで ようやく[N]先へ 進めるというわけだな![END]",
-    "translation": "[DEF]Ha ha ha ha![N]At last, I can proceed![END]"
+    "translation": "[DEF]Ha ha ha ha! At last, I[N]can proceed![END]"
   },
   {
     "offset": "07DC99",
     "kind": "dialog",
     "source": "[DEF][TPL:5]ごくろうだったな ぼうず[N][PAU:14]そうだ 思い出したぞ[N]たしか 発明家の卵とか言ってたな[FIN]さてはお前も 大むかしの[N]すんばらしい発明品を[N]さがすのが目的なのか?[FIN]だがな お前のような若造が[N]それを調べて 何になる?[N]ムダだムダだ やめておけ![FIN]あの科学力を調べぬいて[N]このペッパー樣は 天才的発明に[N]さらに みがきをかけるのだ![N]だれにも じゃまはさせんぞ![FIN]わかったら さっさと[N]そこをどけ![N]えーい じゃまだじゃまだ![END]",
-    "translation": "[DEF][TPL:5]Good work, boy.[N][PAU:14]Now I remember.[N]You called yourself a[FIN]budding inventor.[FIN]Are you searching for the[N]marvelous inventions of[N]the distant past too?[FIN]What could a young whelp[N]like you possibly learn[N]from them?[N]It's pointless. Give up![FIN]I shall unravel their[N]technology and further[N]polish the genius[N]inventions of the great[FIN]Dr. Pepper![FIN]No one will interfere![N]Now move aside![N]Out of my way![END]"
+    "translation": "[DEF][TPL:5]Good work, boy. [PAU:14]Now I[N]remember. You called[FIN]yourself a budding[N]inventor.[FIN]Are you searching for the[N]marvelous inventions of[N]the distant past too?[FIN]What could a young whelp[N]like you possibly learn[N]from them? It's pointless.[N]Give up![FIN]I shall unravel their[N]technology and further[N]polish the genius[FIN]inventions of the great[N]Dr. Pepper![FIN]No one will interfere! Now[N]move aside! Out of my way![END]"
   },
   {
     "offset": "07E06D",
     "kind": "dialog",
     "source": "[DEF]むむ[PAU:14] またお前かっ?![N]私の じゃまばかりしおって[N]今度という今度は がまんならん[FIN]この天才発明家ペッパーの[N]ス-パ-ウルトラメカ[N][PAL:2]ビッグアイ[PAL:0]で[N]おしおきしてくれる![PAU:14]かくごせい![END]",
-    "translation": "[DEF]Hmm![PAU:14] You again?![N]You keep interfering with[N]me.[N]This time, you've gone too[FIN]far![FIN]I will punish you with the[N]genius Dr. Pepper's[N]super-ultra machine, [PAL:2]Big[N]Eye[PAL:0]! Prepare yourself![END]"
+    "translation": "[DEF]Hmm![PAU:14] You again?! You keep[N]interfering with me. This[N]time, you've gone too far![FIN]I will punish you with the[N]genius Dr. Pepper's[N]super-ultra machine, [PAL:2]Big[N]Eye[PAL:0]! Prepare yourself![END]"
   },
   {
     "offset": "07E0E1",
@@ -1108,7 +1108,7 @@
     "offset": "07E122",
     "kind": "dialog",
     "source": "[DEF][DLY:9]····な·[DLY:0][PAU:14]なんということだ![N]この 天才発明家の[TPL:1A]が[N]こんな青二才めの[TPL:1A]に[N]負けるとは···[FIN]だがっ![N][PAU:14]これで終ったわけではないぞ[N]この借りは 倍にして返してやる![N]おぼえておけっ![END]",
-    "translation": "[DEF][DLY:9]...H-[DLY:0][PAU:14]how can this be?![N]This genius inventor's[N][TPL:1A] lost to a[N]greenhorn's [TPL:1A]...[FIN]But![N][PAU:14]This is not over![N]I'll repay this[N]humiliation twofold![FIN]Remember that![END]"
+    "translation": "[DEF][DLY:9]...H-[DLY:0][PAU:14]how can this be?![N]This genius inventor's[N][TPL:1A] lost to a[N]greenhorn's [TPL:1A]...[FIN]But! [PAU:14]This is not over![N]I'll repay this[N]humiliation twofold![FIN]Remember that![END]"
   },
   {
     "offset": "07E197",
@@ -1120,7 +1120,7 @@
     "offset": "07E1D2",
     "kind": "dialog",
     "source": "[DEF]これは すごいぞ![N]見たこともない 金属だ![N]おまけに この胸の石![N]これがエネルギー源にちがいない![FIN]ああ···[PAU:A]だが···[PAU:A]しかし[N]この[TPL:1A]は どうやったら[N]動くというのだ!?[N]うぉおおお 動く所が見たいぞ![END]",
-    "translation": "[DEF]This is incredible![N]A metal I have never seen![N]And that stone in its[N]chest must be its energy[FIN]source![FIN]Ah...[PAU:A] But...[PAU:A] Still...[N]How can this [TPL:1A] be made[N]to move?![N]Oh, how I long to see it[FIN]in action![END]"
+    "translation": "[DEF]This is incredible! A[N]metal I have never seen![N]And that stone in its[FIN]chest must be its energy[N]source![FIN]Ah...[PAU:A] But...[PAU:A] Still... How[N]can this [TPL:1A] be made to[N]move?! Oh, how I long to[N]see it in action![END]"
   },
   {
     "offset": "07E344",
@@ -1132,7 +1132,7 @@
     "offset": "07E357",
     "kind": "dialog",
     "source": "[DEF][DLY:9]···[DLY:0][PAU:1E][NAM:0]?[PAU:A] オマエか?[N]ワタシだ [PAL:2]ナポレオン[PAL:0]だ[N][PAU:1E][DLY:9]···そうか[PAU:14][DLY:0] オマエはまだ[N][PAU:A]ワタシを 知らないのか···[FIN]···オマエ[PAU:14] その石は?![N][PAU:14][TPL:0]を 集めていたのか[N]そうか···[PAU:14]よかった···[NXT]",
-    "translation": "[DEF][DLY:9]...[DLY:0][PAU:1E][NAM:0]?[PAU:A] Is that you?[N]It is I, [PAL:2]Newton[PAL:0].[N][PAU:1E][DLY:9]...I see.[PAU:14][DLY:0] You do not know[N]me yet...[FIN]...That stone![N][PAU:14]You have been gathering[N][TPL:0].[N]I see...[PAU:14] Thank goodness...[NXT]"
+    "translation": "[DEF][DLY:9]...[DLY:0][PAU:1E][NAM:0]?[PAU:A] Is that you? It[N]is I, [PAL:2]Newton[PAL:0].[PAU:1E][DLY:9]...I see.[PAU:14][DLY:0] You[N]do not know me yet...[FIN]...That stone! [PAU:14]You have[N]been gathering [TPL:0]. I[N]see...[PAU:14] Thank goodness...[NXT]"
   },
   {
     "offset": "07E3E1",
@@ -1144,25 +1144,25 @@
     "offset": "07E41D",
     "kind": "dialog",
     "source": "[DEF]この地で[TPL:0]を見つけ[N]長い間 これを守ってきた[N]いつか オマエにわたせると信じてな[N][PAU:1E][NAM:0][PAU:A] うけとってくれ[FIN] [NAM:0]は[N][PAL:2] 石3[PAL:0]を 手に入れた!",
-    "translation": "[DEF]I found [TPL:0] in this[N]land and guarded it for[N]many years, believing I[N]could give it to you one[FIN]day.[N][PAU:1E][NAM:0], [PAU:A]take it.[FIN] [NAM:0] obtained[N][PAL:2] Stone 3[PAL:0]!"
+    "translation": "[DEF]I found [TPL:0] in this[N]land and guarded it for[N]many years, believing I[N]could give it to you one[FIN]day. [PAU:1E][NAM:0], [PAU:A]take it.[FIN] [NAM:0] obtained[N][PAL:2] Stone 3[PAL:0]!"
   },
   {
     "offset": "07E477",
     "kind": "dialog",
     "source": "[DEF]いかん![PAU:14]こうはしてられん[N]もうすぐここは くずれるぞ[N]ここから 出なければ![N][NAM:0][PAU:A] こっちだ![END]",
-    "translation": "[DEF]No![PAU:14] We cannot stay here![N]This place will collapse[N]soon![N]We must escape![FIN][NAM:0], [PAU:A]this way![END]"
+    "translation": "[DEF]No![PAU:14] We cannot stay here![N]This place will collapse[N]soon! We must escape![FIN][NAM:0], [PAU:A]this way![END]"
   },
   {
     "offset": "07E501",
     "kind": "dialog",
     "source": "[DEF]だめだ![N]ここからは 行けない![N]別のルートを探そう˳[END]",
-    "translation": "[DEF]No good![N]We cannot pass here![N]Let us find another route.[END]"
+    "translation": "[DEF]No good! We cannot pass[N]here! Let us find another[N]route.[END]"
   },
   {
     "offset": "07E5A8",
     "kind": "dialog",
     "source": "[DEF]このかべを こわすしかないな[N]キミは ちょっと後ろにさがって˳[END]",
-    "translation": "[DEF]We must break through this[N]wall.[N]Stand back a little.[END]"
+    "translation": "[DEF]We must break through this[N]wall. Stand back a little.[END]"
   },
   {
     "offset": "07E5CC",
@@ -1174,7 +1174,7 @@
     "offset": "07E79A",
     "kind": "dialog",
     "source": "[DEF]こ···このかべも[N]こわ···さ·ないと[N][PAU:A]キ·ミは···後ろ···さがって˳[END]",
-    "translation": "[DEF]W-we must...break this[N]wall...too.[N][PAU:A]Y-you...stand back...[END]"
+    "translation": "[DEF]W-we must...break this[N]wall...too. [PAU:A]Y-you...stand[N]back...[END]"
   },
   {
     "offset": "07E7C9",
@@ -1186,13 +1186,13 @@
     "offset": "07E7F6",
     "kind": "dialog",
     "source": "[DEF]···あいた···ようだ[N]さ·さあ 行こう˳[END]",
-    "translation": "[DEF]...It seems...open.[N]N-now, let us go.[END]"
+    "translation": "[DEF]...It seems...open. N-now,[N]let us go.[END]"
   },
   {
     "offset": "07E80F",
     "kind": "dialog",
     "source": "[DEF][DLY:4]···もうダメ···だ[N]エネルギーが···なくなった[N]だが···まにあってよかった[FIN]···できることなら···[N]スクラップとなる ワタシの···[N]かけらでも···ひろってくれ[N]キミを 見守れる[FIN]あとのことは···たのむ[N][PAL:2]ラスク[PAL:0]さまの···意志を[N]···ついでくれ˳[DLY:0][END]",
-    "translation": "[DEF][DLY:4]...I can go...no farther.[N]My energy...is gone.[N]But...I am glad we made[N]it.[FIN]...If you can...[N]take even one fragment of[N]the scrap I become...[N]Then I can watch over you.[FIN]I leave...the rest to you.[N]Carry on [PAL:2]Biscotte's[PAL:0][N]will...[DLY:0][END]"
+    "translation": "[DEF][DLY:4]...I can go...no farther.[N]My energy...is gone.[N]But...I am glad we made[N]it.[FIN]...If you can... take even[N]one fragment of the scrap[N]I become... Then I can[N]watch over you.[FIN]I leave...the rest to you.[N]Carry on [PAL:2]Biscotte's[PAL:0][N]will...[DLY:0][END]"
   },
   {
     "offset": "07E8AD",
@@ -1216,30 +1216,30 @@
     "offset": "07E98B",
     "kind": "dialog",
     "source": "[DEF][PAL:2] しかけは かんたんだったろう?[N] 君が来るのを 待っていたが[N] ワタシの残りエネルギーは[N] あと わずかしかない···[FIN] 君が ここに現れる時まで[N] 待つことが できるだろうか[N] だがワタシには残されたことがある[N] 君の 呼びかけを待ち続けねば˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] The mechanism was simple,[N]yes?[N] I waited for you to come,[N] but little of my energy[FIN]remains...[FIN] Will I endure until[N] you appear here?[N] Still, one duty remains.[N] I must await your call.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] The mechanism was simple,[N]yes?[N] I waited for you to come,[FIN] but little of my energy[N]remains...[FIN] Will I endure until[N] you appear here?[N] Still, one duty remains.[N] I must await your call.[PAL:0][END]"
   },
   {
     "offset": "07EAA6",
     "kind": "dialog",
     "source": "[DEF][TPL:4][DLY:1]もうっ![PAU:28][DLY:0]ペッパーが[N]船で にげちゃったのよ![N]ここまで おいつめたのに![FIN]そういえば あいつ[N]あわてて 何か落としていったわ[N]そこにある カプセルよ˳[END]",
-    "translation": "[DEF][TPL:4][DLY:1]Aagh![PAU:28][DLY:0] Pepper escaped by[N]boat![N]I had him cornered![FIN]He dropped something in[N]his hurry to escape.[N]That capsule over there.[END]"
+    "translation": "[DEF][TPL:4][DLY:1]Aagh![PAU:28][DLY:0] Pepper escaped by[N]boat! I had him cornered![FIN]He dropped something in[N]his hurry to escape. That[N]capsule over there.[END]"
   },
   {
     "offset": "07EB02",
     "kind": "dialog",
     "source": "[DEF][TPL:4]え?なんでカプセルを[N]開けないのかですって?[N]ふふん あまいわね[FIN]相手は 悪の発明家よ?![N]カプセルに なにか変なしかけを[N]しているかもしれないでしょっ![END]",
-    "translation": "[DEF][TPL:4]Why haven't I opened the[N]capsule?[N]Ha! Don't be naive.[FIN]He's an evil inventor![N]The capsule could contain[N]some kind of trap![END]"
+    "translation": "[DEF][TPL:4]Why haven't I opened the[N]capsule? Ha! Don't be[N]naive.[FIN]He's an evil inventor! The[N]capsule could contain some[N]kind of trap![END]"
   },
   {
     "offset": "07EB5F",
     "kind": "dialog",
     "source": "[DEF][TPL:4][DLY:1]ちょっと[PAU:1E] 今の話きいたわよ![N]ロココ町で 何かあったのね!?[FIN][DLY:0]ふふん [PAU:1E]事件のにおいがするわ[N]ペッパーのことも気になるけど[N]こっちの方が 先ね[N][DLY:1]こうしちゃいられないわっ![DLY:0][END]",
-    "translation": "[DEF][TPL:4][DLY:1]Wait![PAU:1E] I heard that![N]Something happened in[N]Rococo Town?![FIN][DLY:0]I smell a story.[N]Pepper still concerns me,[N]but this comes first.[N][DLY:1]I have no time to waste![DLY:0][END]"
+    "translation": "[DEF][TPL:4][DLY:1]Wait![PAU:1E] I heard that![N]Something happened in[N]Rococo Town?![FIN][DLY:0]I smell a story. Pepper[N]still concerns me, but[N]this comes first. [DLY:1]I have[N]no time to waste![DLY:0][END]"
   },
   {
     "offset": "07EC02",
     "kind": "dialog",
     "source": "[DEF][PAL:3]ナギサ:[N][PAL:0][NAM:0]ね 聞こえてる?[N]ちょっと 大変なことがおきたの[FIN]とにかく すぐに[N]ロココ町に帰ってきてちょうだい[N]いそいでね おねがいよ˳[END]",
-    "translation": "[DEF][PAL:3]Nagisa:[N][PAL:0][NAM:0], can you hear me?[N]Something terrible has[N]happened.[FIN]Come back to Rococo Town[N]immediately.[N]Please hurry![END]"
+    "translation": "[DEF][PAL:3]Nagisa: [PAL:0][NAM:0], can you[N]hear me? Something[N]terrible has happened.[FIN]Come back to Rococo Town[N]immediately. Please hurry![END]"
   }
 ]

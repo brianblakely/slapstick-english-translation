@@ -105,7 +105,7 @@
     "offset": "01EAE2",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,104]     [TBL:@string_list_01E9C6,&word_01E9D6]  LV[PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE]メガ[N]     [NUM:5,06E6]トロン",
-    "translation": "[PAL:4][BOX:1A,4,104]     [TBL:@string_list_01E9C6,&word_01E9D6]  LV[PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE] mega[N]     [NUM:5,06E6] tron"
+    "translation": "[PAL:4][BOX:1A,4,104]     [TBL:@string_list_01E9C6,&word_01E9D6]  LV[PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE] M[N]     [NUM:5,06E6] tron"
   },
   {
     "offset": "01EB17",
@@ -165,7 +165,7 @@
     "offset": "01EBD4",
     "kind": "console",
     "source": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE]メガ[N] つぎのレベルまで[N] [DEC:1,5,06E2]メガ[N][BOX:A,4,582] おかね[N] [NUM:5,06E6]トロン[BOX:10,19,5A]プログラム [PAL:8][NUM:4,0B86]ポイント[PAL:4][N]そうび[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]ひらめき[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84]コ[PAL:4]",
-    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] M[N]NEXT LEVEL[N][DEC:1,5,06E2] M[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
+    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] M[N]NEXT LEVEL[N][DEC:1,5,06E2] M[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
   },
   {
     "offset": "01EC91",
@@ -1305,7 +1305,7 @@
     "offset": "01FC9E",
     "kind": "console",
     "source": "アイテムごうせい",
-    "translation": "COMBINE ITEMS"
+    "translation": "COMBINE"
   },
   {
     "offset": "01FCA8",

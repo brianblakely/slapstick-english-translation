@@ -20,6 +20,7 @@ const DIALOG_JUMP = 0xd3;
 const DIALOG_RETURN = 0xcc;
 const CONSOLE_REDIRECT_ROUTINE = 0x180000;
 const DIALOG_REDIRECT_ROUTINE = 0x180020;
+const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
 const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
@@ -107,7 +108,7 @@ if (sourceHash !== SOURCE_SHA256) {
 }
 
 assertEnglishPeriodEncoding();
-assertDynamicButtonEncoding();
+assertDynamicTextEncoding();
 
 const scriptFiles = (await readdir(scriptDirectory))
   .filter((filename) => filename.endsWith(".json"))
@@ -570,10 +571,11 @@ function encodeDialog(source) {
     // lowercase must explicitly restore the base font before it terminates.
     // D3 is a jump, not a semantic exit, and therefore preserves font state.
     if (halt && opcode !== 0xd3) restoreBaseMode();
-    // E2 renders the player's configured A/B/X/Y button directly. Its byte is
-    // shared with the lowercase alphabet in alternate mode, so always select
-    // the base font first. Normal text will switch back on its next character.
-    if (opcode === 0xe2) restoreBaseMode();
+    // Runtime text insertions render through stock routines which return in
+    // base-font mode. Enter them in that same mode so both the inserted value
+    // and the following text agree with the encoder's tracked state. This also
+    // keeps E2's dynamic A/B/X/Y byte out of the lowercase alphabet.
+    if (DIALOG_BASE_MODE_COMMANDS.has(part.name)) restoreBaseMode();
     output.push(opcode, ...encodeParameters(types, part.args));
     if (opcode === 0xd5) mode = "base";
     if (opcode === 0xd4) mode = "alternate";
@@ -655,11 +657,28 @@ function assertEnglishPeriodEncoding() {
   }
 }
 
-function assertDynamicButtonEncoding() {
-  const encoded = encodeDialog("Press [E2:80] now.");
-  const button = encoded.indexOf(0xe2);
-  if (button < 1 || encoded[button - 1] !== 0xd5) {
-    throw new Error("Dynamic button names must switch to the uppercase dialogue font");
+function assertDynamicTextEncoding() {
+  const commands = [
+    ["NAM:0", 0xc2, 1],
+    ["TBL:018000,018002", 0xc5, 4],
+    ["NUM:1,018000", 0xc6, 3],
+    ["STR:018000", 0xcf, 3],
+    ["DEC:1,1,018000", 0xdf, 4],
+    ["TPL:1A", 0xe0, 1],
+    ["E2:80", 0xe2, 2],
+  ];
+
+  for (const [command, opcode, parameterLength] of commands) {
+    const encoded = encodeDialog(`a[${command}]a`);
+    const commandIndex = encoded.indexOf(opcode);
+    const nextTextIndex = commandIndex + parameterLength + 1;
+    if (
+      commandIndex < 1
+      || encoded[commandIndex - 1] !== 0xd5
+      || encoded[nextTextIndex] !== 0xd4
+    ) {
+      throw new Error(`Dynamic dialogue command ${command} must be bounded by base-font mode`);
+    }
   }
 }
 

@@ -37,4 +37,4 @@ keep recurring names and terms consistent across independently edited banks.
 | にげちゃだめよーんプログラム | No-Escape Program | Blackmore’s deliberately silly punishment program. |
 
 Interface terms use `ENERGY`, `ATTACK`, `DEFENSE`, `RUN`, `LV`, `PROGRAM
-POINTS`, `COMBO MOVES`, and `mega` consistently across dialogue and menus.
+POINTS`, `COMBO MOVES`, and `M` consistently across dialogue and menus.

@@ -15,10 +15,29 @@ test("repaginates stale mid-sentence page breaks", () => {
   const expected = "[DEF]It reaches lands that[N]cannot be reached on foot.[END]";
 
   assert.equal(reflow(input).text, expected);
+
+  assert.equal(
+    reflow("[DEF]A huge light fell toward[N]the riverbank! It had to[N]be a UFO! I want to go see[FIN]it![END]").text,
+    "[DEF]A huge light fell toward[N]the riverbank! It had to[N]be a UFO! I want to go see[N]it![END]",
+  );
 });
 
-test("retains deliberate sentence, speaker, and choice boundaries", () => {
-  assert.equal(reflow("[DEF]Stop.[N]Go now.[END]").text, "[DEF]Stop.[N]Go now.[END]");
+test("pulls a preceding line forward to avoid one- or two-word page widows", () => {
+  const input = "[DF2]...and that is the[N]situation. We regret the[N]inconvenience, but[N]children's lives are at[FIN]stake.[END]";
+  const expected = "[DF2]...and that is the[N]situation. We regret the[N]inconvenience, but[FIN]children's lives are at[N]stake.[END]";
+
+  assert.equal(reflow(input).text, expected);
+  assert.equal(reflow(expected).text, expected);
+
+  assert.equal(
+    reflow("[DF2][TPL:9]Perhaps you too will[N]become a fine inventor[N]like Dr.[FIN]Pepper.[END]").text,
+    "[DF2][TPL:9]Perhaps you too will[N]become a fine inventor[N]like Dr. Pepper.[END]",
+  );
+});
+
+test("removes unnecessary sentence newlines but retains structural boundaries", () => {
+  assert.equal(reflow("[DEF]Stop.[N]Go now.[END]").text, "[DEF]Stop. Go now.[END]");
+  assert.equal(reflow("[DEF]Stop.[FIN]Go now.[END]").text, "[DEF]Stop.[FIN]Go now.[END]");
   assert.equal(
     reflow("[DEF][TPL:1]Hello.[FIN][TPL:2]Hi.[END]").text,
     "[DEF][TPL:1]Hello.[FIN][TPL:2]Hi.[END]",

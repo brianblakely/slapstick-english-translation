@@ -8,6 +8,7 @@ import process from "node:process";
 const SCRIPT_DIRECTORY = path.resolve("translation/script");
 const MAX_COLUMNS = 26;
 const MAX_ROWS = 4;
+const NONTERMINAL_ABBREVIATIONS = new Set(["Dr.", "Jr.", "Mr.", "Mrs.", "Ms.", "Prof.", "Sr.", "St."]);
 const writeChanges = process.argv.includes("--write");
 const checkOnly = process.argv.includes("--check");
 
@@ -31,7 +32,7 @@ async function main() {
     let changedFile = false;
 
     for (const entry of entries) {
-      if (!shouldReflow(entry.translation)) continue;
+      if (entry.reflow === false || !shouldReflow(entry.translation)) continue;
       const result = reflow(
         entry.translation,
         entry.layout?.columns ?? MAX_COLUMNS,
@@ -89,16 +90,38 @@ function reflowOnce(text, maxColumns, maxRows) {
   let row = 0;
   let lineBreaks = 0;
   let pageBreaks = 0;
+  let lineStartBreak = null;
 
-  const emitBreak = (forcePage = false) => {
+  const emitBreak = (forcePage = false, tailStart = atoms.length, movable = true) => {
+    const widowWords = movable && !forcePage && row >= maxRows - 1
+      ? followingPageWordCount(atoms, tailStart, 2)
+      : 0;
+
+    if (widowWords > 0 && widowWords <= 2 && lineStartBreak?.movable) {
+      // Pull the last line of this page forward so a generated page never
+      // consists of only one or two words. The prior N becomes the page
+      // advance, and this boundary remains a normal newline on the new page.
+      output[lineStartBreak.index] = "[FIN]";
+      lineBreaks -= 1;
+      pageBreaks += 1;
+      output.push("[N]");
+      lineBreaks += 1;
+      row = 1;
+      lineStartBreak = { index: output.length - 1, movable };
+      column = 0;
+      return;
+    }
+
     if (forcePage || row >= maxRows - 1) {
       output.push("[FIN]");
       row = 0;
       pageBreaks += 1;
+      lineStartBreak = null;
     } else {
       output.push("[N]");
       row += 1;
       lineBreaks += 1;
+      lineStartBreak = { index: output.length - 1, movable };
     }
     column = 0;
   };
@@ -109,7 +132,7 @@ function reflowOnce(text, maxColumns, maxRows) {
       if (atom.value === " ") {
         const followingWidth = nextWordWidth(atoms, index + 1);
         if (column > 0 && followingWidth > 0 && column + 1 + followingWidth > maxColumns) {
-          emitBreak();
+          emitBreak(false, index + 1);
         } else if (column < maxColumns) {
           output.push(atom.value);
           column += 1;
@@ -117,7 +140,7 @@ function reflowOnce(text, maxColumns, maxRows) {
         continue;
       }
 
-      if (column >= maxColumns) emitBreak();
+      if (column >= maxColumns) emitBreak(false, index);
       output.push(atom.value);
       column += 1;
       continue;
@@ -126,32 +149,37 @@ function reflowOnce(text, maxColumns, maxRows) {
     const { name } = atom;
     if (name === "N") {
       const choices = consecutiveIndentedLines(atoms, index + 1);
-      emitBreak(choices >= 2 && row + choices > maxRows - 1);
+      const hardBreak = isHardBreak(atoms, index);
+      const movable = !hardBreak || choices === 1;
+      emitBreak(choices >= 2 && row + choices > maxRows - 1, index + 1, movable);
       continue;
     }
     if (name === "FIN") {
       output.push(atom.value);
       row = 0;
       column = 0;
+      lineStartBreak = null;
       continue;
     }
     if (["DEF", "DF2", "DFT", "CLR", "PGE"].includes(name)) {
       output.push(atom.value);
       row = 0;
       column = 0;
+      lineStartBreak = null;
       continue;
     }
 
     if (name === "TPL" && isSpeakerTemplate(atom.args[0])) {
-      if (row >= maxRows - 1) emitBreak(true);
+      if (row >= maxRows - 1) emitBreak(true, index, false);
       output.push(atom.value);
       row += 1;
       column = 0;
+      lineStartBreak = null;
       continue;
     }
 
     const width = commandWidth(atom);
-    if (width > 0 && column > 0 && column + width > maxColumns) emitBreak();
+    if (width > 0 && column > 0 && column + width > maxColumns) emitBreak(false, index);
     output.push(atom.value);
     column += width;
   }
@@ -178,7 +206,8 @@ function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
         || next?.type === "character" && /^[,.;:!?)]$/.test(next.value);
       const separatorWidth = omitSpace ? 0 : 1;
       const followingWidth = nextWordWidth(atoms, index + 1);
-      const canJoin = !isHardBreak(atoms, index)
+      const hardBreak = isHardBreak(atoms, index);
+      const canJoin = !hardBreak
         && followingWidth > 0
         && column + separatorWidth + followingWidth <= maxColumns;
 
@@ -190,7 +219,15 @@ function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
           column += 1;
         }
       } else {
-        normalized.push(atom);
+        // A soft FIN is just a stale pagination decision. Preserve the line
+        // boundary as N and let reflowOnce choose N or FIN from the live row
+        // count instead of carrying the old page boundary forward.
+        normalized.push(hardBreak ? atom : {
+          type: "command",
+          value: "[N]",
+          name: "N",
+          args: [],
+        });
         column = 0;
       }
       continue;
@@ -226,11 +263,22 @@ function isHardBreak(atoms, index) {
   if (next.type === "command" && isLayoutBoundary(next)) return true;
   if (next.value === " ") return true;
 
+  // A dialogue newline is only a layout hint. Sentence punctuation does not
+  // make it significant, so let the wrapper reclaim any room left on the
+  // current row. Page advances still carry pacing and interaction semantics;
+  // retain those when they end a sentence.
+  if (atoms[index].name === "N") return false;
+
   let previousIndex = index - 1;
   while (previousIndex >= 0) {
     const atom = atoms[previousIndex];
     if (atom.type === "character") {
-      if (!["\"", "'", ")", "]"].includes(atom.value)) return /[.!?…:]/.test(atom.value);
+      if (!["\"", "'", ")", "]"].includes(atom.value)) {
+        if (atom.value === "." && NONTERMINAL_ABBREVIATIONS.has(previousWord(atoms, previousIndex))) {
+          return false;
+        }
+        return /[.!?…:]/.test(atom.value);
+      }
     } else if (isLayoutBoundary(atom)) {
       return true;
     } else if (commandWidth(atom) > 0) {
@@ -240,6 +288,20 @@ function isHardBreak(atoms, index) {
   }
 
   return true;
+}
+
+function previousWord(atoms, start) {
+  let word = "";
+  for (let index = start; index >= 0; index -= 1) {
+    const atom = atoms[index];
+    if (atom.type === "character") {
+      if (/\s/.test(atom.value)) break;
+      word = atom.value + word;
+    } else if (isLayoutBoundary(atom) || commandWidth(atom) > 0) {
+      break;
+    }
+  }
+  return word;
 }
 
 function previousInlineAtom(atoms, start) {
@@ -327,6 +389,43 @@ function consecutiveIndentedLines(atoms, start) {
     }
   }
   return count;
+}
+
+function followingPageWordCount(atoms, start, limit) {
+  let words = 0;
+  let inWord = false;
+
+  for (let index = start; index < atoms.length; index += 1) {
+    const atom = atoms[index];
+    if (atom.type === "character") {
+      if (/\s/.test(atom.value)) {
+        inWord = false;
+      } else if (!inWord) {
+        words += 1;
+        inWord = true;
+      }
+    } else if (["FIN", "END", "NXT", "DES", "ESC", "WAI", "CLR", "PGE", "DEF", "DF2", "DFT", "BOX", "POS"].includes(atom.name)
+      || atom.name === "TPL" && isSpeakerTemplate(atom.args[0])) {
+      break;
+    } else if (atom.name === "N") {
+      const choices = consecutiveIndentedLines(atoms, index + 1);
+      if (choices >= 2) return limit + 1;
+      const previous = previousInlineAtom(atoms, index - 1);
+      const next = nextInlineAtom(atoms, index + 1);
+      if (previous?.type === "command" && isLayoutBoundary(previous)
+        || next?.type === "command" && isLayoutBoundary(next)) break;
+      inWord = false;
+    } else if (atom.name === "SKP") {
+      inWord = false;
+    } else if (commandWidth(atom) > 0 && !inWord) {
+      words += 1;
+      inWord = true;
+    }
+
+    if (words > limit) return words;
+  }
+
+  return words;
 }
 
 function commandWidth(atom) {

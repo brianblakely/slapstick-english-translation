@@ -39,13 +39,13 @@
     "offset": "01CFE1",
     "kind": "dialog",
     "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N]ボーナスデータ[DEC:1,4,5D2]メガ[N]合計[::][DEC:1,4,5D0]メガのデータを集めた[FIN]",
-    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] mega in bonus data,[N][DEC:1,4,5D0] mega in all.[FIN]"
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] M in bonus data,[N][DEC:1,4,5D0] M in all.[FIN]"
   },
   {
     "offset": "01D01B",
     "kind": "dialog",
     "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N][JMP:&string_01CFE1+M]",
-    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] mega in bonus data,[N][DEC:1,4,5D0] mega in all.[FIN]"
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] M in bonus data,[N][DEC:1,4,5D0] M in all.[FIN]"
   },
   {
     "offset": "01D02B",
@@ -81,13 +81,13 @@
     "offset": "01D098",
     "kind": "dialog",
     "source": "ボーナスデータを0.5メガ集めた",
-    "translation": "Got 0.5 mega bonus data!"
+    "translation": "Got 0.5 M bonus data!"
   },
   {
     "offset": "01D0B0",
     "kind": "dialog",
     "source": "ボーナスデータを1.0メガ集めた",
-    "translation": "Got 1.0 mega bonus data!"
+    "translation": "Got 1.0 M bonus data!"
   },
   {
     "offset": "01D0C8",
@@ -135,7 +135,7 @@
     "offset": "01D16C",
     "kind": "dialog",
     "source": "[CLR]トロンが たりないよ[N]かわいそうだが 売れないな˳[N][WAI]",
-    "translation": "[CLR]You do not have enough[N]tron.[N]Sorry, but I cannot sell[N]it.[FIN][WAI]"
+    "translation": "[CLR]You do not have enough[N]tron. Sorry, but I cannot[N]sell it.[FIN][WAI]"
   },
   {
     "offset": "01D18C",
@@ -285,13 +285,15 @@
     "offset": "01D4C5",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:ロボットアイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: robot items [PAL:4][E2:4000][PAL:0]: item[N]details"
+    "translation": "[PAL:4]L/R[PAL:0]: robot items[N][PAL:4][E2:4000][PAL:0]: item details",
+    "reflow": false
   },
   {
     "offset": "01D4F7",
     "kind": "dialog",
     "source": "[PAL:4]L·Rボタン[PAL:0]:[NAM:0]アイテム[N][PAL:4][E2:4000]ボタン[PAL:0]  :アイテム説明",
-    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items [PAL:4][E2:4000][PAL:0]:[N]item details"
+    "translation": "[PAL:4]L/R[PAL:0]: [NAM:0]'s items[N][PAL:4][E2:4000][PAL:0]: item details",
+    "reflow": false
   },
   {
     "offset": "01D527",
@@ -579,7 +581,7 @@
     "offset": "01DAF2",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は [PAL:2][DEC:1,4,5EA]メガ[N][PAL:0] のデータを集めた![END]",
-    "translation": "[DEF] [NAM:0] collected [PAL:2][DEC:1,4,5EA][N]mega[N][PAL:0] of data![END]"
+    "translation": "[DEF] [NAM:0] collected [PAL:2][DEC:1,4,5EA] M[N][PAL:0] of data![END]"
   },
   {
     "offset": "01DB14",
@@ -591,13 +593,13 @@
     "offset": "01DC4B",
     "kind": "dialog",
     "source": "おっと···[N]そこには なにもない",
-    "translation": "Hold on...[N]There is nothing there."
+    "translation": "Hold on... There is[N]nothing there."
   },
   {
     "offset": "01DC5D",
     "kind": "dialog",
     "source": "研究所のナギサさんと 通信できる[N]しかし 電波状態が悪いと[N]通信できない",
-    "translation": "Call Nagisa at the lab.[N]It will not work when the[N]signal is poor."
+    "translation": "Call Nagisa at the lab. It[N]will not work when the[N]signal is poor."
   },
   {
     "offset": "01DC90",
@@ -609,7 +611,7 @@
     "offset": "01DCC2",
     "kind": "dialog",
     "source": "もぐら型のドリル[N]やわらかい岩やかべが[N]これで ほることができる",
-    "translation": "A mole-shaped drill.[N]It can bore through soft[N]rock and walls."
+    "translation": "A mole-shaped drill. It[N]can bore through soft rock[N]and walls."
   },
   {
     "offset": "01DCE7",
@@ -633,7 +635,7 @@
     "offset": "01DD8B",
     "kind": "dialog",
     "source": "カギのかかったドアを開けるカギ[N]使うと なくなってしまう",
-    "translation": "A key for locked doors.[N]It disappears after use."
+    "translation": "A key for locked doors. It[N]disappears after use."
   },
   {
     "offset": "01DDB0",
@@ -657,7 +659,7 @@
     "offset": "01DE16",
     "kind": "dialog",
     "source": "カールのおとうさんがくれた[N]飛行機で 步いていけないような[N]土地へ 移動することができる",
-    "translation": "A plane from Chex's[N]father.[N]It reaches lands that[N]cannot be reached on foot."
+    "translation": "A plane from Chex's[N]father. It reaches lands[N]that cannot be reached on[N]foot."
   },
   {
     "offset": "01DE4D",
@@ -825,7 +827,7 @@
     "offset": "01E1E3",
     "kind": "dialog",
     "source": "ボクは ゴミ箱くんです[N]捨てたいアイテムをえらんで[N]2コ目のカーソルをあわせてください",
-    "translation": "I am the Trash Can.[N]Choose an item to discard,[N]then move the second[N]cursor."
+    "translation": "I am the Trash Can. Choose[N]an item to discard, then[N]move the second cursor."
   },
   {
     "offset": "01E21C",

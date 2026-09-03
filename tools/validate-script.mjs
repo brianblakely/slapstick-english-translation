@@ -9,6 +9,8 @@ const LOCATION_LABEL_START = 0x06f910;
 const LOCATION_LABEL_END = 0x06fd89;
 const LOCATION_LABEL_LAYOUT = { columns: 26, rows: 1 };
 const LOCATION_BANNER_OFFSETS = new Set(["06F54B", "06F55D", "06F56F"]);
+const STATUS_SCREEN_OFFSET = "01EBD4";
+const STATUS_ITEM_GLYPHS = ["29", "34", "25", "2D"];
 const CONFIG_OPTION_LAYOUTS = new Map([
   ["01E9EA", { columns: 26, slots: [[9, 3], [15, 3], [21, 3]] }],
   ["01EA0B", { columns: 26, slots: [[9, 4], [15, 4]] }],
@@ -20,14 +22,14 @@ const SINGLE_LINE_CHOICE_LAYOUTS = new Map([
   ["08E377", 2],
 ]);
 const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
-  ["01FC95", { columns: 13, description: "Invention Machine option" }],
-  ["01FC9E", { columns: 13, description: "Invention Machine option" }],
-  ["01FCA8", { columns: 13, description: "Invention Machine option" }],
-  ["01FCB1", { columns: 13, description: "Invention Machine option" }],
-  ["01FCBB", { columns: 13, description: "Invention Machine option" }],
-  ["01FCC4", { columns: 13, description: "Invention Machine option" }],
+  ["01FC95", { columns: 12, description: "Invention Machine option" }],
+  ["01FC9E", { columns: 12, description: "Invention Machine option" }],
+  ["01FCA8", { columns: 12, description: "Invention Machine option" }],
+  ["01FCB1", { columns: 12, description: "Invention Machine option" }],
+  ["01FCBB", { columns: 12, description: "Invention Machine option" }],
+  ["01FCC4", { columns: 12, description: "Invention Machine option" }],
   ["01FCCF", { columns: 8, description: "main-menu caption" }],
-  ["01FCD8", { columns: 13, description: "Invention Machine option" }],
+  ["01FCD8", { columns: 12, description: "Invention Machine option" }],
   ["01FCE3", { columns: 8, description: "main-menu caption" }],
   ["01FCED", { columns: 8, description: "main-menu caption" }],
   ["01FCF6", { columns: 8, description: "main-menu caption" }],
@@ -69,6 +71,7 @@ for (const filename of files) {
     if (entry.kind === "dialog") {
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
       validateSingleLineChoices(entry, location);
+      validateLocationLabel(entry, location);
     }
     if (entry.kind === "console") validateConsoleLayout(entry, location);
   }
@@ -88,9 +91,33 @@ function inferredLayout(entry) {
   return undefined;
 }
 
+function validateLocationLabel(entry, location) {
+  const offset = Number.parseInt(entry.offset, 16);
+  if (offset < LOCATION_LABEL_START || offset > LOCATION_LABEL_END) return;
+
+  const leadingSpaces = entry.translation.match(/^ */)?.[0].length ?? 0;
+  const trailingSpaces = entry.translation.match(/ *$/)?.[0].length ?? 0;
+  const contentWidth = dialogTextWidth(entry.translation) - leadingSpaces - trailingSpaces;
+  const expectedLeadingSpaces = Math.floor((LOCATION_LABEL_LAYOUT.columns - contentWidth) / 2);
+  if (leadingSpaces !== expectedLeadingSpaces || trailingSpaces !== 0) {
+    errors.push(
+      `${location}: location label needs ${expectedLeadingSpaces} leading and no trailing spaces to be centered`,
+    );
+  }
+}
+
 function validateConsoleLayout(entry, location) {
   validateConsoleBoxLayout(entry.translation, location);
   validateConsoleLabel(entry, location);
+
+  if (entry.offset === STATUS_SCREEN_OFFSET) {
+    const glyphs = [...entry.translation.matchAll(/\[FIL:([0-9A-F]+),&word_01E9D6\+2\]/g)]
+      .map((match) => match[1]);
+    const expected = [...STATUS_ITEM_GLYPHS, ...STATUS_ITEM_GLYPHS];
+    if (glyphs.length !== expected.length || glyphs.some((glyph, index) => glyph !== expected[index])) {
+      errors.push(`${location}: conditional status labels must spell ITEM in English glyphs`);
+    }
+  }
 
   const optionLayout = CONFIG_OPTION_LAYOUTS.get(entry.offset);
   if (optionLayout) {
