@@ -15,22 +15,22 @@ keep recurring names and terms consistent across independently edited banks.
 | カメレオングラス | Chameleon Glasses | Equipment used to reveal invisible objects. |
 | ペッパー | Dr. Pepper | The inventor; preserves the Japanese name joke. |
 | クロガネ | Ebony | A white cat whose Japanese name means “black steel.” |
-| カール | Carl | Cheese-puff reference that also reads naturally as a name. |
+| カール | Chex | Cheese-puff reference that also reads naturally as a name. |
 | ガトー | Gateau | French cake. |
 | ティラミス | Tiramisu | Italian dessert. |
-| フラボノ | Flavono | Chewing-gum reference. |
+| フラボノ | Dentyne | Chewing-gum reference. |
 | ポロン | Polon | Pastry/name reference. |
-| ラスク | Rusk | Twice-baked sweet bread. |
+| ラスク | Biscotte | Twice-baked bread reference. |
 | ミルフィ | Mille | Short for mille-feuille. |
-| ポリンキー伯爵 | Count Polinky | Dracula-like count named for the corn snack. |
+| ポリンキー伯爵 | Count Chocula | Preserves the food-brand and vampire joke. |
 | じいや | Jeeves | Elderly butler/caretaker. |
 | ナギサ | Nagisa | Researcher. |
 | ミント | Mint | Reporter. |
 | ローズ | Rose | Mayor’s secretary. |
 | コテツ | Kotetsu | Shady trader and reluctant ally. |
 | ブラックモア | Blackmore | Hacker commander on Bliss. |
-| ナポレオン | Napoleon | Rusk and Gateau’s robot. |
-| イゴール | Igor | Count Polinky’s servant and builder. |
+| ナポレオン | Newton | Biscotte and Gateau’s robot. |
+| イゴール | Igor | Count Chocula’s servant and builder. |
 | ドクターG | Doctor G | Chocolat scientist. |
 | 助手A | Assistant A | Doctor G’s assistant. |
 | マームラナ | Mamurana | The mechanical doll in the Clock Tower. |

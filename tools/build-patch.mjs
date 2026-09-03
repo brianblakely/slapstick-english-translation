@@ -107,6 +107,7 @@ if (sourceHash !== SOURCE_SHA256) {
 }
 
 assertEnglishPeriodEncoding();
+assertDynamicButtonEncoding();
 
 const scriptFiles = (await readdir(scriptDirectory))
   .filter((filename) => filename.endsWith(".json"))
@@ -569,6 +570,10 @@ function encodeDialog(source) {
     // lowercase must explicitly restore the base font before it terminates.
     // D3 is a jump, not a semantic exit, and therefore preserves font state.
     if (halt && opcode !== 0xd3) restoreBaseMode();
+    // E2 renders the player's configured A/B/X/Y button directly. Its byte is
+    // shared with the lowercase alphabet in alternate mode, so always select
+    // the base font first. Normal text will switch back on its next character.
+    if (opcode === 0xe2) restoreBaseMode();
     output.push(opcode, ...encodeParameters(types, part.args));
     if (opcode === 0xd5) mode = "base";
     if (opcode === 0xd4) mode = "alternate";
@@ -647,6 +652,14 @@ function assertEnglishPeriodEncoding() {
   }
   if (!console.equals(Buffer.from([0xfe, 0x00]))) {
     throw new Error("English console periods must use glyph 0xFE");
+  }
+}
+
+function assertDynamicButtonEncoding() {
+  const encoded = encodeDialog("Press [E2:80] now.");
+  const button = encoded.indexOf(0xe2);
+  if (button < 1 || encoded[button - 1] !== 0xd5) {
+    throw new Error("Dynamic button names must switch to the uppercase dialogue font");
   }
 }
 

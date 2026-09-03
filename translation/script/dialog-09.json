@@ -736,7 +736,7 @@
     "offset": "09BE72",
     "kind": "dialog",
     "source": "[DEF][TPL:12]あの[TPL:1A]は[PAL:2]ナポレオン[PAL:0]と言って[N]私たちの 大切な仲間なの[N]私たち以外の人には 口が悪いけど[N][PAU:1E]気をわるくしないでね˳[END]",
-    "translation": "[DEF][TPL:12]That [TPL:1A] is [PAL:2]Napoleon[PAL:0], a[N]treasured companion of[N]ours.[FIN]He is rude to everyone[N]else, [PAU:1E]so please don't take[N]offense.[END]"
+    "translation": "[DEF][TPL:12]That [TPL:1A] is [PAL:2]Newton[PAL:0], a[N]treasured companion of[N]ours.[FIN]He is rude to everyone[N]else, [PAU:1E]so please don't take[N]offense.[END]"
   },
   {
     "offset": "09BEC3",
@@ -748,25 +748,25 @@
     "offset": "09BF0D",
     "kind": "dialog",
     "source": "[DEF][TPL:12]ラスク···[PAU:1E]じゃないわね[N][PAU:1E]ナポレオンから 聞いたわ[N][PAL:0]ラスクは ケガをしてるんですって?[FIN]心配だわ···[PAU:1E]でも 私は[N]ここを はなれるわけには[N]いかないし···[FIN]え?[PAU:1E]ナポレオンとガトー?[N][PAU:1E]ラスクが とても大切なものを[N]だれかに うばわれたらしいの[FIN]それを さがしに[N][PAL:2]どうくつ[PAL:0]へ 行ったわ[N]あれが だれかの手にわたったら[N]大変なことになるから···˳[END]",
-    "translation": "[DEF][TPL:12]Rusk...[PAU:1E] No, you're not.[N][PAU:1E]Napoleon told me Rusk has[N]been injured.[FIN]I'm worried...[PAU:1E] But I[N]cannot leave this place...[FIN]What?[PAU:1E] Napoleon and Gateau?[N][PAU:1E]Someone apparently stole[N]something precious from[N]Rusk.[FIN]They went to search for it[N]in the [PAL:2]cave[PAL:0].[N]If it falls into the wrong[N]hands, the consequences[FIN]will be terrible...[END]"
+    "translation": "[DEF][TPL:12]Biscotte...[PAU:1E] No, you're[N]not.[N][PAU:1E]Newton told me Biscotte[FIN]has been injured.[FIN]I'm worried...[PAU:1E] But I[N]cannot leave this place...[FIN]What?[PAU:1E] Newton and Gateau?[N][PAU:1E]Someone apparently stole[N]something precious from[N]Biscotte.[FIN]They went to search for it[N]in the [PAL:2]cave[PAL:0].[N]If it falls into the wrong[N]hands, the consequences[FIN]will be terrible...[END]"
   },
   {
     "offset": "09BFE5",
     "kind": "dialog",
     "source": "[DEF][TPL:12]私たちはね[N]ちがう星から やってきたの···[N][PAU:1E]信じて もらえるかしら?[FIN]ラスクとガトーとわたしは[N]同じ仕事をしていたの[N]それなのに···[N][PAU:1E]ラスクは どうして···˳[END]",
-    "translation": "[DEF][TPL:12]We came here from another[N]planet...[N][PAU:1E]Can you believe that?[FIN]Rusk, Gateau, and I all[N]did the same kind of work.[N]And yet...[FIN][PAU:1E]Why would Rusk...?[END]"
+    "translation": "[DEF][TPL:12]We came here from another[N]planet...[N][PAU:1E]Can you believe that?[FIN]Biscotte, Gateau, and I[N]all did the same kind of[N]work.[N]And yet...[FIN][PAU:1E]Why would Biscotte...?[END]"
   },
   {
     "offset": "09C04B",
     "kind": "dialog",
     "source": "[DF2][TPL:D]本当に [PAL:2]ラスク[PAL:0]だったのか?[N][PAU:1E]···[PAU:28]それで あいつは[N]何か 言っていなかったか?[FIN][TPL:12]なんだか ぼおっとしていたけど[N]それは いつものことだし···[N][PAU:1E]とりあえず この場所のことは[N]話してきたけど···˳[END]",
-    "translation": "[DF2][TPL:D]It truly was [PAL:2]Rusk[PAL:0]?[N][PAU:1E]...[PAU:28]Did he say anything?[FIN][TPL:12]He seemed rather[N]absentminded, but he is[N]always like that...[FIN][PAU:1E]I told him about this[N]place for the time[N]being...[END]"
+    "translation": "[DF2][TPL:D]It truly was [PAL:2]Biscotte[PAL:0]?[N][PAU:1E]...[PAU:28]Did he say anything?[FIN][TPL:12]He seemed rather[N]absentminded, but he is[N]always like that...[FIN][PAU:1E]I told him about this[N]place for the time[N]being...[END]"
   },
   {
     "offset": "09C0C6",
     "kind": "dialog",
     "source": "[DFT]···[PAU:1E]ラスク![PAU:1E]よかった![N]今 あなたのことを話してた所よ[FIN]ねえ [PAU:1E]いったい何があったの?[N][PAU:1E]どうして [PAL:2]ショコラ星[PAL:0]から[N]ぬけ出したりしたのよ?[N][PAU:1E]それに [TPL:0]はどうしたの?[END]",
-    "translation": "[DFT]...[PAU:1E]Rusk![PAU:1E] Thank goodness![N]We were just speaking of[N]you.[FIN]What happened?[N][PAU:1E]Why did you leave [PAL:2]Planet[N]Chocolat[PAL:0]?[N][PAU:1E]And what happened to[FIN][TPL:0]?[END]"
+    "translation": "[DFT]...[PAU:1E]Biscotte![PAU:1E] Thank[N]goodness![N]We were just speaking of[N]you.[FIN]What happened?[N][PAU:1E]Why did you leave [PAL:2]Planet[N]Chocolat[PAL:0]?[N][PAU:1E]And what happened to[FIN][TPL:0]?[END]"
   },
   {
     "offset": "09C132",
@@ -784,7 +784,7 @@
     "offset": "09C17D",
     "kind": "dialog",
     "source": "[DF2][TPL:D]ミルフィ[PAU:1E] 待て[N][PAU:1E]こいつの言うことが 本当かどうか[N]こいつに 案内をさせて[N]ナポレオンに たしかめさせよう˳[END]",
-    "translation": "[DF2][TPL:D]Wait, Mille.[N][PAU:1E]We do not know if he[N]speaks truth.[FIN]Let him guide us, and[N]Napoleon can verify it.[END]"
+    "translation": "[DF2][TPL:D]Wait, Mille.[N][PAU:1E]We do not know if he[N]speaks truth.[FIN]Let him guide us, and[N]Newton can verify it.[END]"
   },
   {
     "offset": "09C1C4",
@@ -814,7 +814,7 @@
     "offset": "09C236",
     "kind": "dialog",
     "source": "[DEF]ねえ [PAU:28]あなたに あの[TPL:1A]と[N]ラスクのいる場所に 行ってほしいの[N][PAU:1E]あなたのことは 悪いようには[N]しないから···[PAU:1E]おねがいよ˳[END]",
-    "translation": "[DEF]Please take them to[N]Napoleon and Rusk.[N][PAU:1E]We won't harm you...[N]Please.[END]"
+    "translation": "[DEF]Please take them to Newton[N]and Biscotte.[N][PAU:1E]We won't harm you...[N]Please.[END]"
   },
   {
     "offset": "09C281",
@@ -832,19 +832,19 @@
     "offset": "09C3DF",
     "kind": "dialog",
     "source": "[DEF][TPL:D]ラスクか?[PAU:1E]いや どちらでもいい[N][PAU:14]のこのこ 現れたか[N]バカなやつめ[FIN]なに?[PAU:14]この[TPL:0]は[N]不完全体だと?[N][PAU:1E]はははっ [PAU:14]そんな手に[N]だまされると 思っているのか?[FIN]おまえは いつもそうだったよ[N][PAU:14]ラスク[N][PAU:1E]にこやかな顔をして いつのまにか[N]おれの前を 走っている···[FIN]たしかに この[TPL:0]も[N]おまえの 発明品だ[N][PAU:14]しかし おまえは これの使用を[N]こばんだ···[FIN]だから このおれが使ってやるのさ[N][PAU:14]時を見るプリズムで[N]過去を [PAU:A]未来を [PAU:A]自由にのぞき[N]時の流れを あやつってやる![END]",
-    "translation": "[DEF][TPL:D]Rusk?[PAU:1E] No matter.[N][PAU:14]You came strolling back,[N]you fool.[FIN]What?[PAU:14] This [TPL:0] is[N]incomplete?[N][PAU:1E]Ha ha! Do you think such a[N]trick could fool me?[FIN]You were always like this,[N]Rusk.[N][PAU:14]Smiling pleasantly, [PAU:1E]then[N]somehow racing ahead of[FIN]me...[FIN]Yes, you invented this[N][TPL:0].[N][PAU:14]But you refused to use[N]it...[FIN]So I shall use it instead![N][PAU:14]With this prism that sees[N]time, I'll gaze freely[N]into past and future and[FIN]command the flow of time![END]"
+    "translation": "[DEF][TPL:D]Biscotte?[PAU:1E] No matter.[N][PAU:14]You came strolling back,[N]you fool.[FIN]What?[PAU:14] This [TPL:0] is[N]incomplete?[N][PAU:1E]Ha ha! Do you think such a[N]trick could fool me?[FIN]You were always like this,[N]Biscotte.[N][PAU:14]Smiling pleasantly, [PAU:1E]then[N]somehow racing ahead of[FIN]me...[FIN]Yes, you invented this[N][TPL:0].[N][PAU:14]But you refused to use[N]it...[FIN]So I shall use it instead![N][PAU:14]With this prism that sees[N]time, I'll gaze freely[N]into past and future and[FIN]command the flow of time![END]"
   },
   {
     "offset": "09C500",
     "kind": "dialog",
     "source": "[DF2][TPL:C]ガトー樣っ[N]な·なんと おそろしいことを![N]ミルフィ樣も 反対なさいます![FIN][TPL:D]關係ない もうすぐこの船は発進する[N]私は どこか人の目にふれぬ場所で[N]この 研究を進めるつもりだ[FIN]ナポレオン[N]お前は この星を飛び立ったら[N]メモリーを 改造してやろう[N]今後は 私の助手として働くのだ˳[FIN][TPL:C]···[PAU:1E][TPL:1A]であるワタシは[N]あなたには さからえません[N][PAU:1E]···出発の準備をしてまいります˳[END]",
-    "translation": "[DF2][TPL:C]Lord Gateau![N]What a terrifying plan![N]Lady Mille will oppose it[FIN]too![FIN][TPL:D]It does not matter.[N]This ship will launch[N]soon.[FIN]I will continue my[N]research somewhere beyond[N]human eyes.[FIN]Napoleon, once we leave[N]this planet, I will alter[N]your memory.[N]From then on, you will[FIN]serve as my assistant.[FIN][TPL:C]...[PAU:1E]As a [TPL:1A], I cannot[N]defy you.[N][PAU:1E]...I will prepare for[FIN]departure.[END]"
+    "translation": "[DF2][TPL:C]Lord Gateau![N]What a terrifying plan![N]Lady Mille will oppose it[FIN]too![FIN][TPL:D]It does not matter.[N]This ship will launch[N]soon.[FIN]I will continue my[N]research somewhere beyond[N]human eyes.[FIN]Newton, once we leave this[N]planet, I will alter your[N]memory.[N]From then on, you will[FIN]serve as my assistant.[FIN][TPL:C]...[PAU:1E]As a [TPL:1A], I cannot[N]defy you.[N][PAU:1E]...I will prepare for[FIN]departure.[END]"
   },
   {
     "offset": "09C5EE",
     "kind": "dialog",
     "source": "[DF2][TPL:D]···だが 見えるのだ···[N]この計画の じゃまをする[N]あの ラスクに似た少年が···˳[PAU:3C][END]",
-    "translation": "[DF2][TPL:D]...But I can see him...[N]That boy who resembles[N]Rusk and interferes with[FIN]my plan...[PAU:3C][END]"
+    "translation": "[DF2][TPL:D]...But I can see him...[N]That boy who resembles[N]Biscotte and interferes[FIN]with my plan...[PAU:3C][END]"
   },
   {
     "offset": "09C628",
@@ -868,13 +868,13 @@
     "offset": "09C78C",
     "kind": "dialog",
     "source": "[DEF][TPL:C]ワタシは ラスク樣に作られた[N][PAU:1E]だから ラスク樣のことは[N]よく わかる[FIN]オマエは ラスク樣ではない[N]···だが[N][PAU:28]どこか ラスク樣と[N]おなじような所も···˳[END]",
-    "translation": "[DEF][TPL:C]Rusk created me.[N][PAU:1E]Therefore, I know him[N]well.[FIN]You are not Rusk.[N]...And yet, [PAU:28]something[N]about you resembles him...[END]"
+    "translation": "[DEF][TPL:C]Biscotte created me.[N][PAU:1E]Therefore, I know him[N]well.[FIN]You are not Biscotte.[N]...And yet, [PAU:28]something[N]about you resembles him...[END]"
   },
   {
     "offset": "09C7F3",
     "kind": "dialog",
     "source": "[DEF][TPL:C]ちがいます ミルフィ樣[N][PAU:1E]この男は ラスク樣ではありません[N]遺伝子構成は よく似ていますが[N]別人です˳[NXT]",
-    "translation": "[DEF][TPL:C]No, Lady Mille.[N][PAU:1E]This man is not Rusk.[N]His genetic structure is[FIN]very similar, but he is[N]someone else.[NXT]"
+    "translation": "[DEF][TPL:C]No, Lady Mille.[N][PAU:1E]This man is not Biscotte.[N]His genetic structure is[FIN]very similar, but he is[N]someone else.[NXT]"
   },
   {
     "offset": "09C83A",
@@ -886,13 +886,13 @@
     "offset": "09C88C",
     "kind": "dialog",
     "source": "[TPL:12]······[PAU:3C]なんですって!?[N][PAU:1E]でも···ラスクだと思ったのよ[N]私が ラスクと他人を[N]まちがえるなんて···˳[END]",
-    "translation": "[TPL:12]......[PAU:3C]What?![N][PAU:1E]But... I was certain he[N]was Rusk.[FIN]How could I mistake[N]someone else for him...?[END]"
+    "translation": "[TPL:12]......[PAU:3C]What?![N][PAU:1E]But... I was certain he[N]was Biscotte.[FIN]How could I mistake[N]someone else for him...?[END]"
   },
   {
     "offset": "09C8D1",
     "kind": "dialog",
     "source": "[DEF][TPL:C]オマエのような ニンゲンの[N]後を步くのは 気が すすまぬが[N]ミルフィ樣の ご命令とあれば[N]仕方あるまい[FIN]ワタシは この世界の人間に[N]けいかいされぬよう[N][PAL:2]姿をかくして[N][PAL:0]オマエの後を ついて行く[FIN]だがオマエが すみやかに[N]ラスク樣の所に 案内せねば[N]すかさず けいこくをあたえる[N][PAU:1E]よく おぼえておくのだな˳[END]",
-    "translation": "[DEF][TPL:C]I dislike following a[N]human like you, but Lady[N]Mille commanded it.[FIN]I have no choice.[FIN]I will [PAL:2]hide my form[PAL:0] and[N]follow behind you so this[N]world's humans do not[N]become alarmed.[FIN]But if you fail to guide[N]us to Rusk immediately, I[N]will issue a warning[FIN]attack.[N][PAU:1E]Remember that well.[END]"
+    "translation": "[DEF][TPL:C]I dislike following a[N]human like you, but Lady[N]Mille commanded it.[FIN]I have no choice.[FIN]I will [PAL:2]hide my form[PAL:0] and[N]follow behind you so this[N]world's humans do not[N]become alarmed.[FIN]But if you fail to guide[N]us to Biscotte[N]immediately, I will issue[N]a warning attack.[FIN][PAU:1E]Remember that well.[END]"
   },
   {
     "offset": "09C993",
@@ -904,7 +904,7 @@
     "offset": "09C9D1",
     "kind": "dialog",
     "source": "[DF2][TPL:D]知りたいか?ナポレオン[N]ならば 教えてやろう[N]この ティアトロンをのぞくがいい[END]",
-    "translation": "[DF2][TPL:D]You wish to know,[N]Napoleon?[N]Then I shall show you.[FIN]Look into this Tiatron.[END]"
+    "translation": "[DF2][TPL:D]You wish to know, Newton?[N]Then I shall show you.[FIN]Look into this Tiatron.[END]"
   },
   {
     "offset": "09CAC3",
@@ -1072,7 +1072,7 @@
     "offset": "09DBE0",
     "kind": "dialog",
     "source": "[DEF][TPL:8]あきれた!タフな[TPL:1A]だね[N]こんなに 痛めつけても[N]まだ 動いているの?[FIN][TPL:C]···あたりまえだ ワタシは[N]ラスク樣と ガトー樣に[N]設計された [TPL:1A]···[N][PAU:1E]そうかんたんには やられぬ˳[FIN][TPL:8]でもね その[PAL:2]ガトー[PAL:0]っていう人が[N]キミを始末しろって言ったんだよ[N]そのかわりに 協力するからってね˳[FIN][TPL:C]ガトー樣が!?[N][PAU:28]···まさか···˳[FIN][TPL:8]さて とどめをさして帰らないと[N]ヒステリーぎみの ローズ樣に[N]おこられちゃう˳[END]",
-    "translation": "[DEF][TPL:8]Incredible! You're a tough[N][TPL:1A].[N]You're still moving after[FIN]all that punishment?[FIN][TPL:C]...Of course.[N]Rusk and Gateau designed[N]me.[FIN][PAU:1E]I will not fall so easily.[FIN][TPL:8]But [PAL:2]Gateau[PAL:0] told us to[N]dispose of you, in[N]exchange for his[FIN]cooperation.[FIN][TPL:C]Lord Gateau did?![N][PAU:28]...It cannot be...[FIN][TPL:8]Now I must finish you off[N]before that hysterical[N]Lady Rose gets angry with[FIN]me.[END]"
+    "translation": "[DEF][TPL:8]Incredible! You're a tough[N][TPL:1A].[N]You're still moving after[FIN]all that punishment?[FIN][TPL:C]...Of course.[N]Biscotte and Gateau[N]designed me.[FIN][PAU:1E]I will not fall so easily.[FIN][TPL:8]But [PAL:2]Gateau[PAL:0] told us to[N]dispose of you, in[N]exchange for his[FIN]cooperation.[FIN][TPL:C]Lord Gateau did?![N][PAU:28]...It cannot be...[FIN][TPL:8]Now I must finish you off[N]before that hysterical[N]Lady Rose gets angry with[FIN]me.[END]"
   },
   {
     "offset": "09DCDB",
@@ -1114,7 +1114,7 @@
     "offset": "09E078",
     "kind": "dialog",
     "source": "[CLR][TPL:C]それは 修理の道具か?[N][PAU:1E]そうだ···[PAU:1E]忘れていた[N]はたさねばならぬことも残っている[FIN][TPL:0]を 取り返さねば[N]ラスク樣に 顔むけできぬ[N][PAU:1E][NAM:0]と 言ったか···[N][PAU:1E]この恩は わすれぬぞ[FIN] [NAM:0]は[N][PAL:2] しゅうりキット[PAL:0]を[N][PAL:2] ナポレオン[PAL:0]に 使った![END]",
-    "translation": "[CLR][TPL:C]Is that a repair tool?[N][PAU:1E]Yes...[PAU:1E] I had forgotten.[N]I still have a duty to[FIN]fulfill.[FIN]I must recover [TPL:0], or[N]I cannot face Lord Rusk.[N][PAU:1E]Your name was [NAM:0]...[FIN][PAU:1E]I will not forget this[N]debt.[FIN] [NAM:0] used the [PAL:2]Repair[N]Kit[PAL:0][N] on [PAL:2]Napoleon[PAL:0]![END]"
+    "translation": "[CLR][TPL:C]Is that a repair tool?[N][PAU:1E]Yes...[PAU:1E] I had forgotten.[N]I still have a duty to[FIN]fulfill.[FIN]I must recover [TPL:0], or[N]I cannot face Lord[N]Biscotte.[N][PAU:1E]Your name was [NAM:0]...[FIN][PAU:1E]I will not forget this[N]debt.[FIN] [NAM:0] used the [PAL:2]Repair[N]Kit[PAL:0][N] on [PAL:2]Newton[PAL:0]![END]"
   },
   {
     "offset": "09E112",
@@ -1168,7 +1168,7 @@
     "offset": "09E422",
     "kind": "dialog",
     "source": "[DEF][TPL:C]これは······[N][PAU:1E]ラスク樣の 宇宙船!?[END]",
-    "translation": "[DEF][TPL:C]This is...[N][PAU:1E]Lord Rusk's spaceship?![END]"
+    "translation": "[DEF][TPL:C]This is...[N][PAU:1E]Lord Biscotte's[N]spaceship?![END]"
   },
   {
     "offset": "09E443",
@@ -1240,7 +1240,7 @@
     "offset": "09E9A4",
     "kind": "dialog",
     "source": "[DEF][TPL:C]いったい 何をお考えなんです!?[N][TPL:0]は ラスク樣が[N]発明なさったものなのに···[FIN]わ·ワタシは 知っています···[N][PAU:1E]ラスク樣は それを作ったことを[N]ひどく こうかいなさってた···[N][PAU:14]時の流れなど 知るものではないと[FIN]だからおひとりで ショコラ星を出て[N]それを ほうむる場所を[N]さがしておられたのに···˳[FIN][TPL:D]ふん[PAU:1E] しょせんおまえは[N][TPL:1A]だな [PAU:14]ナポレオン[N][PAU:1E]人の心など おまえにわかるものか[NXT]",
-    "translation": "[DEF][TPL:C]What are you thinking?![N][TPL:0] was invented by[N]Lord Rusk...[FIN]I-I know this...[N][PAU:1E]Lord Rusk deeply regretted[N]ever creating it...[N][PAU:14]He said no one should know[FIN]the flow of time.[FIN]That is why he left[N]Chocolat alone to find a[N]place where he could bury[N]it...[FIN][TPL:D]Hmph.[PAU:1E] You are only a[N][TPL:1A], [PAU:14]Napoleon.[FIN][PAU:1E]What could you know of a[N]human heart?[NXT]"
+    "translation": "[DEF][TPL:C]What are you thinking?![N][TPL:0] was invented by[N]Lord Biscotte...[FIN]I-I know this...[N][PAU:1E]Lord Biscotte deeply[N]regretted ever creating[N]it...[FIN][PAU:14]He said no one should know[FIN]the flow of time.[FIN]That is why he left[N]Chocolat alone to find a[N]place where he could bury[N]it...[FIN][TPL:D]Hmph.[PAU:1E] You are only a[N][TPL:1A], [PAU:14]Newton.[FIN][PAU:1E]What could you know of a[N]human heart?[NXT]"
   },
   {
     "offset": "09EA90",
@@ -1294,7 +1294,7 @@
     "offset": "09EDB8",
     "kind": "dialog",
     "source": "[DEF][PAL:3] ナポレオン ガトーごめんなさい[N] ラスクのようすが どうしても[N] 心配なので 見てきます˳[N][SKP:24]ミルフィ[PAL:0][END]",
-    "translation": "[DEF][PAL:3] Napoleon, Gateau, forgive[N]me.[N] I cannot stop worrying[N]about Rusk,[FIN] so I am going to check on[N]him.[N][SKP:24]Mille[PAL:0][END]"
+    "translation": "[DEF][PAL:3] Newton, Gateau, forgive[N]me.[N] I cannot stop worrying[N]about Biscotte,[FIN] so I am going to check on[N]him.[N][SKP:24]Mille[PAL:0][END]"
   },
   {
     "offset": "09EE60",
@@ -1318,7 +1318,7 @@
     "offset": "09EF56",
     "kind": "dialog",
     "source": "[DEF][TPL:C][NAM:0]か![N][PAU:14]ミルフィ樣を みなかったか?[N][PAU:14]ガトー樣が たいへんなのだ[FIN]ミルフィ樣とラスク樣を[N]待たずに 宇宙船を出すと[N]言い出して···[NXT]",
-    "translation": "[DEF][TPL:C][NAM:0]![N][PAU:14]Have you seen Lady Mille?[N][PAU:14]Lord Gateau is behaving[FIN]terribly.[FIN]He says he will launch the[N]ship without waiting for[N]Lady Mille or Lord Rusk...[NXT]"
+    "translation": "[DEF][TPL:C][NAM:0]![N][PAU:14]Have you seen Lady Mille?[N][PAU:14]Lord Gateau is behaving[FIN]terribly.[FIN]He says he will launch the[N]ship without waiting for[N]Lady Mille or Lord[N]Biscotte...[NXT]"
   },
   {
     "offset": "09EFB4",

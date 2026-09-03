@@ -153,7 +153,7 @@
     "offset": "158A1F",
     "kind": "dialog",
     "source": "[CLR]カール君をさがしに行くなら[N]もう一度どうくつに行ってみたら[N]どうかしら?前に行った時と[N]変わった所があるかもしれないわ˳[END]",
-    "translation": "[CLR]If you are looking for[N]Carl, why not try the cave[N]again?[FIN]Something may have changed[N]since your last visit.[END]"
+    "translation": "[CLR]If you are looking for[N]Chex, why not try the cave[N]again?[FIN]Something may have changed[N]since your last visit.[END]"
   },
   {
     "offset": "158A69",
@@ -231,7 +231,7 @@
     "offset": "158D36",
     "kind": "dialog",
     "source": "[CLR]ナポレオンに しゅうりキットは[N]使えないかしら?[N]裝備して ナポレオンに[N]見せてみたらどう?[END]",
-    "translation": "[CLR]Could the Repair Kit work[N]on Napoleon? Equip it and[N]show it to him.[END]"
+    "translation": "[CLR]Could the Repair Kit work[N]on Newton? Equip it and[N]show it to him.[END]"
   },
   {
     "offset": "158D70",
@@ -327,7 +327,7 @@
     "offset": "1593C5",
     "kind": "dialog",
     "source": "[DEF]え?[PAU:1E]はくしゃくのおやしき?[N][PAU:1E]何を言っているんだね 君は[N]ここは 何十年も前から[N]このとおり はいきょになってるんだ[FIN]たしかに とりこわしになる前は[N]ポリンキーとかいう人の[N]おやしきだったと 聞いてるがね˳[END]",
-    "translation": "[DEF]What? [PAU:1E]The Count's mansion?[N][PAU:1E]What are you talking[N]about?[N]This has been a ruin for[FIN]decades.[FIN]Before its demolition, it[N]was the mansion of someone[N]named Polinky, or so I[N]have heard.[END]"
+    "translation": "[DEF]What? [PAU:1E]The Count's mansion?[N][PAU:1E]What are you talking[N]about?[N]This has been a ruin for[FIN]decades.[FIN]Before its demolition, it[N]was the mansion of someone[N]named Chocula, or so I[N]have heard.[END]"
   },
   {
     "offset": "15943D",

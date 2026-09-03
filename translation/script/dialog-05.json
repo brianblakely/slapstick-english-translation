@@ -171,13 +171,13 @@
     "offset": "058E2B",
     "kind": "dialog",
     "source": "[DEF]カールが ハッカーのアジトを[N]さがしに行こうって言いだしたんだ[N]悪いのは ボクじゃないよ![END]",
-    "translation": "[DEF]Carl said we should search[N]for the Hacker hideout.[N]This was not my fault![END]"
+    "translation": "[DEF]Chex said we should search[N]for the Hacker hideout.[N]This was not my fault![END]"
   },
   {
     "offset": "058E65",
     "kind": "dialog",
     "source": "[DEF]え?カール?知らないよ[N]まだ どうくつで[N]ひとりで[N]がんばっているかもしれないぜ[FIN]あいつ ぜったいに[N]ハッカーのアジトを さがすって[N]はりきってたもんなあ˳[END]",
-    "translation": "[DEF]Carl? I do not know.[N]He may still be alone in[N]the cave, trying his[N]hardest.[FIN]He was determined to find[N]the Hacker hideout.[END]"
+    "translation": "[DEF]Chex? I do not know.[N]He may still be alone in[N]the cave, trying his[N]hardest.[FIN]He was determined to find[N]the Hacker hideout.[END]"
   },
   {
     "offset": "058EBC",
@@ -597,7 +597,7 @@
     "offset": "05AB04",
     "kind": "dialog",
     "source": "[DEF][TPL:2][NAM:0]か[N][PAU:14]子供たちを 助けたそうじゃないか[N]よくやったな えらいぞ[FIN]ところでな [PAU:1E]とうさんは しばらく[N]友人の [PAL:2]フラボノ[PAL:0]さんと[N]旅に出ることにした[N]帰りは いつになるかわからん[FIN]とうさんがいなくても[N]お前は うまくやってけるだろう[N]クロガネは あずけていくからな[N]めんどう見てやってくれ[FIN]じゃあな [PAU:1E][NAM:0][PAU:1E][N]がんばるんだぞ˳[END]",
-    "translation": "[DEF][TPL:2][NAM:0], I heard you saved[N]the children. Well done![FIN]I will be traveling for a[N]while with my friend[N][PAL:2]Flavono[PAL:0].[N]I do not know when I will[FIN]return.[FIN]You will manage without[N]me.[N]I am leaving Ebony with[N]you, so take good care of[FIN]him.[FIN]Goodbye, [NAM:0].[N]Keep doing your best.[END]"
+    "translation": "[DEF][TPL:2][NAM:0], I heard you saved[N]the children. Well done![FIN]I will be traveling for a[N]while with my friend[N][PAL:2]Dentyne[PAL:0].[N]I do not know when I will[FIN]return.[FIN]You will manage without[N]me.[N]I am leaving Ebony with[N]you, so take good care of[FIN]him.[FIN]Goodbye, [NAM:0].[N]Keep doing your best.[END]"
   },
   {
     "offset": "05ABC0",
@@ -975,7 +975,7 @@
     "offset": "05C33E",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 南の島に ばけーしょんに[N] でかけています[N][N]      ステラおばさん[PAL:0][END]",
-    "translation": "[DEF][PAL:2] Gone on vacation[N] to the southern island.[N][N]             Aunt Stella[PAL:0][END]"
+    "translation": "[DEF][PAL:2] Gone on vacation[N] to the southern island.[N][N]             Aunt Jemima[PAL:0][END]"
   },
   {
     "offset": "05C403",
@@ -1179,19 +1179,19 @@
     "offset": "05D365",
     "kind": "dialog",
     "source": "[DEF]あのね [NAM:0]さん[N]あなたが 助けた[N]河原の子供たちの中に[N][PAL:2]カール[PAL:0]って子がいたでしょう?[FIN]···おばさんの子なの[N]迷惑かけて ごめんなさいね[N]でも···あの子ったら[N]まだ もどっていないのよ[FIN]あの子のことだから[N]すなおには 帰ってこないと[N]思っていたけど···[N]···ああ 困った子だわ![END]",
-    "translation": "[DEF]You know the children you[N]saved from the riverside[N]cave?[N]One was named [PAL:2]Carl[PAL:0], right?[FIN]...I'm his mother.[N]I'm sorry he caused you[N]trouble.[N]But...he still hasn't come[FIN]home.[FIN]I knew he wouldn't come[N]back without making a[N]fuss, but...[FIN]Oh, that impossible boy![END]"
+    "translation": "[DEF]You know the children you[N]saved from the riverside[N]cave?[N]One was named [PAL:2]Chex[PAL:0], right?[FIN]...I'm his mother.[N]I'm sorry he caused you[N]trouble.[N]But...he still hasn't come[FIN]home.[FIN]I knew he wouldn't come[N]back without making a[N]fuss, but...[FIN]Oh, that impossible boy![END]"
   },
   {
     "offset": "05D40C",
     "kind": "dialog",
     "source": "[DEF][NAM:0]さん[N]もし カールをみつけたら[N]ここに つれてきて[N]もらえないかしら?[FIN]おしりを ひっぱたかないと[N]わからないんだから[N]あの子は![END]",
-    "translation": "[DEF][NAM:0], if you find Carl,[N]would you bring him here?[FIN]That boy won't learn until[N]I give him a good[N]spanking![END]"
+    "translation": "[DEF][NAM:0], if you find Chex,[N]would you bring him here?[FIN]That boy won't learn until[N]I give him a good[N]spanking![END]"
   },
   {
     "offset": "05D454",
     "kind": "dialog",
     "source": "[DEF][NAM:0]さん[N]このあいだは ありがとう[N]カールが 帰ってきてから[N]たっぷりおしおきしておいたわ[FIN]あの子の父親は 今[N]行方知れずになっていてね···[N]さびしいのかしらね[N]あんな むちゃばかりするのは···[FIN][NAM:0]さん[N]たまにでいいですから[N]あの子と 遊んでやってくださいね[N]本当はすなおでいい子なんですよ˳[END]",
-    "translation": "[DEF][NAM:0], thank you for[N]before.[N]When Carl came home, I[N]gave him a proper[FIN]scolding.[FIN]His father disappeared[N]some time ago...[N]Maybe that's why he gets[N]lonely and does such[FIN]reckless things.[FIN][NAM:0], please play with[N]him now and then if you[N]can.[N]He really is a sweet,[FIN]honest boy at heart.[END]"
+    "translation": "[DEF][NAM:0], thank you for[N]before.[N]When Chex came home, I[N]gave him a proper[FIN]scolding.[FIN]His father disappeared[N]some time ago...[N]Maybe that's why he gets[N]lonely and does such[FIN]reckless things.[FIN][NAM:0], please play with[N]him now and then if you[N]can.[N]He really is a sweet,[FIN]honest boy at heart.[END]"
   },
   {
     "offset": "05D4FA",
@@ -1533,7 +1533,7 @@
     "offset": "05EBF8",
     "kind": "dialog",
     "source": "[DEF][TPL:7]···なに?[N]おやじが おれに手紙を?[N][DLY:9]···み·[DLY:0]見てやろうじゃねえか[FIN][N] カールに [PAL:2]てがみ[PAL:0]を わたした![FIN][DLY:9]·········[DLY:0]ふんっ[N]さらわれたかなんだか知らないけど[N]いきなり いなくなっておいて[N]調子いいこと言ってるよ![END]",
-    "translation": "[DEF][TPL:7]...What?[N]Dad wrote me a letter?[N][DLY:9]...F-[DLY:0]fine, I'll read it.[FIN][N] Carl received the [PAL:2]Letter[PAL:0]![FIN][DLY:9].........[DLY:0]Hmph![N]Kidnapped or not, he[N]vanished without a word.[N]Now he writes all this[FIN]mushy stuff![END]"
+    "translation": "[DEF][TPL:7]...What?[N]Dad wrote me a letter?[N][DLY:9]...F-[DLY:0]fine, I'll read it.[FIN][N] Chex received the [PAL:2]Letter[PAL:0]![FIN][DLY:9].........[DLY:0]Hmph![N]Kidnapped or not, he[N]vanished without a word.[N]Now he writes all this[FIN]mushy stuff![END]"
   },
   {
     "offset": "05EC80",

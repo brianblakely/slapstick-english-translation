@@ -417,7 +417,7 @@
     "offset": "0A9A0A",
     "kind": "dialog",
     "source": "[DEF]あら カールのおともだち?[N]ごめんなさいね 今あの子は[N]おべんきょう中なのよ[FIN]いたずらばかりするから[N]おしおきがわりなのよ[N]また今度 あそんでやってね˳[END]",
-    "translation": "[DEF]Are you Carl's friend?[N]I'm sorry. He's studying[N]right now.[FIN]He plays too many pranks,[N]so this is his punishment.[N]Please play with him[N]another day.[END]"
+    "translation": "[DEF]Are you Chex's friend?[N]I'm sorry. He's studying[N]right now.[FIN]He plays too many pranks,[N]so this is his punishment.[N]Please play with him[N]another day.[END]"
   },
   {
     "offset": "0A9A5F",
@@ -429,13 +429,13 @@
     "offset": "0A9AED",
     "kind": "dialog",
     "source": "[DEF][TPL:10]今與に ラスクさんの[N]おともだちが 見えてるんです[N]ふたりっきりにしてくれって···[NXT]",
-    "translation": "[DEF][TPL:10]One of Rusk's friends is[N]visiting in the back.[N]They asked to be alone...[NXT]"
+    "translation": "[DEF][TPL:10]One of Biscotte's friends[N]is visiting in the back.[FIN]They asked to be alone...[NXT]"
   },
   {
     "offset": "0A9B20",
     "kind": "dialog",
     "source": "[DEF]ラスクさんには 帰る場所が[N]あるんですよね···[N][PAU:1E]あたりまえのことなのに[N]なんだか とても さびしいわ˳[END]",
-    "translation": "[DEF]Rusk has a home to return[N]to...[N][PAU:1E]That's perfectly normal,[N]so why do I feel so[FIN]lonely?[END]"
+    "translation": "[DEF]Biscotte has a home to[N]return to...[N][PAU:1E]That's perfectly normal,[FIN]so why do I feel so[FIN]lonely?[END]"
   },
   {
     "offset": "0A9B5D",
@@ -501,7 +501,7 @@
     "offset": "0A9F27",
     "kind": "dialog",
     "source": "[DEF][TPL:C]···ラ·[PAU:1E]ラスク樣っ!![END]",
-    "translation": "[DEF][TPL:C]R-[PAU:1E]Lord Rusk!![END]"
+    "translation": "[DEF][TPL:C]R-[PAU:1E]Lord Biscotte!![END]"
   },
   {
     "offset": "0A9F3E",
@@ -561,7 +561,7 @@
     "offset": "0AA2ED",
     "kind": "dialog",
     "source": "[DEF][TPL:11]···な·[PAU:32]ナポレオン?[FIN][TPL:C]気づかれましたか ラスク樣![N][PAU:1E]そうです!わたしです[N]ナポレオンで ございます![FIN]いったい どうなされたのですか?[N]なにがあったのか[N]ナポレオンに 話して[N]くださいませんか?[NXT]",
-    "translation": "[DEF][TPL:11]...N-[PAU:32]Napoleon?[FIN][TPL:C]You are awake, Lord Rusk![N][PAU:1E]Yes! It is I, Napoleon![FIN]What happened to you?[N]Please tell Napoleon[N]everything that happened.[NXT]"
+    "translation": "[DEF][TPL:11]...N-[PAU:32]Newton?[FIN][TPL:C]You are awake, Lord[N]Biscotte![N][PAU:1E]Yes! It is I, Newton![FIN]What happened to you?[N]Please tell Newton[N]everything that happened.[NXT]"
   },
   {
     "offset": "0AA364",
@@ -573,13 +573,13 @@
     "offset": "0AA40E",
     "kind": "dialog",
     "source": "[DEF]そうだ![PAU:1E]こうしてはいられない![N][PAU:1E]女に [TPL:0]を[N]うばわれてしまったんだ![FIN][TPL:C]わかりました!ラスク樣[N][PAU:1E]しかし 今 ラスク樣は[N]お休みに ならなければ···[FIN]この ナポレオンめが[N]かならずや [TPL:0]を[N]とり返してまいりましょう[FIN]とりあえず ミルフィ樣と[N]ガトー樣に このことを[N]つたえてまいります[N]また もどってまいります˳[NXT]",
-    "translation": "[DEF]That's right![PAU:1E] I can't lie[N]here![N][PAU:1E]That woman stole the[N][TPL:0]![FIN][TPL:C]Understood, Lord Rusk![N][PAU:1E]But you must rest now...[FIN]I, Napoleon, will recover[N]the [TPL:0] without fail![FIN]First, I shall tell Lady[N]Mille and Lord Gateau what[N]has happened.[N]I will return soon.[NXT]"
+    "translation": "[DEF]That's right![PAU:1E] I can't lie[N]here![N][PAU:1E]That woman stole the[N][TPL:0]![FIN][TPL:C]Understood, Lord Biscotte![N][PAU:1E]But you must rest now...[FIN]I, Newton, will recover[N]the [TPL:0] without fail![FIN]First, I shall tell Lady[N]Mille and Lord Gateau what[N]has happened.[N]I will return soon.[NXT]"
   },
   {
     "offset": "0AA4C7",
     "kind": "dialog",
     "source": "[DEF][TPL:11][DLY:1]···ガトー···?[N][PAU:28]ガトーも 来ているのか···?[FIN]待てよ ナポレオン![N][PAU:1E]ガトーに 知らせてはいけない![N]ナポレオン!行くな···[N][PAU:28][DLY:6]う···い·いたたた···˳[DLY:0][END]",
-    "translation": "[DEF][TPL:11][DLY:1]...Gateau...?[N][PAU:28]Gateau is here too...?[FIN]Wait, Napoleon![N][PAU:1E]You mustn't tell Gateau![N]Napoleon! Don't go...[N][PAU:28][DLY:6]Ugh... It hurts...[DLY:0][END]"
+    "translation": "[DEF][TPL:11][DLY:1]...Gateau...?[N][PAU:28]Gateau is here too...?[FIN]Wait, Newton![N][PAU:1E]You mustn't tell Gateau![N]Newton! Don't go...[N][PAU:28][DLY:6]Ugh... It hurts...[DLY:0][END]"
   },
   {
     "offset": "0AA536",
@@ -609,7 +609,7 @@
     "offset": "0AA654",
     "kind": "dialog",
     "source": "[DEF][TPL:12]ちょっと![N]ショコラ星に帰らないですって?[N]どういうことなの ラスク˳[FIN][TPL:11]どうもこうも 帰らないんだよ[N]ボクにはこの星で やらなければ[N]いけないことが 残されているんだ˳[FIN][TPL:12]あなたは ショコラ星の科学者なのよ[N][PAU:14]それに あなたも[TPL:0]で[N]見たでしょう?[FIN]未来のショコラ星が 何者かに[N]しんりゃくされていたのを···[N][PAU:28]その 対策を考えようって時に[N]王樣に なんて言えっていうのよ!?[NXT]",
-    "translation": "[DEF][TPL:12]Wait![N]You're not returning to[N]Planet Chocolat?[FIN]What do you mean, Rusk?[FIN][TPL:11]Exactly what I said.[N]I'm not going back.[N]I still have work to do on[FIN]this planet.[FIN][TPL:12]You are a scientist of[N]Planet Chocolat![N][PAU:14]And you saw it too,[FIN]through the [TPL:0]![FIN]Planet Chocolat in the[N]future was being invaded[N]by someone![FIN][PAU:28]We need to find a[N]solution.[N]What am I to tell the[N]king!?[NXT]"
+    "translation": "[DEF][TPL:12]Wait![N]You're not returning to[N]Planet Chocolat?[FIN]What do you mean,[N]Biscotte?[FIN][TPL:11]Exactly what I said.[N]I'm not going back.[N]I still have work to do on[FIN]this planet.[FIN][TPL:12]You are a scientist of[N]Planet Chocolat![N][PAU:14]And you saw it too,[FIN]through the [TPL:0]![FIN]Planet Chocolat in the[N]future was being invaded[N]by someone![FIN][PAU:28]We need to find a[N]solution.[N]What am I to tell the[N]king!?[NXT]"
   },
   {
     "offset": "0AA73A",
@@ -621,7 +621,7 @@
     "offset": "0AA76A",
     "kind": "dialog",
     "source": "[DEF][TPL:12]ナポレオンからよ[N][PAU:1E]大変なことになってるらしいの[N]一度 宇宙船にもどるわ[FIN]いい?[PAU:1E]すぐにもどってくるわ[N]それまでに 考えなおすのよ![END]",
-    "translation": "[DEF][TPL:12]That was Napoleon.[N][PAU:1E]Something terrible has[N]happened.[FIN]I'm going back to the[N]ship.[FIN]Listen.[PAU:1E] I'll be right[N]back.[N]Think it over while I'm[N]gone![END]"
+    "translation": "[DEF][TPL:12]That was Newton.[N][PAU:1E]Something terrible has[N]happened.[FIN]I'm going back to the[N]ship.[FIN]Listen.[PAU:1E] I'll be right[N]back.[N]Think it over while I'm[N]gone![END]"
   },
   {
     "offset": "0AA8CF",
@@ -879,7 +879,7 @@
     "offset": "0AB6D3",
     "kind": "dialog",
     "source": "[DEF]···[PAU:3C][DLY:1][PAL:2]ラスク[PAL:0]じゃないっ!![N]さがしたのよ!心配したのよ![N][DLY:0][PAU:1E]どうしたの?ぼおっとして[N]あたしよ [PAU:1E][PAL:3]ミルフィ[PAL:0]よ![FIN]···[PAU:1E]ここでは ゆっくり話せないわ[N]いい?[PAU:1E]ここの住民たちが[N][PAL:2]┌迷いの森┘[PAL:0]とよんでる 森の中に[N]私たちの[PAL:2]宇宙船[PAL:0]が かくしてあるわ[NXT]",
-    "translation": "[DEF]...[PAU:3C][DLY:1][PAL:2]Rusk[PAL:0]!![N]I've been searching for[N]you![N]I was so worried![FIN][DLY:0][PAU:1E]What's wrong? You're[N]dazed.[N]It's me,[PAU:1E] [PAL:3]Mille[PAL:0]![FIN]...We can't talk here.[N]Listen.[PAU:1E] Our [PAL:2]spaceship[PAL:0] is[N]hidden in a forest the[N]locals call the [PAL:2]Lost[FIN]Woods[PAL:0].[NXT]"
+    "translation": "[DEF]...[PAU:3C][DLY:1][PAL:2]Biscotte[PAL:0]!![N]I've been searching for[N]you![N]I was so worried![FIN][DLY:0][PAU:1E]What's wrong? You're[N]dazed.[N]It's me,[PAU:1E] [PAL:3]Mille[PAL:0]![FIN]...We can't talk here.[N]Listen.[PAU:1E] Our [PAL:2]spaceship[PAL:0] is[N]hidden in a forest the[N]locals call the [PAL:2]Lost[FIN]Woods[PAL:0].[NXT]"
   },
   {
     "offset": "0AB779",
@@ -909,13 +909,13 @@
     "offset": "0AB8A7",
     "kind": "dialog",
     "source": "[DEF][TPL:C]おい[PAU:1E] どこへ行くのか?[N][PAU:14]ラスク樣は 民家にいるはずだろう[N]しっかり 案内しろ![END]",
-    "translation": "[DEF][TPL:C]Hey![PAU:1E] Where are you going?[N][PAU:14]Lord Rusk should be in[N]that house.[FIN]Guide me properly![END]"
+    "translation": "[DEF][TPL:C]Hey![PAU:1E] Where are you going?[N][PAU:14]Lord Biscotte should be in[N]that house.[FIN]Guide me properly![END]"
   },
   {
     "offset": "0AB97B",
     "kind": "dialog",
     "source": "[DEF][TPL:13]こちらに いらっしゃるのは[N]ジャン·ポール·ベルモントポリンキーはくしゃく樣です[FIN]はくしゃく樣は この土地に[N]おやしきを 建てようと[N]お考えだったのですが···[N][PAU:1E]いやはや 不都合がありまして˳[END]",
-    "translation": "[DEF][TPL:13]Allow me to introduce[N]Count Jean-Paul Belmont[N]Polinky.[FIN]His Lordship wished to[N]build his manor on this[N]land, but alas...[PAU:1E] There[N]were difficulties.[END]"
+    "translation": "[DEF][TPL:13]Allow me to introduce[N]Count Jean-Paul Belmont[N]Chocula.[FIN]His Lordship wished to[N]build his manor on this[N]land, but alas...[PAU:1E] There[N]were difficulties.[END]"
   },
   {
     "offset": "0AB9F2",
@@ -1378,13 +1378,13 @@
     "offset": "0AE310",
     "kind": "dialog",
     "source": "[DEF][PAL:2]ただの 子供ではありませんよ[N]あなたも ごぞんじでしょう[N][PAU:1E]この少年は [PAU:1E]ラスク樣の[N]血を ひいてるんですよ˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2]He is no ordinary child.[N]You know that as well as I[N]do.[N][PAU:1E]This boy carries Lord[FIN]Rusk's blood in his veins.[PAL:0][END]"
+    "translation": "[DEF][PAL:2]He is no ordinary child.[N]You know that as well as I[N]do.[N][PAU:1E]This boy carries Lord[FIN]Biscotte's blood in his[N]veins.[PAL:0][END]"
   },
   {
     "offset": "0AE357",
     "kind": "dialog",
     "source": "[DEF][TPL:D]···ナポレオン?[N][PAU:1E]なぜ お前がここに?[FIN]まあ いい[N][PAU:1E]お前は 設計者である私には[N]さからえんはずだ[FIN]命令だ!このこぞうを始末しろ![N][PAU:28]···どうした?[N][PAU:1E]早くしろ![FIN][TPL:C]ガトー樣···[PAU:1E]いや ガトー![N]もう私は 以前の私とはちがう[FIN]ショコラ星の 科学者たちに[N]改良され オマエの命令も[N]無視することが できるようになった[FIN]もう この宇宙要塞はおしまいだ[N]あきらめたらどうなのだ?[N][PAU:14]これ以上 何をしようというのだ?[FIN][TPL:D]宇宙要塞は 計画のひとつにすぎん[N][PAU:14]お前たちは 私の本当の計画を[N]身を持って 知ることになるだろう˳[END]",
-    "translation": "[DEF][TPL:D]...Napoleon?[N][PAU:1E]Why are you here?[FIN]No matter.[N][PAU:1E]You cannot defy me, the[N]one who designed you.[FIN]I order you! Dispose of[N]this brat![N][PAU:28]...What is wrong?[N][PAU:1E]Do it now![FIN][TPL:C]Lord Gateau...[PAU:1E] No, Gateau![N]I am no longer what I once[N]was.[FIN]The scientists of Chocolat[N]improved me, and now I can[N]ignore even your commands.[FIN]This space fortress is[N]finished.[N]Why not surrender?[N][PAU:14]What more could you hope[FIN]to do?[FIN][TPL:D]The space fortress is[N]merely one small part of[N]my plan.[FIN][PAU:14]You will experience my[N]true plan for yourselves.[END]"
+    "translation": "[DEF][TPL:D]...Newton?[N][PAU:1E]Why are you here?[FIN]No matter.[N][PAU:1E]You cannot defy me, the[N]one who designed you.[FIN]I order you! Dispose of[N]this brat![N][PAU:28]...What is wrong?[N][PAU:1E]Do it now![FIN][TPL:C]Lord Gateau...[PAU:1E] No, Gateau![N]I am no longer what I once[N]was.[FIN]The scientists of Chocolat[N]improved me, and now I can[N]ignore even your commands.[FIN]This space fortress is[N]finished.[N]Why not surrender?[N][PAU:14]What more could you hope[FIN]to do?[FIN][TPL:D]The space fortress is[N]merely one small part of[N]my plan.[FIN][PAU:14]You will experience my[N]true plan for yourselves.[END]"
   },
   {
     "offset": "0AE4A2",
@@ -1432,7 +1432,7 @@
     "offset": "0AE75B",
     "kind": "dialog",
     "source": "[CLR]···よし わかった[N]ガトーのことは たのんだぞ[N]私は ここで追手をふせごう[FIN][NAM:0]···お前は 本当に[N]ラスク樣に よく似ている···[N][PAU:1E]お前といると ラスク樣といるようで[N]うれしかった[FIN]お前も 自分が作り出したものたちを[N]信じ そして正しく使ってやるのだぞ[N][PAU:14]まちがっても ガトーのように[N]なってくれるな[NXT]",
-    "translation": "[CLR]...Very well.[N]I leave Gateau to you.[N]I will hold off his[N]pursuers here.[FIN][NAM:0]... You truly[N]resemble Lord Rusk.[N][PAU:1E]Being beside you made me[N]happy, as if I were with[FIN]him again.[FIN]Believe in the things you[N]create, and use them[N]wisely.[N][PAU:14]Whatever happens, never[FIN]become like Gateau.[NXT]"
+    "translation": "[CLR]...Very well.[N]I leave Gateau to you.[N]I will hold off his[N]pursuers here.[FIN][NAM:0]... You truly[N]resemble Lord Biscotte.[N][PAU:1E]Being beside you made me[N]happy, as if I were with[FIN]him again.[FIN]Believe in the things you[N]create, and use them[N]wisely.[N][PAU:14]Whatever happens, never[FIN]become like Gateau.[NXT]"
   },
   {
     "offset": "0AE812",
@@ -1594,7 +1594,7 @@
     "offset": "0AF31D",
     "kind": "dialog",
     "source": "[DFT][TPL:12]ちょっと待ってよ ラスク![N]ショコラ星に帰らないって[N]どういうことなの!?[FIN]ティアトロンが この星に[N]ちりぢりになったからっていうの?[N]ショコラ星の 調査員がくれば[N]すむことじゃないの!?[END]",
-    "translation": "[DFT][TPL:12]Wait a minute, Rusk![N]What do you mean, you are[N]not returning to[FIN]Chocolat?![FIN]Is it because Tiatron was[N]scattered across this[N]planet?[N]Chocolat can simply send[FIN]an investigation team,[N]can't it?![END]"
+    "translation": "[DFT][TPL:12]Wait a minute, Biscotte![N]What do you mean, you are[N]not returning to[FIN]Chocolat?![FIN]Is it because Tiatron was[N]scattered across this[N]planet?[N]Chocolat can simply send[FIN]an investigation team,[N]can't it?![END]"
   },
   {
     "offset": "0AF38F",
@@ -1624,7 +1624,7 @@
     "offset": "0AF58E",
     "kind": "dialog",
     "source": "[DEF][TPL:D]欲がないな ラスク[N]なぜ それを利用しない?[FIN]シナリオが わかっていれば[N]その 主役になることもできる[FIN]ティアトロンを ほうむるというなら[N]この おれが 有効に使ってやる[N][PAU:3C]どうだ?[PAU:1E]ラスク˳[NXT]",
-    "translation": "[DEF][TPL:D]You have no ambition,[N]Rusk.[N]Why not use it?[FIN]If you know the script,[N]you can make yourself its[N]hero.[FIN]If you mean to bury[N]Tiatron, then I will put[N]it to good use.[FIN][PAU:3C]What do you say,[PAU:1E] Rusk?[NXT]"
+    "translation": "[DEF][TPL:D]You have no ambition,[N]Biscotte.[N]Why not use it?[FIN]If you know the script,[N]you can make yourself its[N]hero.[FIN]If you mean to bury[N]Tiatron, then I will put[N]it to good use.[FIN][PAU:3C]What do you say,[PAU:1E] Biscotte?[NXT]"
   },
   {
     "offset": "0AF604",
@@ -1642,7 +1642,7 @@
     "offset": "0AF73F",
     "kind": "dialog",
     "source": "[DEF][DLY:5]時の流れの前では 人間など[N]ひとときの 存在にすぎん[N][PAU:1E]人の作りだすものも 同じ[N][PAU:3C]いつかは すたれ[PAU:1E] 忘れさられる[FIN]私は 長いこと考えていた[N]人の力をこえる 発明を···[N][PAU:78][TPL:0]は 私に[N]その機会を あたえてくれたのだ[FIN]そして私は この力を得た[N]時を自在にあやつる 力だ![N][PAU:1E]これからは この私が[N]人の運命を あやつるのだ![FIN]お前を消すことなど たやすいが[N]私の手で ほうむってやろう[N][PAU:1E]ティアトロンを作った ラスクへの[N]せめてもの 感謝のしるしだ![END]",
-    "translation": "[DEF][DLY:5]Before the flow of time,[N]humans are nothing but[N]fleeting beings.[FIN][PAU:1E]The things they create are[N]the same.[N][PAU:3C]One day they fade[PAU:1E] and are[N]forgotten.[FIN]For ages, I sought an[N]invention that surpassed[N]human power...[FIN][PAU:78][TPL:0] gave me that[N]opportunity.[FIN]And so I obtained this[N]power![N]The power to command time[N]itself![FIN][PAU:1E]From this moment onward, I[N]will command human[N]destiny![FIN]I could erase you with[N]ease, but I shall bury you[N]myself.[FIN][PAU:1E]Consider it my one gesture[N]of thanks to Rusk, creator[N]of Tiatron![END]"
+    "translation": "[DEF][DLY:5]Before the flow of time,[N]humans are nothing but[N]fleeting beings.[FIN][PAU:1E]The things they create are[N]the same.[N][PAU:3C]One day they fade[PAU:1E] and are[N]forgotten.[FIN]For ages, I sought an[N]invention that surpassed[N]human power...[FIN][PAU:78][TPL:0] gave me that[N]opportunity.[FIN]And so I obtained this[N]power![N]The power to command time[N]itself![FIN][PAU:1E]From this moment onward, I[N]will command human[N]destiny![FIN]I could erase you with[N]ease, but I shall bury you[N]myself.[FIN][PAU:1E]Consider it my one gesture[N]of thanks to Biscotte,[N]creator of Tiatron![END]"
   },
   {
     "offset": "0AF8C4",

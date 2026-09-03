@@ -172,6 +172,11 @@ encoder never uses it for an English period. ASCII `.` always selects the
 alternate-font Western dot at `0x7E`; console text uses its Western dot at
 `0xFE`.
 
+Dialogue command `E2` renders the button currently assigned to an action. Since
+its A/B/X/Y byte overlaps the lowercase alphabet while alternate-font mode is
+active, the encoder emits `D5` before every `E2` command. Dynamic controller
+labels therefore remain uppercase even when the preceding word is lowercase.
+
 `tools/reflow-dialog.mjs` removes stale mid-sentence layout breaks when the next
 word fits, then wraps normal dialogue to 26 English columns and four rows while
 retaining deliberate sentence, speaker, and choice boundaries.

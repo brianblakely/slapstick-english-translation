@@ -14,10 +14,9 @@ but it is funnier than "Dr. Einst".
 It's a white cat with a name that means "black
 steel". Ebony might work.
 
-## カール Curl Karl Carl
-This is a cheese puff brand. Translated as "Carl"
-in the commercial US release. Cheeto, Chex, or
-Clif might work.
+## カール Curl Karl Chex
+This is a cheese puff brand. "Chex" preserves the
+snack-brand joke while reading naturally as a name.
 
 ## ガトー Gateau
 A type of French cake.
@@ -25,9 +24,9 @@ A type of French cake.
 ## ティラミス Tiramisu
 A type of Italian cake.
 
-## フラボノ FURABONO
-The closest link I can find is a prominent chewing
-gum brand called "FLAVONO".
+## フラボノ FURABONO Dentyne
+The Japanese name appears to reference chewing gum.
+"Dentyne" preserves that naming theme in English.
 
 ## ポロン PORON
 This may be a reference to the 1970s kid's show
@@ -36,8 +35,9 @@ This may be a reference to the 1970s kid's show
 I found a pastry called polon created by a Japanese
 confectionery named West.
 
-## ラスク Rusk
-This is like biscotti in the US.
+## ラスク Rusk Biscotte
+This is similar to biscotti. "Biscotte" preserves
+the baked-bread reference while reading as a name.
 
 ## ミルフィ Mirufi
 This is in reference to the french pastry
@@ -45,9 +45,9 @@ This is in reference to the french pastry
 in other Japanese fiction. Pokemon translated
 this as "Miette," the french word for "crumb".
 
-## ポリンキーはくしゃく Count Polinky
-"Count" is an obvious Dracula reference.
-"Polinky" is a corn puff snack.
+## ポリンキーはくしゃく Count Chocula
+This is a Dracula-like count named for a snack.
+"Count Chocula" preserves both parts of the joke.
 
 ## じいや Jiiya
 This is a common nickname implicating "old man" or

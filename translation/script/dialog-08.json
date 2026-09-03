@@ -195,13 +195,13 @@
     "offset": "088F87",
     "kind": "dialog",
     "source": "[DEF]なに?アキハバラ博士?[N]え?君は博士の息子さんなのか[N]博士は しばらくここにいたけど[N][PAL:2]司令塔[PAL:0]へ連れていかれてしまったよ[FIN]君が博士の 息子さんか[N]博士から 君のことは聞いてるよ[N]しかし[PAL:2]司令塔[PAL:0]には 空からしか[N]行くことができないというしなあ[FIN]おじさんにも 子供がいてね[N][PAL:2]カール[PAL:0]って名前なんだけどね[N]だから きみの気持ちはわかるよ[N]なんとかしてあげたいなあ˳[END]",
-    "translation": "[DEF]What? Dr. Akihabara?[N]You're his son?[N]The doctor was here for a[N]while, then taken to the[FIN][PAL:2]Command Tower[PAL:0].[FIN]So you're the son he[N]mentioned.[N]But the Command Tower can[N]only be reached by air.[FIN]I have a son too, named[N][PAL:2]Carl[PAL:0].[N]I understand how you feel.[N]I wish I could help[FIN]somehow.[END]"
+    "translation": "[DEF]What? Dr. Akihabara?[N]You're his son?[N]The doctor was here for a[N]while, then taken to the[FIN][PAL:2]Command Tower[PAL:0].[FIN]So you're the son he[N]mentioned.[N]But the Command Tower can[N]only be reached by air.[FIN]I have a son too, named[N][PAL:2]Chex[PAL:0].[N]I understand how you feel.[N]I wish I could help[FIN]somehow.[END]"
   },
   {
     "offset": "08906A",
     "kind": "dialog",
     "source": "[DEF]え?[PAL:2]カール[PAL:0]を知ってるって?[N]そうか きみもロココ町の人なのか[N]カールは 元気にしてたかい?[N]かあさんを こまらせてないかい?[FIN]そうだ カールに[PAL:2]てがみ[PAL:0]を書くから[N]わたしてもらえないだろうか?[N] おやすいご用です[N] おことわりします",
-    "translation": "[DEF]You know [PAL:2]Carl[PAL:0]?[N]Then you're from Rococo[N]Town too.[N]Is Carl well?[FIN]Does he trouble his[N]mother?[FIN]I'll write him a [PAL:2]letter[PAL:0].[N]Would you deliver it?[N] Gladly[N] I must refuse"
+    "translation": "[DEF]You know [PAL:2]Chex[PAL:0]?[N]Then you're from Rococo[N]Town too.[N]Is Chex well?[FIN]Does he trouble his[N]mother?[FIN]I'll write him a [PAL:2]letter[PAL:0].[N]Would you deliver it?[N] Gladly[N] I must refuse"
   },
   {
     "offset": "0890F5",
@@ -219,13 +219,13 @@
     "offset": "08915A",
     "kind": "dialog",
     "source": "[CLR]···そうか[N]やっと カールとれんらくが[N]とれると思ったのに···˳[END]",
-    "translation": "[CLR]...I see.[N]I thought I could finally[N]get word to Carl...[END]"
+    "translation": "[CLR]...I see.[N]I thought I could finally[N]get word to Chex...[END]"
   },
   {
     "offset": "089181",
     "kind": "dialog",
     "source": "[DEF]さっきはあきらめたが[N]カールと どうにかれんらくを[N]とりたいんだ···[FIN]カールに[PAL:2]てがみ[PAL:0]を書くから[N]わたしてもらえないだろうか?[N] おやすいご用です[N] おことわりします",
-    "translation": "[DEF]I gave up before, but I[N]must contact Carl[N]somehow...[FIN]I'll write him a [PAL:2]letter[PAL:0].[N]Would you deliver it?[N] Gladly[N] I must refuse"
+    "translation": "[DEF]I gave up before, but I[N]must contact Chex[N]somehow...[FIN]I'll write him a [PAL:2]letter[PAL:0].[N]Would you deliver it?[N] Gladly[N] I must refuse"
   },
   {
     "offset": "0891E0",
@@ -249,7 +249,7 @@
     "offset": "08927D",
     "kind": "dialog",
     "source": "[DEF]えっと···[N][PAU:3C][PAL:2]カール へ[N]元気にしていますか?[N]急にいなくなって ごめんなさい[FIN]とうさんは 悪い人たちに[N]さらわれて 仕事をさせられてます[N]お前や かあさんのことが[N]気がかりで しかたありません[FIN]いつ帰れるか わかりませんが[N]お前は 男の子なのだから[N]家やかあさんのことをたのみます˳[N]             父より[PAL:0][END]",
-    "translation": "[DEF]Um...[N][PAU:3C][PAL:2]Dear Carl, Are you keeping[N]well?[N]I'm sorry I disappeared so[FIN]suddenly.[FIN]Bad people kidnapped me[N]and are forcing me to[N]work.[N]I cannot stop worrying[FIN]about you and your mother.[FIN]I don't know when I can[N]return, but you're the man[N]of the house now.[FIN]Please take care of your[N]mother and our home.[N]                  Love,[FIN]Dad[PAL:0][END]"
+    "translation": "[DEF]Um...[N][PAU:3C][PAL:2]Dear Chex, Are you keeping[N]well?[N]I'm sorry I disappeared so[FIN]suddenly.[FIN]Bad people kidnapped me[N]and are forcing me to[N]work.[N]I cannot stop worrying[FIN]about you and your mother.[FIN]I don't know when I can[N]return, but you're the man[N]of the house now.[FIN]Please take care of your[N]mother and our home.[N]                  Love,[FIN]Dad[PAL:0][END]"
   },
   {
     "offset": "089335",
@@ -261,7 +261,7 @@
     "offset": "08937F",
     "kind": "dialog",
     "source": "[DEF]え?カールが 私にこれを?[N][DLY:9]···············[N][DLY:0]こんなものに 書いてくるなんて[N]あの子らしいな ははは[FIN][DLY:9]············ん?[N][PAU:1E][DLY:0]この 石版はどこで?[N][PAU:1E]これは 何かの設計図···いや[N]エンジンの設計図にちがいない![FIN]これは ひょっとしたら[N]使えるかもしれないぞ![N][PAU:1E]ぜひ きみに恩がえしをさせてくれ[N]よし!さっそく作業にかかるぞ![END]",
-    "translation": "[DEF]Carl sent me this?[N][DLY:9]...............[N][DLY:0]Writing on a thing like[N]this is just like him. Ha[FIN]ha![FIN][DLY:9].............Hmm?[N][PAU:1E][DLY:0]Where did he find this[N]tablet?[N][PAU:1E]This is a blueprint... No,[FIN]it must be an engine[N]design![FIN]This may actually work![N][PAU:1E]Please let me repay you.[N]Right! I'll begin at once![END]"
+    "translation": "[DEF]Chex sent me this?[N][DLY:9]...............[N][DLY:0]Writing on a thing like[N]this is just like him. Ha[FIN]ha![FIN][DLY:9].............Hmm?[N][PAU:1E][DLY:0]Where did he find this[N]tablet?[N][PAU:1E]This is a blueprint... No,[FIN]it must be an engine[N]design![FIN]This may actually work![N][PAU:1E]Please let me repay you.[N]Right! I'll begin at once![END]"
   },
   {
     "offset": "0894C6",

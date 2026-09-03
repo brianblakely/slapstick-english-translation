@@ -147,7 +147,7 @@
     "offset": "068B80",
     "kind": "dialog",
     "source": "[DEF]ぎゃああああああん[N][PAL:2]カールが[PAL:0] いけないんだあ[N][PAL:2]ハッカーの アジト[PAL:0]を[N]さがしに行こうなんて言うから[FIN]あいつの話なんか[N]聞かなきゃよかったよぉ[N][N]うぎゃあああああああんっ![END]",
-    "translation": "[DEF]Waaaaaaah![N]This is all [PAL:2]Carl's[PAL:0] fault![N]He said we should go[N]looking for the [PAL:2]Hackers'[FIN]hideout[PAL:0]![FIN]I never should've listened[N]to him![N][N]Waaaaaaaaaaaaah![END]"
+    "translation": "[DEF]Waaaaaaah![N]This is all [PAL:2]Chex's[PAL:0] fault![N]He said we should go[N]looking for the [PAL:2]Hackers'[FIN]hideout[PAL:0]![FIN]I never should've listened[N]to him![N][N]Waaaaaaaaaaaaah![END]"
   },
   {
     "offset": "068C3D",
@@ -495,7 +495,7 @@
     "offset": "06A7A2",
     "kind": "dialog",
     "source": "[DEF] カールは[N][PAL:2] 光る石版[PAL:0]を 手に入れた![NXT]",
-    "translation": "[DEF] Carl obtained[N][PAL:2] the Glowing Tablet[PAL:0]![NXT]"
+    "translation": "[DEF] Chex obtained[N][PAL:2] the Glowing Tablet[PAL:0]![NXT]"
   },
   {
     "offset": "06A7C2",
@@ -753,7 +753,7 @@
     "offset": "06BC3B",
     "kind": "dialog",
     "source": "[DFT]どうであった イゴール[N][PAU:1E]まことに たのもしい少年ではないか[FIN][PAL:2]だんなさま [PAU:1E]おどろきましたな[N][PAU:1E]あの人形には ほとほと[N]手をやいておりましたのに···[FIN][PAL:0]これでこの館も 正しい時を[N]きざむことが できるだろう[N][PAU:1E]ラスク君との やくそくも守れ[N]ようやく 安らかにねむれるな˳[END]",
-    "translation": "[DFT]Well, Igor?[N][PAU:1E]Was he not a most capable[N]boy?[FIN][PAL:2]Indeed, Master.[N][PAU:1E]I am astonished.[N]That doll had caused us no[N]end of trouble...[FIN][PAL:0]Now this manor can keep[N]the proper time once more.[N][PAU:1E]Our promise to Rusk is[N]fulfilled.[FIN]At last, we may rest in[N]peace.[END]"
+    "translation": "[DFT]Well, Igor?[N][PAU:1E]Was he not a most capable[N]boy?[FIN][PAL:2]Indeed, Master.[N][PAU:1E]I am astonished.[N]That doll had caused us no[N]end of trouble...[FIN][PAL:0]Now this manor can keep[N]the proper time once more.[N][PAU:1E]Our promise to Biscotte is[N]fulfilled.[FIN]At last, we may rest in[N]peace.[END]"
   },
   {
     "offset": "06BD1C",
@@ -807,7 +807,7 @@
     "offset": "06C4C9",
     "kind": "dialog",
     "source": "[DEF][TPL:4]さて [PAU:1E]取材再開だわ![N]ハッカーが このやしきで[N]何かしていることも わかったし[FIN]あいつらの 目的は何なのか[N]つきとめて 記事にしなくちゃ![N][PAU:1E]じゃあフラボノさん おだいじに[N][PAU:1E][NAM:0]くんは 早く帰るのよ![END]",
-    "translation": "[DEF][TPL:4]Time to resume my[N]investigation![N]Now I know the Hackers are[FIN]doing something in this[N]manor.[FIN]I must uncover their[N]objective and turn it into[N]a story![N][PAU:1E]Take care, Mr. Flavono.[FIN][PAU:1E][NAM:0], hurry home![END]"
+    "translation": "[DEF][TPL:4]Time to resume my[N]investigation![N]Now I know the Hackers are[FIN]doing something in this[N]manor.[FIN]I must uncover their[N]objective and turn it into[N]a story![N][PAU:1E]Take care, Mr. Dentyne.[FIN][PAU:1E][NAM:0], hurry home![END]"
   },
   {
     "offset": "06C64A",
@@ -819,7 +819,7 @@
     "offset": "06C655",
     "kind": "dialog",
     "source": "[DEF]はて?どこかで会ったような···[N][PAU:1E]え?君が [NAM:0]くんか?[N][PAU:1E]なるほど おとうさんによく似てる[FIN]わしは [PAL:2]フラボノ[N][PAU:1E][PAL:0]君のとうさんの 知人でな[N]とちゅうまで 君のとうさんと[N]いっしょだったのだが···[FIN]アタタ···[N][PAU:1E]ハッカーとかいうやつらに[N]おいかけられて この中へ[N]にげこんだ時に こしをうってな[FIN][PAL:2]すまんが わしのかばんを[N]さがしてきてくれんか?[N][PAL:0]わしの犬が 持っているはずだ[N]白い犬で パセリというんだ[FIN][JMP:&string_06C746+M]",
-    "translation": "[DEF]Have we met somewhere[N]before...?[N][PAU:1E]What? You're [NAM:0]?[N][PAU:1E]I see. You resemble your[FIN]father.[FIN]I am [PAL:2]Flavono[PAL:0], [PAU:1E]an[N]acquaintance of his.[N]I traveled with your[N]father part of the way,[FIN]but...[FIN]Ouch...[N][PAU:1E]Those Hackers chased me in[N]here, and I hurt my back[N]while fleeing.[FIN][PAL:2]Would you find my bag?[PAL:0][N]My dog should have it.[N]His name is Parsley, and[N]he is small and white.[FIN]Parsley carries a bundle[N]on his back.[N]He also [PAL:2]loves shiny[N]objects[PAL:0].[FIN]Show him one, and he'll[N]come near.[END]"
+    "translation": "[DEF]Have we met somewhere[N]before...?[N][PAU:1E]What? You're [NAM:0]?[N][PAU:1E]I see. You resemble your[FIN]father.[FIN]I am [PAL:2]Dentyne[PAL:0], [PAU:1E]an[N]acquaintance of his.[N]I traveled with your[N]father part of the way,[FIN]but...[FIN]Ouch...[N][PAU:1E]Those Hackers chased me in[N]here, and I hurt my back[N]while fleeing.[FIN][PAL:2]Would you find my bag?[PAL:0][N]My dog should have it.[N]His name is Parsley, and[N]he is small and white.[FIN]Parsley carries a bundle[N]on his back.[N]He also [PAL:2]loves shiny[N]objects[PAL:0].[FIN]Show him one, and he'll[N]come near.[END]"
   },
   {
     "offset": "06C746",
@@ -915,7 +915,7 @@
     "offset": "06CED6",
     "kind": "dialog",
     "source": "[DF2]ようこそ 我が館へ[N][PAU:1E]私は この館のあるじ[N][PAL:2]ジャン·ポール·ベルモント[N]ポリンキーはくしゃく[PAL:0]と言う者[FIN]この館をおとずれた 客人のため[N]我が館を 案内しようと思い[N]この書物を 残すことにした[FIN]我が館は 今より[PAL:2]百年前[PAL:0]に[N]忠実なるしもべ イゴールが[N]設計·建造したもので[N]本館と西館に わかれている˳[END]",
-    "translation": "[DF2]Welcome to my manor.[N][PAU:1E]I am its master, [PAL:2]Count[N]Jean-Paul Belmont Polinky[PAL:0].[FIN]I left this book to guide[N]any guests who visit my[N]home.[FIN]My faithful servant Igor[N]designed and built this[N]manor [PAL:2]a century ago[PAL:0].[FIN]It consists of a main[N]house and a west wing.[END]"
+    "translation": "[DF2]Welcome to my manor.[N][PAU:1E]I am its master, [PAL:2]Count[N]Jean-Paul Belmont Chocula[PAL:0].[FIN]I left this book to guide[N]any guests who visit my[N]home.[FIN]My faithful servant Igor[N]designed and built this[N]manor [PAL:2]a century ago[PAL:0].[FIN]It consists of a main[N]house and a west wing.[END]"
   },
   {
     "offset": "06CF9F",
@@ -933,31 +933,31 @@
     "offset": "06D06F",
     "kind": "dialog",
     "source": "[DF2]そしてここが[PAL:2] 時計塔[N][PAU:3C]ラスク[PAL:0]という青年が[N]設計·建造してくれたものだ[FIN]客人よ [PAU:28]君が なにごとも恐れずに[N]この館を たんさくすると言うなら[N]私は 君のために道を開こう[N][PAU:3C]さあ [PAU:1E]書物から顔をあげるがいい˳[END]",
-    "translation": "[DF2]And here stands the [PAL:2]Clock[N]Tower[PAL:0], designed and built[N]by a young man named [PAL:2]Rusk[PAL:0].[FIN]Guest, if you would[N]explore this manor without[N]fear, I shall open the way[N]for you.[FIN][PAU:3C]Now, [PAU:1E]look up from this[N]book.[END]"
+    "translation": "[DF2]And here stands the [PAL:2]Clock[N]Tower[PAL:0], designed and built[N]by a young man named[N][PAL:2]Biscotte[PAL:0].[FIN]Guest, if you would[N]explore this manor without[N]fear, I shall open the way[N]for you.[FIN][PAU:3C]Now, [PAU:1E]look up from this[N]book.[END]"
   },
   {
     "offset": "06D134",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第一卷[N][N] ポリンキーはくしゃく·著[FIN]┌ついに 我が館が完成した[N] この記念にこれから 我が日常を[N] 書物に したためることにした[FIN] さて この館は 他の土地に[N] 建てる予定であったのだが[N] 何もないはずの その土地には[N] 何かがあり 人をこばむのだ[FIN] しかし 私があった少年は[N] こともなげに そこへと入ったのだ[N] 実に この世には[N] 不可解なことが 多いものだ˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume One[N][N]             by Count[FIN]Polinky At last, my manor[N]is complete.[N]To mark the occasion, I[FIN]shall record my daily life[N]in books.[FIN]I had planned to build[N]elsewhere, but something[N]occupied the supposedly[N]empty land and repelled[FIN]all who approached.[FIN]Yet a boy I met walked[N]into it as if nothing were[N]amiss.[N]This world is truly filled[FIN]with mysteries.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume One[N][N]             by Count[FIN]Chocula At last, my manor[N]is complete.[N]To mark the occasion, I[FIN]shall record my daily life[N]in books.[FIN]I had planned to build[N]elsewhere, but something[N]occupied the supposedly[N]empty land and repelled[FIN]all who approached.[FIN]Yet a boy I met walked[N]into it as if nothing were[N]amiss.[N]This world is truly filled[FIN]with mysteries.[PAL:0][END]"
   },
   {
     "offset": "06D22C",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第二卷[N][N] ポリンキーはくしゃく·著[FIN]┌今日 客人がおとずれてきた[N] いつぞや 森で出会った[N] あの ふしぎな少年によく似た[N] 金色のかみの 青年である[FIN] からくり造りが得意というので[N] これから建てる [PAL:3]時計塔[PAL:2]の[N] 設計を 彼にたのむことにした[N] 完成が 楽しみである˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Two[N][N]             by Count[FIN]Polinky A guest arrived[N]today.[N]He is a golden-haired[N]young man who closely[FIN]resembles the strange boy[N]I once met in the forest.[FIN]He is skilled with[N]mechanisms, so I asked him[N]to design the [PAL:3]Clock Tower[PAL:2][N]I plan to build.[FIN]I eagerly await its[N]completion.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Two[N][N]             by Count[FIN]Chocula A guest arrived[N]today.[N]He is a golden-haired[N]young man who closely[FIN]resembles the strange boy[N]I once met in the forest.[FIN]He is skilled with[N]mechanisms, so I asked him[N]to design the [PAL:3]Clock Tower[PAL:2][N]I plan to build.[FIN]I eagerly await its[N]completion.[PAL:0][END]"
   },
   {
     "offset": "06D2F2",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第三卷[N][N] ポリンキーはくしゃく·著[FIN]┌ラスク君の作った 時計塔が[N] ついに 完成した[N] おおいに 満足できるできだ[FIN] 時計塔の 最上階には[N] 時計が回ると 動き出す[N] しかけ人形を 置いてくれた[N] 金色のかみをしたかわいい人形だ[FIN] 私は この人形に[N][PAL:3] マームラナ[PAL:2]と 名をつけた[N][PAU:14] イゴールは 変な顔をしていた[N][PAU:14] しっけいな![FIN] ところでラスク君は 美しい石を[N] 我がやしきに かくしたいという[N] そこで 私は···[PAU:3C]おっと[N][PAU:1E] ここで書いては 意味がない˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]         Volume Three[N][N]             by Count[FIN]Polinky The Clock Tower[N]Rusk built is finally[N]complete.[N]I am exceedingly pleased.[FIN]On its top floor, he[N]placed a mechanical doll[N]that moves when the clock[FIN]turns.[N]It is a lovely[N]golden-haired doll.[FIN]I named the doll [PAL:3]Mamurana[PAL:2].[N][PAU:14]Igor made a peculiar face.[N][PAU:14]The insolence![FIN]Rusk wishes to hide a[N]beautiful stone in my[N]manor. And so I...[FIN][PAU:3C]Oh, no.[PAU:1E] Writing it here[N]would defeat the purpose.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]         Volume Three[N][N]             by Count[FIN]Chocula The Clock Tower[N]Biscotte built is finally[N]complete.[N]I am exceedingly pleased.[FIN]On its top floor, he[N]placed a mechanical doll[N]that moves when the clock[FIN]turns.[N]It is a lovely[N]golden-haired doll.[FIN]I named the doll [PAL:3]Mamurana[PAL:2].[N][PAU:14]Igor made a peculiar face.[N][PAU:14]The insolence![FIN]Biscotte wishes to hide a[N]beautiful stone in my[N]manor. And so I...[FIN][PAU:3C]Oh, no.[PAU:1E] Writing it here[N]would defeat the purpose.[PAL:0][END]"
   },
   {
     "offset": "06D432",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第四卷[N][N] ポリンキーはくしゃく·著[FIN]┌実に この世には[N] 不可解なことが 多いものだ[N] 肉体がはてた 今も[N] 私は こうして書を記している[FIN] 私は ラスク君の石を[N] あの中に かくすべきではなかった[N] 化け物と化したあれのことを思うと[N] 安らかに ねむることもできぬ[FIN] たしかラスク君は あの石を[N] 少年が 取りにくると言っていた[N] その少年とやらは あの化け物を[N] 退治できるのであろうか˳┘[END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Four[N][N]             by Count[FIN]Polinky This world is[N]truly filled with[N]mysteries. Even after my[N]body perished, I continue[FIN]to write these books.[FIN]I should never have hidden[N]Rusk's stone inside that[N]doll.[N]Now that it has become a[FIN]monster, I cannot rest in[N]peace.[FIN]Rusk said a boy would come[N]to retrieve the stone.[N]Will that boy be able to[N]defeat the monster?[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Four[N][N]             by Count[FIN]Chocula This world is[N]truly filled with[N]mysteries. Even after my[N]body perished, I continue[FIN]to write these books.[FIN]I should never have hidden[N]Biscotte's stone inside[N]that doll.[FIN]Now that it has become a[FIN]monster, I cannot rest in[N]peace.[FIN]Biscotte said a boy would[N]come to retrieve the[N]stone.[N]Will that boy be able to[FIN]defeat the monster?[PAL:0][END]"
   },
   {
     "offset": "06D582",
@@ -999,7 +999,7 @@
     "offset": "06D6D0",
     "kind": "dialog",
     "source": "[DF2]ようこそ おいでくださいました[N]いえ [PAU:1E]あなた樣がおいでになるのは[N]よおっく 知っておりましたですよ[FIN]もうしおくれました[N]わたくしの名は [PAL:2]イゴール[N][PAL:0][PAU:14]この館の 主であらせられる[N][PAL:2]ポリンキー[PAL:0]樣に 仕えております[FIN]ささ おつかれになったでしょう[N]お部屋を 用意いたしましたので[N]まずは お休みくださいませ[N]ご案内 いたしましょう˳[END]",
-    "translation": "[DF2]Welcome. I have been[N]expecting you.[N][PAU:1E]Indeed, I knew very well[N]that you would come.[FIN]Forgive my late[N]introduction.[N]My name is [PAL:2]Igor[PAL:0].[N][PAU:14]I serve the master of this[FIN]manor, [PAL:2]Count Polinky[PAL:0].[FIN]You must be weary.[N]A room has been prepared,[N]so please rest there[N]first.[FIN]Allow me to show the way.[END]"
+    "translation": "[DF2]Welcome. I have been[N]expecting you.[N][PAU:1E]Indeed, I knew very well[N]that you would come.[FIN]Forgive my late[N]introduction.[N]My name is [PAL:2]Igor[PAL:0].[N][PAU:14]I serve the master of this[FIN]manor, [PAL:2]Count Chocula[PAL:0].[FIN]You must be weary.[N]A room has been prepared,[N]so please rest there[N]first.[FIN]Allow me to show the way.[END]"
   },
   {
     "offset": "06D8F0",
@@ -1023,7 +1023,7 @@
     "offset": "06DB27",
     "kind": "dialog",
     "source": "[DEF]だんな樣[N][PAU:1E][PAL:2]ラスク樣[PAL:0]がおっしゃっていたのは[N]あの方のことでしょうか?[FIN][PAL:2][DLY:9]···[DLY:0]どうであろうな?[N][PAU:1E]いずれにせよ 我々は[N]お手なみ拝見を きめこむことと[N]いたそうではないか˳[END]",
-    "translation": "[DEF]Master, [PAU:1E]could this be the[N]one [PAL:2]Rusk[PAL:0] spoke of?[FIN][PAL:2][DLY:9]...[DLY:0]Who can say?[N][PAU:1E]Either way, let us watch[N]and see what he can do.[END]"
+    "translation": "[DEF]Master, [PAU:1E]could this be the[N]one [PAL:2]Biscotte[PAL:0] spoke of?[FIN][PAL:2][DLY:9]...[DLY:0]Who can say?[N][PAU:1E]Either way, let us watch[N]and see what he can do.[END]"
   },
   {
     "offset": "06DB94",
@@ -1077,7 +1077,7 @@
     "offset": "06DE86",
     "kind": "dialog",
     "source": "[DEF]···では この石を[N]我が やしきのいずこかに[N]かくしてほしいと言うわけか?[N][PAL:2]ラスク君?[FIN]お手数かけます はくしゃく[N]このやしきの中でなら[N]安全だと思いまして···[FIN][PAL:0]なに 気にやむことはない[N]そなたには 世話にもなっておる[N]それに 今 ちょうどいい[N]かくし場所を 思いついた˳[END]",
-    "translation": "[DEF]...You wish me to hide[N]this stone somewhere in my[N]manor, [PAL:2]young Rusk[PAL:0]?[FIN]I apologize for the[N]trouble, Count.[N]I thought it would be safe[N]within your manor...[FIN][PAL:0]Think nothing of it.[N]I am indebted to you.[N]Besides, I have just[N]thought of the perfect[FIN]hiding place.[END]"
+    "translation": "[DEF]...You wish me to hide[N]this stone somewhere in my[N]manor, [PAL:2]young Biscotte[PAL:0]?[FIN]I apologize for the[N]trouble, Count.[N]I thought it would be safe[N]within your manor...[FIN][PAL:0]Think nothing of it.[N]I am indebted to you.[N]Besides, I have just[N]thought of the perfect[FIN]hiding place.[END]"
   },
   {
     "offset": "06DF29",
@@ -1149,7 +1149,7 @@
     "offset": "06E3BB",
     "kind": "dialog",
     "source": "[DEF]必要とあらば[N]この おくの部屋へ入られよ[N]そなたならば ラスクの遺產を[N]使うことができよう[FIN]そして 客人よ[N][PAU:1E][PAL:2]人形[PAL:0]には 気をつけられよ[N]あれは 不思誄な力をもって[N]わざわいを もたらすものだ˳[END]",
-    "translation": "[DEF]Enter the room behind me[N]if you have need of it.[N]You should be able to use[N]Rusk's legacy.[FIN]And, honored guest, [PAU:1E]beware[N]the [PAL:2]doll[PAL:0].[N]Its mysterious power[N]brings calamity.[END]"
+    "translation": "[DEF]Enter the room behind me[N]if you have need of it.[N]You should be able to use[N]Biscotte's legacy.[FIN]And, honored guest, [PAU:1E]beware[N]the [PAL:2]doll[PAL:0].[N]Its mysterious power[N]brings calamity.[END]"
   },
   {
     "offset": "06E435",
@@ -1167,7 +1167,7 @@
     "offset": "06E494",
     "kind": "dialog",
     "source": "[DEF]ようこそ 客人[N][PAU:1E]わたしは この館の主で[N][PAU:1E][PAL:2]ポリンキーはくしゃく[PAL:0]と もうす者[FIN]ところで 客人[N][PAU:1E]この部屋に [PAL:2]白きまもの[PAL:0]が入りこみ[N]困っておるのだ[FIN][::]この部屋の中の [PAL:2]白きまもの[PAL:0]を[N]連れさっては くれぬだろうか?[N] おやすいご用です[N] やなこったい",
-    "translation": "[DEF]Welcome, honored guest.[N][PAU:1E]I am the master of this[N]manor, [PAU:1E][PAL:2]Count Polinky[PAL:0].[FIN]A [PAL:2]white fiend[PAL:0] has entered[N]this room, much to my[N]distress.[FIN][::]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room for[N]me?[FIN] Gladly[N] No way"
+    "translation": "[DEF]Welcome, honored guest.[N][PAU:1E]I am the master of this[N]manor, [PAU:1E][PAL:2]Count Chocula[PAL:0].[FIN]A [PAL:2]white fiend[PAL:0] has entered[N]this room, much to my[N]distress.[FIN][::]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room for[N]me?[FIN] Gladly[N] No way"
   },
   {
     "offset": "06E532",
@@ -1221,7 +1221,7 @@
     "offset": "06E8BB",
     "kind": "dialog",
     "source": "[DEF][TPL:4]あらっ?まだいたの?[N]え?ブレーカーを操作したのは[N]君だったの?[FIN]あっ![PAU:1E]こうしちゃいられないわ[N]今の奴ら パセリをさがしてるのよ[N]パセリに あいつらの[N]カギを 持っていかれたんだって[FIN]パセリを 見つければ[N]あいつらの目的が わかるかも[N][PAU:1E]フラボノさんを さがさなきゃ![N][PAU:1E]フラボノさーーーーーーんっ![END]",
-    "translation": "[DEF][TPL:4]Oh? You're still here?[N]What? You operated the[N]breaker?[FIN]Wait![PAU:1E] Those men are after[N]Parsley.[N]They said he stole their[N]key.[FIN]If I find Parsley, I may[N]learn what they're[N]plotting.[N][PAU:1E]I must find Mr. Flavono![FIN][PAU:1E]Mr. Flavonooooo![END]"
+    "translation": "[DEF][TPL:4]Oh? You're still here?[N]What? You operated the[N]breaker?[FIN]Wait![PAU:1E] Those men are after[N]Parsley.[N]They said he stole their[N]key.[FIN]If I find Parsley, I may[N]learn what they're[N]plotting.[N][PAU:1E]I must find Mr. Dentyne![FIN][PAU:1E]Mr. Dentyyyyne![END]"
   },
   {
     "offset": "06EA2C",
@@ -1371,7 +1371,7 @@
     "offset": "06F3A9",
     "kind": "dialog",
     "source": "[PAL:2]カール:[N][PAL:0]",
-    "translation": "[PAL:2]Carl:[N][PAL:0]"
+    "translation": "[PAL:2]Chex:[N][PAL:0]"
   },
   {
     "offset": "06F3B5",
@@ -1401,7 +1401,7 @@
     "offset": "06F3E8",
     "kind": "dialog",
     "source": "[PAL:2]ナポレオン:[N][PAL:0]",
-    "translation": "[PAL:2]Napoleon:[N][PAL:0]"
+    "translation": "[PAL:2]Newton:[N][PAL:0]"
   },
   {
     "offset": "06F3F6",
@@ -1419,7 +1419,7 @@
     "offset": "06F410",
     "kind": "dialog",
     "source": "[PAL:2]フラボノ:[N][PAL:0]",
-    "translation": "[PAL:2]Flavono:[N][PAL:0]"
+    "translation": "[PAL:2]Dentyne:[N][PAL:0]"
   },
   {
     "offset": "06F41D",
@@ -1431,7 +1431,7 @@
     "offset": "06F429",
     "kind": "dialog",
     "source": "[PAL:2]ラスク:[N][PAL:0]",
-    "translation": "[PAL:2]Rusk:[N][PAL:0]"
+    "translation": "[PAL:2]Biscotte:[N][PAL:0]"
   },
   {
     "offset": "06F435",
@@ -1449,7 +1449,7 @@
     "offset": "06F44F",
     "kind": "dialog",
     "source": "[PAL:2]ポリンキーはくしゃく:[N][PAL:0]",
-    "translation": "[PAL:2]Count Polinky:[N][PAL:0]"
+    "translation": "[PAL:2]Count Chocula:[N][PAL:0]"
   },
   {
     "offset": "06F462",
@@ -1605,7 +1605,7 @@
     "offset": "06F962",
     "kind": "dialog",
     "source": " ステラおばさんの家",
-    "translation": " Aunt Stella's House"
+    "translation": " Aunt Jemima's House"
   },
   {
     "offset": "06F970",
@@ -1617,7 +1617,7 @@
     "offset": "06F979",
     "kind": "dialog",
     "source": "  カールの家",
-    "translation": "  Carl's House"
+    "translation": "  Chex's House"
   },
   {
     "offset": "06F984",
@@ -1647,7 +1647,7 @@
     "offset": "06F9B2",
     "kind": "dialog",
     "source": " フラボノ博士の家",
-    "translation": " Dr. Flavono's House"
+    "translation": " Dr. Dentyne's House"
   },
   {
     "offset": "06F9C1",

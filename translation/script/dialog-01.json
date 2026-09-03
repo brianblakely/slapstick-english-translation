@@ -657,7 +657,7 @@
     "offset": "01DE16",
     "kind": "dialog",
     "source": "カールのおとうさんがくれた[N]飛行機で 步いていけないような[N]土地へ 移動することができる",
-    "translation": "A plane from Carl's[N]father.[N]It reaches lands that[N]cannot be reached on foot."
+    "translation": "A plane from Chex's[N]father.[N]It reaches lands that[N]cannot be reached on foot."
   },
   {
     "offset": "01DE4D",
@@ -711,13 +711,13 @@
     "offset": "01DF78",
     "kind": "dialog",
     "source": "カールのおとうさんから[N]カールへの手紙",
-    "translation": "A letter from Carl's[N]father to Carl."
+    "translation": "A letter from Chex's[N]father to Chex."
   },
   {
     "offset": "01DF92",
     "kind": "dialog",
     "source": "カールがどうくつで見つけた[N]石版",
-    "translation": "A stone tablet Carl found[N]in a cave."
+    "translation": "A stone tablet Chex found[N]in a cave."
   },
   {
     "offset": "01DFA8",
@@ -771,13 +771,13 @@
     "offset": "01E09D",
     "kind": "dialog",
     "source": "ナポレオンという名のロボットの[N]スクラップ",
-    "translation": "Scrap from a robot named[N]Napoleon."
+    "translation": "Scrap from a robot named[N]Newton."
   },
   {
     "offset": "01E0BA",
     "kind": "dialog",
     "source": "ポリンキー家のはいきょでもらった[N]スクラップ",
-    "translation": "Scrap received at the[N]ruins of the Polinky[N]estate."
+    "translation": "Scrap received at the[N]ruins of the Chocula[N]estate."
   },
   {
     "offset": "01E0D6",

@@ -93,7 +93,7 @@
     "offset": "0788A8",
     "kind": "dialog",
     "source": "[DEF]ようこそ ぼくの子孫たち[N][PAU:14]ぼくの名前は ラスク[N][PAU:14]君たちに 伝えたいことがあって[N]このメッセージを残している[FIN]この極楽星のどこかに[N][TPL:0]という名の石が[N]3つにくだけちってねむっている[N]不思誄な力をひめた 石だ[FIN]いつの時代か その石をもとめて[N]悪の手がのびるだろう[N]どうか そいつらの手にわたる前に[N][TPL:0]を 集めてほしいんだ[FIN]ぼくの手では ひとつだけしか[N]見つけることができなかった···[N]それは [PAL:2]ポリンキーはくしゃく[N][PAL:0]という人にあずけてある[FIN]君の代に はくしゃくの館が[N]残っているかどうかはわからない[N]でも まずは館をたずねてみてほしい[FIN]はくしゃくの館は[N]ここよりさらに →へと進んだ[N][PAL:2]迷いの森[PAL:0]の中にある˳[END]",
-    "translation": "[DEF]Welcome, my descendants.[N][PAU:14]My name is Rusk.[N][PAU:14]I left this message to[N]tell you something.[FIN]Somewhere on Bliss, a[N]stone called [TPL:0] lies[N]broken into three pieces.[FIN]It holds a mysterious[N]power.[FIN]In some age, evil hands[N]will reach out in search[N]of that stone.[FIN]Please gather [TPL:0][N]before they can claim it.[FIN]I could find only one[N]piece...[N]I entrusted it to a man[N]named [PAL:2]Count Polinky[PAL:0].[FIN]I do not know if his manor[N]will remain in your era,[N]but please search there[N]first.[FIN]His manor stands in the[N][PAL:2]Lost Woods[PAL:0], farther to the[N]right of this place.[END]"
+    "translation": "[DEF]Welcome, my descendants.[N][PAU:14]My name is Biscotte.[N][PAU:14]I left this message to[N]tell you something.[FIN]Somewhere on Bliss, a[N]stone called [TPL:0] lies[N]broken into three pieces.[FIN]It holds a mysterious[N]power.[FIN]In some age, evil hands[N]will reach out in search[N]of that stone.[FIN]Please gather [TPL:0][N]before they can claim it.[FIN]I could find only one[N]piece...[N]I entrusted it to a man[N]named [PAL:2]Count Chocula[PAL:0].[FIN]I do not know if his manor[N]will remain in your era,[N]but please search there[N]first.[FIN]His manor stands in the[N][PAL:2]Lost Woods[PAL:0], farther to the[N]right of this place.[END]"
   },
   {
     "offset": "078BDA",
@@ -1018,13 +1018,13 @@
     "offset": "07D477",
     "kind": "dialog",
     "source": "[DEF]やい やい やい[N]アキハバラとフラボノだな![N]我々ハッカーの研究のためには[N]おふたりの力が必要だ![FIN]···と えらい人が言ってるので[N]痛い思いを したくなかったら[N]おとなしく いっしょに[N]来てちょうだい˳[END]",
-    "translation": "[DEF]Hey, hey, hey![N]You're Akihabara and[N]Flavono![N]The Hackers need both of[FIN]you for our research![FIN]...That's what the big[N]boss says.[N]Come quietly with us[N]unless you want to get[FIN]hurt.[END]"
+    "translation": "[DEF]Hey, hey, hey![N]You're Akihabara and[N]Dentyne![N]The Hackers need both of[FIN]you for our research![FIN]...That's what the big[N]boss says.[N]Come quietly with us[N]unless you want to get[FIN]hurt.[END]"
   },
   {
     "offset": "07D543",
     "kind": "dialog",
     "source": "[DEF][TPL:2]フラボノ君[N]君は このままにげたまえ[N]こいつは 私がなんとかしよう[FIN][TPL:F]し·しかし···[FIN][TPL:2]わはは わたしは発明家だぞ?[N]こんな時のために役立つものを[N]ひとつふたつ用意してあるんだ[FIN]さあ[N][PAU:1E]危ないから 後ろに下がるんだ[N]なに こんな奴ら[N]あっという間に ふきとばしてやる˳[END]",
-    "translation": "[DEF][TPL:2]Flavono, you escape.[N]I will handle this one.[FIN][TPL:F]B-but...[FIN][TPL:2]Ha ha! I am an inventor.[N]I prepared one or two[N]devices for occasions like[FIN]this.[FIN]Now stand back.[N][PAU:1E]It will be dangerous.[N]I'll blow these thugs away[N]in the blink of an eye.[END]"
+    "translation": "[DEF][TPL:2]Dentyne, you escape.[N]I will handle this one.[FIN][TPL:F]B-but...[FIN][TPL:2]Ha ha! I am an inventor.[N]I prepared one or two[N]devices for occasions like[FIN]this.[FIN]Now stand back.[N][PAU:1E]It will be dangerous.[N]I'll blow these thugs away[N]in the blink of an eye.[END]"
   },
   {
     "offset": "07D6CD",
@@ -1132,7 +1132,7 @@
     "offset": "07E357",
     "kind": "dialog",
     "source": "[DEF][DLY:9]···[DLY:0][PAU:1E][NAM:0]?[PAU:A] オマエか?[N]ワタシだ [PAL:2]ナポレオン[PAL:0]だ[N][PAU:1E][DLY:9]···そうか[PAU:14][DLY:0] オマエはまだ[N][PAU:A]ワタシを 知らないのか···[FIN]···オマエ[PAU:14] その石は?![N][PAU:14][TPL:0]を 集めていたのか[N]そうか···[PAU:14]よかった···[NXT]",
-    "translation": "[DEF][DLY:9]...[DLY:0][PAU:1E][NAM:0]?[PAU:A] Is that you?[N]It is I, [PAL:2]Napoleon[PAL:0].[N][PAU:1E][DLY:9]...I see.[PAU:14][DLY:0] You do not know[N]me yet...[FIN]...That stone![N][PAU:14]You have been gathering[N][TPL:0].[N]I see...[PAU:14] Thank goodness...[NXT]"
+    "translation": "[DEF][DLY:9]...[DLY:0][PAU:1E][NAM:0]?[PAU:A] Is that you?[N]It is I, [PAL:2]Newton[PAL:0].[N][PAU:1E][DLY:9]...I see.[PAU:14][DLY:0] You do not know[N]me yet...[FIN]...That stone![N][PAU:14]You have been gathering[N][TPL:0].[N]I see...[PAU:14] Thank goodness...[NXT]"
   },
   {
     "offset": "07E3E1",
@@ -1192,7 +1192,7 @@
     "offset": "07E80F",
     "kind": "dialog",
     "source": "[DEF][DLY:4]···もうダメ···だ[N]エネルギーが···なくなった[N]だが···まにあってよかった[FIN]···できることなら···[N]スクラップとなる ワタシの···[N]かけらでも···ひろってくれ[N]キミを 見守れる[FIN]あとのことは···たのむ[N][PAL:2]ラスク[PAL:0]さまの···意志を[N]···ついでくれ˳[DLY:0][END]",
-    "translation": "[DEF][DLY:4]...I can go...no farther.[N]My energy...is gone.[N]But...I am glad we made[N]it.[FIN]...If you can...[N]take even one fragment of[N]the scrap I become...[N]Then I can watch over you.[FIN]I leave...the rest to you.[N]Carry on [PAL:2]Rusk's[PAL:0] will...[DLY:0][END]"
+    "translation": "[DEF][DLY:4]...I can go...no farther.[N]My energy...is gone.[N]But...I am glad we made[N]it.[FIN]...If you can...[N]take even one fragment of[N]the scrap I become...[N]Then I can watch over you.[FIN]I leave...the rest to you.[N]Carry on [PAL:2]Biscotte's[PAL:0][N]will...[DLY:0][END]"
   },
   {
     "offset": "07E8AD",
