@@ -1036,7 +1036,7 @@
     "offset": "09D478",
     "kind": "dialog",
     "source": "[DEF][PAL:3]女の子:[N][PAL:0]あなた ぐあいはもういいの?[N]あんなに 熱を出していたのに[N]それに 今だって無理して···[FIN]あ···[PAU:1E]ごめんなさいね[N][PAU:1E]あなたは ねていたんだもの[N]何も 知らないわよね[N][PAU:1E]わたしは [PAL:3]ポロン[PAL:0]っていいます[FIN]河原でたおれていた[N]あなたを 見つけて[N]私の家に つれてきたの[N][PAU:1E]あなた ひどいケガだったし···[FIN]とにかく 私の家に帰りましょう[N]あなたも まだ無理しない方が[N]いいと思うから···[PAU:3C]ね?[END]",
-    "translation": "[DEF][PAL:3]Girl:[N][PAL:0]Are you feeling better?[N]Your fever was so high,[N]and even now you're[FIN]pushing yourself...[FIN]Oh...[PAU:1E] I'm sorry.[N][PAU:1E]You were asleep, so you[N]don't know anything.[FIN][PAU:1E]My name is [PAL:3]Polon[PAL:0].[FIN]I found you unconscious by[N]the river and took you[N]home.[N][PAU:1E]You were badly injured...[FIN]Let's return to my house.[N]I don't think you should[N]overexert yourself yet...[PAU:3C][N]All right?[END]"
+    "translation": "[DEF][PAL:3]Girl:[N][PAL:0]Are you feeling better?[N]Your fever was so high,[N]and even now you're[FIN]pushing yourself...[FIN]Oh...[PAU:1E] I'm sorry.[N][PAU:1E]You were asleep, so you[N]don't know anything.[FIN][PAU:1E]My name is [PAL:3]Debbie[PAL:0].[FIN]I found you unconscious by[N]the river and took you[N]home.[N][PAU:1E]You were badly injured...[FIN]Let's return to my house.[N]I don't think you should[N]overexert yourself yet...[PAU:3C][N]All right?[END]"
   },
   {
     "offset": "09D78D",

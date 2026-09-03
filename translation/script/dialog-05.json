@@ -15,7 +15,7 @@
     "offset": "058141",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N] ポストの中を のぞいた[N][PAU:A] ポストの中には[N][PAL:3] ラブレター[PAL:0]が 入っていた![FIN][PAL:2] ポロンさん あなたは私の太陽だ[N] 私は その太陽を[N] いつでも みつめていたいと思う[N][SKP:12]あなたのファンより[END]",
-    "translation": "[DEF] [NAM:0] looked inside[N] the mailbox.[PAU:A] There was[N][PAL:3] a love letter[PAL:0] inside![FIN][PAL:2] Dear Polon, you are my[N]sun.[N] I want to gaze upon it[N]forever.[FIN][SKP:10]From your admirer[END]"
+    "translation": "[DEF] [NAM:0] looked inside[N] the mailbox.[PAU:A] There was[N][PAL:3] a love letter[PAL:0] inside![FIN][PAL:2] Dear Debbie, you are my[N]sun.[N] I want to gaze upon it[N]forever.[FIN][SKP:10]From your admirer[END]"
   },
   {
     "offset": "0581C0",

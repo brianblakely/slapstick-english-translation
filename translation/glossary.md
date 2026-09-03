@@ -19,7 +19,7 @@ keep recurring names and terms consistent across independently edited banks.
 | ガトー | Gateau | French cake. |
 | ティラミス | Tiramisu | Italian dessert. |
 | フラボノ | Dentyne | Chewing-gum reference. |
-| ポロン | Polon | Pastry/name reference. |
+| ポロン | Debbie | Snack-brand localization. |
 | ラスク | Biscotte | Twice-baked bread reference. |
 | ミルフィ | Mille | Short for mille-feuille. |
 | ポリンキー伯爵 | Count Chocula | Preserves the food-brand and vampire joke. |

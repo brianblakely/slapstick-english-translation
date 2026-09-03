@@ -9,7 +9,7 @@
     "offset": "0A8159",
     "kind": "dialog",
     "source": "[DEF]にいちゃん [PAL:2]ポロンねえちゃんの[N]所の いそうろう[PAL:0]だろ?[N]さっきさあ どこから出てきたの?[N]ひょっとして あれ 手品?[END]",
-    "translation": "[DEF]You're the [PAL:2]freeloader[N]staying with Polon[PAL:0], right?[N]Where did you appear from[N]earlier?[FIN]Was that a magic trick?[END]"
+    "translation": "[DEF]You're the [PAL:2]freeloader[N]staying with Debbie[PAL:0],[N]right?[N]Where did you appear from[FIN]earlier?[FIN]Was that a magic trick?[END]"
   },
   {
     "offset": "0A819F",
@@ -21,7 +21,7 @@
     "offset": "0A8215",
     "kind": "dialog",
     "source": "[DEF]ポロンねえちゃんは けっこう[N]もてるんだぜ[N][PAU:14]くらい夜道には 注意しなよ˳[END]",
-    "translation": "[DEF]Polon is rather popular.[N][PAU:14]Watch your back on dark[N]streets.[END]"
+    "translation": "[DEF]Debbie is rather popular.[N][PAU:14]Watch your back on dark[N]streets.[END]"
   },
   {
     "offset": "0A8243",
@@ -141,7 +141,7 @@
     "offset": "0A896D",
     "kind": "dialog",
     "source": "[DEF] 藥草を取りに 出かけています[N] 来ていただいた人 ごめんなさい[N][N][PAL:3][SKP:24]ポロン[PAL:0][END]",
-    "translation": "[DEF] Gone to gather medicinal[N]herbs.[N] Sorry I missed you.[N][FIN][PAL:3][SKP:24]Polon[PAL:0][END]"
+    "translation": "[DEF] Gone to gather medicinal[N]herbs.[N] Sorry I missed you.[N][FIN][PAL:3][SKP:24]Debbie[PAL:0][END]"
   },
   {
     "offset": "0A8A03",
@@ -339,25 +339,25 @@
     "offset": "0A95B3",
     "kind": "dialog",
     "source": "[DEF]···お·[PAU:1E]お前かっ![N]ポロンさんの家に ころがりこんだ[N]どこぞの 馬の骨というのはっ![FIN]ポ·ポロンさんに[N]みょうなマネをしてみろ![N]ほんとに ほんとに[N]ひどい目にあわすからなっ![END]",
-    "translation": "[DEF]...Y-you![N]You're the nobody who[N]moved into Polon's house![FIN]Try anything strange with[N]Polon, and I will make you[N]truly, truly sorry![END]"
+    "translation": "[DEF]...Y-you![N]You're the nobody who[N]moved into Debbie's house![FIN]Try anything strange with[N]Debbie, and I will make[N]you truly, truly sorry![END]"
   },
   {
     "offset": "0A961D",
     "kind": "dialog",
     "source": "[DEF]わ·わたしは ポロンさんに[N]お·お花を とどけようと思って[N]来ただけだっ![N][PAU:14]お前の方こそ 出ていけっ![END]",
-    "translation": "[DEF]I-I only came to deliver[N]flowers to Polon![N][PAU:14]You're the one who should[FIN]leave![END]"
+    "translation": "[DEF]I-I only came to deliver[N]flowers to Debbie![N][PAU:14]You're the one who should[FIN]leave![END]"
   },
   {
     "offset": "0A965C",
     "kind": "dialog",
     "source": "[DEF]ネズミだって ポロンさんの[N]家のものなら[N]なんだって びゅーてぃほーだぞ![END]",
-    "translation": "[DEF]Even a mouse is beautiful[N]if it belongs to Polon![END]"
+    "translation": "[DEF]Even a mouse is beautiful[N]if it belongs to Debbie![END]"
   },
   {
     "offset": "0A96E3",
     "kind": "dialog",
     "source": "[DEF][DLY:1]おやっ[PAU:1E] あんたポロンちゃんに[N]助けられた人じゃないか![N]もう ぐあいはいいのかい?[FIN]ポロンちゃんはね 河原で[N]あんたが たおれていたのを[N]自分の家まで つれてきてね[N]それは 熱心にかんびょうしていたよ[NXT]",
-    "translation": "[DEF][DLY:1]Why, you're the one Polon[N]saved![N]Are you feeling better?[FIN]Polon found you[N]unconscious by the river,[N]carried you home, and[N]nursed you with great[FIN]devotion.[NXT]"
+    "translation": "[DEF][DLY:1]Why, you're the one Debbie[N]saved![N]Are you feeling better?[FIN]Debbie found you[N]unconscious by the river,[N]carried you home, and[N]nursed you with great[FIN]devotion.[NXT]"
   },
   {
     "offset": "0A975A",
@@ -369,13 +369,13 @@
     "offset": "0A975C",
     "kind": "dialog",
     "source": "[DEF][DLY:1]そういえば ポロンちゃん[N]あんたのために藥草を取りに行くって[N][PAL:2]河原のどうくつ[PAL:0]に 行ったはずだよ[FIN]あのあたりは [PAL:2]とうぞく団[PAL:0]が[N]いるって話だし[N]あんたも 元気になったんなら[N]むかえに行っておあげ![DLY:0][END]",
-    "translation": "[DEF][DLY:1]Come to think of it, Polon[N]went to the [PAL:2]riverside cave[PAL:0][N]to gather herbs for you.[FIN]They say [PAL:2]bandits[PAL:0] lurk[N]nearby.[N]If you're well enough, you[N]should go meet her![DLY:0][END]"
+    "translation": "[DEF][DLY:1]Come to think of it,[N]Debbie went to the[N][PAL:2]riverside cave[PAL:0] to gather[N]herbs for you.[FIN]They say [PAL:2]bandits[PAL:0] lurk[N]nearby.[N]If you're well enough, you[N]should go meet her![DLY:0][END]"
   },
   {
     "offset": "0A97D8",
     "kind": "dialog",
     "source": "[DEF]ポロンちゃんから 聞いたよ[N]世の中には 同じ顔の人が[N]3人はいるって言うからねえ[N][PAU:1E]ともかく 今は 藥!藥![END]",
-    "translation": "[DEF]Polon told me about it.[N]They say everyone has[N]three look-alikes in the[N]world.[FIN][PAU:1E]But right now, medicine![N]Medicine![END]"
+    "translation": "[DEF]Debbie told me about it.[N]They say everyone has[N]three look-alikes in the[N]world.[FIN][PAU:1E]But right now, medicine![N]Medicine![END]"
   },
   {
     "offset": "0A981E",
@@ -591,7 +591,7 @@
     "offset": "0AA595",
     "kind": "dialog",
     "source": "[DEF][DLY:1]どうしたんです ポロンさん![N][PAU:1E]あの 馬の骨がなにか[N]ポロンさんに わるさでも!?[NXT]",
-    "translation": "[DEF][DLY:1]What's wrong, Polon?[N][PAU:1E]Did that good-for-nothing[N]do something to you!?[NXT]"
+    "translation": "[DEF][DLY:1]What's wrong, Debbie?[N][PAU:1E]Did that good-for-nothing[N]do something to you!?[NXT]"
   },
   {
     "offset": "0AA5C9",

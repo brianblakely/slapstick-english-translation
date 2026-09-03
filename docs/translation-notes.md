@@ -28,12 +28,10 @@ A type of Italian cake.
 The Japanese name appears to reference chewing gum.
 "Dentyne" preserves that naming theme in English.
 
-## ポロン PORON
-This may be a reference to the 1970s kid's show
-"Little Pollon". But that isn't a food.
-
-I found a pastry called polon created by a Japanese
-confectionery named West.
+## ポロン PORON Debbie
+The Japanese name may refer to a pastry or the show
+"Little Pollon." "Debbie" preserves the snack-brand
+naming theme in English.
 
 ## ラスク Rusk Biscotte
 This is similar to biscotti. "Biscotte" preserves
