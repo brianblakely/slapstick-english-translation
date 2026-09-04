@@ -158,6 +158,11 @@ dynamic player names and menu/icon selections intact across equipment, robot,
 battle-command, and exit-menu paths. Shared robot point-allocation and Program
 panels reached through `STR` remain inline at their stock addresses so the
 console interpreter never has to follow two relocation redirects at once.
+The three main-menu robot summary rows at `0x01EB23`, `0x01EB52`, and
+`0x01EB81` also remain inline because each row nests its robot name and EXP
+value through `STR`. Each translated row fits its original 35-byte slot; if a
+row is relocated, its nested return resumes against the redirect stub and can
+corrupt the following robot names.
 
 ## Dialogue font and layout
 

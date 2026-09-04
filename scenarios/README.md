@@ -23,6 +23,20 @@ the core version, the readiness condition, every state change, and any runtime
 inputs. `npm run scenario -- --list` lists checked-in scenarios, while
 `npm run scenario -- --help` lists all command options.
 
+Two high-density fixtures support the automated menu regression suite:
+
+- `menu-suite-populated.json` fills all 70 bag slots, enables and equips all
+  three robots, marks every invention as known, and primes the main menu.
+- `invention-machine-build.json` starts before the first construction so the
+  complete introduction, price prompt, animation, naming, and point-allocation
+  flow can be exercised.
+
+Run `npm run test:menus` after `npm run build:rom` to drive both fixtures
+through every Invention Machine function and main-menu tab. The generated
+gallery and contact sheet are under `build/menu-suite/`; gameplay assertions
+and exact visual baselines make the run fail on either behavioral or rendering
+regressions.
+
 A self-booting test ROM can be emitted instead:
 
 ```sh

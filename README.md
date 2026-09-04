@@ -137,6 +137,24 @@ Run `nix flake check` to build the pinned core and verify that the expected
 `snes9x_libretro.so` is present. Snes9x has a non-commercial license, so
 Nixpkgs classifies it as unfree; this flake opts in to that package explicitly.
 
+### Invention Machine and main-menu suite
+
+The deterministic menu suite starts from two checkpoint-free fixtures, builds
+and names a robot, assigns its points, and exercises Create, Combine, Recycle,
+Build, Maintenance, Program, and Exit. It then opens every main-menu tab with
+all three robots, all 70 bag slots, and every known invention populated:
+
+```sh
+npm run build:rom
+npm run test:menus
+```
+
+The run verifies action results in WRAM as well as the rendered frames. It
+writes a labeled HTML gallery, a contact sheet, individual PNG captures, and a
+JSON report under `build/menu-suite/`. Screenshot hashes are compared with the
+checked-in deterministic baselines. After inspecting an intentional visual
+change, accept it with `npm run test:menus -- --update-baselines`.
+
 ## What the build does
 
 - Checks the source ROM size and SHA-256 before changing anything.

@@ -42,6 +42,9 @@ const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
 const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
 const INLINE_CONSOLE_OFFSETS = new Set([
+  0x01eb23, // main-menu robot 1 row, nested through STR
+  0x01eb52, // main-menu robot 2 row, nested through STR
+  0x01eb81, // main-menu robot 3 row, nested through STR
   0x01f2c7, // robot 1 point-allocation values
   0x01f300, // robot 2 point-allocation values
   0x01f339, // robot 3 point-allocation values
@@ -172,9 +175,10 @@ for (const entry of changedEntries) {
     ? encodeDialog(entry.translation)
     : encodeConsole(entry.translation);
 
-  // These shared panels are called through STR. Keeping them at their stock
-  // addresses avoids a second redirect level while the parent console string
-  // is active, which otherwise drops the panel and corrupts subsequent menus.
+  // These strings either contain nested STR calls or are themselves reached
+  // through STR. Keeping them at their stock addresses avoids a second
+  // redirect level while a parent console string is active, which otherwise
+  // drops dynamic text and corrupts subsequent menus.
   if (entry.kind === "console" && INLINE_CONSOLE_OFFSETS.has(offset)) {
     if (bytes.length > originalLength) {
       throw new Error(

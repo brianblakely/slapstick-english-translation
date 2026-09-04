@@ -117,7 +117,7 @@
     "offset": "01EB23",
     "kind": "console",
     "source": "     [STR:@consolestring_01F6C8][PAL:8] [NUM:1,070C]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6D6]",
-    "translation": "     [STR:@consolestring_01F6C8][PAL:8] No.[NUM:1,070C][PAL:4][N]     EXP [STR:@consolestring_01F6D6]"
+    "translation": "     [STR:@consolestring_01F6C8][PAL:8]No.[NUM:1,070C][PAL:4][N]     EXP [STR:@consolestring_01F6D6]"
   },
   {
     "offset": "01EB46",
@@ -129,7 +129,7 @@
     "offset": "01EB52",
     "kind": "console",
     "source": "     [STR:@consolestring_01F6E8][PAL:8] [NUM:1,070E]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6F6]",
-    "translation": "     [STR:@consolestring_01F6E8][PAL:8] No.[NUM:1,070E][PAL:4][N]     EXP [STR:@consolestring_01F6F6]"
+    "translation": "     [STR:@consolestring_01F6E8][PAL:8]No.[NUM:1,070E][PAL:4][N]     EXP [STR:@consolestring_01F6F6]"
   },
   {
     "offset": "01EB75",
@@ -141,7 +141,7 @@
     "offset": "01EB81",
     "kind": "console",
     "source": "     [STR:@consolestring_01F708][PAL:8] [NUM:1,0710]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F716]",
-    "translation": "     [STR:@consolestring_01F708][PAL:8] No.[NUM:1,0710][PAL:4][N]     EXP [STR:@consolestring_01F716]"
+    "translation": "     [STR:@consolestring_01F708][PAL:8]No.[NUM:1,0710][PAL:4][N]     EXP [STR:@consolestring_01F716]"
   },
   {
     "offset": "01EBA4",

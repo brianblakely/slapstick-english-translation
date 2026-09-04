@@ -1,0 +1,33 @@
+{
+  "$schema": "./schema.json",
+  "version": 1,
+  "name": "invention-machine-build",
+  "description": "Ready for the complete first-use flow and construction of robot slot one.",
+  "map": "home-r-and-d",
+  "position": {
+    "x": 128,
+    "y": 144,
+    "direction": "up"
+  },
+  "launch": {
+    "ready": "field"
+  },
+  "player": {
+    "name": "Rask",
+    "level": 20
+  },
+  "money": 99999,
+  "flags": {
+    "robotBookRead": true,
+    "nagisaIntroducedMachine": true,
+    "firstRobotCreated": false,
+    "machineUsed": false
+  },
+  "party": {
+    "robots": [],
+    "order": [1, 2, 3]
+  },
+  "wram": [
+    { "address": "0x0672", "value": 1 }
+  ]
+}

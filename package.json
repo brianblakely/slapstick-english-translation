@@ -12,9 +12,11 @@
     "smoke": "node tools/run-libretro-smoke.mjs",
     "test:harness": "node --test tools/libretro-core.test.mjs && python3 tools/libretro-smoke.test.py",
     "test:icons": "node --test tools/console-icons.test.mjs",
+    "test:menu-suite": "node --test tools/menu-suite.test.mjs",
+    "test:menus": "node tools/run-menu-suite.mjs",
     "test:reflow": "node --test tools/reflow-dialog.test.mjs",
     "test:scenario": "node --test tools/scenario-state.test.mjs tools/scenario-rom.test.mjs",
-    "test": "npm run check && npm run test:harness && npm run test:icons && npm run test:reflow && npm run test:scenario"
+    "test": "npm run check && npm run test:harness && npm run test:icons && npm run test:menu-suite && npm run test:reflow && npm run test:scenario"
   },
   "repository": {
     "type": "git",
