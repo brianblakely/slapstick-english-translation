@@ -13,6 +13,20 @@ const LOCATION_LABEL_START = 0x06f910;
 const LOCATION_LABEL_END = 0x06fd89;
 const LOCATION_LABEL_LAYOUT = { columns: 26, rows: 1 };
 const LOCATION_BANNER_OFFSETS = new Set(["06F54B", "06F55D", "06F56F"]);
+const DIALOG_LABEL_RANGES = [
+  {
+    start: 0x01d08a,
+    end: 0x01d0e7,
+    columns: 24,
+    description: "mid-battle message",
+  },
+  {
+    start: 0x01e53d,
+    end: 0x01e6a8,
+    columns: 11,
+    description: "player battle option",
+  },
+];
 const STATUS_SCREEN_OFFSET = "01EBD4";
 const STATUS_ITEM_GLYPHS = ["29", "34", "25", "2D"];
 const EQUIPMENT_NAME_TABLE = "@string_list_01F774";
@@ -22,14 +36,81 @@ const CONFIG_OPTION_LAYOUTS = new Map([
   ["01EA0B", { columns: 26, slots: [[9, 4], [15, 4]] }],
 ]);
 const CONFIG_BUTTON_OFFSET = "01EA27";
-const SINGLE_LINE_CHOICE_LAYOUTS = new Map([
-  ["069F54", 2],
-  ["08C7A4", 2],
-  ["08E377", 2],
+const DIALOG_CHOICE_LAYOUTS = new Map([
+  ["01D122", { choices: 2, firstRow: 1 }],
+  ["01D1F5", { choices: 2, firstRow: 1 }],
+  ["01D28A", { choices: 2, firstRow: 1 }],
+  ["01D2DE", { choices: 2, firstRow: 1 }],
+  ["01D301", { choices: 2, firstRow: 1 }],
+  ["01D593", { choices: 2, firstRow: 1 }],
+  ["0592C5", { choices: 2, firstRow: 2 }],
+  ["05ADB7", { choices: 2, firstRow: 2 }],
+  ["05BBC0", { choices: 2, firstRow: 2 }],
+  ["05C074", { choices: 2, firstRow: 2 }],
+  ["05EF36", { choices: 2, firstRow: 2 }],
+  ["05F06F", { choices: 2, firstRow: 2 }],
+  ["05F0C5", { choices: 2, firstRow: 2 }],
+  ["05F14B", { choices: 2, firstRow: 2 }],
+  ["0695A5", { choices: 2, firstRow: 2 }],
+  ["0695CE", { choices: 2, firstRow: 2 }],
+  ["06966A", { choices: 2, firstRow: 2 }],
+  ["069918", { choices: 2, firstRow: 2 }],
+  ["069F54", { choices: 2, firstRow: 2 }],
+  ["06AB30", { choices: 2, firstRow: 2 }],
+  ["06ACBA", { choices: 2, firstRow: 2 }],
+  ["06E435", { choices: 2, firstRow: 2 }],
+  ["06E468", { choices: 2, firstRow: 2 }],
+  ["06E494", { choices: 2, firstRow: 2 }],
+  ["06EEAB", { choices: 2, firstRow: 2 }],
+  ["079056", { choices: 2, firstRow: 2 }],
+  ["0790A8", { choices: 4, firstRow: 0 }],
+  ["079108", { choices: 2, firstRow: 1 }],
+  ["079238", { choices: 2, firstRow: 1 }],
+  ["079308", { choices: 2, firstRow: 1 }],
+  ["07BF69", { choices: 2, firstRow: 2 }],
+  ["08906A", { choices: 2, firstRow: 2 }],
+  ["089181", { choices: 2, firstRow: 2 }],
+  ["08ACB7", { choices: 2, firstRow: 2 }],
+  ["08B515", { choices: 2, firstRow: 2 }],
+  ["08C6DD", { choices: 2, firstRow: 2 }],
+  ["08C7A4", { choices: 2, firstRow: 2 }],
+  ["08C7DB", { choices: 2, firstRow: 2 }],
+  ["08C886", { choices: 2, firstRow: 0 }],
+  ["08D143", { choices: 2, firstRow: 2 }],
+  ["08D99F", { choices: 2, firstRow: 1 }],
+  ["08E0C3", { choices: 2, firstRow: 2 }],
+  ["08E377", { choices: 2, firstRow: 2 }],
+  ["08EB2F", { choices: 2, firstRow: 2 }],
+  ["08ECFB", { choices: 2, firstRow: 2 }],
+  ["09939C", { choices: 2, firstRow: 2 }],
+  ["099A99", { choices: 2, firstRow: 2 }],
+  ["09CD57", { choices: 2, firstRow: 2 }],
+  ["09DFC7", { choices: 2, firstRow: 2 }],
+  ["0A86A1", { choices: 2, firstRow: 2 }],
+  ["0A8CD9", { choices: 2, firstRow: 2 }],
+  ["0A8D3A", { choices: 4, firstRow: 0 }],
+  ["0AB45F", { choices: 2, firstRow: 2 }],
+  ["0AB5F0", { choices: 2, firstRow: 2 }],
+  ["0AC344", { choices: 2, firstRow: 2 }],
+  ["0ACF7C", { choices: 2, firstRow: 2 }],
+  ["0AE67C", { choices: 2, firstRow: 2 }],
+  ["0AE70D", { choices: 2, firstRow: 2 }],
+  ["0AEB15", { choices: 2, firstRow: 2 }],
+  ["0AED71", { choices: 4, firstRow: 2 }],
+  ["0AEDF7", { choices: 2, firstRow: 2 }],
+  ["1584CB", { choices: 2, firstRow: 1 }],
+  ["158896", { choices: 2, firstRow: 2 }],
+  ["159085", { choices: 4, firstRow: 0 }],
+  ["15943D", { choices: 2, firstRow: 2 }],
+  ["1599F8", { choices: 3, firstRow: 1 }],
 ]);
-const FIXED_CHOICE_ROWS = new Map([
-  ["079056", { choices: 2, firstRow: 2, description: "post-Surprise Horn choice" }],
-  ["1584CB", { choices: 2, firstRow: 1, description: "first transceiver save choice" }],
+const INLINE_DIALOG_CHOICE_LINES = new Map([
+  ["01D440", { row: 2, text: " Make it    Never mind" }],
+  ["01D5CC", { row: 2, text: " Cancel       Combine" }],
+  ["01D650", { row: 2, text: " Cancel       Recycle" }],
+  ["01D6A2", { row: 2, text: " Build it    Never mind" }],
+  ["01D72B", { row: 2, text: " Yes         Never mind" }],
+  ["01D869", { row: 0, text: " Register     Delete" }],
 ]);
 const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
   ["01FC95", { columns: 8, description: "Invention Machine option" }],
@@ -58,13 +139,15 @@ const CONSOLE_LABEL_RANGES = [
     start: 0x01fa0c,
     end: 0x01fc8c,
     columns: 9,
+    textColumns: 8,
     description: "item name",
   },
   {
     start: 0x01fddb,
     end: 0x01ffac,
     columns: 23,
-    description: "battle target name",
+    textColumns: 9,
+    description: "enemy name",
   },
 ];
 const errors = [];
@@ -85,12 +168,20 @@ for (const filename of files) {
       errors.push(`${location}: location banner must provide 28 English columns`);
     }
     if (entry.kind === "dialog") {
+      validateDialogLabel(entry, location);
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
-      validateSingleLineChoices(entry, location);
-      validateFixedChoiceRows(entry, location);
+      validateDialogChoices(entry, location);
+      validateInlineDialogChoices(entry, location);
       validateLocationLabel(entry, location);
     }
-    if (entry.kind === "console") validateConsoleLayout(entry, location);
+    if (entry.kind === "console") {
+      if (typeof entry.literal !== "string") {
+        errors.push(`${location}: missing literal translation`);
+      } else if (JAPANESE.test(entry.literal)) {
+        errors.push(`${location}: Japanese remains in literal translation`);
+      }
+      validateConsoleLayout(entry, location);
+    }
   }
 }
 
@@ -106,6 +197,19 @@ function inferredLayout(entry) {
   const offset = Number.parseInt(entry.offset, 16);
   if (offset >= LOCATION_LABEL_START && offset <= LOCATION_LABEL_END) return LOCATION_LABEL_LAYOUT;
   return undefined;
+}
+
+function validateDialogLabel(entry, location) {
+  const offset = Number.parseInt(entry.offset, 16);
+  const layout = DIALOG_LABEL_RANGES.find(({ start, end }) => offset >= start && offset <= end);
+  if (!layout) return;
+
+  const width = dialogTextWidth(entry.translation);
+  if (width > layout.columns) {
+    errors.push(
+      `${location}: ${layout.description} requires ${width} columns; maximum is ${layout.columns}`,
+    );
+  }
 }
 
 function validateLocationLabel(entry, location) {
@@ -214,6 +318,12 @@ function validateConsoleEquipmentIcons(entry, location) {
     }
   }
 
+  for (const match of entry.translation.matchAll(/\[ELBL:([^\]]*)\]/g)) {
+    if (!match[1]) {
+      errors.push(`${location}: equipment label lookup needs an item selector`);
+    }
+  }
+
   const itemCallPattern = new RegExp(`\\[TBL:${EQUIPMENT_NAME_TABLE},([^\\]]+)\\]`, "g");
   for (const match of entry.translation.matchAll(itemCallPattern)) {
     const selector = match[1];
@@ -240,11 +350,14 @@ function validateConsoleLabel(entry, location) {
   if (!layout) return;
 
   const reservedIconColumns = EQUIPMENT_ICON_BY_OFFSET.has(entry.offset) ? 1 : 0;
-  const availableColumns = layout.columns - reservedIconColumns;
+  const availableColumns = Math.min(
+    layout.columns - reservedIconColumns,
+    layout.textColumns ?? Number.POSITIVE_INFINITY,
+  );
   const width = visibleText(entry.translation).length;
   if (width > availableColumns) {
     errors.push(
-      `${location}: ${layout.description} requires ${width + reservedIconColumns} columns in its ${layout.columns}-column layout`,
+      `${location}: ${layout.description} requires ${width} text columns; maximum is ${availableColumns}`,
     );
   }
 }
@@ -282,7 +395,7 @@ function validateConsoleBoxLayout(text, location) {
       reported = false;
       continue;
     }
-    if (["TBL", "STR", "FIL"].includes(atom.name)) {
+    if (["TBL", "STR", "FIL", "ELBL"].includes(atom.name)) {
       // These commands render runtime-selected strings. Their source tables
       // have separate fixed-width validation where the possible values are known.
       column = null;
@@ -293,16 +406,25 @@ function validateConsoleBoxLayout(text, location) {
   finishLine();
 }
 
-function validateSingleLineChoices(entry, location) {
-  const expectedChoices = SINGLE_LINE_CHOICE_LAYOUTS.get(entry.offset);
-  if (!expectedChoices) return;
+function validateDialogChoices(entry, location) {
+  const layout = DIALOG_CHOICE_LAYOUTS.get(entry.offset);
+  if (!layout) return;
 
-  const lines = entry.translation.split(/\[(?:N|FIN)\]/).slice(-expectedChoices);
-  if (lines.length !== expectedChoices || lines.some((line) => !leadingText(line).startsWith(" "))) {
-    errors.push(`${location}: each of the ${expectedChoices} choices must occupy one indented line`);
+  const page = finalDialogPage(entry.translation);
+  const lines = page.split("[N]");
+  const choiceLines = lines.slice(-layout.choices);
+  const firstRow = renderedFinalRow(page, entry.layout ?? inferredLayout(entry)) - layout.choices + 1;
+  if (
+    choiceLines.length !== layout.choices
+    || choiceLines.some((line) => !leadingText(line).startsWith(" "))
+    || firstRow !== layout.firstRow
+  ) {
+    errors.push(
+      `${location}: ${layout.choices} choices must occupy separate indented lines beginning on cursor row ${layout.firstRow}`,
+    );
     return;
   }
-  for (const line of lines) {
+  for (const line of choiceLines) {
     const width = dialogTextWidth(line);
     if (width > 26) {
       errors.push(`${location}: choice requires ${width} columns in a 26-column dialogue box`);
@@ -310,23 +432,54 @@ function validateSingleLineChoices(entry, location) {
   }
 }
 
-function validateFixedChoiceRows(entry, location) {
-  const layout = FIXED_CHOICE_ROWS.get(entry.offset);
+function validateInlineDialogChoices(entry, location) {
+  const layout = INLINE_DIALOG_CHOICE_LINES.get(entry.offset);
   if (!layout) return;
 
-  const finalPage = entry.translation.slice(entry.translation.lastIndexOf("[FIN]") + 5);
-  const lines = finalPage.split("[N]");
-  const choiceLines = lines.slice(-layout.choices);
-  const firstRow = lines.length - layout.choices;
-  if (
-    choiceLines.length !== layout.choices
-    || choiceLines.some((line) => !leadingText(line).startsWith(" "))
-    || firstRow !== layout.firstRow
-  ) {
+  const page = finalDialogPage(entry.translation);
+  const line = page.split("[N]").at(-1);
+  const row = renderedFinalRow(page, entry.layout ?? inferredLayout(entry));
+  if (leadingText(line) !== layout.text || row !== layout.row) {
     errors.push(
-      `${location}: ${layout.description} choices must begin on row ${layout.firstRow}`,
+      `${location}: inline choices must remain at their fixed columns on cursor row ${layout.row}`,
     );
   }
+}
+
+function finalDialogPage(text) {
+  const marker = "[FIN]";
+  const index = text.lastIndexOf(marker);
+  return index === -1 ? text : text.slice(index + marker.length);
+}
+
+function renderedFinalRow(text, inheritedLayout) {
+  let rows = inheritedLayout?.rows ?? 4;
+  let row = 0;
+  const advance = () => {
+    row = Math.min(row + 1, rows - 1);
+  };
+
+  for (const atom of tokenize(text)) {
+    if (atom.type === "character") continue;
+    if (atom.name === "BOX") {
+      rows = Number.parseInt(atom.args[1], 16);
+      row = 0;
+      continue;
+    }
+    if (["DEF", "DF2", "DFT"].includes(atom.name)) {
+      rows = 4;
+      row = 0;
+      continue;
+    }
+    if (["CLR", "PGE", "FIN"].includes(atom.name)) {
+      row = 0;
+      continue;
+    }
+    if (atom.name === "N" || (atom.name === "TPL" && isSpeakerTemplate(atom.args[0]))) {
+      advance();
+    }
+  }
+  return row;
 }
 
 function visibleText(text) {

@@ -39,13 +39,13 @@
     "offset": "01CFE1",
     "kind": "dialog",
     "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N]ボーナスデータ[DEC:1,4,5D2]メガ[N]合計[::][DEC:1,4,5D0]メガのデータを集めた[FIN]",
-    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] M in bonus data,[N][DEC:1,4,5D0] M in all.[FIN]"
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] MB bonus data,[N][DEC:1,4,5D0] MB total.[FIN]"
   },
   {
     "offset": "01D01B",
     "kind": "dialog",
     "source": "[POS:2,13][BOX:E,3,0][NAM:0]たちは[N][JMP:&string_01CFE1+M]",
-    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] M in bonus data,[N][DEC:1,4,5D0] M in all.[FIN]"
+    "translation": "[POS:2,13][BOX:E,3,0][NAM:0]'s team collected[N][DEC:1,4,5D2] MB bonus data,[N][DEC:1,4,5D0] MB total.[FIN]"
   },
   {
     "offset": "01D02B",
@@ -81,13 +81,13 @@
     "offset": "01D098",
     "kind": "dialog",
     "source": "ボーナスデータを0.5メガ集めた",
-    "translation": "Got 0.5 M bonus data!"
+    "translation": "Got 0.5 MB bonus data!"
   },
   {
     "offset": "01D0B0",
     "kind": "dialog",
     "source": "ボーナスデータを1.0メガ集めた",
-    "translation": "Got 1.0 M bonus data!"
+    "translation": "Got 1.0 MB bonus data!"
   },
   {
     "offset": "01D0C8",
@@ -99,7 +99,7 @@
     "offset": "01D0D7",
     "kind": "dialog",
     "source": "裝備のレベルがあがった",
-    "translation": "Equipment level increased!"
+    "translation": "Equipment leveled up!"
   },
   {
     "offset": "01D0E7",
@@ -123,7 +123,8 @@
     "offset": "01D122",
     "kind": "dialog",
     "source": "[CLR]これは[N][TBL:&string_list_01DB1F,0B80]だよ[FIN][NUM:4,B82]トロンだけど買うかい?[N] 買う[N] やめておく",
-    "translation": "[CLR]This is [TBL:&string_list_01DB1F,0B80].[FIN]It costs [NUM:4,B82] tron. Buy[N]it?[N] Buy[N] Never mind"
+    "translation": "[CLR][TBL:&string_list_01DB1F,0B80][FIN]Buy for [NUM:4,B82] tron?[N] Buy[N] Never mind",
+    "reflow": false
   },
   {
     "offset": "01D14E",
@@ -207,7 +208,7 @@
     "offset": "01D2DE",
     "kind": "dialog",
     "source": "[CLR]アイテムの空きをつめますか?[N] 空きをつめる[N] やめておく",
-    "translation": "[CLR]Remove gaps in the item[N]list?[N] Remove gaps[N] Never mind"
+    "translation": "[CLR]Close gaps in item list?[N] Close gaps[N] Never mind"
   },
   {
     "offset": "01D301",
@@ -219,7 +220,7 @@
     "offset": "01D327",
     "kind": "dialog",
     "source": "[POS:3,1B][BOX:D,1,0][DLY:1]技は戦闘中のRUNで実行します˳",
-    "translation": "[POS:3,1B][BOX:D,1,0][DLY:1]RUN can trigger combos."
+    "translation": "[POS:3,1B][BOX:D,1,0][DLY:1]EXECUTE triggers combos."
   },
   {
     "offset": "01D347",
@@ -1157,7 +1158,7 @@
     "offset": "01E547",
     "kind": "dialog",
     "source": "びっくりホーン",
-    "translation": "Surprise Horn"
+    "translation": "Surp. Horn"
   },
   {
     "offset": "01E551",
@@ -1181,7 +1182,7 @@
     "offset": "01E568",
     "kind": "dialog",
     "source": "カメレオングラス",
-    "translation": "Chameleon Glasses"
+    "translation": "Cham. Lens"
   },
   {
     "offset": "01E573",
@@ -1193,7 +1194,7 @@
     "offset": "01E578",
     "kind": "dialog",
     "source": "おてつだいロボ",
-    "translation": "Helper Robot"
+    "translation": "Helper Bot"
   },
   {
     "offset": "01E582",
@@ -1205,7 +1206,7 @@
     "offset": "01E588",
     "kind": "dialog",
     "source": "花のたね",
-    "translation": "Flower Seeds"
+    "translation": "Flower Seed"
   },
   {
     "offset": "01E58E",
@@ -1229,7 +1230,7 @@
     "offset": "01E5A5",
     "kind": "dialog",
     "source": "だべっこどうぶつ",
-    "translation": "Animal Chatter"
+    "translation": "Animal Talk"
   },
   {
     "offset": "01E5AE",
@@ -1271,19 +1272,19 @@
     "offset": "01E5DA",
     "kind": "dialog",
     "source": "せきばん",
-    "translation": "Stone Tablet"
+    "translation": "Stone Slab"
   },
   {
     "offset": "01E5DF",
     "kind": "dialog",
     "source": "かんぶバッチ",
-    "translation": "Officer Badge"
+    "translation": "Officer ID"
   },
   {
     "offset": "01E5E8",
     "kind": "dialog",
     "source": "ハッカーバッチ",
-    "translation": "Hacker Badge"
+    "translation": "Hacker ID"
   },
   {
     "offset": "01E5F2",
@@ -1409,7 +1410,7 @@
     "offset": "01E68C",
     "kind": "dialog",
     "source": "さびトレール",
-    "translation": "Rust Remover"
+    "translation": "Rust-Off"
   },
   {
     "offset": "01E695",
@@ -1427,7 +1428,7 @@
     "offset": "01E6A8",
     "kind": "dialog",
     "source": "おてんきママさん",
-    "translation": "Weather Mama"
+    "translation": "Wthr. Mama"
   },
   {
     "offset": "01E6C7",

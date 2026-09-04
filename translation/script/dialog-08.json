@@ -525,7 +525,7 @@
     "offset": "08ACB7",
     "kind": "dialog",
     "source": "[DEF]私の名前は[PAL:2]ドクターG[N][PAL:0]天才電算科学者であーる[N]このハッカーのコンピューターも[N]すべて私が設計したものであーる[FIN]私の 新しい発明の話を[N]聞きたいだろう?[N] 聞かせてください[N] 別に 聞きたくないや",
-    "translation": "[DEF]My name is [PAL:2]Doctor G[PAL:0],[N]genius computer scientist![N]I designed every computer[N]used by the Hackers![FIN]You want to hear about my[N]new invention, yes?[FIN] Please tell me[N] Not particularly"
+    "translation": "[DEF]My name is [PAL:2]Doctor G[PAL:0],[N]genius computer scientist![N]I designed every computer[N]used by the Hackers![FIN]You want to hear about my[N]new invention, yes?[N] Please tell me[N] Not particularly"
   },
   {
     "offset": "08AD3E",
@@ -651,7 +651,8 @@
     "offset": "08B515",
     "kind": "dialog",
     "source": "[DEF]あ·あのぉ···[N][PAU:1E]ど·ドクターGは[N]ああ 言ってますけど[N]さっきさしあげた [PAL:3]私の[PAL:0]お金を[FIN]返してくれたら あの男のことを[N]私が 教えてもいいんですよ[N] お返ししましょう[N] もらった金は 返さないよ",
-    "translation": "[DEF]U-um... [PAU:1E]Doctor G says all[N]that, but if you return [PAL:3]my[PAL:0][N]money we gave you earlier,[N]I'll tell you about that[FIN]man.[N] I'll return it[N] Finders keepers"
+    "translation": "[DEF]U-um... [PAU:1E]Doctor G says all[N]that, but if you return [PAL:3]my[PAL:0][N]money we gave you earlier,[FIN]I'll tell you about that[N]man.[N] I'll return it[N] Finders keepers",
+    "reflow": false
   },
   {
     "offset": "08B58A",
@@ -879,13 +880,14 @@
     "offset": "08C7A4",
     "kind": "dialog",
     "source": "[CLR]な·なにが ほしいんだ?[N]無事に出たら 考えるぞ![N] きおくを失った男のこと[N] お金がほしい",
-    "translation": "[CLR]Wh-what do you want? I'll[N]consider it once we're[N]safe![FIN] Ask about the amnesiac[N] Ask for money"
+    "translation": "[CLR]What do you want?[N]I'll decide once safe.[N] Ask about the amnesiac[N] Ask for money",
+    "reflow": false
   },
   {
     "offset": "08C7DB",
     "kind": "dialog",
     "source": "[CLR]そう言わず![N]そこを なんとか···[N][STR:@string_08C886]",
-    "translation": "[CLR]Don't say that! Please,[N]find it in your heart...[FIN] I might consider it[N] Absolutely not"
+    "translation": "[CLR]Don't say that! Please,[N]find it in your heart...[N] I might consider it[N] Absolutely not"
   },
   {
     "offset": "08C7F5",
@@ -957,7 +959,7 @@
     "offset": "08D143",
     "kind": "dialog",
     "source": "[DEF][TPL:15][NAM:0]樣も[N]ひとつ お引きください[FIN]ふたつしか残っておりませんが···[N]右と左 どちらがよろしいですか?[N] 右をひく[N] 左をひく",
-    "translation": "[DEF][TPL:15][NAM:0], please draw one[N]too.[FIN]Only two remain... Would[N]you prefer right or left?[FIN] Draw from the right[N] Draw from the left"
+    "translation": "[DEF][TPL:15][NAM:0], please draw one[N]too.[FIN]Only two remain... Would[N]you prefer right or left?[N] Draw from the right[N] Draw from the left"
   },
   {
     "offset": "08D18D",
@@ -1047,7 +1049,7 @@
     "offset": "08D99F",
     "kind": "dialog",
     "source": "[DEF]用意は ととのいましたか?[N]よろしければ ご案内しますが··· ばっちりさ[N] まだまだ",
-    "translation": "[DEF]Are your preparations[N]complete? I can guide you[N]now if you wish.[FIN] All set[N] Not yet"
+    "translation": "[DEF]Are you ready to go?[N] All set[N] Not yet"
   },
   {
     "offset": "08D9D0",
@@ -1197,7 +1199,7 @@
     "offset": "08E0C3",
     "kind": "dialog",
     "source": "[DEF]いい所に いらっしゃいました[N]たった今 秘密兵器が[N]完成した ところですよ[FIN]これは 宇宙要塞のエネルギーろを[N]停止させてしまうものです[N]仮に[PAL:2]ポット[PAL:0]と よんでおきましょう[FIN]あの 映像にありました[N]エンジンルームの中にある[N][PAL:2]3つのエネルギーろに それぞれ[N]1つずつポットをしかける[PAL:0]のです[FIN]これを [PAL:2]赤·黄·青の順で[N][PAL:0]セットすれば 要塞のエンジンの[N]動きを止められるはずです[FIN]···そこで [NAM:0]樣に[N]おねがいがあるのです[N][PAU:1E]実は ショコラ星には もう[N]宇宙船を作る 資材がないのです[FIN][NAM:0]樣は 宇宙船を[N]お持ちだと 聞いております[N]それに 一度要塞の内部にも[N]入っていらっしゃる[FIN]このポットをしかけるため もう一度[N]要塞へ 行っていただけないですか?[N] おやすいご用です[N] もう やだ!",
-    "translation": "[DEF]Your timing is perfect.[N]Our secret weapon has just[N]been completed.[FIN]These devices can shut[N]down the fortress's energy[N]furnaces.[FIN]For now, we call them[N][PAL:2]Pots[PAL:0].[FIN]Place one Pot in each of[N]the [PAL:2]three energy furnaces[PAL:0][N]shown inside the engine[N]room.[FIN]Set them in [PAL:2]red, yellow,[N]blue order[PAL:0] to stop the[N]fortress engine.[FIN]...[NAM:0], we have a[N]request. [PAU:1E]Planet Chocolat[N]lacks materials to build[N]another spaceship.[FIN]We hear you own a ship and[N]have already entered the[N]fortress once before.[FIN]Will you return to the[N]fortress and place these[N]Pots?[FIN] Gladly[N] Never again!"
+    "translation": "[DEF]Your timing is perfect.[N]Our secret weapon has just[N]been completed.[FIN]These devices can shut[N]down the fortress's energy[N]furnaces.[FIN]For now, we call them[N][PAL:2]Pots[PAL:0].[FIN]Place one Pot in each of[N]the [PAL:2]three energy furnaces[PAL:0][N]shown inside the engine[N]room.[FIN]Set them in [PAL:2]red, yellow,[N]blue order[PAL:0] to stop the[N]fortress engine.[FIN]...[NAM:0], we have a[N]request. [PAU:1E]Planet Chocolat[N]lacks materials to build[N]another spaceship.[FIN]We hear you own a ship and[N]have already entered the[N]fortress once before.[FIN]Will you return and place[N]the Pots in the fortress?[N] Gladly[N] Never again!"
   },
   {
     "offset": "08E26D",
@@ -1335,7 +1337,7 @@
     "offset": "08EB2F",
     "kind": "dialog",
     "source": "[DEF][NAM:0]樣 [PAU:1E]早速ですが[N][TPL:0]をおあずかりして[N]よろしいですか?[FIN]この[TPL:0]は[N]時の流れをうつしだすことのできる[N]発明品だと 聞いています[FIN]この[TPL:0]から あの要塞の[N]弱点を うつしだし[N]あれに 対こうできるものを[N]発明することができるはずです[FIN][N] [NAM:0]は[N][PAL:2] 石1[PAL:0]を わたした[FIN][N] [NAM:0]は[N][PAL:2] 石2[PAL:0]を わたした[FIN][N] [NAM:0]は[N][PAL:2] 石3[PAL:0]を わたした[FIN]···おや?[N][PAU:1E]かわったものを おもちですね[N]その[PAL:2]スクラップA[PAL:0]ですよ[N][TPL:1A]の スクラップですね[FIN]私は ロボットの研究もしてましてね[N]参考に 見せていただけませんか?[N] ちょっとだけだよ[N] ······やだ",
-    "translation": "[DEF][NAM:0], may we take [TPL:0][N]now?[FIN]I am told this invention[N]can reveal the flow of[N]time.[FIN]It should show us a[N]weakness in that fortress,[N]allowing us to invent a[N]way to oppose it.[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 1[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 2[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 3[PAL:0].[FIN]...Oh? [PAU:1E]You carry something[N]unusual. That [PAL:2]Scrap A[PAL:0].[FIN]It came from a [TPL:1A], yes?[FIN]I also study robots. May I[N]examine it for reference?[FIN] Just for a little while[N] ......No"
+    "translation": "[DEF][NAM:0], may we take [TPL:0][N]now?[FIN]I am told this invention[N]can reveal the flow of[N]time.[FIN]It should show us a[N]weakness in that fortress,[N]allowing us to invent a[N]way to oppose it.[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 1[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 2[PAL:0].[FIN][N] [NAM:0] handed over[N][PAL:2] Stone 3[PAL:0].[FIN]...Oh? [PAU:1E]You carry something[N]unusual. That [PAL:2]Scrap A[PAL:0].[FIN]It came from a [TPL:1A], yes?[FIN]I also study robots. May I[N]examine it for reference?[N] Just for a little while[N] ......No"
   },
   {
     "offset": "08EC6F",
@@ -1347,7 +1349,7 @@
     "offset": "08ECFB",
     "kind": "dialog",
     "source": "[CLR]そういわれると ますます[N]見たくなるなあ おねがいしますよ![N] ちょっとだけだよ[N] ······やだ",
-    "translation": "[CLR]Now you make me want to[N]see it more! Please[N]reconsider![FIN] Just for a little while[N] ......No"
+    "translation": "[CLR]Now I want to see it even[N]more! Please reconsider![N] Just for a little while[N] ......No"
   },
   {
     "offset": "08ED30",

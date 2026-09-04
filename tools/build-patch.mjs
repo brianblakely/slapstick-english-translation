@@ -22,6 +22,13 @@ const HEADER_OFFSET = 0xffc0;
 // WRAM/I/O mirrors required by the stock text interpreters. Banks D8-DF expose
 // ROM in their lower halves and therefore cannot safely serve as the data bank.
 const EXPANSION_START = 0x188400;
+const CONSOLE_EQUIPMENT_LABEL_TABLE = Object.freeze({
+  pcOffset: 0x1f8000,
+  snesAddress: 0x9f8000,
+  entryCount: 0x100,
+  slotLength: 0x400,
+  nameColumns: 8,
+});
 const DIALOG_REDIRECT = 0xcf;
 const CONSOLE_REDIRECT = 0x0c;
 const DIALOG_JUMP = 0xd3;
@@ -45,10 +52,18 @@ const INLINE_CONSOLE_OFFSETS = new Set([
   0x01eb23, // main-menu robot 1 row, nested through STR
   0x01eb52, // main-menu robot 2 row, nested through STR
   0x01eb81, // main-menu robot 3 row, nested through STR
+  0x01f109, // robot 1 equipment summary, nested through STR
+  0x01f150, // robot 2 equipment summary, nested through STR
+  0x01f197, // robot 3 equipment summary, nested through STR
+  0x01f277, // shared robot stat panel, nested through STR
+  0x01f2ac, // shared combo panel, nested through STR
   0x01f2c7, // robot 1 point-allocation values
   0x01f300, // robot 2 point-allocation values
   0x01f339, // robot 3 point-allocation values
   0x01f372, // robot point-allocation panel, nested through STR
+  0x01f3e7, // robot 1 combo panel, nested through STR
+  0x01f422, // robot 2 combo panel, nested through STR
+  0x01f45d, // robot 3 combo panel, nested through STR
   0x01f498, // robot Program panel, nested through STR
 ]);
 let crcTable = null;
@@ -356,9 +371,11 @@ installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
 installConsoleEquipmentIcons(targetRom);
 installConsoleEquipmentIconTable(targetRom);
+installConsoleEquipmentLabelTable(targetRom);
 installInterpreterHooks(targetRom);
 installConsoleSelectorMirrors(targetRom);
 installRuntimeDefaults(targetRom);
+installMenuLayoutFixes(targetRom);
 writeHeader(targetRom);
 
 const targetHash = sha256(targetRom);
@@ -508,14 +525,25 @@ function largestSafeDialogPrefix(bytes, start, maximum) {
 
 function placeWithoutCrossingBank(cursor, size) {
   if (size > 0x8000) throw new Error(`A relocated string exceeds one mirrored HiROM half-bank (${size} bytes)`);
-  if ((cursor & 0xffff) < 0x8000) cursor = (cursor & ~0xffff) + 0x8000;
-  const bankStart = cursor & ~0xffff;
-  const start = cursor & 0xffff;
-  if (start < CONSOLE_SELECTOR_END && start + size > CONSOLE_SELECTOR_START) {
-    cursor = bankStart + CONSOLE_SELECTOR_END;
+  const labelTableEnd = CONSOLE_EQUIPMENT_LABEL_TABLE.pcOffset
+    + CONSOLE_EQUIPMENT_LABEL_TABLE.slotLength;
+  while (true) {
+    if ((cursor & 0xffff) < 0x8000) cursor = (cursor & ~0xffff) + 0x8000;
+    const bankStart = cursor & ~0xffff;
+    const start = cursor & 0xffff;
+    if (start < CONSOLE_SELECTOR_END && start + size > CONSOLE_SELECTOR_START) {
+      cursor = bankStart + CONSOLE_SELECTOR_END;
+    }
+    if (
+      cursor < labelTableEnd
+      && cursor + size > CONSOLE_EQUIPMENT_LABEL_TABLE.pcOffset
+    ) {
+      cursor = labelTableEnd;
+    }
+    const remaining = 0x10000 - (cursor & 0xffff);
+    if (size <= remaining) return cursor;
+    cursor = ((cursor + 0x10000) & ~0xffff) + 0x8000;
   }
-  const remaining = 0x10000 - (cursor & 0xffff);
-  return size <= remaining ? cursor : ((cursor + 0x10000) & ~0xffff) + 0x8000;
 }
 
 function romPointer(offset) {
@@ -685,6 +713,16 @@ function encodeConsole(source) {
       }
       output.push(CONSOLE_COMMANDS.TBL[0]);
       pushAddress(output, CONSOLE_EQUIPMENT_ICON_TABLE.snesAddress);
+      pushWord(output, parseValue(part.args[0]));
+      endedByHalt = false;
+      continue;
+    }
+    if (part.name === "ELBL") {
+      if (part.args.length !== 1) {
+        throw new Error(`Expected one equipment selector for [${part.value}]`);
+      }
+      output.push(CONSOLE_COMMANDS.TBL[0]);
+      pushAddress(output, CONSOLE_EQUIPMENT_LABEL_TABLE.snesAddress);
       pushWord(output, parseValue(part.args[0]));
       endedByHalt = false;
       continue;
@@ -1009,6 +1047,58 @@ function installConsoleEquipmentIconTable(rom) {
   table.copy(rom, pcOffset);
 }
 
+function installConsoleEquipmentLabelTable(rom) {
+  const {
+    pcOffset,
+    snesAddress,
+    entryCount,
+    slotLength,
+    nameColumns,
+  } = CONSOLE_EQUIPMENT_LABEL_TABLE;
+  const table = Buffer.alloc(slotLength);
+  const pointerBytes = entryCount * 2;
+  const tableAddress = snesAddress & 0xffff;
+  const emptyStringAddress = tableAddress + pointerBytes;
+
+  for (let itemId = 0; itemId < entryCount; itemId += 1) {
+    table.writeUInt16LE(emptyStringAddress, itemId * 2);
+  }
+
+  const entriesByOffset = new Map(entries.map((entry) => [entry.offset, entry]));
+  const labels = [["01F8A9", null], ...EQUIPMENT_ICON_BY_OFFSET.entries()];
+  let cursor = pointerBytes + 1;
+
+  for (const [itemId, [offset, family]] of labels.entries()) {
+    const entry = entriesByOffset.get(offset);
+    if (!entry) throw new Error(`Missing equipment label ${offset}`);
+    const name = entry.translation.trim();
+    if (!name || name.includes("[") || name.length > nameColumns) {
+      throw new Error(
+        `Equipment label ${offset} must be one to ${nameColumns} literal console characters`,
+      );
+    }
+    const label = family === null
+      ? ` ${name.padEnd(nameColumns)}`
+      : `[ICON:${family}]${name.padEnd(nameColumns)}`;
+    const bytes = encodeConsole(label);
+    if (bytes.length !== nameColumns + 2) {
+      throw new Error(`Equipment label ${offset} does not occupy its fixed-width row`);
+    }
+    if (cursor + bytes.length > slotLength) {
+      throw new Error("Console equipment label table exceeds its reserved slot");
+    }
+    table.writeUInt16LE(tableAddress + cursor, itemId * 2);
+    bytes.copy(table, cursor);
+    cursor += bytes.length;
+  }
+
+  const end = pcOffset + slotLength;
+  if (!rom.subarray(pcOffset, end).every((byte) => byte === 0xff)) {
+    throw new Error("Console equipment label table does not occupy free expanded ROM");
+  }
+  table.copy(rom, pcOffset);
+}
+
 function createConsoleEquipmentIconTile(name, pixels) {
   if (
     !Array.isArray(pixels)
@@ -1257,6 +1347,17 @@ function installRuntimeDefaults(rom) {
     }
     rom.writeUInt16LE(replacement, offset);
   }
+}
+
+function installMenuLayoutFixes(rom) {
+  // The stock equipped-item graphic begins where the longer English
+  // "EQUIPPED" caption is still being drawn. Move that 16x16 graphic six
+  // console cells to the right, into the gap before the item description.
+  const equippedItemXOperand = 0x0bc2a1;
+  if (sourceRom.readUInt16LE(equippedItemXOperand) !== 0x0008) {
+    throw new Error("Unexpected equipped-item X-position operand");
+  }
+  rom.writeUInt16LE(0x0038, equippedItemXOperand);
 }
 
 function installConsoleSelectorMirrors(rom) {

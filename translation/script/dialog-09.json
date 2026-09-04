@@ -214,7 +214,7 @@
     "offset": "09939C",
     "kind": "dialog",
     "source": "[DEF]ねっ![PAU:A]ねっ![PAU:A]ねっ![N]今の話 聞いてた!?[N]だれかに 話すつもり!?[N] それは ひみつです[N] 話したりしないよ",
-    "translation": "[DEF]Hey![PAU:A] Hey![PAU:A] Hey! You heard[N]that, didn't you?! Are you[N]going to tell someone?[FIN] That's our secret[N] I won't tell anyone"
+    "translation": "[DEF]Hey![PAU:A] You heard that! Are[N]you going to tell someone?[N] That's our secret[N] I won't tell anyone"
   },
   {
     "offset": "0993DD",
@@ -322,7 +322,7 @@
     "offset": "099A99",
     "kind": "dialog",
     "source": "[DEF]おおっ!いい所に人が来たぜ![N]お前さん 今ヒマかい?[N] はい ヒマでーす[N] 今 いそがしいでーす",
-    "translation": "[DEF]Oh! Someone came at the[N]right time! Are you free[N]right now?[FIN] Yes, I'm free[N] No, I'm busy"
+    "translation": "[DEF]Oh! Perfect timing! Are[N]you free right now?[N] Yes, I'm free[N] No, I'm busy"
   },
   {
     "offset": "099AD9",
@@ -1102,7 +1102,7 @@
     "offset": "09DFC7",
     "kind": "dialog",
     "source": "[DEF][TPL:C]ワタシに かまうことはない[N]キズをいやすことができなければ[N]動くこともできぬ 鉄クズ同然だ[FIN]それに あるじに裹切られた今[N]動く気力も うせた˳[N] なおしてあげるよ[N] それもそうだね かわいそうに",
-    "translation": "[DEF][TPL:C]Do not concern yourself[N]with me. Unless I can[N]repair my damage, I cannot[FIN]move. I am mere scrap.[FIN]And now that my master[N]betrayed me, I have lost[N]the will to move.[FIN] I'll repair you[N] You're right. How sad"
+    "translation": "[DEF][TPL:C]Do not concern yourself[N]with me. Unless I can[N]repair my damage, I cannot[FIN]move. I am mere scrap.[FIN]My master betrayed me, and[N]I've lost the will to move[N] I'll repair you[N] You're right. How sad"
   },
   {
     "offset": "09E03C",

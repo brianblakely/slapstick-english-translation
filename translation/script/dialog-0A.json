@@ -75,7 +75,7 @@
     "offset": "0A86A1",
     "kind": "dialog",
     "source": "[DEF]···[PAU:14]あなたが 持ってるの[N][PAL:2]花のたね[PAL:0]じゃない?[N]あたしね この町にお花をたくさん[N]うえたいのよ![FIN]ねえねえ[N][PAU:14]それ あたしにくれない?[N] いいよ あげるよ[N] そうはいかないなあ",
-    "translation": "[DEF]...[PAU:14]Are those [PAL:2]flower seeds[PAL:0][N]you're carrying? I want to[N]plant lots of flowers[N]around town![FIN]Will you give them to me?[N] Sure, they're yours[N] Not a chance"
+    "translation": "[DEF]...[PAU:14]Are those [PAL:2]flower seeds[PAL:0][N]you're carrying? I want to[N]plant lots of flowers[N]around town![FIN]Will you give the flower[N]seeds to me?[N] Sure, they're yours[N] Not a chance"
   },
   {
     "offset": "0A8706",
@@ -189,7 +189,7 @@
     "offset": "0A8CD9",
     "kind": "dialog",
     "source": "[DEF]この土地にも ようやく[N]町長會がつくられ[N]町として 動きだそうとしています[FIN]あなたも 新しい町づくりのため[N]ボ金をされませんか?[N] はい よろこんで[N] かんけいないね",
-    "translation": "[DEF]At last, Mayor Manor is[N]being built, and our[N]settlement is beginning to[N]function as a town.[FIN]Will you donate to help[N]build our new town?[FIN] Yes, gladly[N] Nothing to do with me"
+    "translation": "[DEF]At last, Mayor Manor is[N]being built, and our[N]settlement is beginning to[N]function as a town.[FIN]Will you donate to help[N]build our new town?[N] Yes, gladly[N] Nothing to do with me"
   },
   {
     "offset": "0A8D3A",
@@ -825,7 +825,7 @@
     "offset": "0AB45F",
     "kind": "dialog",
     "source": "[DEF]なんだい?[PAU:1E]店はまだ開けられないよ[N]開店準備金が 底をついちまってねえ[N][PAU:1E]やれやれ 町長會の完成には[N]まにあわせたかったんだけどな[FIN]だれか 気前のいい人が[N][PAL:2]5000トロン[PAL:0]ぐらい[N]貸してくれねえかなあ[N][PAU:1E]世の中 そんなにあまくねえよなあ[FIN]どうだい にいちゃん[N]あんたが 貸してくれるかい?[N] どんと お貸ししましょう[N] やなこったい",
-    "translation": "[DEF]Sorry, the shop isn't open[N]yet. I've run out of[N]startup money.[FIN][PAU:1E]I hoped to open in time[N]for the mayor's big event.[FIN]If only some generous soul[N]would lend me around [PAL:2]5,000[N]tron[PAL:0]... [PAU:1E]But life isn't[N]that easy.[FIN]How about it, pal? Will[N]you lend me the money?[FIN] Gladly. Here you go.[N] Not a chance."
+    "translation": "[DEF]Sorry, the shop isn't open[N]yet. I've run out of[N]startup money.[FIN][PAU:1E]I hoped to open in time[N]for the mayor's big event.[FIN]If only some generous soul[N]would lend me around [PAL:2]5,000[N]tron[PAL:0]... [PAU:1E]But life isn't[N]that easy.[FIN]How about it, pal? Will[N]you lend me the money?[N] Gladly. Here you go.[N] Not a chance."
   },
   {
     "offset": "0AB524",
@@ -1029,7 +1029,7 @@
     "offset": "0AC344",
     "kind": "dialog",
     "source": "[DEF]このドアは[PAL:2]パスワード[PAL:0]が必要です[N]パスワードを 入力してください[N] 入力する[N] 入力しない",
-    "translation": "[DEF]This door requires a[N][PAL:2]password[PAL:0]. Please enter the[N]password.[FIN] Enter it[N] Do not enter it"
+    "translation": "[DEF]This door needs a [PAL:2]password[PAL:0][N]Will you enter it?[N] Enter it[N] Do not enter it"
   },
   {
     "offset": "0AC384",
@@ -1149,7 +1149,8 @@
     "offset": "0ACF7C",
     "kind": "dialog",
     "source": "[DFT][TPL:A]なんだっ!?[N]おれの 苦労話でも聞きてえのか!?[N] 聞いてあげる[N] 聞いてあげない",
-    "translation": "[DFT][TPL:A]What?! You want to hear my[N]tale of woe?[FIN] I'll listen[N] No thanks"
+    "translation": "[DFT][TPL:A]What?! You came to hear my[N]tale of woe?[FIN]It is long and tragic.[N]Do you still want to hear?[N] I'll listen[N] No thanks",
+    "reflow": false
   },
   {
     "offset": "0ACFAF",
@@ -1408,7 +1409,7 @@
     "offset": "0AE67C",
     "kind": "dialog",
     "source": "[DEF]ここを こえなければ[N]ガトーの後を 追えない···[N][PAU:1E]お前ひとりだったら 私が[N]むこうに 投げてやることができる[FIN]あの男を ほおっておくわけにいかん[N]あいつを止めてきてくれるか?[N] もちろんさ[N] やなこったい",
-    "translation": "[DEF]We cannot follow Gateau[N]unless we cross this[N]gap... [PAU:1E]Since you are[N]alone, I can throw you[FIN]across to the other side.[FIN]We cannot leave that man[N]alone. Will you go and[N]stop him?[FIN] Of course[N] No way"
+    "translation": "[DEF]We cannot follow Gateau[N]unless we cross this[N]gap... [PAU:1E]Since you are[N]alone, I can throw you[FIN]across to the other side.[FIN]Will you cross the gap and[N]stop him?[N] Of course[N] No way"
   },
   {
     "offset": "0AE6F0",
@@ -1420,7 +1421,7 @@
     "offset": "0AE70D",
     "kind": "dialog",
     "source": "[DEF]この先 何があるかわからんぞ[N]したくは もう十分なのか?[N] ばっちりさ[N] まだまだ",
-    "translation": "[DEF]There is no telling what[N]lies ahead. Are you fully[N]prepared?[FIN] I'm ready[N] Not yet"
+    "translation": "[DEF]Danger lies ahead. Are you[N]fully prepared?[N] I'm ready[N] Not yet"
   },
   {
     "offset": "0AE73C",
@@ -1480,7 +1481,7 @@
     "offset": "0AEB15",
     "kind": "dialog",
     "source": "[DEF][TPL:1][NAM:0][N][PAU:1E]話はきいてたわ ガトーの後を[N]追うつもりなんでしょ?[FIN]いまさら 止めてもムダね[N][PAU:28]ひとりだちしたばかりのころは[N]まだ たよりなかったけど[N]少しの間で りっぱになったわね[FIN]この先 何があるかわからないわ[N]セーブしておいたらどう?[N] セーブしておく[N] ううん いいや",
-    "translation": "[DEF][TPL:1][NAM:0]. [PAU:1E]I heard everything.[N]You mean to follow Gateau,[N]right?[FIN]It is too late to stop you[N]now. [PAU:28]When you first set[N]out alone, you still[N]seemed so helpless. You[FIN]have grown in such a short[N]time.[FIN]There is no telling what[N]lies ahead. Would you like[N]to save?[FIN] Save[N] Not now"
+    "translation": "[DEF][TPL:1][NAM:0]. [PAU:1E]I heard everything.[N]You mean to follow Gateau,[N]right?[FIN]It is too late to stop you[N]now. [PAU:28]When you first set[N]out alone, you still[N]seemed so helpless. You[FIN]have grown in such a short[N]time.[FIN]Danger lies ahead. Would[N]you like to save?[N] Save[N] Not now"
   },
   {
     "offset": "0AEBB2",

@@ -315,7 +315,8 @@
     "offset": "069918",
     "kind": "dialog",
     "source": "[DEF]なんだ お前?[N]新しいはたらき手か?[N] そうでーす[N] ちがいまーす",
-    "translation": "[DEF]Who are you? A new worker?[N] That's me[N] No, I'm not"
+    "translation": "[DEF]Who are you?[N]A new worker?[N] That's me[N] No, I'm not",
+    "reflow": false
   },
   {
     "offset": "069942",
@@ -1155,19 +1156,19 @@
     "offset": "06E435",
     "kind": "dialog",
     "source": "[DEF][TPL:14]客人よ よくない知らせがある[N][PAU:1E]あの 白きまものは[N]いまだ この中にいるのだ[FIN][JMP:&string_06E494+M]",
-    "translation": "[DEF][TPL:14]Guest, I have troubling[N]news. [PAU:1E]The white fiend is[N]still inside this room.[FIN]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room for[N]me?[FIN] Gladly[N] No way"
+    "translation": "[DEF][TPL:14]Guest, I have troubling[N]news. [PAU:1E]The white fiend is[N]still inside this room.[FIN]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room?[N] Gladly[N] No way"
   },
   {
     "offset": "06E468",
     "kind": "dialog",
     "source": "[DEF][TPL:14]またお会いしたな 客人[N]さて 先の件は[N]お考え いただけたか?[FIN][JMP:&string_06E494+M]",
-    "translation": "[DEF][TPL:14]We meet again, honored[N]guest. Have you considered[N]my earlier request?[FIN]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room for[N]me?[FIN] Gladly[N] No way"
+    "translation": "[DEF][TPL:14]We meet again, honored[N]guest. Have you considered[N]my earlier request?[FIN]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room?[N] Gladly[N] No way"
   },
   {
     "offset": "06E494",
     "kind": "dialog",
     "source": "[DEF]ようこそ 客人[N][PAU:1E]わたしは この館の主で[N][PAU:1E][PAL:2]ポリンキーはくしゃく[PAL:0]と もうす者[FIN]ところで 客人[N][PAU:1E]この部屋に [PAL:2]白きまもの[PAL:0]が入りこみ[N]困っておるのだ[FIN][::]この部屋の中の [PAL:2]白きまもの[PAL:0]を[N]連れさっては くれぬだろうか?[N] おやすいご用です[N] やなこったい",
-    "translation": "[DEF]Welcome, honored guest. [PAU:1E]I[N]am the master of this[N]manor, [PAU:1E][PAL:2]Count Chocula[PAL:0].[FIN]A [PAL:2]white fiend[PAL:0] has entered[N]this room, much to my[N]distress.[FIN][::]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room for[N]me?[FIN] Gladly[N] No way"
+    "translation": "[DEF]Welcome, honored guest. [PAU:1E]I[N]am the master of this[N]manor, [PAU:1E][PAL:2]Count Chocula[PAL:0].[FIN]A [PAL:2]white fiend[PAL:0] has entered[N]this room, much to my[N]distress.[FIN][::]Will you remove the [PAL:2]white[N]fiend[PAL:0] from this room?[N] Gladly[N] No way"
   },
   {
     "offset": "06E532",

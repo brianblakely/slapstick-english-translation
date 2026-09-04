@@ -237,7 +237,7 @@
     "offset": "0592C5",
     "kind": "dialog",
     "source": "[DEF]いい天気じゃのお ぼうや[N]話でもしていかんかね?[N] うん 話そう[N] 今は いいよ",
-    "translation": "[DEF]Fine weather, is it not,[N]lad? Care to chat?[FIN] Yes, let us talk[N] Not now"
+    "translation": "[DEF]Fine weather, is it not,[N]lad? Care to chat?[N] Yes, let us talk[N] Not now"
   },
   {
     "offset": "0592F4",
@@ -633,7 +633,8 @@
     "offset": "05ADB7",
     "kind": "dialog",
     "source": "[DEF][TPL:2]おまえ あの人たちの話をどう思う?[N] 信じて いいと思う[N] なんか あやしいと思う",
-    "translation": "[DEF][TPL:2]What do you think of those[N]people?[FIN] I think we can trust them[N] They seem suspicious"
+    "translation": "[DEF][TPL:2]You heard what they said.[N]What do you make of it?[FIN]Do you believe them?[N]Can they be trusted?[N] I think we can trust them[N] They seem suspicious",
+    "reflow": false
   },
   {
     "offset": "05ADEA",
@@ -915,7 +916,7 @@
     "offset": "05C074",
     "kind": "dialog",
     "source": "[DEF]ひ·[PAU:1E]ひゃあっ[N][PAU:1E]なんだい その 大きいのは?![N][PAU:1E]え?[PAU:1E]お手伝いをする ろぼっと?[N][PAU:14]そうかい いい子なんだねえ[FIN]あたしも最近 体の調子が[N]よくなくってねえ···[FIN]そういう はたらきものが[N]いてくれれば 助かるんだけどねえ[N] おばあさんに貸してあげます[N] 世の中うまくはいきません",
-    "translation": "[DEF]E-[PAU:1E]eek! [PAU:1E]What is that huge[N]thing?! [PAU:1E]Eh?[PAU:1E] A robot that[N]does chores?[FIN][PAU:14]What a good little helper.[FIN]I haven't been feeling too[N]well lately...[FIN]Having a hard worker like[N]this around would be such[N]a help.[FIN] Lend it to the old woman[N] Sorry, no such luck"
+    "translation": "[DEF]E-[PAU:1E]eek! [PAU:1E]What is that huge[N]thing?! [PAU:1E]Eh?[PAU:1E] A robot that[N]does chores?[FIN][PAU:14]What a good little helper.[FIN]I haven't been feeling too[N]well lately...[FIN]A hard worker like this[N]would be such a help.[N] Lend it to the old woman[N] Sorry, no such luck"
   },
   {
     "offset": "05C115",
@@ -1581,7 +1582,7 @@
     "offset": "05EF36",
     "kind": "dialog",
     "source": "[DEF]アキハバラの息子じゃねえか[N]なに?[PAU:1E]発明がしたいだと?[N][PAU:1E]そりゃあお前 かんたんには[N]できねえぞ[FIN]お前の おやじだって[N]本を読んだり 考えこんだりして[N]発明品を作っていたもんさ[FIN]そういやあ [PAL:2]合成[PAL:0]とか言って[N]うちの ガラクタを持っていって[N]何か 作っていたこともあったなあ[FIN]ガラクタなら 與にころがってるよ[N]持って行くかい?[N] うん!持っていく![N] 今日の所は やめておく",
-    "translation": "[DEF]Well, if it isn't[N]Akihabara's boy. What?[PAU:1E] You[N]want to invent something?[FIN][PAU:1E]It isn't that easy, kid.[FIN]Your dad made inventions[N]by studying books and[N]thinking hard.[FIN]He'd also take my junk and[N]make things by [PAL:2]combining[PAL:0][N]it. There's junk out back.[FIN]Want to take it?[N] Yes! I'll take it![N] Not today"
+    "translation": "[DEF]Well, if it isn't[N]Akihabara's boy. What?[PAU:1E] You[N]want to invent something?[FIN][PAU:1E]It isn't that easy, kid.[FIN]Your dad made inventions[N]by studying books and[N]thinking hard.[FIN]He'd also take my junk and[N]make things by [PAL:2]combining[PAL:0][N]it. There's junk out back.[FIN]Want to take some of it[N]with you?[N] Yes! I'll take it![N] Not today"
   },
   {
     "offset": "05F017",
@@ -1599,7 +1600,7 @@
     "offset": "05F06F",
     "kind": "dialog",
     "source": "[DEF]アキハバラの息子じゃねえか[N]何か用か?[N] 品物を買いに来た[N] 寄っただけ",
-    "translation": "[DEF]Well, if it isn't[N]Akihabara's boy. What do[N]you need?[FIN] I want to buy something[N] Just looking"
+    "translation": "[DEF]Akihabara's boy! What do[N]you need?[N] I want to buy something[N] Just looking"
   },
   {
     "offset": "05F0A0",

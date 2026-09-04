@@ -101,8 +101,11 @@ It expands the ROM to 2 MiB, writes the title `SLAP STICK ENGLISH`, changes the
 country byte to North America, and recalculates the checksum pair.
 
 All 2,381 extracted dialogue and console strings live as structured JSON in
-`translation/script/`. The `source` field is retained as provenance; only the
-independently translated `translation` field is encoded into the English ROM.
+`translation/script/`. The `source` field is retained as provenance. Every
+console entry also has a `literal` field: a direct English rendering that keeps
+control codes and dynamic references but is not constrained by ROM space, UI
+layout, or localization style. Only the independently localized `translation`
+field is encoded into the English ROM.
 
 ## Text relocation
 
@@ -157,7 +160,11 @@ the corresponding range and mirrors the selector into banks `$98`-`$9F`, keeping
 dynamic player names and menu/icon selections intact across equipment, robot,
 battle-command, and exit-menu paths. Shared robot point-allocation and Program
 panels reached through `STR` remain inline at their stock addresses so the
-console interpreter never has to follow two relocation redirects at once.
+console interpreter never has to follow two relocation redirects at once. The
+three equipment-summary and three combo-panel wrappers use the fixed-width
+equipment-label table described below and also remain inline; relocating those
+wrappers before their nested `STR` calls drops the caller's box and tilemap
+state.
 The three main-menu robot summary rows at `0x01EB23`, `0x01EB52`, and
 `0x01EB81` also remain inline because each row nests its robot name and EXP
 value through `STR`. Each translated row fits its original 35-byte slot; if a
@@ -204,7 +211,9 @@ row structure is itself meaningful, such as the Invention Machine's two-line
 control legend, opt out with `"reflow": false`.
 `tools/validate-script.mjs` additionally checks custom box dimensions, dynamic
 inserts, supported characters, control structure, and full translation
-coverage.
+coverage. It models the final rendered row of every dialogue choice prompt and
+checks the engine's fixed cursor row, including prompts whose speaker template
+or scrolling changes the apparent source-line count.
 
 Map names at `0x06F910` through `0x06FD89` are nested inside the one-row
 location banner. The English banner uses a 14-tile box (28 English columns),
@@ -225,11 +234,14 @@ at both initialization sites.
 Console boxes advance one eight-pixel cell per Latin character. Main-menu and
 Invention Machine captions have eight cells. Battle attack names have seven
 cells for their distinctive text, while the selected-item header has eight.
+Inventory item names are limited to eight cells, enemy names to nine, player
+battle options to eleven, and mid-battle messages to twenty-four.
 At runtime, equipment displays prepend the type glyph and level to produce
 `[icon][level][name]`; equipment without a level uses `[icon][name]`. Thus the
 full name `THUNDER` replaces `THDR SWD` without changing the field width. The
-validator reserves the icon cell on every equipment name and enforces the
-dynamic icon, level, name command order in every item-table display.
+validator reserves the icon cell on every equipment name and enforces dynamic
+icon/name pairing, plus icon/level/name order wherever separate table calls are
+used.
 
 The equipment glyphs occupy console character codes `0x3B` through `0x47`,
 which were unused kana in the English script. Their one-color 8x8 silhouettes
@@ -244,6 +256,16 @@ lookup table at PC `0x188000` returns the proper glyph for equipment IDs 1–50
 and an empty string for every other item. The build-time `[EICON:offset]`
 pseudo-command expands to the stock `TBL` operation against this lookup, so it
 inherits each display's live item selector without adding runtime code.
+A second 256-entry lookup at PC `0x1F8000` contains fixed nine-cell
+`[icon][name]` labels, with every name padded to eight cells. `[ELBL:offset]`
+also compiles to a stock `TBL` command. It lets nested robot panels retain their
+original byte length and leaves the equipment level in the stock column after
+the combined label.
+
+The equipped-item sprite position is initialized by the operand at PC
+`0x0BC2A1`. The English build changes its X offset from `0x08` to `0x38`, moving
+the 16x16 graphic six text cells right so it no longer covers the longer
+`EQUIPPED` caption.
 
 The validator also checks every literal console line against its active `BOX`,
 plus the complete item-name, machine-option, main-caption, and battle-target

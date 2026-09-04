@@ -3,1896 +3,2212 @@
     "offset": "01E6F5",
     "kind": "console",
     "source": "[PAL:4][BOX:7,2,98] [TBL:@string_list_01E9C6,0672][FIL:F9,0B78]",
+    "literal": "[PAL:4][BOX:7,2,98] [TBL:@string_list_01E9C6,0672][FIL:F9,0B78]",
     "translation": "[PAL:4][BOX:7,2,98] [TBL:@string_list_01E9C6,0672][FIL:F9,0B78]"
   },
   {
     "offset": "01E708",
     "kind": "console",
     "source": "[PAL:4][BOX:7,2,98][TBL:7E4040,0BA2][FIL:F9,0B78]",
+    "literal": "[PAL:4][BOX:7,2,98][TBL:7E4040,0BA2][FIL:F9,0B78]",
     "translation": "[PAL:4][BOX:7,2,98][TBL:7E4040,0BA2][FIL:F9,0B78]"
   },
   {
     "offset": "01E71A",
     "kind": "console",
     "source": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] あ い う え お か き く け こ[N] さ し す せ そ た ち つ て と[N] な に ぬ ね の は ひ ふ へ ほ[N] ま み む め も や ゆ よ[N] ら り る れ ろ わ を ん[N] が ぎ ぐ げ ご ざ じ ず ぜ ぞ[N] だ ぢ づ で ど ば び ぶ べ ぼ[N] ぱ ぴ ぷ ぺ ぽ ぁ ぃ ぅ ぇ ぉ[N] ー & ! · : っ ゃ ゅ ょ  [N]",
+    "literal": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] a i u e o ka ki ku ke ko[N] sa shi su se so ta chi tsu te to[N] na ni nu ne no ha hi fu he ho[N] ma mi mu me mo ya yu yo[N] ra ri ru re ro wa wo n[N] ga gi gu ge go za ji zu ze zo[N] da ji zu de do ba bi bu be bo[N] pa pi pu pe po small-a small-i small-u small-e small-o[N] long-vowel mark & ! middle dot : small-tsu small-ya small-yu small-yo[N]",
     "translation": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] A B C D E F G H I J[N] K L M N O P Q R S T[N] U V W X Y Z[N] a b c d e f g h i j[N] k l m n o p q r s t[N] u v w x y z[N][N] 0 1 2 3 4 5 6 7 8 9[N] ? & ! * : + - / .[N]"
   },
   {
     "offset": "01E7F4",
     "kind": "console",
     "source": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] ア イ ウ エ オ カ キ ク ケ コ[N] サ シ ス セ ソ タ チ ツ テ ト[N] ナ ニ ヌ ネ ノ ハ ヒ フ ヘ ホ[N] マ ミ ム メ モ ヤ ユ ヨ[N] ラ リ ル レ ロ ワ ヲ ン[N] ガ ギ グ ゲ ゴ ザ ジ ズ ゼ ゾ[N] ダ ヂ ヅ デ ド バ ビ ブ ベ ボ[N] パ ピ プ ペ ポ ァ ィ ゥ ェ ォ[N] ー & ! · : ッ ャ ュ ョ  [N]",
+    "literal": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] a i u e o ka ki ku ke ko[N] sa shi su se so ta chi tsu te to[N] na ni nu ne no ha hi fu he ho[N] ma mi mu me mo ya yu yo[N] ra ri ru re ro wa wo n[N] ga gi gu ge go za ji zu ze zo[N] da ji zu de do ba bi bu be bo[N] pa pi pu pe po small-a small-i small-u small-e small-o[N] long-vowel mark & ! middle dot : small-tsu small-ya small-yu small-yo[N]",
     "translation": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] A B C D E F G H I J[N] K L M N O P Q R S T[N] U V W X Y Z[N] a b c d e f g h i j[N] k l m n o p q r s t[N] u v w x y z[N][N] 0 1 2 3 4 5 6 7 8 9[N] ? & ! * : + - / .[N]"
   },
   {
     "offset": "01E8CE",
     "kind": "console",
     "source": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] A B C D E F G H I J[N] K L M N O P Q R S T[N] U V W X Y Z[N] a b c d e f g h i j[N] k l m n o p q r s t[N] u v w x y z[N][N] 0 1 2 3 4 5 6 7 8 9[N] ー & ! · : + - / .[N]",
+    "literal": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] A B C D E F G H I J[N] K L M N O P Q R S T[N] U V W X Y Z[N] a b c d e f g h i j[N] k l m n o p q r s t[N] u v w x y z[N][N] 0 1 2 3 4 5 6 7 8 9[N] long-vowel mark & ! middle dot : + - / .[N]",
     "translation": "[PAL:4][STR:@consolestring_01E97B][BOX:15,13,190] A B C D E F G H I J[N] K L M N O P Q R S T[N] U V W X Y Z[N] a b c d e f g h i j[N] k l m n o p q r s t[N] u v w x y z[N][N] 0 1 2 3 4 5 6 7 8 9[N] ? & ! * : + - / .[N]"
   },
   {
     "offset": "01E971",
     "kind": "console",
     "source": "[08:190][08:98][08:182]",
+    "literal": "[08:190][08:98][08:182]",
     "translation": "[08:190][08:98][08:182]"
   },
   {
     "offset": "01E97B",
     "kind": "console",
     "source": "[BOX:5,13,182][POS:484] はじめ[N] ページ[N] もどる[N] おわり",
+    "literal": "[BOX:5,13,182][POS:484] Start[N] Page[N] Back[N] End",
     "translation": "[BOX:5,13,182][POS:484] Home[N] Page[N] Back[N] Done"
   },
   {
     "offset": "01E99B",
     "kind": "console",
     "source": "[0B:0][BOX:5,1,21A][POS:25C][PAL:0][FIL:30,&word_01E9D6+2][FIL:21,&word_01E9D6+2][FIL:35,&word_01E9D6+2][FIL:33,&word_01E9D6+2][FIL:25,&word_01E9D6+2][0B:8]",
+    "literal": "[0B:0][BOX:5,1,21A][POS:25C][PAL:0][FIL:30,&word_01E9D6+2][FIL:21,&word_01E9D6+2][FIL:35,&word_01E9D6+2][FIL:33,&word_01E9D6+2][FIL:25,&word_01E9D6+2][0B:8]",
     "translation": "[0B:0][BOX:5,1,21A][POS:25C][PAL:0][FIL:30,&word_01E9D6+2][FIL:21,&word_01E9D6+2][FIL:35,&word_01E9D6+2][FIL:33,&word_01E9D6+2][FIL:25,&word_01E9D6+2][0B:8]"
   },
   {
     "offset": "01E9BE",
     "kind": "console",
     "source": "[0B:0][08:21A][0B:8]",
+    "literal": "[0B:0][08:21A][0B:8]",
     "translation": "[0B:0][08:21A][0B:8]"
   },
   {
     "offset": "01E9D0",
     "kind": "console",
     "source": "     ",
+    "literal": "     ",
     "translation": "     "
   },
   {
     "offset": "01E9EA",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,3,84] メッセージ   はやい   ふつう   おそい",
+    "literal": "[PAL:4][BOX:1A,3,84] Message   Fast   Normal   Slow",
     "translation": "[PAL:4][BOX:1A,3,84] MSG SPD HI    MED   LOW"
   },
   {
     "offset": "01EA0B",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,3,1C4] サウンド    ステレオ  モノラル",
+    "literal": "[PAL:4][BOX:1A,3,1C4] Sound   Stereo   Monaural",
     "translation": "[PAL:4][BOX:1A,3,1C4] SOUND   ST.   MONO"
   },
   {
     "offset": "01EA27",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,D,304] ボタンせってい[N][POS:40C]けってい·はなす·しらべる[N]とりけし·ダッシュ[N]ウィンドウ[N]アイテムをつかう[N]おわり[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y",
+    "literal": "[PAL:4][BOX:1A,D,304] Button Settings[N][POS:40C]Confirm · Talk · Examine[N]Cancel · Dash[N]Window[N]Use Item[N]End[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y",
     "translation": "[PAL:4][BOX:1A,D,304] BUTTON SETUP[N][POS:40C]CONFIRM TALK[N]CANCEL DASH[N]MENU[N]USE ITEM[N]DONE[POS:42A]A B X Y[N]A B X Y[N]A B X Y[N]A B X Y"
   },
   {
     "offset": "01EA8B",
     "kind": "console",
     "source": "[PAL:4][BOX:18,2,608]1つのボタンにかならず1つせっていをしてください",
+    "literal": "[PAL:4][BOX:18,2,608]Please be sure to assign one action to each button.",
     "translation": "[PAL:4][BOX:18,2,608]One action per button."
   },
   {
     "offset": "01EAAE",
     "kind": "console",
     "source": "[08:4][08:184][08:304]",
+    "literal": "[08:4][08:184][08:304]",
     "translation": "[08:4][08:184][08:304]"
   },
   {
     "offset": "01EAB8",
     "kind": "console",
     "source": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6]トロン",
+    "literal": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6] tron",
     "translation": "[PAL:4][BOX:E,2,4][POS:46][FIL:0,&word_01E9D6+12][POS:86][FIL:0,&word_01E9D6+12][BOX:8,2,328][NUM:5,06E6] tr"
   },
   {
     "offset": "01EADA",
     "kind": "console",
     "source": "[PAL:4][BOX:E,2,4]",
+    "literal": "[PAL:4][BOX:E,2,4]",
     "translation": "[PAL:4][BOX:E,2,4]"
   },
   {
     "offset": "01EAE2",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,104]     [TBL:@string_list_01E9C6,&word_01E9D6]  LV[PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE]メガ[N]     [NUM:5,06E6]トロン",
+    "literal": "[PAL:4][BOX:1A,4,104] [TBL:@string_list_01E9C6,&word_01E9D6] Level [PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE] mega[N] [NUM:5,06E6] tron",
     "translation": "[PAL:4][BOX:1A,4,104]     [TBL:@string_list_01E9C6,&word_01E9D6]  LV[PAL:8][NUM:2,0B12][PAL:4] [DEC:1,5,06DE] MB[N]     [NUM:5,06E6] tron"
   },
   {
     "offset": "01EB17",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,284][STR:@consolestring_01EB23]",
+    "literal": "[PAL:4][BOX:1A,4,284][STR:@consolestring_01EB23]",
     "translation": "[PAL:4][BOX:1A,4,284][STR:@consolestring_01EB23]"
   },
   {
     "offset": "01EB23",
     "kind": "console",
     "source": "     [STR:@consolestring_01F6C8][PAL:8] [NUM:1,070C]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6D6]",
+    "literal": "     [STR:@consolestring_01F6C8][PAL:8] No. [NUM:1,070C][PAL:4][N]     Experience [STR:@consolestring_01F6D6]",
     "translation": "     [STR:@consolestring_01F6C8][PAL:8]No.[NUM:1,070C][PAL:4][N]     EXP [STR:@consolestring_01F6D6]"
   },
   {
     "offset": "01EB46",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,404][STR:@consolestring_01EB52]",
+    "literal": "[PAL:4][BOX:1A,4,404][STR:@consolestring_01EB52]",
     "translation": "[PAL:4][BOX:1A,4,404][STR:@consolestring_01EB52]"
   },
   {
     "offset": "01EB52",
     "kind": "console",
     "source": "     [STR:@consolestring_01F6E8][PAL:8] [NUM:1,070E]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6F6]",
+    "literal": "     [STR:@consolestring_01F6E8][PAL:8] No. [NUM:1,070E][PAL:4][N]     Experience [STR:@consolestring_01F6F6]",
     "translation": "     [STR:@consolestring_01F6E8][PAL:8]No.[NUM:1,070E][PAL:4][N]     EXP [STR:@consolestring_01F6F6]"
   },
   {
     "offset": "01EB75",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,584][STR:@consolestring_01EB81]",
+    "literal": "[PAL:4][BOX:1A,4,584][STR:@consolestring_01EB81]",
     "translation": "[PAL:4][BOX:1A,4,584][STR:@consolestring_01EB81]"
   },
   {
     "offset": "01EB81",
     "kind": "console",
     "source": "     [STR:@consolestring_01F708][PAL:8] [NUM:1,0710]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F716]",
+    "literal": "     [STR:@consolestring_01F708][PAL:8] No. [NUM:1,0710][PAL:4][N]     Experience [STR:@consolestring_01F716]",
     "translation": "     [STR:@consolestring_01F708][PAL:8]No.[NUM:1,0710][PAL:4][N]     EXP [STR:@consolestring_01F716]"
   },
   {
     "offset": "01EBA4",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,284][POS:318]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,284][POS:318]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,284][POS:318]EMPTY"
   },
   {
     "offset": "01EBB4",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,404][POS:498]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,404][POS:498]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,404][POS:498]EMPTY"
   },
   {
     "offset": "01EBC4",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,584][POS:618]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,584][POS:618]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,584][POS:618]EMPTY"
   },
   {
     "offset": "01EBD4",
     "kind": "console",
     "source": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE]メガ[N] つぎのレベルまで[N] [DEC:1,5,06E2]メガ[N][BOX:A,4,582] おかね[N] [NUM:5,06E6]トロン[BOX:10,19,5A]プログラム [PAL:8][NUM:4,0B86]ポイント[PAL:4][N]そうび[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]ひらめき[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84]コ[PAL:4]",
+    "literal": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] Level [PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] Experience[N] [DEC:1,5,06DE] mega[N] Until the next level[N] [DEC:1,5,06E2] mega[N][BOX:A,4,582] Money[N] [NUM:5,06E6] tron[BOX:10,19,5A]Program [PAL:8][NUM:4,0B86] points[PAL:4][N]Equipment[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8] [TBL:@string_list_01F774,0676][PAL:4][N]Inspiration[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2] [PAL:8][NUM:4,0B84] pieces[PAL:4]",
     "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] MB[N]NEXT LEVEL[N][DEC:1,5,06E2] MB[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2][PAL:8]    [EICON:0676][TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
   },
   {
     "offset": "01EC91",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][N][TBL:@string_list_01F774,06D8][PAL:4]",
+    "literal": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][N][TBL:@string_list_01F774,06D8][PAL:4]",
     "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6C8][POS:410][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:EE][STR:@consolestring_01F6D6][N][NUM:4,0B1A][N][NUM:4,0B20][N][NUM:4,0B26][N][NUM:4,0B38][N][NUM:4,0B2C][N][NUM:4,0B32][PAL:8][POS:4E4][EICON:06C6][TBL:@string_list_01F74C,06C7][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F74C,06CD][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F74C,06D3][TBL:@string_list_01F774,06D2][N][EICON:06D8][TBL:@string_list_01F774,06D8][PAL:4]"
   },
   {
     "offset": "01ED11",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][N][TBL:@string_list_01F774,06DA][PAL:4]",
+    "literal": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][N][TBL:@string_list_01F774,06DA][PAL:4]",
     "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F6E8][POS:410][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:EE][STR:@consolestring_01F6F6][N][NUM:4,0B1C][N][NUM:4,0B22][N][NUM:4,0B28][N][NUM:4,0B3A][N][NUM:4,0B2E][N][NUM:4,0B34][PAL:8][POS:4E4][EICON:06C8][TBL:@string_list_01F74C,06C9][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F74C,06CF][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F74C,06D5][TBL:@string_list_01F774,06D4][N][EICON:06DA][TBL:@string_list_01F774,06DA][PAL:4]"
   },
   {
     "offset": "01ED91",
     "kind": "console",
     "source": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][N][TBL:@string_list_01F774,06DC][PAL:4]",
+    "literal": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][N][TBL:@string_list_01F774,06DC][PAL:4]",
     "translation": "[STR:@consolestring_01EE11][POS:C6][STR:@consolestring_01F708][POS:410][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:EE][STR:@consolestring_01F716][N][NUM:4,0B1E][N][NUM:4,0B24][N][NUM:4,0B2A][N][NUM:4,0B3C][N][NUM:4,0B30][N][NUM:4,0B36][PAL:8][POS:4E4][EICON:06CA][TBL:@string_list_01F74C,06CB][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F74C,06D1][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F74C,06D7][TBL:@string_list_01F774,06D6][N][EICON:06DC][TBL:@string_list_01F774,06DC][PAL:4]"
   },
   {
     "offset": "01EE11",
     "kind": "console",
     "source": "[PAL:4][BOX:A,9,42][BOX:A,E,302]きほんステータス[N] エネルギー[N] パワー[N] ガード[N] スピード[N] チャージ[BOX:10,E,5A] ENERGY[N] みぎてこうげき[N] ひだりてこうげき[N] せなかこうげき[N] いどう[N] ぼうぎょ[N] かいひ[BOX:10,9,45A]",
-    "translation": "[PAL:4][BOX:A,9,42][BOX:A,E,302]BASE STATS[N] ENERGY[N] POWER[N] GUARD[N] SPEED[N] CHARGE[BOX:10,E,5A] ENERGY[N] RIGHT ATTACK[N] LEFT ATTACK[N] BACK ATTACK[N] MOVEMENT[N] DEFENSE[N] EVASION[BOX:10,9,45A]"
+    "literal": "[PAL:4][BOX:A,9,42][BOX:A,E,302]Basic Status[N] Energy[N] Power[N] Guard[N] Speed[N] Charge[BOX:10,E,5A] Energy[N] Right-Hand Attack[N] Left-Hand Attack[N] Back Attack[N] Movement[N] Defense[N] Evasion[BOX:10,9,45A]",
+    "translation": "[PAL:4][BOX:A,9,42][BOX:A,E,302]BASE STATS[N] ENRGY[N] POWER[N] GUARD[N] SPEED[N] CHRGE[BOX:10,E,5A] ENRGY[N] RGHT ATK[N] LEFT ATK[N] BACK ATK[N] MOVE[N] DEF[N] EVA[BOX:10,9,45A]"
   },
   {
     "offset": "01EE8F",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,C,104]",
+    "literal": "[PAL:4][BOX:1A,C,104]",
     "translation": "[PAL:4][BOX:1A,C,104]"
   },
   {
     "offset": "01EE97",
     "kind": "console",
     "source": "[PAL:4][BOX:8,2,28][TBL:@string_list_01F774,0B80]",
+    "literal": "[PAL:4][BOX:8,2,28][TBL:@string_list_01F774,0B80]",
     "translation": "[PAL:4][BOX:8,2,28][EICON:0B80][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01EEA5",
     "kind": "console",
     "source": "[PAL:4][BOX:10,4,4][POS:110][NUM:2,0B84]  [NUM:2,0B86]  [NUM:2,0B88]",
+    "literal": "[PAL:4][BOX:10,4,4][POS:110][NUM:2,0B84]  [NUM:2,0B86]  [NUM:2,0B88]",
     "translation": "[PAL:4][BOX:10,4,4][POS:110][NUM:2,0B84]  [NUM:2,0B86]  [NUM:2,0B88]"
   },
   {
     "offset": "01EEC0",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8][NUM:1,070C]ばん[PAL:4][POS:386]ℇ℞⅁[N][STR:@consolestring_01F6D6]",
+    "literal": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8]No. [NUM:1,070C][PAL:4][POS:386]Experience[N][STR:@consolestring_01F6D6]",
     "translation": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8]No.[NUM:1,070C][PAL:4][POS:386]EXP[N][STR:@consolestring_01F6D6]"
   },
   {
     "offset": "01EEED",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8][NUM:1,070E]ばん[PAL:4][POS:398]ℇ℞⅁[N][STR:@consolestring_01F6F6]",
+    "literal": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8]No. [NUM:1,070E][PAL:4][POS:398]Experience[N][STR:@consolestring_01F6F6]",
     "translation": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8]No.[NUM:1,070E][PAL:4][POS:398]EXP[N][STR:@consolestring_01F6F6]"
   },
   {
     "offset": "01EF1A",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8][NUM:1,0710]ばん[PAL:4][POS:3AA]ℇ℞⅁[N][STR:@consolestring_01F716]",
+    "literal": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8]No. [NUM:1,0710][PAL:4][POS:3AA]Experience[N][STR:@consolestring_01F716]",
     "translation": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8]No.[NUM:1,0710][PAL:4][POS:3AA]EXP[N][STR:@consolestring_01F716]"
   },
   {
     "offset": "01EF47",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,184][POS:2C8]EMPTY",
+    "literal": "[PAL:4][BOX:7,A,184][POS:2C8]EMPTY",
     "translation": "[PAL:4][BOX:7,A,184][POS:2C8]EMPTY"
   },
   {
     "offset": "01EF57",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,196][POS:2DA]EMPTY",
+    "literal": "[PAL:4][BOX:7,A,196][POS:2DA]EMPTY",
     "translation": "[PAL:4][BOX:7,A,196][POS:2DA]EMPTY"
   },
   {
     "offset": "01EF67",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,1A8][POS:2EC]EMPTY",
+    "literal": "[PAL:4][BOX:7,A,1A8][POS:2EC]EMPTY",
     "translation": "[PAL:4][BOX:7,A,1A8][POS:2EC]EMPTY"
   },
   {
     "offset": "01EF77",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] そうび    [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]",
+    "literal": "[PAL:4][BOX:10,2,4] Equipment [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]",
     "translation": "[PAL:4][BOX:10,2,4] EQUIPPED  [PAL:8][EICON:0B82][TBL:@string_list_01F774,0B82][PAL:4]"
   },
   {
     "offset": "01EF92",
     "kind": "console",
     "source": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+2]",
+    "literal": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+2]",
     "translation": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+2]"
   },
   {
     "offset": "01EFA1",
     "kind": "console",
     "source": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1A][N][NUM:3,0B26][N][NUM:3,0B2C][POS:534][NUM:3,0B20][N][NUM:3,0B38][N][NUM:3,0B32]",
+    "literal": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1A][N][NUM:3,0B26][N][NUM:3,0B2C][POS:534][NUM:3,0B20][N][NUM:3,0B38][N][NUM:3,0B32]",
     "translation": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1A][N][NUM:3,0B26][N][NUM:3,0B2C][POS:534][NUM:3,0B20][N][NUM:3,0B38][N][NUM:3,0B32]"
   },
   {
     "offset": "01EFC8",
     "kind": "console",
     "source": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+4]",
+    "literal": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+4]",
     "translation": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+4]"
   },
   {
     "offset": "01EFD7",
     "kind": "console",
     "source": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1C][N][NUM:3,0B28][N][NUM:3,0B2E][POS:534][NUM:3,0B22][N][NUM:3,0B3A][N][NUM:3,0B34]",
+    "literal": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1C][N][NUM:3,0B28][N][NUM:3,0B2E][POS:534][NUM:3,0B22][N][NUM:3,0B3A][N][NUM:3,0B34]",
     "translation": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1C][N][NUM:3,0B28][N][NUM:3,0B2E][POS:534][NUM:3,0B22][N][NUM:3,0B3A][N][NUM:3,0B34]"
   },
   {
     "offset": "01EFFE",
     "kind": "console",
     "source": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+6]",
+    "literal": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+6]",
     "translation": "[PAL:4][BOX:F,2,4] [TBL:@string_list_01E9C6,&word_01E9D6+6]"
   },
   {
     "offset": "01F00D",
     "kind": "console",
     "source": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1E][N][NUM:3,0B2A][N][NUM:3,0B30][POS:534][NUM:3,0B24][N][NUM:3,0B3C][N][NUM:3,0B36]",
+    "literal": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1E][N][NUM:3,0B2A][N][NUM:3,0B30][POS:534][NUM:3,0B24][N][NUM:3,0B3C][N][NUM:3,0B36]",
     "translation": "[STR:@consolestring_01F048][POS:524][NUM:3,0B1E][N][NUM:3,0B2A][N][NUM:3,0B30][POS:534][NUM:3,0B24][N][NUM:3,0B3C][N][NUM:3,0B36]"
   },
   {
     "offset": "01F034",
     "kind": "console",
     "source": "[PAL:4][BOX:9,2,26][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
+    "literal": "[PAL:4][BOX:9,2,26][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
     "translation": "[PAL:4][BOX:9,2,26][EICON:0B80][TBL:@string_list_01F74C,0BA2][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01F048",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,7,484][POS:51C]みぎて[N]せなか[N]ぼうぎょ[POS:52C]ひだりて[N]いどう[N]かいひ",
-    "translation": "[PAL:4][BOX:1A,7,484][POS:51C]RIGHT HAND[N]BACK[N]DEFENSE[POS:52C]LEFT HAND[N]MOVEMENT[N]EVASION"
+    "literal": "[PAL:4][BOX:1A,7,484][POS:51C]Right Hand[N]Back[N]Defense[POS:52C]Left Hand[N]Movement[N]Evasion",
+    "translation": "[PAL:4][BOX:1A,7,484][POS:51C]RGHT[N]BACK[N]DEF[POS:52C]LEFT[N]MOVE[N]EVA"
   },
   {
     "offset": "01F073",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4]",
+    "literal": "[PAL:4][BOX:10,2,4]",
     "translation": "[PAL:4][BOX:10,2,4]"
   },
   {
     "offset": "01F07B",
     "kind": "console",
     "source": "[PAL:4][BOX:8,2,28][NUM:5,06E6]トロン",
+    "literal": "[PAL:4][BOX:8,2,28][NUM:5,06E6] tron",
     "translation": "[PAL:4][BOX:A,2,24] [NUM:5,06E6] tr"
   },
   {
     "offset": "01F08A",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
+    "literal": "[PAL:4][BOX:10,2,4][TBL:@string_list_01F774,0B80][TBL:@string_list_01F74C,0BA2]",
     "translation": "[PAL:4][BOX:10,2,4][EICON:0B80][TBL:@string_list_01F74C,0BA2][TBL:@string_list_01F774,0B80]"
   },
   {
     "offset": "01F09E",
     "kind": "console",
     "source": "[PAL:8][POS:9C][TBL:@string_list_01E9C6,&word_01E9D6]",
+    "literal": "[PAL:8][POS:9C][TBL:@string_list_01E9C6,&word_01E9D6]",
     "translation": "[PAL:8][POS:9C][TBL:@string_list_01E9C6,&word_01E9D6]"
   },
   {
     "offset": "01F0AA",
     "kind": "console",
     "source": "[PAL:8][POS:9C]ロボット",
+    "literal": "[PAL:8][POS:9C]Robot",
     "translation": "[PAL:8][POS:9C]ROBOT"
   },
   {
     "offset": "01F0B5",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,84][STR:@consolestring_01EB23]",
+    "literal": "[PAL:4][BOX:1A,4,84][STR:@consolestring_01EB23]",
     "translation": "[PAL:4][BOX:1A,4,84][STR:@consolestring_01EB23]"
   },
   {
     "offset": "01F0C1",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,204][STR:@consolestring_01EB52]",
+    "literal": "[PAL:4][BOX:1A,4,204][STR:@consolestring_01EB52]",
     "translation": "[PAL:4][BOX:1A,4,204][STR:@consolestring_01EB52]"
   },
   {
     "offset": "01F0CD",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,384][STR:@consolestring_01EB81]",
+    "literal": "[PAL:4][BOX:1A,4,384][STR:@consolestring_01EB81]",
     "translation": "[PAL:4][BOX:1A,4,384][STR:@consolestring_01EB81]"
   },
   {
     "offset": "01F0D9",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,84][POS:116]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,84][POS:116]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,84][POS:116]EMPTY"
   },
   {
     "offset": "01F0E9",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,204][POS:296]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,204][POS:296]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,204][POS:296]EMPTY"
   },
   {
     "offset": "01F0F9",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,4,384][POS:416]EMPTY",
+    "literal": "[PAL:4][BOX:1A,4,384][POS:416]EMPTY",
     "translation": "[PAL:4][BOX:1A,4,384][POS:416]EMPTY"
   },
   {
     "offset": "01F109",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C6][N][TBL:@string_list_01F774,06CC][N][TBL:@string_list_01F774,06D2][N][TBL:@string_list_01F774,06D8][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][EICON:06C6][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F774,06D2][N][EICON:06D8][TBL:@string_list_01F774,06D8][PAL:4]"
+    "literal": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C6][N][TBL:@string_list_01F774,06CC][N][TBL:@string_list_01F774,06D2][N][TBL:@string_list_01F774,06D8][PAL:4]",
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6C8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6D6][PAL:8][POS:1A6][ELBL:06C6][N][ELBL:06CC][N][ELBL:06D2][N][ELBL:06D8][PAL:4]"
   },
   {
     "offset": "01F150",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C8][N][TBL:@string_list_01F774,06CE][N][TBL:@string_list_01F774,06D4][N][TBL:@string_list_01F774,06DA][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][EICON:06C8][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F774,06D4][N][EICON:06DA][TBL:@string_list_01F774,06DA][PAL:4]"
+    "literal": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][TBL:@string_list_01F774,06C8][N][TBL:@string_list_01F774,06CE][N][TBL:@string_list_01F774,06D4][N][TBL:@string_list_01F774,06DA][PAL:4]",
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F6E8][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F6F6][PAL:8][POS:1A6][ELBL:06C8][N][ELBL:06CE][N][ELBL:06D4][N][ELBL:06DA][PAL:4]"
   },
   {
     "offset": "01F197",
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][TBL:@string_list_01F774,06CA][N][TBL:@string_list_01F774,06D0][N][TBL:@string_list_01F774,06D6][N][TBL:@string_list_01F774,06DC][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][EICON:06CA][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F774,06D6][N][EICON:06DC][TBL:@string_list_01F774,06DC][PAL:4]"
+    "literal": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][TBL:@string_list_01F774,06CA][N][TBL:@string_list_01F774,06D0][N][TBL:@string_list_01F774,06D6][N][TBL:@string_list_01F774,06DC][PAL:4]",
+    "translation": "[PAL:4][BOX:10,2,4] [STR:@consolestring_01F708][BOX:1A,C,104][N][N][N]  ENERGY[N]   [STR:@consolestring_01F716][PAL:8][POS:1A6][ELBL:06CA][N][ELBL:06D0][N][ELBL:06D6][N][ELBL:06DC][PAL:4]"
   },
   {
     "offset": "01F1DE",
     "kind": "console",
     "source": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+2]",
+    "literal": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+2]",
     "translation": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+2]"
   },
   {
     "offset": "01F1EC",
     "kind": "console",
     "source": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56]",
+    "literal": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56]",
     "translation": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56]"
   },
   {
     "offset": "01F20C",
     "kind": "console",
     "source": "[STR:@consolestring_01F2AC]",
+    "literal": "[STR:@consolestring_01F2AC]",
     "translation": "[STR:@consolestring_01F2AC]"
   },
   {
     "offset": "01F211",
     "kind": "console",
     "source": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+4]",
+    "literal": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+4]",
     "translation": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+4]"
   },
   {
     "offset": "01F21F",
     "kind": "console",
     "source": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58]",
+    "literal": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58]",
     "translation": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58]"
   },
   {
     "offset": "01F23F",
     "kind": "console",
     "source": "[STR:@consolestring_01F2AC]",
+    "literal": "[STR:@consolestring_01F2AC]",
     "translation": "[STR:@consolestring_01F2AC]"
   },
   {
     "offset": "01F244",
     "kind": "console",
     "source": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+6]",
+    "literal": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+6]",
     "translation": "[PAL:4][BOX:6,A,158][TBL:@string_list_01E9C6,&word_01E9D6+6]"
   },
   {
     "offset": "01F252",
     "kind": "console",
     "source": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A]",
+    "literal": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A]",
     "translation": "[STR:@consolestring_01F277][POS:1D0][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A]"
   },
   {
     "offset": "01F272",
     "kind": "console",
     "source": "[STR:@consolestring_01F2AC]",
+    "literal": "[STR:@consolestring_01F2AC]",
     "translation": "[STR:@consolestring_01F2AC]"
   },
   {
     "offset": "01F277",
     "kind": "console",
     "source": "[PAL:4][BOX:9,13,42][PAL:8]きほんステータス[PAL:4][POS:1C4]エネルギー[N]パワー[N]ガード[N]スピード[N]チャージ",
+    "literal": "[PAL:4][BOX:9,13,42][PAL:8]Basic Status[PAL:4][POS:1C4]Energy[N]Power[N]Guard[N]Speed[N]Charge",
     "translation": "[PAL:4][BOX:9,13,42][PAL:8]STATS[PAL:4][POS:1C4]ENERGY[N]POWER[N]GUARD[N]SPEED[N]CHARGE"
   },
   {
     "offset": "01F2AC",
     "kind": "console",
     "source": "[PAL:4][BOX:9,13,68][PAL:8]れんぞくわざ[PAL:4][POS:16C][STR:@consolestring_01F4DD]",
+    "literal": "[PAL:4][BOX:9,13,68][PAL:8]Combination Techniques[PAL:4][POS:16C][STR:@consolestring_01F4DD]",
     "translation": "[PAL:4][BOX:9,13,68][PAL:8]COMBOS[PAL:4][POS:16C][STR:@consolestring_01F4DD]"
   },
   {
     "offset": "01F2C7",
     "kind": "console",
     "source": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84]ポイント[PAL:4][POS:1D2][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+2]",
+    "literal": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] points[PAL:4][POS:1D2][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+2]",
     "translation": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] PTS[PAL:4][POS:1D2][NUM:3,0B3E][N][NUM:3,0B44][N][NUM:3,0B4A][N][NUM:3,0B50][N][NUM:3,0B56][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+2]"
   },
   {
     "offset": "01F300",
     "kind": "console",
     "source": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84]ポイント[PAL:4][POS:1D2][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+4]",
+    "literal": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] points[PAL:4][POS:1D2][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+4]",
     "translation": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] PTS[PAL:4][POS:1D2][NUM:3,0B40][N][NUM:3,0B46][N][NUM:3,0B4C][N][NUM:3,0B52][N][NUM:3,0B58][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+4]"
   },
   {
     "offset": "01F339",
     "kind": "console",
     "source": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84]ポイント[PAL:4][POS:1D2][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+6]",
+    "literal": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] points[PAL:4][POS:1D2][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+6]",
     "translation": "[STR:@consolestring_01F372][POS:D0][PAL:8][NUM:4,0B84] PTS[PAL:4][POS:1D2][NUM:3,0B42][N][NUM:3,0B48][N][NUM:3,0B4E][N][NUM:3,0B54][N][NUM:3,0B5A][POS:E6][TBL:@string_list_01E9C6,&word_01E9D6+6]"
   },
   {
     "offset": "01F372",
     "kind": "console",
     "source": "[PAL:4][BOX:E,11,42] プログラム[N]         ▼[N] エネルギー[N] パワー[N] ガード[N] スピード[N] チャージ[N] ボディカラー[N][BOX:C,11,62][POS:366] R├┬┬┬┬┬┬┬┤[N] G├┬┬┬┬┬┬┬┤[N] B├┬┬┬┬┬┬┬┤",
+    "literal": "[PAL:4][BOX:E,11,42] Program[N] ▼[N] Energy[N] Power[N] Guard[N] Speed[N] Charge[N] Body Color[N][BOX:C,11,62][POS:366] R├┬┬┬┬┬┬┬┤[N] G├┬┬┬┬┬┬┬┤[N] B├┬┬┬┬┬┬┬┤",
     "translation": "[PAL:4][BOX:E,11,42] STATS[N]         ▼[N] ENERGY[N] POWER[N] GUARD[N] SPEED[N] CHARGE[N] COLOR[N][BOX:C,11,62][POS:366] R├┬┬┬┬┬┬┬┤[N] G├┬┬┬┬┬┬┬┤[N] B├┬┬┬┬┬┬┬┤"
   },
   {
     "offset": "01F3E7",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][EICON:06C6][TBL:@string_list_01F74C,06C7][TBL:@string_list_01F774,06C6][N][EICON:06CC][TBL:@string_list_01F74C,06CD][TBL:@string_list_01F774,06CC][N][EICON:06D2][TBL:@string_list_01F74C,06D3][TBL:@string_list_01F774,06D2][PAL:4]"
+    "literal": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][TBL:@string_list_01F774,06C6][TBL:@string_list_01F74C,06C7][N][TBL:@string_list_01F774,06CC][TBL:@string_list_01F74C,06CD][N][TBL:@string_list_01F774,06D2][TBL:@string_list_01F74C,06D3][PAL:4]",
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+2][PAL:8][POS:E4][ELBL:06C6][TBL:@string_list_01F74C,06C7][N][ELBL:06CC][TBL:@string_list_01F74C,06CD][N][ELBL:06D2][TBL:@string_list_01F74C,06D3][PAL:4]"
   },
   {
     "offset": "01F422",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][EICON:06C8][TBL:@string_list_01F74C,06C9][TBL:@string_list_01F774,06C8][N][EICON:06CE][TBL:@string_list_01F74C,06CF][TBL:@string_list_01F774,06CE][N][EICON:06D4][TBL:@string_list_01F74C,06D5][TBL:@string_list_01F774,06D4][PAL:4]"
+    "literal": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][TBL:@string_list_01F774,06C8][TBL:@string_list_01F74C,06C9][N][TBL:@string_list_01F774,06CE][TBL:@string_list_01F74C,06CF][N][TBL:@string_list_01F774,06D4][TBL:@string_list_01F74C,06D5][PAL:4]",
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+4][PAL:8][POS:E4][ELBL:06C8][TBL:@string_list_01F74C,06C9][N][ELBL:06CE][TBL:@string_list_01F74C,06CF][N][ELBL:06D4][TBL:@string_list_01F74C,06D5][PAL:4]"
   },
   {
     "offset": "01F45D",
     "kind": "console",
     "source": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][PAL:4]",
-    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][EICON:06CA][TBL:@string_list_01F74C,06CB][TBL:@string_list_01F774,06CA][N][EICON:06D0][TBL:@string_list_01F74C,06D1][TBL:@string_list_01F774,06D0][N][EICON:06D6][TBL:@string_list_01F74C,06D7][TBL:@string_list_01F774,06D6][PAL:4]"
+    "literal": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][TBL:@string_list_01F774,06CA][TBL:@string_list_01F74C,06CB][N][TBL:@string_list_01F774,06D0][TBL:@string_list_01F74C,06D1][N][TBL:@string_list_01F774,06D6][TBL:@string_list_01F74C,06D7][PAL:4]",
+    "translation": "[STR:@consolestring_01F498][POS:C8][TBL:@string_list_01E9C6,&word_01E9D6+6][PAL:8][POS:E4][ELBL:06CA][TBL:@string_list_01F74C,06CB][N][ELBL:06D0][TBL:@string_list_01F74C,06D1][N][ELBL:06D6][TBL:@string_list_01F74C,06D7][PAL:4]"
   },
   {
     "offset": "01F498",
     "kind": "console",
     "source": "[PAL:4][BOX:1A,17,44][POS:D6]Rボタン[N]Lボタン[N]Xボタン[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]",
+    "literal": "[PAL:4][BOX:1A,17,44][POS:D6]R Button[N]L Button[N]X Button[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]",
     "translation": "[PAL:4][BOX:1A,17,44][POS:D6]R BTN[N]L BTN[N]X BTN[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]"
   },
   {
     "offset": "01F4DD",
     "kind": "console",
     "source": "[TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][N][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]",
+    "literal": "[TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][N][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]",
     "translation": "[TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][N][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]"
   },
   {
     "offset": "01F515",
     "kind": "console",
     "source": "[PAL:4][POS:602]        [N]        [N]        [N][POS:642][TBL:@string_list_01FD1E,0AB4][TBL:@string_list_01FFB3,0AB5][N][TBL:@string_list_01FD1E,0AB6][TBL:@string_list_01FFB3,0AB7][N][TBL:@string_list_01FD1E,0AB8][TBL:@string_list_01FFB3,0AB9]",
+    "literal": "[PAL:4][POS:602]        [N]        [N]        [N][POS:642][TBL:@string_list_01FD1E,0AB4][TBL:@string_list_01FFB3,0AB5][N][TBL:@string_list_01FD1E,0AB6][TBL:@string_list_01FFB3,0AB7][N][TBL:@string_list_01FD1E,0AB8][TBL:@string_list_01FFB3,0AB9]",
     "translation": "[PAL:4][POS:602]        [N]        [N]        [N][POS:642][TBL:@string_list_01FD1E,0AB4][TBL:@string_list_01FFB3,0AB5][N][TBL:@string_list_01FD1E,0AB6][TBL:@string_list_01FFB3,0AB7][N][TBL:@string_list_01FD1E,0AB8][TBL:@string_list_01FFB3,0AB9]"
   },
   {
     "offset": "01F55F",
     "kind": "console",
     "source": "[PAL:4][POS:65C][STR:@consolestring_01F589]",
+    "literal": "[PAL:4][POS:65C][STR:@consolestring_01F589]",
     "translation": "[PAL:4][POS:65C][STR:@consolestring_01F589]"
   },
   {
     "offset": "01F569",
     "kind": "console",
     "source": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D]",
+    "literal": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D]",
     "translation": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D]"
   },
   {
     "offset": "01F577",
     "kind": "console",
     "source": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D][STR:@consolestring_01F5B1]",
+    "literal": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D][STR:@consolestring_01F5B1]",
     "translation": "[PAL:4][POS:65C][STR:@consolestring_01F589][STR:@consolestring_01F59D][STR:@consolestring_01F5B1]"
   },
   {
     "offset": "01F589",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [STR:@consolestring_01F6D6] [TBL:@string_list_01F728,06F0][N]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [STR:@consolestring_01F6D6] [TBL:@string_list_01F728,06F0][N]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [STR:@consolestring_01F6D6] [TBL:@string_list_01F728,06F0][N]"
   },
   {
     "offset": "01F59D",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [STR:@consolestring_01F6F6] [TBL:@string_list_01F728,06F2][N]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [STR:@consolestring_01F6F6] [TBL:@string_list_01F728,06F2][N]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [STR:@consolestring_01F6F6] [TBL:@string_list_01F728,06F2][N]"
   },
   {
     "offset": "01F5B1",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [STR:@consolestring_01F716] [TBL:@string_list_01F728,06F4][N]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [STR:@consolestring_01F716] [TBL:@string_list_01F728,06F4][N]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [STR:@consolestring_01F716] [TBL:@string_list_01F728,06F4][N]"
   },
   {
     "offset": "01F5C5",
     "kind": "console",
     "source": "[PAL:4][BOX:8,9,542][POS:5C8]こうげき[N]ぼうぎょ[N]にげる[N][TBL:@string_list_01E9C6,&word_01E9D6]",
+    "literal": "[PAL:4][BOX:8,9,542][POS:5C8]Attack[N]Defend[N]Flee[N][TBL:@string_list_01E9C6,&word_01E9D6]",
     "translation": "[PAL:4][BOX:8,9,542][POS:5C8]ATTACK[N]DEFEND[N]RUN[N][TBL:@string_list_01E9C6,&word_01E9D6]"
   },
   {
     "offset": "01F5E8",
     "kind": "console",
     "source": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][TBL:@string_list_01F774,0B84][TBL:@string_list_01F74C,0B85][N][TBL:@string_list_01F774,0B86][TBL:@string_list_01F74C,0B87][N][TBL:@string_list_01F774,0B88][TBL:@string_list_01F74C,0B89]",
-    "translation": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][EICON:0B84][TBL:@string_list_01F74C,0B85][TBL:@string_list_01F774,0B84][N][EICON:0B86][TBL:@string_list_01F74C,0B87][TBL:@string_list_01F774,0B86][N][EICON:0B88][TBL:@string_list_01F74C,0B89][TBL:@string_list_01F774,0B88]"
+    "literal": "[PAL:4][BOX:A,9,54E][POS:5D2]RUN[N][TBL:@string_list_01F774,0B84][TBL:@string_list_01F74C,0B85][N][TBL:@string_list_01F774,0B86][TBL:@string_list_01F74C,0B87][N][TBL:@string_list_01F774,0B88][TBL:@string_list_01F74C,0B89]",
+    "translation": "[PAL:4][BOX:A,9,54E][POS:5D2]EXECUTE[N][EICON:0B84][TBL:@string_list_01F74C,0B85][TBL:@string_list_01F774,0B84][N][EICON:0B86][TBL:@string_list_01F74C,0B87][TBL:@string_list_01F774,0B86][N][EICON:0B88][TBL:@string_list_01F74C,0B89][TBL:@string_list_01F774,0B88]"
   },
   {
     "offset": "01F61D",
     "kind": "console",
     "source": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]ロボットいれかえ[N][PAL:4][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][TBL:@string_list_01F774,0B91][NUM:2,0B90]",
+    "literal": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]Switch Robots[N][PAL:4][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][TBL:@string_list_01F774,0B91][NUM:2,0B90]",
     "translation": "[PAL:4][BOX:17,9,54E][POS:5D2][PAL:8]SWITCH ROBOT[N][PAL:4][EICON:0B85][TBL:@string_list_01F774,0B85][NUM:2,0B84][N][EICON:0B87][TBL:@string_list_01F774,0B87][NUM:2,0B86][N][EICON:0B89][TBL:@string_list_01F774,0B89][NUM:2,0B88][POS:5EA][EICON:0B8B][TBL:@string_list_01F774,0B8B][NUM:2,0B8A][N][EICON:0B8D][TBL:@string_list_01F774,0B8D][NUM:2,0B8C][N][EICON:0B8F][TBL:@string_list_01F774,0B8F][NUM:2,0B8E][N][EICON:0B91][TBL:@string_list_01F774,0B91][NUM:2,0B90]"
   },
   {
     "offset": "01F684",
     "kind": "console",
     "source": "[PAL:4][BOX:17,9,54E][POS:5D2][TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][POS:5EA][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]",
+    "literal": "[PAL:4][BOX:17,9,54E][POS:5D2][TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][POS:5EA][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]",
     "translation": "[PAL:4][BOX:17,9,54E][POS:5D2][TBL:7E4040,0B84][N][TBL:7E4040,0B85][N][TBL:7E4040,0B86][N][TBL:7E4040,0B87][POS:5EA][TBL:7E4040,0B88][N][TBL:7E4040,0B89][N][TBL:7E4040,0B8A][N][TBL:7E4040,0B8B]"
   },
   {
     "offset": "01F6C8",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [TBL:@string_list_01F728,06F0]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [TBL:@string_list_01F728,06F0]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+2] [TBL:@string_list_01F728,06F0]"
   },
   {
     "offset": "01F6D6",
     "kind": "console",
     "source": "[TBL:@string_list_01F744,06EA][NUM:3,0B14][PAL:4]/[NUM:3,0B3E]",
+    "literal": "[TBL:@string_list_01F744,06EA][NUM:3,0B14][PAL:4]/[NUM:3,0B3E]",
     "translation": "[TBL:@string_list_01F744,06EA][NUM:3,0B14][PAL:4]/[NUM:3,0B3E]"
   },
   {
     "offset": "01F6E8",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [TBL:@string_list_01F728,06F2]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [TBL:@string_list_01F728,06F2]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+4] [TBL:@string_list_01F728,06F2]"
   },
   {
     "offset": "01F6F6",
     "kind": "console",
     "source": "[TBL:@string_list_01F744,06EC][NUM:3,0B16][PAL:4]/[NUM:3,0B40]",
+    "literal": "[TBL:@string_list_01F744,06EC][NUM:3,0B16][PAL:4]/[NUM:3,0B40]",
     "translation": "[TBL:@string_list_01F744,06EC][NUM:3,0B16][PAL:4]/[NUM:3,0B40]"
   },
   {
     "offset": "01F708",
     "kind": "console",
     "source": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [TBL:@string_list_01F728,06F4]",
+    "literal": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [TBL:@string_list_01F728,06F4]",
     "translation": "[TBL:@string_list_01E9C6,&word_01E9D6+6] [TBL:@string_list_01F728,06F4]"
   },
   {
     "offset": "01F716",
     "kind": "console",
     "source": "[TBL:@string_list_01F744,06EE][NUM:3,0B18][PAL:4]/[NUM:3,0B42]",
+    "literal": "[TBL:@string_list_01F744,06EE][NUM:3,0B18][PAL:4]/[NUM:3,0B42]",
     "translation": "[TBL:@string_list_01F744,06EE][NUM:3,0B18][PAL:4]/[NUM:3,0B42]"
   },
   {
     "offset": "01F730",
     "kind": "console",
     "source": "  ",
+    "literal": "  ",
     "translation": "  "
   },
   {
     "offset": "01F733",
     "kind": "console",
     "source": " [PAL:8]☻[PAL:4]",
+    "literal": " [PAL:8]☻[PAL:4]",
     "translation": " [PAL:8]☻[PAL:4]"
   },
   {
     "offset": "01F73A",
     "kind": "console",
     "source": "☻ ",
+    "literal": "☻ ",
     "translation": "☻ "
   },
   {
     "offset": "01F73D",
     "kind": "console",
     "source": "☻[PAL:8]☻[PAL:4]",
+    "literal": "☻[PAL:8]☻[PAL:4]",
     "translation": "☻[PAL:8]☻[PAL:4]"
   },
   {
     "offset": "01F748",
     "kind": "console",
     "source": "",
+    "literal": "",
     "translation": ""
   },
   {
     "offset": "01F749",
     "kind": "console",
     "source": "[PAL:C]",
+    "literal": "[PAL:C]",
     "translation": "[PAL:C]"
   },
   {
     "offset": "01F760",
     "kind": "console",
     "source": " ",
+    "literal": " ",
     "translation": " "
   },
   {
     "offset": "01F762",
     "kind": "console",
     "source": "Ⅰ",
+    "literal": "Ⅰ",
     "translation": "Ⅰ"
   },
   {
     "offset": "01F764",
     "kind": "console",
     "source": "Ⅱ",
+    "literal": "Ⅱ",
     "translation": "Ⅱ"
   },
   {
     "offset": "01F766",
     "kind": "console",
     "source": "Ⅲ",
+    "literal": "Ⅲ",
     "translation": "Ⅲ"
   },
   {
     "offset": "01F768",
     "kind": "console",
     "source": "Ⅳ",
+    "literal": "Ⅳ",
     "translation": "Ⅳ"
   },
   {
     "offset": "01F76A",
     "kind": "console",
     "source": "Ⅴ",
+    "literal": "Ⅴ",
     "translation": "Ⅴ"
   },
   {
     "offset": "01F76C",
     "kind": "console",
     "source": "Ⅵ",
+    "literal": "Ⅵ",
     "translation": "Ⅵ"
   },
   {
     "offset": "01F76E",
     "kind": "console",
     "source": "Ⅶ",
+    "literal": "Ⅶ",
     "translation": "Ⅶ"
   },
   {
     "offset": "01F770",
     "kind": "console",
     "source": "Ⅷ",
+    "literal": "Ⅷ",
     "translation": "Ⅷ"
   },
   {
     "offset": "01F772",
     "kind": "console",
     "source": "Ⅸ",
+    "literal": "Ⅸ",
     "translation": "Ⅸ"
   },
   {
     "offset": "01F8A0",
     "kind": "console",
     "source": "        ",
+    "literal": "        ",
     "translation": "        "
   },
   {
     "offset": "01F8A9",
     "kind": "console",
     "source": " そうびなし  ",
+    "literal": "No Equipment",
     "translation": " NONE"
   },
   {
     "offset": "01F8B3",
     "kind": "console",
     "source": "メタルソード  ",
+    "literal": "Metal Sword",
     "translation": "METAL"
   },
   {
     "offset": "01F8BD",
     "kind": "console",
     "source": "バトルソード  ",
+    "literal": "Battle Sword",
     "translation": "BATTLE"
   },
   {
     "offset": "01F8C8",
     "kind": "console",
     "source": "フルメタルソード",
+    "literal": "Full Metal Sword",
     "translation": "MILSPEC"
   },
   {
     "offset": "01F8D2",
     "kind": "console",
     "source": "サンダーソード ",
+    "literal": "Thunder Sword",
     "translation": "THUNDER"
   },
   {
     "offset": "01F8DD",
     "kind": "console",
     "source": "メタルアクス  ",
+    "literal": "Metal Axe",
     "translation": "METAL"
   },
   {
     "offset": "01F8E6",
     "kind": "console",
     "source": "バトルアクス  ",
+    "literal": "Battle Axe",
     "translation": "BATTLE"
   },
   {
     "offset": "01F8F0",
     "kind": "console",
     "source": "フルメタルアクス",
+    "literal": "Full Metal Axe",
     "translation": "MILSPEC"
   },
   {
     "offset": "01F8F9",
     "kind": "console",
     "source": "ソニックブレイド",
+    "literal": "Sonic Blade",
     "translation": "SONIC"
   },
   {
     "offset": "01F904",
     "kind": "console",
     "source": "プラズマブレイド",
+    "literal": "Plasma Blade",
     "translation": "PLASMA"
   },
   {
     "offset": "01F911",
     "kind": "console",
     "source": "レーザーブレイド",
+    "literal": "Laser Blade",
     "translation": "LASER"
   },
   {
     "offset": "01F91D",
     "kind": "console",
     "source": "ソウルブレイド ",
+    "literal": "Soul Blade",
     "translation": "SOUL"
   },
   {
     "offset": "01F928",
     "kind": "console",
     "source": "ドクドクハンマー",
+    "literal": "Poison-Poison Hammer",
     "translation": "TOXIC"
   },
   {
     "offset": "01F933",
     "kind": "console",
     "source": "スッポンハンマー",
+    "literal": "Plunger Hammer",
     "translation": "PLUNGER"
   },
   {
     "offset": "01F93D",
     "kind": "console",
     "source": "メガトンハンマー",
+    "literal": "Megaton Hammer",
     "translation": "MEGATON"
   },
   {
     "offset": "01F947",
     "kind": "console",
     "source": "ヘビーストーン ",
+    "literal": "Heavy Stone",
     "translation": "HEAVY"
   },
   {
     "offset": "01F951",
     "kind": "console",
     "source": "パニックストーン",
+    "literal": "Panic Stone",
     "translation": "PANIC"
   },
   {
     "offset": "01F95B",
     "kind": "console",
     "source": "ブレイクストーン",
+    "literal": "Break Stone",
     "translation": "BREAK"
   },
   {
     "offset": "01F965",
     "kind": "console",
     "source": "パンパンパンチ ",
+    "literal": "Bang-Bang Punch",
     "translation": "ONE-TWO"
   },
   {
     "offset": "01F971",
     "kind": "console",
     "source": "スーパーパンチ ",
+    "literal": "Super Punch",
     "translation": "SUPER"
   },
   {
     "offset": "01F97C",
     "kind": "console",
     "source": "ひっさつパンチ ",
+    "literal": "Sure-Kill Punch",
     "translation": "FINAL"
   },
   {
     "offset": "01F986",
     "kind": "console",
     "source": "ロケットブロー ",
+    "literal": "Rocket Blow",
     "translation": "ROCKET"
   },
   {
     "offset": "01F990",
     "kind": "console",
     "source": "ローリングブロー",
+    "literal": "Rolling Blow",
     "translation": "ROLLING"
   },
   {
     "offset": "01F99B",
     "kind": "console",
     "source": "マッハブロー  ",
+    "literal": "Mach Blow",
     "translation": "MACH"
   },
   {
     "offset": "01F9A5",
     "kind": "console",
     "source": "ハンドショット ",
-    "translation": "HAND"
+    "literal": "Hand Shot",
+    "translation": "PISTOL"
   },
   {
     "offset": "01F9AF",
     "kind": "console",
     "source": "ナイスショット ",
+    "literal": "Nice Shot",
     "translation": "NICE"
   },
   {
     "offset": "01F9B8",
     "kind": "console",
     "source": "バズーカ    ",
+    "literal": "Bazooka",
     "translation": "BAZOOKA"
   },
   {
     "offset": "01F9C3",
     "kind": "console",
     "source": "ツイストレーザー",
+    "literal": "Twist Laser",
     "translation": "TWIST"
   },
   {
     "offset": "01F9CD",
     "kind": "console",
     "source": "チャージレーザー",
+    "literal": "Charge Laser",
     "translation": "CHARGE"
   },
   {
     "offset": "01F9D8",
     "kind": "console",
     "source": "はどうレーザー ",
+    "literal": "Wave-Motion Laser",
     "translation": "WAVE"
   },
   {
     "offset": "01F9E3",
     "kind": "console",
     "source": "ストレートボム ",
-    "translation": "DIRECT"
+    "literal": "Straight Bomb",
+    "translation": "STRIKE"
   },
   {
     "offset": "01F9ED",
     "kind": "console",
     "source": "ナパームボム  ",
+    "literal": "Napalm Bomb",
     "translation": "NAPALM"
   },
   {
     "offset": "01F9F8",
     "kind": "console",
     "source": "アイスボム   ",
+    "literal": "Ice Bomb",
     "translation": "ICE"
   },
   {
     "offset": "01FA02",
     "kind": "console",
     "source": "かくさんボム  ",
+    "literal": "Scatter Bomb",
     "translation": "SCATTER"
   },
   {
     "offset": "01FA0C",
     "kind": "console",
     "source": "ヘビーシールド ",
+    "literal": "Heavy Shield",
     "translation": "HEAVY"
   },
   {
     "offset": "01FA17",
     "kind": "console",
     "source": "サビーズシールド",
+    "literal": "Rusty's Shield",
     "translation": "RUSTY"
   },
   {
     "offset": "01FA23",
     "kind": "console",
     "source": "サイコシールド ",
+    "literal": "Psycho Shield",
     "translation": "PSYCHO"
   },
   {
     "offset": "01FA2D",
     "kind": "console",
     "source": "ケミカルシールド",
+    "literal": "Chemical Shield",
     "translation": "CHEMICAL"
   },
   {
     "offset": "01FA37",
     "kind": "console",
     "source": "ハイパーシールド",
+    "literal": "Hyper Shield",
     "translation": "HYPER"
   },
   {
     "offset": "01FA42",
     "kind": "console",
     "source": "パックざんがい ",
+    "literal": "Pack Wreckage",
     "translation": "WRECKAGE"
   },
   {
     "offset": "01FA4E",
     "kind": "console",
     "source": "パワーパック  ",
+    "literal": "Power Pack",
     "translation": "POWER"
   },
   {
     "offset": "01FA59",
     "kind": "console",
     "source": "シールドパック ",
+    "literal": "Shield Pack",
     "translation": "SHIELD"
   },
   {
     "offset": "01FA64",
     "kind": "console",
     "source": "ターボパック  ",
+    "literal": "Turbo Pack",
     "translation": "TURBO"
   },
   {
     "offset": "01FA6F",
     "kind": "console",
     "source": "ソーラーパック ",
+    "literal": "Solar Pack",
     "translation": "SOLAR"
   },
   {
     "offset": "01FA79",
     "kind": "console",
     "source": "クイックパック ",
+    "literal": "Quick Pack",
     "translation": "QUICK"
   },
   {
     "offset": "01FA83",
     "kind": "console",
     "source": "ブーツ     ",
-    "translation": "STANDARD"
+    "literal": "Boots",
+    "translation": "REGULAR"
   },
   {
     "offset": "01FA8D",
     "kind": "console",
     "source": "パワーブーツ  ",
+    "literal": "Power Boots",
     "translation": "POWER"
   },
   {
     "offset": "01FA98",
     "kind": "console",
     "source": "スワンプブーツ ",
+    "literal": "Swamp Boots",
     "translation": "SWAMP"
   },
   {
     "offset": "01FAA3",
     "kind": "console",
     "source": "4WDブーツ  ",
+    "literal": "4WD Boots",
     "translation": "4WD"
   },
   {
     "offset": "01FAAD",
     "kind": "console",
     "source": "タンクブーツ  ",
+    "literal": "Tank Boots",
     "translation": "TANK"
   },
   {
     "offset": "01FAB7",
     "kind": "console",
     "source": "ホバーブーツ  ",
+    "literal": "Hover Boots",
     "translation": "HOVER"
   },
   {
     "offset": "01FAC2",
     "kind": "console",
     "source": "トランシーバー ",
+    "literal": "Transceiver",
     "translation": "COMLINK"
   },
   {
     "offset": "01FACC",
     "kind": "console",
     "source": "びっくりホーン ",
-    "translation": "SURP HORN"
+    "literal": "Surprise Horn",
+    "translation": "SURP HRN"
   },
   {
     "offset": "01FAD6",
     "kind": "console",
     "source": "もぐらドリル  ",
-    "translation": "MOLE DRIL"
+    "literal": "Mole Drill",
+    "translation": "MOLEDRIL"
   },
   {
     "offset": "01FAE1",
     "kind": "console",
     "source": "きえるんです  ",
+    "literal": "It Disappears",
     "translation": "VANISHER"
   },
   {
     "offset": "01FAEB",
     "kind": "console",
     "source": "かわるんです  ",
-    "translation": "TRANSFORM"
+    "literal": "It Changes",
+    "translation": "TRANSFRM"
   },
   {
     "offset": "01FAF5",
     "kind": "console",
     "source": "カメレオングラス",
-    "translation": "CHAM LENS"
+    "literal": "Chameleon Glasses",
+    "translation": "CHAM LNS"
   },
   {
     "offset": "01FAFF",
     "kind": "console",
     "source": "カギ      ",
+    "literal": "Key",
     "translation": "KEY"
   },
   {
     "offset": "01FB09",
     "kind": "console",
     "source": "おてつだいロボ ",
-    "translation": "HELPERBOT"
+    "literal": "Helper Robot",
+    "translation": "HELPBOT"
   },
   {
     "offset": "01FB14",
     "kind": "console",
     "source": "ライト     ",
+    "literal": "Light",
     "translation": "LIGHT"
   },
   {
     "offset": "01FB1D",
     "kind": "console",
     "source": "はなのたね   ",
-    "translation": "FLWR SEED"
+    "literal": "Flower Seed",
+    "translation": "FLWRSEED"
   },
   {
     "offset": "01FB26",
     "kind": "console",
     "source": "ひこうせん   ",
+    "literal": "Airship",
     "translation": "AIRSHIP"
   },
   {
     "offset": "01FB2F",
     "kind": "console",
     "source": "うちゅうせん  ",
-    "translation": "SPACESHIP"
+    "literal": "Spaceship",
+    "translation": "SPC SHIP"
   },
   {
     "offset": "01FB38",
     "kind": "console",
     "source": "ワープシステム ",
+    "literal": "Warp System",
     "translation": "WARP SYS"
   },
   {
     "offset": "01FB42",
     "kind": "console",
     "source": "だべっこどうぶつ",
-    "translation": "ANML CHAT"
+    "literal": "Chatty Animals",
+    "translation": "ANMLCHAT"
   },
   {
     "offset": "01FB4F",
     "kind": "console",
     "source": "サイバージャック",
-    "translation": "CYBR JACK"
+    "literal": "Cyber Jack",
+    "translation": "CYBRJACK"
   },
   {
     "offset": "01FB5A",
     "kind": "console",
     "source": "あかポット   ",
+    "literal": "Red Pot",
     "translation": "RED POT"
   },
   {
     "offset": "01FB64",
     "kind": "console",
     "source": "あおポット   ",
+    "literal": "Blue Pot",
     "translation": "BLUE POT"
   },
   {
     "offset": "01FB6E",
     "kind": "console",
     "source": "きいろポット  ",
+    "literal": "Yellow Pot",
     "translation": "YLW POT"
   },
   {
     "offset": "01FB78",
     "kind": "console",
     "source": "ほうせき    ",
+    "literal": "Gem",
     "translation": "GEM"
   },
   {
     "offset": "01FB81",
     "kind": "console",
     "source": "てがみ     ",
+    "literal": "Letter",
     "translation": "LETTER"
   },
   {
     "offset": "01FB8B",
     "kind": "console",
     "source": "せきばん    ",
+    "literal": "Stone Slab",
     "translation": "TABLET"
   },
   {
     "offset": "01FB95",
     "kind": "console",
     "source": "かんぶバッチ  ",
-    "translation": "COP BADGE"
+    "literal": "Officer Badge",
+    "translation": "COPBADGE"
   },
   {
     "offset": "01FBA0",
     "kind": "console",
     "source": "ハッカーバッチ ",
-    "translation": "HKR BADGE"
+    "literal": "Hacker Badge",
+    "translation": "HKRBADGE"
   },
   {
     "offset": "01FBAA",
     "kind": "console",
     "source": "いし1     ",
+    "literal": "Stone 1",
     "translation": "STONE 1"
   },
   {
     "offset": "01FBB3",
     "kind": "console",
     "source": "いし2     ",
+    "literal": "Stone 2",
     "translation": "STONE 2"
   },
   {
     "offset": "01FBBC",
     "kind": "console",
     "source": "いし3     ",
+    "literal": "Stone 3",
     "translation": "STONE 3"
   },
   {
     "offset": "01FBC5",
     "kind": "console",
     "source": "あかいはな   ",
+    "literal": "Red Flower",
     "translation": "RED FLWR"
   },
   {
     "offset": "01FBCE",
     "kind": "console",
     "source": "たま      ",
+    "literal": "Ball",
     "translation": "ORB"
   },
   {
     "offset": "01FBD7",
     "kind": "console",
     "source": "さびたドリル  ",
-    "translation": "RSTY DRIL"
+    "literal": "Rusty Drill",
+    "translation": "RSTYDRIL"
   },
   {
     "offset": "01FBE2",
     "kind": "console",
     "source": "スクラップA  ",
+    "literal": "Scrap A",
     "translation": "SCRAP A"
   },
   {
     "offset": "01FBEC",
     "kind": "console",
     "source": "スクラップB  ",
+    "literal": "Scrap B",
     "translation": "SCRAP B"
   },
   {
     "offset": "01FBF6",
     "kind": "console",
     "source": "スクラップ1  ",
+    "literal": "Scrap 1",
     "translation": "SCRAP 1"
   },
   {
     "offset": "01FC00",
     "kind": "console",
     "source": "スクラップ2  ",
+    "literal": "Scrap 2",
     "translation": "SCRAP 2"
   },
   {
     "offset": "01FC0A",
     "kind": "console",
     "source": "スクラップ3  ",
+    "literal": "Scrap 3",
     "translation": "SCRAP 3"
   },
   {
     "offset": "01FC14",
     "kind": "console",
     "source": "スクラップ4  ",
+    "literal": "Scrap 4",
     "translation": "SCRAP 4"
   },
   {
     "offset": "01FC1E",
     "kind": "console",
     "source": "スクラップ5  ",
+    "literal": "Scrap 5",
     "translation": "SCRAP 5"
   },
   {
     "offset": "01FC28",
     "kind": "console",
     "source": "スクラップ6  ",
+    "literal": "Scrap 6",
     "translation": "SCRAP 6"
   },
   {
     "offset": "01FC32",
     "kind": "console",
     "source": "スクラップ7  ",
+    "literal": "Scrap 7",
     "translation": "SCRAP 7"
   },
   {
     "offset": "01FC3C",
     "kind": "console",
     "source": "スクラップ8  ",
+    "literal": "Scrap 8",
     "translation": "SCRAP 8"
   },
   {
     "offset": "01FC46",
     "kind": "console",
     "source": "スクラップ9  ",
+    "literal": "Scrap 9",
     "translation": "SCRAP 9"
   },
   {
     "offset": "01FC50",
     "kind": "console",
     "source": "スクラップ10 ",
+    "literal": "Scrap 10",
     "translation": "SCRAP 10"
   },
   {
     "offset": "01FC5A",
     "kind": "console",
     "source": "けむりだま   ",
-    "translation": "SMOKE BMB"
+    "literal": "Smoke Bomb",
+    "translation": "SMOKE"
   },
   {
     "offset": "01FC64",
     "kind": "console",
     "source": "すぐナオール  ",
-    "translation": "QUICK FIX"
+    "literal": "Fixes It Right Away",
+    "translation": "PATCH"
   },
   {
     "offset": "01FC6E",
     "kind": "console",
     "source": "さびトレール  ",
+    "literal": "Rust Comes Off",
     "translation": "RUST-OFF"
   },
   {
     "offset": "01FC78",
     "kind": "console",
     "source": "しゅうりキット ",
-    "translation": "REPR KIT"
+    "literal": "Repair Kit",
+    "translation": "REPAIR"
   },
   {
     "offset": "01FC81",
     "kind": "console",
     "source": "スーパーボム  ",
-    "translation": "SUPR BOMB"
+    "literal": "Super Bomb",
+    "translation": "SMART"
   },
   {
     "offset": "01FC8C",
     "kind": "console",
     "source": "おてんきママさん",
-    "translation": "WTHR MAMA"
+    "literal": "Weather Mama",
+    "translation": "WTHRMAMA"
   },
   {
     "offset": "01FC95",
     "kind": "console",
     "source": "アイテムをつくる",
+    "literal": "Make Items",
     "translation": " CREATE"
   },
   {
     "offset": "01FC9E",
     "kind": "console",
     "source": "アイテムごうせい",
+    "literal": "Item Synthesis",
     "translation": "COMBINE"
   },
   {
     "offset": "01FCA8",
     "kind": "console",
     "source": " リサイクル  ",
+    "literal": "Recycle",
     "translation": " RECYCLE"
   },
   {
     "offset": "01FCB1",
     "kind": "console",
     "source": "ロボットをつくる",
+    "literal": "Make a Robot",
     "translation": " BUILD"
   },
   {
     "offset": "01FCBB",
     "kind": "console",
     "source": " メンテナンス ",
+    "literal": "Maintenance",
     "translation": " MAINT."
   },
   {
     "offset": "01FCC4",
     "kind": "console",
     "source": " プログラム  ",
+    "literal": "Program",
     "translation": " PROGRAM"
   },
   {
     "offset": "01FCCF",
     "kind": "console",
     "source": " おわり    ",
+    "literal": "End",
     "translation": " EXIT"
   },
   {
     "offset": "01FCD8",
     "kind": "console",
     "source": "ゴミばこ    ",
+    "literal": "Trash Can",
     "translation": "TRASH"
   },
   {
     "offset": "01FCE3",
     "kind": "console",
     "source": "アイテムそうび ",
+    "literal": "Equip Items",
     "translation": " EQUIP"
   },
   {
     "offset": "01FCED",
     "kind": "console",
     "source": " メンテナンス ",
+    "literal": "Maintenance",
     "translation": " MAINT."
   },
   {
     "offset": "01FCF6",
     "kind": "console",
     "source": " ステータス  ",
+    "literal": "Status",
     "translation": " STATUS"
   },
   {
     "offset": "01FCFF",
     "kind": "console",
     "source": " れんぞくわざ ",
+    "literal": "Combination Techniques",
     "translation": " COMBOS"
   },
   {
     "offset": "01FD0A",
     "kind": "console",
     "source": " コンフィグ  ",
+    "literal": "Configuration",
     "translation": " CONFIG"
   },
   {
     "offset": "01FD14",
     "kind": "console",
     "source": "いれかえじゅん ",
+    "literal": "Switching Order",
     "translation": " ORDER"
   },
   {
     "offset": "01FDD2",
     "kind": "console",
     "source": "        ",
+    "literal": "        ",
     "translation": "        "
   },
   {
     "offset": "01FDDB",
     "kind": "console",
     "source": "ゼンマイン",
-    "translation": "WINDUP MINE"
+    "literal": "Wind-Up Mine",
+    "translation": "WIND MINE"
   },
   {
     "offset": "01FDE2",
     "kind": "console",
     "source": "ゼンマインターボ",
-    "translation": "TURBO WINDUP"
+    "literal": "Turbo Wind-Up Mine",
+    "translation": "TURBOMINE"
   },
   {
     "offset": "01FDED",
     "kind": "console",
     "source": "きのこん",
+    "literal": "Mushroom",
     "translation": "MUSHROOM"
   },
   {
     "offset": "01FDF2",
     "kind": "console",
     "source": "どくきのこん",
-    "translation": "POISON MUSHROOM"
+    "literal": "Poison Mushroom",
+    "translation": "TOADSTOOL"
   },
   {
     "offset": "01FDFA",
     "kind": "console",
     "source": "くもかいじん",
-    "translation": "SPIDER FIEND"
+    "literal": "Spider Fiend",
+    "translation": "SPDRFIEND"
   },
   {
     "offset": "01FE02",
     "kind": "console",
     "source": "どくぐもかいじん",
-    "translation": "POISON SPIDER"
+    "literal": "Poison Spider Fiend",
+    "translation": "TOXSPIDER"
   },
   {
     "offset": "01FE0E",
     "kind": "console",
     "source": "ゲル",
+    "literal": "Gel",
     "translation": "GEL"
   },
   {
     "offset": "01FE12",
     "kind": "console",
     "source": "ゲルゲル",
+    "literal": "Gel-Gel",
     "translation": "GEL-GEL"
   },
   {
     "offset": "01FE19",
     "kind": "console",
     "source": "ガマおやぶん",
+    "literal": "Toad Boss",
     "translation": "TOAD BOSS"
   },
   {
     "offset": "01FE22",
     "kind": "console",
     "source": "ピーチク",
+    "literal": "Pīchiku",
     "translation": "CHIRPER"
   },
   {
     "offset": "01FE28",
     "kind": "console",
     "source": "パーチク",
+    "literal": "Pāchiku",
     "translation": "CHATTERER"
   },
   {
     "offset": "01FE2E",
     "kind": "console",
     "source": "もぐらおとこ",
+    "literal": "Mole Man",
     "translation": "MOLE MAN"
   },
   {
     "offset": "01FE36",
     "kind": "console",
     "source": "ヒネもぐらおとこ",
-    "translation": "CRAFTY MOLE MAN"
+    "literal": "Twisted Mole Man",
+    "translation": "SNEAKMOLE"
   },
   {
     "offset": "01FE40",
     "kind": "console",
     "source": "タックル·ゴリー",
-    "translation": "TACKLE GORILLA"
+    "literal": "Tackle Gory",
+    "translation": "TACKLEAPE"
   },
   {
     "offset": "01FE4A",
     "kind": "console",
     "source": "スモーカー",
+    "literal": "Smoker",
     "translation": "SMOKER"
   },
   {
     "offset": "01FE50",
     "kind": "console",
     "source": "ヘビースモーカー",
-    "translation": "HEAVY SMOKER"
+    "literal": "Heavy Smoker",
+    "translation": "HVYSMOKER"
   },
   {
     "offset": "01FE5A",
     "kind": "console",
     "source": "ひのたまボーズ",
-    "translation": "FIREBALL MONK"
+    "literal": "Fireball Monk",
+    "translation": "FIRE MONK"
   },
   {
     "offset": "01FE64",
     "kind": "console",
     "source": "ミイラおとこ",
+    "literal": "Mummy Man",
     "translation": "MUMMY MAN"
   },
   {
     "offset": "01FE6B",
     "kind": "console",
     "source": "フラン·けん",
+    "literal": "Fran-Ken",
     "translation": "FRANKEN"
   },
   {
     "offset": "01FE72",
     "kind": "console",
     "source": "ホーホー",
+    "literal": "Hoo-Hoo",
     "translation": "HOO-HOO"
   },
   {
     "offset": "01FE77",
     "kind": "console",
     "source": "たまワニ",
+    "literal": "Ball Gator",
     "translation": "ORB GATOR"
   },
   {
     "offset": "01FE7C",
     "kind": "console",
     "source": "ペッパーロボ",
-    "translation": "PEPPER ROBOT"
+    "literal": "Pepper Robot",
+    "translation": "PEP ROBOT"
   },
   {
     "offset": "01FE86",
     "kind": "console",
     "source": "ペッパーキャノン",
-    "translation": "PEPPER CANNON"
+    "literal": "Pepper Cannon",
+    "translation": "P.CANNON"
   },
   {
     "offset": "01FE91",
     "kind": "console",
     "source": "バイオライオン",
+    "literal": "Bio Lion",
     "translation": "BIO LION"
   },
   {
     "offset": "01FE9A",
     "kind": "console",
     "source": "メゾンシェル",
-    "translation": "MAISON SHELL"
+    "literal": "Maison Shell",
+    "translation": "MSN SHELL"
   },
   {
     "offset": "01FEA2",
     "kind": "console",
     "source": "ウニポン",
-    "translation": "URCHIN-PON"
+    "literal": "Unipon",
+    "translation": "URCHINPON"
   },
   {
     "offset": "01FEA8",
     "kind": "console",
     "source": "リトルスター",
-    "translation": "LITTLE STAR"
+    "literal": "Little Star",
+    "translation": "LIL STAR"
   },
   {
     "offset": "01FEAF",
     "kind": "console",
     "source": "こんぶあんこう",
-    "translation": "KELP ANGLER"
+    "literal": "Kelp Anglerfish",
+    "translation": "KELP ANGL"
   },
   {
     "offset": "01FEB8",
     "kind": "console",
     "source": "タコかいじん",
-    "translation": "OCTOPUS FIEND"
+    "literal": "Octopus Fiend",
+    "translation": "OCTOFIEND"
   },
   {
     "offset": "01FEC0",
     "kind": "console",
     "source": "バンペー",
+    "literal": "Sentry",
     "translation": "SENTRY"
   },
   {
     "offset": "01FEC7",
     "kind": "console",
     "source": "スーパーバンペー",
-    "translation": "SUPER SENTRY"
+    "literal": "Super Sentry",
+    "translation": "S.SENTRY"
   },
   {
     "offset": "01FED3",
     "kind": "console",
     "source": "まじんロボ",
-    "translation": "DEMON ROBOT"
+    "literal": "Demon Robot",
+    "translation": "D. ROBOT"
   },
   {
     "offset": "01FEDB",
     "kind": "console",
     "source": "だいまじんロボ",
-    "translation": "GREAT DEMON ROBOT"
+    "literal": "Great Demon Robot",
+    "translation": "G.D.ROBOT"
   },
   {
     "offset": "01FEE6",
     "kind": "console",
     "source": "どう·エンゼル",
-    "translation": "BRONZE ANGEL"
+    "literal": "Copper Angel",
+    "translation": "BRZ ANGEL"
   },
   {
     "offset": "01FEF0",
     "kind": "console",
     "source": "ぎん·エンゼル",
-    "translation": "SILVER ANGEL"
+    "literal": "Silver Angel",
+    "translation": "SLV ANGEL"
   },
   {
     "offset": "01FEFA",
     "kind": "console",
     "source": "きん·エンゼル",
-    "translation": "GOLD ANGEL"
+    "literal": "Gold Angel",
+    "translation": "GLD ANGEL"
   },
   {
     "offset": "01FF03",
     "kind": "console",
     "source": "ガンバラナイト",
-    "translation": "VALOR KNIGHT"
+    "literal": "Do-Your-Best Knight",
+    "translation": "VALOR KNT"
   },
   {
     "offset": "01FF0D",
     "kind": "console",
     "source": "フンバラナイト",
-    "translation": "STALWART KNIGHT"
+    "literal": "Hold-Your-Ground Knight",
+    "translation": "STAL KNT"
   },
   {
     "offset": "01FF16",
     "kind": "console",
     "source": "ガーガリアン",
+    "literal": "Gargalian",
     "translation": "GARGALIAN"
   },
   {
     "offset": "01FF1F",
     "kind": "console",
     "source": "メタルガーダー",
-    "translation": "METAL GUARDER"
+    "literal": "Metal Guarder",
+    "translation": "MTL GUARD"
   },
   {
     "offset": "01FF29",
     "kind": "console",
     "source": "かんしまる",
+    "literal": "Watchmaru",
     "translation": "WATCHMAN"
   },
   {
     "offset": "01FF2F",
     "kind": "console",
     "source": "QQせんとういん",
-    "translation": "QQ SOLDIER"
+    "literal": "QQ Combatant",
+    "translation": "QQSOLDIER"
   },
   {
     "offset": "01FF38",
     "kind": "console",
     "source": "おめんぐんだん",
+    "literal": "Mask Army",
     "translation": "MASK ARMY"
   },
   {
     "offset": "01FF42",
     "kind": "console",
     "source": "グリーンベレー",
-    "translation": "GREEN BERET"
+    "literal": "Green Beret",
+    "translation": "GRN BERET"
   },
   {
     "offset": "01FF4C",
     "kind": "console",
     "source": "メタクラブ",
+    "literal": "Meta Crab",
     "translation": "METACRAB"
   },
   {
     "offset": "01FF53",
     "kind": "console",
     "source": "メタクラブJr.",
-    "translation": "METACRAB JR."
+    "literal": "Meta Crab Jr.",
+    "translation": "METACRBJR"
   },
   {
     "offset": "01FF5D",
     "kind": "console",
     "source": "マームラナ",
+    "literal": "Mamurana",
     "translation": "MAMURANA"
   },
   {
     "offset": "01FF63",
     "kind": "console",
     "source": "ビックアイ",
+    "literal": "Big Eye",
     "translation": "BIG EYE"
   },
   {
     "offset": "01FF6A",
     "kind": "console",
     "source": "ブラックタンク",
-    "translation": "BLACK TANK"
+    "literal": "Black Tank",
+    "translation": "BLK TANK"
   },
   {
     "offset": "01FF73",
     "kind": "console",
     "source": "ガトー",
+    "literal": "Gâteau",
     "translation": "GATEAU"
   },
   {
     "offset": "01FF78",
     "kind": "console",
     "source": "へいし",
+    "literal": "Soldier",
     "translation": "SOLDIER"
   },
   {
     "offset": "01FF7C",
     "kind": "console",
     "source": "ガトー",
+    "literal": "Gâteau",
     "translation": "GATEAU"
   },
   {
     "offset": "01FF81",
     "kind": "console",
     "source": "メカ·デ·ローズ",
-    "translation": "MECHA DE ROSE"
+    "literal": "Mecha de Rose",
+    "translation": "MCHA ROSE"
   },
   {
     "offset": "01FF8C",
     "kind": "console",
     "source": "パパメカ",
-    "translation": "PAPA MECHA"
+    "literal": "Papa Mecha",
+    "translation": "PAPAMECHA"
   },
   {
     "offset": "01FF93",
     "kind": "console",
     "source": "バグバグ",
+    "literal": "Bug-Bug",
     "translation": "BUG-BUG"
   },
   {
     "offset": "01FF9C",
     "kind": "console",
     "source": "せんとういん",
+    "literal": "Combatant",
     "translation": "SOLDIER"
   },
   {
     "offset": "01FFA3",
     "kind": "console",
     "source": "ミニせんとういん",
-    "translation": "MINI SOLDIER"
+    "literal": "Mini Combatant",
+    "translation": "MINITROOP"
   },
   {
     "offset": "01FFAC",
     "kind": "console",
     "source": "しんえいたい",
-    "translation": "ELITE GUARD"
+    "literal": "Elite Guard",
+    "translation": "ELITEGRD"
   },
   {
     "offset": "01FFBB",
     "kind": "console",
     "source": " ",
+    "literal": " ",
     "translation": " "
   },
   {
     "offset": "01FFBD",
     "kind": "console",
     "source": "A",
+    "literal": "A",
     "translation": "A"
   },
   {
     "offset": "01FFBF",
     "kind": "console",
     "source": "B",
+    "literal": "B",
     "translation": "B"
   },
   {
     "offset": "01FFC1",
     "kind": "console",
     "source": "C",
+    "literal": "C",
     "translation": "C"
   },
   {
     "offset": "02FD07",
     "kind": "console",
     "source": "[POS:4D0]THE STAFF OF        ",
+    "literal": "[POS:4D0]THE STAFF OF        ",
     "translation": "[POS:4D0]THE STAFF OF        "
   },
   {
     "offset": "02FD1F",
     "kind": "console",
     "source": "[POS:4D0]MAIN PROGRAMER      ",
+    "literal": "[POS:4D0]MAIN PROGRAMER      ",
     "translation": "[POS:4D0]MAIN PROGRAMMER     "
   },
   {
     "offset": "02FD37",
     "kind": "console",
     "source": "[POS:4D0]SCENARIO WRITTER    ",
+    "literal": "[POS:4D0]SCENARIO WRITTER    ",
     "translation": "[POS:4D0]SCENARIO WRITER     "
   },
   {
     "offset": "02FD4F",
     "kind": "console",
     "source": "[POS:4D0]ASSISTANT PROGRAMER ",
+    "literal": "[POS:4D0]ASSISTANT PROGRAMER ",
     "translation": "[POS:4D0]ASSISTANT PROGRAMMER"
   },
   {
     "offset": "02FD67",
     "kind": "console",
     "source": "[POS:4D0]GRAPHIC DIRECTER    ",
+    "literal": "[POS:4D0]GRAPHIC DIRECTER    ",
     "translation": "[POS:4D0]GRAPHIC DIRECTOR    "
   },
   {
     "offset": "02FD7F",
     "kind": "console",
     "source": "[POS:4D0]CHARACTER DESIGNER  ",
+    "literal": "[POS:4D0]CHARACTER DESIGNER  ",
     "translation": "[POS:4D0]CHARACTER DESIGNER  "
   },
   {
     "offset": "02FD97",
     "kind": "console",
     "source": "[POS:4D0]MONSTER DESIGNER    ",
+    "literal": "[POS:4D0]MONSTER DESIGNER    ",
     "translation": "[POS:4D0]MONSTER DESIGNER    "
   },
   {
     "offset": "02FDAF",
     "kind": "console",
     "source": "[POS:4D0]BACK GROUND DESIGNER",
+    "literal": "[POS:4D0]BACK GROUND DESIGNER",
     "translation": "[POS:4D0]BACKGROUND DESIGNER "
   },
   {
     "offset": "02FDC7",
     "kind": "console",
     "source": "[POS:4D0]VISUAL DESIGNER     ",
+    "literal": "[POS:4D0]VISUAL DESIGNER     ",
     "translation": "[POS:4D0]VISUAL DESIGNER     "
   },
   {
     "offset": "02FDDF",
     "kind": "console",
     "source": "[POS:4D0]SOUND PRODUCER      ",
+    "literal": "[POS:4D0]SOUND PRODUCER      ",
     "translation": "[POS:4D0]SOUND PRODUCER      "
   },
   {
     "offset": "02FDF7",
     "kind": "console",
     "source": "[POS:4D0]QUINTET STAFF       ",
+    "literal": "[POS:4D0]QUINTET STAFF       ",
     "translation": "[POS:4D0]QUINTET STAFF       "
   },
   {
     "offset": "02FE0F",
     "kind": "console",
     "source": "[POS:4D0]ART DIRECTION       ",
+    "literal": "[POS:4D0]ART DIRECTION       ",
     "translation": "[POS:4D0]ART DIRECTION       "
   },
   {
     "offset": "02FE27",
     "kind": "console",
     "source": "[POS:4D0]SPECIAL THANKS      ",
+    "literal": "[POS:4D0]SPECIAL THANKS      ",
     "translation": "[POS:4D0]SPECIAL THANKS      "
   },
   {
     "offset": "02FE3F",
     "kind": "console",
     "source": "[POS:4D0]ENIX STAFF          ",
+    "literal": "[POS:4D0]ENIX STAFF          ",
     "translation": "[POS:4D0]ENIX STAFF          "
   },
   {
     "offset": "02FE57",
     "kind": "console",
     "source": "[POS:4D0]PRODUCER            ",
+    "literal": "[POS:4D0]PRODUCER            ",
     "translation": "[POS:4D0]PRODUCER            "
   },
   {
     "offset": "02FE6F",
     "kind": "console",
     "source": "[POS:4D0]PUBLISHER           ",
+    "literal": "[POS:4D0]PUBLISHER           ",
     "translation": "[POS:4D0]PUBLISHER           "
   },
   {
     "offset": "02FE87",
     "kind": "console",
     "source": "[POS:4D0]DIRECTOR            ",
+    "literal": "[POS:4D0]DIRECTOR            ",
     "translation": "[POS:4D0]DIRECTOR            "
   },
   {
     "offset": "02FE9F",
     "kind": "console",
     "source": "[POS:50E]1994 (C)QUINTET[N]1994 (C)ANCIENT[N]1994 (C)ENIX",
+    "literal": "[POS:50E]1994 (C)QUINTET[N]1994 (C)ANCIENT[N]1994 (C)ENIX",
     "translation": "[POS:50E]1994 (C)QUINTET[N]1994 (C)ANCIENT[N]1994 (C)ENIX"
   },
   {
     "offset": "02FECF",
     "kind": "console",
     "source": "[POS:4D0]MUSIC COMPOSER      ",
+    "literal": "[POS:4D0]MUSIC COMPOSER      ",
     "translation": "[POS:4D0]MUSIC COMPOSER      "
   },
   {
     "offset": "02FEE7",
     "kind": "console",
     "source": "[POS:4D0]GAME DESIGNER       ",
+    "literal": "[POS:4D0]GAME DESIGNER       ",
     "translation": "[POS:4D0]GAME DESIGNER       "
   },
   {
     "offset": "02FEFF",
     "kind": "console",
     "source": "[POS:4D0]TECHNICAL SUPPORT   ",
+    "literal": "[POS:4D0]TECHNICAL SUPPORT   ",
     "translation": "[POS:4D0]TECHNICAL SUPPORT   "
   },
   {
     "offset": "02FF17",
     "kind": "console",
     "source": "[POS:4D0]THANKS TO PLAY      ",
+    "literal": "[POS:4D0]THANKS TO PLAY      ",
     "translation": "[POS:4D0]THANKS FOR PLAYING  "
   },
   {
     "offset": "02FF2F",
     "kind": "console",
     "source": "[POS:4D0]                    ",
+    "literal": "[POS:4D0]                    ",
     "translation": "[POS:4D0]                    "
   }
 ]

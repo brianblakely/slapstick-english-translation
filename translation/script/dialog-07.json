@@ -178,19 +178,19 @@
     "offset": "079108",
     "kind": "dialog",
     "source": "[CLR]発明には まず[N][PAL:2]ひらめき[PAL:0]が 必要だぞ[N]ひらめく場合は さまざまだが[N]まずは [PAL:2]本を読む[PAL:0]ことだな[FIN]お前の家にも [PAL:2]┌発明の友┘[N][PAL:0]という本があっただろう?[N]まずは あれを読むことだ[FIN]もっとも今は むずかしくて[N]読めないかもしれないが[N]そのうち 書いてあることが[N]わかるようになるだろう[FIN]あとは[N][PAL:2]人のなやみを聞くこと[N]いろんなものを 調べること[N][PAL:0]これが ひらめきの第一步だ[FIN]そうそう ひらめいたものを[N]作るには [PAL:2]材料費[PAL:0]として[N][PAL:2]トロンがかかる[PAL:0]のを 忘れるなよ[N]タダじゃ 発明品は作れんぞ˳[FIN][JMP:&string_079308+M]",
-    "translation": "[CLR]Every invention begins[N]with an [PAL:2]inspiration[PAL:0].[N]Inspiration comes in many[FIN]ways, but first, [PAL:2]read[N]books[PAL:0].[FIN]You have a book called [PAL:2]The[N]Inventor's Friend[PAL:0] at home.[N]Start by reading that.[FIN]It may be too difficult[N]now, but one day you will[N]understand what is written[N]there.[FIN][PAL:2]Listen to people's[N]problems, and examine all[N]kinds of things.[PAL:0][FIN]That is the first step[N]toward inspiration.[FIN]And remember, creating an[N]idea costs [PAL:2]tron for[N]materials[PAL:0]. You cannot[N]invent for free.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]Every invention begins[N]with an [PAL:2]inspiration[PAL:0].[N]Inspiration comes in many[FIN]ways, but first, [PAL:2]read[N]books[PAL:0].[FIN]You have a book called [PAL:2]The[N]Inventor's Friend[PAL:0] at home.[N]Start by reading that.[FIN]It may be too difficult[N]now, but one day you will[N]understand what is written[N]there.[FIN][PAL:2]Listen to people's[N]problems, and examine all[N]kinds of things.[PAL:0][FIN]That is the first step[N]toward inspiration.[FIN]And remember, creating an[N]idea costs [PAL:2]tron for[N]materials[PAL:0]. You cannot[N]invent for free.[FIN]Anything else to ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "079238",
     "kind": "dialog",
     "source": "[CLR]自分の持ってるアイテムや[N][TPL:1A]の 裝備品などを[N]ふたつ 組み合せて 実驗すること[N]これを[PAL:2]合成[PAL:0]というんだ[FIN]特に [PAL:2]スクラップ[PAL:0]ってやつは[N]いろんなものが できあがるぞ[N]合成は トロンもかからんし[N]いろいろためしてみることだな[FIN]それと 新しく作った武器と[N]使いこんだ武器を 合成すると[N]新しい武器でも[N]強力になったりするからな˳[FIN][JMP:&string_079308+M]",
-    "translation": "[CLR]Experiment by joining two[N]items you own, including[N]equipment for your [TPL:1A].[N]This is called [PAL:2]combining[PAL:0].[FIN][PAL:2]Scrap[PAL:0] in particular can[N]produce all sorts of[N]things. Combining costs no[FIN]tron, so experiment[N]freely.[FIN]Combine a newly made[N]weapon with one you have[N]used a lot, and even the[FIN]new weapon may become[N]powerful.[FIN]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]Experiment by joining two[N]items you own, including[N]equipment for your [TPL:1A].[N]This is called [PAL:2]combining[PAL:0].[FIN][PAL:2]Scrap[PAL:0] in particular can[N]produce all sorts of[N]things. Combining costs no[FIN]tron, so experiment[N]freely.[FIN]Combine a newly made[N]weapon with one you have[N]used a lot, and even the[FIN]new weapon may become[N]powerful.[FIN]Anything else to ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "079308",
     "kind": "dialog",
     "source": "[CLR][TPL:1A]がいると[N]なにかと たよりになるもんだ[N][TPL:1A]は 発明マシンで[N]3体まで登錄できるぞ˳[FIN][TPL:1A]ができたら 裝備品で[N]パワーアップさせていくんだ[N][TPL:1A]の 武器や裝備は[N]発明や合成で作れるぞ[FIN]発明マシンの[N][PAL:2]プログラム[PAL:0]で[N]パラメーターを 変えてやったり[N][PAL:2]連続技[PAL:0]のプログラムもできるぞ[FIN][TPL:1A]のHPがへったら[N][PAL:2]すぐナオール[PAL:0]で 回復できる[N]開発マシンのある所なら[N][PAL:2]メンテナンス[PAL:0]をすればいいんだ[FIN][TPL:1A]が 何体かできたら[N]戦闘中に [PAL:2][NAM:0]コマンド[PAL:0]で[N]いれかえができるぞ[FIN][::]他にも 何か聞きたいか?[N] うん おしえて[N] もう いいよ",
-    "translation": "[CLR]A [TPL:1A] is a reliable[N]companion. You can[N]register up to three in[N]the Invention Machine.[FIN]Once you build a [TPL:1A],[N]power it up with[N]equipment. Invent or[N]combine to create its[FIN]weapons and gear.[FIN]Use [PAL:2]Programming[PAL:0] in the[N]machine to adjust its[N]parameters and program[N][PAL:2]combo attacks[PAL:0].[FIN]Restore lost HP with a[N][PAL:2]Quick Fix[PAL:0]. At any[N]Invention Machine, you can[N]perform [PAL:2]maintenance[PAL:0].[FIN]Once you have several[N][TPL:1A]s, use the [PAL:2][NAM:0][N]command[PAL:0] in battle to swap[N]between them.[FIN][::]Anything else you want to[N]ask?[N] Yes, teach me more[N] No, that's enough"
+    "translation": "[CLR]A [TPL:1A] is a reliable[N]companion. You can[N]register up to three in[N]the Invention Machine.[FIN]Once you build a [TPL:1A],[N]power it up with[N]equipment. Invent or[N]combine to create its[FIN]weapons and gear.[FIN]Use [PAL:2]Programming[PAL:0] in the[N]machine to adjust its[N]parameters and program[N][PAL:2]combo attacks[PAL:0].[FIN]Restore lost HP with a[N][PAL:2]Quick Fix[PAL:0]. At any[N]Invention Machine, you can[N]perform [PAL:2]maintenance[PAL:0].[FIN]Once you have several[N][TPL:1A]s, use the [PAL:2][NAM:0][N]command[PAL:0] in battle to swap[N]between them.[FIN][::]Anything else to ask?[N] Yes, teach me more[N] No, that's enough"
   },
   {
     "offset": "07950C",
@@ -256,7 +256,7 @@
     "offset": "0798CE",
     "kind": "dialog",
     "source": "[DEF]┌この先には ハッカーの[N] かい人たちが うろついています[N] 用のない方は立ち入らないように[N] してください   ロココ町警察┘[END]",
-    "translation": "[DEF]Beyond this point, strange[N]Hacker creatures are at[N]large. Keep out unless you[N]have business.[FIN]                 Rococo[N]Police[END]"
+    "translation": "[DEF]Beyond this point, strange[N]Hacker creatures are at[N]large. Keep out unless you[N]have business.[FIN]      Rococo Police[END]"
   },
   {
     "offset": "07991D",

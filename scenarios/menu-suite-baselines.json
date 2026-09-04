@@ -46,10 +46,15 @@
       "height": 224,
       "rgbSha256": "6d6d2caf3885c782fd76ce09a1ccb409796080b9cdad5fb557796c1a48b657e1"
     },
+    "machine-maintenance-confirmation": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "935edd86feb28d7bf47ea118ea1214114fda0f4fc456d24ac216d0002a9d4d05"
+    },
     "machine-maintenance-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "a11397f593a27868da97950755a879b58a98e9eefd1aa488462805402802c3a4"
+      "rgbSha256": "bd46eb5864fddee6515dfbab446d31ce2bfd4357be3861004b0b3ed878f082ac"
     },
     "machine-program-robots": {
       "width": 256,
@@ -65,6 +70,11 @@
       "width": 256,
       "height": 224,
       "rgbSha256": "c2a8190f3d4ef7498eecfdb0a120e7ce86f97be1d7c1722648e22956de6ad11e"
+    },
+    "machine-program-combos": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "a087487976cbd0fa03f82d19ad256547c45e4aef31f5597d1cb7228a8cb4fda2"
     },
     "machine-exit-result": {
       "width": 256,
@@ -121,15 +131,20 @@
       "height": 224,
       "rgbSha256": "8799b903097cfde7f0247fac6aaf0b7492c3db975fcabededb96d2690252b0b2"
     },
+    "main-equipment-player-held": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "c5c5c86de2ed688c93158587b067ed012d30816be3d0503c1cb8a628a0789b45"
+    },
     "main-equipment-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "76503b8bf79743621db4b2c791eb5f7e9f6576bf9452448ef150352364863dce"
+      "rgbSha256": "5486c6ba3d0dce439382f119e75a08ece2dff318ad9fbf24ef0ebaa8e26ece54"
     },
     "main-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "3ee8db1133961d4e2d4bc69fbd179f850f5f5d8e381ec3ee65bf89416c1db4ff"
+      "rgbSha256": "07ee16d9848b6369899ffdf2364cec2194349067332b5a680198c50c20dc6621"
     },
     "main-status-player": {
       "width": 256,
@@ -139,7 +154,7 @@
     "main-status-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "052afe755942e44d6dcd3eb20b58de7307c6f500d0afef72f3d4cb852df07041"
+      "rgbSha256": "4b576d91966396406a948aa0cf13f9a2aee5720c187c9ebc0609afb167f8263f"
     },
     "main-config": {
       "width": 256,
@@ -149,7 +164,7 @@
     "main-maintenance": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "6df0262aa9780cfbaa625fd759dc37e02f2c692599d5495f2bf25ffc7a6d4e03"
+      "rgbSha256": "a73ce399035ec7f5b2b42354d19dbadf5fb68f70a4a9598e0084ec57e5fc200b"
     },
     "main-exit": {
       "width": 256,

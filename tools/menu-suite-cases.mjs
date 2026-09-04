@@ -128,6 +128,11 @@ export const MENU_SUITE_CASES = Object.freeze([
     assertion: "maintained-robot",
     captures: [
       { frame: 600, id: "machine-maintenance-robots", title: "Maintenance — all robots" },
+      {
+        frame: 800,
+        id: "machine-maintenance-confirmation",
+        title: "Maintenance — Alpha service confirmation",
+      },
       { frame: 1400, id: "machine-maintenance-result", title: "Maintenance — Alpha restored" },
     ],
   },
@@ -160,6 +165,36 @@ export const MENU_SUITE_CASES = Object.freeze([
       { frame: 620, id: "machine-program-robots", title: "Program — all robots" },
       { frame: 960, id: "machine-program-panel", title: "Program — Alpha points" },
       { frame: 1700, id: "machine-program-result", title: "Program — points assigned" },
+    ],
+  },
+  {
+    id: "machine-program-combos",
+    group: "Invention Machine",
+    feature: "program",
+    state: "populated",
+    frames: 1500,
+    snapshotEvery: 100,
+    pulses: [
+      "up:20:20",
+      "a:80:2",
+      "right:210:2",
+      "right:250:2",
+      "right:290:2",
+      "right:330:2",
+      "right:370:2",
+      "a:510:2",
+      "a:700:2",
+      "a:880:2",
+      "a:1030:2",
+      "right:1130:2",
+      "a:1230:2",
+    ],
+    captures: [
+      {
+        frame: 1500,
+        id: "machine-program-combos",
+        title: "Program — Alpha combos",
+      },
     ],
   },
   {
@@ -314,9 +349,10 @@ export const MENU_SUITE_CASES = Object.freeze([
     state: "populated",
     frames: 900,
     snapshotEvery: 100,
-    pulses: ["down:20:2", "x:80:2", "a:400:2", "a:500:2"],
+    pulses: ["down:20:2", "x:80:2", "a:400:2", "a:500:2", "a:750:2"],
     captures: [
-      { frame: 900, id: "main-equipment-player", title: "Equip — all 70 bag slots" },
+      { frame: 700, id: "main-equipment-player", title: "Equip — all 70 bag slots" },
+      { frame: 900, id: "main-equipment-player-held", title: "Equip — held-item layout" },
     ],
   },
   {
@@ -452,4 +488,3 @@ export const MENU_SUITE_CASES = Object.freeze([
     ],
   },
 ]);
-
