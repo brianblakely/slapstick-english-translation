@@ -328,7 +328,7 @@
     "offset": "06996F",
     "kind": "dialog",
     "source": "[DEF][CLR]そうなの?こまっちゃうなあ[N]とりあえず はたらいててよ[N]後で メタクラブさまに[N]どうするか聞いておくからさ[FIN][::]え?なんで穴をほるかって?[N]テ···さがしもんなのっ![N]子供は よけいな心配を[N]しなくていいのっ![END]",
-    "translation": "[DEF][CLR]You're not? That's a[N]problem. Work for now[N]anyway. I'll ask Lord[FIN]Metacrab what to do with[N]you later.[FIN][::]Why are we digging?[N]W-we're looking for[N]something! Children don't[N]need to worry about that![END]"
+    "translation": "[DEF][CLR]You're not? That's a[N]problem. Work for now.[N]I'll ask Lord Meta Crab[N]what to do with you later.[FIN][::]Why are we digging?[N]W-we're looking for[N]something! Children don't[N]need to worry about that![END]"
   },
   {
     "offset": "069A59",
@@ -346,7 +346,7 @@
     "offset": "069B15",
     "kind": "dialog",
     "source": "[DFT][PAL:2]メタクラブ:[N][PAL:0]まだ 見つからんのか?[N]お前たちは 子供ひとりに[N]何を 手間どっているんだ!?[FIN]こんな不始末が[N]ブラックモア樣に知れてみろ[N]お前たちの首は[N][PAU:3C]チョン だぞ![END]",
-    "translation": "[DFT][PAL:2]Metacrab: [PAL:0]You still[N]haven't found him? Why[N]does one child have you[N]running in circles?![FIN]If Lord Blackmore learns[N]about this blunder, it'll[N]be [PAU:3C]off with your heads![END]"
+    "translation": "[DFT][PAL:2]Meta Crab: [PAL:0]You still[N]haven't found him? Why[N]does one child have you[N]running in circles?![FIN]If Lord Blackmore learns[N]about this blunder, it'll[N]be [PAU:3C]off with your heads![END]"
   },
   {
     "offset": "069B85",
@@ -406,7 +406,7 @@
     "offset": "069F21",
     "kind": "dialog",
     "source": "[DEF]メタクラブ!なにをしてやがる?[N]定時報告の時間だぞ[N]グズグズするんじゃねえぞ![END]",
-    "translation": "[DEF]Metacrab! What are you[N]doing? It's time for your[N]report! Quit dragging your[N]claws![END]"
+    "translation": "[DEF]Meta Crab! What are you[N]doing? It's time for your[N]report! Quit dragging your[N]claws![END]"
   },
   {
     "offset": "069F54",
@@ -460,19 +460,19 @@
     "offset": "06A327",
     "kind": "dialog",
     "source": "[DEF][PAL:2]メタクラブ:[N][PAL:0]すみません すみません[N]おみそれいたしやした[FIN]いやあ だんなぁ[N]おつよいですねえ このぉ![N]いえね あっしは ほんの[N]通りすがりのさわガニでして[FIN]ハッカー··とかいう奴らに[N]改造されて[N]あんな姿になってたんですよ[FIN]そいつらね あっしに[N]このどうくつの中にある[N][TPL:0]って名の宝石を[N]さがせって言うんですよ[FIN]でも これが見つからなくて[N]困っていた所なんですよ[FIN]だんなのおかげで[N]助かっちゃいましたよ[N]···これ お礼と言っちゃあ[N]なんですけど···[END]",
-    "translation": "[DEF][PAL:2]Metacrab: [PAL:0]Mercy! Please[N]forgive me! I had no idea[N]who you were![FIN]My, you're strong, boss![N]Me? I'm just an innocent[N]little river crab passing[N]by.[FIN]These Hacker fellows[N]modified me and made me[N]look like that.[FIN]They ordered me to search[N]this cave for a jewel[N]called [TPL:0].[FIN]But I couldn't find it,[N]and I was in quite a bind.[FIN]Thanks to you, I'm free![N]This isn't much, but[N]please take it...[END]"
+    "translation": "[DEF][PAL:2]Meta Crab: [PAL:0]Mercy! Please[N]forgive me! I had no idea[N]who you were![FIN]My, you're strong, boss![N]Me? I'm just an innocent[N]little river crab passing[N]by.[FIN]These Hacker fellows[N]modified me and made me[N]look like that.[FIN]They ordered me to search[N]this cave for a jewel[N]called [TPL:0].[FIN]But I couldn't find it,[N]and I was in quite a bind.[FIN]Thanks to you, I'm free![N]This isn't much, but[N]please take it...[END]"
   },
   {
     "offset": "06A528",
     "kind": "dialog",
     "source": "[DEF][PAL:2]メタクラブ:[N][PAL:0]なんだ お前は?[N]この こぞうの仲間かっ![FIN]お前たちが ここに入りこんで[N]ひっかきまわしてくれたせいで[N]こっちは いろいろと[N]さんざんな目にあったんだぞ![FIN]大切な仕事の[N]じゃまをしてくれたバツだ![N]この メタクラブさまが[N]おしおきしてくれる![END]",
-    "translation": "[DEF][PAL:2]Metacrab: [PAL:0]Who are you? An[N]ally of that brat?![FIN]You two barged in here and[N]made an absolute mess of[N]our operation![FIN]You'll pay for interfering[N]with our important[N]mission! The mighty[FIN]Metacrab will punish you[N]himself![END]"
+    "translation": "[DEF][PAL:2]Meta Crab: [PAL:0]Who are you? An[N]ally of that brat?![FIN]You two barged in here and[N]made an absolute mess of[N]our operation![FIN]You'll pay for interfering[N]with our important[N]mission! Meta Crab himself[N]will punish you![END]"
   },
   {
     "offset": "06A5BE",
     "kind": "dialog",
     "source": "[DEF][PAL:2]メタクラブ:[N][PAL:0]おとなしく帰れば いいものを[N]まだこりないらしいな[N]ならば 今いちど おしおきだ![END]",
-    "translation": "[DEF][PAL:2]Metacrab: [PAL:0]You should have[N]gone home quietly, but you[N]still haven't learned.[FIN]Then I'll punish you once[N]more![END]"
+    "translation": "[DEF][PAL:2]Meta Crab: [PAL:0]You should have[N]gone home quietly, but you[N]still haven't learned.[FIN]Then I'll punish you once[N]more![END]"
   },
   {
     "offset": "06A5F8",
@@ -538,13 +538,13 @@
     "offset": "06A92D",
     "kind": "dialog",
     "source": "[DEF]今 メタクラブ樣が[N]しんにゅう者を ここに[N]追いつめた所なんだ[N]關係ない人は 立入り禁止だよ![END]",
-    "translation": "[DEF]Lord Metacrab just[N]cornered an intruder in[N]here. No one else is[N]allowed inside![END]"
+    "translation": "[DEF]Lord Meta Crab just[N]cornered an intruder in[N]here. No one else is[N]allowed inside![END]"
   },
   {
     "offset": "06A9AB",
     "kind": "dialog",
     "source": "[DEF]ここは ハッカー幹部の[N][PAL:2]メタクラブさま[PAL:0]用の おふろだよ[N]關係ない人を入れると[N]ボクが おこられちゃうんだ˳[END]",
-    "translation": "[DEF]This bath is reserved for[N][PAL:2]Lord Metacrab[PAL:0], a Hacker[N]officer. I'll be in[FIN]trouble if I let anyone[N]else inside.[END]"
+    "translation": "[DEF]This bath is reserved for[N][PAL:2]Lord Meta Crab[PAL:0], a Hacker[N]officer. I'll be in[FIN]trouble if I let anyone[N]else inside.[END]"
   },
   {
     "offset": "06A9F3",

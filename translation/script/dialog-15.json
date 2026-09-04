@@ -195,7 +195,7 @@
     "offset": "158BC6",
     "kind": "dialog",
     "source": "[CLR]きっとあの戦闘員は こわがりなのよ[N]何か こわがらせる方法はないかしら[N]そういえば たしか[N]ブレーカーがあったわね···˳[END]",
-    "translation": "[CLR]That soldier must be a[N]coward. Could something[N]frighten him?[FIN]Come to think of it, there[N]was a circuit breaker...[END]"
+    "translation": "[CLR]That trooper must be a[N]coward. Could something[N]frighten him?[FIN]Come to think of it, there[N]was a circuit breaker...[END]"
   },
   {
     "offset": "158C0D",
@@ -381,7 +381,7 @@
     "offset": "159655",
     "kind": "dialog",
     "source": "[DEF]ボクは ハッカーの[N]戦闘員をしてたんだけど[N]大変なことを きいて[N]こわくなって にげてきたんだ[FIN]ハッカーは この星を[N]自分の手におさめるために[N]おそろしい レーザー兵器を[N]作ってるんだよ···[FIN]ボク しらなかったんだよ[N]ハッカーが そんな[N]おそろしいことを[N]かんがえてるなんて···[PAU:1E]ぶるぶる[FIN][::]このどうくつの中の宝箱は[N]君が 持っていっていいよ[N]宝箱を あけてみてごらん[N]ボクにはもう いらないものだしね˳[END]",
-    "translation": "[DEF]I was a Hacker soldier,[N]but I heard something[N]terrible, got scared, and[N]ran away.[FIN]The Hackers are building a[N]dreadful laser weapon to[N]take control of this[N]planet...[FIN]I never knew they were[N]planning anything so[N]awful... [PAU:1E]Brrr...[FIN]You may have the treasure[N]chest in this cave. Go on,[N]open it.[FIN]I do not need it anymore.[END]"
+    "translation": "[DEF]I was a Hacker trooper,[N]but I heard something[N]terrible, got scared, and[N]ran away.[FIN]The Hackers are building a[N]dreadful laser weapon to[N]take control of this[N]planet...[FIN]I never knew they were[N]planning anything so[N]awful... [PAU:1E]Brrr...[FIN]You may have the treasure[N]chest in this cave. Go on,[N]open it.[FIN]I do not need it anymore.[END]"
   },
   {
     "offset": "159744",

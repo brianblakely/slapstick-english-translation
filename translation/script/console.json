@@ -1621,14 +1621,14 @@
     "kind": "console",
     "source": "ゼンマイン",
     "literal": "Wind-Up Mine",
-    "translation": "WIND MINE"
+    "translation": "WIND-UP"
   },
   {
     "offset": "01FDE2",
     "kind": "console",
     "source": "ゼンマインターボ",
     "literal": "Turbo Wind-Up Mine",
-    "translation": "TURBOMINE"
+    "translation": "CRANK-UP"
   },
   {
     "offset": "01FDED",
@@ -1649,14 +1649,14 @@
     "kind": "console",
     "source": "くもかいじん",
     "literal": "Spider Fiend",
-    "translation": "SPDRFIEND"
+    "translation": "SPIDER"
   },
   {
     "offset": "01FE02",
     "kind": "console",
     "source": "どくぐもかいじん",
     "literal": "Poison Spider Fiend",
-    "translation": "TOXSPIDER"
+    "translation": "VENOM"
   },
   {
     "offset": "01FE0E",
@@ -1705,14 +1705,14 @@
     "kind": "console",
     "source": "ヒネもぐらおとこ",
     "literal": "Twisted Mole Man",
-    "translation": "SNEAKMOLE"
+    "translation": "MAD MOLE"
   },
   {
     "offset": "01FE40",
     "kind": "console",
     "source": "タックル·ゴリー",
     "literal": "Tackle Gory",
-    "translation": "TACKLEAPE"
+    "translation": "BLITZ APE"
   },
   {
     "offset": "01FE4A",
@@ -1768,14 +1768,14 @@
     "kind": "console",
     "source": "ペッパーロボ",
     "literal": "Pepper Robot",
-    "translation": "PEP ROBOT"
+    "translation": "PEPPERBOT"
   },
   {
     "offset": "01FE86",
     "kind": "console",
     "source": "ペッパーキャノン",
     "literal": "Pepper Cannon",
-    "translation": "P.CANNON"
+    "translation": "PEPPRSHOT"
   },
   {
     "offset": "01FE91",
@@ -1789,14 +1789,14 @@
     "kind": "console",
     "source": "メゾンシェル",
     "literal": "Maison Shell",
-    "translation": "MSN SHELL"
+    "translation": "SHELLTER"
   },
   {
     "offset": "01FEA2",
     "kind": "console",
     "source": "ウニポン",
     "literal": "Unipon",
-    "translation": "URCHINPON"
+    "translation": "URCHIE"
   },
   {
     "offset": "01FEA8",
@@ -1810,7 +1810,7 @@
     "kind": "console",
     "source": "こんぶあんこう",
     "literal": "Kelp Anglerfish",
-    "translation": "KELP ANGL"
+    "translation": "ANGLER"
   },
   {
     "offset": "01FEB8",
@@ -1831,21 +1831,21 @@
     "kind": "console",
     "source": "スーパーバンペー",
     "literal": "Super Sentry",
-    "translation": "S.SENTRY"
+    "translation": "SENTRY++"
   },
   {
     "offset": "01FED3",
     "kind": "console",
     "source": "まじんロボ",
     "literal": "Demon Robot",
-    "translation": "D. ROBOT"
+    "translation": "DEMONBOT"
   },
   {
     "offset": "01FEDB",
     "kind": "console",
     "source": "だいまじんロボ",
     "literal": "Great Demon Robot",
-    "translation": "G.D.ROBOT"
+    "translation": "DEVILBOT"
   },
   {
     "offset": "01FEE6",
@@ -1894,7 +1894,7 @@
     "kind": "console",
     "source": "メタルガーダー",
     "literal": "Metal Guarder",
-    "translation": "MTL GUARD"
+    "translation": "GUARD"
   },
   {
     "offset": "01FF29",
@@ -1908,7 +1908,7 @@
     "kind": "console",
     "source": "QQせんとういん",
     "literal": "QQ Combatant",
-    "translation": "QQSOLDIER"
+    "translation": "QQTROOPER"
   },
   {
     "offset": "01FF38",
@@ -1929,14 +1929,14 @@
     "kind": "console",
     "source": "メタクラブ",
     "literal": "Meta Crab",
-    "translation": "METACRAB"
+    "translation": "META CRAB"
   },
   {
     "offset": "01FF53",
     "kind": "console",
     "source": "メタクラブJr.",
     "literal": "Meta Crab Jr.",
-    "translation": "METACRBJR"
+    "translation": "META JR"
   },
   {
     "offset": "01FF5D",
@@ -1957,7 +1957,7 @@
     "kind": "console",
     "source": "ブラックタンク",
     "literal": "Black Tank",
-    "translation": "BLK TANK"
+    "translation": "BLACKTANK"
   },
   {
     "offset": "01FF73",
@@ -1985,14 +1985,14 @@
     "kind": "console",
     "source": "メカ·デ·ローズ",
     "literal": "Mecha de Rose",
-    "translation": "MCHA ROSE"
+    "translation": "MECH ROSE"
   },
   {
     "offset": "01FF8C",
     "kind": "console",
     "source": "パパメカ",
     "literal": "Papa Mecha",
-    "translation": "PAPAMECHA"
+    "translation": "PAPA MECH"
   },
   {
     "offset": "01FF93",
@@ -2006,7 +2006,7 @@
     "kind": "console",
     "source": "せんとういん",
     "literal": "Combatant",
-    "translation": "SOLDIER"
+    "translation": "TROOPER"
   },
   {
     "offset": "01FFA3",
@@ -2020,7 +2020,7 @@
     "kind": "console",
     "source": "しんえいたい",
     "literal": "Elite Guard",
-    "translation": "ELITEGRD"
+    "translation": "ELITE"
   },
   {
     "offset": "01FFBB",

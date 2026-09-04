@@ -1005,7 +1005,7 @@
     "offset": "0AC0B2",
     "kind": "dialog",
     "source": "[DEF][PAL:2]戦闘員A:[N][PAL:0]ねえねえ 聞いた?[N]総統が ショコラ星のお姫樣を[N]さらって 帰ってきたらしいよ˳[FIN][PAL:2]戦闘員B:[N][PAL:0]ショコラ星も ハッカーに[N]さからえなくなったわけだ[FIN]総統も [PAL:2]そうとう[PAL:0]やるなあー[N][PAU:1E]なんちゃって[NXT]",
-    "translation": "[DEF][PAL:2]Soldier A: [PAL:0]Hey, did you[N]hear? The Supreme Leader[N]came back with the[FIN]princess of Planet[N]Chocolat.[FIN][PAL:2]Soldier B: [PAL:0]Now even[N]Chocolat can't defy the[N]Hackers.[FIN]Our leader sure knows how[N]to take the lead! [PAU:1E]Get it?[NXT]"
+    "translation": "[DEF][PAL:2]Trooper A: [PAL:0]Hey, did you[N]hear? The Supreme Leader[N]came back with the[FIN]princess of Planet[N]Chocolat.[FIN][PAL:2]Trooper B: [PAL:0]Now even[N]Chocolat can't defy the[N]Hackers.[FIN]Our leader sure knows how[N]to take the lead! [PAU:1E]Get it?[NXT]"
   },
   {
     "offset": "0AC13D",
@@ -1017,13 +1017,13 @@
     "offset": "0AC16D",
     "kind": "dialog",
     "source": "[DEF][PAL:2]戦闘員C:[N][PAL:0]なんでも[N][PAL:2]極楽星[PAL:0]とかいう 小さな星らしい[N]近々 攻擊を始めるという話だ˳[FIN][PAL:2]戦闘員A:[N][PAL:0]かわいそうになあ[N]そんな星じゃ この宇宙要塞の前には[N]手も足も出ないだろう˳[END]",
-    "translation": "[DEF][PAL:2]Soldier C: [PAL:0]Some little[N]planet called [PAL:2]Bliss[PAL:0],[N]apparently. I hear the[N]attack will begin soon.[FIN][PAL:2]Soldier A: [PAL:0]Poor things. A[N]planet that small has no[N]chance against this space[N]fortress.[END]"
+    "translation": "[DEF][PAL:2]Trooper C: [PAL:0]Some little[N]planet called [PAL:2]Bliss[PAL:0],[N]apparently. I hear the[N]attack will begin soon.[FIN][PAL:2]Trooper A: [PAL:0]Poor things. A[N]planet that small has no[N]chance against this space[N]fortress.[END]"
   },
   {
     "offset": "0AC1EC",
     "kind": "dialog",
     "source": "[DEF][PAL:3]ハッカーの 全戦闘員につぐ[N]要塞内に しんにゅう者あり![N]全員 ただちに[N]警かい体制に 入れ![PAL:0][END]",
-    "translation": "[DEF][PAL:3]Attention, all Hacker[N]soldiers! An intruder is[N]inside the fortress![FIN]Everyone enter high alert[N]immediately![PAL:0][END]"
+    "translation": "[DEF][PAL:3]Attention, all Hacker[N]troopers! An intruder is[N]inside the fortress![FIN]Everyone enter high alert[N]immediately![PAL:0][END]"
   },
   {
     "offset": "0AC344",
@@ -1343,7 +1343,7 @@
     "offset": "0ADE3F",
     "kind": "dialog",
     "source": "[DF2][TPL:3]だれのこと言ってるんだよっ!?[N][PAU:1E]戦闘員に かこまれていたのを[N]助けてやったのによっ!![END]",
-    "translation": "[DF2][TPL:3]Who are you talking[N]about?! [PAU:1E]I saved you when[FIN]those soldiers had you[N]surrounded!![END]"
+    "translation": "[DF2][TPL:3]Who are you talking[N]about?! [PAU:1E]I saved you when[FIN]those troopers had you[N]surrounded!![END]"
   },
   {
     "offset": "0ADE75",
