@@ -164,6 +164,7 @@ change, accept it with `npm run test:menus -- --update-baselines`.
 - Installs the native 8×16 Spleen bitmap font for crisp, legible dialogue.
 - Replaces equipment-type abbreviations with 13 compact 8×8 menu icons and
   displays leveled equipment as icon, level, then name.
+- Replaces the Japanese menu exit graphic with Robotrek's English `END` icon.
 - Reflows prose at word boundaries and validates custom dialogue-box sizes.
 - Recalculates the SNES checksum and verifies both generated patches by
   applying them in memory and comparing every output byte.

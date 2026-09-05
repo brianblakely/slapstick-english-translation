@@ -1,0 +1,31 @@
+{
+  "name": "Robotrek menu END icon",
+  "source": {
+    "game": "Robotrek (SNES, 1994), Enix / Quintet / Ancient",
+    "url": "https://www.mobygames.com/game/12678/robotrek/screenshots/snes/66124/",
+    "imageUrl": "https://cdn.mobygames.com/screenshots/2361105-robotrek-snes-menu-room-for-three-robots.png",
+    "imageSha256": "34e981de2ebcc750c6970567a008d26dbe6d48e7fd298d902ab842886580cb7a",
+    "crop": { "x": 112, "y": 10, "width": 16, "height": 16 }
+  },
+  "width": 16,
+  "height": 16,
+  "format": "SNES menu palette indices, one hexadecimal digit per pixel",
+  "pixels": [
+    "cffffffffffffffc",
+    "411111ccccccccc3",
+    "417771ccccccccc3",
+    "417111ccccccccc3",
+    "417771ccccccccc3",
+    "41711111c11cccc3",
+    "417771e11e1cccc3",
+    "411111ee1e1111c3",
+    "4cccc1e1ee199913",
+    "4cccc1e11e191193",
+    "4cccc11c11191193",
+    "4ccccccccc191193",
+    "4ccccccccc199913",
+    "4ccccccccc1111c3",
+    "4cccccccccccccc3",
+    "c11111111111111c"
+  ]
+}

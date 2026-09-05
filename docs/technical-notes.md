@@ -267,6 +267,17 @@ The equipped-item sprite position is initialized by the operand at PC
 the 16x16 graphic six text cells right so it no longer covers the longer
 `EQUIPPED` caption.
 
+The main menu and Invention Machine share a 16x16 exit graphic whose Japanese
+`おわり` lettering is baked into four uncompressed 4bpp tiles at PC `0x0CB090`,
+`0x0CB0B0`, `0x0CB290`, and `0x0CB2B0`. The build replaces them with Robotrek's
+orange/cyan/yellow `END` icon, preserving the stock palette and frame. The
+indexed pixels in `assets/graphics/robotrek-exit-icon.json` come directly from
+the 16x16 crop at `(112, 10)` in this
+[Robotrek menu screenshot](https://www.mobygames.com/game/12678/robotrek/screenshots/snes/66124/).
+The asset records the screenshot URL and digest; the builder verifies both the
+original tile digest and the encoded replacement digest. No Robotrek ROM or
+network access is needed to build the patch.
+
 The validator also checks every literal console line against its active `BOX`,
 plus the complete item-name, machine-option, main-caption, and battle-target
 tables.

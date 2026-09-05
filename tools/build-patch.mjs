@@ -44,6 +44,10 @@ const BATTLE_MISS_TILE_OFFSET = 0x0540;
 const CONSOLE_FONT_BITMAP_START = 0x12873d;
 const CONSOLE_FONT_BITMAP_END = 0x128fb7;
 const CONSOLE_FONT_BITMAP_SHA256 = "572beac31b489e75d71845c55164b4e61ef18187ed7226074110a9c483a6742e";
+const MENU_EXIT_ICON_PATH = path.resolve("assets/graphics/robotrek-exit-icon.json");
+const MENU_EXIT_TILE_OFFSETS = [0x0cb090, 0x0cb0b0, 0x0cb290, 0x0cb2b0];
+const MENU_EXIT_SOURCE_SHA256 = "6a9ce56c253e94fef091c9fab2194f8d1d56136bba16f2f252837395e1bbd2d3";
+const MENU_EXIT_TARGET_SHA256 = "e9af3bd2c4a30734dad808fffc6a25da82e84c198d661a865317caf95aae45ed";
 const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
@@ -139,6 +143,7 @@ const romOutput = valueAfter("--rom-output", null);
 
 const dialogFont = JSON.parse(await readFile(DIALOG_FONT_PATH, "utf8"));
 validateDialogFont(dialogFont);
+const menuExitIcon = JSON.parse(await readFile(MENU_EXIT_ICON_PATH, "utf8"));
 const sourceRom = await readFile(sourceFilename);
 if (sourceRom.length !== SOURCE_SIZE) {
   throw new Error(`Expected a ${SOURCE_SIZE}-byte unheadered ROM, got ${sourceRom.length} bytes`);
@@ -370,6 +375,7 @@ for (const candidate of candidates) {
 installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
 installConsoleEquipmentIcons(targetRom);
+installMenuExitIcon(targetRom, menuExitIcon);
 installConsoleEquipmentIconTable(targetRom);
 installConsoleEquipmentLabelTable(targetRom);
 installInterpreterHooks(targetRom);
@@ -1020,6 +1026,47 @@ function installConsoleEquipmentIcons(rom) {
   const expanded = expandQuintetLz(compressed, 0, compressed.length);
   if (!expanded.equals(bitmap)) throw new Error("Console font bitmap compression did not round-trip");
   compressed.copy(rom, CONSOLE_FONT_BITMAP_START);
+}
+
+function installMenuExitIcon(rom, icon) {
+  const original = Buffer.concat(MENU_EXIT_TILE_OFFSETS.map(
+    (offset) => sourceRom.subarray(offset, offset + 0x20),
+  ));
+  if (sha256(original) !== MENU_EXIT_SOURCE_SHA256) {
+    throw new Error("Unexpected Japanese menu exit tiles");
+  }
+  if (
+    icon.width !== 16 || icon.height !== 16
+    || !Array.isArray(icon.pixels) || icon.pixels.length !== 16
+    || icon.pixels.some((row) => typeof row !== "string" || !/^[0-9a-f]{16}$/.test(row))
+  ) {
+    throw new Error("Robotrek menu exit icon must be a 16x16 indexed bitmap");
+  }
+
+  // Both menus use the same uncompressed 4bpp icon. Its bottom tile row is
+  // 0x200 bytes after the top row in the stock sheet. Preserve the palette,
+  // tilemap, and shared border while replacing おわり with Robotrek's END art.
+  const tiles = MENU_EXIT_TILE_OFFSETS.map((offset, index) => {
+    const tile = Buffer.alloc(0x20);
+    const tileX = (index & 1) * 8;
+    const tileY = (index >>> 1) * 8;
+    for (let y = 0; y < 8; y += 1) {
+      for (let x = 0; x < 8; x += 1) {
+        const pixel = Number.parseInt(icon.pixels[tileY + y][tileX + x], 16);
+        for (let plane = 0; plane < 4; plane += 1) {
+          const byte = y * 2 + (plane >>> 1) * 0x10 + (plane & 1);
+          tile[byte] |= ((pixel >>> plane) & 1) << (7 - x);
+        }
+      }
+    }
+    return tile;
+  });
+  if (sha256(Buffer.concat(tiles)) !== MENU_EXIT_TARGET_SHA256) {
+    throw new Error("Robotrek menu exit tiles do not match the pinned reference");
+  }
+  for (const [index, offset] of MENU_EXIT_TILE_OFFSETS.entries()) {
+    tiles[index].copy(rom, offset);
+  }
 }
 
 function installConsoleEquipmentIconTable(rom) {
