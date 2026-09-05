@@ -248,6 +248,8 @@ which were unused kana in the English script. Their one-color 8x8 silhouettes
 are reductions of the level-1 Sword, Axe, Blade, Hammer, Celtis/Stone, Punch,
 Blow, Shot, Laser, Bomb, Shield, Empty Pack, and Boots art from the
 [Robotrek equipment compendium](https://www.thesupersnes.tv/compendium/robotrek/equipment/).
+Each glyph uses only columns 0–6 and rows 1–7 of its 8x8 cell, leaving the top
+row and right column blank for separation from adjacent text.
 The build expands the stock 4 KiB console font bitmap at
 `0x12873D`, replaces those tiles, and uses an optimal parse of the game's
 Quintet-LZ format to keep the modified bitmap inside its original compressed
