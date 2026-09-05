@@ -49,12 +49,12 @@
     "machine-maintenance-confirmation": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "0de8789e4ee9bf03ed72793ae9591cd9b39031cf67efbd79652ff58371bc0a18"
+      "rgbSha256": "57b3945ff9d1a0fe20b57843f10b4ccf3c9602bc33208b04ab4c2a221b7805f6"
     },
     "machine-maintenance-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "9f094e54ee610672ff1bd10d029f7e857fa6efcfbb302137e023ac99afec6657"
+      "rgbSha256": "3dc7933443326dabd151fdd4a129b3e91eaf9f09ad5383d6ef21193944b56900"
     },
     "machine-program-robots": {
       "width": 256,
@@ -74,7 +74,7 @@
     "machine-program-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "40671fc9273123a4c980442f6a70ffa87bb2651dabfa6e3a71b1266c1f2becf1"
+      "rgbSha256": "d2457f757ae647479086b18241c5cc5ccf401be520a6a24595c8b1fcc9c53f00"
     },
     "machine-exit-result": {
       "width": 256,
@@ -144,7 +144,7 @@
     "main-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "349ef67e548dcade775d71e91e5bd42b8c02870e515fc3d556d4157b48a162e1"
+      "rgbSha256": "434e1ab6f84356f4a51458328db673ea60842fc57aa5156a0671524773c3572b"
     },
     "main-status-player": {
       "width": 256,
@@ -154,7 +154,7 @@
     "main-status-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "4a722a0e4dc12da201b5381133b8fce7328a18e5cd935bb3bcac1fed8a5aab30"
+      "rgbSha256": "9cee8856cef259875e69fa3c81c3a54679f9d7ba8cd8c93140aec4a550b5cba5"
     },
     "main-config": {
       "width": 256,
