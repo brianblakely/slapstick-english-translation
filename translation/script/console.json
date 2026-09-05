@@ -578,7 +578,7 @@
     "kind": "console",
     "source": "[PAL:4][BOX:1A,17,44][POS:D6]Rボタン[N]Lボタン[N]Xボタン[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]",
     "literal": "[PAL:4][BOX:1A,17,44][POS:D6]R Button[N]L Button[N]X Button[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]",
-    "translation": "[PAL:4][BOX:1A,17,44][POS:D6]R BTN[N]L BTN[N]X BTN[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]"
+    "translation": "[PAL:4][BOX:1A,17,44][POS:DC]R[N]L[N]X[POS:28A]1. [N]2. [N]3. [N]4. [N]5. [N]6. [N]7. [N]8. [POS:290][STR:@consolestring_01F4DD]"
   },
   {
     "offset": "01F4DD",

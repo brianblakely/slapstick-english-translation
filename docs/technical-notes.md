@@ -264,6 +264,11 @@ also compiles to a stock `TBL` command. It lets nested robot panels retain their
 original byte length and leaves the equipment level in the stock column after
 the combined label.
 
+The combo assignment panel places single-letter R/L/X labels at console column
+14, just left of the equipment sprites. Its third label follows the current
+control mapping, so the tilemap operand at PC `0x0BC73E` moves from `0x01D6` to
+`0x01DC` to keep that runtime redraw in the same column.
+
 The equipped-item sprite position is initialized by the operand at PC
 `0x0BC2A1`. The English build changes its X offset from `0x08` to `0x38`, moving
 the 16x16 graphic six text cells right so it no longer covers the longer

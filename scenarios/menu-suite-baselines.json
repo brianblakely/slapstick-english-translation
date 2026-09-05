@@ -74,7 +74,7 @@
     "machine-program-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "88cef64b9a68ba1181903eca0fb40678d2b8df30cc5f2fbd0803e64a4704c9c1"
+      "rgbSha256": "40671fc9273123a4c980442f6a70ffa87bb2651dabfa6e3a71b1266c1f2becf1"
     },
     "machine-exit-result": {
       "width": 256,
@@ -144,7 +144,7 @@
     "main-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "be1482ab34bf5dbedeef3ffbf3b14922e745384a8c39c21c8eae4f5df69f834d"
+      "rgbSha256": "349ef67e548dcade775d71e91e5bd42b8c02870e515fc3d556d4157b48a162e1"
     },
     "main-status-player": {
       "width": 256,

@@ -1405,6 +1405,14 @@ function installMenuLayoutFixes(rom) {
     throw new Error("Unexpected equipped-item X-position operand");
   }
   rom.writeUInt16LE(0x0038, equippedItemXOperand);
+
+  // The combo panel redraws its third button label from the current control
+  // mapping. Keep that live label aligned with R/L/X at console column 14.
+  const comboButtonPositionOperand = 0x0bc73e;
+  if (sourceRom.readUInt16LE(comboButtonPositionOperand) !== 0x01d6) {
+    throw new Error("Unexpected combo button tilemap-position operand");
+  }
+  rom.writeUInt16LE(0x01dc, comboButtonPositionOperand);
 }
 
 function installConsoleSelectorMirrors(rom) {
