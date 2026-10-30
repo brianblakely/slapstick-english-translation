@@ -374,7 +374,7 @@ for (const candidate of candidates) {
 
 installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
-installConsoleEquipmentIcons(targetRom);
+installConsoleFont(targetRom);
 installMenuExitIcon(targetRom, menuExitIcon);
 installConsoleEquipmentIconTable(targetRom);
 installConsoleEquipmentLabelTable(targetRom);
@@ -998,11 +998,39 @@ function installBattleMissGlyphs(rom) {
   compressed.copy(rom, BATTLE_UI_BITMAP_START);
 }
 
-function installConsoleEquipmentIcons(rom) {
+function installConsoleFont(rom) {
   const slotLength = CONSOLE_FONT_BITMAP_END - CONSOLE_FONT_BITMAP_START;
   const bitmap = expandQuintetLz(sourceRom, CONSOLE_FONT_BITMAP_START, slotLength);
   if (bitmap.length !== 0x1000 || sha256(bitmap) !== CONSOLE_FONT_BITMAP_SHA256) {
     throw new Error("Unexpected console font bitmap at 0x12873D");
+  }
+
+  // Robot naming and other menus share this font. Remove Z's stray center
+  // pixel and give q a right descender by mirroring the stock lowercase p.
+  const glyphFixes = [
+    [0x3a, "Z", [
+      "........",
+      ".######.",
+      ".#...#..",
+      "....#...",
+      "...#....",
+      "..#.....",
+      ".#....#.",
+      "#######.",
+    ]],
+    [0xb1, "q", [
+      "........",
+      "........",
+      "..####..",
+      ".#...#..",
+      ".#...#..",
+      "..#####.",
+      ".....#..",
+      ".....#..",
+    ]],
+  ];
+  for (const [code, character, pixels] of glyphFixes) {
+    createConsoleGlyphTile(character, pixels).copy(bitmap, code * 16);
   }
 
   const occupiedCodes = new Set();
@@ -1014,7 +1042,7 @@ function installConsoleEquipmentIcons(rom) {
       throw new Error(`Console equipment icon code 0x${icon.code.toString(16)} is duplicated`);
     }
     occupiedCodes.add(icon.code);
-    createConsoleEquipmentIconTile(name, icon.pixels).copy(bitmap, icon.code * 16);
+    createConsoleGlyphTile(name, icon.pixels).copy(bitmap, icon.code * 16);
   }
 
   const compressed = compactQuintetLz(bitmap);
@@ -1146,13 +1174,13 @@ function installConsoleEquipmentLabelTable(rom) {
   table.copy(rom, pcOffset);
 }
 
-function createConsoleEquipmentIconTile(name, pixels) {
+function createConsoleGlyphTile(name, pixels) {
   if (
     !Array.isArray(pixels)
     || pixels.length !== 8
     || pixels.some((row) => typeof row !== "string" || !/^[.#]{8}$/.test(row))
   ) {
-    throw new Error(`Console equipment icon ${name} must be an 8x8 . and # bitmap`);
+    throw new Error(`Console glyph ${name} must be an 8x8 . and # bitmap`);
   }
 
   const tile = Buffer.alloc(16, 0xff);

@@ -258,6 +258,9 @@ lookup table at PC `0x188000` returns the proper glyph for equipment IDs 1–50
 and an empty string for every other item. The build-time `[EICON:offset]`
 pseudo-command expands to the stock `TBL` operation against this lookup, so it
 inherits each display's live item selector without adding runtime code.
+The same font is used by robot naming. The build also removes the stray center
+pixel from `Z` (`0x3A`) and replaces the stock miniature-capital `q` (`0xB1`)
+with a mirrored lowercase `p`, giving it a proper right descender.
 A second 256-entry lookup at PC `0x1F8000` contains fixed nine-cell
 `[icon][name]` labels, with every name padded to eight cells. `[ELBL:offset]`
 also compiles to a stock `TBL` command. It lets nested robot panels retain their
