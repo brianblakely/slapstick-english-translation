@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+current_branch=$(git symbolic-ref --quiet HEAD || true)
+current_commit=$(git rev-parse HEAD)
+build=false
+
+while read -r local_ref local_commit remote_ref remote_commit; do
+  # Tags and branch deletions do not need a patch build.
+  [[ "$remote_ref" == refs/heads/* ]] || continue
+  [[ "$local_commit" =~ ^0+$ ]] && continue
+  if [[ -z "$current_branch" || "$local_commit" != "$current_commit" ]] || \
+    [[ "$local_ref" != "$current_branch" && "$local_ref" != HEAD ]]; then
+    echo "pre-push: Check out the branch being pushed so its patches can be built." >&2
+    exit 1
+  fi
+  build=true
+done
+
+[[ "$build" == true ]] || exit 0
+
+build_inputs=(
+  package.json
+  tools/build-patch.mjs
+  tools/console-icons.mjs
+  tools/reflow-dialog.mjs
+  tools/validate-script.mjs
+  translation/script
+  assets/fonts
+  assets/graphics
+)
+
+if ! git diff --quiet -- "${build_inputs[@]}" || \
+  ! git diff --cached --quiet -- "${build_inputs[@]}" || \
+  [[ -n "$(git ls-files --others --exclude-standard -- "${build_inputs[@]}")" ]]; then
+  echo "pre-push: Commit or stash patch source changes before pushing." >&2
+  exit 1
+fi
+
+echo "pre-push: Building translation patches..." >&2
+npm run build </dev/null
+
+patch_files=(
+  'dist/Slap Stick (Japan) [EN].bps'
+  'dist/Slap Stick (Japan) [EN].ips'
+  dist/manifest.json
+)
+
+# Literal pathspecs preserve the square brackets in the patch filenames.
+patch_paths=()
+for file in "${patch_files[@]}"; do
+  patch_paths+=(":(literal)$file")
+done
+
+if git diff --quiet HEAD -- "${patch_paths[@]}"; then
+  echo "pre-push: Patches are current." >&2
+  exit 0
+fi
+
+git add -- "${patch_paths[@]}"
+git commit --only --message "Rebuild translation patches" -- "${patch_paths[@]}" </dev/null
+
+# Git already selected the old commit for this push before invoking the hook.
+echo "pre-push: Committed updated patches. Push again to include the new commit." >&2
+exit 1

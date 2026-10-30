@@ -44,6 +44,58 @@ For a private local smoke test, the builder can also write a patched ROM:
 node tools/build-patch.mjs --rom-output "build/Slap Stick (Japan) [EN].sfc"
 ```
 
+## Git hooks
+
+Enable the repository's Git hooks once per clone:
+
+```sh
+npm run setup:hooks
+```
+
+The `pre-push` hook runs `npm run build` using your local Japanese ROM. If the
+patches changed, it commits only the BPS, IPS, and manifest as
+`Rebuild translation patches`, preserving unrelated staged changes. Commit or
+stash patch source edits before pushing so the patches match committed source.
+
+When the hook creates a commit, it stops the current push. **Push again** to send
+the new commit: Git chooses which commit to push before running `pre-push`.
+Unchanged patches pass through without a commit. Branch pushes must use the
+checked-out branch; tag-only pushes and branch deletions skip the build.
+
+## Releases
+
+The [Release patches workflow](.github/workflows/release.yml) runs automatically
+on pushes to `master` that change the translation scripts, font or exit-icon
+assets, patch builder, equipment icons, committed patches, manifest, or release
+workflow. Documentation and test-only changes do not trigger it.
+
+The local `pre-push` hook builds and commits updated `dist/` files. CI checks
+their sizes and SHA-256 hashes against the manifest without requiring a ROM.
+When either patch differs from the previous release, the workflow publishes the
+BPS and IPS patches, `manifest.json`, and the Spleen font license. If the patch
+bytes are unchanged, it skips publication.
+
+The first release is `v0.5`, followed automatically by `v0.6`, `v0.7`, and so on.
+If a three-part version is selected manually, subsequent releases increment its
+last component (for example, `v0.5.1` becomes `v0.5.2`).
+
+You can also run **Actions → Release patches → Run workflow**, leaving the
+version blank for automatic numbering or supplying an override:
+
+```sh
+gh workflow run release.yml -f version=0.5
+```
+
+The workflow creates the release tag at the selected workflow commit. An
+existing tag must point to that same commit. Manual runs also skip publication
+when the patches are unchanged.
+
+Release notes list every commit since the most recently published GitHub
+release, with links to the commits and a full comparison. The first release
+includes the complete history. Draft releases are excluded, and later releases
+must descend from the previous release's tag. Runs for commits already included
+in a release are skipped. Assets are uploaded to a draft before publication.
+
 ## Headless visual harness
 
 The deterministic visual harness builds its pinned Snes9x core on first use and

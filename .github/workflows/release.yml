@@ -1,0 +1,158 @@
+name: Release patches
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Optional version override (automatic version starts at 0.5)
+        required: false
+        type: string
+  push:
+    branches:
+      - master
+    paths:
+      - "translation/script/**"
+      - "assets/fonts/**"
+      - "assets/graphics/**"
+      - "tools/build-patch.mjs"
+      - "tools/console-icons.mjs"
+      - "dist/*.bps"
+      - "dist/*.ips"
+      - "dist/manifest.json"
+      - ".github/workflows/release.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: patch-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Check out release commit and full history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Verify committed release patches
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("dist/manifest.json").read_text())
+          for extension, magic in (("bps", b"BPS1"), ("ips", b"PATCH")):
+              path = Path(f"dist/Slap Stick (Japan) [EN].{extension}")
+              data = path.read_bytes()
+              expected = manifest["patches"][extension]
+              if not data.startswith(magic):
+                  raise SystemExit(f"Invalid {extension.upper()} header: {path}")
+              if len(data) != expected["size"] or hashlib.sha256(data).hexdigest() != expected["sha256"]:
+                  raise SystemExit(f"Patch does not match dist/manifest.json: {path}")
+              print(f"Verified {path}")
+          PY
+
+      - name: Plan release
+        id: release
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
+        run: |
+          version="${REQUESTED_VERSION#v}"
+          if [[ -n "$REQUESTED_VERSION" && ! "$version" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+            echo "::error::Use a version such as 0.5 or 0.5.1."
+            exit 1
+          fi
+          previous_tag=$(gh api --paginate --slurp "repos/${GH_REPO}/releases?per_page=100" \
+            | jq -r 'flatten | map(select(.draft == false)) | max_by(.published_at) | .tag_name // empty')
+          if [[ -n "$previous_tag" ]]; then
+            if git merge-base --is-ancestor HEAD "refs/tags/$previous_tag"; then
+              echo "This commit has already been released; skipping."
+              printf 'publish=false\n' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if ! git merge-base --is-ancestor "refs/tags/$previous_tag" HEAD; then
+              echo "::error::Release commit must descend from the previous release tag $previous_tag."
+              exit 1
+            fi
+            if git diff --quiet "refs/tags/$previous_tag" HEAD -- \
+              ':(literal)dist/Slap Stick (Japan) [EN].bps' \
+              ':(literal)dist/Slap Stick (Japan) [EN].ips'; then
+              echo "Patch files are unchanged since $previous_tag; skipping. Rebuild and commit dist/ after patch source edits."
+              printf 'publish=false\n' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
+          if [[ -z "$version" ]]; then
+            if [[ -z "$previous_tag" ]]; then
+              version=0.5
+            elif [[ "$previous_tag" =~ ^v([0-9]+)\.([0-9]+)$ ]]; then
+              version="${BASH_REMATCH[1]}.$((10#${BASH_REMATCH[2]} + 1))"
+            elif [[ "$previous_tag" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+              version="${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.$((10#${BASH_REMATCH[3]} + 1))"
+            else
+              echo "::error::Cannot increment $previous_tag automatically; supply a version override."
+              exit 1
+            fi
+          fi
+          tag="v${version}"
+          if git show-ref --verify --quiet "refs/tags/$tag"; then
+            if [[ "$(git rev-parse "refs/tags/${tag}^{commit}")" != "$(git rev-parse HEAD)" ]]; then
+              echo "::error::Tag $tag points to a different commit."
+              exit 1
+            fi
+          fi
+          printf 'publish=true\ntag=%s\nprevious_tag=%s\n' "$tag" "$previous_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Generate commit changelog
+        if: steps.release.outputs.publish == 'true'
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          PREVIOUS_TAG: ${{ steps.release.outputs.previous_tag }}
+        run: |
+          repository_url="${GITHUB_SERVER_URL}/${GH_REPO}"
+          range=HEAD
+          if [[ -n "$PREVIOUS_TAG" ]]; then
+            range="refs/tags/${PREVIOUS_TAG}..HEAD"
+          fi
+          {
+            printf 'English translation patches for Slap Stick (Japan). BPS is the recommended format.\n\n'
+            printf 'Apply either patch to the clean, unheadered Japanese ROM described in manifest.json.\n\n'
+            printf '## Changelog\n\n'
+            if [[ -n "$PREVIOUS_TAG" ]]; then
+              printf 'Commits since [%s](%s/releases/tag/%s):\n\n' "$PREVIOUS_TAG" "$repository_url" "$PREVIOUS_TAG"
+            else
+              printf 'Initial release; includes the complete commit history.\n\n'
+            fi
+            git log --reverse --format="- %s ([%h](${repository_url}/commit/%H))" "$range" --
+            if [[ -n "$PREVIOUS_TAG" ]]; then
+              printf '\n[Full changelog](%s/compare/%s...%s)\n' "$repository_url" "$PREVIOUS_TAG" "$RELEASE_TAG"
+            fi
+          } > "$RUNNER_TEMP/release-notes.md"
+
+      - name: Publish release with patches
+        if: steps.release.outputs.publish == 'true'
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          # Labels make gh treat the square brackets in these filenames literally.
+          gh release create "$RELEASE_TAG" \
+            --target "$GITHUB_SHA" \
+            --title "Slap Stick English Translation $RELEASE_TAG" \
+            --notes-file "$RUNNER_TEMP/release-notes.md" \
+            --draft \
+            "dist/Slap Stick (Japan) [EN].bps#BPS patch (recommended)" \
+            "dist/Slap Stick (Japan) [EN].ips#IPS patch" \
+            dist/manifest.json \
+            dist/LICENSE.spleen
+          gh release edit "$RELEASE_TAG" --draft=false --latest
