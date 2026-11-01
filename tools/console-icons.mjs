@@ -2,8 +2,9 @@ export const CONSOLE_EQUIPMENT_ICON_REFERENCE_URL =
   "https://www.thesupersnes.tv/compendium/robotrek/equipment/";
 
 // Hand-drawn, one-bit reductions of the level-1 equipment sprites, excluding
-// their blue backgrounds and frames. Draw within columns 0-6 and rows 1-7 of
-// each 8x8 cell, leaving the top row and right column blank. Keep the original
+// their blue backgrounds and frames. Draw within columns 0-6 and rows 0-6 of
+// each 8x8 cell, leaving the bottom row and right column blank so each icon
+// shares the menu font's capital height and baseline. Keep the original
 // orientation and use negative space for knuckles, barrels, and other details.
 // The names here follow the translated item families; the source calls STONE
 // "Celtis" and uses Empty Pack as the first PACK sprite.
@@ -12,7 +13,6 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
     code: 0x3b,
     referenceItem: "Sword 1",
     pixels: [
-      "........",
       ".....##.",
       "....##..",
       "...##...",
@@ -20,13 +20,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       ".###....",
       ".##.#...",
       "##......",
+      "........",
     ],
   },
   AXE: {
     code: 0x3c,
     referenceItem: "Axe 1",
     pixels: [
-      "........",
       ".###....",
       "#..#.#..",
       "#..####.",
@@ -34,13 +34,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "..#.##..",
       ".##..#..",
       "##......",
+      "........",
     ],
   },
   BLADE: {
     code: 0x3d,
     referenceItem: "Blade 1",
     pixels: [
-      "........",
       "##......",
       "###.....",
       ".###.##.",
@@ -48,13 +48,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "...###..",
       "..##.##.",
       ".....##.",
+      "........",
     ],
   },
   HAMMER: {
     code: 0x3e,
     referenceItem: "Hammer 1",
     pixels: [
-      "........",
       "...##...",
       "..####..",
       "..##.##.",
@@ -62,13 +62,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "..##.#..",
       ".##.....",
       "##......",
+      "........",
     ],
   },
   STONE: {
     code: 0x3f,
     referenceItem: "Celtis 1",
     pixels: [
-      "........",
       "..###...",
       "##...##.",
       "#.###.#.",
@@ -76,13 +76,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "...#....",
       "...#....",
       "...#....",
+      "........",
     ],
   },
   PUNCH: {
     code: 0x40,
     referenceItem: "Punch 1",
     pixels: [
-      "........",
       "..###...",
       ".##.#.#.",
       "##.#.##.",
@@ -90,13 +90,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "#.##.#..",
       ".#...#..",
       "..###...",
+      "........",
     ],
   },
   BLOW: {
     code: 0x41,
     referenceItem: "Blow 1",
     pixels: [
-      "........",
       ".#####..",
       "##.#.##.",
       "#.#.#.#.",
@@ -104,13 +104,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       ".#####..",
       "..###...",
       ".#.#.#..",
+      "........",
     ],
   },
   SHOT: {
     code: 0x42,
     referenceItem: "Shot 1",
     pixels: [
-      "........",
       "######..",
       "#.#..#..",
       "######..",
@@ -118,13 +118,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "..##.##.",
       ".....##.",
       "........",
+      "........",
     ],
   },
   LASER: {
     code: 0x43,
     referenceItem: "Laser 1",
     pixels: [
-      "........",
       ".##.....",
       "#..###..",
       "#..#.#..",
@@ -132,13 +132,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "....##..",
       ".....##.",
       "....###.",
+      "........",
     ],
   },
   BOMB: {
     code: 0x44,
     referenceItem: "Bomb 1",
     pixels: [
-      "........",
       "..###...",
       ".##.##..",
       ".##.##..",
@@ -146,13 +146,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "...#....",
       "..###...",
       ".##.##..",
+      "........",
     ],
   },
   SHIELD: {
     code: 0x45,
     referenceItem: "Shield 1",
     pixels: [
-      "........",
       "#######.",
       "#.....#.",
       "#.###.#.",
@@ -160,13 +160,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       ".#...#..",
       "..#.#...",
       "...#....",
+      "........",
     ],
   },
   PACK: {
     code: 0x46,
     referenceItem: "Empty Pack",
     pixels: [
-      "........",
       ".##.##..",
       "#..#..#.",
       "#.###.#.",
@@ -174,13 +174,13 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       "#.....#.",
       "#..#..#.",
       ".##.##..",
+      "........",
     ],
   },
   BOOTS: {
     code: 0x47,
     referenceItem: "Boots 1",
     pixels: [
-      "........",
       "....###.",
       "....#.#.",
       "...#.##.",
@@ -188,6 +188,7 @@ export const CONSOLE_EQUIPMENT_ICONS = Object.freeze({
       ".######.",
       "#######.",
       "###..##.",
+      "........",
     ],
   },
 });

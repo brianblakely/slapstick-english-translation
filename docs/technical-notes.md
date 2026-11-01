@@ -266,8 +266,9 @@ which were unused kana in the English script. Their one-color 8x8 silhouettes
 are reductions of the level-1 Sword, Axe, Blade, Hammer, Celtis/Stone, Punch,
 Blow, Shot, Laser, Bomb, Shield, Empty Pack, and Boots art from the
 [Robotrek equipment compendium](https://www.thesupersnes.tv/compendium/robotrek/equipment/).
-Each glyph uses only columns 0–6 and rows 1–7 of its 8x8 cell, leaving the top
-row and right column blank for separation from adjacent text.
+Each glyph uses only columns 0–6 and rows 0–6 of its 8x8 cell, the menu font's
+capital height and baseline, leaving the right column and bottom row blank for
+separation from adjacent text.
 The build expands the stock 4 KiB console font bitmap at
 `0x12873D`, replaces those tiles, and uses an optimal parse of the game's
 Quintet-LZ format to keep the modified bitmap inside its original compressed
@@ -292,9 +293,15 @@ The build validates the subset hash, the source metadata, and a blank
 eighth column in every glyph, because console text advances exactly eight
 pixels. Capitals fill rows 0-6, and descenders use row 7. The battle menu's
 single-tile `L1`-`L9` level ligatures (`0x90`-`0x98`) keep their artwork but
-move up one row to share that baseline, so labels such as `L5METAL` stay
-aligned. Frames, kana, the small `ENERGY`/`ENEMY` labels, cursors, and the
-equipment icons are unchanged.
+move up one row to share that baseline. The equipment-type icons sit on the
+same rows, so a label such as `[sword icon]L5METAL` lines up. Frames, kana,
+the small `ENERGY`/`ENEMY` labels, and cursors are unchanged.
+
+Press Start 2P's digits use the cell's first column. The money box that sits
+beside the Invention Machine and robot-service headers (`0x01F07B`) therefore
+keeps its stock eight-column frame at its stock position. `99999 tr` fills that
+frame exactly, so the digits keep the frame's own left margin instead of
+touching the neighboring panel's border.
 A second 256-entry lookup at PC `0x1F8000` contains fixed nine-cell
 `[icon][name]` labels, with every name padded to eight cells. `[ELBL:offset]`
 also compiles to a stock `TBL` command. It lets nested robot panels retain their
