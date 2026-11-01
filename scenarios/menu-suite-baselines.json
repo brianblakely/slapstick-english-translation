@@ -4,82 +4,82 @@
     "machine-overview": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "47bdcf04c2e92e2cadc0305bcccac0fce764b60740db47cf8c2ba28a5f87b441"
+      "rgbSha256": "4a5a7b363c0404e4c2596f21d479038c878265d362676c24d8117a296cfe8edf"
     },
     "machine-create-player-catalog": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "52d2eb6c7cab92f9448e32d1d9f754489d83fcdce2f5b90cb09537e5bee11983"
+      "rgbSha256": "866d8e10f1e9c6142485f09b373e788729f3f7fd67dbe68ac375233cc17454ef"
     },
     "machine-create-robot-catalog": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "3e349331175589ce5d603d532999eafa29fe2f2facdd6e4f4958638d2567b773"
+      "rgbSha256": "d6f1ee870cff72be66415813d957fd3ab179256485a8720377144df32ef4ef76"
     },
     "machine-create-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "083f24e6d0b5e44cd8a6101c526d1a325eb1e272e7717829addd96bc93d45464"
+      "rgbSha256": "cd830e4e7d41837d273f6116a12d3a8a4ea19b386a5e15d0144efaa5606c0e23"
     },
     "machine-create-never-mind": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "e1069e9e0896177831981dcddf1ce3668fef103fcbb3a1bc332dec6c02b0302d"
+      "rgbSha256": "b437c4f08bb18182a146af9fdcbddee7460b32c96aa390302e9c4d6801a64d9e"
     },
     "machine-combine-inventory": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "d3b0df242b94a8a6a953b6c82c72fe79151afe3a4a83ba8ed2c7ace0addcfbe9"
+      "rgbSha256": "8cc0bd4ef49dfb29997d60e57ae763286d642e2b87cd7b82b42f084a4e26bb20"
     },
     "machine-combine-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "e27eed60008b433e5bd2dbfa37b1f127ddac86cc1fb95271f129bb6aa6af84a8"
+      "rgbSha256": "438cc010bfadcc34fffd91038ef831286ed5ede3bfadf1f87eb2053428b67e2f"
     },
     "machine-recycle-inventory": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "0e2989e9794b0049a9a1a1ea662fdece6c4924ba1cb5f07cb2e51c169f98a660"
+      "rgbSha256": "1637e2bba390b42742a24966108d7be1fb58c0e1b6424bf002910014935e34d8"
     },
     "machine-recycle-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "291d293072182766b4a40fdc0f502a44bb588bad19be7a39f4b4faaa2bcca4dc"
+      "rgbSha256": "a7ae2a5e785b1528539c3e64e6d08e6df6546f00779d742a40cffd83196da91b"
     },
     "machine-maintenance-robots": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "6d6d2caf3885c782fd76ce09a1ccb409796080b9cdad5fb557796c1a48b657e1"
+      "rgbSha256": "0644dd3f85704f03bffb39e33c29685119d576c818ac9824a5d666e131579195"
     },
     "machine-maintenance-confirmation": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "57b3945ff9d1a0fe20b57843f10b4ccf3c9602bc33208b04ab4c2a221b7805f6"
+      "rgbSha256": "d6afba6f213140b2cabc3eca5e2b51165fc829b9edf4cd637a05fbe0f8f581d2"
     },
     "machine-maintenance-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "3dc7933443326dabd151fdd4a129b3e91eaf9f09ad5383d6ef21193944b56900"
+      "rgbSha256": "521b1b44eb28dfc6d82bb4bb37f1491896c7feb4d4f34c28de72db6bec6ff3c6"
     },
     "machine-program-robots": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "e0c5a9e005062da5fdc96581e7f3e1404483a88d5131d96a31938285919319a9"
+      "rgbSha256": "3ce9c3d26779383d02f67f87f052fbb0b6ce199281ee3f996949bf7a5725e53e"
     },
     "machine-program-panel": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "38a98957bf1e9457cff723a1e7b2f5b5dab8800471c7abc2e1d1f1c74b60c8cb"
+      "rgbSha256": "8f5f946fa3bc5593fede40672e96d049f6197cb656e36d44276b9200f34df7dd"
     },
     "machine-program-result": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "c2a8190f3d4ef7498eecfdb0a120e7ce86f97be1d7c1722648e22956de6ad11e"
+      "rgbSha256": "485b8cb15a693a445e70fcb6f301ee671f31a96430f60fe1ecd194729db23be2"
     },
     "machine-program-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "d2457f757ae647479086b18241c5cc5ccf401be520a6a24595c8b1fcc9c53f00"
+      "rgbSha256": "84c1c5cd5f34b8534858e1942113040f3153bece15accef1237de738f4cc5b89"
     },
     "machine-exit-result": {
       "width": 256,
@@ -94,7 +94,7 @@
     "build-confirmation": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "8d279c6e46b82bb056e977cb4ef7ff1a491b0aecf3bf95bc718a09c1d027c392"
+      "rgbSha256": "e6c231cdb63f680cc51ab24049a47483acda52581cbe779086569ca6a237484d"
     },
     "build-construction-animation": {
       "width": 256,
@@ -104,22 +104,22 @@
     "build-name-entry": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "46ea708a9d85bc99d44cfcc6ac82db36a12df0064772dc45ef1917d3341b05e7"
+      "rgbSha256": "37e67ae98d52d8cbe21731002d286949000d4fdacdd675c1d292141a01098390"
     },
     "build-name-filled": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "5a78cd12f5a4cb989bdc75023b5deca66e5f0f4e9e2b9d4ab7aad82e6d3d3ea4"
+      "rgbSha256": "cddffdbe784067f7b631e86ba17b1431cce0bf38f9b0b27257e58ead7d242a9d"
     },
     "build-point-allocation": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "1ccc0cd82e3863b3b4149a6c37ad0a402f753032d172ea86a51885252bd07900"
+      "rgbSha256": "c68e67e8a09ed1780387dc3dfd58f1a9d49b9cdc641b66222e3b313eff73fbcd"
     },
     "build-points-assigned": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "b8d77f7830d1d8c10b181035ba6522755b1b2b2d68b62703ae2c3025e0c114b3"
+      "rgbSha256": "f3801e091f7be6acfe045878b7d81a257485faa1d690a14e926dfd1b173731d1"
     },
     "build-complete-result": {
       "width": 256,
@@ -129,57 +129,57 @@
     "main-overview-populated": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "ac2c300f0a7a9f8ef1d2e264ac4a1860d3d9c1daa09bbc985ed81bbc9354173f"
+      "rgbSha256": "7d51a482e01f0c236305e8957d26d67e3c55eb60e5bf23a44f5da087c594d147"
     },
     "main-equipment-player": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "dff334de6522949468199573b67db28cc92c33166b1b98dbeeed4621966e22be"
+      "rgbSha256": "0ddcc332d794fb2baf08125389abec9a69a332bfc6769c121ff9bd1194e9dd53"
     },
     "main-equipment-player-held": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "205269064bd29f425f0e357b63734a1baf380a6de41b1428d6de0be39c082316"
+      "rgbSha256": "cb3aa3cdd2e3c36475c7e40b045825f2563fb32c285af40086d756066886e533"
     },
     "main-equipment-player-equipped": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "a34c54cee0650633408248b2e3258217a7448cc118c98b2686a6d7aad865db80"
+      "rgbSha256": "50df56dda982bd16d413889cb3fb9eb19c760282f4042ac83e67676e95dcb693"
     },
     "main-equipment-reorder": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "7db9f5741006cf736437421568dbe702d851470c978e8e567dbf8b007e264026"
+      "rgbSha256": "2a4c31e995a07dd3841caa342f80a6334e2cd055a0f3224596f9ffa93455180b"
     },
     "main-equipment-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "5486c6ba3d0dce439382f119e75a08ece2dff318ad9fbf24ef0ebaa8e26ece54"
+      "rgbSha256": "274da76a901a4d2f396be4aafe5bf807958370a404899d1e9f9a9947eb6eac40"
     },
     "main-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "434e1ab6f84356f4a51458328db673ea60842fc57aa5156a0671524773c3572b"
+      "rgbSha256": "9f16bba1d87d4081fb22f85127f9dee4c2da1e7a38c013b79f065cd0ee4e8c10"
     },
     "main-status-player": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "3394131fb9e2b3fb730ab3feb17d2a7d9248c494e9d8330509f0eb5a501ad7c2"
+      "rgbSha256": "743864afe8badeea1a5818a54ec478acac7c8e1b14f2e4d8046df0240a47a389"
     },
     "main-status-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "9cee8856cef259875e69fa3c81c3a54679f9d7ba8cd8c93140aec4a550b5cba5"
+      "rgbSha256": "4b0913d609c4a45e10544a97e669d8733a6e95c1772b02e0facb5f4872745575"
     },
     "main-config": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "b2810e23d8fceda5c6e4e0653cef8db2f163b8425f73407f4533de4e4a253682"
+      "rgbSha256": "6104d772832b2b54605a7c0915f41863ad80947030324b9e9114f4b788b2e96f"
     },
     "main-maintenance": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "a73ce399035ec7f5b2b42354d19dbadf5fb68f70a4a9598e0084ec57e5fc200b"
+      "rgbSha256": "686ed5159685787fcf82c269f397e918d1c8ae2f73a71df46fea033030ff6b3b"
     },
     "main-exit": {
       "width": 256,

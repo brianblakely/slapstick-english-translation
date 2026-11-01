@@ -72,8 +72,8 @@ workflow. Documentation and test-only changes do not trigger it.
 The local `pre-push` hook builds and commits updated `dist/` files. CI checks
 their sizes and SHA-256 hashes against the manifest without requiring a ROM.
 When either patch differs from the previous release, the workflow publishes the
-BPS and IPS patches, `manifest.json`, and the Spleen font license. If the patch
-bytes are unchanged, it skips publication.
+BPS and IPS patches, `manifest.json`, and the Spleen and Press Start 2P font
+licenses. If the patch bytes are unchanged, it skips publication.
 
 The first release is `v0.5`, followed automatically by `v0.6`, `v0.7`, and so on.
 If a three-part version is selected manually, subsequent releases increment its
@@ -214,6 +214,8 @@ change, accept it with `npm run test:menus -- --update-baselines`.
   names from `translation/script/`.
 - Expands the ROM from 1.5 MiB to 2 MiB and installs bank-safe text redirects.
 - Installs the native 8×16 Spleen bitmap font for crisp, legible dialogue.
+- Replaces the menus' mismatched stock Latin letters, digits, and punctuation
+  with 8×8 glyphs from Press Start 2P.
 - Replaces equipment-type abbreviations with 13 compact 8×8 menu icons and
   displays leveled equipment as icon, level, then name.
 - Replaces the Japanese menu exit graphic with Robotrek's English `END` icon.

@@ -266,8 +266,9 @@ which were unused kana in the English script. Their one-color 8x8 silhouettes
 are reductions of the level-1 Sword, Axe, Blade, Hammer, Celtis/Stone, Punch,
 Blow, Shot, Laser, Bomb, Shield, Empty Pack, and Boots art from the
 [Robotrek equipment compendium](https://www.thesupersnes.tv/compendium/robotrek/equipment/).
-Each glyph uses only columns 0–6 and rows 1–7 of its 8x8 cell, leaving the top
-row and right column blank for separation from adjacent text.
+Each glyph uses only columns 0–6 and rows 0–6 of its 8x8 cell, the menu font's
+capital height and baseline, leaving the right column and bottom row blank for
+separation from adjacent text.
 The build expands the stock 4 KiB console font bitmap at
 `0x12873D`, replaces those tiles, and uses an optimal parse of the game's
 Quintet-LZ format to keep the modified bitmap inside its original compressed
@@ -276,9 +277,35 @@ lookup table at PC `0x188000` returns the proper glyph for equipment IDs 1–50
 and an empty string for every other item. The build-time `[EICON:offset]`
 pseudo-command expands to the stock `TBL` operation against this lookup, so it
 inherits each display's live item selector without adding runtime code.
-The same font is used by robot naming. The build also removes the stray center
-pixel from `Z` (`0x3A`) and replaces the stock miniature-capital `q` (`0xB1`)
-with a mirrored lowercase `p`, giving it a proper right descender.
+The same font is used by robot naming. Its stock Latin letters, digits, and
+punctuation mixed serif and sans-serif shapes, and the stock glyphs raised the
+bowls of `g`, `p`, `q`, and `y` to fit a seven-row cell. The build replaces those
+75 cells with glyphs from Press Start 2P 3.000 (OFL-1.1), an 8x8 font based on
+classic arcade lettering. `assets/fonts/menu-font-8x8.json` stores the
+converted subset. It pins the upstream TrueType file's SHA-256, and each glyph
+samples the outline at the centers of an 8x8 pixel grid (125 font units per
+pixel). The converted subset is a Modified Version under the OFL and does not
+use the font's Reserved Font Name. Its license is in
+`assets/fonts/LICENSE.press-start-2p` and ships beside the patches as
+`dist/LICENSE.press-start-2p`.
+
+The build validates the subset hash, the source metadata, and a blank
+eighth column in every glyph, because console text advances exactly eight
+pixels. Capitals fill rows 0-6, and descenders use row 7. The battle menu's
+single-tile `L1`-`L9` level ligatures (`0x90`-`0x98`) move up one row to
+share that baseline. Their stock digits filled the eighth column and butted
+against the following name. The build shortens each L's foot to two pixels and
+moves the unchanged four-pixel digit one column left, so every ligature leaves
+that column blank like the font's own glyphs. The equipment-type icons sit on
+the same rows, so a label such as `[sword icon]L5METAL` lines up with even
+one-pixel spacing. Frames, kana,
+the small `ENERGY`/`ENEMY` labels, and cursors are unchanged.
+
+Press Start 2P's digits use the cell's first column. The money box that sits
+beside the Invention Machine and robot-service headers (`0x01F07B`) therefore
+keeps its stock eight-column frame at its stock position. `99999 tr` fills that
+frame exactly, so the digits keep the frame's own left margin instead of
+touching the neighboring panel's border.
 A second 256-entry lookup at PC `0x1F8000` contains fixed nine-cell
 `[icon][name]` labels, with every name padded to eight cells. `[ELBL:offset]`
 also compiles to a stock `TBL` command. It lets nested robot panels retain their

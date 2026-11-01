@@ -59,6 +59,11 @@ const DIALOG_WIDE_GLYPHS = new Map([
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
 const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
+const MENU_FONT_PATH = path.resolve("assets/fonts/menu-font-8x8.json");
+const MENU_FONT_SOURCE_SHA256 = "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d";
+const MENU_FONT_SUBSET_SHA256 = "ef615e9dabe016d835a4a10fe328d972df164521c1cf6b97d1dec68f827aca1b";
+// Battle-menu equipment levels are single-tile "L1"-"L9" ligatures.
+const CONSOLE_LEVEL_LIGATURE_CODES = [0x90, 0x91, 0x92, 0x93, 0x94, 0x95, 0x96, 0x97, 0x98];
 const INLINE_CONSOLE_OFFSETS = new Set([
   0x01eb23, // main-menu robot 1 row, nested through STR
   0x01eb52, // main-menu robot 2 row, nested through STR
@@ -150,6 +155,8 @@ const romOutput = valueAfter("--rom-output", null);
 
 const dialogFont = JSON.parse(await readFile(DIALOG_FONT_PATH, "utf8"));
 validateDialogFont(dialogFont);
+const menuFont = JSON.parse(await readFile(MENU_FONT_PATH, "utf8"));
+validateMenuFont(menuFont);
 const menuExitIcon = JSON.parse(await readFile(MENU_EXIT_ICON_PATH, "utf8"));
 const sourceRom = await readFile(sourceFilename);
 if (sourceRom.length !== SOURCE_SIZE) {
@@ -968,6 +975,74 @@ function validateDialogFont(font) {
   }
 }
 
+function validateMenuFont(font) {
+  const expected = {
+    schemaVersion: 1,
+    subsetSha256: MENU_FONT_SUBSET_SHA256,
+    cellWidth: 8,
+    cellHeight: 8,
+  };
+  const expectedSource = {
+    name: "Press Start 2P",
+    version: "3.000",
+    license: "OFL-1.1",
+    sha256: MENU_FONT_SOURCE_SHA256,
+  };
+  for (const [field, value] of Object.entries(expected)) {
+    if (font[field] !== value) {
+      throw new Error(`Menu font ${field} is ${JSON.stringify(font[field])}; expected ${JSON.stringify(value)}`);
+    }
+  }
+  for (const [field, value] of Object.entries(expectedSource)) {
+    if (font.source?.[field] !== value) {
+      throw new Error(`Menu font source ${field} is ${JSON.stringify(font.source?.[field])}; expected ${JSON.stringify(value)}`);
+    }
+  }
+  if (!font.glyphs || typeof font.glyphs !== "object" || Array.isArray(font.glyphs)) {
+    throw new Error("Menu font glyphs must be an object");
+  }
+  for (const [codepoint, bitmap] of Object.entries(font.glyphs)) {
+    if (!/^(?:0|[1-9]\d*)$/.test(codepoint) || !/^[0-9a-f]{16}$/.test(bitmap)) {
+      throw new Error(`Invalid menu font glyph ${JSON.stringify(codepoint)}`);
+    }
+    // Console text advances exactly eight pixels, so the rightmost column
+    // must stay blank to separate adjacent characters.
+    if (hexGlyphRows(bitmap).some((row) => row[7] === "#")) {
+      throw new Error(`Menu font glyph ${codepoint} touches the spacing column`);
+    }
+  }
+  const canonical = Object.entries(font.glyphs)
+    .sort(([left], [right]) => Number(left) - Number(right))
+    .map(([codepoint, bitmap]) => `${codepoint}:${bitmap}`)
+    .join("\n") + "\n";
+  const actualHash = createHash("sha256").update(canonical).digest("hex");
+  if (actualHash !== MENU_FONT_SUBSET_SHA256) {
+    throw new Error(`Menu font subset SHA-256 is ${actualHash}; expected ${MENU_FONT_SUBSET_SHA256}`);
+  }
+}
+
+function consoleGlyphRows(bitmap, code) {
+  // Console text tiles use color index 1 for ink and 3 for the background.
+  return Array.from({ length: 8 }, (_, row) => {
+    const plane0 = bitmap[code * 16 + row * 2];
+    const plane1 = bitmap[code * 16 + row * 2 + 1];
+    return Array.from({ length: 8 }, (_, x) => {
+      const value = ((plane0 >>> (7 - x)) & 1) | (((plane1 >>> (7 - x)) & 1) << 1);
+      if (value !== 1 && value !== 3) {
+        throw new Error(`Console glyph 0x${code.toString(16)} uses color index ${value}`);
+      }
+      return value === 1 ? "#" : ".";
+    }).join("");
+  });
+}
+
+function hexGlyphRows(bitmap) {
+  return Array.from({ length: 8 }, (_, row) => {
+    const value = Number.parseInt(bitmap.slice(row * 2, row * 2 + 2), 16);
+    return Array.from({ length: 8 }, (_, x) => (value & (0x80 >>> x) ? "#" : ".")).join("");
+  });
+}
+
 function installBitmapGlyph(rom, offset, font, character) {
   const codepoint = character.codePointAt(0);
   const bitmap = font.glyphs[codepoint];
@@ -1035,35 +1110,37 @@ function installConsoleFont(rom) {
     throw new Error("Unexpected console font bitmap at 0x12873D");
   }
 
-  // Robot naming and other menus share this font. Remove Z's stray center
-  // pixel and give q a right descender by mirroring the stock lowercase p.
-  const glyphFixes = [
-    [0x3a, "Z", [
-      "........",
-      ".######.",
-      ".#...#..",
-      "....#...",
-      "...#....",
-      "..#.....",
-      ".#....#.",
-      "#######.",
-    ]],
-    [0xb1, "q", [
-      "........",
-      "........",
-      "..####..",
-      ".#...#..",
-      ".#...#..",
-      "..#####.",
-      ".....#..",
-      ".....#..",
-    ]],
-  ];
-  for (const [code, character, pixels] of glyphFixes) {
-    createConsoleGlyphTile(character, pixels).copy(bitmap, code * 16);
+  // Menus and robot naming share this font. Replace the stock half-width
+  // Latin letters, digits, and punctuation with the pinned 8x8 menu font.
+  // Its capitals fill rows 0-6 and descenders use row 7, one row higher than
+  // the stock glyphs, which squeezed descenders into a 7-row cell.
+  const occupiedCodes = new Set();
+  for (const [codepoint, hexRows] of Object.entries(menuFont.glyphs)) {
+    const character = String.fromCodePoint(Number(codepoint));
+    const code = consoleCharacter(character, "menu font");
+    if (code === 0x20 || occupiedCodes.has(code)) {
+      throw new Error(`Menu font glyph ${JSON.stringify(character)} has no unique console cell`);
+    }
+    occupiedCodes.add(code);
+    createConsoleGlyphTile(character, hexGlyphRows(hexRows)).copy(bitmap, code * 16);
   }
 
-  const occupiedCodes = new Set();
+  // Give the L1-L9 level ligatures the same metrics. Raise each one row so it
+  // shares the capital line and baseline. Then shorten the L's three-pixel
+  // foot to two pixels and move the unchanged four-pixel digit one column
+  // left. That frees the eighth column, so "L5METAL" keeps the same one-pixel
+  // gap as every other pair of menu glyphs.
+  for (const code of CONSOLE_LEVEL_LIGATURE_CODES) {
+    const rows = consoleGlyphRows(bitmap, code);
+    const stemOnly = rows.slice(1, 7).every((row) => row[0] === "#" && row.slice(1, 4) === "...");
+    if (rows[0] !== "........" || !stemOnly || rows[7].slice(0, 4) !== "###.") {
+      throw new Error(`Console level ligature 0x${code.toString(16)} does not match the stock layout`);
+    }
+    const compacted = [...rows.slice(1), "........"]
+      .map((row) => `${row.slice(0, 2)}.${row.slice(4, 8)}.`);
+    createConsoleGlyphTile(`ligature 0x${code.toString(16)}`, compacted).copy(bitmap, code * 16);
+  }
+
   for (const [name, icon] of Object.entries(CONSOLE_EQUIPMENT_ICONS)) {
     if (!Number.isInteger(icon.code) || icon.code < 0x0f || icon.code > 0xff) {
       throw new Error(`Console equipment icon ${name} has an invalid character code`);

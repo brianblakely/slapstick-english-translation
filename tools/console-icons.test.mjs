@@ -48,6 +48,14 @@ test("defines one valid console glyph for every equipment family", () => {
   }
 });
 
+test("keeps every icon on the menu font's capital height and baseline", () => {
+  for (const [name, icon] of Object.entries(CONSOLE_EQUIPMENT_ICONS)) {
+    assert.equal(icon.pixels[7], "........", `${name} must leave the descender row blank`);
+    assert(icon.pixels.every((row) => row[7] === "."), `${name} must leave the spacing column blank`);
+    assert(icon.pixels[0].includes("#"), `${name} must start at the capital line`);
+  }
+});
+
 test("assigns a family icon to all 50 equipment-name entries", () => {
   assert.equal(EQUIPMENT_ICON_BY_OFFSET.size, 50);
   assert.equal(EQUIPMENT_ICON_BY_ITEM_ID.size, 50);

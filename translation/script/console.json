@@ -361,7 +361,7 @@
     "kind": "console",
     "source": "[PAL:4][BOX:8,2,28][NUM:5,06E6]トロン",
     "literal": "[PAL:4][BOX:8,2,28][NUM:5,06E6] tron",
-    "translation": "[PAL:4][BOX:A,2,24] [NUM:5,06E6] tr"
+    "translation": "[PAL:4][BOX:8,2,28][NUM:5,06E6] tr"
   },
   {
     "offset": "01F08A",
