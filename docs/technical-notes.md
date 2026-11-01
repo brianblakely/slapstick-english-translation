@@ -276,9 +276,25 @@ lookup table at PC `0x188000` returns the proper glyph for equipment IDs 1–50
 and an empty string for every other item. The build-time `[EICON:offset]`
 pseudo-command expands to the stock `TBL` operation against this lookup, so it
 inherits each display's live item selector without adding runtime code.
-The same font is used by robot naming. The build also removes the stray center
-pixel from `Z` (`0x3A`) and replaces the stock miniature-capital `q` (`0xB1`)
-with a mirrored lowercase `p`, giving it a proper right descender.
+The same font is used by robot naming. Its stock Latin letters, digits, and
+punctuation mixed serif and sans-serif shapes, and the stock glyphs raised the
+bowls of `g`, `p`, `q`, and `y` to fit a seven-row cell. The build replaces those
+75 cells with glyphs from Press Start 2P 3.000 (OFL-1.1), an 8x8 font based on
+classic arcade lettering. `assets/fonts/menu-font-8x8.json` stores the
+converted subset. It pins the upstream TrueType file's SHA-256, and each glyph
+samples the outline at the centers of an 8x8 pixel grid (125 font units per
+pixel). The converted subset is a Modified Version under the OFL and does not
+use the font's Reserved Font Name. Its license is in
+`assets/fonts/LICENSE.press-start-2p` and ships beside the patches as
+`dist/LICENSE.press-start-2p`.
+
+The build validates the subset hash, the source metadata, and a blank
+eighth column in every glyph, because console text advances exactly eight
+pixels. Capitals fill rows 0-6, and descenders use row 7. The battle menu's
+single-tile `L1`-`L9` level ligatures (`0x90`-`0x98`) keep their artwork but
+move up one row to share that baseline, so labels such as `L5METAL` stay
+aligned. Frames, kana, the small `ENERGY`/`ENEMY` labels, cursors, and the
+equipment icons are unchanged.
 A second 256-entry lookup at PC `0x1F8000` contains fixed nine-cell
 `[icon][name]` labels, with every name padded to eight cells. `[ELBL:offset]`
 also compiles to a stock `TBL` command. It lets nested robot panels retain their

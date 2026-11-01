@@ -154,5 +154,6 @@ jobs:
             "dist/Slap Stick (Japan) [EN].bps#BPS patch (recommended)" \
             "dist/Slap Stick (Japan) [EN].ips#IPS patch" \
             dist/manifest.json \
-            dist/LICENSE.spleen
+            dist/LICENSE.spleen \
+            dist/LICENSE.press-start-2p
           gh release edit "$RELEASE_TAG" --draft=false --latest
