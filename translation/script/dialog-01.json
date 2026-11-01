@@ -75,7 +75,7 @@
     "offset": "01D08A",
     "kind": "dialog",
     "source": "スーパーボムをひろった",
-    "translation": "Found a Super Bomb!"
+    "translation": "Found a Smart Bomb!"
   },
   {
     "offset": "01D098",
@@ -190,13 +190,13 @@
     "offset": "01D2A5",
     "kind": "dialog",
     "source": "[CLR][TBL:&string_list_01E23C,0B80]は すてられません˳[WAI]",
-    "translation": "[CLR][TBL:&string_list_01E23C,0B80] cannot[N]be discarded.[WAI]"
+    "translation": "[CLR][TBL:&string_list_01E23C,0B80] cannot be[N]discarded.[WAI]"
   },
   {
     "offset": "01D2B7",
     "kind": "dialog",
     "source": "[DEF][TBL:&string_list_01E23C,0676]は[N]ここでは使えません˳[END]",
-    "translation": "[DEF][TBL:&string_list_01E23C,0676] cannot[N]be used here.[END]"
+    "translation": "[DEF][TBL:&string_list_01E23C,0676] cannot be[N]used here.[END]"
   },
   {
     "offset": "01D2CB",
@@ -262,7 +262,7 @@
     "offset": "01D440",
     "kind": "dialog",
     "source": "[CLR][TBL:&string_list_01E23C,0B80]を作るには[N][NUM:4,B82]トロン必要です˳[N] 作る      やめておく",
-    "translation": "[CLR]Making [TBL:&string_list_01E23C,0B80][N]costs [NUM:4,B82] tron.[N] Make it    Never mind"
+    "translation": "[CLR]Making [TBL:&string_list_01E23C,0B80][N]costs [NUM:4,B82] tron.[N] Make it     Never mind"
   },
   {
     "offset": "01D46E",
@@ -336,13 +336,13 @@
     "offset": "01D5CC",
     "kind": "dialog",
     "source": "[CLR]合成すると[N][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]が できるよ˳[N] やめておく   合成する",
-    "translation": "[CLR]Combining them makes[N][TBL:&string_list_01E23C,0B9C] [TBL:&string_list_01E6B3,0B9E].[N] Cancel       Combine"
+    "translation": "[CLR]Combining them makes[N][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E].[N] Cancel       Combine"
   },
   {
     "offset": "01D5F7",
     "kind": "dialog",
     "source": "[CLR][TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]ができました![WAI]",
-    "translation": "[CLR]Made [TBL:&string_list_01E23C,0B9C] [TBL:&string_list_01E6B3,0B9E]![WAI]"
+    "translation": "[CLR]Made [TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]![WAI]"
   },
   {
     "offset": "01D60B",
@@ -864,7 +864,7 @@
     "offset": "01E361",
     "kind": "dialog",
     "source": "フルメタルソード",
-    "translation": "Full Metal Sword"
+    "translation": "Milspec Sword"
   },
   {
     "offset": "01E36C",
@@ -888,7 +888,7 @@
     "offset": "01E388",
     "kind": "dialog",
     "source": "フルメタルアクス",
-    "translation": "Full Metal Axe"
+    "translation": "Milspec Axe"
   },
   {
     "offset": "01E393",
@@ -954,7 +954,7 @@
     "offset": "01E3FF",
     "kind": "dialog",
     "source": "パンパンパンチ",
-    "translation": "Triple Punch"
+    "translation": "One-Two Punch"
   },
   {
     "offset": "01E409",
@@ -966,7 +966,7 @@
     "offset": "01E413",
     "kind": "dialog",
     "source": "ひっさつパンチ",
-    "translation": "Finishing Punch"
+    "translation": "Final Punch"
   },
   {
     "offset": "01E41D",
@@ -990,7 +990,7 @@
     "offset": "01E43B",
     "kind": "dialog",
     "source": "ハンドショット",
-    "translation": "Hand Shot"
+    "translation": "Pistol"
   },
   {
     "offset": "01E445",
@@ -1026,7 +1026,7 @@
     "offset": "01E476",
     "kind": "dialog",
     "source": "ストレートボム",
-    "translation": "Straight Bomb"
+    "translation": "Strike Bomb"
   },
   {
     "offset": "01E480",
@@ -1116,7 +1116,7 @@
     "offset": "01E509",
     "kind": "dialog",
     "source": "ブーツ",
-    "translation": "Boots"
+    "translation": "Regular Boots"
   },
   {
     "offset": "01E50F",
@@ -1404,7 +1404,7 @@
     "offset": "01E683",
     "kind": "dialog",
     "source": "すぐナオール",
-    "translation": "Quick Fix"
+    "translation": "Patch"
   },
   {
     "offset": "01E68C",
@@ -1422,7 +1422,7 @@
     "offset": "01E69F",
     "kind": "dialog",
     "source": "スーパーボム",
-    "translation": "Super Bomb"
+    "translation": "Smart Bomb"
   },
   {
     "offset": "01E6A8",
@@ -1440,54 +1440,54 @@
     "offset": "01E6C8",
     "kind": "dialog",
     "source": "ŁⅠ",
-    "translation": "ŁⅠ"
+    "translation": " ŁⅠ"
   },
   {
     "offset": "01E6CD",
     "kind": "dialog",
     "source": "ŁⅡ",
-    "translation": "ŁⅡ"
+    "translation": " ŁⅡ"
   },
   {
     "offset": "01E6D2",
     "kind": "dialog",
     "source": "ŁⅢ",
-    "translation": "ŁⅢ"
+    "translation": " ŁⅢ"
   },
   {
     "offset": "01E6D7",
     "kind": "dialog",
     "source": "ŁⅣ",
-    "translation": "ŁⅣ"
+    "translation": " ŁⅣ"
   },
   {
     "offset": "01E6DC",
     "kind": "dialog",
     "source": "ŁⅤ",
-    "translation": "ŁⅤ"
+    "translation": " ŁⅤ"
   },
   {
     "offset": "01E6E1",
     "kind": "dialog",
     "source": "ŁⅥ",
-    "translation": "ŁⅥ"
+    "translation": " ŁⅥ"
   },
   {
     "offset": "01E6E6",
     "kind": "dialog",
     "source": "ŁⅦ",
-    "translation": "ŁⅦ"
+    "translation": " ŁⅦ"
   },
   {
     "offset": "01E6EB",
     "kind": "dialog",
     "source": "ŁⅧ",
-    "translation": "ŁⅧ"
+    "translation": " ŁⅧ"
   },
   {
     "offset": "01E6F0",
     "kind": "dialog",
     "source": "ŁⅨ",
-    "translation": "ŁⅨ"
+    "translation": " ŁⅨ"
   }
 ]

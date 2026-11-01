@@ -291,7 +291,7 @@
     "kind": "console",
     "source": "[PAL:4][BOX:10,2,4] そうび    [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]",
     "literal": "[PAL:4][BOX:10,2,4] Equipment [PAL:8][TBL:@string_list_01F774,0B82][PAL:4]",
-    "translation": "[PAL:4][BOX:10,2,4] EQUIPPED  [PAL:8][EICON:0B82][TBL:@string_list_01F774,0B82][PAL:4]"
+    "translation": "[PAL:4][BOX:10,2,4]GEAR    [PAL:8][EICON:0B82][TBL:@string_list_01F774,0B82][PAL:4]"
   },
   {
     "offset": "01EF92",

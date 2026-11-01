@@ -9,6 +9,13 @@ const SCRIPT_DIRECTORY = path.resolve("translation/script");
 const MAX_COLUMNS = 26;
 const MAX_ROWS = 4;
 const NONTERMINAL_ABBREVIATIONS = new Set(["Dr.", "Jr.", "Mr.", "Mrs.", "Ms.", "Prof.", "Sr.", "St."]);
+// Widest rendered entry of a dialogue pointer table. The validator holds item
+// names to their width, and each equipment level suffix is a space plus the
+// two 12-pixel "Lv" glyphs. Other tables keep a conservative estimate.
+const DIALOG_TABLE_COLUMNS = new Map([
+  ["01E23C", 15],
+  ["01E6B3", 4],
+]);
 const writeChanges = process.argv.includes("--write");
 const checkOnly = process.argv.includes("--check");
 
@@ -428,10 +435,15 @@ function followingPageWordCount(atoms, start, limit) {
   return words;
 }
 
+function dialogTableColumns(table) {
+  const label = /_([0-9A-F]{6})(?:\+[0-9A-F]+)?$/i.exec(table ?? "")?.[1].toUpperCase();
+  return DIALOG_TABLE_COLUMNS.get(label) ?? 17;
+}
+
 function commandWidth(atom) {
   if (atom.name === "NAM") return 5;
   if (atom.name === "TPL") return atom.args[0]?.toUpperCase() === "0" ? 7 : 5;
-  if (atom.name === "TBL") return atom.args[0]?.includes("01E6B3") ? 2 : 17;
+  if (atom.name === "TBL") return dialogTableColumns(atom.args[0]);
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);
   if (atom.name === "DEC") return Number.parseInt(atom.args[1] ?? "1", 16);
   if (atom.name === "E2") return 1;
@@ -448,4 +460,4 @@ function isSpeakerTemplate(value) {
   return Number.isInteger(index) && index !== 0 && index !== 0x1a;
 }
 
-export { normalizeSoftBreaks, reflow, shouldReflow, tokenize };
+export { dialogTableColumns, normalizeSoftBreaks, reflow, shouldReflow, tokenize };

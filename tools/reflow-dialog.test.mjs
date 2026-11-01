@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { reflow } from "./reflow-dialog.mjs";
+import { dialogTableColumns, reflow } from "./reflow-dialog.mjs";
 
 test("reflows stale mid-sentence line breaks as soft whitespace", () => {
   const input = "[DEF]Thanks to you, my plan[N]should[N]go smoothly.[END]";
@@ -52,9 +52,19 @@ test("preserves spacing around dynamic text and punctuation", () => {
   );
   assert.equal(
     reflow("[CLR][TBL:&string_list_01E23C,0B80][N]cannot be discarded.[WAI]").text,
-    "[CLR][TBL:&string_list_01E23C,0B80] cannot[N]be discarded.[WAI]",
+    "[CLR][TBL:&string_list_01E23C,0B80] cannot be[N]discarded.[WAI]",
   );
   assert.equal(reflow("[DEF]Wait[N]![END]").text, "[DEF]Wait![END]");
+});
+
+test("reserves the widest entry of known dialogue tables", () => {
+  assert.equal(dialogTableColumns("&string_list_01E23C"), 15);
+  assert.equal(dialogTableColumns("&string_list_01E6B3"), 4);
+  assert.equal(dialogTableColumns("&string_list_01DB1F"), 17);
+  assert.equal(
+    reflow("[CLR]Made [TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]![WAI]").text,
+    "[CLR]Made [TBL:&string_list_01E23C,0B9C][TBL:&string_list_01E6B3,0B9E]![WAI]",
+  );
 });
 
 test("reserves the five-character maximum player name width", () => {
