@@ -292,9 +292,13 @@ use the font's Reserved Font Name. Its license is in
 The build validates the subset hash, the source metadata, and a blank
 eighth column in every glyph, because console text advances exactly eight
 pixels. Capitals fill rows 0-6, and descenders use row 7. The battle menu's
-single-tile `L1`-`L9` level ligatures (`0x90`-`0x98`) keep their artwork but
-move up one row to share that baseline. The equipment-type icons sit on the
-same rows, so a label such as `[sword icon]L5METAL` lines up. Frames, kana,
+single-tile `L1`-`L9` level ligatures (`0x90`-`0x98`) move up one row to
+share that baseline. Their stock digits filled the eighth column and butted
+against the following name. The build shortens each L's foot to two pixels and
+moves the unchanged four-pixel digit one column left, so every ligature leaves
+that column blank like the font's own glyphs. The equipment-type icons sit on
+the same rows, so a label such as `[sword icon]L5METAL` lines up with even
+one-pixel spacing. Frames, kana,
 the small `ENERGY`/`ENEMY` labels, and cursors are unchanged.
 
 Press Start 2P's digits use the cell's first column. The money box that sits

@@ -79,7 +79,7 @@
     "machine-program-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "8f404662ee7834abca9b9f0f9a82f13c24d0431443b1d6a05af462362fabb2af"
+      "rgbSha256": "84c1c5cd5f34b8534858e1942113040f3153bece15accef1237de738f4cc5b89"
     },
     "machine-exit-result": {
       "width": 256,
@@ -159,7 +159,7 @@
     "main-combos": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "196c25dc3426e76d1050651e7f0750ba673cfb95c33cb5e7e0c38053bb6f8aaf"
+      "rgbSha256": "9f16bba1d87d4081fb22f85127f9dee4c2da1e7a38c013b79f065cd0ee4e8c10"
     },
     "main-status-player": {
       "width": 256,
@@ -169,7 +169,7 @@
     "main-status-robot": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "79be4515f94beaeb4f9652c233bca8eae399e42369ab08c2a55ea7d0efe41146"
+      "rgbSha256": "4b0913d609c4a45e10544a97e669d8733a6e95c1772b02e0facb5f4872745575"
     },
     "main-config": {
       "width": 256,

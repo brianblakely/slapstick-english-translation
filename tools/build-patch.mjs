@@ -1021,6 +1021,21 @@ function validateMenuFont(font) {
   }
 }
 
+function consoleGlyphRows(bitmap, code) {
+  // Console text tiles use color index 1 for ink and 3 for the background.
+  return Array.from({ length: 8 }, (_, row) => {
+    const plane0 = bitmap[code * 16 + row * 2];
+    const plane1 = bitmap[code * 16 + row * 2 + 1];
+    return Array.from({ length: 8 }, (_, x) => {
+      const value = ((plane0 >>> (7 - x)) & 1) | (((plane1 >>> (7 - x)) & 1) << 1);
+      if (value !== 1 && value !== 3) {
+        throw new Error(`Console glyph 0x${code.toString(16)} uses color index ${value}`);
+      }
+      return value === 1 ? "#" : ".";
+    }).join("");
+  });
+}
+
 function hexGlyphRows(bitmap) {
   return Array.from({ length: 8 }, (_, row) => {
     const value = Number.parseInt(bitmap.slice(row * 2, row * 2 + 2), 16);
@@ -1110,15 +1125,20 @@ function installConsoleFont(rom) {
     createConsoleGlyphTile(character, hexGlyphRows(hexRows)).copy(bitmap, code * 16);
   }
 
-  // Raise the unchanged L1-L9 artwork one row so it shares that baseline,
-  // keeping labels such as "L5METAL" aligned.
+  // Give the L1-L9 level ligatures the same metrics. Raise each one row so it
+  // shares the capital line and baseline. Then shorten the L's three-pixel
+  // foot to two pixels and move the unchanged four-pixel digit one column
+  // left. That frees the eighth column, so "L5METAL" keeps the same one-pixel
+  // gap as every other pair of menu glyphs.
   for (const code of CONSOLE_LEVEL_LIGATURE_CODES) {
-    const tile = bitmap.subarray(code * 16, code * 16 + 16);
-    if (tile[0] !== 0xff || tile[1] !== 0xff) {
-      throw new Error(`Console level ligature 0x${code.toString(16)} does not start with a blank row`);
+    const rows = consoleGlyphRows(bitmap, code);
+    const stemOnly = rows.slice(1, 7).every((row) => row[0] === "#" && row.slice(1, 4) === "...");
+    if (rows[0] !== "........" || !stemOnly || rows[7].slice(0, 4) !== "###.") {
+      throw new Error(`Console level ligature 0x${code.toString(16)} does not match the stock layout`);
     }
-    tile.copyWithin(0, 2, 16);
-    tile.fill(0xff, 14, 16);
+    const compacted = [...rows.slice(1), "........"]
+      .map((row) => `${row.slice(0, 2)}.${row.slice(4, 8)}.`);
+    createConsoleGlyphTile(`ligature 0x${code.toString(16)}`, compacted).copy(bitmap, code * 16);
   }
 
   for (const [name, icon] of Object.entries(CONSOLE_EQUIPMENT_ICONS)) {
