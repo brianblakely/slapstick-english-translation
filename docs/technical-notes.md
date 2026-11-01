@@ -128,8 +128,14 @@ then reaches that terminator at the original call site. This is important for
 `NXT` strings used by scripted UI such as the Invention Machine. Console entry
 stubs use the previously unused command `0C` with a 24-bit address.
 
-Dialogue containing pointer-table (`TBL`) commands remains in its original
-bank; oversized entries can be split across reclaimed fragments and joined
+Dialogue `TBL` stores only a 16-bit pointer-table address, so the interpreter
+reads both the table and the string it selects through the current data bank.
+Dialogue containing `TBL` commands is therefore placed in the bank that holds
+its tables, which is normally its original bank. The Inventor's Friend reread
+line at `0x07B181` is the exception: its Japanese text called the shared
+bank-01 "It describes..." string through `STR`, and the inlined English line
+reads the bank-01 item-name table, so it runs from bank 01. Oversized entries
+can be split across reclaimed fragments and joined
 with `CF` redirects followed by return sentinels. Four-byte dialogue slots use
 the engine's existing same-bank `JMP` command instead. The two-byte Orb string
 is handled directly through its existing bank-01 pointer table because it
@@ -201,6 +207,16 @@ base mode for following text. This keeps names and template suffixes correctly
 cased, prevents alternate spaces and punctuation from becoming base-font
 symbols, protects numeric inserts, and keeps dynamic A/B/X/Y labels uppercase.
 
+Invention Machine dialogue appends an equipment level from the pointer table at
+`0x01E6B3`. Its entries keep the stock two-glyph "Lv" ligatures from the
+12-pixel sheet (`Ł` plus `Ⅰ`-`Ⅸ` in the script, encoded as `80 29` plus
+`80 90`-`80 97` or `80 2A`), so each level takes three English columns. Every
+non-empty level begins with its own space and entry 0 stays empty, so an
+unleveled item reads `Battle Sword.` rather than `Battle Sword .`. The battle
+menu draws its levels with the console font's separate ligatures and does not
+use this table. The reflow tool and validator reserve 15 columns for item names
+and 4 for a level, and the validator holds every item name to that width.
+
 `tools/reflow-dialog.mjs` removes dialogue newlines whenever the next word fits,
 then wraps normal dialogue to 26 English columns and four rows while retaining
 speaker, intentional page, and choice boundaries. Soft page markers are
@@ -213,7 +229,9 @@ control legend, opt out with `"reflow": false`.
 inserts, supported characters, control structure, and full translation
 coverage. It models the final rendered row of every dialogue choice prompt and
 checks the engine's fixed cursor row, including prompts whose speaker template
-or scrolling changes the apparent source-line count.
+or scrolling changes the apparent source-line count. Side-by-side choices, such
+as the Invention Machine's `Make it` and `Never mind`, must also leave columns 0
+and 12 blank because the stock cursor is drawn there.
 
 Map names at `0x06F910` through `0x06FD89` are nested inside the one-row
 location banner. The English banner uses a 14-tile box (28 English columns),
@@ -272,10 +290,16 @@ The combo assignment panel places single-letter R/L/X labels at console column
 control mapping, so the tilemap operand at PC `0x0BC73E` moves from `0x01D6` to
 `0x01DC` to keep that runtime redraw in the same column.
 
-The equipped-item sprite position is initialized by the operand at PC
-`0x0BC2A1`. The English build changes its X offset from `0x08` to `0x38`, moving
-the 16x16 graphic six text cells right so it no longer covers the longer
-`EQUIPPED` caption.
+The item screen's top-left box has 16 console columns. The Japanese text is a
+space, the three-character `そうび` caption, four blank columns, then the
+eight-column item name. The engine draws the 16x16 equipped-item graphic over
+the middle two blank columns, on the same 16-pixel grid as the bag slots, and
+the hand that marks where a held item will go points at it from the blank
+column before. That hand adds the stock X offset at PC `0x0BC2A1` to every
+destination, bag slots included, so the build leaves it unchanged. The English
+caption is the four-column `GEAR`, which keeps the label, hand, graphic, and
+name in their stock positions without writing past the box's right border.
+`tools/validate-script.mjs` enforces that layout.
 
 The main menu and Invention Machine share a 16x16 exit graphic whose Japanese
 `おわり` lettering is baked into four uncompressed 4bpp tiles at PC `0x0CB090`,

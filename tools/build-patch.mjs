@@ -49,6 +49,13 @@ const MENU_EXIT_TILE_OFFSETS = [0x0cb090, 0x0cb0b0, 0x0cb290, 0x0cb2b0];
 const MENU_EXIT_SOURCE_SHA256 = "6a9ce56c253e94fef091c9fab2194f8d1d56136bba16f2f252837395e1bbd2d3";
 const MENU_EXIT_TARGET_SHA256 = "e9af3bd2c4a30734dad808fffc6a25da82e84c198d661a865317caf95aae45ed";
 const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
+// Two-byte glyphs kept from the stock 12-pixel sheet: two blank spacer cells,
+// and the equipment "Lv" mark with its 1-9 numerals.
+const DIALOG_WIDE_GLYPHS = new Map([
+  ["▌", 0x06], ["▐", 0x07], ["Ł", 0x29],
+  ["Ⅰ", 0x90], ["Ⅱ", 0x91], ["Ⅲ", 0x92], ["Ⅳ", 0x93], ["Ⅴ", 0x94],
+  ["Ⅵ", 0x95], ["Ⅶ", 0x96], ["Ⅷ", 0x97], ["Ⅸ", 0x2a],
+]);
 const DIALOG_FONT_PATH = path.resolve("assets/fonts/spleen-8x16.json");
 const DIALOG_FONT_SOURCE_SHA256 = "4a3d97ee61a8c86a7525d8c723cb8a14081f395cd2feb4227ba5e3baf0629bae";
 const DIALOG_FONT_SUBSET_SHA256 = "c4158e0935f0648b26185a47012d0c82d62a625b4ec26980773a2441879bac63";
@@ -231,14 +238,15 @@ for (const entry of changedEntries) {
     throw new Error(`Translated dialog ${entry.offset} still uses JMP; inline its translated text`);
   }
 
+  const tableBank = entry.kind === "dialog" ? dialogTableBank(entry) : null;
   candidates.push({
     ...entry,
     offset,
     originalLength,
     bytes,
-    bank,
+    bank: tableBank ?? bank,
     terminator: entry.kind === "dialog" ? dialogTerminator(bytes, entry.offset) : null,
-    mustStayInBank: entry.kind === "dialog" && entry.translation.includes("[TBL:"),
+    mustStayInBank: tableBank !== null,
   });
 }
 
@@ -246,9 +254,14 @@ const jumpEntries = shortEntries.filter(
   (entry) => entry.kind === "dialog" && entry.originalLength === 4,
 );
 for (const entry of jumpEntries) {
+  const bank = entry.offset >>> 16;
+  const tableBank = dialogTableBank(entry);
+  if (tableBank !== null && tableBank !== bank) {
+    throw new Error(`Four-byte dialog ${entry.offset.toString(16)} cannot jump to bank ${tableBank.toString(16)} for TBL`);
+  }
   candidates.push({
     ...entry,
-    bank: entry.offset >>> 16,
+    bank,
     terminator: dialogTerminator(entry.bytes, entry.offset),
     mustStayInBank: true,
     jumpStub: true,
@@ -500,6 +513,22 @@ function allocateDialogFragments(gaps, bytes, bank) {
   return fragments;
 }
 
+// Dialogue TBL stores only a 16-bit pointer-table address, so the interpreter
+// reads the table, and the string it selects, through the current data bank.
+// A translated string must therefore run in the bank holding its tables. That
+// is usually its own bank, but inlined shared text can read another bank's
+// table, as the Inventor's Friend reread line does with the bank-01 item names.
+function dialogTableBank(entry) {
+  const banks = new Set();
+  for (const part of tokenize(entry.translation)) {
+    if (part.type === "command" && part.name === "TBL") banks.add(parseValue(part.args[0]) >>> 16);
+  }
+  if (banks.size > 1) {
+    throw new Error(`Translated dialog ${entry.offset} reads TBL tables from more than one bank`);
+  }
+  return banks.size ? [...banks][0] : null;
+}
+
 function dialogTerminator(bytes, offset) {
   const terminator = bytes[bytes.length - 1];
   if (![0xc0, 0xcc, 0xde, 0xe1].includes(terminator)) {
@@ -630,8 +659,9 @@ function encodeDialog(source) {
     if (part.type === "text") {
       endedByHalt = false;
       for (const character of part.value) {
-        if (character === "▌" || character === "▐") {
-          output.push(0x80, character === "▌" ? 0x06 : 0x07);
+        const wideGlyph = DIALOG_WIDE_GLYPHS.get(character);
+        if (wideGlyph !== undefined) {
+          output.push(0x80, wideGlyph);
           continue;
         }
 
@@ -1425,15 +1455,6 @@ function installRuntimeDefaults(rom) {
 }
 
 function installMenuLayoutFixes(rom) {
-  // The stock equipped-item graphic begins where the longer English
-  // "EQUIPPED" caption is still being drawn. Move that 16x16 graphic six
-  // console cells to the right, into the gap before the item description.
-  const equippedItemXOperand = 0x0bc2a1;
-  if (sourceRom.readUInt16LE(equippedItemXOperand) !== 0x0008) {
-    throw new Error("Unexpected equipped-item X-position operand");
-  }
-  rom.writeUInt16LE(0x0038, equippedItemXOperand);
-
   // The combo panel redraws its third button label from the current control
   // mapping. Keep that live label aligned with R/L/X at console column 14.
   const comboButtonPositionOperand = 0x0bc73e;
@@ -1441,6 +1462,15 @@ function installMenuLayoutFixes(rom) {
     throw new Error("Unexpected combo button tilemap-position operand");
   }
   rom.writeUInt16LE(0x01dc, comboButtonPositionOperand);
+
+  // The hand that marks where a held item will go adds this X offset to every
+  // destination cell: each bag slot and the equipped slot alike. Changing it
+  // moves the hand away from the slot it selects, so the English equipped-item
+  // caption is sized to the stock slot position instead.
+  const destinationCursorXOperand = 0x0bc2a1;
+  if (rom.readUInt16LE(destinationCursorXOperand) !== 0x0008) {
+    throw new Error("The item destination cursor X offset must keep its stock value");
+  }
 }
 
 function installConsoleSelectorMirrors(rom) {

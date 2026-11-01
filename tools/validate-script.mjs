@@ -6,6 +6,7 @@ import {
   CONSOLE_EQUIPMENT_ICONS,
   EQUIPMENT_ICON_BY_OFFSET,
 } from "./console-icons.mjs";
+import { dialogTableColumns } from "./reflow-dialog.mjs";
 
 const SCRIPT_DIRECTORY = path.resolve("translation/script");
 const JAPANESE = /[\u3040-\u30ff\u3400-\u9fff]/u;
@@ -25,6 +26,13 @@ const DIALOG_LABEL_RANGES = [
     end: 0x01e6a8,
     columns: 11,
     description: "player battle option",
+  },
+  {
+    // Dialogue layouts reserve this width wherever these names are inserted.
+    start: 0x01e340,
+    end: 0x01e6a8,
+    columns: dialogTableColumns("&string_list_01E23C"),
+    description: "item name",
   },
 ];
 const STATUS_SCREEN_OFFSET = "01EBD4";
@@ -104,14 +112,27 @@ const DIALOG_CHOICE_LAYOUTS = new Map([
   ["15943D", { choices: 2, firstRow: 2 }],
   ["1599F8", { choices: 3, firstRow: 1 }],
 ]);
+// The stock cursor for these side-by-side choices is drawn over columns 0 and
+// 12 of the line, where the Japanese text has a space before each option.
+const INLINE_DIALOG_CURSOR_COLUMNS = [0, 12];
 const INLINE_DIALOG_CHOICE_LINES = new Map([
-  ["01D440", { row: 2, text: " Make it    Never mind" }],
+  ["01D440", { row: 2, text: " Make it     Never mind" }],
   ["01D5CC", { row: 2, text: " Cancel       Combine" }],
   ["01D650", { row: 2, text: " Cancel       Recycle" }],
   ["01D6A2", { row: 2, text: " Build it    Never mind" }],
   ["01D72B", { row: 2, text: " Yes         Never mind" }],
   ["01D869", { row: 0, text: " Register     Delete" }],
 ]);
+// The equipped-item box has 16 columns. The hand cursor and 16x16 item
+// graphic occupy columns 4-7 at fixed sprite positions, followed by the
+// eight-column item name.
+const EQUIPPED_ITEM_BOX = {
+  offset: "01EF77",
+  columns: 16,
+  labelColumns: 4,
+  reservedColumns: 4,
+  nameColumns: 8,
+};
 const FIXED_CONSOLE_LABEL_LAYOUTS = new Map([
   ["01FC95", { columns: 8, description: "Invention Machine option" }],
   ["01FC9E", { columns: 8, description: "Invention Machine option" }],
@@ -231,6 +252,7 @@ function validateConsoleLayout(entry, location) {
   validateConsoleBoxLayout(entry.translation, location);
   validateConsoleLabel(entry, location);
   validateConsoleEquipmentIcons(entry, location);
+  validateEquippedItemBox(entry, location);
 
   if (entry.offset === STATUS_SCREEN_OFFSET) {
     const glyphs = [...entry.translation.matchAll(/\[FIL:([0-9A-F]+),&word_01E9D6\+2\]/g)]
@@ -444,6 +466,35 @@ function validateInlineDialogChoices(entry, location) {
       `${location}: inline choices must remain at their fixed columns on cursor row ${layout.row}`,
     );
   }
+  for (const column of INLINE_DIALOG_CURSOR_COLUMNS) {
+    if (layout.text[column] !== " ") {
+      errors.push(`${location}: inline choice text covers the cursor at column ${column}`);
+    }
+  }
+}
+
+function validateEquippedItemBox(entry, location) {
+  if (entry.offset !== EQUIPPED_ITEM_BOX.offset) return;
+  const { columns, labelColumns, reservedColumns, nameColumns } = EQUIPPED_ITEM_BOX;
+  const box = entry.translation.match(/\[BOX:([0-9A-F]+),/i);
+  const dynamicStart = entry.translation.indexOf("[EICON:");
+  if (!box || Number.parseInt(box[1], 16) !== columns || dynamicStart === -1) {
+    errors.push(`${location}: equipped-item box must keep its ${columns}-column box and dynamic item label`);
+    return;
+  }
+  const caption = visibleText(entry.translation.slice(0, dynamicStart));
+  if (caption.length !== labelColumns + reservedColumns) {
+    errors.push(
+      `${location}: equipped-item caption must span ${labelColumns + reservedColumns} columns so the item name starts after the item graphic`,
+    );
+  } else if (caption.slice(labelColumns).trim()) {
+    errors.push(
+      `${location}: equipped-item caption must leave columns ${labelColumns}-${labelColumns + reservedColumns - 1} clear for the cursor and item graphic`,
+    );
+  }
+  if (caption.length + nameColumns > columns) {
+    errors.push(`${location}: equipped item name would overflow the ${columns}-column box`);
+  }
 }
 
 function finalDialogPage(text) {
@@ -593,7 +644,7 @@ function tokenize(text) {
 function commandWidth(atom) {
   if (atom.name === "NAM") return 5;
   if (atom.name === "TPL") return atom.args[0]?.toUpperCase() === "0" ? 7 : 5;
-  if (atom.name === "TBL") return atom.args[0]?.includes("01E6B3") ? 2 : 17;
+  if (atom.name === "TBL") return dialogTableColumns(atom.args[0]);
   if (atom.name === "NUM") return Number.parseInt(atom.args[0] ?? "1", 16);
   if (atom.name === "DEC") return Number.parseInt(atom.args[1] ?? "1", 16);
   if (atom.name === "E2") return 1;
