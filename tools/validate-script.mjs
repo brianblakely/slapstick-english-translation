@@ -35,8 +35,21 @@ const DIALOG_LABEL_RANGES = [
     description: "item name",
   },
 ];
-const STATUS_SCREEN_OFFSET = "01EBD4";
-const STATUS_ITEM_GLYPHS = ["29", "34", "25", "2D"];
+// The player status panel draws the equipped item's 16x16 graphic over panel
+// columns 6-7 on the row at POS:19C, then the item label in columns 8-15. The
+// row's caption must stop before the graphic, as the Japanese アイテム does.
+const STATUS_EQUIPPED_ITEM_ROW = {
+  offset: "01EBD4",
+  position: "19C",
+  selector: "0676",
+  columns: 16,
+  labelColumns: 6,
+  reservedColumns: 2,
+  nameColumns: 8,
+};
+// The stock three-tile small-caps ENERGY label. Robot rows use it before
+// their energy values; it does not mean experience.
+const ENERGY_LABEL = "ℇ℞⅁";
 const EQUIPMENT_NAME_TABLE = "@string_list_01F774";
 const EQUIPMENT_LEVEL_TABLE = "@string_list_01F74C";
 const CONFIG_OPTION_LAYOUTS = new Map([
@@ -125,7 +138,7 @@ const INLINE_DIALOG_CHOICE_LINES = new Map([
 ]);
 // The equipped-item box has 16 columns. The hand cursor and 16x16 item
 // graphic occupy columns 4-7 at fixed sprite positions, followed by the
-// eight-column item name.
+// eight-column item label (an equipment icon and name, or a plain name).
 const EQUIPPED_ITEM_BOX = {
   offset: "01EF77",
   columns: 16,
@@ -157,9 +170,11 @@ const CONSOLE_LABEL_RANGES = [
     description: "battle attack name",
   },
   {
+    // The hovered-item box, the equipped-item box, and the status screen's
+    // equipped row each hold eight cells, so an equipment icon leaves seven.
     start: 0x01fa0c,
     end: 0x01fc8c,
-    columns: 9,
+    columns: 8,
     textColumns: 8,
     description: "item name",
   },
@@ -253,14 +268,10 @@ function validateConsoleLayout(entry, location) {
   validateConsoleLabel(entry, location);
   validateConsoleEquipmentIcons(entry, location);
   validateEquippedItemBox(entry, location);
+  validateStatusEquippedItem(entry, location);
 
-  if (entry.offset === STATUS_SCREEN_OFFSET) {
-    const glyphs = [...entry.translation.matchAll(/\[FIL:([0-9A-F]+),&word_01E9D6\+2\]/g)]
-      .map((match) => match[1]);
-    const expected = [...STATUS_ITEM_GLYPHS, ...STATUS_ITEM_GLYPHS];
-    if (glyphs.length !== expected.length || glyphs.some((glyph, index) => glyph !== expected[index])) {
-      errors.push(`${location}: conditional status labels must spell ITEM in English glyphs`);
-    }
+  if (entry.source.includes(ENERGY_LABEL) && !entry.translation.includes(ENERGY_LABEL)) {
+    errors.push(`${location}: robot energy must keep the stock ENERGY label ${ENERGY_LABEL}`);
   }
 
   const optionLayout = CONFIG_OPTION_LAYOUTS.get(entry.offset);
@@ -483,13 +494,38 @@ function validateEquippedItemBox(entry, location) {
     return;
   }
   const caption = visibleText(entry.translation.slice(0, dynamicStart));
+  validateEquippedItemCaption(caption, EQUIPPED_ITEM_BOX, location, "cursor and item graphic");
+}
+
+function validateStatusEquippedItem(entry, location) {
+  if (entry.offset !== STATUS_EQUIPPED_ITEM_ROW.offset) return;
+  const { position, selector } = STATUS_EQUIPPED_ITEM_ROW;
+  // The Japanese drew a second アイテム row under each label with FIL. English
+  // labels share the value's row instead, so no FIL rows remain.
+  if (entry.translation.includes("[FIL:")) {
+    errors.push(`${location}: status labels must be single-row text that shares the value's row`);
+  }
+  const row = entry.translation.match(new RegExp(
+    `\\[POS:${position}\\]((?:[^\\[]|\\[PAL:[0-9A-F]+\\])*)`
+    + `\\[EICON:${selector}\\]\\[TBL:${EQUIPMENT_NAME_TABLE},${selector}\\]`,
+    "i",
+  ));
+  if (!row) {
+    errors.push(`${location}: status equipped item must follow its caption at POS:${position}`);
+    return;
+  }
+  validateEquippedItemCaption(visibleText(row[1]), STATUS_EQUIPPED_ITEM_ROW, location, "item graphic");
+}
+
+function validateEquippedItemCaption(caption, layout, location, reservedFor) {
+  const { columns, labelColumns, reservedColumns, nameColumns } = layout;
   if (caption.length !== labelColumns + reservedColumns) {
     errors.push(
       `${location}: equipped-item caption must span ${labelColumns + reservedColumns} columns so the item name starts after the item graphic`,
     );
   } else if (caption.slice(labelColumns).trim()) {
     errors.push(
-      `${location}: equipped-item caption must leave columns ${labelColumns}-${labelColumns + reservedColumns - 1} clear for the cursor and item graphic`,
+      `${location}: equipped-item caption must leave columns ${labelColumns}-${labelColumns + reservedColumns - 1} clear for the ${reservedFor}`,
     );
   }
   if (caption.length + nameColumns > columns) {

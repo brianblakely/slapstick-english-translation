@@ -137,7 +137,7 @@
     "kind": "console",
     "source": "     [STR:@consolestring_01F6C8][PAL:8] [NUM:1,070C]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6D6]",
     "literal": "     [STR:@consolestring_01F6C8][PAL:8] No. [NUM:1,070C][PAL:4][N]     Experience [STR:@consolestring_01F6D6]",
-    "translation": "     [STR:@consolestring_01F6C8][PAL:8]No.[NUM:1,070C][PAL:4][N]     EXP [STR:@consolestring_01F6D6]"
+    "translation": "     [STR:@consolestring_01F6C8][PAL:8]No.[NUM:1,070C][PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6D6]"
   },
   {
     "offset": "01EB46",
@@ -151,7 +151,7 @@
     "kind": "console",
     "source": "     [STR:@consolestring_01F6E8][PAL:8] [NUM:1,070E]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6F6]",
     "literal": "     [STR:@consolestring_01F6E8][PAL:8] No. [NUM:1,070E][PAL:4][N]     Experience [STR:@consolestring_01F6F6]",
-    "translation": "     [STR:@consolestring_01F6E8][PAL:8]No.[NUM:1,070E][PAL:4][N]     EXP [STR:@consolestring_01F6F6]"
+    "translation": "     [STR:@consolestring_01F6E8][PAL:8]No.[NUM:1,070E][PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F6F6]"
   },
   {
     "offset": "01EB75",
@@ -165,7 +165,7 @@
     "kind": "console",
     "source": "     [STR:@consolestring_01F708][PAL:8] [NUM:1,0710]ばん[PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F716]",
     "literal": "     [STR:@consolestring_01F708][PAL:8] No. [NUM:1,0710][PAL:4][N]     Experience [STR:@consolestring_01F716]",
-    "translation": "     [STR:@consolestring_01F708][PAL:8]No.[NUM:1,0710][PAL:4][N]     EXP [STR:@consolestring_01F716]"
+    "translation": "     [STR:@consolestring_01F708][PAL:8]No.[NUM:1,0710][PAL:4][N]     ℇ℞⅁[STR:@consolestring_01F716]"
   },
   {
     "offset": "01EBA4",
@@ -193,7 +193,7 @@
     "kind": "console",
     "source": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N] [DEC:1,5,06DE]メガ[N] つぎのレベルまで[N] [DEC:1,5,06E2]メガ[N][BOX:A,4,582] おかね[N] [NUM:5,06E6]トロン[BOX:10,19,5A]プログラム [PAL:8][NUM:4,0B86]ポイント[PAL:4][N]そうび[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8]    [TBL:@string_list_01F774,0676][PAL:4][N]ひらめき[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2]  [PAL:8][NUM:4,0B84]コ[PAL:4]",
     "literal": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] Level [PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] Experience[N] [DEC:1,5,06DE] mega[N] Until the next level[N] [DEC:1,5,06E2] mega[N][BOX:A,4,582] Money[N] [NUM:5,06E6] tron[BOX:10,19,5A]Program [PAL:8][NUM:4,0B86] points[PAL:4][N]Equipment[POS:19C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2][PAL:8] [TBL:@string_list_01F774,0676][PAL:4][N]Inspiration[POS:25C][FIL:BB,&word_01E9D6+2][FIL:BC,&word_01E9D6+2][FIL:CD,&word_01E9D6+2][FIL:DB,&word_01E9D6+2] [PAL:8][NUM:4,0B84] pieces[PAL:4]",
-    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] MB[N]NEXT LEVEL[N][DEC:1,5,06E2] MB[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][N]EQUIPMENT[POS:19C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2][PAL:8]    [EICON:0676][TBL:@string_list_01F774,0676][PAL:4][N]IDEAS[POS:25C][FIL:29,&word_01E9D6+2][FIL:34,&word_01E9D6+2][FIL:25,&word_01E9D6+2][FIL:2D,&word_01E9D6+2]  [PAL:8][NUM:4,0B84][PAL:4]"
+    "translation": "[PAL:4][BOX:A,13,42] [TBL:@string_list_01E9C6,&word_01E9D6][N] LEVEL[PAL:8][NUM:2,0B12][PAL:4][N][N][N][N] EXP[N][DEC:1,5,06DE] MB[N]NEXT LEVEL[N][DEC:1,5,06E2] MB[N][BOX:A,4,582] MONEY[N][NUM:5,06E6] tr[BOX:10,19,5A]PROGRAM [PAL:8][NUM:4,0B86] PTS[PAL:4][POS:19C]GEAR    [PAL:8][EICON:0676][TBL:@string_list_01F774,0676][PAL:4][POS:25C]IDEAS   [PAL:8][NUM:4,0B84][PAL:4]"
   },
   {
     "offset": "01EC91",
@@ -249,21 +249,21 @@
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8][NUM:1,070C]ばん[PAL:4][POS:386]ℇ℞⅁[N][STR:@consolestring_01F6D6]",
     "literal": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8]No. [NUM:1,070C][PAL:4][POS:386]Experience[N][STR:@consolestring_01F6D6]",
-    "translation": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8]No.[NUM:1,070C][PAL:4][POS:386]EXP[N][STR:@consolestring_01F6D6]"
+    "translation": "[PAL:4][BOX:7,A,184][TBL:@string_list_01E9C6,&word_01E9D6+2][TBL:@string_list_01F728,06F0][POS:306][PAL:8]No.[NUM:1,070C][PAL:4][POS:386]ℇ℞⅁[N][STR:@consolestring_01F6D6]"
   },
   {
     "offset": "01EEED",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8][NUM:1,070E]ばん[PAL:4][POS:398]ℇ℞⅁[N][STR:@consolestring_01F6F6]",
     "literal": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8]No. [NUM:1,070E][PAL:4][POS:398]Experience[N][STR:@consolestring_01F6F6]",
-    "translation": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8]No.[NUM:1,070E][PAL:4][POS:398]EXP[N][STR:@consolestring_01F6F6]"
+    "translation": "[PAL:4][BOX:7,A,196][TBL:@string_list_01E9C6,&word_01E9D6+4][TBL:@string_list_01F728,06F2][POS:318][PAL:8]No.[NUM:1,070E][PAL:4][POS:398]ℇ℞⅁[N][STR:@consolestring_01F6F6]"
   },
   {
     "offset": "01EF1A",
     "kind": "console",
     "source": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8][NUM:1,0710]ばん[PAL:4][POS:3AA]ℇ℞⅁[N][STR:@consolestring_01F716]",
     "literal": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8]No. [NUM:1,0710][PAL:4][POS:3AA]Experience[N][STR:@consolestring_01F716]",
-    "translation": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8]No.[NUM:1,0710][PAL:4][POS:3AA]EXP[N][STR:@consolestring_01F716]"
+    "translation": "[PAL:4][BOX:7,A,1A8][TBL:@string_list_01E9C6,&word_01E9D6+6][TBL:@string_list_01F728,06F4][POS:32A][PAL:8]No.[NUM:1,0710][PAL:4][POS:3AA]ℇ℞⅁[N][STR:@consolestring_01F716]"
   },
   {
     "offset": "01EF47",
@@ -1089,7 +1089,7 @@
     "kind": "console",
     "source": "ケミカルシールド",
     "literal": "Chemical Shield",
-    "translation": "CHEMICAL"
+    "translation": "CHEM"
   },
   {
     "offset": "01FA37",
@@ -1103,7 +1103,7 @@
     "kind": "console",
     "source": "パックざんがい ",
     "literal": "Pack Wreckage",
-    "translation": "WRECKAGE"
+    "translation": "WRECKED"
   },
   {
     "offset": "01FA4E",

@@ -38,3 +38,7 @@ keep recurring names and terms consistent across independently edited banks.
 
 Interface terms use `ENERGY`, `ATTACK`, `DEFENSE`, `RUN`, `LV`, `PROGRAM
 POINTS`, `COMBO MOVES`, and `M` consistently across dialogue and menus.
+Robot energy keeps the stock small-caps `ENERGY` label; only the player has
+`EXP`. Menus call the player's held item (そうびアイテム) `GEAR`, and the status
+screen counts invention ideas (ひらめきアイテム) as `IDEAS`, matching the dialogue's
+"got the idea for".

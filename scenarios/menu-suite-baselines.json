@@ -49,7 +49,7 @@
     "machine-maintenance-robots": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "0644dd3f85704f03bffb39e33c29685119d576c818ac9824a5d666e131579195"
+      "rgbSha256": "6645a883b0fe802d48bc9d8862ac74d48a007994b71e599dcb33d1429b18f51c"
     },
     "machine-maintenance-confirmation": {
       "width": 256,
@@ -64,7 +64,7 @@
     "machine-program-robots": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "3ce9c3d26779383d02f67f87f052fbb0b6ce199281ee3f996949bf7a5725e53e"
+      "rgbSha256": "c81b81313584b0a03904e106eb439418d9ade2ff1e02a50cd85f6e4f5298fa89"
     },
     "machine-program-panel": {
       "width": 256,
@@ -129,7 +129,7 @@
     "main-overview-populated": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "7d51a482e01f0c236305e8957d26d67e3c55eb60e5bf23a44f5da087c594d147"
+      "rgbSha256": "e1310f8b2b941ba8cf73abbc40f6d3f6461622a294b9cf39d72cd1655d9338dc"
     },
     "main-equipment-player": {
       "width": 256,
@@ -164,12 +164,27 @@
     "main-status-player": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "743864afe8badeea1a5818a54ec478acac7c8e1b14f2e4d8046df0240a47a389"
+      "rgbSha256": "79d6f67c6e37a314d71921c644112ef750768e0f6612eba5ed0935f1fb7c97fd"
+    },
+    "main-status-player-equipped": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "b6d5975652893f5a4b50b158f8d4486b4905e58caf91b2658d211bb908da15e7"
     },
     "main-status-robot": {
       "width": 256,
       "height": 224,
       "rgbSha256": "4b0913d609c4a45e10544a97e669d8733a6e95c1772b02e0facb5f4872745575"
+    },
+    "main-status-robot-2": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "05a102397ef69fec8c44cb6e745615596ae2ce076cf7d4dc5e82edfbf459f382"
+    },
+    "main-status-robot-3": {
+      "width": 256,
+      "height": 224,
+      "rgbSha256": "fcafa811c35af66b3ae9dc4d6e2867a4c5da95d90fb25976720996c648edffbe"
     },
     "main-config": {
       "width": 256,
@@ -179,7 +194,7 @@
     "main-maintenance": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "686ed5159685787fcf82c269f397e918d1c8ae2f73a71df46fea033030ff6b3b"
+      "rgbSha256": "8faa6b3bcf10ef004f83c0a4748a446c4e1d58d4f48a443bcb0d4d517d47a3cd"
     },
     "main-exit": {
       "width": 256,
