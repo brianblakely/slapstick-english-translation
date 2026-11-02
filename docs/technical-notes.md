@@ -159,23 +159,33 @@ Console command-table slot `0C` at `0x04ACEA` points through a small trampoline
 at `0x049FFE` to the redirect routine at `0x180000`. The console interpreter's
 existing bank-preservation behavior then resumes the caller correctly.
 
+Console `STR` (`02`) renders a nested string from a 24-bit pointer. The stock
+handler at `0x04AD0C` loads the pointer's bank into the data bank before it
+reads the pointer's 16-bit address, so it reads that address from the target's
+bank. Every stock console string shares bank 01 with its targets, so the
+Japanese game never notices. A translated string running from an expansion bank
+does: each `STR` back into bank 01 jumped to garbage. Robots 2 and 3's status
+screens lost their boxes, labels, names, and energy, the robot-order screen
+lost Gamma's energy, and the naming screen's third character page garbled its
+command column. The build replaces the handler's operand reads at `0x04AD11`
+with a long call to a 14-byte routine at `0x180040`. It reads both operands
+through the caller's bank, then switches banks and returns to the stock
+recursive call.
+
 Some console `TBL` and `FIL` commands keep only the 16-bit address of the
 stock name/icon selector at `0x01E9D6`. When a translated string runs from an
 expanded bank, those commands read through that bank instead. The build reserves
 the corresponding range and mirrors the selector into banks `$98`-`$9F`, keeping
 dynamic player names and menu/icon selections intact across equipment, robot,
-battle-command, and exit-menu paths. Shared robot point-allocation and Program
-panels reached through `STR` remain inline at their stock addresses so the
-console interpreter never has to follow two relocation redirects at once. The
-three equipment-summary and three combo-panel wrappers use the fixed-width
-equipment-label table described below and also remain inline; relocating those
-wrappers before their nested `STR` calls drops the caller's box and tilemap
-state.
-The three main-menu robot summary rows at `0x01EB23`, `0x01EB52`, and
-`0x01EB81` also remain inline because each row nests its robot name and EXP
-value through `STR`. Each translated row fits its original 35-byte slot; if a
-row is relocated, its nested return resumes against the redirect stub and can
-corrupt the following robot names.
+battle-command, and exit-menu paths.
+
+Before the `STR` fix, the strings that contain or are reached through `STR`
+were pinned to their stock addresses to avoid it: the main-menu robot rows at
+`0x01EB23`, `0x01EB52`, and `0x01EB81`, the robot equipment summaries, and the
+shared stat, point-allocation, combo, and Program panels. Each still fits its
+stock slot, so they remain inline. A test build that relocated all sixteen,
+ten of them into an expansion bank, rendered every menu-suite capture
+identically.
 
 ## Dialogue font and layout
 
@@ -253,7 +263,10 @@ Console boxes advance one eight-pixel cell per Latin character. Main-menu and
 Invention Machine captions have eight cells. Battle attack names have seven
 cells for their distinctive text, while the selected-item header has eight.
 Inventory item names are limited to eight cells, enemy names to nine, player
-battle options to eleven, and mid-battle messages to twenty-four.
+battle options to eleven, and mid-battle messages to twenty-four. The eight
+item cells include the equipment icon, because the hovered-item box, the
+equipped-item box, and the status screen's equipped row each hold exactly
+eight; `CHEM` and `WRECKED` replace `CHEMICAL` and `WRECKAGE` for that reason.
 At runtime, equipment displays prepend the type glyph and level to produce
 `[icon][level][name]`; equipment without a level uses `[icon][name]`. Thus the
 full name `THUNDER` replaces `THDR SWD` without changing the field width. The
@@ -301,6 +314,13 @@ the same rows, so a label such as `[sword icon]L5METAL` lines up with even
 one-pixel spacing. Frames, kana,
 the small `ENERGY`/`ENEMY` labels, and cursors are unchanged.
 
+The small-caps `ENERGY` label spans three tiles (`0x99`-`0x9B`, written `ℇ℞⅁`
+in the script). Its five-pixel capitals sit on rows 2-6, so they already share
+the menu font's baseline. As in the Japanese, the main menu, the Invention
+Machine's robot lists, and the robot-order screen use it to label each robot's
+energy; robots have no experience points. The validator requires every console
+string whose Japanese source uses the label to keep it.
+
 Press Start 2P's digits use the cell's first column. The money box that sits
 beside the Invention Machine and robot-service headers (`0x01F07B`) therefore
 keeps its stock eight-column frame at its stock position. `99999 tr` fills that
@@ -327,6 +347,18 @@ destination, bag slots included, so the build leaves it unchanged. The English
 caption is the four-column `GEAR`, which keeps the label, hand, graphic, and
 name in their stock positions without writing past the box's right border.
 `tools/validate-script.mjs` enforces that layout.
+
+The player status screen's right panel also has 16 columns. The Japanese
+labels each value with two rows: `そうび` above `アイテム` for the held item, and
+`ひらめき` above `アイテム` for the number of invention ideas. The second row
+uses `FIL` to draw each kana as a single tile at `POS:19C` and `POS:25C`, beside
+the value. The engine draws the held item's 16x16 graphic over panel columns
+6-7 (screen columns 20-21) across both rows, and the item's name follows it in
+columns 8-15. English drops the `FIL` rows and puts a one-row label beside each
+value: `GEAR`, which matches the item screen and ends before the graphic, and
+`IDEAS`, the term the game uses when you learn a new invention. The validator
+keeps the held-item caption clear of the graphic and the item label inside the
+panel.
 
 The main menu and Invention Machine share a 16x16 exit graphic whose Japanese
 `おわり` lettering is baked into four uncompressed 4bpp tiles at PC `0x0CB090`,

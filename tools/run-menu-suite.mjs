@@ -30,12 +30,17 @@ const scenarioRunner = join(root, "tools", "run-scenario.mjs");
 const ADDRESSES = Object.freeze({
   mainMenuState: 0x05fa,
   config: 0x0674,
+  // The item the player holds: the status screen reads it, and equipping an
+  // item from the bag writes it.
+  equippedItem: 0x0676,
   robot1Energy: 0x068a,
   robot1MaxEnergy: 0x0690,
   robot1Power: 0x0696,
   robot1Guard: 0x069c,
   knownInventions: 0x07b0,
 });
+// Item 78 in scenarios/catalog.json ("chameleon-glasses").
+const CHAMELEON_GLASSES = 0x004e;
 
 function usage() {
   return `Usage: npm run test:menus -- [options]
@@ -544,9 +549,19 @@ function main() {
   });
   writeFileSync(vacancyState, vacancy.state);
 
+  // Hold the Chameleon Glasses, whose eight-column name is as wide as an
+  // equipped-item label can be.
+  const equippedState = join(statesDirectory, "menu-suite-status-equipped.state");
+  const equipped = applyScenarioToState(readFileSync(populatedState), {
+    name: "menu-suite-status-equipped",
+    wram: [{ address: ADDRESSES.equippedItem, width: 2, value: CHAMELEON_GLASSES }],
+  });
+  writeFileSync(equippedState, equipped.state);
+
   const states = new Map([
     ["populated", populatedState],
     ["create-vacancy", vacancyState],
+    ["status-equipped", equippedState],
     ["build-base", buildState],
   ]);
   process.stdout.write(`Fixture PASS — ${fixture.bagSlotsUsed} bag slots, ${fixture.robots} robots, all invention bits\n\nRunning menu cases\n`);

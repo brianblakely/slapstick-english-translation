@@ -35,6 +35,7 @@ const DIALOG_JUMP = 0xd3;
 const DIALOG_RETURN = 0xcc;
 const CONSOLE_REDIRECT_ROUTINE = 0x180000;
 const DIALOG_REDIRECT_ROUTINE = 0x180020;
+const CONSOLE_STR_OPERAND_ROUTINE = 0x180040;
 const CONSOLE_SELECTOR_START = 0xe9d6;
 const CONSOLE_SELECTOR_END = 0xe9ea;
 const BATTLE_UI_BITMAP_START = 0x132d06;
@@ -210,9 +211,10 @@ for (const entry of changedEntries) {
     : encodeConsole(entry.translation);
 
   // These strings either contain nested STR calls or are themselves reached
-  // through STR. Keeping them at their stock addresses avoids a second
-  // redirect level while a parent console string is active, which otherwise
-  // drops dynamic text and corrupts subsequent menus.
+  // through STR. They were pinned here because relocating them dropped their
+  // nested text and corrupted later menus. The cause was console STR reading
+  // its pointer from the wrong bank, which installInterpreterHooks now fixes,
+  // but each string still fits its stock slot, so it stays there.
   if (entry.kind === "console" && INLINE_CONSOLE_OFFSETS.has(offset)) {
     if (bytes.length > originalLength) {
       throw new Error(
@@ -791,6 +793,8 @@ function consoleCharacter(character, source) {
     ["▼", 0xa0], ["ー", 0xf3], ["(", 0xf4], [")", 0xf5], [",", 0xf6],
     ["┏", 0xf7], ["┛", 0xf8], ["*", 0xf9], ["+", 0xfa], ["-", 0xfb],
     ["/", 0xfc], ["&", 0xfd], [".", 0xfe],
+    // The stock three-tile small-caps ENERGY label (EN, ER, GY).
+    ["ℇ", 0x99], ["℞", 0x9a], ["⅁", 0x9b],
   ]);
   if (!symbols.has(character)) throw new Error(`Unsupported console character ${JSON.stringify(character)} in ${source}`);
   return symbols.get(character);
@@ -1515,6 +1519,28 @@ function installInterpreterHooks(rom) {
 
   const consoleRedirectRoutine = Buffer.from("e220b9020048c220b90000a8e2206848abc2206b", "hex");
   consoleRedirectRoutine.copy(rom, CONSOLE_REDIRECT_ROUTINE);
+
+  // Console STR (02) renders a nested string from a 24-bit pointer. The stock
+  // handler loads the pointer's bank into DB before it reads the pointer's
+  // 16-bit address, so it reads that address from the target bank instead of
+  // the caller's. Stock strings share bank 01, but a relocated English string
+  // that calls a bank-01 panel jumps to garbage: robots 2 and 3's status
+  // screens lost their boxes, labels, and names. Read both operands through
+  // the caller's bank first, then switch DB and resume the stock handler.
+  const consoleStrOperandStart = 0x04ad11;
+  const consoleStrOperandEnd = 0x04ad1e;
+  const originalConsoleStrOperands = Buffer.from("e220b9020048abc220b90000a8", "hex");
+  if (!sourceRom.subarray(consoleStrOperandStart, consoleStrOperandEnd).equals(originalConsoleStrOperands)) {
+    throw new Error("Unexpected console STR handler bytes");
+  }
+  const consoleStrOperandRoutine = Buffer.from("e220b9020048c220b90000a8ab6b", "hex");
+  const routineEnd = CONSOLE_STR_OPERAND_ROUTINE + consoleStrOperandRoutine.length;
+  if (!rom.subarray(CONSOLE_STR_OPERAND_ROUTINE, routineEnd).every((byte) => byte === 0xff)) {
+    throw new Error("Console STR operand routine does not occupy free expanded ROM");
+  }
+  consoleStrOperandRoutine.copy(rom, CONSOLE_STR_OPERAND_ROUTINE);
+  rom.fill(0xea, consoleStrOperandStart, consoleStrOperandEnd);
+  longCallTrampoline(CONSOLE_STR_OPERAND_ROUTINE).subarray(0, 4).copy(rom, consoleStrOperandStart);
 }
 
 function installRuntimeDefaults(rom) {
