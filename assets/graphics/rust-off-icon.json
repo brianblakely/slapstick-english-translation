@@ -1,0 +1,25 @@
+{
+  "name": "Rust-Off item icon",
+  "description": "The stock さびトレール bottle with its サビ (\"rust\") label relettered as OIL on a yellow label. Only label rows 8-12, columns 3-12 differ from the stock art.",
+  "width": 16,
+  "height": 16,
+  "format": "SNES item-icon palette indices, one hexadecimal digit per pixel",
+  "pixels": [
+    "cffffffffffffffc",
+    "4555551111555553",
+    "455551deed155553",
+    "455551deed155553",
+    "45551cffffc15553",
+    "45551cffffc15553",
+    "4551cffffffc1553",
+    "4551cffffffc1553",
+    "4519111919199153",
+    "4519191919199153",
+    "4519191919199153",
+    "4519191919199153",
+    "4519111919119153",
+    "4551ccffffcc1553",
+    "4555111111115553",
+    "c11111111111111c"
+  ]
+}

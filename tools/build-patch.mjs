@@ -49,6 +49,17 @@ const MENU_EXIT_ICON_PATH = path.resolve("assets/graphics/robotrek-exit-icon.jso
 const MENU_EXIT_TILE_OFFSETS = [0x0cb090, 0x0cb0b0, 0x0cb290, 0x0cb2b0];
 const MENU_EXIT_SOURCE_SHA256 = "6a9ce56c253e94fef091c9fab2194f8d1d56136bba16f2f252837395e1bbd2d3";
 const MENU_EXIT_TARGET_SHA256 = "e9af3bd2c4a30734dad808fffc6a25da82e84c198d661a865317caf95aae45ed";
+const RUST_OFF_ICON_PATH = path.resolve("assets/graphics/rust-off-icon.json");
+// Four-tile sprite beside "Use on which robot?": top-left, top-right,
+// bottom-left, bottom-right.
+const RUST_OFF_SPRITE_TILE_OFFSETS = [0x168000, 0x168020, 0x168200, 0x168220];
+// The item sheet behind the item screen, the status screen's ideas grid, and
+// the Invention Machine's catalog. Its tilemaps draw the top-right tile as the
+// mirrored top-left, so that sheet has only these three tiles.
+const RUST_OFF_MENU_TILE_OFFSETS = [0x0cab10, 0x0cad10, 0x0cad30];
+const RUST_OFF_SPRITE_SOURCE_SHA256 = "97ff7540f814f4449732da23ea59ed249807f83946abaf7c29f87a94b4b0f08f";
+const RUST_OFF_MENU_SOURCE_SHA256 = "ee9f1ab5dcff863fdb65279ba886b4d59bf58f3c949404a2764e4ac276c9e54e";
+const RUST_OFF_LABEL_TARGET_SHA256 = "f64f2eff455ae73ea47b403d67b988c1c511160fabc9c105621037f26fe2c8a2";
 const DIALOG_BASE_MODE_COMMANDS = new Set(["NAM", "TBL", "NUM", "STR", "DEC", "TPL", "E2"]);
 // Two-byte glyphs kept from the stock 12-pixel sheet: two blank spacer cells,
 // and the equipment "Lv" mark with its 1-9 numerals.
@@ -159,6 +170,7 @@ validateDialogFont(dialogFont);
 const menuFont = JSON.parse(await readFile(MENU_FONT_PATH, "utf8"));
 validateMenuFont(menuFont);
 const menuExitIcon = JSON.parse(await readFile(MENU_EXIT_ICON_PATH, "utf8"));
+const rustOffIcon = JSON.parse(await readFile(RUST_OFF_ICON_PATH, "utf8"));
 const sourceRom = await readFile(sourceFilename);
 if (sourceRom.length !== SOURCE_SIZE) {
   throw new Error(`Expected a ${SOURCE_SIZE}-byte unheadered ROM, got ${sourceRom.length} bytes`);
@@ -398,9 +410,11 @@ installDialogFont(targetRom, dialogFont);
 installBattleMissGlyphs(targetRom);
 installConsoleFont(targetRom);
 installMenuExitIcon(targetRom, menuExitIcon);
+installRustOffIcon(targetRom, rustOffIcon);
 installConsoleEquipmentIconTable(targetRom);
 installConsoleEquipmentLabelTable(targetRom);
 installInterpreterHooks(targetRom);
+installDialogPaletteHandler(targetRom);
 installConsoleSelectorMirrors(targetRom);
 installRuntimeDefaults(targetRom);
 installMenuLayoutFixes(targetRom);
@@ -1174,38 +1188,81 @@ function installMenuExitIcon(rom, icon) {
   if (sha256(original) !== MENU_EXIT_SOURCE_SHA256) {
     throw new Error("Unexpected Japanese menu exit tiles");
   }
-  if (
-    icon.width !== 16 || icon.height !== 16
-    || !Array.isArray(icon.pixels) || icon.pixels.length !== 16
-    || icon.pixels.some((row) => typeof row !== "string" || !/^[0-9a-f]{16}$/.test(row))
-  ) {
-    throw new Error("Robotrek menu exit icon must be a 16x16 indexed bitmap");
-  }
+  validateIndexedIcon(icon, "Robotrek menu exit icon");
 
   // Both menus use the same uncompressed 4bpp icon. Its bottom tile row is
   // 0x200 bytes after the top row in the stock sheet. Preserve the palette,
   // tilemap, and shared border while replacing おわり with Robotrek's END art.
-  const tiles = MENU_EXIT_TILE_OFFSETS.map((offset, index) => {
-    const tile = Buffer.alloc(0x20);
-    const tileX = (index & 1) * 8;
-    const tileY = (index >>> 1) * 8;
-    for (let y = 0; y < 8; y += 1) {
-      for (let x = 0; x < 8; x += 1) {
-        const pixel = Number.parseInt(icon.pixels[tileY + y][tileX + x], 16);
-        for (let plane = 0; plane < 4; plane += 1) {
-          const byte = y * 2 + (plane >>> 1) * 0x10 + (plane & 1);
-          tile[byte] |= ((pixel >>> plane) & 1) << (7 - x);
-        }
-      }
-    }
-    return tile;
-  });
+  const tiles = MENU_EXIT_TILE_OFFSETS.map((_, index) => indexedIconTile(icon, index));
   if (sha256(Buffer.concat(tiles)) !== MENU_EXIT_TARGET_SHA256) {
     throw new Error("Robotrek menu exit tiles do not match the pinned reference");
   }
   for (const [index, offset] of MENU_EXIT_TILE_OFFSETS.entries()) {
     tiles[index].copy(rom, offset);
   }
+}
+
+function installRustOffIcon(rom, icon) {
+  // The Rust-Off bottle's label carries the Japanese サビ ("rust"). The game
+  // stores two uncompressed 4bpp copies of the art: the menus' item sheet and
+  // the sprite shown beside "Use on which robot?". Reletter the label in both;
+  // it lies entirely in the bottom two tiles, so the bottle, cap, and mirrored
+  // top half are unchanged.
+  const spriteSource = Buffer.concat(RUST_OFF_SPRITE_TILE_OFFSETS.map(
+    (offset) => sourceRom.subarray(offset, offset + 0x20),
+  ));
+  const menuSource = Buffer.concat(RUST_OFF_MENU_TILE_OFFSETS.map(
+    (offset) => sourceRom.subarray(offset, offset + 0x20),
+  ));
+  if (sha256(spriteSource) !== RUST_OFF_SPRITE_SOURCE_SHA256) {
+    throw new Error("Unexpected Rust-Off sprite tiles");
+  }
+  if (sha256(menuSource) !== RUST_OFF_MENU_SOURCE_SHA256) {
+    throw new Error("Unexpected Rust-Off item-screen tiles");
+  }
+  validateIndexedIcon(icon, "Rust-Off icon");
+
+  const [topLeft, topRight, bottomLeft, bottomRight] = [0, 1, 2, 3].map(
+    (index) => indexedIconTile(icon, index),
+  );
+  if (!Buffer.concat([topLeft, topRight]).equals(spriteSource.subarray(0, 0x40))) {
+    throw new Error("The Rust-Off icon must keep the stock top half that the bag sheet mirrors");
+  }
+  const label = Buffer.concat([bottomLeft, bottomRight]);
+  if (sha256(label) !== RUST_OFF_LABEL_TARGET_SHA256) {
+    throw new Error("Rust-Off label tiles do not match the pinned art");
+  }
+  bottomLeft.copy(rom, RUST_OFF_SPRITE_TILE_OFFSETS[2]);
+  bottomRight.copy(rom, RUST_OFF_SPRITE_TILE_OFFSETS[3]);
+  bottomLeft.copy(rom, RUST_OFF_MENU_TILE_OFFSETS[1]);
+  bottomRight.copy(rom, RUST_OFF_MENU_TILE_OFFSETS[2]);
+}
+
+function validateIndexedIcon(icon, description) {
+  if (
+    icon.width !== 16 || icon.height !== 16
+    || !Array.isArray(icon.pixels) || icon.pixels.length !== 16
+    || icon.pixels.some((row) => typeof row !== "string" || !/^[0-9a-f]{16}$/.test(row))
+  ) {
+    throw new Error(`${description} must be a 16x16 indexed bitmap`);
+  }
+}
+
+function indexedIconTile(icon, index) {
+  // Tiles are numbered top-left, top-right, bottom-left, bottom-right.
+  const tile = Buffer.alloc(0x20);
+  const tileX = (index & 1) * 8;
+  const tileY = (index >>> 1) * 8;
+  for (let y = 0; y < 8; y += 1) {
+    for (let x = 0; x < 8; x += 1) {
+      const pixel = Number.parseInt(icon.pixels[tileY + y][tileX + x], 16);
+      for (let plane = 0; plane < 4; plane += 1) {
+        const byte = y * 2 + (plane >>> 1) * 0x10 + (plane & 1);
+        tile[byte] |= ((pixel >>> plane) & 1) << (7 - x);
+      }
+    }
+  }
+  return tile;
 }
 
 function installConsoleEquipmentIconTable(rom) {
@@ -1541,6 +1598,50 @@ function installInterpreterHooks(rom) {
   consoleStrOperandRoutine.copy(rom, CONSOLE_STR_OPERAND_ROUTINE);
   rom.fill(0xea, consoleStrOperandStart, consoleStrOperandEnd);
   longCallTrampoline(CONSOLE_STR_OPERAND_ROUTINE).subarray(0, 4).copy(rom, consoleStrOperandStart);
+}
+
+function installDialogPaletteHandler(rom) {
+  // Dialogue PAL (C3) stores the new tilemap palette, then recolors every
+  // tile from the cursor to the end of the box so the text that follows is
+  // drawn in that color. Before recoloring, the stock handler runs the glyph
+  // wrap check, which starts a new line whenever a glyph would not fit. At the
+  // end of a full 26-column line, a palette change therefore broke the line
+  // by itself: the line break that followed left a blank row, and on a box's
+  // last line the forced break scrolled the first line out of view.
+  //
+  // Rewrite the handler in place so that a palette change never moves the
+  // cursor. When the cursor is at the end of its line, recoloring starts at
+  // the next line instead, and on the last line there is nothing left to
+  // recolor (a later scroll gives the new line the current palette). The
+  // stock half-tile alignment, recolor loop, tilemap upload, and one-frame
+  // wait are unchanged.
+  const start = 0x04a013;
+  const end = 0x04a0cc;
+  const originalHandler = Buffer.from(
+    "aed20eb9000029ff00c85aeb0a0a9dc20e382057a6aed20ebdce0e890100f010a900009dce0ebdaa0e186901009d"
+    + "aa0ebdaa0e4a8514bdba0e0a187db20e38e5148514bdae0e4a8518bdbe0e0a187db60e38e5184a8518bdae0e0a0a"
+    + "0a0a0a48187db20e187db20e850068187daa0e48bdc20efa48e220bf01f07e29e303029f01f07ebf41f07e29e303"
+    + "029f41f07ee8e8c614d0e2c220aed20ebdba0e0a8514a500186980008500aac618d0c868a901000cde0e203fac7a60",
+    "hex",
+  );
+  if (!sourceRom.subarray(start, end).equals(originalHandler)) {
+    throw new Error("Unexpected dialog PAL handler bytes");
+  }
+  const handler = Buffer.from([
+    "aed20e b90000 29ff00 c8 5a eb 0a 0a 9dc20e", // read the palette, keep Y, store it at $0EC2
+    "bdce0e 890100 f006 9ece0e feaa0e", // after a 12-pixel glyph, align to the next tile
+    "bdaa0e 4a 8514 bdba0e 0a 18 7db20e 38 e514 8514", // $14 = tiles left on this line
+    "bdae0e 4a 8518 bdbe0e 0a 18 7db60e 38 e518 4a 8518", // $18 = lines from here to the bottom
+    "bdae0e 0a0a0a0a0a 48 18 7db20e 18 7db20e 8500 68 18 7daa0e", // $00 = line start, A = cursor
+    "48 bdc20e fa 48", // X = cursor tile; push the palette for the loop
+    "a514 f022 3020", // at or past the line end: begin with the next line
+    "e220 bf01f07e 29e3 0302 9f01f07e bf41f07e 29e3 0302 9f41f07e e8 e8 c614 d0e2", // recolor
+    "c220 aed20e bdba0e 0a 8514 a500 18 698000 8500 aa c618 d0c8", // advance to the next line
+    "68 a90100 0cde0e 203fac 7a 60", // upload the tilemap, wait a frame, restore Y
+  ].join("").replaceAll(" ", ""), "hex");
+  if (handler.length > end - start) throw new Error("Dialog PAL handler does not fit its stock slot");
+  rom.fill(0xea, start, end);
+  handler.copy(rom, start);
 }
 
 function installRuntimeDefaults(rom) {

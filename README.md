@@ -65,7 +65,7 @@ checked-out branch; tag-only pushes and branch deletions skip the build.
 ## Releases
 
 The [Release patches workflow](.github/workflows/release.yml) runs automatically
-on pushes to `master` that change the translation scripts, font or exit-icon
+on pushes to `master` that change the translation scripts, font or graphics
 assets, patch builder, equipment icons, committed patches, manifest, or release
 workflow. Documentation and test-only changes do not trigger it.
 
@@ -219,6 +219,7 @@ change, accept it with `npm run test:menus -- --update-baselines`.
 - Replaces equipment-type abbreviations with 13 compact 8×8 menu icons and
   displays leveled equipment as icon, level, then name.
 - Replaces the Japanese menu exit graphic with Robotrek's English `END` icon.
+- Reletters the Rust-Off bottle's Japanese `サビ` label as `OIL`.
 - Reflows prose at word boundaries and validates custom dialogue-box sizes.
 - Recalculates the SNES checksum and verifies both generated patches by
   applying them in memory and comparing every output byte.

@@ -220,7 +220,7 @@
     "offset": "079595",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は タンスの中から[N][PAL:2] おとうさんの手紙[PAL:0]を みつけた![N][PAU:1E] [NAM:0]は 手紙を読んでみた˳[FIN][PAL:2] [NAM:0][N] とうさんは これから[N] 大切な 旅に出ることにした[N] 安全な旅には ならないだろう[FIN] とうさんにもしものことがあったら[N][PAL:3] いつも お前がこの家を[N] 出る時に 言っていたことを[N][PAL:2] よく 思い出してほしい[FIN] では とうさんのいない間も[N] かぜなどひかずに がんばるように[N][N][PAU:1E][SKP:24]父より[PAL:0][END]",
-    "translation": "[DEF] [NAM:0] found[N][PAL:2] a letter from his father[PAL:0][N] inside the dresser.[N][PAU:1E] He read it.[FIN][PAL:2] [NAM:0],[N] I am leaving on[N] an important journey.[N] It may not be a safe one.[FIN] If anything should happen[N]to me,[N][PAL:3] remember what you always[N]said[FIN] when you left this house.[PAL:2][FIN] Stay well and work hard[N] while I am away.[N][N][PAU:1E][SKP:1A]Love, Father[PAL:0][END]"
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] a letter from his father[PAL:0][N] inside the dresser.[N][PAU:1E] He read it.[FIN][PAL:2] [NAM:0],[N] I am leaving on[N] an important journey.[N] It may not be a safe one.[FIN] If anything should happen[N] to me, remember [PAL:3]what I[N] always told you when you[N] left this house.[PAL:2][FIN] Stay well and work hard[N] while I am away.[N][N][PAU:1E][SKP:1A]Love, Father[PAL:0][END]"
   },
   {
     "offset": "0796B9",

@@ -269,6 +269,10 @@ function isHardBreak(atoms, index) {
   if (previous.type === "command" && isLayoutBoundary(previous)) return true;
   if (next.type === "command" && isLayoutBoundary(next)) return true;
   if (next.value === " ") return true;
+  // A line that opens with two or more spaces is laid out by hand, such as a
+  // centered title or a book's byline. Keep the break that ends it so the
+  // next line's first word is never pulled up beside it.
+  if (isPreformattedLine(atoms, index)) return true;
 
   // A dialogue newline is only a layout hint. Sentence punctuation does not
   // make it significant, so let the wrapper reclaim any room left on the
@@ -295,6 +299,27 @@ function isHardBreak(atoms, index) {
   }
 
   return true;
+}
+
+function isPreformattedLine(atoms, breakIndex) {
+  let lineStart = breakIndex;
+  while (lineStart > 0) {
+    const atom = atoms[lineStart - 1];
+    if (atom.type === "command" && isLayoutBoundary(atom)) break;
+    lineStart -= 1;
+  }
+
+  let leadingSpaces = 0;
+  for (let index = lineStart; index < breakIndex; index += 1) {
+    const atom = atoms[index];
+    if (atom.type === "character") {
+      if (atom.value !== " ") break;
+      leadingSpaces += 1;
+    } else if (commandWidth(atom) > 0) {
+      break;
+    }
+  }
+  return leadingSpaces >= 2;
 }
 
 function previousWord(atoms, start) {

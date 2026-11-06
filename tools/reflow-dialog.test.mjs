@@ -45,6 +45,19 @@ test("removes unnecessary sentence newlines but retains structural boundaries", 
   assert.equal(reflow("[DEF]Choose.[N] Yes[N] No").text, "[DEF]Choose.[N] Yes[N] No");
 });
 
+test("keeps the break after a hand-laid-out line", () => {
+  // A centered byline must not absorb the next page's first word.
+  const titlePage = "[DEF][PAL:2] My Marvelous Daily Life[N]        Volume One[N][N]     by Count Chocula[FIN]At last, my manor stands.[END]";
+
+  assert.equal(reflow(titlePage).text, titlePage);
+  assert.equal(
+    reflow("[DEF]     by Count Chocula[N]At last.[END]").text,
+    "[DEF]     by Count Chocula[N]At last.[END]",
+  );
+  // A single leading space is an ordinary indent, not a layout.
+  assert.equal(reflow("[DEF] Dear Rask[N]hello.[END]").text, "[DEF] Dear Rask hello.[END]");
+});
+
 test("preserves spacing around dynamic text and punctuation", () => {
   assert.equal(
     reflow("[CLR]This is[N][TBL:&string_list_01DB1F,0B80].[END]").text,

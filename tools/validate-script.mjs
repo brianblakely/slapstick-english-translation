@@ -22,13 +22,8 @@ const DIALOG_LABEL_RANGES = [
     description: "mid-battle message",
   },
   {
-    start: 0x01e53d,
-    end: 0x01e6a8,
-    columns: 11,
-    description: "player battle option",
-  },
-  {
     // Dialogue layouts reserve this width wherever these names are inserted.
+    // The battle menu lists usable items by their console names instead.
     start: 0x01e340,
     end: 0x01e6a8,
     columns: dialogTableColumns("&string_list_01E23C"),
@@ -46,6 +41,17 @@ const STATUS_EQUIPPED_ITEM_ROW = {
   labelColumns: 6,
   reservedColumns: 2,
   nameColumns: 8,
+};
+// In battle, choosing the player opens a box that lists the robot-swap
+// command and the usable items in two columns starting at POS:5D2 and POS:5EA,
+// 12 cells apart. The right column's cursor is drawn in the cell before its
+// text, so a left-column label must fit in 11 cells. Item rows are a console
+// item name and a two-digit count, which the item-name ranges already limit.
+const BATTLE_PLAYER_OPTIONS = {
+  offset: "01F61D",
+  leftColumn: "5D2",
+  rightColumn: "5EA",
+  columns: 11,
 };
 // The stock three-tile small-caps ENERGY label. Robot rows use it before
 // their energy values; it does not mean experience.
@@ -269,6 +275,7 @@ function validateConsoleLayout(entry, location) {
   validateConsoleEquipmentIcons(entry, location);
   validateEquippedItemBox(entry, location);
   validateStatusEquippedItem(entry, location);
+  validateBattlePlayerOptions(entry, location);
 
   if (entry.source.includes(ENERGY_LABEL) && !entry.translation.includes(ENERGY_LABEL)) {
     errors.push(`${location}: robot energy must keep the stock ENERGY label ${ENERGY_LABEL}`);
@@ -515,6 +522,28 @@ function validateStatusEquippedItem(entry, location) {
     return;
   }
   validateEquippedItemCaption(visibleText(row[1]), STATUS_EQUIPPED_ITEM_ROW, location, "item graphic");
+}
+
+function validateBattlePlayerOptions(entry, location) {
+  if (entry.offset !== BATTLE_PLAYER_OPTIONS.offset) return;
+  const { leftColumn, rightColumn, columns } = BATTLE_PLAYER_OPTIONS;
+  const leftStart = entry.translation.indexOf(`[POS:${leftColumn}]`);
+  const rightStart = entry.translation.indexOf(`[POS:${rightColumn}]`);
+  if (leftStart === -1 || rightStart === -1 || rightStart < leftStart) {
+    errors.push(`${location}: battle player options must keep their POS:${leftColumn} and POS:${rightColumn} columns`);
+    return;
+  }
+  const leftRows = entry.translation.slice(leftStart, rightStart).split("[N]");
+  for (const row of leftRows) {
+    // Runtime item rows are limited by the console item-name range.
+    if (/\[(?:TBL|EICON|ELBL):/.test(row)) continue;
+    const width = visibleText(row).length;
+    if (width > columns) {
+      errors.push(
+        `${location}: battle player option ${JSON.stringify(visibleText(row))} needs ${width} cells; the right column's cursor leaves ${columns}`,
+      );
+    }
+  }
 }
 
 function validateEquippedItemCaption(caption, layout, location, reservedFor) {

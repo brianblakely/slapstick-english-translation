@@ -9,7 +9,7 @@
     "machine-create-player-catalog": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "866d8e10f1e9c6142485f09b373e788729f3f7fd67dbe68ac375233cc17454ef"
+      "rgbSha256": "9a3eae1607fb58dbd2c22d88508427f0c946a8c52c64bb031e7c6aec49e8c8b9"
     },
     "machine-create-robot-catalog": {
       "width": 256,
@@ -164,12 +164,12 @@
     "main-status-player": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "79d6f67c6e37a314d71921c644112ef750768e0f6612eba5ed0935f1fb7c97fd"
+      "rgbSha256": "65bfff0a3330deb6efd192e94e18d79cb3f5c1ea16cfcb4f5ee8e2ce7b7ce6b2"
     },
     "main-status-player-equipped": {
       "width": 256,
       "height": 224,
-      "rgbSha256": "b6d5975652893f5a4b50b158f8d4486b4905e58caf91b2658d211bb908da15e7"
+      "rgbSha256": "844204c716fed9286d70e12347428ae39fd301bbae2b57778a234ef94eea7a6f"
     },
     "main-status-robot": {
       "width": 256,
