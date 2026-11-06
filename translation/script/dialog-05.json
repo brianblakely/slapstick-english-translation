@@ -1703,7 +1703,7 @@
     "offset": "05F548",
     "kind": "dialog",
     "source": "[DEF][TPL:1]すてきな [TPL:1A]ができたわね[N]これからも メンテナンスや[N]パワーアップをしてあげてね[FIN]発明マシンで[PAL:2][TPL:1A]の強さを[N]プログラムしなおすことも[N]できるのよ[N][PAL:0]あとで ためしてごらんなさい[FIN]それと 私からのプレゼント[N]小型トランシーバーよ[N]これがあれば どこにいても[N]私と れんらくが取れるわ[FIN]なにか用があったら 使ってね[N]使う時は [PAL:2]裝備して[N][E2:4000]ボタンを おすのよ[FIN][PAL:0] [NAM:0]は[N][PAL:2] トランシーバー[PAL:0]を もらった!",
-    "translation": "[DEF][TPL:1]What a wonderful [TPL:1A]! Be[N]sure to maintain it and[N]keep powering it up.[FIN]You can use the Invention[N]Machine to reprogram [PAL:2]your[N][TPL:1A]'s strength settings[PAL:0][N]too.[FIN]Try it later.[FIN]And I have a present for[N]you. A portable[N]transceiver. With it, you[FIN]can contact me from[N]anywhere.[FIN]Use it whenever you need[N]me. [PAL:2]Equip it and press the[N][E2:4000] Button[PAL:0] to call.[FIN] [NAM:0] received[N][PAL:2] the Transceiver[PAL:0]!"
+    "translation": "[DEF][TPL:1]What a wonderful [TPL:1A]! Be[N]sure to maintain it and[N]keep powering it up.[FIN]You can use the Invention[N]Machine to reprogram [PAL:2]your[N][TPL:1A]'s strength settings[PAL:0][N]too.[FIN]Try it later.[FIN]And I have a present for[N]you. A portable comlink.[N]With it, you can contact[N]me from anywhere.[FIN]Use it whenever you need[N]me. [PAL:2]Equip it and press the[N][E2:4000] Button[PAL:0] to call.[FIN] [NAM:0] received[N][PAL:2] the Comlink[PAL:0]!"
   },
   {
     "offset": "05F63D",

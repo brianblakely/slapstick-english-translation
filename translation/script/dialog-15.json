@@ -27,7 +27,7 @@
     "offset": "1584CB",
     "kind": "dialog",
     "source": "[DF5][TPL:1]ふふっ ちょっとためしてみたの[N][PAU:A]トランシーバーは[N]ちゃんと 動いてるみたいね[FIN]ついでに セーブしておいたら?[N] セーブしてみる[N] 今は しなくてもいいや",
-    "translation": "[DF5][TPL:1]Hee hee. That was a little[N]test. [PAU:A]Your transceiver[FIN]seems to be working[N]properly.[FIN]Save while we are here?[N] Save now[N] Not right now"
+    "translation": "[DF5][TPL:1]Hee hee. That was a little[N]test. [PAU:A]Your comlink seems[N]to be working properly.[FIN]Save while we are here?[N] Save now[N] Not right now"
   },
   {
     "offset": "158525",
@@ -123,7 +123,7 @@
     "offset": "1588E1",
     "kind": "dialog",
     "source": "[DF5][PAL:2][N] ここでは 雑音がひどくて[N] トランシーバーが使えない···˳[PAL:0][END]",
-    "translation": "[DF5][PAL:2][N] Too much static here. The[N] transceiver won't work...[PAL:0][END]"
+    "translation": "[DF5][PAL:2][N] Too much static here. The[N] comlink won't work...[PAL:0][END]"
   },
   {
     "offset": "15890C",

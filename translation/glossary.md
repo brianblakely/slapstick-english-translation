@@ -44,6 +44,6 @@ screen counts invention ideas (ひらめきアイテム) as `IDEAS`, matching th
 "got the idea for".
 
 Dialogue item names match the story text and the menus' 8-cell names, for
-example Animal Chatter (`ANMLCHAT`), Officer Badge (`COPBADGE`), and Stone
-Tablet (`TABLET`). Dialogue reserves 15 columns for an item name, so the
+example Comlink (`COMLINK`), Animal Chatter (`ANMLCHAT`), Officer Badge
+(`COPBADGE`), and Stone Tablet (`TABLET`). Dialogue reserves 15 columns for an item name, so the
 Chameleon Glasses are `Cham. Glasses` there and `CHAM GLS` in menus.
