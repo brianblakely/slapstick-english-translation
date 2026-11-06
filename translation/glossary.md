@@ -42,3 +42,8 @@ Robot energy keeps the stock small-caps `ENERGY` label; only the player has
 `EXP`. Menus call the player's held item (そうびアイテム) `GEAR`, and the status
 screen counts invention ideas (ひらめきアイテム) as `IDEAS`, matching the dialogue's
 "got the idea for".
+
+Dialogue item names match the story text and the menus' 8-cell names, for
+example Comlink (`COMLINK`), Animal Chatter (`ANMLCHAT`), Officer Badge
+(`COPBADGE`), and Stone Tablet (`TABLET`). Dialogue reserves 15 columns for an item name, so the
+Chameleon Glasses are `Cham. Glasses` there and `CHAM GLS` in menus.

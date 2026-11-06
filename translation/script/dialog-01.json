@@ -1152,13 +1152,13 @@
     "offset": "01E53D",
     "kind": "dialog",
     "source": "トランシーバー",
-    "translation": "Transceiver"
+    "translation": "Comlink"
   },
   {
     "offset": "01E547",
     "kind": "dialog",
     "source": "びっくりホーン",
-    "translation": "Surp. Horn"
+    "translation": "Surprise Horn"
   },
   {
     "offset": "01E551",
@@ -1182,7 +1182,7 @@
     "offset": "01E568",
     "kind": "dialog",
     "source": "カメレオングラス",
-    "translation": "Cham. Lens"
+    "translation": "Cham. Glasses"
   },
   {
     "offset": "01E573",
@@ -1194,7 +1194,7 @@
     "offset": "01E578",
     "kind": "dialog",
     "source": "おてつだいロボ",
-    "translation": "Helper Bot"
+    "translation": "Helper Robot"
   },
   {
     "offset": "01E582",
@@ -1206,7 +1206,7 @@
     "offset": "01E588",
     "kind": "dialog",
     "source": "花のたね",
-    "translation": "Flower Seed"
+    "translation": "Flower Seeds"
   },
   {
     "offset": "01E58E",
@@ -1230,7 +1230,7 @@
     "offset": "01E5A5",
     "kind": "dialog",
     "source": "だべっこどうぶつ",
-    "translation": "Animal Talk"
+    "translation": "Animal Chatter"
   },
   {
     "offset": "01E5AE",
@@ -1272,19 +1272,19 @@
     "offset": "01E5DA",
     "kind": "dialog",
     "source": "せきばん",
-    "translation": "Stone Slab"
+    "translation": "Stone Tablet"
   },
   {
     "offset": "01E5DF",
     "kind": "dialog",
     "source": "かんぶバッチ",
-    "translation": "Officer ID"
+    "translation": "Officer Badge"
   },
   {
     "offset": "01E5E8",
     "kind": "dialog",
     "source": "ハッカーバッチ",
-    "translation": "Hacker ID"
+    "translation": "Hacker Badge"
   },
   {
     "offset": "01E5F2",
@@ -1428,7 +1428,7 @@
     "offset": "01E6A8",
     "kind": "dialog",
     "source": "おてんきママさん",
-    "translation": "Wthr. Mama"
+    "translation": "Weather Mama"
   },
   {
     "offset": "01E6C7",

@@ -22,13 +22,8 @@ const DIALOG_LABEL_RANGES = [
     description: "mid-battle message",
   },
   {
-    start: 0x01e53d,
-    end: 0x01e6a8,
-    columns: 11,
-    description: "player battle option",
-  },
-  {
     // Dialogue layouts reserve this width wherever these names are inserted.
+    // The battle menu lists usable items by their console names instead.
     start: 0x01e340,
     end: 0x01e6a8,
     columns: dialogTableColumns("&string_list_01E23C"),
@@ -47,9 +42,21 @@ const STATUS_EQUIPPED_ITEM_ROW = {
   reservedColumns: 2,
   nameColumns: 8,
 };
+// In battle, choosing the player opens a box that lists the robot-swap
+// command and the usable items in two columns starting at POS:5D2 and POS:5EA,
+// 12 cells apart. The right column's cursor is drawn in the cell before its
+// text, so a left-column label must fit in 11 cells. Item rows are a console
+// item name and a two-digit count, which the item-name ranges already limit.
+const BATTLE_PLAYER_OPTIONS = {
+  offset: "01F61D",
+  leftColumn: "5D2",
+  rightColumn: "5EA",
+  columns: 11,
+};
 // The stock three-tile small-caps ENERGY label. Robot rows use it before
 // their energy values; it does not mean experience.
 const ENERGY_LABEL = "ℇ℞⅁";
+const NONTERMINAL_ABBREVIATIONS = new Set(["Dr.", "Jr.", "Mr.", "Mrs.", "Ms.", "Prof.", "Sr.", "St."]);
 const EQUIPMENT_NAME_TABLE = "@string_list_01F774";
 const EQUIPMENT_LEVEL_TABLE = "@string_list_01F74C";
 const CONFIG_OPTION_LAYOUTS = new Map([
@@ -206,6 +213,7 @@ for (const filename of files) {
     if (entry.kind === "dialog") {
       validateDialogLabel(entry, location);
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
+      validateIndentedContinuations(entry, location);
       validateDialogChoices(entry, location);
       validateInlineDialogChoices(entry, location);
       validateLocationLabel(entry, location);
@@ -248,6 +256,47 @@ function validateDialogLabel(entry, location) {
   }
 }
 
+// Letters, notices, and signs indent every line by one column, like the
+// Japanese. When such a sentence wraps, its next line keeps the indent;
+// reflow-dialog adds it. An unindented continuation reads as a stray word.
+function validateIndentedContinuations(entry, location) {
+  if (/\[(?:BOX|POS):/.test(entry.translation)) return;
+  const lines = [{ text: "", next: null }];
+  for (const atom of tokenize(entry.translation)) {
+    const line = lines.at(-1);
+    if (atom.type === "character") {
+      line.text += atom.value;
+    } else if (["N", "FIN"].includes(atom.name)) {
+      line.next = "break";
+      lines.push({ text: "", next: null });
+    } else if (
+      ["DEF", "DF2", "DFT", "CLR", "PGE", "END", "NXT", "WAI", "ESC", "DES"].includes(atom.name)
+      || atom.name === "TPL" && !["0", "1A"].includes(atom.args[0]?.toUpperCase())
+    ) {
+      line.next = "boundary";
+      lines.push({ text: "", next: null });
+    } else if (atom.name === "SKP") {
+      line.text += "~";
+    } else if (commandWidth(atom) > 0) {
+      line.text += "X";
+    }
+  }
+
+  for (let index = 0; index + 1 < lines.length; index += 1) {
+    const { text, next } = lines[index];
+    const following = lines[index + 1].text;
+    if (next !== "break" || !/^ \S/.test(text) || !/^[^\s~]/.test(following)) continue;
+    const ending = text.trimEnd().replace(/["')]+$/, "");
+    const lastWord = ending.split(" ").at(-1);
+    const endsSentence = /[.!?…:]$/.test(ending) && !NONTERMINAL_ABBREVIATIONS.has(lastWord);
+    if (!endsSentence) {
+      errors.push(
+        `${location}: ${JSON.stringify(following)} continues the indented line ${JSON.stringify(text.trim())} without its indent`,
+      );
+    }
+  }
+}
+
 function validateLocationLabel(entry, location) {
   const offset = Number.parseInt(entry.offset, 16);
   if (offset < LOCATION_LABEL_START || offset > LOCATION_LABEL_END) return;
@@ -269,6 +318,7 @@ function validateConsoleLayout(entry, location) {
   validateConsoleEquipmentIcons(entry, location);
   validateEquippedItemBox(entry, location);
   validateStatusEquippedItem(entry, location);
+  validateBattlePlayerOptions(entry, location);
 
   if (entry.source.includes(ENERGY_LABEL) && !entry.translation.includes(ENERGY_LABEL)) {
     errors.push(`${location}: robot energy must keep the stock ENERGY label ${ENERGY_LABEL}`);
@@ -515,6 +565,28 @@ function validateStatusEquippedItem(entry, location) {
     return;
   }
   validateEquippedItemCaption(visibleText(row[1]), STATUS_EQUIPPED_ITEM_ROW, location, "item graphic");
+}
+
+function validateBattlePlayerOptions(entry, location) {
+  if (entry.offset !== BATTLE_PLAYER_OPTIONS.offset) return;
+  const { leftColumn, rightColumn, columns } = BATTLE_PLAYER_OPTIONS;
+  const leftStart = entry.translation.indexOf(`[POS:${leftColumn}]`);
+  const rightStart = entry.translation.indexOf(`[POS:${rightColumn}]`);
+  if (leftStart === -1 || rightStart === -1 || rightStart < leftStart) {
+    errors.push(`${location}: battle player options must keep their POS:${leftColumn} and POS:${rightColumn} columns`);
+    return;
+  }
+  const leftRows = entry.translation.slice(leftStart, rightStart).split("[N]");
+  for (const row of leftRows) {
+    // Runtime item rows are limited by the console item-name range.
+    if (/\[(?:TBL|EICON|ELBL):/.test(row)) continue;
+    const width = visibleText(row).length;
+    if (width > columns) {
+      errors.push(
+        `${location}: battle player option ${JSON.stringify(visibleText(row))} needs ${width} cells; the right column's cursor leaves ${columns}`,
+      );
+    }
+  }
 }
 
 function validateEquippedItemCaption(caption, layout, location, reservedFor) {

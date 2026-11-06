@@ -179,6 +179,22 @@ the corresponding range and mirrors the selector into banks `$98`-`$9F`, keeping
 dynamic player names and menu/icon selections intact across equipment, robot,
 battle-command, and exit-menu paths.
 
+Dialogue `PAL` (`C3`) stores a tilemap palette at `$0EC2` and recolors every
+tile from the cursor to the end of the box, so the text that follows takes
+the new color. The stock handler at `0x04A013` first ran the glyph wrap check
+at `0x04A657` as though a glyph were about to be drawn. After a full
+26-column line, that check found no room and started a new line, so a color
+change at the end of a line broke the line by itself. A line break that
+followed left a blank row, and on a box's last row the forced break scrolled
+the first line out of view, as with the password doors' `This door needs a
+password` prompt. The build rewrites the handler in its stock slot without
+the wrap check. When the cursor is at or past the end of its line, recoloring
+starts at the next line; on the last row there is nothing below to recolor,
+and the scroll routine already gives each new row the current palette. The
+half-tile alignment for 12-pixel glyphs, the recolor loop, the tilemap upload,
+and the one-frame wait are unchanged. The rewrite is 11 bytes shorter than the
+stock handler, and the remaining bytes are `NOP`s.
+
 Before the `STR` fix, the strings that contain or are reached through `STR`
 were pinned to their stock addresses to avoid it: the main-menu robot rows at
 `0x01EB23`, `0x01EB52`, and `0x01EB81`, the robot equipment summaries, and the
@@ -232,12 +248,18 @@ then wraps normal dialogue to 26 English columns and four rows while retaining
 speaker, intentional page, and choice boundaries. Soft page markers are
 repaginated from the current row count; if that would leave only one or two
 words on a generated page, the last line of the preceding page moves forward.
+A line that opens with two or more spaces is laid out by hand, such as a
+book's centered title or byline, so the break that ends it is always kept.
+A line that opens with one space is indented, the Japanese style for letters,
+notices, and signs; when it wraps, its continuation keeps the indent. A line
+that continues an indented sentence without its indent, as earlier passes
+left dozens of them, is joined back and wrapped again.
 Entries whose
 row structure is itself meaningful, such as the Invention Machine's two-line
 control legend, opt out with `"reflow": false`.
 `tools/validate-script.mjs` additionally checks custom box dimensions, dynamic
 inserts, supported characters, control structure, and full translation
-coverage. It models the final rendered row of every dialogue choice prompt and
+coverage, and fails any line that continues an indented sentence unindented. It models the final rendered row of every dialogue choice prompt and
 checks the engine's fixed cursor row, including prompts whose speaker template
 or scrolling changes the apparent source-line count. Side-by-side choices, such
 as the Invention Machine's `Make it` and `Never mind`, must also leave columns 0
@@ -262,8 +284,13 @@ at both initialization sites.
 Console boxes advance one eight-pixel cell per Latin character. Main-menu and
 Invention Machine captions have eight cells. Battle attack names have seven
 cells for their distinctive text, while the selected-item header has eight.
-Inventory item names are limited to eight cells, enemy names to nine, player
-battle options to eleven, and mid-battle messages to twenty-four. The eight
+Inventory item names are limited to eight cells, enemy names to nine, and
+mid-battle messages to twenty-four. In battle, choosing the player opens a box
+(`0x01F61D`) that lists `SWAP ROBOT` and the usable items in two columns 12
+cells apart; the right column's cursor is drawn in the cell before its text,
+so each left-column label gets eleven cells. That box lists items by these
+console names, so dialogue item names are held only to their 15-column
+dialogue width. The eight
 item cells include the equipment icon, because the hovered-item box, the
 equipped-item box, and the status screen's equipped row each hold exactly
 eight; `CHEM` and `WRECKED` replace `CHEMICAL` and `WRECKAGE` for that reason.
@@ -370,6 +397,19 @@ the 16x16 crop at `(112, 10)` in this
 The asset records the screenshot URL and digest; the builder verifies both the
 original tile digest and the encoded replacement digest. No Robotrek ROM or
 network access is needed to build the patch.
+
+The Rust-Off bottle's orange label carries the Japanese `サビ` ("rust"). The
+art is stored twice as uncompressed 4bpp tiles: in the item sheet used by the
+item screen, the status screen's ideas grid, and the Invention Machine's
+catalog (top-left `0x0CAB10`, bottom row `0x0CAD10` and `0x0CAD30`; the
+tilemap draws the top-right as the mirrored top-left), and as the four-tile
+sprite beside `Use on which robot?` (`0x168000`, `0x168020`, `0x168200`,
+`0x168220`). The label lies entirely in the bottom two tiles. The build
+reletters it as `OIL` in dark ink on a yellow label, using only the icon's
+existing palette entries, and writes those two tiles to both copies.
+`assets/graphics/rust-off-icon.json` holds the whole icon as palette indices;
+the builder verifies the stock tile digests, checks that the asset's top half
+still encodes to the stock tiles, and pins the encoded label digest.
 
 The validator also checks every literal console line against its active `BOX`,
 plus the complete item-name, machine-option, main-caption, and battle-target

@@ -98,6 +98,8 @@ function reflowOnce(text, maxColumns, maxRows) {
   let lineBreaks = 0;
   let pageBreaks = 0;
   let lineStartBreak = null;
+  // An indented line keeps its one-column indent when it wraps.
+  let hangingIndent = lineIndentAt(atoms, 0);
 
   const emitBreak = (forcePage = false, tailStart = atoms.length, movable = true) => {
     const widowWords = movable && !forcePage && row >= maxRows - 1
@@ -133,13 +135,21 @@ function reflowOnce(text, maxColumns, maxRows) {
     column = 0;
   };
 
+  const wrapLine = (tailStart) => {
+    emitBreak(false, tailStart);
+    if (hangingIndent > 0) {
+      output.push(" ".repeat(hangingIndent));
+      column = hangingIndent;
+    }
+  };
+
   for (let index = 0; index < atoms.length; index += 1) {
     const atom = atoms[index];
     if (atom.type === "character") {
       if (atom.value === " ") {
         const followingWidth = nextWordWidth(atoms, index + 1);
-        if (column > 0 && followingWidth > 0 && column + 1 + followingWidth > maxColumns) {
-          emitBreak(false, index + 1);
+        if (column > hangingIndent && followingWidth > 0 && column + 1 + followingWidth > maxColumns) {
+          wrapLine(index + 1);
         } else if (column < maxColumns) {
           output.push(atom.value);
           column += 1;
@@ -147,7 +157,7 @@ function reflowOnce(text, maxColumns, maxRows) {
         continue;
       }
 
-      if (column >= maxColumns) emitBreak(false, index);
+      if (column >= maxColumns) wrapLine(index);
       output.push(atom.value);
       column += 1;
       continue;
@@ -159,6 +169,7 @@ function reflowOnce(text, maxColumns, maxRows) {
       const hardBreak = isHardBreak(atoms, index);
       const movable = !hardBreak || choices === 1;
       emitBreak(choices >= 2 && row + choices > maxRows - 1, index + 1, movable);
+      hangingIndent = lineIndentAt(atoms, index + 1);
       continue;
     }
     if (name === "FIN") {
@@ -166,6 +177,7 @@ function reflowOnce(text, maxColumns, maxRows) {
       row = 0;
       column = 0;
       lineStartBreak = null;
+      hangingIndent = lineIndentAt(atoms, index + 1);
       continue;
     }
     if (["DEF", "DF2", "DFT", "CLR", "PGE"].includes(name)) {
@@ -173,6 +185,7 @@ function reflowOnce(text, maxColumns, maxRows) {
       row = 0;
       column = 0;
       lineStartBreak = null;
+      hangingIndent = lineIndentAt(atoms, index + 1);
       continue;
     }
 
@@ -182,11 +195,12 @@ function reflowOnce(text, maxColumns, maxRows) {
       row += 1;
       column = 0;
       lineStartBreak = null;
+      hangingIndent = lineIndentAt(atoms, index + 1);
       continue;
     }
 
     const width = commandWidth(atom);
-    if (width > 0 && column > 0 && column + width > maxColumns) emitBreak(false, index);
+    if (width > 0 && column > hangingIndent && column + width > maxColumns) wrapLine(index);
     output.push(atom.value);
     column += width;
   }
@@ -197,6 +211,7 @@ function reflowOnce(text, maxColumns, maxRows) {
 function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
   const normalized = [];
   let column = 0;
+  let lineStart = 0;
 
   for (let index = 0; index < atoms.length; index += 1) {
     const atom = atoms[index];
@@ -207,6 +222,20 @@ function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
     }
 
     if (["N", "FIN"].includes(atom.name)) {
+      // Letters, notices, and signs indent every line by one column, like the
+      // Japanese. When such a line ran long, an earlier wrap left the rest of
+      // its sentence on an unindented line. Rejoin them; reflowOnce wraps the
+      // line again with its indent.
+      if (
+        lineIndentAt(normalized, lineStart) > 0
+        && !endsSentence(normalized, lineStart)
+        && startsUnindentedText(atoms, index + 1)
+      ) {
+        normalized.push({ type: "character", value: " " });
+        column += 1;
+        continue;
+      }
+
       const previous = normalized.at(-1);
       const next = nextSpacingAtom(atoms, index + 1);
       const omitSpace = previous?.type === "character" && previous.value === " "
@@ -236,6 +265,7 @@ function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
           args: [],
         });
         column = 0;
+        lineStart = normalized.length;
       }
       continue;
     }
@@ -243,8 +273,10 @@ function normalizeSoftBreaks(atoms, maxColumns = MAX_COLUMNS) {
     normalized.push(atom);
     if (["DEF", "DF2", "DFT", "CLR", "PGE", "BOX", "POS"].includes(atom.name)) {
       column = 0;
+      lineStart = normalized.length;
     } else if (atom.name === "TPL" && isSpeakerTemplate(atom.args[0])) {
       column = 0;
+      lineStart = normalized.length;
     } else {
       column += commandWidth(atom);
     }
@@ -269,6 +301,10 @@ function isHardBreak(atoms, index) {
   if (previous.type === "command" && isLayoutBoundary(previous)) return true;
   if (next.type === "command" && isLayoutBoundary(next)) return true;
   if (next.value === " ") return true;
+  // A line that opens with two or more spaces is laid out by hand, such as a
+  // centered title or a book's byline. Keep the break that ends it so the
+  // next line's first word is never pulled up beside it.
+  if (isPreformattedLine(atoms, index)) return true;
 
   // A dialogue newline is only a layout hint. Sentence punctuation does not
   // make it significant, so let the wrapper reclaim any room left on the
@@ -295,6 +331,70 @@ function isHardBreak(atoms, index) {
   }
 
   return true;
+}
+
+// One space before a line's first character is an indent, the Japanese style
+// for letters, notices, and signs. Two or more mark a line laid out by hand.
+function lineIndentAt(atoms, start) {
+  let index = start;
+  while (
+    index < atoms.length
+    && atoms[index].type === "command"
+    && commandWidth(atoms[index]) === 0
+    && !isLayoutBoundary(atoms[index])
+  ) {
+    index += 1;
+  }
+  const first = atoms[index];
+  const second = atoms[index + 1];
+  if (first?.type !== "character" || first.value !== " ") return 0;
+  if (second?.type === "character" && second.value === " ") return 0;
+  return 1;
+}
+
+function endsSentence(atoms, lineStart) {
+  for (let index = atoms.length - 1; index >= lineStart; index -= 1) {
+    const atom = atoms[index];
+    if (atom.type === "command") {
+      if (commandWidth(atom) > 0) return false;
+      continue;
+    }
+    if (["\"", "'", ")"].includes(atom.value)) continue;
+    if (atom.value === "." && NONTERMINAL_ABBREVIATIONS.has(previousWord(atoms, index))) return false;
+    return /[.!?…:]/.test(atom.value);
+  }
+  return true;
+}
+
+function startsUnindentedText(atoms, start) {
+  for (let index = start; index < atoms.length; index += 1) {
+    const atom = atoms[index];
+    if (atom.type === "character") return atom.value !== " ";
+    if (isLayoutBoundary(atom)) return false;
+    if (commandWidth(atom) > 0) return atom.name !== "SKP";
+  }
+  return false;
+}
+
+function isPreformattedLine(atoms, breakIndex) {
+  let lineStart = breakIndex;
+  while (lineStart > 0) {
+    const atom = atoms[lineStart - 1];
+    if (atom.type === "command" && isLayoutBoundary(atom)) break;
+    lineStart -= 1;
+  }
+
+  let leadingSpaces = 0;
+  for (let index = lineStart; index < breakIndex; index += 1) {
+    const atom = atoms[index];
+    if (atom.type === "character") {
+      if (atom.value !== " ") break;
+      leadingSpaces += 1;
+    } else if (commandWidth(atom) > 0) {
+      break;
+    }
+  }
+  return leadingSpaces >= 2;
 }
 
 function previousWord(atoms, start) {

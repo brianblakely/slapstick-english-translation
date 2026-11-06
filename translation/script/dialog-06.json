@@ -9,7 +9,7 @@
     "offset": "06810E",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 危険!地割れがおきています[N] 立ち入りを禁じます[N][N] ロココ町地割れ対策委員会[PAL:0][END]",
-    "translation": "[DEF][PAL:2] Danger! The ground has[N]split![N] Entry is forbidden.[N][FIN] Rococo Fissure Committee[PAL:0][END]"
+    "translation": "[DEF][PAL:2] Danger! Ground fissures![N] Entry is forbidden.[N][N] Rococo Fissure Committee[PAL:0][END]"
   },
   {
     "offset": "068187",
@@ -111,13 +111,13 @@
     "offset": "06892F",
     "kind": "dialog",
     "source": "[DEF] 箱の中には 爆彈がたくさん[N] 入っているようだ˳[END]",
-    "translation": "[DEF] The crate seems to[N]contain[N] a large number of bombs.[END]"
+    "translation": "[DEF] The crate seems to be[N] full of bombs.[END]"
   },
   {
     "offset": "06894F",
     "kind": "dialog",
     "source": "[DEF] 爆彈が 入っていた箱は[N] こわされていて 中はからっぽだ![END]",
-    "translation": "[DEF] The bomb crate is[N]smashed,[N] and its contents are[N]gone![END]"
+    "translation": "[DEF] The bomb crate is broken,[N] and it's empty![END]"
   },
   {
     "offset": "068A22",
@@ -436,7 +436,7 @@
     "offset": "06A171",
     "kind": "dialog",
     "source": "[DEF] 返事がない···[N] のぼせているようだ···˳[END]",
-    "translation": "[DEF] No response...[N] He seems overcome by the[N]heat...[END]"
+    "translation": "[DEF] No response...[N] The heat got to him...[END]"
   },
   {
     "offset": "06A1A5",
@@ -730,7 +730,7 @@
     "offset": "06BA19",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] 石2[PAL:0]を みつけた![N] だが 持ち物がいっぱいだった˳[END]",
-    "translation": "[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But there was no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But his bag was full.[END]"
   },
   {
     "offset": "06BA42",
@@ -778,7 +778,7 @@
     "offset": "06C19A",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[PAL:2]カベ[PAL:0]を 調べた[N][PAU:14] よく見ると カベのむこうは[N] かくし通路に なっていた![END]",
-    "translation": "[DEF] [NAM:0] examined the [PAL:2]wall[PAL:0].[N][PAU:14] Looking closely, he found[N] a secret passage behind[N]it![END]"
+    "translation": "[DEF] [NAM:0] examined the [PAL:2]wall[PAL:0].[N][PAU:14] Looking closely, he found[N] a secret passage![END]"
   },
   {
     "offset": "06C3BE",
@@ -910,7 +910,7 @@
     "offset": "06CDE5",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は 本を読んでみた˳[END]",
-    "translation": "[DEF] [NAM:0] tried reading the[N]book.[END]"
+    "translation": "[DEF] [NAM:0] read the book.[END]"
   },
   {
     "offset": "06CED6",
@@ -940,55 +940,55 @@
     "offset": "06D134",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第一卷[N][N] ポリンキーはくしゃく·著[FIN]┌ついに 我が館が完成した[N] この記念にこれから 我が日常を[N] 書物に したためることにした[FIN] さて この館は 他の土地に[N] 建てる予定であったのだが[N] 何もないはずの その土地には[N] 何かがあり 人をこばむのだ[FIN] しかし 私があった少年は[N] こともなげに そこへと入ったのだ[N] 実に この世には[N] 不可解なことが 多いものだ˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume One[N][N]             by Count[FIN]Chocula At last, my manor[N]is complete. To mark the[N]occasion, I shall record[N]my daily life in books.[FIN]I had planned to build[N]elsewhere, but something[N]occupied the supposedly[N]empty land and repelled[FIN]all who approached.[FIN]Yet a boy I met walked[N]into it as if nothing were[N]amiss. This world is truly[N]filled with mysteries.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]        Volume One[N][N]     by Count Chocula[FIN]At last, my manor is[N]complete. To mark the[N]occasion, I shall record[N]my daily life in books.[FIN]I had planned to build[N]elsewhere, but something[N]unseen on that land drove[N]away all who approached.[FIN]Yet a boy I met walked[N]into it as if nothing were[N]amiss. This world is truly[N]filled with mysteries.[PAL:0][END]"
   },
   {
     "offset": "06D22C",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第二卷[N][N] ポリンキーはくしゃく·著[FIN]┌今日 客人がおとずれてきた[N] いつぞや 森で出会った[N] あの ふしぎな少年によく似た[N] 金色のかみの 青年である[FIN] からくり造りが得意というので[N] これから建てる [PAL:3]時計塔[PAL:2]の[N] 設計を 彼にたのむことにした[N] 完成が 楽しみである˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Two[N][N]             by Count[FIN]Chocula A guest arrived[N]today. He is a[N]golden-haired young man[N]who closely resembles the[FIN]strange boy I once met in[N]the forest.[FIN]He is skilled with[N]mechanisms, so I asked him[N]to design the [PAL:3]Clock Tower[PAL:2][N]I plan to build.[FIN]I eagerly await its[N]completion.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]        Volume Two[N][N]     by Count Chocula[FIN]A guest arrived today, a[N]golden-haired young man[N]resembling the strange boy[N]I once met in the forest.[FIN]He is skilled with[N]mechanisms, so I asked him[N]to design the [PAL:3]Clock Tower[PAL:2][N]I plan to build.[FIN]I eagerly await its[N]completion.[PAL:0][END]"
   },
   {
     "offset": "06D2F2",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第三卷[N][N] ポリンキーはくしゃく·著[FIN]┌ラスク君の作った 時計塔が[N] ついに 完成した[N] おおいに 満足できるできだ[FIN] 時計塔の 最上階には[N] 時計が回ると 動き出す[N] しかけ人形を 置いてくれた[N] 金色のかみをしたかわいい人形だ[FIN] 私は この人形に[N][PAL:3] マームラナ[PAL:2]と 名をつけた[N][PAU:14] イゴールは 変な顔をしていた[N][PAU:14] しっけいな![FIN] ところでラスク君は 美しい石を[N] 我がやしきに かくしたいという[N] そこで 私は···[PAU:3C]おっと[N][PAU:1E] ここで書いては 意味がない˳┘[PAL:0][END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]         Volume Three[N][N]             by Count[FIN]Chocula The Clock Tower[N]Biscotte built is finally[N]complete. I am exceedingly[N]pleased.[FIN]On its top floor, he[N]placed a mechanical doll[N]that moves when the clock[FIN]turns. It is a lovely[N]golden-haired doll.[FIN]I named the doll [PAL:3]Mamurana[PAL:2].[N][PAU:14]Igor made a peculiar face.[N][PAU:14]The insolence![FIN]Biscotte wishes to hide a[N]beautiful stone in my[N]manor. And so I...[FIN][PAU:3C]Oh, no.[PAU:1E] Writing it here[N]would defeat the purpose.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]       Volume Three[N][N]     by Count Chocula[FIN]The Clock Tower Biscotte[N]built is finally complete.[N]I am exceedingly pleased.[FIN]At the top, he placed a[N]mechanical doll that moves[N]as the clock turns, a[N]lovely golden-haired doll.[FIN]I named the doll [PAL:3]Mamurana[PAL:2].[N][PAU:14]Igor made a peculiar face.[N][PAU:14]The insolence![FIN]Biscotte wishes to hide a[N]beautiful stone in my[N]manor. And so I...[FIN][PAU:3C]Oh, no.[PAU:1E] Writing it here[N]would defeat the purpose.[PAL:0][END]"
   },
   {
     "offset": "06D432",
     "kind": "dialog",
     "source": "[DEF][PAL:2] すばらしき我が日常[N]     第四卷[N][N] ポリンキーはくしゃく·著[FIN]┌実に この世には[N] 不可解なことが 多いものだ[N] 肉体がはてた 今も[N] 私は こうして書を記している[FIN] 私は ラスク君の石を[N] あの中に かくすべきではなかった[N] 化け物と化したあれのことを思うと[N] 安らかに ねむることもできぬ[FIN] たしかラスク君は あの石を[N] 少年が 取りにくると言っていた[N] その少年とやらは あの化け物を[N] 退治できるのであろうか˳┘[END]",
-    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]          Volume Four[N][N]             by Count[FIN]Chocula This world is[N]truly filled with[N]mysteries. Even after my[N]body perished, I continue[FIN]to write these books.[FIN]I should never have hidden[N]Biscotte's stone inside[N]that doll.[FIN]Now that it has become a[N]monster, I cannot rest in[N]peace.[FIN]Biscotte said a boy would[N]come to retrieve the[N]stone. Will that boy be[FIN]able to defeat the[N]monster?[PAL:0][END]"
+    "translation": "[DEF][PAL:2] My Marvelous Daily Life[N]        Volume Four[N][N]     by Count Chocula[FIN]This world is truly filled[N]with mysteries. Even after[N]my body perished, I still[N]write these books.[FIN]I should never have hidden[N]Biscotte's stone inside[N]that doll.[FIN]Now that it has become a[N]monster, I cannot rest in[N]peace.[FIN]Biscotte said a boy would[N]come for the stone. Will[N]that boy be able to defeat[N]the monster?[PAL:0][END]"
   },
   {
     "offset": "06D582",
     "kind": "dialog",
     "source": "[DEF][N] 時を忘れた 時計塔[N][END]",
-    "translation": "[DEF][N] The Clock Tower That[N]Forgot Time[N][END]"
+    "translation": "[DEF][N] The Clock Tower That[N] Forgot Time[N][END]"
   },
   {
     "offset": "06D595",
     "kind": "dialog",
     "source": "[DEF][N] 未来とは 決められたものでなく[N] 作り出すものである[END]",
-    "translation": "[DEF][N] The future is not[N]ordained.[N] It is created.[END]"
+    "translation": "[DEF][N] The future is not fated.[N] It is created.[END]"
   },
   {
     "offset": "06D5B8",
     "kind": "dialog",
     "source": "[DEF][N] 時をきざむ 人形たちの部屋[END]",
-    "translation": "[DEF][N] Chamber of the[N]Timekeeping Dolls[END]"
+    "translation": "[DEF][N] Chamber of the[N] Timekeeping Dolls[END]"
   },
   {
     "offset": "06D5CE",
     "kind": "dialog",
     "source": "[DEF][N] 時をえる者は さかえ[N] 失うものは ほろびる[END]",
-    "translation": "[DEF][N] Those who master time[N]prosper.[N] Those who lose it perish.[END]"
+    "translation": "[DEF][N] Master time and prosper.[N] Lose it and perish.[END]"
   },
   {
     "offset": "06D5EB",
     "kind": "dialog",
     "source": "[DEF][N] 時は えがたくして失いやすし[END]",
-    "translation": "[DEF][N] Time is hard won and[N]easily lost.[END]"
+    "translation": "[DEF][N] Time is hard won and[N] easily lost.[END]"
   },
   {
     "offset": "06D5FF",
@@ -1132,7 +1132,7 @@
     "offset": "06E257",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は [N][PAL:2] カギ[PAL:0]を みつけた![N][PAU:3C] だが 持ち物がいっぱいだった˳[END]",
-    "translation": "[DEF] [NAM:0] found [PAL:2]the Key[PAL:0]![N][PAU:3C] But there was no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found [PAL:2]the Key[PAL:0]![N][PAU:3C] But his bag was full.[END]"
   },
   {
     "offset": "06E339",
@@ -1270,7 +1270,7 @@
     "offset": "06EDC4",
     "kind": "dialog",
     "source": "[DEF][TPL:8]やいやい じいさん[N]あの[PAL:2]犬[PAL:0]は どこに行った?[N][PAU:1E]すなおに 教えないと[N]痛い目見ちゃうぞ![FIN][TPL:F]ほお···[PAU:32]痛い目と言うのは[N]うおの目の しんせきかな?[FIN][TPL:8]い·痛い目って言うのは···[N][PAU:3C][DLY:7]················[N][PAU:1E]···ば·[PAU:1E][DLY:0]ばかにしてるだろうっ![NXT]",
-    "translation": "[DEF][TPL:8]Hey, old man! Where did[N]that [PAL:2]dog[PAL:0] go? [PAU:1E]Tell us, or[FIN]we'll teach you a painful[N]lesson![FIN][TPL:F]Oh?[PAU:32] Is Painful Lesson a[N]relative of yours?[FIN][TPL:8]A painful lesson means...[N][PAU:3C][DLY:7]................[PAU:1E]...A-[PAU:1E][DLY:0]are[N]you mocking me?![NXT]"
+    "translation": "[DEF][TPL:8]Hey, old man! Where did[N]that [PAL:2]dog[PAL:0] go? [PAU:1E]Tell us, or[N]you'll get a black eye![FIN][TPL:F]Oh?[PAU:32] A black eye, you say?[N]Any relation to black ice?[FIN][TPL:8]A b-black eye is when...[N][PAU:3C][DLY:7]...............[PAU:1E]...Y-[PAU:1E][DLY:0]you're[N]making fun of me![NXT]"
   },
   {
     "offset": "06EE63",
