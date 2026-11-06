@@ -1270,7 +1270,7 @@
     "offset": "06EDC4",
     "kind": "dialog",
     "source": "[DEF][TPL:8]やいやい じいさん[N]あの[PAL:2]犬[PAL:0]は どこに行った?[N][PAU:1E]すなおに 教えないと[N]痛い目見ちゃうぞ![FIN][TPL:F]ほお···[PAU:32]痛い目と言うのは[N]うおの目の しんせきかな?[FIN][TPL:8]い·痛い目って言うのは···[N][PAU:3C][DLY:7]················[N][PAU:1E]···ば·[PAU:1E][DLY:0]ばかにしてるだろうっ![NXT]",
-    "translation": "[DEF][TPL:8]Hey, old man! Where did[N]that [PAL:2]dog[PAL:0] go? [PAU:1E]Tell us, or[N]you'll get a black eye![FIN][TPL:F]Oh?[PAU:32] A black eye, you say?[N]Is that a relative of the[N]black-eyed pea?[FIN][TPL:8]A b-black eye is when...[N][PAU:3C][DLY:7]...............[PAU:1E]...Y-[PAU:1E][DLY:0]you're[N]making fun of me![NXT]"
+    "translation": "[DEF][TPL:8]Hey, old man! Where did[N]that [PAL:2]dog[PAL:0] go? [PAU:1E]Tell us, or[N]you'll get a black eye![FIN][TPL:F]Oh?[PAU:32] A black eye, you say?[N]Any relation to black ice?[FIN][TPL:8]A b-black eye is when...[N][PAU:3C][DLY:7]...............[PAU:1E]...Y-[PAU:1E][DLY:0]you're[N]making fun of me![NXT]"
   },
   {
     "offset": "06EE63",
