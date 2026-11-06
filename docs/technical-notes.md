@@ -250,12 +250,16 @@ repaginated from the current row count; if that would leave only one or two
 words on a generated page, the last line of the preceding page moves forward.
 A line that opens with two or more spaces is laid out by hand, such as a
 book's centered title or byline, so the break that ends it is always kept.
+A line that opens with one space is indented, the Japanese style for letters,
+notices, and signs; when it wraps, its continuation keeps the indent. A line
+that continues an indented sentence without its indent, as earlier passes
+left dozens of them, is joined back and wrapped again.
 Entries whose
 row structure is itself meaningful, such as the Invention Machine's two-line
 control legend, opt out with `"reflow": false`.
 `tools/validate-script.mjs` additionally checks custom box dimensions, dynamic
 inserts, supported characters, control structure, and full translation
-coverage. It models the final rendered row of every dialogue choice prompt and
+coverage, and fails any line that continues an indented sentence unindented. It models the final rendered row of every dialogue choice prompt and
 checks the engine's fixed cursor row, including prompts whose speaker template
 or scrolling changes the apparent source-line count. Side-by-side choices, such
 as the Invention Machine's `Make it` and `Never mind`, must also leave columns 0

@@ -58,13 +58,13 @@
     "offset": "09858D",
     "kind": "dialog",
     "source": "[DEF][PAL:2][N] 中から カギがかけられている˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2][N] It is locked from the[N]inside.[PAL:0][END]"
+    "translation": "[DEF][PAL:2][N] It's locked from inside.[PAL:0][END]"
   },
   {
     "offset": "0985A7",
     "kind": "dialog",
     "source": "[DEF] 耳をすますと[N] 中の 話し声が聞こえてきた[FIN][PAL:3]まったく おそまつな計画だわ[N]まさか ロココ町から[N]工場の人手をさらってくるなんて˳[FIN][PAL:2]ふんっ!人手が足りないんだ![N]大体 本部からの予算も足りん![N]ハッカーとやらは 神聖な発明を[N]なんだと思っているんだ!?[FIN][PAL:3]あら 別にあなたに発明を[N]たのんだ営えはなくってよ[N]あなたは この改造人間の研究所の[N]管理さえしていればいいのよ[FIN]それと 例のものはどうなったの?[N]たかだか 村の村長をおどすのに[N]ずいぶん時間がかかるものだわ˳[FIN][PAL:2]···ふんっ![N]こっちには こっちの都合がある[N]口出しせんでもらおうか![FIN][PAL:3]そう[N][PAU:1E]じゃあ お手なみ拝見しましょう[N]よろしくたのんだわよ[N][PAU:1E]ペッパー博士[FIN]それと 町長だけは連れて帰るわ[N]あれは 私の今後の計画の[N]大切なコマですからね[FIN]···ところでさっきから[N]そこに 聞き耳たてている[N]ぶすいなお客さんが[N]いるみたいだけど?[FIN][PAL:2]なに!?[N][PAU:3C]むむむっ···[N]なんだ おまえはっ!![PAL:0][END]",
-    "translation": "[DEF] Listening closely, you[N]hear[N] voices speaking inside.[FIN][PAL:3]What a pathetic plan.[N]Abducting workers from[N]Rococo Town to staff your[N]factory?[FIN][PAL:2]Hmph! I lack manpower![N]Headquarters barely funds[N]me! What do those Hackers[FIN]think of the sacred art of[N]invention?![FIN][PAL:3]I don't recall asking you[N]to invent. You need only[N]manage this cyborg[N]laboratory.[FIN]And what of the other[N]matter? You are taking a[N]very long time to threaten[N]a mere village chief.[FIN][PAL:2]...Hmph! I have my own[N]circumstances. Kindly stay[N]out of them![FIN][PAL:3]Very well. [PAU:1E]Let's see what[N]you can do. I'm counting[N]on you, [PAU:1E]Dr. Pepper.[FIN]I will take only the mayor[N]with me. He is an[N]important piece in my[N]plans for the future.[FIN]...By the way, it seems a[N]rude guest has been[N]eavesdropping out there.[FIN][PAL:2]What?! [PAU:3C]Hmm... Who are[N]you?!![PAL:0][END]"
+    "translation": "[DEF] Listening closely, you[N] hear voices inside.[FIN][PAL:3]What a pathetic plan.[N]Abducting workers from[N]Rococo Town to staff your[N]factory?[FIN][PAL:2]Hmph! I lack manpower![N]Headquarters barely funds[N]me! What do those Hackers[FIN]think of the sacred art of[N]invention?![FIN][PAL:3]I don't recall asking you[N]to invent. You need only[N]manage this cyborg[N]laboratory.[FIN]And what of the other[N]matter? You are taking a[N]very long time to threaten[N]a mere village chief.[FIN][PAL:2]...Hmph! I have my own[N]circumstances. Kindly stay[N]out of them![FIN][PAL:3]Very well. [PAU:1E]Let's see what[N]you can do. I'm counting[N]on you, [PAU:1E]Dr. Pepper.[FIN]I will take only the mayor[N]with me. He is an[N]important piece in my[N]plans for the future.[FIN]...By the way, it seems a[N]rude guest has been[N]eavesdropping out there.[FIN][PAL:2]What?! [PAU:3C]Hmm... Who are[N]you?!![PAL:0][END]"
   },
   {
     "offset": "0987AB",
@@ -412,7 +412,7 @@
     "offset": "09A243",
     "kind": "dialog",
     "source": "[DEF] ··········[N][PAU:1E] なんとなく あやしい˳[END]",
-    "translation": "[DEF] ..........[N][PAU:1E] Something seems[N]suspicious.[END]"
+    "translation": "[DEF] ..........[N][PAU:1E] Something is suspicious.[END]"
   },
   {
     "offset": "09A30B",
@@ -442,13 +442,13 @@
     "offset": "09A415",
     "kind": "dialog",
     "source": "[DEF][N][PAL:2] 天才発明家 ペッパーの日記[FIN] *月*日[N] ハッカーにスカウトされ[N] ここへ来たが ただの[N] 工場ではないか!バカにしとる![FIN] *月*日[N] 今私は もうれつに感動してる![N] 火山の中で とんでもないものを[N] 発見したのだ![FIN] 一体 どれぐらい昔のものか[N][PAL:3] 火山のふん火を操作する機械[PAL:2]だ![N] これを利用しない手はない[N] 早速 研究所に持ち帰ってきた˳[FIN] *月*日[N] あの機械は 思わぬ効果があった[N] これで島の村人を操ることができる[N] 大いに利用しよう˳[FIN] *月*日[N] ハッカーの戦闘員どもが[N] やる気のない奴らばかりなので[N] ロココ町から 人を連れてきた[FIN] タダで南の島に招待すると言ったら[N] だまされたバカどもがやってきた[N] いつぞや このペッパー樣を[N] バカにした仕返しだ ざまみろ[FIN] あの機械のことが気になるので[N] 火山を 色々調べることにした[N] 他にも 先人の作った発明品が[N] 見つかるかもしれん···˳[PAL:0][END]",
-    "translation": "[DEF][N][PAL:2] Diary of the Genius Dr.[N]Pepper[FIN] * Month * Day[N] The Hackers recruited me,[N] so I came here. But this[N]is[FIN] merely a factory! An[N]insult![FIN] * Month * Day[N] Today, I am profoundly[N]moved![FIN] I found something[N]incredible[N] inside the volcano![FIN] How ancient could it be?[N][PAL:3] A machine controlling[N]eruptions![PAL:2][FIN] I must take advantage of[N]it.[N] I brought it back to the[N]lab.[FIN] * Month * Day[FIN] The machine had another[N]effect.[FIN] With it, I can control[N] the island's villagers.[N] I shall exploit it fully.[FIN] * Month * Day[N] The Hacker troopers are[N]all lazy,[FIN] so I brought workers[N] from Rococo Town.[FIN] I offered a free tropical[N]trip,[FIN] and the fools fell for[N]it.[N] Revenge for ridiculing[N] the great Dr. Pepper![FIN]Serves them right.[FIN] The machine still[N]intrigues me,[FIN] so I will search the[N]volcano.[N] Perhaps I can find more[N]inventions[FIN] left by those who came[N]before...[PAL:0][END]"
+    "translation": "[DEF][N][PAL:2]  Diary of Genius Inventor[N]        Dr. Pepper[FIN] * Month * Day[N] The Hackers recruited me,[N] but this is merely a[N] factory! An insult![FIN] * Month * Day[N] I am profoundly moved! I[N] found something amazing[N] inside the volcano![FIN] How ancient could it be?[N][PAL:3] A machine that controls[N] volcanic eruptions![PAL:2][FIN] I must take advantage of[N] it, so I brought it back[N] to the lab.[FIN] * Month * Day[N] The machine has another[N] use: I can control the[N] island's villagers![FIN] I shall exploit it fully.[FIN] * Month * Day[N] The Hacker troopers are[N] all lazy, so I brought[N] workers from Rococo Town.[FIN] I offered a free trip to[N] a tropical island, and[N] the fools came running![FIN] Revenge for mocking the[N] great Dr. Pepper! Serves[N] them right![FIN] The machine still[N] intrigues me, so I will[N] search the volcano.[FIN] Perhaps I will find more[N] inventions left by those[N] who came before...[PAL:0][END]"
   },
   {
     "offset": "09A62D",
     "kind": "dialog",
     "source": "[DEF] ···[PAU:28]赤くて読みずらい˳[END]",
-    "translation": "[DEF] ...[PAU:28]The red ink is hard to[N]read.[END]"
+    "translation": "[DEF] ...[PAU:28]Red ink. Hard to read.[END]"
   },
   {
     "offset": "09A6FF",
@@ -466,7 +466,7 @@
     "offset": "09A757",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は 人間にもどった![END]",
-    "translation": "[DEF] [NAM:0] returned to human[N]form![END]"
+    "translation": "[DEF] [NAM:0] is human again![END]"
   },
   {
     "offset": "09A768",
@@ -526,7 +526,7 @@
     "offset": "09ADCC",
     "kind": "dialog",
     "source": "[DEF]ん?[N][PAU:28]···おい···本当に[N]これしか 入ってなかったのか?[N]···まあしかたねえや[FIN] コテツに [PAL:2]所持金全部[PAL:0]を[N] とられてしまった![FIN][JMP:&string_09AD56+M]",
-    "translation": "[DEF]Hmm?[PAU:28]...Hey... Was this[N]really all that was[N]inside?[FIN]...Well, I can't complain.[FIN] Kotetsu took [PAL:2]all your[N]tron[PAL:0]![FIN]Now I'll keep my promise.[N]You know the [PAL:2]secret[N]laboratory[PAL:0]? Where you[N]became a mouse.[FIN]I'll wait there. Come[N]after me.[END]"
+    "translation": "[DEF]Hmm?[PAU:28]...Hey... Was this[N]really all that was[N]inside?[FIN]...Well, I can't complain.[FIN] Kotetsu took [PAL:2]all you had[PAL:0]![FIN]Now I'll keep my promise.[N]You know the [PAL:2]secret[N]laboratory[PAL:0]? Where you[N]became a mouse.[FIN]I'll wait there. Come[N]after me.[END]"
   },
   {
     "offset": "09AE23",
@@ -646,7 +646,7 @@
     "offset": "09B7D6",
     "kind": "dialog",
     "source": "[DEF] 見張りがいて 外に出れない···[END]",
-    "translation": "[DEF] Guards keep you from[N]leaving...[END]"
+    "translation": "[DEF] Guards block the exit...[END]"
   },
   {
     "offset": "09B81B",
@@ -664,25 +664,25 @@
     "offset": "09B8AF",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 今月は ハッカー直営研究所の[N] 作業強化月間です[N] みなさん がんばりましょう[PAL:0][END]",
-    "translation": "[DEF][PAL:2] This month is[N]Productivity Month[N] at Hacker Laboratories.[N] Everyone, work hard![PAL:0][END]"
+    "translation": "[DEF][PAL:2] This month is[N] Productivity Month[N] at Hacker Laboratories.[N] Everyone, work hard![PAL:0][END]"
   },
   {
     "offset": "09B9E1",
     "kind": "dialog",
     "source": "[DEF][PAL:3] 所長專用トイレ[N][N][PAL:2] かってに使ったら[N] むこう10年間トイレそうじだ![PAL:0][END]",
-    "translation": "[DEF][PAL:3] Director's Private[N]Restroom[N][FIN][PAL:2] Unauthorized use earns[N] ten years of toilet duty![PAL:0][END]"
+    "translation": "[DEF][PAL:3] Director's Restroom[N][N][PAL:2] Unauthorized use earns[N] ten years of toilet duty![PAL:0][END]"
   },
   {
     "offset": "09BA18",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ハッカー公設トイレ[N][N][PAL:3] 所長專用トイレ[PAL:2]は使わないこと![N][PAU:1E] 流し忘れには 注意しましょう[PAL:0][END]",
-    "translation": "[DEF][PAL:2] Hacker Public Restroom[N][N][PAL:3] Do not use the director's[N]restroom![PAL:2][FIN][PAU:1E] Remember to flush.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] Hacker Public Restroom[N] Do not use the [PAL:3]director's[N] restroom[PAL:2]![N][PAU:1E] Remember to flush.[PAL:0][END]"
   },
   {
     "offset": "09BA5F",
     "kind": "dialog",
     "source": "[DEF] 左 [PAL:2]研究開発室[N][PAL:0] 部外者の立入り おことわり[N][N] ろうかは 静かに步きましょう[END]",
-    "translation": "[DEF] Left: [PAL:2]R and D Room[N][PAL:0] No outsiders allowed.[N][FIN] Walk quietly in the[N]corridor.[END]"
+    "translation": "[DEF] Left: [PAL:2]R and D Room[N][PAL:0] No outsiders allowed.[N][N] Walk quietly in the hall.[END]"
   },
   {
     "offset": "09BA9A",
@@ -700,19 +700,19 @@
     "offset": "09BB0C",
     "kind": "dialog",
     "source": "[DEF] 上 研究開発室[N] 左 食堂[N][N] まいごにならないよう 要注意[END]",
-    "translation": "[DEF] Up: R and D Room[N] Left: Cafeteria[N][FIN] Take care not to get[N]lost.[END]"
+    "translation": "[DEF] Up: R and D Room[N] Left: Cafeteria[N][N] Careful not to get lost![END]"
   },
   {
     "offset": "09BB5B",
     "kind": "dialog",
     "source": "[DEF][PAL:2] スカッと さわやか[N] ブラックモア司令官 ご用達[N][PAL:3] ハッカードーピングドリンク[PAL:2]で[N] あなたも今日から 強化人間![PAL:0][END]",
-    "translation": "[DEF][PAL:2] Crisp and refreshing![N] Commander Blackmore's[N]favorite,[FIN][PAL:3] Hacker Doping Drink[PAL:2]![N] Become a superhuman[N]today![PAL:0][END]"
+    "translation": "[DEF][PAL:2] Crisp and refreshing![N] Commander Blackmore's[N] favorite![FIN][PAL:3] Hacker Doping Drink[PAL:2]![N] Become superhuman today![PAL:0][END]"
   },
   {
     "offset": "09BBAF",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 知的なあなたに みなぎるパワー![N] 天才発明家ペッパー特製[N][PAL:3] ぎんぎんダイナマイトドリンク[PAL:2]で[N] あなたも今日から 大発明家![PAL:0][END]",
-    "translation": "[DEF][PAL:2] Power for discerning[N]minds![FIN] The genius Dr. Pepper's[N]own[N][PAL:3] Raging Dynamite Drink[PAL:2]![FIN] Become a great inventor[N]today![PAL:0][END]"
+    "translation": "[DEF][PAL:2] Power for clever minds![N] Genius Dr. Pepper's own[N][PAL:3] Raging Dynamite Drink[PAL:2]![N] Become a great inventor![PAL:0][END]"
   },
   {
     "offset": "09BC61",
@@ -1066,7 +1066,7 @@
     "offset": "09DAEF",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] 持ち物[PAL:0]を いくつか[N] 落としたのに 気がついた![END]",
-    "translation": "[DEF] [NAM:0] noticed[N] several [PAL:2]items[PAL:0] were[N]missing![END]"
+    "translation": "[DEF] [NAM:0] noticed he'd lost[N] several [PAL:2]items[PAL:0]![END]"
   },
   {
     "offset": "09DBE0",
@@ -1294,7 +1294,7 @@
     "offset": "09EDB8",
     "kind": "dialog",
     "source": "[DEF][PAL:3] ナポレオン ガトーごめんなさい[N] ラスクのようすが どうしても[N] 心配なので 見てきます˳[N][SKP:24]ミルフィ[PAL:0][END]",
-    "translation": "[DEF][PAL:3] Newton, Gateau, forgive[N]me.[N] I cannot stop worrying[N]about Biscotte,[FIN] so I am going to check on[N]him.[N][SKP:24]Mille[PAL:0][END]"
+    "translation": "[DEF][PAL:3] Sorry, Newton and Gateau.[N] Worried about Biscotte,[N] I've gone to see him.[N][SKP:24]Mille[PAL:0][END]"
   },
   {
     "offset": "09EE60",
@@ -1312,7 +1312,7 @@
     "offset": "09EEAF",
     "kind": "dialog",
     "source": "[DEF][N] この先 エンジンルーム[N] 非常時以外 立入り禁止[END]",
-    "translation": "[DEF][N] Engine Room Ahead[N] No entry except in[N]emergencies.[END]"
+    "translation": "[DEF][N] Engine Room Ahead[N] Emergency entry only.[END]"
   },
   {
     "offset": "09EF56",

@@ -45,7 +45,7 @@
     "offset": "078386",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N] ポストの中を のぞいた[N] だが何も入っていなかった˳[END]",
-    "translation": "[DEF] [NAM:0] looked in the[N]mailbox,[N] but it was empty.[END]"
+    "translation": "[DEF] [NAM:0] opened the mailbox.[N] It was empty.[END]"
   },
   {
     "offset": "07850E",
@@ -88,7 +88,7 @@
     "offset": "07880E",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N] お墓を よく調べてみた···[N][PAU:1E] よく見ると 石の間に[N] すきまがある![END]",
-    "translation": "[DEF] [NAM:0] examined the[N]grave...[N][PAU:1E] Looking closely, he[N]noticed[FIN] a gap between the stones![END]"
+    "translation": "[DEF] [NAM:0] examined the grave.[N][PAU:1E] Looking closely, he saw a[N] gap between the stones![END]"
   },
   {
     "offset": "0788A8",
@@ -250,7 +250,7 @@
     "offset": "07974A",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は ベッドの中から[N][PAL:2] 日記帳[PAL:0]を みつけた![N][PAU:1E] 日記は 昔のものらしい[FIN][PAL:2] *月*日[N] アンドロイドの┌ナギサ┘が[N] ついに 完成した[N] 人間と ほとんど区別はつかない[FIN] ┌ナギサ┘は 亡くなった妻の[N] 若いころに 似せて作った[N] 妻が 帰ってきたようで[N] 少し てれくさい[FIN] まだ幼い [NAM:0]が[N] ナギサを 母のように思い[N] したってくれれば[N] この発明は 成功だと思う˳[FIN][PAL:0] [NAM:0]は 日記をそっと[N] 元の場所に 返した···˳[END]",
-    "translation": "[DEF] [NAM:0] found an old [PAL:2]diary[PAL:0][N] hidden inside the bed.[FIN][PAL:2] * Month * Day[FIN] The android Nagisa[N] is finally complete.[N] She is nearly[N]indistinguishable[FIN] from a human.[FIN] I modeled Nagisa after[N] my late wife in her[N]youth.[FIN] It feels as though she[N]returned,[N] which is a little[N]embarrassing.[FIN] If the young [NAM:0] grows[N]fond[FIN] of Nagisa and thinks of[N]her[N] as a mother, I will[N]consider[FIN] this invention a success.[FIN][PAL:0] [NAM:0] quietly returned[N] the diary to its hiding[N]place...[END]"
+    "translation": "[DEF] [NAM:0] found an old [PAL:2]diary[PAL:0][N] hidden inside the bed.[FIN][PAL:2] * Month * Day[N] The android Nagisa is[N] finally complete. She[N] could pass for human.[FIN] I modeled Nagisa on my[N] late wife in her youth.[N] It's as if she's back. I[N] feel a little bashful.[FIN] If little [NAM:0] loves[N] Nagisa like a mother, my[N] invention is a success.[FIN][PAL:0] [NAM:0] quietly returned[N] the diary to its place...[END]"
   },
   {
     "offset": "0798CE",
@@ -268,13 +268,13 @@
     "offset": "079931",
     "kind": "dialog",
     "source": "[DEF][N] この道きわめて 30年[N] 海の男の家[END]",
-    "translation": "[DEF][N] Master of the sea for 30[N]years[N] A seafarer's home[END]"
+    "translation": "[DEF][N] 30 years a master sailor[N] A seafarer's home[END]"
   },
   {
     "offset": "07994C",
     "kind": "dialog",
     "source": "[DEF][N] ここ南の島 とてもいい所![N] よくきた かんげい!![END]",
-    "translation": "[DEF][N] Southern island, very[N]nice place![N] You come, we welcome!![END]"
+    "translation": "[DEF][N] South island, nice place![N] You come, we welcome!![END]"
   },
   {
     "offset": "07996D",
@@ -292,7 +292,7 @@
     "offset": "0799A0",
     "kind": "dialog",
     "source": "[DEF] おいでませ ハッカー島へ[N][PAL:2] ハッカー航空幽地[PAL:0]は[N] 雪山をこえた 先です[END]",
-    "translation": "[DEF] Welcome to Hacker Island.[N][PAL:2] The Hacker airbase[PAL:0] lies[N] beyond the snowy[N]mountain.[END]"
+    "translation": "[DEF] Welcome to Hacker Island.[N][PAL:2] The Hacker airbase[PAL:0] lies[N] past the snowy mountain.[END]"
   },
   {
     "offset": "079A26",
@@ -779,7 +779,7 @@
     "offset": "07C2E3",
     "kind": "dialog",
     "source": "[DEF][N] えらい 村長の家[END]",
-    "translation": "[DEF][N] House of the Esteemed[N]Chief[END]"
+    "translation": "[DEF][N] Home of the Great Chief[END]"
   },
   {
     "offset": "07C3B6",
@@ -1205,19 +1205,19 @@
     "offset": "07E8CB",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] スクラップA[PAL:0]を 見つけた![N][PAU:1E] だが 持ち物がいっぱいだった˳[END]",
-    "translation": "[DEF] [NAM:0] found[N][PAL:2] Scrap A[PAL:0]![N][PAU:1E] But there was no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] Scrap A[PAL:0]![N][PAU:1E] But his bag was full.[END]"
   },
   {
     "offset": "07E935",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ここに来るべき 人のため[N] メッセージを 残す[N] 道は 遠いほど近くに通じる[N] 信じる道を しらべよ˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] I leave this message[N] for the one meant to come[N]here.[FIN] The longer road leads[N]nearer.[N] Examine the path you[N]trust.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] I leave this message for[N] whoever is meant to come.[N] Longer roads lead nearer.[N] Check the path you trust.[PAL:0][END]"
   },
   {
     "offset": "07E98B",
     "kind": "dialog",
     "source": "[DEF][PAL:2] しかけは かんたんだったろう?[N] 君が来るのを 待っていたが[N] ワタシの残りエネルギーは[N] あと わずかしかない···[FIN] 君が ここに現れる時まで[N] 待つことが できるだろうか[N] だがワタシには残されたことがある[N] 君の 呼びかけを待ち続けねば˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] The mechanism was simple,[N]yes?[N] I waited for you to come,[FIN] but little of my energy[N]remains...[FIN] Will I endure until[N] you appear here?[N] Still, one duty remains.[N] I must await your call.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] The mechanism was simple,[N] wasn't it? I have waited[N] for you, but little of my[N] energy remains...[FIN] Will I endure until you[N] appear here?[N] Still, one duty remains.[N] I must await your call.[PAL:0][END]"
   },
   {
     "offset": "07EAA6",

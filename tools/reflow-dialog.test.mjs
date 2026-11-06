@@ -58,6 +58,37 @@ test("keeps the break after a hand-laid-out line", () => {
   assert.equal(reflow("[DEF] Dear Rask[N]hello.[END]").text, "[DEF] Dear Rask hello.[END]");
 });
 
+test("wraps an indented line with its indent", () => {
+  const notice = "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The recent quake created a landslide risk near the river. Please stay away.[END]";
+  const expected = "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The recent quake created[N] a landslide risk near the[N] river. Please stay away.[END]";
+
+  assert.equal(reflow(notice).text, expected);
+  assert.equal(reflow(expected).text, expected);
+});
+
+test("rejoins an indented sentence that an earlier wrap left unindented", () => {
+  assert.equal(
+    reflow("[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But there was no room to[N]carry it.[END]").text,
+    "[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But there was no room to[N] carry it.[END]",
+  );
+  assert.equal(
+    reflow("[DEF] The crate seems to[N]contain bombs.[END]").text,
+    "[DEF] The crate seems to[N] contain bombs.[END]",
+  );
+  // An abbreviation does not end the sentence.
+  assert.equal(
+    reflow("[DEF] Genius inventor Dr.[N]Pepper visits.[END]").text,
+    "[DEF] Genius inventor Dr.[N] Pepper visits.[END]",
+  );
+  // A finished sentence may be followed by an unindented line, such as speech
+  // after a quoted note, and separately indented lines keep their layout.
+  assert.equal(reflow("[DEF] I'm sorry.[FIN]Oh no![END]").text, "[DEF] I'm sorry.[FIN]Oh no![END]");
+  assert.equal(
+    reflow("[DEF] [NAM:0] learned[N][PAL:2] the Red Password[PAL:0]![END]").text,
+    "[DEF] [NAM:0] learned[N][PAL:2] the Red Password[PAL:0]![END]",
+  );
+});
+
 test("preserves spacing around dynamic text and punctuation", () => {
   assert.equal(
     reflow("[CLR]This is[N][TBL:&string_list_01DB1F,0B80].[END]").text,

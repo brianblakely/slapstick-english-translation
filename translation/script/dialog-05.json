@@ -9,13 +9,13 @@
     "offset": "05811A",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N] ポストの中を のぞいた[N] だが何も入っていなかった˳[END]",
-    "translation": "[DEF] [NAM:0] looked inside[N] the mailbox, but it was[N]empty.[END]"
+    "translation": "[DEF] [NAM:0] opened the mailbox.[N] It was empty.[END]"
   },
   {
     "offset": "058141",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N] ポストの中を のぞいた[N][PAU:A] ポストの中には[N][PAL:3] ラブレター[PAL:0]が 入っていた![FIN][PAL:2] ポロンさん あなたは私の太陽だ[N] 私は その太陽を[N] いつでも みつめていたいと思う[N][SKP:12]あなたのファンより[END]",
-    "translation": "[DEF] [NAM:0] looked inside[N] the mailbox.[PAU:A] There was[N][PAL:3] a love letter[PAL:0] inside![FIN][PAL:2] Dear Debbie, you are my[N]sun.[N] I want to gaze upon it[N]forever.[FIN][SKP:10]From your admirer[END]"
+    "translation": "[DEF] [NAM:0] looked inside[N] the mailbox.[PAU:A] There was[N][PAL:3] a love letter[PAL:0] inside![FIN][PAL:2] Dear Debbie,[N] You are my sun. I want to[N] gaze upon it forever.[N][SKP:10]From your admirer[END]"
   },
   {
     "offset": "0581C0",
@@ -33,73 +33,73 @@
     "offset": "0582C1",
     "kind": "dialog",
     "source": "[DEF]┌町の近辺に[PAL:2]ハッカー[PAL:0]となのる[N] あやしい人々が 現れています[N] ふしんな人物を見かけましたら[N] 通報を!    ロココ町警察┘[END]",
-    "translation": "[DEF]Suspicious people calling[N] themselves [PAL:2]Hackers[PAL:0] have[N]been[FIN] seen near town. Report[N]anyone[N] suspicious!   ROCOCO[N]POLICE[END]"
+    "translation": "[DEF] Suspicious people calling[N] themselves [PAL:2]Hackers[PAL:0] are[N] near town. Report them![N]             ROCOCO POLICE[END]"
   },
   {
     "offset": "058318",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ┌町役場からのおしらせ┘[N] 先日の地しんで 河の近くは[N] 土砂くずれの危険があります[N] 立入りをひかえてください˳[END]",
-    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The recent quake created[N]a[FIN] landslide risk near the[N]river.[N] Please stay away.[END]"
+    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The recent quake created[N] a landslide risk near the[N] river. Please stay away.[END]"
   },
   {
     "offset": "058364",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ┌町役場からのおしらせ┘[N] 天才発明家 ペッパーさんが[N] ハッカー対策のため 来訪![N] 町長と 会談なさる予定です˳[END]",
-    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] Genius inventor Dr.[N]Pepper[FIN] visits to discuss the[N]Hackers[N] with the Mayor.[END]"
+    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] Genius Dr. Pepper visits[N] to discuss the Hackers[N] with the Mayor![END]"
   },
   {
     "offset": "0583B9",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ┌町役場からのおねがい┘[N] 河原のどうくつに 遊びに行った[N] 子供たちが行方不明になってます[N] そうさくに ご協力ください˳[END]",
-    "translation": "[DEF][PAL:2] REQUEST FROM TOWN HALL[N] Children who went to play[N]in[FIN] the riverside cave are[N]missing.[N] Please help with the[N]search.[END]"
+    "translation": "[DEF][PAL:2] REQUEST FROM TOWN HALL[N] Children who went to play[N] in the riverside cave are[N] missing. Join the search![END]"
   },
   {
     "offset": "05840B",
     "kind": "dialog",
     "source": "[DEF][PAL:2] ┌町役場からのおしらせ┘[N] 先日 行方不明になっていた[N] 子供たちは ロココ町にすむ[N] 発明家[NAM:0]さんの手で[FIN] ぶじ 助けられました[N] なお [NAM:0]さんには[N] 町長から ほうしょう金が[N] 手わたされる 予定です˳[END]",
-    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The children recently[N]reported[FIN] missing were safely[N]rescued by[N] local inventor [NAM:0].[FIN] The Mayor plans to[N]present[N] [NAM:0] with a reward.[END]"
+    "translation": "[DEF][PAL:2] NOTICE FROM TOWN HALL[N] The missing children were[N] safely rescued by local[N] inventor [NAM:0].[FIN] The Mayor will present[N] [NAM:0] with a reward.[END]"
   },
   {
     "offset": "058492",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] 今週の 話題っていったら[N] 新しい秘書がきてから[N] 町長が仕事をしないって話ね[FIN] いつも自分のとなりに[N] 秘書を べったりはべらせて[N] いい年してこまったもんね[FIN] ただでさえ 町長は[N] ハデ好きの評判があるのに[N] わかってるのかしら?[FIN] しっかりしてよ!町長!![N][N][N][JMP:&string_0588EE]",
-    "translation": "[DEF]Hello, Mint here![N] This week's story: the[N]Mayor[FIN] stopped working after his[N] new secretary arrived.[FIN] He keeps her glued to his[N]side.[N] At his age, it is[N]embarrassing![FIN] He already loves flashy[N]things.[N] Does he know how this[N]looks?[FIN] Get it together, Mr.[N]Mayor![FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] This week: the Mayor[N] stopped working once his[N] new secretary arrived.[FIN] He keeps her glued to his[N] side. At his age, it is[N] embarrassing![FIN] He already loves flashy[N] things. Does he know how[N] this looks?[FIN] Get it together, Mayor![N][N][N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "058546",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] 大変なことになったわね[N] もちろん 行方不明の[N] 子供たちのことよ![FIN] 町長は うわさの[N][PAL:2] さすらいの発明家[PAL:0]とかに[N] 協力をたのんだらしいけど[FIN] 発明家なんて[N] えたいの知れないものに[N] こんな 大切なことを[N] まかせていいのかしら?[FIN] はっきり言って不安だわ˳[N][N][N][JMP:&string_0588EE]",
-    "translation": "[DEF]Hello, Mint here![N] We have a serious crisis:[N] the missing children![FIN] The Mayor reportedly[N]asked[N] a [PAL:2]wandering inventor[PAL:0] to[N]help.[FIN] Can we trust something as[N] mysterious as an inventor[N] with a matter this[N]important?[FIN] Frankly, I am worried.[FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] We have a serious crisis:[N] the missing children![FIN] The Mayor reportedly[N] asked a [PAL:2]wandering[N] inventor[PAL:0] to help.[FIN] Can we trust a mysterious[N] inventor with something[N] this important?[FIN] Frankly, I am worried.[N][N][N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "0585FC",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] 行方不明の子供たちが[N] みつかったみたいね[FIN] 発明家の おてがらって[N] 話だけど 失敗したのも[N] 同じように 発明家よね[FIN] まあ ぐうぜんみつかった[N] とは言え よかったわ[N] 本当は 発明家なんかより[N] 警察や 町が[FIN] なんとかするべきなのに[N] こまったもんよね˳[N][N][JMP:&string_0588EE]",
-    "translation": "[DEF]Hello, Mint here![N] The missing children have[N] apparently been found.[FIN] They credit an inventor,[N]but[N] an inventor caused the[N]failure[FIN] in the first place.[FIN] Still, however lucky it[N]was,[FIN] I am glad they are safe.[N] Police and Town Hall[N]should[FIN] have handled this[N]themselves![FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] The missing children have[N] apparently been found.[FIN] They credit an inventor,[N] but the one who failed[N] was an inventor, too.[FIN] It was pure luck, but I'm[N] glad they are safe.[FIN] The police and town[N] should have handled this,[N] not some inventor![N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "0586AF",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] 残念(?)なお知らせです[N] 取材のため このコーナーは[N] しばらく お休みします![FIN] でも 取材のあかつきには[N] みんなに すごい特ダネを[N] お伝えできると 思うわ[N] ぜったいよ!![FIN][::] みんな[N] 楽しみに 待っててね![N][N][JMP:&string_0588EE]",
-    "translation": "[DEF]Hello, Mint here![N] Sad news, perhaps: this[N]column[FIN] will pause while I[N]investigate![FIN] When I return, I promise[N] a tremendous scoop for[N]you all![N] Look forward to it![FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] Sad news, perhaps: this[N] column will pause while I[N] investigate![FIN] When I'm back, I promise[N] you a tremendous scoop![N] Look forward to it![N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "058743",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] 最近この町にとつぜんあらわれた[N] ハッカーの 真の目的とは?![N] その一部が あきらかになったわ[FIN] 彼らは [PAL:2]ティアトロン[PAL:0]という石を[N] さがしているらしいのよ[N] でも その石の正体はまだ[N] はっきりとは わからないわ[FIN][::] まだ ハッカーについては[N] 不明なことが 多いけど[N] ひきつづき この取材は[N] やっていくつもりよ[FIN][JMP:&string_0586AF+M]",
-    "translation": "[DEF]Hello, Mint here![N] What do the Hackers who[N]suddenly[FIN] appeared in town truly[N]want?[N] Part of the answer is now[N]clear.[FIN] They seem to be searching[N]for[N] a stone called [PAL:2]Tiatron[PAL:0].[FIN] What it is remains[N]unknown.[FIN] Many questions about the[N]Hackers[N] remain. My investigation[N]continues.[FIN] Look forward to what I[N]uncover![FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] What do the Hackers who[N] suddenly appeared in town[N] truly want?[FIN] Part of the answer is now[N] clear. They seem to be[N] searching for a stone[N] called [PAL:2]Tiatron[PAL:0].[FIN] But what the stone really[N] is remains unknown.[FIN] Many questions about the[N] Hackers remain. I'll keep[N] investigating.[N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "058812",
     "kind": "dialog",
     "source": "[DEF]┌こんにちは ミントです[N] なんと 町長秘書のローズさんは[N] あのハッカーの一員だったことが[N] あきらかになったわ![FIN] それにハッカーの手によって[N] 本物の町長は かんきんされ[N] にせものが 町長のかわりに[N] 町長の仕事を行っていたのよ[FIN] ロココ町をハッカーの手から[N] 救ったのは ロココ町在住の[N] [NAM:0]くん![N] 彼の手で 町長も救出されたわ[FIN][JMP:&string_058743+M]",
-    "translation": "[DEF]Hello, Mint here![N] Rose, the Mayor's[N]secretary,[FIN] was a member of the[N]Hackers![FIN] The true Mayor was[N]imprisoned,[N] while an impostor did his[N]job.[FIN] Rococo resident [NAM:0][N] saved the town from the[N]Hackers[FIN] and rescued the Mayor[N]himself![FIN] Many questions about the[N]Hackers[N] remain. My investigation[N]continues.[FIN] Look forward to what I[N]uncover![FIN][PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[DEF]Hello, Mint here![N] Shocking news: Rose, the[N] Mayor's secretary, was a[N] member of the Hackers![FIN] The Hackers imprisoned[N] the real Mayor, and an[N] impostor did his job.[FIN] Rococo resident [NAM:0][N] saved the town from the[N] Hackers and rescued the[N] Mayor, too![FIN] Many questions about the[N] Hackers remain. I'll keep[N] investigating.[N][PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "0588EE",
     "kind": "dialog",
     "source": "[PAL:3] ロココ町事件記者 ミント[PAL:0]┘[END]",
-    "translation": "[PAL:3] Mint, Rococo[N]Correspondent[PAL:0][END]"
+    "translation": "[PAL:3]     Mint, Rococo Reporter[PAL:0][END]"
   },
   {
     "offset": "058AA3",
@@ -802,7 +802,8 @@
     "offset": "05B9F1",
     "kind": "dialog",
     "source": "[DEF][DLY:1]お·おまえっ!![N]うちの娘を 知らないかっ?![N]書き置きを残して[N]消えちまったんだっ!![FIN]読んでみてくれっ![N][PAU:14][PAL:3] 彼といっしょに行きます[N] ごめんなさい˳[N][PAL:0]ああっ!なんということだっ!![DLY:0][END]",
-    "translation": "[DEF][DLY:1]Y-you!! Have you seen my[N]daughter?! She left a note[N]and disappeared!![FIN]Read it![N][PAU:14][PAL:3] I'm leaving with him.[N] I'm sorry. [PAL:0]Oh! How could[N]this happen?![DLY:0][END]"
+    "translation": "[DEF][DLY:1]Y-you!! Have you seen my[N]daughter?! She left a note[N]and disappeared!![FIN]Read it![N][PAU:14][PAL:3] I'm leaving with him.[N] I'm sorry.[N][PAL:0]Oh! How could this be?![DLY:0][END]",
+    "reflow": false
   },
   {
     "offset": "05BA62",
@@ -1072,19 +1073,19 @@
     "offset": "05C9A1",
     "kind": "dialog",
     "source": "[DEF][PAL:2] *月*日[N] 今日も 彼女の家に行ったが[N] また 彼女のおやじさんに[N] 門前ばらいにされた···[FIN] 彼女の家と ぼくの家が[N] 昔 仲が悪かったからと言って[N] ぼくらに 何の關係があるんだ?[N] ご先祖さまを うらむよ˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] * Month * Day[N] I went to her house[N]again,[FIN] but her father turned me[N]away[N] at the door, as usual...[FIN] So our families hated[N]each other[FIN] long ago. What does that[N] have to do with us?[N] Curse our ancestors.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] * Month * Day[N] I went to see her today,[N] but her father turned me[N] away at the gate again...[FIN] So our families hated[N] each other long ago. What[N] does that have to do with[N] us? Curse our ancestors.[PAL:0][END]"
   },
   {
     "offset": "05CA2E",
     "kind": "dialog",
     "source": "[DEF][PAL:2] *月*日[N] 彼女と この町を出ることにした[N] 彼女といっしょになるには[N] 他に 方法が見つからなかった[FIN] 残される かあさんのことだけが[N] 気がかりで 仕方ない[N] ごめんなさい かあさん˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] * Month * Day[N] We decided to leave this[N]town.[FIN] It was the only way[N] for us to be together.[FIN] My only worry is Mother,[N] whom I must leave behind.[N] I'm so sorry, Mother.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] * Month * Day[N] We decided to leave this[N] town. It was the only way[N] for us to be together.[FIN] My only worry is Mother,[N] whom I must leave behind.[N] I'm so sorry, Mother.[PAL:0][END]"
   },
   {
     "offset": "05CAA5",
     "kind": "dialog",
     "source": "[DEF][PAL:2] *月*日[N] そろそろ 彼女とけっこんしきの[N] うちあわせをはじめることになった[N] しきの日が 今から楽しみだ[FIN] ふたりをめぐりあわせてくれた[N] 神樣に 心の底から[N] かんしゃせずにはいられない˳[PAL:0][END]",
-    "translation": "[DEF][PAL:2] * Month * Day[N] Soon we will begin[N]planning[FIN] our wedding. I already[N] look forward to the day.[FIN] From the bottom of my[N]heart,[N] I thank God for[FIN] bringing the two of us[N]together.[PAL:0][END]"
+    "translation": "[DEF][PAL:2] * Month * Day[N] We'll soon start planning[N] our wedding. I can't wait[N] for the day.[FIN] I thank God with all my[N] heart for bringing us[N] together.[PAL:0][END]"
   },
   {
     "offset": "05CD0D",
@@ -1150,7 +1151,7 @@
     "offset": "05D06C",
     "kind": "dialog",
     "source": "[DEF] よく見ると かべになにか[N] らくがきがしてある[FIN][PAL:2] せめて ネズミにでもなれたら[N] おまわりが きたすきに[N] にげちまうのになあ···[N] 人間って せつないなあ···˳[PAL:0][END]",
-    "translation": "[DEF] Looking closely, you see[N] something scribbled on[N]the wall.[FIN][PAL:2] If only I could become a[N]mouse,[FIN] I could slip away while[N] the cops weren't[N]looking...[FIN] Being human is so[N]cruel...[PAL:0][END]"
+    "translation": "[DEF] Looking closely, you spot[N] a scribble on the wall.[FIN][PAL:2] If only I were a mouse, I[N] could slip away when the[N] cops come...[N] Being human is so hard...[PAL:0][END]"
   },
   {
     "offset": "05D239",
@@ -1438,13 +1439,13 @@
     "offset": "05E4B8",
     "kind": "dialog",
     "source": "[DEF][PAL:2]町長の 本日のスケジュール[N] あさ:ローズくんと朝食[N] ひる:接待ゴルフ[N] よる:クラブで接待[PAL:0][END]",
-    "translation": "[DEF][PAL:2]Mayor's Schedule for Today[N] Morning: Breakfast with[N]Rose[FIN] Noon: Business golf[N] Night: Entertain clients[N]at club[PAL:0][END]"
+    "translation": "[DEF][PAL:2]Mayor's Schedule for Today[N] Morning: Breakfast w/Rose[N] Noon: Golf with clients[N] Night: Drinks at the club[PAL:0][END]"
   },
   {
     "offset": "05E4FF",
     "kind": "dialog",
     "source": "[DEF][PAL:2]町長の 本日のスケジュール[N] あさ:ロココ町親ぼく会出席[N] ひる:ロココ町発展会誄出席[N] よる:ムフフクラブ出席[PAL:0][END]",
-    "translation": "[DEF][PAL:2]Mayor's Schedule for Today[N] Morning: Rococo social[N]meeting[FIN] Noon: Town planning[N]conference[N] Night: Heh-Heh Club[N]meeting[PAL:0][END]"
+    "translation": "[DEF][PAL:2]Mayor's Schedule for Today[N] Morning: Rococo mixer[N] Noon: Town planning talks[N] Night: Heh-Heh Club[PAL:0][END]"
   },
   {
     "offset": "05E557",
@@ -1456,7 +1457,7 @@
     "offset": "05E56F",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] カギ[PAL:0]を 見つけた![N] だが もちものがいっぱいだ˳[END]",
-    "translation": "[DEF] [NAM:0] found[N][PAL:2] a Key[PAL:0]![N] But there is no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] a Key[PAL:0]![N] But his bag is full.[END]"
   },
   {
     "offset": "05E5CE",
@@ -1654,7 +1655,7 @@
     "offset": "05F195",
     "kind": "dialog",
     "source": "[DEF][PAL:2] この先 下水路[N] あぶないから 入っちゃだめ![N][PAL:0][PAU:1E] ···と 書いてある[END]",
-    "translation": "[DEF][PAL:2] Sewer Ahead[N] Danger! Keep Out![N][PAL:0][PAU:1E] ...is written on the[N]sign.[END]"
+    "translation": "[DEF][PAL:2] Sewer Ahead[N] Danger! Keep Out![N][PAL:0][PAU:1E] ...says the sign.[END]"
   },
   {
     "offset": "05F2A8",

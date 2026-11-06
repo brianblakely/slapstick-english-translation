@@ -105,7 +105,7 @@
     "offset": "088804",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は [PAL:2]だんろ[PAL:0]を しらべた[N] なんと さくがとれるように[N] なっている˳[END]",
-    "translation": "[DEF] [NAM:0] examined the[N][PAL:2]fireplace[PAL:0].[N] The grate can be removed![END]"
+    "translation": "[DEF] [NAM:0] examined the[N] [PAL:2]fireplace[PAL:0].[N] The grate can be removed![END]"
   },
   {
     "offset": "0888A6",
@@ -495,7 +495,7 @@
     "offset": "08A66F",
     "kind": "dialog",
     "source": "[DEF][N] 中からカギが かけられている˳[END]",
-    "translation": "[DEF][N] It is locked from the[N]inside.[END]"
+    "translation": "[DEF][N] It's locked from inside.[END]"
   },
   {
     "offset": "08A6E0",

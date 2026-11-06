@@ -9,7 +9,7 @@
     "offset": "06810E",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 危険!地割れがおきています[N] 立ち入りを禁じます[N][N] ロココ町地割れ対策委員会[PAL:0][END]",
-    "translation": "[DEF][PAL:2] Danger! The ground has[N]split![N] Entry is forbidden.[N][FIN] Rococo Fissure Committee[PAL:0][END]"
+    "translation": "[DEF][PAL:2] Danger! Ground fissures![N] Entry is forbidden.[N][N] Rococo Fissure Committee[PAL:0][END]"
   },
   {
     "offset": "068187",
@@ -111,13 +111,13 @@
     "offset": "06892F",
     "kind": "dialog",
     "source": "[DEF] 箱の中には 爆彈がたくさん[N] 入っているようだ˳[END]",
-    "translation": "[DEF] The crate seems to[N]contain[N] a large number of bombs.[END]"
+    "translation": "[DEF] The crate seems to be[N] full of bombs.[END]"
   },
   {
     "offset": "06894F",
     "kind": "dialog",
     "source": "[DEF] 爆彈が 入っていた箱は[N] こわされていて 中はからっぽだ![END]",
-    "translation": "[DEF] The bomb crate is[N]smashed,[N] and its contents are[N]gone![END]"
+    "translation": "[DEF] The bomb crate is broken,[N] and it's empty![END]"
   },
   {
     "offset": "068A22",
@@ -436,7 +436,7 @@
     "offset": "06A171",
     "kind": "dialog",
     "source": "[DEF] 返事がない···[N] のぼせているようだ···˳[END]",
-    "translation": "[DEF] No response...[N] He seems overcome by the[N]heat...[END]"
+    "translation": "[DEF] No response...[N] The heat got to him...[END]"
   },
   {
     "offset": "06A1A5",
@@ -730,7 +730,7 @@
     "offset": "06BA19",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[N][PAL:2] 石2[PAL:0]を みつけた![N] だが 持ち物がいっぱいだった˳[END]",
-    "translation": "[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But there was no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found[N][PAL:2] Stone 2[PAL:0]![N] But his bag was full.[END]"
   },
   {
     "offset": "06BA42",
@@ -778,7 +778,7 @@
     "offset": "06C19A",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は[PAL:2]カベ[PAL:0]を 調べた[N][PAU:14] よく見ると カベのむこうは[N] かくし通路に なっていた![END]",
-    "translation": "[DEF] [NAM:0] examined the [PAL:2]wall[PAL:0].[N][PAU:14] Looking closely, he found[N] a secret passage behind[N]it![END]"
+    "translation": "[DEF] [NAM:0] examined the [PAL:2]wall[PAL:0].[N][PAU:14] Looking closely, he found[N] a secret passage![END]"
   },
   {
     "offset": "06C3BE",
@@ -910,7 +910,7 @@
     "offset": "06CDE5",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は 本を読んでみた˳[END]",
-    "translation": "[DEF] [NAM:0] tried reading the[N]book.[END]"
+    "translation": "[DEF] [NAM:0] read the book.[END]"
   },
   {
     "offset": "06CED6",
@@ -964,31 +964,31 @@
     "offset": "06D582",
     "kind": "dialog",
     "source": "[DEF][N] 時を忘れた 時計塔[N][END]",
-    "translation": "[DEF][N] The Clock Tower That[N]Forgot Time[N][END]"
+    "translation": "[DEF][N] The Clock Tower That[N] Forgot Time[N][END]"
   },
   {
     "offset": "06D595",
     "kind": "dialog",
     "source": "[DEF][N] 未来とは 決められたものでなく[N] 作り出すものである[END]",
-    "translation": "[DEF][N] The future is not[N]ordained.[N] It is created.[END]"
+    "translation": "[DEF][N] The future is not fated.[N] It is created.[END]"
   },
   {
     "offset": "06D5B8",
     "kind": "dialog",
     "source": "[DEF][N] 時をきざむ 人形たちの部屋[END]",
-    "translation": "[DEF][N] Chamber of the[N]Timekeeping Dolls[END]"
+    "translation": "[DEF][N] Chamber of the[N] Timekeeping Dolls[END]"
   },
   {
     "offset": "06D5CE",
     "kind": "dialog",
     "source": "[DEF][N] 時をえる者は さかえ[N] 失うものは ほろびる[END]",
-    "translation": "[DEF][N] Those who master time[N]prosper.[N] Those who lose it perish.[END]"
+    "translation": "[DEF][N] Master time and prosper.[N] Lose it and perish.[END]"
   },
   {
     "offset": "06D5EB",
     "kind": "dialog",
     "source": "[DEF][N] 時は えがたくして失いやすし[END]",
-    "translation": "[DEF][N] Time is hard won and[N]easily lost.[END]"
+    "translation": "[DEF][N] Time is hard won and[N] easily lost.[END]"
   },
   {
     "offset": "06D5FF",
@@ -1132,7 +1132,7 @@
     "offset": "06E257",
     "kind": "dialog",
     "source": "[DEF] [NAM:0]は [N][PAL:2] カギ[PAL:0]を みつけた![N][PAU:3C] だが 持ち物がいっぱいだった˳[END]",
-    "translation": "[DEF] [NAM:0] found [PAL:2]the Key[PAL:0]![N][PAU:3C] But there was no room to[N]carry it.[END]"
+    "translation": "[DEF] [NAM:0] found [PAL:2]the Key[PAL:0]![N][PAU:3C] But his bag was full.[END]"
   },
   {
     "offset": "06E339",

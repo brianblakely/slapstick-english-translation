@@ -56,6 +56,7 @@ const BATTLE_PLAYER_OPTIONS = {
 // The stock three-tile small-caps ENERGY label. Robot rows use it before
 // their energy values; it does not mean experience.
 const ENERGY_LABEL = "ℇ℞⅁";
+const NONTERMINAL_ABBREVIATIONS = new Set(["Dr.", "Jr.", "Mr.", "Mrs.", "Ms.", "Prof.", "Sr.", "St."]);
 const EQUIPMENT_NAME_TABLE = "@string_list_01F774";
 const EQUIPMENT_LEVEL_TABLE = "@string_list_01F74C";
 const CONFIG_OPTION_LAYOUTS = new Map([
@@ -212,6 +213,7 @@ for (const filename of files) {
     if (entry.kind === "dialog") {
       validateDialogLabel(entry, location);
       validateDialogLayout(entry.translation, location, entry.layout ?? inferredLayout(entry));
+      validateIndentedContinuations(entry, location);
       validateDialogChoices(entry, location);
       validateInlineDialogChoices(entry, location);
       validateLocationLabel(entry, location);
@@ -251,6 +253,47 @@ function validateDialogLabel(entry, location) {
     errors.push(
       `${location}: ${layout.description} requires ${width} columns; maximum is ${layout.columns}`,
     );
+  }
+}
+
+// Letters, notices, and signs indent every line by one column, like the
+// Japanese. When such a sentence wraps, its next line keeps the indent;
+// reflow-dialog adds it. An unindented continuation reads as a stray word.
+function validateIndentedContinuations(entry, location) {
+  if (/\[(?:BOX|POS):/.test(entry.translation)) return;
+  const lines = [{ text: "", next: null }];
+  for (const atom of tokenize(entry.translation)) {
+    const line = lines.at(-1);
+    if (atom.type === "character") {
+      line.text += atom.value;
+    } else if (["N", "FIN"].includes(atom.name)) {
+      line.next = "break";
+      lines.push({ text: "", next: null });
+    } else if (
+      ["DEF", "DF2", "DFT", "CLR", "PGE", "END", "NXT", "WAI", "ESC", "DES"].includes(atom.name)
+      || atom.name === "TPL" && !["0", "1A"].includes(atom.args[0]?.toUpperCase())
+    ) {
+      line.next = "boundary";
+      lines.push({ text: "", next: null });
+    } else if (atom.name === "SKP") {
+      line.text += "~";
+    } else if (commandWidth(atom) > 0) {
+      line.text += "X";
+    }
+  }
+
+  for (let index = 0; index + 1 < lines.length; index += 1) {
+    const { text, next } = lines[index];
+    const following = lines[index + 1].text;
+    if (next !== "break" || !/^ \S/.test(text) || !/^[^\s~]/.test(following)) continue;
+    const ending = text.trimEnd().replace(/["')]+$/, "");
+    const lastWord = ending.split(" ").at(-1);
+    const endsSentence = /[.!?…:]$/.test(ending) && !NONTERMINAL_ABBREVIATIONS.has(lastWord);
+    if (!endsSentence) {
+      errors.push(
+        `${location}: ${JSON.stringify(following)} continues the indented line ${JSON.stringify(text.trim())} without its indent`,
+      );
+    }
   }
 }
 

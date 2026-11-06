@@ -141,7 +141,7 @@
     "offset": "0A896D",
     "kind": "dialog",
     "source": "[DEF] 藥草を取りに 出かけています[N] 来ていただいた人 ごめんなさい[N][N][PAL:3][SKP:24]ポロン[PAL:0][END]",
-    "translation": "[DEF] Gone to gather medicinal[N]herbs.[N] Sorry I missed you.[N][FIN][PAL:3][SKP:24]Debbie[PAL:0][END]"
+    "translation": "[DEF] Out gathering herbs.[N] Sorry I missed you.[N][N][PAL:3][SKP:24]Debbie[PAL:0][END]"
   },
   {
     "offset": "0A8A03",
@@ -159,31 +159,31 @@
     "offset": "0A8A42",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 町長會建設ボ金 受付中![N][PAL:0] あなたの まごころが[N] 新しい町を 作りあげます[N][PAU:1E]   ┌たのしい町づくり委員会┘[END]",
-    "translation": "[DEF][PAL:2] Donations for Mayor Manor[N]wanted![FIN][PAL:0] Your generosity will help[N]us[N] build a brand-new town.[N][PAU:1E]     Happy Town Committee[END]"
+    "translation": "[DEF][PAL:2] Donate to Mayor Manor![N][PAL:0] Your generosity will[N] build a brand-new town.[N][PAU:1E]     Happy Town Committee[END]"
   },
   {
     "offset": "0A8A94",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 町長會建設ボ金 受付中![N][PAL:0][N] くわしいことは町長會建設現場前[N] ┌たのしい町づくり委員会┘まで[END]",
-    "translation": "[DEF][PAL:2] Donations for Mayor Manor[N]wanted![N][PAL:0][FIN] Ask at the construction[N]site.[N]     Happy Town Committee[END]"
+    "translation": "[DEF][PAL:2] Donate to Mayor Manor![N][PAL:0] For details, visit the[N] construction site.[N][PAU:1E]     Happy Town Committee[END]"
   },
   {
     "offset": "0A8AE1",
     "kind": "dialog",
     "source": "[DEF] 町長會の 完成にともない[N][::] ボ金の受付は しめきりました[N] ご協力ありがとうございました[PAU:1E]   ┌たのしい町づくり委員会┘[END]",
-    "translation": "[DEF] Mayor Manor is now[N]complete.[FIN][::] Donations are closed.[N] Thank you for your[N]support.[N][PAU:1E]     Happy Town Committee[END]"
+    "translation": "[DEF] Mayor Manor is complete.[N][::] Donations are closed.[N] Thank you for your help.[N][PAU:1E]     Happy Town Committee[END]"
   },
   {
     "offset": "0A8B32",
     "kind": "dialog",
     "source": "[DEF][PAL:2] 町長會建設ボ金 目標達成![N][PAL:0][JMP:&string_0A8AE1+M]",
-    "translation": "[DEF][PAL:2] Mayor Manor funding goal[N]reached![FIN][PAL:0] Donations are closed.[N] Thank you for your[N]support.[N][PAU:1E]     Happy Town Committee[END]"
+    "translation": "[DEF][PAL:2] Mayor Manor goal reached![N][PAL:0] Donations are closed.[N] Thank you for your help.[N][PAU:1E]     Happy Town Committee[END]"
   },
   {
     "offset": "0A8B55",
     "kind": "dialog",
     "source": "[DEF] 近辺で 正体不明の[PAL:2]とうぞく団[PAL:0]の[N] 動きが 活発になっています[N][PAU:1E] おでかけのさいは[N] ひと声かけて カギかけて[END]",
-    "translation": "[DEF] An unidentified [PAL:2]bandit[N]gang[PAL:0][FIN] is increasingly active[N]nearby.[N][PAU:1E] When you leave, tell[N]someone[FIN] and lock your door.[END]"
+    "translation": "[DEF] A mysterious [PAL:2]bandit gang[PAL:0][N] is growing active nearby.[N][PAU:1E] When you go out, tell[N] someone and lock up![END]"
   },
   {
     "offset": "0A8CD9",
