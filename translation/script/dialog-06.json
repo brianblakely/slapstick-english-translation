@@ -1270,7 +1270,7 @@
     "offset": "06EDC4",
     "kind": "dialog",
     "source": "[DEF][TPL:8]やいやい じいさん[N]あの[PAL:2]犬[PAL:0]は どこに行った?[N][PAU:1E]すなおに 教えないと[N]痛い目見ちゃうぞ![FIN][TPL:F]ほお···[PAU:32]痛い目と言うのは[N]うおの目の しんせきかな?[FIN][TPL:8]い·痛い目って言うのは···[N][PAU:3C][DLY:7]················[N][PAU:1E]···ば·[PAU:1E][DLY:0]ばかにしてるだろうっ![NXT]",
-    "translation": "[DEF][TPL:8]Hey, old man! Where did[N]that [PAL:2]dog[PAL:0] go? [PAU:1E]Tell us, or[N]you'll get a black eye![FIN][TPL:F]Oh?[PAU:32] A black eye, you say?[N]Any relation to black ice?[FIN][TPL:8]A b-black eye is when...[N][PAU:3C][DLY:7]...............[PAU:1E]...Y-[PAU:1E][DLY:0]you're[N]making fun of me![NXT]"
+    "translation": "[DEF][TPL:8]Hey, old man! Where's that[N][PAL:2]dog[PAL:0]? [PAU:1E]Talk, or I'll serve[N]you a knuckle sandwich![FIN][TPL:F]Ooh![PAU:32] A sandwich? For me?[N]How kind! I'm famished![FIN][TPL:8]A k-knuckle sandwich is...[N][PAU:3C][DLY:7]...............[PAU:1E]...Y-[PAU:1E][DLY:0]you're[N]making fun of me![NXT]"
   },
   {
     "offset": "06EE63",
@@ -1282,13 +1282,13 @@
     "offset": "06EE75",
     "kind": "dialog",
     "source": "[DEF][TPL:8]あやしい奴めっ![N][PAU:1E]お前から 先に痛い目見せてやる[N]ほんとにほんとに 痛いからなっ![END]",
-    "translation": "[DEF][TPL:8]You look suspicious! [PAU:1E]I'll[N]teach you that painful[FIN]lesson first. And it[N]really hurts![END]"
+    "translation": "[DEF][TPL:8]You look shady! [PAU:1E]I'll serve[N]you a knuckle sandwich[N]first! It's no delicacy![END]"
   },
   {
     "offset": "06EEAB",
     "kind": "dialog",
     "source": "[DEF][TPL:8]ひーっ おみそれしましたっ![N]たしかに 痛い目見ましたあっ![N]命ばかりは お助けをーっ[FIN]なんでも お話ししますから[N]ゆるしてくださいっ![N] 君たちの 目的はなんだ!?[N] 男は だまって見のがすのさ",
-    "translation": "[DEF][TPL:8]Eek! I surrender! That[N]really was a painful[N]lesson![FIN]Please spare my life![FIN]I'll tell you anything![N]Please forgive me![N] What are you after?![N] A man lets it slide"
+    "translation": "[DEF][TPL:8]Eek! I surrender! I got[N]served... cold![FIN]Please spare my life![FIN]I'll tell you anything![N]Please forgive me![N] What are you after?![N] A man lets it slide"
   },
   {
     "offset": "06EF20",
