@@ -309,7 +309,7 @@
     "offset": "05977C",
     "kind": "dialog",
     "source": "[DEF]むむっ![PAU:28]おたずね者の[N][NAM:0]じゃないかっ![FIN][JMP:&string_05A58F+M]",
-    "translation": "[DEF]Aha! The wanted fugitive[N][NAM:0]![FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
+    "translation": "[DEF]Aha! The wanted fugitive[N][NAM:0]![FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble! Like father,[N]like son![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
   },
   {
     "offset": "059798",
@@ -549,13 +549,13 @@
     "offset": "05A573",
     "kind": "dialog",
     "source": "[DEF][PAL:2]おまわりさん:[N][PAL:0]帰ってきたな![NAM:0]![FIN][JMP:&string_05A58F+M]",
-    "translation": "[DEF][PAL:2]Officer: [PAL:0]You came back,[N][NAM:0]![FIN]No arguments! I warned you[N]not to make trouble, but[N]bad blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
+    "translation": "[DEF][PAL:2]Officer: [PAL:0]You came back,[N][NAM:0]![FIN]No arguments! I warned you[N]not to make trouble! Like[N]father, like son![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
   },
   {
     "offset": "05A58F",
     "kind": "dialog",
     "source": "[DF5][PAL:3]ナギサ:[N][PAL:0]ああ よかった[N][NAM:0] あのね···[FIN][PAL:2]おまわりさん:[N][PAL:0][::]もんどうむよーっ![NAM:0]![N]問題をおこすなと言ったのに[N]やはり 血はあらそえんなっ![FIN]お前に[PAL:2]宝石3つ[PAL:0]をぬすまれたと[N]町長から とどけが出ているぞ![N]しんみょうに おなわを[N]ちょうだいしろっ!![END]",
-    "translation": "[DF5][PAL:3]Nagisa: [PAL:0]Oh, thank[N]goodness. [NAM:0], listen...[FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble, but bad[N]blood tells![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
+    "translation": "[DF5][PAL:3]Nagisa: [PAL:0]Oh, thank[N]goodness. [NAM:0], listen...[FIN][PAL:2]Officer: [PAL:0]No arguments,[N][NAM:0]! I warned you not to[N]make trouble! Like father,[N]like son![FIN]The Mayor says you stole[N][PAL:2]three gems[PAL:0]! Surrender[N]quietly and come with me![END]"
   },
   {
     "offset": "05A74D",
