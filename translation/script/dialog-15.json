@@ -501,7 +501,7 @@
     "offset": "159EF1",
     "kind": "dialog",
     "source": "[DFT]いいかっ?![N][PAU:14]別に 私はにげるわけではないぞ![N]ユーザーのみなさまの[N]あつーい リクエストがあれば[FIN]私はまた 新たな野望をもって[N]あらわれるであろうっ![N]その時まで[PAU:14] さらばだっ![N][PAU:14]むははははっ![END]",
-    "translation": "[DFT]Listen well! [PAU:14]I am not[N]fleeing! If our dear users[N]send enough passionate[N]requests, I shall return[FIN]with a grand new ambition![N]Until then, farewell![FIN][PAU:14]Mwa ha ha ha![END]"
+    "translation": "[DFT]Listen well! [PAU:14]I am not[N]fleeing! If our dear[N]players send passionate[N]requests, I shall return[FIN]with a grand new ambition![N]Until then, farewell![FIN][PAU:14]Mwa ha ha ha![END]"
   },
   {
     "offset": "159FEB",
