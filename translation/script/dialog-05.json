@@ -1541,7 +1541,7 @@
     "offset": "05EC80",
     "kind": "dialog",
     "source": "[DEF][TPL:7]おまえ わざわざてがみを[N]とどけるため もどってきたのか?[FIN]おまえのようなやつを[N][PAL:3]おひとよし [PAL:0]って言うんだぜ˳[END]",
-    "translation": "[DEF][TPL:7]You came all the way back[N]just to deliver that[N]letter?[FIN]There's a word for guys[N]like you. [PAL:3]Softhearted[PAL:0].[END]"
+    "translation": "[DEF][TPL:7]You came all the way back[N]just to deliver that[N]letter?[FIN]There's a word for guys[N]like you. A [PAL:3]sap[PAL:0].[END]"
   },
   {
     "offset": "05ECC0",
