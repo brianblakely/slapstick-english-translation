@@ -9,6 +9,7 @@ keep recurring names and terms consistent across independently edited banks.
 | ロココ町 | Rococo Town | Main town. |
 | ショコラ星 | Planet Chocolat | Later planet. |
 | ハッカー | the Hackers | The villainous organization. |
+| 幹部 | officer | A Hacker rank above the troopers (戦闘員), as in the Officer Badge (`OFCBADGE`). Never the town's police officer (おまわりさん). |
 | ティアトロン | Tiatron | Mysterious stone/machine. |
 | トロン | tron | Currency; lowercase in prose. |
 | 迷いの森 | Lost Woods | Forest containing the hidden spaceship and later the manor. |
@@ -45,5 +46,5 @@ screen counts invention ideas (ひらめきアイテム) as `IDEAS`, matching th
 
 Dialogue item names match the story text and the menus' 8-cell names, for
 example Comlink (`COMLINK`), Animal Chatter (`ANMLCHAT`), Officer Badge
-(`COPBADGE`), and Stone Tablet (`TABLET`). Dialogue reserves 15 columns for an item name, so the
+(`OFCBADGE`), and Stone Tablet (`TABLET`). Dialogue reserves 15 columns for an item name, so the
 Chameleon Glasses are `Cham. Glasses` there and `CHAM GLS` in menus.
